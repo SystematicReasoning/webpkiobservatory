@@ -1,0 +1,460 @@
+// ── Theme ──
+// Values reference CSS custom properties defined in responsive.css.
+// Dark/light toggle is handled by [data-theme] on <html>.
+export const COLORS = {
+  bg: 'var(--bg)',
+  s1: 'var(--s1)',
+  s2: 'var(--s2)',
+  bd: 'var(--bd)',
+  bl: 'var(--bl)',
+  tx: 'var(--tx)',
+  t2: 'var(--t2)',
+  t3: 'var(--t3)',
+  ac: 'var(--ac)',
+  ag: 'var(--ag)',
+  gn: 'var(--gn)',
+  am: 'var(--am)',
+  rd: 'var(--rd)',
+  pu: 'var(--pu)',
+  cy: 'var(--cy)',
+  pk: 'var(--pk)',
+  wh: 'var(--wh)',
+  or: 'var(--or)',
+  g5: 'var(--g5)',
+  tl: 'var(--tl)',
+};
+
+// ── Alpha variants — use instead of hex-suffix opacity (e.g. \`\${COLORS.ac}88\`)
+// color-mix() correctly resolves CSS custom properties; string concatenation does not.
+export const ALPHA = {
+  ac07: 'var(--ac-07)', ac13: 'var(--ac-13)', ac20: 'var(--ac-20)',
+  ac27: 'var(--ac-27)', ac40: 'var(--ac-40)', ac53: 'var(--ac-53)',
+  am38: 'var(--am-38)', am53: 'var(--am-53)',
+  cy07: 'var(--cy-07)', cy20: 'var(--cy-20)', cy40: 'var(--cy-40)',
+  gn09: 'var(--gn-09)', gn20: 'var(--gn-20)',
+  pu07: 'var(--pu-07)', pu20: 'var(--pu-20)',
+  rd07: 'var(--rd-07)', rd27: 'var(--rd-27)',
+  // Extended palette — use instead of inline color-mix()
+  ac09: 'var(--ac-09)',
+  am13: 'var(--am-13)',
+  rd04: 'var(--rd-04)', rd08: 'var(--rd-08)', rd13: 'var(--rd-13)', rd25: 'var(--rd-25)',
+  gn04: 'var(--gn-04)', gn13: 'var(--gn-13)', gn19: 'var(--gn-19)', gn27: 'var(--gn-27)',
+  s220: 'var(--s2-20)', s227: 'var(--s2-27)', s233: 'var(--s2-33)', s250: 'var(--s2-50)',
+  bd31: 'var(--bd-31)',
+};
+
+export const STORE_COLORS = {
+  mozilla: '#ff6611',
+  microsoft: '#22d3ee',
+  chrome: '#4285f4',
+  apple: '#a3aaae',
+};
+
+export const FONT_MONO = "'IBM Plex Mono',monospace";
+export const FONT_SANS = "'IBM Plex Sans','Segoe UI',sans-serif";
+
+// ── Display name normalization ──
+// Maps CCADB/crt.sh canonical names to human-readable short names
+export const DISPLAY_NAMES = {
+  'Internet Security Research Group': "Let's Encrypt (ISRG)",
+  'Google Trust Services LLC': 'Google Trust Services',
+  'IdenTrust Services, LLC': 'IdenTrust',
+  'GlobalSign nv-sa': 'GlobalSign',
+  'Microsoft Corporation': 'Microsoft',
+  'Asseco Data Systems S.A.': 'Asseco / Certum',
+  'TrustAsia Technologies, Inc.': 'TrustAsia',
+  'Amazon Trust Services': 'Amazon',
+  'Taiwan-CA Inc. (TWCA)': 'TWCA',
+  'SwissSign AG': 'SwissSign',
+  'Telia Company': 'Telia',
+  'Cybertrust Japan Co., Ltd.': 'Cybertrust Japan',
+  'SECOM Trust Systems CO., LTD.': 'SECOM',
+  'Shanghai Electronic Certification Authority Co., Ltd.': 'SHECA',
+  'Deutsche Telekom Security GmbH': 'Deutsche Telekom',
+  'NAVER Cloud Trust Services': 'NAVER',
+  'Certainly LLC': 'Certainly',
+  'Government of Spain, Fábrica Nacional de Moneda y Timbre (FNMT)': 'FNMT (Spain)',
+  'Government of Hong Kong (SAR), Hongkong Post, Certizen': 'Hongkong Post',
+  'Government of Spain, Autoritat de Certificació de la Comunitat Valenciana (ACCV)': 'ACCV (Spain)',
+  'Government of Finland, Population Register Centre\u2019s (Väestörekisterikeskus, VRK)': 'VRK (Finland)',
+  'Autoridad de Certificacion Firmaprofesional': 'Firmaprofesional',
+  'Government of The Netherlands, PKIoverheid (Logius)': 'PKIoverheid',
+  'Government of Turkey, Kamu Sertifikasyon Merkezi (Kamu SM)': 'Kamu SM (Turkey)',
+  'Government of India, Ministry of Communications & Information Technology, Controller of Certifying Authorities (CCA)':
+    'CCA (India)',
+  'Government of Brazil, Instituto Nacional de Tecnologia da Informação (ITI)': 'ITI (Brazil)',
+  'Government of Korea, KLID': 'KLID (Korea)',
+  'Agence Nationale de Certification Electronique': 'ANCE (Tunisia)',
+  'Autoridad de Certificación (ANF AC)': 'ANF AC',
+  'China Financial Certification Authority (CFCA)': 'CFCA',
+  'Krajowa Izba Rozliczeniowa S.A. (KIR)': 'KIR',
+  'Global Digital Cybersecurity Authority Co., Ltd. (Formerly Guang Dong Certificate Authority (GDCA))': 'GDCA',
+  'eMudhra Technologies Limited': 'eMudhra',
+  'Microsec Ltd.': 'Microsec',
+  'Izenpe S.A.': 'Izenpe',
+  'Viking Cloud, Inc.': 'VikingCloud',
+  'Open Access Technology International, Inc. (OATI)': 'OATI',
+  'Financijska agencija (Fina)': 'Fina',
+  'Disig, a.s.': 'Disig',
+  'Prvn\u00ed certifika\u010dn\u00ed autorita, a.s.': 'PostSignum',
+  JPRS: 'Japan Registry Services (JPRS)',
+};
+
+// ── Country coordinates for map pins ──
+export const COUNTRY_COORDS = {
+  'United States': { lat: 39, lng: -98 },
+  'United States of America': { lat: 39, lng: -98 },
+  US: { lat: 39, lng: -98 },
+  USA: { lat: 39, lng: -98 },
+  'United Kingdom': { lat: 53, lng: -1 },
+  'United Kingdom of Great Britain and Northern Ireland': { lat: 53, lng: -1 },
+  Belgium: { lat: 50.8, lng: 4.4 },
+  Italy: { lat: 42, lng: 12.5 },
+  Poland: { lat: 52, lng: 20 },
+  Polska: { lat: 52, lng: 20 },
+  Greece: { lat: 39, lng: 22 },
+  China: { lat: 35, lng: 105 },
+  '\u4e2d\u56fd': { lat: 35, lng: 105 },
+  Japan: { lat: 36, lng: 138 },
+  Taiwan: { lat: 23.5, lng: 121 },
+  'Taiwan, Republic of China': { lat: 23.5, lng: 121 },
+  'Taiwan (Republic of China)': { lat: 23.5, lng: 121 },
+  Switzerland: { lat: 47, lng: 8 },
+  Sweden: { lat: 62, lng: 15 },
+  Germany: { lat: 51, lng: 10 },
+  'South Korea': { lat: 36, lng: 128 },
+  'Republic of Korea (South Korea)': { lat: 36, lng: 128 },
+  Norway: { lat: 62, lng: 10 },
+  Spain: { lat: 40, lng: -4 },
+  SPAIN: { lat: 40, lng: -4 },
+  España: { lat: 40, lng: -4 },
+  'Hong Kong': { lat: 22.3, lng: 114.2 },
+  Finland: { lat: 64, lng: 26 },
+  Brazil: { lat: -14, lng: -51 },
+  Turkey: { lat: 39, lng: 35 },
+  India: { lat: 21, lng: 78 },
+  Tunisia: { lat: 34, lng: 9 },
+  Croatia: { lat: 45, lng: 16 },
+  Hungary: { lat: 47, lng: 19 },
+  France: { lat: 47, lng: 2 },
+  Romania: { lat: 46, lng: 25 },
+  'Czech Republic': { lat: 50, lng: 14 },
+  Australia: { lat: -25, lng: 134 },
+  Austria: { lat: 47.5, lng: 14.6 },
+  Canada: { lat: 56, lng: -106 },
+  Netherlands: { lat: 52.1, lng: 5.3 },
+  NL: { lat: 52.1, lng: 5.3 },
+  Portugal: { lat: 39.4, lng: -8.2 },
+  Denmark: { lat: 56, lng: 10 },
+  Ireland: { lat: 53.4, lng: -8.2 },
+  Israel: { lat: 31.5, lng: 34.8 },
+  Singapore: { lat: 1.3, lng: 103.8 },
+  Malaysia: { lat: 4.2, lng: 101.9 },
+  Thailand: { lat: 15.9, lng: 101 },
+  Indonesia: { lat: -0.8, lng: 113.9 },
+  'Saudi Arabia': { lat: 23.9, lng: 45 },
+  UAE: { lat: 23.4, lng: 53.8 },
+  'South Africa': { lat: -30.6, lng: 22.9 },
+  Colombia: { lat: 4.6, lng: -74.1 },
+  Chile: { lat: -35.7, lng: -71.5 },
+  Mexico: { lat: 23.6, lng: -102.5 },
+  Slovakia: { lat: 48.7, lng: 19.7 },
+  Slovenia: { lat: 46.2, lng: 14.8 },
+  Estonia: { lat: 58.6, lng: 25 },
+  Latvia: { lat: 56.9, lng: 24.1 },
+  Lithuania: { lat: 55.2, lng: 23.9 },
+  Bulgaria: { lat: 42.7, lng: 25.5 },
+  Serbia: { lat: 44.2, lng: 20.9 },
+  Luxembourg: { lat: 49.8, lng: 6.1 },
+  Algeria: { lat: 28, lng: 1.7 },
+  Pakistan: { lat: 30.4, lng: 69.3 },
+  Bangladesh: { lat: 23.7, lng: 90.4 },
+  'Sri Lanka': { lat: 7.9, lng: 80.8 },
+  Uruguay: { lat: -32.5, lng: -55.8 },
+  Venezuela: { lat: 6.4, lng: -66.6 },
+  Sudan: { lat: 12.9, lng: 30.2 },
+  'Cabo Verde': { lat: 16, lng: -24 },
+  Russia: { lat: 61, lng: 100 },
+  Cambodia: { lat: 12.6, lng: 105 },
+  'New Zealand': { lat: -41, lng: 174 },
+  'Antigua and Barbuda': { lat: 17.1, lng: -61.8 },
+};
+
+// ── Staleness policy (hours) ──
+export const STALE = {
+  market:   { warn:   48, crit:   168 },  // cert data — daily pipeline
+  trust:    { warn:   48, crit:   168 },
+  geo:      { warn:   48, crit:   168 },
+  gov:      { warn:   48, crit:   168 },
+  ops:      { warn:   72, crit:   336 },  // Bugzilla — a few days lag is normal
+  distrust: { warn: 1440, crit:  4320 },  // 60d warn / 180d crit — avg distrust every ~11 months
+  crypto:   { warn:  168, crit:   720 },  // root algo data — changes rarely
+  policy:   { warn:   48, crit:   168 },  // cert validity data — daily
+};
+
+// ── Root Algorithm Data ──
+// Enriches ROOTS with key family, key size, and signature hash per CA.
+export const ROOT_ALGO_DATA = {
+  'internet-security-research-group': [
+    { name: 'ISRG Root X1', family: 'RSA', bits: 4096, sig: 'SHA-256' },
+    { name: 'ISRG Root X2', family: 'ECC', bits: 384, curve: 'P-384', sig: 'SHA-384' },
+  ],
+  'google-trust-services-llc': [
+    { name: 'GTS Root R1', family: 'RSA', bits: 4096, sig: 'SHA-384' },
+    { name: 'GTS Root R2', family: 'RSA', bits: 4096, sig: 'SHA-384' },
+    { name: 'GTS Root R3', family: 'ECC', bits: 384, curve: 'P-384', sig: 'SHA-384' },
+    { name: 'GTS Root R4', family: 'ECC', bits: 384, curve: 'P-384', sig: 'SHA-384' },
+  ],
+  digicert: [
+    { name: 'DigiCert Global Root CA', family: 'RSA', bits: 2048, sig: 'SHA-1' },
+    { name: 'DigiCert Global Root G2', family: 'RSA', bits: 2048, sig: 'SHA-256' },
+    { name: 'DigiCert Global Root G3', family: 'ECC', bits: 384, curve: 'P-384', sig: 'SHA-384' },
+    { name: 'DigiCert High Assurance EV Root CA', family: 'RSA', bits: 2048, sig: 'SHA-1' },
+    { name: 'DigiCert Assured ID Root CA', family: 'RSA', bits: 2048, sig: 'SHA-1' },
+    { name: 'DigiCert Assured ID Root G2', family: 'RSA', bits: 2048, sig: 'SHA-256' },
+    { name: 'DigiCert Assured ID Root G3', family: 'ECC', bits: 384, curve: 'P-384', sig: 'SHA-384' },
+    { name: 'DigiCert Trusted Root G4', family: 'RSA', bits: 4096, sig: 'SHA-384' },
+    { name: 'DigiCert TLS ECC P384 Root G5', family: 'ECC', bits: 384, curve: 'P-384', sig: 'SHA-384' },
+    { name: 'DigiCert TLS RSA4096 Root G5', family: 'RSA', bits: 4096, sig: 'SHA-384' },
+    { name: 'Baltimore CyberTrust Root', family: 'RSA', bits: 2048, sig: 'SHA-1' },
+    { name: 'QuoVadis Root CA 2', family: 'RSA', bits: 4096, sig: 'SHA-1' },
+    { name: 'QuoVadis Root CA 2 G3', family: 'RSA', bits: 4096, sig: 'SHA-256' },
+    { name: 'QuoVadis Root CA 3 G3', family: 'RSA', bits: 4096, sig: 'SHA-256' },
+  ],
+  sectigo: [
+    { name: 'COMODO RSA Certification Authority', family: 'RSA', bits: 4096, sig: 'SHA-384' },
+    { name: 'COMODO ECC Certification Authority', family: 'ECC', bits: 384, curve: 'P-384', sig: 'SHA-384' },
+    { name: 'USERTrust RSA Certification Authority', family: 'RSA', bits: 4096, sig: 'SHA-384' },
+    { name: 'USERTrust ECC Certification Authority', family: 'ECC', bits: 384, curve: 'P-384', sig: 'SHA-384' },
+    { name: 'AAA Certificate Services', family: 'RSA', bits: 2048, sig: 'SHA-1' },
+    { name: 'Sectigo Public Server Authentication Root E46', family: 'ECC', bits: 384, curve: 'P-384', sig: 'SHA-384' },
+    { name: 'Sectigo Public Server Authentication Root R46', family: 'RSA', bits: 4096, sig: 'SHA-384' },
+    { name: 'Entrust Root Certification Authority - G2', family: 'RSA', bits: 2048, sig: 'SHA-256' },
+    { name: 'Entrust Root Certification Authority - EC1', family: 'ECC', bits: 384, curve: 'P-384', sig: 'SHA-384' },
+  ],
+  godaddy: [
+    { name: 'Go Daddy Root Certificate Authority - G2', family: 'RSA', bits: 2048, sig: 'SHA-256' },
+    { name: 'Go Daddy Class 2 Certification Authority', family: 'RSA', bits: 2048, sig: 'SHA-1' },
+    { name: 'Starfield Root Certificate Authority - G2', family: 'RSA', bits: 2048, sig: 'SHA-256' },
+    { name: 'Starfield Class 2 Certification Authority', family: 'RSA', bits: 2048, sig: 'SHA-1' },
+  ],
+  'microsoft-corporation': [
+    { name: 'Microsoft RSA Root Certificate Authority 2017', family: 'RSA', bits: 4096, sig: 'SHA-256' },
+    { name: 'Microsoft ECC Root Certificate Authority 2017', family: 'ECC', bits: 384, curve: 'P-384', sig: 'SHA-384' },
+  ],
+  'identrust-services-llc': [
+    { name: 'IdenTrust Commercial Root CA 1', family: 'RSA', bits: 4096, sig: 'SHA-256' },
+    { name: 'IdenTrust Public Sector Root CA 1', family: 'RSA', bits: 4096, sig: 'SHA-256' },
+  ],
+  'ssl-com': [
+    { name: 'SSL.com Root Certification Authority RSA', family: 'RSA', bits: 4096, sig: 'SHA-256' },
+    { name: 'SSL.com Root Certification Authority ECC', family: 'ECC', bits: 256, curve: 'P-256', sig: 'SHA-256' },
+    { name: 'SSL.com EV Root Certification Authority RSA R2', family: 'RSA', bits: 4096, sig: 'SHA-256' },
+    { name: 'SSL.com EV Root Certification Authority ECC', family: 'ECC', bits: 256, curve: 'P-256', sig: 'SHA-256' },
+    { name: 'SSL.com TLS RSA Root CA 2022', family: 'RSA', bits: 4096, sig: 'SHA-384' },
+    { name: 'SSL.com TLS ECC Root CA 2022', family: 'ECC', bits: 384, curve: 'P-384', sig: 'SHA-384' },
+  ],
+  'globalsign-nv-sa': [
+    { name: 'GlobalSign Root CA', family: 'RSA', bits: 2048, sig: 'SHA-1' },
+    { name: 'GlobalSign (R3)', family: 'RSA', bits: 2048, sig: 'SHA-256' },
+    { name: 'GlobalSign (R6)', family: 'RSA', bits: 4096, sig: 'SHA-256' },
+    { name: 'GlobalSign Root E46', family: 'ECC', bits: 384, curve: 'P-384', sig: 'SHA-384' },
+    { name: 'GlobalSign Root R46', family: 'RSA', bits: 4096, sig: 'SHA-384' },
+  ],
+  'amazon-trust-services': [
+    { name: 'Amazon Root CA 1', family: 'RSA', bits: 2048, sig: 'SHA-256' },
+    { name: 'Amazon Root CA 2', family: 'RSA', bits: 4096, sig: 'SHA-384' },
+    { name: 'Amazon Root CA 3', family: 'ECC', bits: 256, curve: 'P-256', sig: 'SHA-256' },
+    { name: 'Amazon Root CA 4', family: 'ECC', bits: 384, curve: 'P-384', sig: 'SHA-384' },
+  ],
+  actalis: [{ name: 'Actalis Authentication Root CA', family: 'RSA', bits: 4096, sig: 'SHA-256' }],
+  harica: [
+    { name: 'HARICA TLS RSA Root CA 2021', family: 'RSA', bits: 4096, sig: 'SHA-384' },
+    { name: 'HARICA TLS ECC Root CA 2021', family: 'ECC', bits: 384, curve: 'P-384', sig: 'SHA-384' },
+    { name: 'Hellenic Academic and Research Institutions RootCA 2015', family: 'RSA', bits: 4096, sig: 'SHA-256' },
+    {
+      n: 'Hellenic Academic and Research Institutions ECC RootCA 2015',
+      family: 'ECC',
+      bits: 384,
+      curve: 'P-384',
+      sig: 'SHA-384',
+    },
+  ],
+  'asseco-data-systems-s-a': [
+    { name: 'Certum Trusted Network CA', family: 'RSA', bits: 2048, sig: 'SHA-1' },
+    { name: 'Certum Trusted Network CA 2', family: 'RSA', bits: 4096, sig: 'SHA-512' },
+    { name: 'Certum EC-384 CA', family: 'ECC', bits: 384, curve: 'P-384', sig: 'SHA-384' },
+    { name: 'Certum Trusted Root CA', family: 'RSA', bits: 4096, sig: 'SHA-512' },
+  ],
+  'swisssign-ag': [
+    { name: 'SwissSign Gold CA - G2', family: 'RSA', bits: 4096, sig: 'SHA-256' },
+    { name: 'SwissSign RSA TLS Root CA 2022 - 1', family: 'RSA', bits: 4096, sig: 'SHA-384' },
+  ],
+  'telia-company': [
+    { name: 'Telia Root CA v2', family: 'RSA', bits: 4096, sig: 'SHA-384' },
+    { name: 'TeliaSonera Root CA v1', family: 'RSA', bits: 4096, sig: 'SHA-1' },
+  ],
+  buypass: [
+    { name: 'Buypass Class 2 Root CA', family: 'RSA', bits: 4096, sig: 'SHA-256' },
+    { name: 'Buypass Class 3 Root CA', family: 'RSA', bits: 4096, sig: 'SHA-256' },
+  ],
+  'd-trust': [
+    { name: 'D-TRUST BR Root CA 2 2023', family: 'RSA', bits: 4096, sig: 'SHA-384' },
+    { name: 'D-TRUST EV Root CA 2 2023', family: 'RSA', bits: 4096, sig: 'SHA-384' },
+  ],
+  'deutsche-telekom-security-gmbh': [
+    { name: 'T-TeleSec GlobalRoot Class 2', family: 'RSA', bits: 2048, sig: 'SHA-256' },
+    { name: 'Telekom Security TLS ECC Root 2020', family: 'ECC', bits: 384, curve: 'P-384', sig: 'SHA-384' },
+    { name: 'Telekom Security TLS RSA Root 2023', family: 'RSA', bits: 4096, sig: 'SHA-384' },
+  ],
+  'certainly-llc': [
+    { name: 'Certainly Root R1', family: 'RSA', bits: 4096, sig: 'SHA-384' },
+    { name: 'Certainly Root E1', family: 'ECC', bits: 384, curve: 'P-384', sig: 'SHA-384' },
+  ],
+  'naver-cloud-trust-services': [
+    { name: 'NAVER Global Root Certification Authority', family: 'RSA', bits: 4096, sig: 'SHA-256' },
+  ],
+  'chunghwa-telecom': [
+    { name: 'ePKI Root Certification Authority', family: 'RSA', bits: 4096, sig: 'SHA-256' },
+    { name: 'HiPKI Root CA - G1', family: 'RSA', bits: 4096, sig: 'SHA-256' },
+  ],
+  'secom-trust-systems-co-ltd': [
+    { name: 'Security Communication RootCA2', family: 'RSA', bits: 2048, sig: 'SHA-256' },
+    { name: 'Security Communication ECC RootCA1', family: 'ECC', bits: 256, curve: 'P-256', sig: 'SHA-256' },
+  ],
+  'taiwan-ca-inc-twca': [
+    { name: 'TWCA Global Root CA', family: 'RSA', bits: 4096, sig: 'SHA-256' },
+    { name: 'TWCA CYBER Root CA', family: 'RSA', bits: 4096, sig: 'SHA-384' },
+  ],
+};
+
+// ── Standards body thresholds for cryptographic posture tab ──
+export const STANDARDS_BODY_SOURCES = [
+  { id: 'nist', name: 'NIST', color: '#4ade80', doc: 'SP 800-57 Rev.5' },
+  { id: 'ecrypt', name: 'ECRYPT-CSA', color: '#60a5fa', doc: 'D5.4 (2018)' },
+  { id: 'bsi', name: 'BSI', color: '#f97316', doc: 'TR-02102-1' },
+  { id: 'anssi', name: 'ANSSI', color: '#a78bfa', doc: 'RGS v2.03' },
+  { id: 'cnsa', name: 'NSA CNSA', color: '#f43f5e', doc: 'CNSA Suite' },
+];
+
+export const ALGO_THRESHOLDS = [
+  {
+    section: 'Key Algorithms',
+    algo: 'RSA-2048',
+    nist: 'acceptable_to_2030',
+    ecrypt: 'below',
+    bsi: 'below',
+    anssi: 'acceptable_to_2030',
+    cnsa: 'below',
+    webpki: 'BR floor for leaf certificates. Most unexpired certs use this key size.',
+  },
+  {
+    section: 'Key Algorithms',
+    algo: 'RSA-3072',
+    nist: 'recommended',
+    ecrypt: 'recommended',
+    bsi: 'recommended',
+    anssi: 'post_2030',
+    cnsa: 'minimum',
+    webpki: 'Some newer intermediates. Chrome CCADB guidance trending here.',
+  },
+  {
+    section: 'Key Algorithms',
+    algo: 'RSA-4096',
+    nist: 'recommended',
+    ecrypt: 'recommended',
+    bsi: 'recommended',
+    anssi: 'recommended',
+    cnsa: 'acceptable',
+    webpki: 'Standard for root certificates. Most CA root keys use this size.',
+  },
+  {
+    section: 'Key Algorithms',
+    algo: 'ECC P-256',
+    nist: 'recommended',
+    ecrypt: 'recommended',
+    bsi: 'recommended',
+    anssi: 'recommended',
+    cnsa: 'below',
+    webpki: "Growing leaf adoption. Let's Encrypt, GTS issue P-256 leaves.",
+  },
+  {
+    section: 'Key Algorithms',
+    algo: 'ECC P-384',
+    nist: 'recommended',
+    ecrypt: 'recommended',
+    bsi: 'recommended',
+    anssi: 'recommended',
+    cnsa: 'minimum',
+    webpki: 'Newer roots and intermediates. NSA CNSA Suite minimum for ECC.',
+  },
+  {
+    section: 'Hash Algorithms',
+    algo: 'SHA-1',
+    nist: 'deprecated',
+    ecrypt: 'legacy',
+    bsi: 'deprecated',
+    anssi: 'deprecated',
+    cnsa: 'deprecated',
+    webpki: 'Prohibited for chain signatures since 2017. Present on legacy self-signed roots.',
+  },
+  {
+    section: 'Hash Algorithms',
+    algo: 'SHA-256',
+    nist: 'recommended',
+    ecrypt: 'recommended',
+    bsi: 'recommended',
+    anssi: 'recommended',
+    cnsa: 'below',
+    webpki: 'BR minimum for signatures. Most intermediates and leaves.',
+  },
+  {
+    section: 'Hash Algorithms',
+    algo: 'SHA-384',
+    nist: 'recommended',
+    ecrypt: 'recommended',
+    bsi: 'recommended',
+    anssi: 'recommended',
+    cnsa: 'minimum',
+    webpki: 'Standard for newer roots. NSA CNSA minimum. Trending in new generation.',
+  },
+  {
+    section: 'Hash Algorithms',
+    algo: 'SHA-512',
+    nist: 'recommended',
+    ecrypt: 'recommended',
+    bsi: 'recommended',
+    anssi: 'recommended',
+    cnsa: 'acceptable',
+    webpki: 'Used by Asseco/Certum. Uncommon elsewhere in WebPKI.',
+  },
+];
+
+// ── Ecosystem milestones for Annual Incident Volume chart ──
+// Each milestone explains an inflection in the incident curve.
+// `measurement: true` marks detection-capability milestones (default-selected).
+export const INCIDENT_MILESTONES = [
+  { id: 'acme', year: 2016, label: "ACME / Let's Encrypt launches", color: COLORS.gn, measurement: false },
+  { id: 'symantec', year: 2017, label: 'Symantec distrust announced', color: COLORS.rd, measurement: false },
+  { id: 'ct', year: 2018, label: 'CT mandatory (Chrome)', color: COLORS.ac, measurement: true },
+  { id: 'zlint', year: 2019, label: 'ZLint + crt.sh pipeline operational', color: COLORS.pu, measurement: true },
+  { id: 'covid', year: 2020, label: 'COVID-19 strains CA operations', color: COLORS.am, measurement: false },
+  { id: 'remediation', year: 2022, label: 'Post-wave CA remediation + reporting dip', color: COLORS.g5, measurement: false },
+  { id: 'chromerp', year: 2023, label: 'Chrome Root Program formalizes', color: COLORS.cy, measurement: false },
+  { id: 'entrust', year: 2024, label: 'Entrust distrust', color: COLORS.rd, measurement: false },
+  { id: 'mpic', year: 2025, label: 'MPIC required', color: COLORS.cy, measurement: false },
+];
+
+// Milestones for the governance/coverage rate timeline.
+// These are the structural events that explain observed changes in oversight coverage.
+// year is a float so quarterly events can be positioned precisely (2020.5 = mid-2020).
+export const GOVERNANCE_MILESTONES = [
+  { id: 'ct_mandatory',  year: 2018, label: 'CT mandatory (Chrome)',                   color: COLORS.ac,  defaultOn: false },
+  { id: 'moz_departure', year: 2020, label: 'Mozilla dominant contributor departs',    color: COLORS.am,  defaultOn: true  },
+  { id: 'covid',         year: 2020, label: 'COVID-19',                                color: COLORS.rd,  defaultOn: false },
+  { id: 'chrome_rp',     year: 2022, label: 'Chrome Root Program launches (Sep 2022)', color: COLORS.ac,  defaultOn: true  },
+  { id: 'workforce',     year: 2023, label: 'Tech industry workforce reductions',      color: COLORS.am,  defaultOn: false },
+  { id: 'eidas',         year: 2023, label: 'eIDAS Article 45 debate',                 color: COLORS.pu,  defaultOn: false },
+  { id: 'apple_enters',  year: 2024, label: 'Apple participation begins',              color: COLORS.tl,  defaultOn: true  },
+  { id: 'entrust',       year: 2024, label: 'Entrust distrust',                        color: COLORS.rd,  defaultOn: false },
+];

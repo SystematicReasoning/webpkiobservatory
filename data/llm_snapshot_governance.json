@@ -1,0 +1,4617 @@
+{
+  "$schema": "https://webpki.systematicreasoning.com/schema.json",
+  "version": "1.0.0",
+  "generatedAt": "2026-04-28T08:51:30.860176+00:00",
+  "snapshotUrl": "https://webpki.systematicreasoning.com/llm_snapshot.json",
+  "note": "Sliced subset of llm_snapshot.json. Fetch the full snapshot for complete data.",
+  "governance": {
+    "reportCard": {
+      "chrome": {
+        "enforcement": "15/15",
+        "firstPublicAction": 7,
+        "neverActed": 0,
+        "stillTrusts": 0,
+        "bugzillaCoverage": 716,
+        "bugzillaCoverageRecent": 277,
+        "substantiveOversight": 290,
+        "substantiveOversightRecent": 109,
+        "oversightComments": 1928,
+        "ballotsProposed": 16,
+        "voteParticipation": "9/14",
+        "substantiveBallots": 12,
+        "caOwners": 45,
+        "roots": 105,
+        "exclusiveRoots": 0,
+        "ungoverned_exclusive": 0
+      },
+      "mozilla": {
+        "enforcement": "15/15",
+        "firstPublicAction": 8,
+        "neverActed": 0,
+        "stillTrusts": 0,
+        "bugzillaCoverage": 813,
+        "bugzillaCoverageRecent": 268,
+        "substantiveOversight": 248,
+        "substantiveOversightRecent": 46,
+        "oversightComments": 1797,
+        "ballotsProposed": 18,
+        "voteParticipation": "14/14",
+        "substantiveBallots": 15,
+        "caOwners": 50,
+        "roots": 167,
+        "exclusiveRoots": 12,
+        "ungoverned_exclusive": 2
+      },
+      "apple": {
+        "enforcement": "15/15",
+        "firstPublicAction": 0,
+        "neverActed": 0,
+        "stillTrusts": 0,
+        "bugzillaCoverage": 44,
+        "bugzillaCoverageRecent": 44,
+        "substantiveOversight": 6,
+        "substantiveOversightRecent": 6,
+        "oversightComments": 62,
+        "ballotsProposed": 11,
+        "voteParticipation": "10/14",
+        "substantiveBallots": 9,
+        "caOwners": 39,
+        "roots": 140,
+        "exclusiveRoots": 2,
+        "ungoverned_exclusive": 0
+      },
+      "microsoft": {
+        "enforcement": "11/15",
+        "firstPublicAction": 0,
+        "neverActed": 4,
+        "stillTrusts": 4,
+        "bugzillaCoverage": 0,
+        "bugzillaCoverageRecent": 0,
+        "substantiveOversight": 0,
+        "substantiveOversightRecent": 0,
+        "oversightComments": 0,
+        "ballotsProposed": 0,
+        "voteParticipation": "4/14",
+        "substantiveBallots": 6,
+        "caOwners": 83,
+        "roots": 305,
+        "exclusiveRoots": 144,
+        "ungoverned_exclusive": 35
+      }
+    },
+    "meta": {
+      "bugsTotal": 1737,
+      "bugsWithComments": 1737,
+      "totalCommentsAnalyzed": 6105
+    },
+    "bugCreationByYear": [
+      {
+        "y": 2014,
+        "chrome": 0,
+        "mozilla": 2,
+        "apple": 0,
+        "microsoft": 0,
+        "other": 1
+      },
+      {
+        "y": 2015,
+        "chrome": 0,
+        "mozilla": 0,
+        "apple": 0,
+        "microsoft": 0,
+        "other": 1
+      },
+      {
+        "y": 2016,
+        "chrome": 0,
+        "mozilla": 3,
+        "apple": 0,
+        "microsoft": 0,
+        "other": 2
+      },
+      {
+        "y": 2017,
+        "chrome": 0,
+        "mozilla": 83,
+        "apple": 0,
+        "microsoft": 0,
+        "other": 40
+      },
+      {
+        "y": 2018,
+        "chrome": 3,
+        "mozilla": 59,
+        "apple": 0,
+        "microsoft": 0,
+        "other": 46
+      },
+      {
+        "y": 2019,
+        "chrome": 18,
+        "mozilla": 61,
+        "apple": 6,
+        "microsoft": 2,
+        "other": 168
+      },
+      {
+        "y": 2020,
+        "chrome": 28,
+        "mozilla": 20,
+        "apple": 3,
+        "microsoft": 3,
+        "other": 183
+      },
+      {
+        "y": 2021,
+        "chrome": 6,
+        "mozilla": 16,
+        "apple": 2,
+        "microsoft": 8,
+        "other": 155
+      },
+      {
+        "y": 2022,
+        "chrome": 0,
+        "mozilla": 10,
+        "apple": 4,
+        "microsoft": 0,
+        "other": 92
+      },
+      {
+        "y": 2023,
+        "chrome": 6,
+        "mozilla": 8,
+        "apple": 2,
+        "microsoft": 0,
+        "other": 117
+      },
+      {
+        "y": 2024,
+        "chrome": 3,
+        "mozilla": 5,
+        "apple": 0,
+        "microsoft": 1,
+        "other": 227
+      },
+      {
+        "y": 2025,
+        "chrome": 0,
+        "mozilla": 2,
+        "apple": 1,
+        "microsoft": 5,
+        "other": 215
+      },
+      {
+        "y": 2026,
+        "chrome": 0,
+        "mozilla": 0,
+        "apple": 8,
+        "microsoft": 10,
+        "other": 102
+      }
+    ],
+    "bugCreationTotals": {
+      "chrome": 64,
+      "mozilla": 269,
+      "apple": 26,
+      "microsoft": 29,
+      "other": 1349
+    },
+    "discoveryMethods": {
+      "totals": {
+        "external_researcher": 298,
+        "unknown": 444,
+        "community": 273,
+        "self_detected": 353,
+        "audit": 118,
+        "root_program": 64
+      },
+      "by_year": [
+        {
+          "y": 2014,
+          "self_detected": 0,
+          "external_researcher": 1,
+          "root_program": 0,
+          "community": 0,
+          "audit": 0,
+          "unknown": 2,
+          "total": 3
+        },
+        {
+          "y": 2015,
+          "self_detected": 0,
+          "external_researcher": 0,
+          "root_program": 0,
+          "community": 1,
+          "audit": 0,
+          "unknown": 0,
+          "total": 1
+        },
+        {
+          "y": 2016,
+          "self_detected": 0,
+          "external_researcher": 1,
+          "root_program": 0,
+          "community": 3,
+          "audit": 0,
+          "unknown": 1,
+          "total": 5
+        },
+        {
+          "y": 2017,
+          "self_detected": 13,
+          "external_researcher": 52,
+          "root_program": 1,
+          "community": 21,
+          "audit": 3,
+          "unknown": 9,
+          "total": 99
+        },
+        {
+          "y": 2018,
+          "self_detected": 13,
+          "external_researcher": 22,
+          "root_program": 12,
+          "community": 19,
+          "audit": 0,
+          "unknown": 20,
+          "total": 86
+        },
+        {
+          "y": 2019,
+          "self_detected": 25,
+          "external_researcher": 58,
+          "root_program": 4,
+          "community": 43,
+          "audit": 9,
+          "unknown": 74,
+          "total": 213
+        },
+        {
+          "y": 2020,
+          "self_detected": 8,
+          "external_researcher": 45,
+          "root_program": 4,
+          "community": 51,
+          "audit": 9,
+          "unknown": 91,
+          "total": 208
+        },
+        {
+          "y": 2021,
+          "self_detected": 16,
+          "external_researcher": 31,
+          "root_program": 4,
+          "community": 32,
+          "audit": 14,
+          "unknown": 67,
+          "total": 164
+        },
+        {
+          "y": 2022,
+          "self_detected": 15,
+          "external_researcher": 23,
+          "root_program": 7,
+          "community": 17,
+          "audit": 3,
+          "unknown": 34,
+          "total": 99
+        },
+        {
+          "y": 2023,
+          "self_detected": 23,
+          "external_researcher": 24,
+          "root_program": 10,
+          "community": 18,
+          "audit": 8,
+          "unknown": 46,
+          "total": 129
+        },
+        {
+          "y": 2024,
+          "self_detected": 82,
+          "external_researcher": 17,
+          "root_program": 3,
+          "community": 39,
+          "audit": 10,
+          "unknown": 54,
+          "total": 205
+        },
+        {
+          "y": 2025,
+          "self_detected": 101,
+          "external_researcher": 13,
+          "root_program": 12,
+          "community": 16,
+          "audit": 52,
+          "unknown": 25,
+          "total": 219
+        },
+        {
+          "y": 2026,
+          "self_detected": 57,
+          "external_researcher": 11,
+          "root_program": 7,
+          "community": 13,
+          "audit": 10,
+          "unknown": 21,
+          "total": 119
+        }
+      ],
+      "classified_bugs": 1550,
+      "excluded_distrusted": 187,
+      "corpus_note": "1550 bugs classified (excludes 187 distrusted-CA bugs). Corpus is larger than the 1,428-incident count in incidents.json because discovery classification runs on all non-distrusted bugs_raw entries, including ~75 sub-operator naming variants (e.g. 'DigiCert / ABB') that incidents.py normalizes into parent CA counts."
+    },
+    "programCommentSummary": {
+      "chrome": {
+        "total_comments": 2112,
+        "substantive_comments": 2112,
+        "workflow_events": 0,
+        "admin_comments": 124,
+        "oversight_comments": 1928,
+        "recent_oversight_comments": 637,
+        "technical_oversight_comments": 614,
+        "recent_technical_oversight_comments": 210,
+        "self_incident_comments": 60,
+        "recent_self_incident_comments": 30,
+        "bugs_engaged": 732,
+        "bugs_oversight": 716,
+        "recent_bugs_oversight": 277,
+        "bugs_technical_oversight": 290,
+        "recent_bugs_technical_oversight": 109
+      },
+      "mozilla": {
+        "total_comments": 3249,
+        "substantive_comments": 3248,
+        "workflow_events": 1,
+        "admin_comments": 1451,
+        "oversight_comments": 1797,
+        "recent_oversight_comments": 434,
+        "technical_oversight_comments": 452,
+        "recent_technical_oversight_comments": 76,
+        "self_incident_comments": 0,
+        "recent_self_incident_comments": 0,
+        "bugs_engaged": 813,
+        "bugs_oversight": 813,
+        "recent_bugs_oversight": 268,
+        "bugs_technical_oversight": 248,
+        "recent_bugs_technical_oversight": 46
+      },
+      "apple": {
+        "total_comments": 196,
+        "substantive_comments": 196,
+        "workflow_events": 0,
+        "admin_comments": 3,
+        "oversight_comments": 62,
+        "recent_oversight_comments": 62,
+        "technical_oversight_comments": 11,
+        "recent_technical_oversight_comments": 11,
+        "self_incident_comments": 131,
+        "recent_self_incident_comments": 74,
+        "bugs_engaged": 61,
+        "bugs_oversight": 44,
+        "recent_bugs_oversight": 44,
+        "bugs_technical_oversight": 6,
+        "recent_bugs_technical_oversight": 6
+      },
+      "microsoft": {
+        "total_comments": 549,
+        "substantive_comments": 549,
+        "workflow_events": 0,
+        "admin_comments": 2,
+        "oversight_comments": 0,
+        "recent_oversight_comments": 0,
+        "technical_oversight_comments": 0,
+        "recent_technical_oversight_comments": 0,
+        "self_incident_comments": 547,
+        "recent_self_incident_comments": 494,
+        "bugs_engaged": 45,
+        "bugs_oversight": 0,
+        "recent_bugs_oversight": 0,
+        "bugs_technical_oversight": 0,
+        "recent_bugs_technical_oversight": 0
+      }
+    },
+    "oversightConcentration": {
+      "chrome": {
+        "total_oversight_comments": 1928,
+        "unique_contributors": 6,
+        "top_contributor_pct": 87,
+        "top_3_contributors_pct": 97,
+        "top_contributor_email": "r**********@gmail.com",
+        "top_contributor_first_quarter": "2014-Q1",
+        "top_contributor_last_quarter": "2022-Q2"
+      },
+      "mozilla": {
+        "total_oversight_comments": 1797,
+        "unique_contributors": 9,
+        "top_contributor_pct": 47,
+        "top_3_contributors_pct": 90,
+        "top_contributor_email": "w******@fastly.com",
+        "top_contributor_first_quarter": "2017-Q4",
+        "top_contributor_last_quarter": "2020-Q2"
+      },
+      "apple": {
+        "total_oversight_comments": 62,
+        "unique_contributors": 2,
+        "top_contributor_pct": 63,
+        "top_3_contributors_pct": 100,
+        "top_contributor_email": "d**********@apple.com",
+        "top_contributor_first_quarter": "2025-Q4",
+        "top_contributor_last_quarter": "2026-Q1"
+      },
+      "microsoft": {
+        "total_oversight_comments": 0,
+        "unique_contributors": 0,
+        "top_contributor_pct": 0,
+        "top_3_contributors_pct": 0,
+        "top_contributor_email": null,
+        "top_contributor_first_quarter": null,
+        "top_contributor_last_quarter": null
+      }
+    },
+    "oversightQuarterly": [
+      {
+        "quarter": "2014-Q1",
+        "chrome_comments": 3,
+        "chrome_people": 1,
+        "mozilla_comments": 2,
+        "mozilla_people": 2,
+        "apple_comments": 0,
+        "apple_people": 0,
+        "microsoft_comments": 0,
+        "microsoft_people": 0
+      },
+      {
+        "quarter": "2015-Q3",
+        "chrome_comments": 0,
+        "chrome_people": 0,
+        "mozilla_comments": 2,
+        "mozilla_people": 1,
+        "apple_comments": 0,
+        "apple_people": 0,
+        "microsoft_comments": 0,
+        "microsoft_people": 0
+      },
+      {
+        "quarter": "2016-Q2",
+        "chrome_comments": 0,
+        "chrome_people": 0,
+        "mozilla_comments": 2,
+        "mozilla_people": 2,
+        "apple_comments": 0,
+        "apple_people": 0,
+        "microsoft_comments": 0,
+        "microsoft_people": 0
+      },
+      {
+        "quarter": "2016-Q3",
+        "chrome_comments": 0,
+        "chrome_people": 0,
+        "mozilla_comments": 4,
+        "mozilla_people": 2,
+        "apple_comments": 0,
+        "apple_people": 0,
+        "microsoft_comments": 0,
+        "microsoft_people": 0
+      },
+      {
+        "quarter": "2016-Q4",
+        "chrome_comments": 2,
+        "chrome_people": 1,
+        "mozilla_comments": 2,
+        "mozilla_people": 2,
+        "apple_comments": 0,
+        "apple_people": 0,
+        "microsoft_comments": 0,
+        "microsoft_people": 0
+      },
+      {
+        "quarter": "2017-Q1",
+        "chrome_comments": 2,
+        "chrome_people": 1,
+        "mozilla_comments": 14,
+        "mozilla_people": 3,
+        "apple_comments": 0,
+        "apple_people": 0,
+        "microsoft_comments": 0,
+        "microsoft_people": 0
+      },
+      {
+        "quarter": "2017-Q2",
+        "chrome_comments": 1,
+        "chrome_people": 1,
+        "mozilla_comments": 22,
+        "mozilla_people": 2,
+        "apple_comments": 0,
+        "apple_people": 0,
+        "microsoft_comments": 0,
+        "microsoft_people": 0
+      },
+      {
+        "quarter": "2017-Q3",
+        "chrome_comments": 122,
+        "chrome_people": 1,
+        "mozilla_comments": 102,
+        "mozilla_people": 3,
+        "apple_comments": 0,
+        "apple_people": 0,
+        "microsoft_comments": 0,
+        "microsoft_people": 0
+      },
+      {
+        "quarter": "2017-Q4",
+        "chrome_comments": 37,
+        "chrome_people": 1,
+        "mozilla_comments": 139,
+        "mozilla_people": 4,
+        "apple_comments": 0,
+        "apple_people": 0,
+        "microsoft_comments": 0,
+        "microsoft_people": 0
+      },
+      {
+        "quarter": "2018-Q1",
+        "chrome_comments": 7,
+        "chrome_people": 1,
+        "mozilla_comments": 107,
+        "mozilla_people": 3,
+        "apple_comments": 0,
+        "apple_people": 0,
+        "microsoft_comments": 0,
+        "microsoft_people": 0
+      },
+      {
+        "quarter": "2018-Q2",
+        "chrome_comments": 13,
+        "chrome_people": 1,
+        "mozilla_comments": 92,
+        "mozilla_people": 3,
+        "apple_comments": 0,
+        "apple_people": 0,
+        "microsoft_comments": 0,
+        "microsoft_people": 0
+      },
+      {
+        "quarter": "2018-Q3",
+        "chrome_comments": 4,
+        "chrome_people": 1,
+        "mozilla_comments": 50,
+        "mozilla_people": 2,
+        "apple_comments": 0,
+        "apple_people": 0,
+        "microsoft_comments": 0,
+        "microsoft_people": 0
+      },
+      {
+        "quarter": "2018-Q4",
+        "chrome_comments": 15,
+        "chrome_people": 1,
+        "mozilla_comments": 60,
+        "mozilla_people": 2,
+        "apple_comments": 0,
+        "apple_people": 0,
+        "microsoft_comments": 0,
+        "microsoft_people": 0
+      },
+      {
+        "quarter": "2019-Q1",
+        "chrome_comments": 155,
+        "chrome_people": 1,
+        "mozilla_comments": 144,
+        "mozilla_people": 3,
+        "apple_comments": 0,
+        "apple_people": 0,
+        "microsoft_comments": 0,
+        "microsoft_people": 0
+      },
+      {
+        "quarter": "2019-Q2",
+        "chrome_comments": 121,
+        "chrome_people": 1,
+        "mozilla_comments": 122,
+        "mozilla_people": 4,
+        "apple_comments": 0,
+        "apple_people": 0,
+        "microsoft_comments": 0,
+        "microsoft_people": 0
+      },
+      {
+        "quarter": "2019-Q3",
+        "chrome_comments": 207,
+        "chrome_people": 1,
+        "mozilla_comments": 134,
+        "mozilla_people": 2,
+        "apple_comments": 0,
+        "apple_people": 0,
+        "microsoft_comments": 0,
+        "microsoft_people": 0
+      },
+      {
+        "quarter": "2019-Q4",
+        "chrome_comments": 113,
+        "chrome_people": 1,
+        "mozilla_comments": 77,
+        "mozilla_people": 2,
+        "apple_comments": 0,
+        "apple_people": 0,
+        "microsoft_comments": 0,
+        "microsoft_people": 0
+      },
+      {
+        "quarter": "2020-Q1",
+        "chrome_comments": 125,
+        "chrome_people": 1,
+        "mozilla_comments": 75,
+        "mozilla_people": 2,
+        "apple_comments": 0,
+        "apple_people": 0,
+        "microsoft_comments": 0,
+        "microsoft_people": 0
+      },
+      {
+        "quarter": "2020-Q2",
+        "chrome_comments": 95,
+        "chrome_people": 1,
+        "mozilla_comments": 83,
+        "mozilla_people": 3,
+        "apple_comments": 0,
+        "apple_people": 0,
+        "microsoft_comments": 0,
+        "microsoft_people": 0
+      },
+      {
+        "quarter": "2020-Q3",
+        "chrome_comments": 222,
+        "chrome_people": 2,
+        "mozilla_comments": 88,
+        "mozilla_people": 1,
+        "apple_comments": 0,
+        "apple_people": 0,
+        "microsoft_comments": 0,
+        "microsoft_people": 0
+      },
+      {
+        "quarter": "2020-Q4",
+        "chrome_comments": 47,
+        "chrome_people": 1,
+        "mozilla_comments": 42,
+        "mozilla_people": 2,
+        "apple_comments": 0,
+        "apple_people": 0,
+        "microsoft_comments": 0,
+        "microsoft_people": 0
+      },
+      {
+        "quarter": "2021-Q1",
+        "chrome_comments": 62,
+        "chrome_people": 1,
+        "mozilla_comments": 41,
+        "mozilla_people": 2,
+        "apple_comments": 0,
+        "apple_people": 0,
+        "microsoft_comments": 0,
+        "microsoft_people": 0
+      },
+      {
+        "quarter": "2021-Q2",
+        "chrome_comments": 156,
+        "chrome_people": 1,
+        "mozilla_comments": 29,
+        "mozilla_people": 1,
+        "apple_comments": 0,
+        "apple_people": 0,
+        "microsoft_comments": 0,
+        "microsoft_people": 0
+      },
+      {
+        "quarter": "2021-Q3",
+        "chrome_comments": 119,
+        "chrome_people": 1,
+        "mozilla_comments": 32,
+        "mozilla_people": 1,
+        "apple_comments": 0,
+        "apple_people": 0,
+        "microsoft_comments": 0,
+        "microsoft_people": 0
+      },
+      {
+        "quarter": "2021-Q4",
+        "chrome_comments": 36,
+        "chrome_people": 2,
+        "mozilla_comments": 12,
+        "mozilla_people": 2,
+        "apple_comments": 0,
+        "apple_people": 0,
+        "microsoft_comments": 0,
+        "microsoft_people": 0
+      },
+      {
+        "quarter": "2022-Q1",
+        "chrome_comments": 16,
+        "chrome_people": 1,
+        "mozilla_comments": 18,
+        "mozilla_people": 1,
+        "apple_comments": 0,
+        "apple_people": 0,
+        "microsoft_comments": 0,
+        "microsoft_people": 0
+      },
+      {
+        "quarter": "2022-Q2",
+        "chrome_comments": 11,
+        "chrome_people": 1,
+        "mozilla_comments": 15,
+        "mozilla_people": 1,
+        "apple_comments": 0,
+        "apple_people": 0,
+        "microsoft_comments": 0,
+        "microsoft_people": 0
+      },
+      {
+        "quarter": "2022-Q3",
+        "chrome_comments": 6,
+        "chrome_people": 2,
+        "mozilla_comments": 11,
+        "mozilla_people": 1,
+        "apple_comments": 0,
+        "apple_people": 0,
+        "microsoft_comments": 0,
+        "microsoft_people": 0
+      },
+      {
+        "quarter": "2022-Q4",
+        "chrome_comments": 11,
+        "chrome_people": 2,
+        "mozilla_comments": 11,
+        "mozilla_people": 2,
+        "apple_comments": 0,
+        "apple_people": 0,
+        "microsoft_comments": 0,
+        "microsoft_people": 0
+      },
+      {
+        "quarter": "2023-Q1",
+        "chrome_comments": 9,
+        "chrome_people": 2,
+        "mozilla_comments": 12,
+        "mozilla_people": 1,
+        "apple_comments": 0,
+        "apple_people": 0,
+        "microsoft_comments": 0,
+        "microsoft_people": 0
+      },
+      {
+        "quarter": "2023-Q2",
+        "chrome_comments": 22,
+        "chrome_people": 2,
+        "mozilla_comments": 10,
+        "mozilla_people": 1,
+        "apple_comments": 0,
+        "apple_people": 0,
+        "microsoft_comments": 0,
+        "microsoft_people": 0
+      },
+      {
+        "quarter": "2023-Q3",
+        "chrome_comments": 3,
+        "chrome_people": 2,
+        "mozilla_comments": 27,
+        "mozilla_people": 1,
+        "apple_comments": 0,
+        "apple_people": 0,
+        "microsoft_comments": 0,
+        "microsoft_people": 0
+      },
+      {
+        "quarter": "2023-Q4",
+        "chrome_comments": 4,
+        "chrome_people": 2,
+        "mozilla_comments": 19,
+        "mozilla_people": 1,
+        "apple_comments": 0,
+        "apple_people": 0,
+        "microsoft_comments": 0,
+        "microsoft_people": 0
+      },
+      {
+        "quarter": "2024-Q1",
+        "chrome_comments": 14,
+        "chrome_people": 2,
+        "mozilla_comments": 14,
+        "mozilla_people": 1,
+        "apple_comments": 1,
+        "apple_people": 1,
+        "microsoft_comments": 0,
+        "microsoft_people": 0
+      },
+      {
+        "quarter": "2024-Q2",
+        "chrome_comments": 39,
+        "chrome_people": 2,
+        "mozilla_comments": 48,
+        "mozilla_people": 1,
+        "apple_comments": 17,
+        "apple_people": 1,
+        "microsoft_comments": 0,
+        "microsoft_people": 0
+      },
+      {
+        "quarter": "2024-Q3",
+        "chrome_comments": 13,
+        "chrome_people": 2,
+        "mozilla_comments": 33,
+        "mozilla_people": 1,
+        "apple_comments": 3,
+        "apple_people": 1,
+        "microsoft_comments": 0,
+        "microsoft_people": 0
+      },
+      {
+        "quarter": "2024-Q4",
+        "chrome_comments": 19,
+        "chrome_people": 3,
+        "mozilla_comments": 33,
+        "mozilla_people": 1,
+        "apple_comments": 0,
+        "apple_people": 0,
+        "microsoft_comments": 0,
+        "microsoft_people": 0
+      },
+      {
+        "quarter": "2025-Q1",
+        "chrome_comments": 20,
+        "chrome_people": 3,
+        "mozilla_comments": 40,
+        "mozilla_people": 1,
+        "apple_comments": 0,
+        "apple_people": 0,
+        "microsoft_comments": 0,
+        "microsoft_people": 0
+      },
+      {
+        "quarter": "2025-Q2",
+        "chrome_comments": 30,
+        "chrome_people": 2,
+        "mozilla_comments": 9,
+        "mozilla_people": 1,
+        "apple_comments": 0,
+        "apple_people": 0,
+        "microsoft_comments": 0,
+        "microsoft_people": 0
+      },
+      {
+        "quarter": "2025-Q3",
+        "chrome_comments": 22,
+        "chrome_people": 1,
+        "mozilla_comments": 9,
+        "mozilla_people": 1,
+        "apple_comments": 2,
+        "apple_people": 1,
+        "microsoft_comments": 0,
+        "microsoft_people": 0
+      },
+      {
+        "quarter": "2025-Q4",
+        "chrome_comments": 11,
+        "chrome_people": 1,
+        "mozilla_comments": 1,
+        "mozilla_people": 1,
+        "apple_comments": 14,
+        "apple_people": 1,
+        "microsoft_comments": 0,
+        "microsoft_people": 0
+      },
+      {
+        "quarter": "2026-Q1",
+        "chrome_comments": 14,
+        "chrome_people": 1,
+        "mozilla_comments": 9,
+        "mozilla_people": 1,
+        "apple_comments": 25,
+        "apple_people": 1,
+        "microsoft_comments": 0,
+        "microsoft_people": 0
+      },
+      {
+        "quarter": "2026-Q2",
+        "chrome_comments": 0,
+        "chrome_people": 0,
+        "mozilla_comments": 1,
+        "mozilla_people": 1,
+        "apple_comments": 0,
+        "apple_people": 0,
+        "microsoft_comments": 0,
+        "microsoft_people": 0
+      }
+    ],
+    "enforcement": {
+      "chrome": {
+        "acted": 15,
+        "total": 15,
+        "initiated": 7,
+        "followed": 8,
+        "still_trusts": []
+      },
+      "mozilla": {
+        "acted": 15,
+        "total": 15,
+        "initiated": 8,
+        "followed": 7,
+        "still_trusts": []
+      },
+      "apple": {
+        "acted": 15,
+        "total": 15,
+        "initiated": 0,
+        "followed": 15,
+        "still_trusts": []
+      },
+      "microsoft": {
+        "acted": 11,
+        "total": 15,
+        "initiated": 0,
+        "followed": 11,
+        "still_trusts": [
+          "India CCA (NIC)",
+          "Certinomis",
+          "Camerfirma",
+          "Visa"
+        ]
+      }
+    },
+    "distrustEvents": [
+      {
+        "ca": "DigiNotar",
+        "year": 2011,
+        "leader": "chrome",
+        "chrome": "distrusted",
+        "mozilla": "distrusted",
+        "apple": "distrusted",
+        "microsoft": "distrusted"
+      },
+      {
+        "ca": "ANSSI",
+        "year": 2013,
+        "leader": "chrome",
+        "chrome": "distrusted",
+        "mozilla": "distrusted",
+        "apple": "distrusted",
+        "microsoft": "distrusted"
+      },
+      {
+        "ca": "India CCA (NIC)",
+        "year": 2014,
+        "leader": "chrome",
+        "chrome": "distrusted",
+        "mozilla": "distrusted",
+        "apple": "distrusted",
+        "microsoft": "trusted"
+      },
+      {
+        "ca": "CNNIC",
+        "year": 2015,
+        "leader": "chrome",
+        "chrome": "distrusted",
+        "mozilla": "distrusted",
+        "apple": "distrusted",
+        "microsoft": "distrusted"
+      },
+      {
+        "ca": "WoSign / StartCom",
+        "year": 2016,
+        "leader": "mozilla",
+        "chrome": "distrusted",
+        "mozilla": "distrusted",
+        "apple": "distrusted",
+        "microsoft": "distrusted"
+      },
+      {
+        "ca": "Symantec",
+        "year": 2017,
+        "leader": "chrome",
+        "chrome": "distrusted",
+        "mozilla": "distrusted",
+        "apple": "distrusted",
+        "microsoft": "distrusted"
+      },
+      {
+        "ca": "TurkTrust",
+        "year": 2018,
+        "leader": "mozilla",
+        "chrome": "distrusted",
+        "mozilla": "distrusted",
+        "apple": "distrusted",
+        "microsoft": "distrusted"
+      },
+      {
+        "ca": "Certinomis",
+        "year": 2019,
+        "leader": "mozilla",
+        "chrome": "distrusted",
+        "mozilla": "distrusted",
+        "apple": "distrusted",
+        "microsoft": "trusted"
+      },
+      {
+        "ca": "PROCERT",
+        "year": 2020,
+        "leader": "mozilla",
+        "chrome": "distrusted",
+        "mozilla": "distrusted",
+        "apple": "distrusted",
+        "microsoft": "distrusted"
+      },
+      {
+        "ca": "Camerfirma",
+        "year": 2021,
+        "leader": "mozilla",
+        "chrome": "distrusted",
+        "mozilla": "distrusted",
+        "apple": "distrusted",
+        "microsoft": "trusted"
+      },
+      {
+        "ca": "TrustCor",
+        "year": 2022,
+        "leader": "mozilla",
+        "chrome": "distrusted",
+        "mozilla": "distrusted",
+        "apple": "distrusted",
+        "microsoft": "distrusted"
+      },
+      {
+        "ca": "Visa",
+        "year": 2022,
+        "leader": "mozilla",
+        "chrome": "distrusted",
+        "mozilla": "distrusted",
+        "apple": "distrusted",
+        "microsoft": "trusted"
+      },
+      {
+        "ca": "e-Tugra",
+        "year": 2023,
+        "leader": "chrome",
+        "chrome": "distrusted",
+        "mozilla": "distrusted",
+        "apple": "distrusted",
+        "microsoft": "distrusted"
+      },
+      {
+        "ca": "Ecommerce Monitoring",
+        "year": 2024,
+        "leader": "mozilla",
+        "chrome": "distrusted",
+        "mozilla": "distrusted",
+        "apple": "distrusted",
+        "microsoft": "distrusted"
+      },
+      {
+        "ca": "Entrust",
+        "year": 2024,
+        "leader": "chrome",
+        "chrome": "distrusted",
+        "mozilla": "distrusted",
+        "apple": "distrusted",
+        "microsoft": "distrusted"
+      }
+    ],
+    "storePosture": {
+      "mozilla": {
+        "owners": 50,
+        "roots": 167,
+        "exclusive_count": 12,
+        "gov_ca_count": 15,
+        "dark_matter": {
+          "exclusive_cas": 2,
+          "exclusive_zero_incident": 2,
+          "zero_incident_cas": 13,
+          "total_cas": 58,
+          "exclusive_zero_pct": 100.0,
+          "zero_incident_pct": 22.4
+        }
+      },
+      "microsoft": {
+        "owners": 83,
+        "roots": 305,
+        "exclusive_count": 144,
+        "gov_ca_count": 31,
+        "dark_matter": {
+          "exclusive_cas": 37,
+          "exclusive_zero_incident": 35,
+          "zero_incident_cas": 46,
+          "total_cas": 91,
+          "exclusive_zero_pct": 94.6,
+          "zero_incident_pct": 50.5
+        }
+      },
+      "chrome": {
+        "owners": 45,
+        "roots": 105,
+        "exclusive_count": 0,
+        "gov_ca_count": 14,
+        "dark_matter": {
+          "exclusive_cas": 0,
+          "exclusive_zero_incident": 0,
+          "zero_incident_cas": 9,
+          "total_cas": 52,
+          "exclusive_zero_pct": 0.0,
+          "zero_incident_pct": 17.3
+        }
+      },
+      "apple": {
+        "owners": 39,
+        "roots": 140,
+        "exclusive_count": 2,
+        "gov_ca_count": 10,
+        "dark_matter": {
+          "exclusive_cas": 0,
+          "exclusive_zero_incident": 0,
+          "zero_incident_cas": 9,
+          "total_cas": 46,
+          "exclusive_zero_pct": 0.0,
+          "zero_incident_pct": 19.6
+        }
+      }
+    },
+    "policyLeadership": {
+      "by_working_group": {
+        "server_certificate": {
+          "programs": {
+            "chrome": {
+              "proposed": 14,
+              "endorsed": 16,
+              "voted": 9,
+              "absent": 5,
+              "ballots_with_votes": 14
+            },
+            "mozilla": {
+              "proposed": 15,
+              "endorsed": 21,
+              "voted": 14,
+              "absent": 0,
+              "ballots_with_votes": 14
+            },
+            "apple": {
+              "proposed": 7,
+              "endorsed": 14,
+              "voted": 10,
+              "absent": 4,
+              "ballots_with_votes": 14
+            },
+            "microsoft": {
+              "proposed": 0,
+              "endorsed": 9,
+              "voted": 4,
+              "absent": 10,
+              "ballots_with_votes": 14
+            }
+          },
+          "total_ballots": 101,
+          "prefix": "SC"
+        },
+        "code_signing": {
+          "programs": {
+            "chrome": {
+              "proposed": 0,
+              "endorsed": 0,
+              "voted": 0,
+              "absent": 1,
+              "ballots_with_votes": 1
+            },
+            "mozilla": {
+              "proposed": 0,
+              "endorsed": 0,
+              "voted": 0,
+              "absent": 1,
+              "ballots_with_votes": 1
+            },
+            "apple": {
+              "proposed": 0,
+              "endorsed": 1,
+              "voted": 0,
+              "absent": 1,
+              "ballots_with_votes": 1
+            },
+            "microsoft": {
+              "proposed": 6,
+              "endorsed": 12,
+              "voted": 1,
+              "absent": 0,
+              "ballots_with_votes": 1
+            }
+          },
+          "total_ballots": 35,
+          "prefix": "CSC"
+        },
+        "smime": {
+          "programs": {
+            "chrome": {
+              "proposed": 0,
+              "endorsed": 1,
+              "voted": 1,
+              "absent": 13,
+              "ballots_with_votes": 14
+            },
+            "mozilla": {
+              "proposed": 0,
+              "endorsed": 5,
+              "voted": 14,
+              "absent": 0,
+              "ballots_with_votes": 14
+            },
+            "apple": {
+              "proposed": 0,
+              "endorsed": 4,
+              "voted": 8,
+              "absent": 6,
+              "ballots_with_votes": 14
+            },
+            "microsoft": {
+              "proposed": 0,
+              "endorsed": 0,
+              "voted": 1,
+              "absent": 13,
+              "ballots_with_votes": 14
+            }
+          },
+          "total_ballots": 18,
+          "prefix": "SMC"
+        },
+        "network_security": {
+          "programs": {
+            "chrome": {
+              "proposed": 2,
+              "endorsed": 6,
+              "voted": 0,
+              "absent": 0,
+              "ballots_with_votes": 0
+            },
+            "mozilla": {
+              "proposed": 3,
+              "endorsed": 4,
+              "voted": 0,
+              "absent": 0,
+              "ballots_with_votes": 0
+            },
+            "apple": {
+              "proposed": 4,
+              "endorsed": 7,
+              "voted": 0,
+              "absent": 0,
+              "ballots_with_votes": 0
+            },
+            "microsoft": {
+              "proposed": 0,
+              "endorsed": 3,
+              "voted": 0,
+              "absent": 0,
+              "ballots_with_votes": 0
+            }
+          },
+          "total_ballots": 20,
+          "prefix": "NS"
+        }
+      },
+      "recent_votes": [
+        {
+          "id": "SC-095",
+          "title": "Ballot SC095v3: Clean-up 2025",
+          "result": "passed",
+          "chrome": "absent",
+          "mozilla": "yes",
+          "apple": "yes",
+          "microsoft": "absent"
+        },
+        {
+          "id": "SC-097",
+          "title": "Ballot SC097: Sunset all remaining use of SHA-1 signatures in Certificates and CRLs",
+          "result": "passed",
+          "chrome": "yes",
+          "mozilla": "yes",
+          "apple": "yes",
+          "microsoft": "yes"
+        },
+        {
+          "id": "SC-094",
+          "title": "Ballot SC094v2: DNSSEC exception in email DCV methods",
+          "result": "passed",
+          "chrome": "absent",
+          "mozilla": "yes",
+          "apple": "yes",
+          "microsoft": "absent"
+        },
+        {
+          "id": "SC-096",
+          "title": "Ballot SC096: Carve-out for DNSSEC verification logging requirements",
+          "result": "passed",
+          "chrome": "absent",
+          "mozilla": "yes",
+          "apple": "yes",
+          "microsoft": "absent"
+        },
+        {
+          "id": "SC-090",
+          "title": "Ballot SC-090: Gradually sunset all remaining email-based, phone-based, and ‘crossover’ validation methods from Sections 3.2.2.4 and 3.2.2.5",
+          "result": "passed",
+          "chrome": "yes",
+          "mozilla": "yes",
+          "apple": "yes",
+          "microsoft": "absent"
+        },
+        {
+          "id": "SC-091",
+          "title": "Ballot SC-091: Sunset 3.2.2.5.3 Reverse Address Lookup Validation, proposal of new DNS-based validation using Persistent DCV TXT Record for IP addresses",
+          "result": "passed",
+          "chrome": "yes",
+          "mozilla": "yes",
+          "apple": "absent",
+          "microsoft": "absent"
+        },
+        {
+          "id": "SC-086",
+          "title": "Ballot SC-086v3: Sunset the Inclusion of IP Reverse Address Domain Names",
+          "result": "passed",
+          "chrome": "yes",
+          "mozilla": "yes",
+          "apple": "yes",
+          "microsoft": "absent"
+        },
+        {
+          "id": "SC-088",
+          "title": "Ballot SC-088v3: DNS TXT Record with Persistent Value DCV Method",
+          "result": "passed",
+          "chrome": "yes",
+          "mozilla": "yes",
+          "apple": "absent",
+          "microsoft": "absent"
+        },
+        {
+          "id": "SC-092",
+          "title": "Ballot SC-092: Sunset use of Precertificate Signing CAs",
+          "result": "passed",
+          "chrome": "yes",
+          "mozilla": "yes",
+          "apple": "yes",
+          "microsoft": "absent"
+        },
+        {
+          "id": "SC-089",
+          "title": "Ballot SC-089: Mass Revocation Planning",
+          "result": "passed",
+          "chrome": "absent",
+          "mozilla": "yes",
+          "apple": "absent",
+          "microsoft": "yes"
+        },
+        {
+          "id": "SC-085",
+          "title": "Ballot SC-085v2: Require Validation of DNSSEC (when present) for CAA and DCV Lookups",
+          "result": "passed",
+          "chrome": "absent",
+          "mozilla": "yes",
+          "apple": "yes",
+          "microsoft": "absent"
+        },
+        {
+          "id": "SC-081",
+          "title": "Ballot SC081v3: Introduce Schedule of Reducing Validity and Data Reuse Periods",
+          "result": "passed",
+          "chrome": "yes",
+          "mozilla": "yes",
+          "apple": "yes",
+          "microsoft": "yes"
+        },
+        {
+          "id": "SC-084",
+          "title": "Ballot SC084: DNS Labeled with ACME Account ID Validation Method",
+          "result": "passed",
+          "chrome": "yes",
+          "mozilla": "yes",
+          "apple": "absent",
+          "microsoft": "yes"
+        },
+        {
+          "id": "SC-083",
+          "title": "Ballot SC083v3: Winter 2024-2025 Cleanup Ballot",
+          "result": "passed",
+          "chrome": "yes",
+          "mozilla": "yes",
+          "apple": "yes",
+          "microsoft": "absent"
+        }
+      ],
+      "total_sc_ballots": 101,
+      "programs": {
+        "chrome": {
+          "proposed": 16,
+          "endorsed": 22,
+          "voted": 9,
+          "absent": 5,
+          "ballots_with_votes": 14,
+          "vote_participation_pct": 64
+        },
+        "mozilla": {
+          "proposed": 18,
+          "endorsed": 25,
+          "voted": 14,
+          "absent": 0,
+          "ballots_with_votes": 14,
+          "vote_participation_pct": 100
+        },
+        "apple": {
+          "proposed": 11,
+          "endorsed": 21,
+          "voted": 10,
+          "absent": 4,
+          "ballots_with_votes": 14,
+          "vote_participation_pct": 71
+        },
+        "microsoft": {
+          "proposed": 0,
+          "endorsed": 12,
+          "voted": 4,
+          "absent": 10,
+          "ballots_with_votes": 14,
+          "vote_participation_pct": 29
+        }
+      }
+    },
+    "ballotClassification": {
+      "total_ballots": 174,
+      "recent_count": 50,
+      "substantive_ballots": 104,
+      "pct_substantive": 60,
+      "browser_summary": {
+        "chrome": {
+          "total": 16,
+          "substantive": 12,
+          "pct_substantive": 75,
+          "endorsed": 22,
+          "by_category": {
+            "uncategorized": 3,
+            "validation_improvement": 3,
+            "security_modernization": 3,
+            "transparency_profiles": 3,
+            "infrastructure": 3,
+            "cleanup": 1
+          }
+        },
+        "mozilla": {
+          "total": 18,
+          "substantive": 15,
+          "pct_substantive": 83,
+          "endorsed": 30,
+          "by_category": {
+            "incident_response": 3,
+            "governance": 1,
+            "security_modernization": 2,
+            "infrastructure": 5,
+            "validation_improvement": 3,
+            "transparency_profiles": 2,
+            "cleanup": 1,
+            "uncategorized": 1
+          }
+        },
+        "apple": {
+          "total": 11,
+          "substantive": 9,
+          "pct_substantive": 82,
+          "endorsed": 24,
+          "by_category": {
+            "validation_improvement": 3,
+            "security_modernization": 1,
+            "audit_standards": 1,
+            "infrastructure": 4,
+            "uncategorized": 2
+          }
+        },
+        "microsoft": {
+          "total": 6,
+          "substantive": 6,
+          "pct_substantive": 100,
+          "endorsed": 24,
+          "by_category": {
+            "security_modernization": 1,
+            "validation_improvement": 4,
+            "infrastructure": 1
+          }
+        }
+      },
+      "top_ca_contributors": [
+        {
+          "name": "DigiCert",
+          "total": 60,
+          "substantive": 29,
+          "pct_substantive": 48,
+          "endorsed": 39,
+          "by_category": {
+            "security_modernization": 3,
+            "cleanup": 9,
+            "incident_response": 3,
+            "uncategorized": 8,
+            "governance": 14,
+            "infrastructure": 6,
+            "transparency_profiles": 5,
+            "validation_improvement": 10,
+            "audit_standards": 2
+          }
+        },
+        {
+          "name": "HARICA",
+          "total": 14,
+          "substantive": 8,
+          "pct_substantive": 57,
+          "endorsed": 29,
+          "by_category": {
+            "validation_improvement": 2,
+            "transparency_profiles": 2,
+            "governance": 3,
+            "infrastructure": 4,
+            "uncategorized": 1,
+            "cleanup": 2
+          }
+        },
+        {
+          "name": "Other CA",
+          "total": 13,
+          "substantive": 5,
+          "pct_substantive": 38,
+          "endorsed": 0,
+          "by_category": {
+            "cleanup": 5,
+            "uncategorized": 1,
+            "validation_improvement": 4,
+            "governance": 2,
+            "infrastructure": 1
+          }
+        },
+        {
+          "name": "Sectigo",
+          "total": 10,
+          "substantive": 6,
+          "pct_substantive": 60,
+          "endorsed": 18,
+          "by_category": {
+            "infrastructure": 3,
+            "cleanup": 3,
+            "transparency_profiles": 1,
+            "uncategorized": 1,
+            "validation_improvement": 1,
+            "incident_response": 1
+          }
+        },
+        {
+          "name": "Entrust",
+          "total": 10,
+          "substantive": 3,
+          "pct_substantive": 30,
+          "endorsed": 22,
+          "by_category": {
+            "transparency_profiles": 2,
+            "uncategorized": 5,
+            "cleanup": 2,
+            "infrastructure": 1
+          }
+        },
+        {
+          "name": "TrustCor",
+          "total": 5,
+          "substantive": 5,
+          "pct_substantive": 100,
+          "endorsed": 8,
+          "by_category": {
+            "infrastructure": 5
+          }
+        },
+        {
+          "name": "GlobalSign",
+          "total": 5,
+          "substantive": 5,
+          "pct_substantive": 100,
+          "endorsed": 11,
+          "by_category": {
+            "validation_improvement": 4,
+            "security_modernization": 1
+          }
+        },
+        {
+          "name": "Let's Encrypt",
+          "total": 4,
+          "substantive": 1,
+          "pct_substantive": 25,
+          "endorsed": 4,
+          "by_category": {
+            "cleanup": 2,
+            "governance": 1,
+            "incident_response": 1
+          }
+        },
+        {
+          "name": "SecureTrust",
+          "total": 2,
+          "substantive": 0,
+          "pct_substantive": 0,
+          "endorsed": 0,
+          "by_category": {
+            "cleanup": 2
+          }
+        }
+      ],
+      "category_totals": {
+        "security_modernization": {
+          "browsers": 7,
+          "cas": 4,
+          "total": 11
+        },
+        "validation_improvement": {
+          "browsers": 13,
+          "cas": 21,
+          "total": 34
+        },
+        "incident_response": {
+          "browsers": 3,
+          "cas": 5,
+          "total": 8
+        },
+        "transparency_profiles": {
+          "browsers": 5,
+          "cas": 10,
+          "total": 15
+        },
+        "infrastructure": {
+          "browsers": 13,
+          "cas": 20,
+          "total": 33
+        },
+        "cleanup": {
+          "browsers": 2,
+          "cas": 25,
+          "total": 27
+        },
+        "governance": {
+          "browsers": 1,
+          "cas": 20,
+          "total": 21
+        },
+        "audit_standards": {
+          "browsers": 1,
+          "cas": 2,
+          "total": 3
+        },
+        "uncategorized": {
+          "browsers": 6,
+          "cas": 16,
+          "total": 22
+        }
+      },
+      "recent": {
+        "total_ballots": 50,
+        "substantive_ballots": 31,
+        "browser_summary": {
+          "chrome": {
+            "total": 9,
+            "substantive": 6,
+            "pct_substantive": 67,
+            "endorsed": 9,
+            "by_category": {
+              "uncategorized": 3,
+              "validation_improvement": 3,
+              "security_modernization": 2,
+              "transparency_profiles": 1
+            }
+          },
+          "mozilla": {
+            "total": 4,
+            "substantive": 3,
+            "pct_substantive": 75,
+            "endorsed": 15,
+            "by_category": {
+              "incident_response": 2,
+              "governance": 1,
+              "security_modernization": 1
+            }
+          },
+          "apple": {
+            "total": 7,
+            "substantive": 6,
+            "pct_substantive": 86,
+            "endorsed": 11,
+            "by_category": {
+              "validation_improvement": 3,
+              "security_modernization": 1,
+              "audit_standards": 1,
+              "infrastructure": 1,
+              "uncategorized": 1
+            }
+          },
+          "microsoft": {
+            "total": 0,
+            "substantive": 0,
+            "pct_substantive": 0,
+            "endorsed": 5,
+            "by_category": {}
+          }
+        },
+        "top_ca_contributors": [
+          {
+            "name": "Other CA",
+            "total": 6,
+            "substantive": 3,
+            "pct_substantive": 50,
+            "endorsed": 0,
+            "by_category": {
+              "cleanup": 1,
+              "uncategorized": 1,
+              "validation_improvement": 3,
+              "governance": 1
+            }
+          },
+          {
+            "name": "Sectigo",
+            "total": 6,
+            "substantive": 3,
+            "pct_substantive": 50,
+            "endorsed": 7,
+            "by_category": {
+              "infrastructure": 2,
+              "cleanup": 3,
+              "transparency_profiles": 1
+            }
+          },
+          {
+            "name": "DigiCert",
+            "total": 5,
+            "substantive": 3,
+            "pct_substantive": 60,
+            "endorsed": 10,
+            "by_category": {
+              "security_modernization": 2,
+              "cleanup": 1,
+              "incident_response": 1,
+              "uncategorized": 1
+            }
+          },
+          {
+            "name": "HARICA",
+            "total": 4,
+            "substantive": 4,
+            "pct_substantive": 100,
+            "endorsed": 13,
+            "by_category": {
+              "validation_improvement": 2,
+              "transparency_profiles": 2
+            }
+          },
+          {
+            "name": "Let's Encrypt",
+            "total": 4,
+            "substantive": 1,
+            "pct_substantive": 25,
+            "endorsed": 2,
+            "by_category": {
+              "cleanup": 2,
+              "governance": 1,
+              "incident_response": 1
+            }
+          },
+          {
+            "name": "Entrust",
+            "total": 3,
+            "substantive": 2,
+            "pct_substantive": 67,
+            "endorsed": 3,
+            "by_category": {
+              "transparency_profiles": 2,
+              "uncategorized": 1
+            }
+          },
+          {
+            "name": "SecureTrust",
+            "total": 2,
+            "substantive": 0,
+            "pct_substantive": 0,
+            "endorsed": 0,
+            "by_category": {
+              "cleanup": 2
+            }
+          }
+        ],
+        "category_totals": {
+          "security_modernization": {
+            "browsers": 4,
+            "cas": 2,
+            "total": 6
+          },
+          "validation_improvement": {
+            "browsers": 6,
+            "cas": 5,
+            "total": 11
+          },
+          "incident_response": {
+            "browsers": 2,
+            "cas": 2,
+            "total": 4
+          },
+          "transparency_profiles": {
+            "browsers": 1,
+            "cas": 5,
+            "total": 6
+          },
+          "infrastructure": {
+            "browsers": 1,
+            "cas": 2,
+            "total": 3
+          },
+          "cleanup": {
+            "browsers": 0,
+            "cas": 9,
+            "total": 9
+          },
+          "governance": {
+            "browsers": 1,
+            "cas": 2,
+            "total": 3
+          },
+          "audit_standards": {
+            "browsers": 1,
+            "cas": 0,
+            "total": 1
+          },
+          "uncategorized": {
+            "browsers": 4,
+            "cas": 3,
+            "total": 7
+          }
+        }
+      }
+    },
+    "notableGaps": {
+      "current": [
+        {
+          "ca": "Certainly LLC",
+          "rank": 13,
+          "certs": 498582,
+          "stores": {
+            "chrome": "included",
+            "mozilla": "included",
+            "apple": "included",
+            "microsoft": "not_included"
+          },
+          "missing_from": [
+            "microsoft"
+          ],
+          "included_in": [
+            "chrome",
+            "mozilla",
+            "apple"
+          ],
+          "wait_years": 5,
+          "wait_source": "root_creation"
+        },
+        {
+          "ca": "TrustAsia Technologies, Inc.",
+          "rank": 14,
+          "certs": 449634,
+          "stores": {
+            "chrome": "included",
+            "mozilla": "included",
+            "apple": "not_included",
+            "microsoft": "not_included"
+          },
+          "missing_from": [
+            "apple",
+            "microsoft"
+          ],
+          "included_in": [
+            "chrome",
+            "mozilla"
+          ],
+          "wait_years": 5,
+          "wait_source": "root_creation"
+        },
+        {
+          "ca": "Cybertrust Japan Co., Ltd.",
+          "rank": 23,
+          "certs": 34001,
+          "stores": {
+            "chrome": "not_included",
+            "mozilla": "included",
+            "apple": "not_included",
+            "microsoft": "included"
+          },
+          "missing_from": [
+            "chrome",
+            "apple"
+          ],
+          "included_in": [
+            "mozilla",
+            "microsoft"
+          ],
+          "wait_years": null,
+          "wait_source": null
+        },
+        {
+          "ca": "Shanghai Electronic Certification Authority Co., Ltd.",
+          "rank": 24,
+          "certs": 31578,
+          "stores": {
+            "chrome": "included",
+            "mozilla": "included",
+            "apple": "not_included",
+            "microsoft": "included"
+          },
+          "missing_from": [
+            "apple"
+          ],
+          "included_in": [
+            "chrome",
+            "mozilla",
+            "microsoft"
+          ],
+          "wait_years": 11,
+          "wait_source": "root_creation"
+        },
+        {
+          "ca": "Government of Finland, Population Register Centre’s (Väestörekisterikeskus, VRK)",
+          "rank": 38,
+          "certs": 2504,
+          "stores": {
+            "chrome": "not_included",
+            "mozilla": "not_included",
+            "apple": "not_included",
+            "microsoft": "included"
+          },
+          "missing_from": [
+            "chrome",
+            "mozilla",
+            "apple"
+          ],
+          "included_in": [
+            "microsoft"
+          ],
+          "wait_years": 9,
+          "wait_source": "root_creation"
+        },
+        {
+          "ca": "Open Access Technology International, Inc. (OATI)",
+          "rank": 41,
+          "certs": 2226,
+          "stores": {
+            "chrome": "not_included",
+            "mozilla": "not_included",
+            "apple": "not_included",
+            "microsoft": "included"
+          },
+          "missing_from": [
+            "chrome",
+            "mozilla",
+            "apple"
+          ],
+          "included_in": [
+            "microsoft"
+          ],
+          "wait_years": 18,
+          "wait_source": "root_creation"
+        },
+        {
+          "ca": "PostSignum",
+          "rank": 45,
+          "certs": 1023,
+          "stores": {
+            "chrome": "not_included",
+            "mozilla": "not_included",
+            "apple": "not_included",
+            "microsoft": "included"
+          },
+          "missing_from": [
+            "chrome",
+            "mozilla",
+            "apple"
+          ],
+          "included_in": [
+            "microsoft"
+          ],
+          "wait_years": 8,
+          "wait_source": "root_creation"
+        },
+        {
+          "ca": "Government of Brazil, Instituto Nacional de Tecnologia da Informação (ITI)",
+          "rank": 46,
+          "certs": 525,
+          "stores": {
+            "chrome": "not_included",
+            "mozilla": "not_included",
+            "apple": "not_included",
+            "microsoft": "included"
+          },
+          "missing_from": [
+            "chrome",
+            "mozilla",
+            "apple"
+          ],
+          "included_in": [
+            "microsoft"
+          ],
+          "wait_years": 10,
+          "wait_source": "root_creation"
+        },
+        {
+          "ca": "První certifikační autorita, a.s.",
+          "rank": 49,
+          "certs": 368,
+          "stores": {
+            "chrome": "not_included",
+            "mozilla": "not_included",
+            "apple": "not_included",
+            "microsoft": "included"
+          },
+          "missing_from": [
+            "chrome",
+            "mozilla",
+            "apple"
+          ],
+          "included_in": [
+            "microsoft"
+          ],
+          "wait_years": 11,
+          "wait_source": "root_creation"
+        },
+        {
+          "ca": "Financijska agencija (Fina)",
+          "rank": 51,
+          "certs": 326,
+          "stores": {
+            "chrome": "not_included",
+            "mozilla": "not_included",
+            "apple": "not_included",
+            "microsoft": "included"
+          },
+          "missing_from": [
+            "chrome",
+            "mozilla",
+            "apple"
+          ],
+          "included_in": [
+            "microsoft"
+          ],
+          "wait_years": 11,
+          "wait_source": "root_creation"
+        },
+        {
+          "ca": "Krajowa Izba Rozliczeniowa S.A. (KIR)",
+          "rank": 52,
+          "certs": 319,
+          "stores": {
+            "chrome": "included",
+            "mozilla": "included",
+            "apple": "not_included",
+            "microsoft": "included"
+          },
+          "missing_from": [
+            "apple"
+          ],
+          "included_in": [
+            "chrome",
+            "mozilla",
+            "microsoft"
+          ],
+          "wait_years": 11,
+          "wait_source": "root_creation"
+        },
+        {
+          "ca": "Government of Korea, KLID",
+          "rank": 53,
+          "certs": 180,
+          "stores": {
+            "chrome": "not_included",
+            "mozilla": "not_included",
+            "apple": "not_included",
+            "microsoft": "included"
+          },
+          "missing_from": [
+            "chrome",
+            "mozilla",
+            "apple"
+          ],
+          "included_in": [
+            "microsoft"
+          ],
+          "wait_years": 3,
+          "wait_source": "root_creation"
+        },
+        {
+          "ca": "Government of India, Ministry of Communications & Information Technology, Controller of Certifying Authorities (CCA)",
+          "rank": 54,
+          "certs": 156,
+          "stores": {
+            "chrome": "not_included",
+            "mozilla": "not_included",
+            "apple": "not_included",
+            "microsoft": "included"
+          },
+          "missing_from": [
+            "chrome",
+            "mozilla",
+            "apple"
+          ],
+          "included_in": [
+            "microsoft"
+          ],
+          "wait_years": 4,
+          "wait_source": "root_creation"
+        },
+        {
+          "ca": "A-Trust",
+          "rank": 56,
+          "certs": 143,
+          "stores": {
+            "chrome": "not_included",
+            "mozilla": "not_included",
+            "apple": "not_included",
+            "microsoft": "included"
+          },
+          "missing_from": [
+            "chrome",
+            "mozilla",
+            "apple"
+          ],
+          "included_in": [
+            "microsoft"
+          ],
+          "wait_years": 8,
+          "wait_source": "root_creation"
+        },
+        {
+          "ca": "Netlock",
+          "rank": 57,
+          "certs": 107,
+          "stores": {
+            "chrome": "included",
+            "mozilla": "included",
+            "apple": "not_included",
+            "microsoft": "included"
+          },
+          "missing_from": [
+            "apple"
+          ],
+          "included_in": [
+            "chrome",
+            "mozilla",
+            "microsoft"
+          ],
+          "wait_years": 18,
+          "wait_source": "root_creation"
+        },
+        {
+          "ca": "Agence Nationale de Certification Electronique",
+          "rank": 58,
+          "certs": 78,
+          "stores": {
+            "chrome": "included",
+            "mozilla": "included",
+            "apple": "not_included",
+            "microsoft": "included"
+          },
+          "missing_from": [
+            "apple"
+          ],
+          "included_in": [
+            "chrome",
+            "mozilla",
+            "microsoft"
+          ],
+          "wait_years": 7,
+          "wait_source": "root_creation"
+        },
+        {
+          "ca": "Visa",
+          "rank": 59,
+          "certs": 48,
+          "stores": {
+            "chrome": "not_included",
+            "mozilla": "not_included",
+            "apple": "not_included",
+            "microsoft": "included"
+          },
+          "missing_from": [
+            "chrome",
+            "mozilla",
+            "apple"
+          ],
+          "included_in": [
+            "microsoft"
+          ],
+          "wait_years": 21,
+          "wait_source": "root_creation"
+        },
+        {
+          "ca": "EDICOM",
+          "rank": 60,
+          "certs": 45,
+          "stores": {
+            "chrome": "not_included",
+            "mozilla": "not_included",
+            "apple": "not_included",
+            "microsoft": "included"
+          },
+          "missing_from": [
+            "chrome",
+            "mozilla",
+            "apple"
+          ],
+          "included_in": [
+            "microsoft"
+          ],
+          "wait_years": 12,
+          "wait_source": "root_creation"
+        },
+        {
+          "ca": "BEIJING CERTIFICATE AUTHORITY Co., Ltd.",
+          "rank": 61,
+          "certs": 31,
+          "stores": {
+            "chrome": "not_included",
+            "mozilla": "included",
+            "apple": "not_included",
+            "microsoft": "not_included"
+          },
+          "missing_from": [
+            "chrome",
+            "apple",
+            "microsoft"
+          ],
+          "included_in": [
+            "mozilla"
+          ],
+          "wait_years": 7,
+          "wait_source": "root_creation"
+        },
+        {
+          "ca": "iTrusChina Co., Ltd.",
+          "rank": 63,
+          "certs": 11,
+          "stores": {
+            "chrome": "included",
+            "mozilla": "included",
+            "apple": "not_included",
+            "microsoft": "not_included"
+          },
+          "missing_from": [
+            "apple",
+            "microsoft"
+          ],
+          "included_in": [
+            "chrome",
+            "mozilla"
+          ],
+          "wait_years": 8,
+          "wait_source": "root_creation"
+        },
+        {
+          "ca": "Autoridad de Certificación (ANF AC)",
+          "rank": 64,
+          "certs": 8,
+          "stores": {
+            "chrome": "included",
+            "mozilla": "included",
+            "apple": "not_included",
+            "microsoft": "included"
+          },
+          "missing_from": [
+            "apple"
+          ],
+          "included_in": [
+            "chrome",
+            "mozilla",
+            "microsoft"
+          ],
+          "wait_years": 13,
+          "wait_source": "root_creation"
+        },
+        {
+          "ca": "e-commerce monitoring GmbH",
+          "rank": 65,
+          "certs": 6,
+          "stores": {
+            "chrome": "not_included",
+            "mozilla": "not_included",
+            "apple": "not_included",
+            "microsoft": "included"
+          },
+          "missing_from": [
+            "chrome",
+            "mozilla",
+            "apple"
+          ],
+          "included_in": [
+            "microsoft"
+          ],
+          "wait_years": 20,
+          "wait_source": "root_creation"
+        },
+        {
+          "ca": "Entrust",
+          "rank": 67,
+          "certs": 0,
+          "stores": {
+            "chrome": "not_included",
+            "mozilla": "not_included",
+            "apple": "included",
+            "microsoft": "included"
+          },
+          "missing_from": [
+            "chrome",
+            "mozilla"
+          ],
+          "included_in": [
+            "apple",
+            "microsoft"
+          ],
+          "wait_years": 16,
+          "wait_source": "root_creation"
+        },
+        {
+          "ca": "AC Camerfirma, S.A.",
+          "rank": 81,
+          "certs": 0,
+          "stores": {
+            "chrome": "not_included",
+            "mozilla": "not_included",
+            "apple": "not_included",
+            "microsoft": "included"
+          },
+          "missing_from": [
+            "chrome",
+            "mozilla",
+            "apple"
+          ],
+          "included_in": [
+            "microsoft"
+          ],
+          "wait_years": 18,
+          "wait_source": "root_creation"
+        },
+        {
+          "ca": "Consorci Administració Oberta de Catalunya (Consorci AOC, CATCert)",
+          "rank": 90,
+          "certs": 0,
+          "stores": {
+            "chrome": "not_included",
+            "mozilla": "not_included",
+            "apple": "not_included",
+            "microsoft": "included"
+          },
+          "missing_from": [
+            "chrome",
+            "mozilla",
+            "apple"
+          ],
+          "included_in": [
+            "microsoft"
+          ],
+          "wait_years": 23,
+          "wait_source": "root_creation"
+        }
+      ],
+      "distrust_divergences": [
+        {
+          "ca": "India CCA (NIC)",
+          "year": 2014,
+          "distrusted_by": [
+            "chrome",
+            "mozilla",
+            "apple"
+          ],
+          "still_trusted_by": [
+            "microsoft"
+          ],
+          "leader": "chrome"
+        },
+        {
+          "ca": "Certinomis",
+          "year": 2019,
+          "distrusted_by": [
+            "chrome",
+            "mozilla",
+            "apple"
+          ],
+          "still_trusted_by": [
+            "microsoft"
+          ],
+          "leader": "mozilla"
+        },
+        {
+          "ca": "Camerfirma",
+          "year": 2021,
+          "distrusted_by": [
+            "chrome",
+            "mozilla",
+            "apple"
+          ],
+          "still_trusted_by": [
+            "microsoft"
+          ],
+          "leader": "mozilla"
+        },
+        {
+          "ca": "Visa",
+          "year": 2022,
+          "distrusted_by": [
+            "chrome",
+            "mozilla",
+            "apple"
+          ],
+          "still_trusted_by": [
+            "microsoft"
+          ],
+          "leader": "mozilla"
+        }
+      ],
+      "historical": [
+        {
+          "ca": "Internet Security Research Group",
+          "common_name": "Let's Encrypt",
+          "rank": 1,
+          "certs_now": 511233808,
+          "timeline": {
+            "root_created": "2015-06",
+            "mozilla_included": "2016-08",
+            "microsoft_included": "2018-08",
+            "apple_included": "2018-12"
+          },
+          "gap_years": 2,
+          "gap_description": "2-year gap between first inclusion (Mozilla Aug 2016) and Apple/Microsoft (late 2018). Relied on IdenTrust cross-sign.",
+          "resolved": true
+        }
+      ]
+    },
+    "inclusionVelocity": {
+      "mozilla_pending": [
+        {
+          "bug": 1348774,
+          "ca": "Thailand National Root CA - G1",
+          "filed": "2017-03-20",
+          "days_waiting": 3326,
+          "stage": "verifying",
+          "request_type": "existing_ca"
+        },
+        {
+          "bug": 1449941,
+          "ca": "Fina Root CA certificate",
+          "filed": "2018-03-29",
+          "days_waiting": 2952,
+          "stage": "unknown",
+          "request_type": "new_org"
+        },
+        {
+          "bug": 1518460,
+          "ca": "SISP Root CA",
+          "filed": "2019-01-08",
+          "days_waiting": 2667,
+          "stage": "verifying",
+          "request_type": "new_org"
+        },
+        {
+          "bug": 1532206,
+          "ca": "MSC Trustgate root certificate(s)",
+          "filed": "2019-03-04",
+          "days_waiting": 2612,
+          "stage": "verifying",
+          "request_type": "new_org"
+        },
+        {
+          "bug": 1565871,
+          "ca": "CCA ROOT CA India",
+          "filed": "2019-07-14",
+          "days_waiting": 2480,
+          "stage": "unknown",
+          "request_type": "new_org"
+        },
+        {
+          "bug": 1602415,
+          "ca": "PostSignum Root QCA 4 and PostSignum Root QCA ECC R1",
+          "filed": "2019-12-09",
+          "days_waiting": 2332,
+          "stage": "verifying",
+          "request_type": "existing_ca"
+        },
+        {
+          "bug": 1674669,
+          "ca": "Autoridade Certificadora Raiz Brasileira root certificate",
+          "filed": "2020-11-01",
+          "days_waiting": 2004,
+          "stage": "unknown",
+          "request_type": "existing_ca"
+        },
+        {
+          "bug": 1707136,
+          "ca": "GSE SMIME Roots to Mozilla root store",
+          "filed": "2021-04-23",
+          "days_waiting": 1831,
+          "stage": "verifying",
+          "request_type": "new_org"
+        },
+        {
+          "bug": 1736904,
+          "ca": "Algerian National Root CA certificate",
+          "filed": "2021-10-20",
+          "days_waiting": 1651,
+          "stage": "initial",
+          "request_type": "new_org"
+        },
+        {
+          "bug": 1748579,
+          "ca": "Aspire root certificates",
+          "filed": "2022-01-05",
+          "days_waiting": 1574,
+          "stage": "initial",
+          "request_type": "new_org"
+        },
+        {
+          "bug": 1845081,
+          "ca": "MOIS SSL Root CA",
+          "filed": "2023-07-24",
+          "days_waiting": 1009,
+          "stage": "unknown",
+          "request_type": "new_org"
+        },
+        {
+          "bug": 1870013,
+          "ca": "Saudi National SSL root CA",
+          "filed": "2023-12-14",
+          "days_waiting": 866,
+          "stage": "initial",
+          "request_type": "existing_ca"
+        },
+        {
+          "bug": 1883983,
+          "ca": "SOLUTI GLOBAL ROOT CA",
+          "filed": "2024-03-06",
+          "days_waiting": 783,
+          "stage": "initial",
+          "request_type": "new_org"
+        },
+        {
+          "bug": 1889859,
+          "ca": "emSign Single-purpose Root CA Certificates",
+          "filed": "2024-04-05",
+          "days_waiting": 753,
+          "stage": "cps-review",
+          "request_type": "new_org"
+        },
+        {
+          "bug": 1918570,
+          "ca": "SECOM SMIME RSA Root CA 2024",
+          "filed": "2024-09-13",
+          "days_waiting": 592,
+          "stage": "unknown",
+          "request_type": "existing_ca"
+        },
+        {
+          "bug": 1925173,
+          "ca": "Cybertrust Japan SecureSign Root CA16",
+          "filed": "2024-10-17",
+          "days_waiting": 558,
+          "stage": "unknown",
+          "request_type": "existing_ca"
+        },
+        {
+          "bug": 1938884,
+          "ca": "NAVER Cloud Trust Services Root Certificates",
+          "filed": "2024-12-23",
+          "days_waiting": 491,
+          "stage": "verifying",
+          "request_type": "existing_ca"
+        },
+        {
+          "bug": 1943001,
+          "ca": "SECOM TLS RSA Root CA 2024 and SECOM TLS ECC Root CA 2024",
+          "filed": "2025-01-22",
+          "days_waiting": 461,
+          "stage": "unknown",
+          "request_type": "existing_ca"
+        },
+        {
+          "bug": 1948085,
+          "ca": "Amazon EU Roots: RSA 2048 EU M1, ECDSA 256 EU M1, and ECDSA ",
+          "filed": "2025-02-13",
+          "days_waiting": 439,
+          "stage": "verifying",
+          "request_type": "existing_ca"
+        },
+        {
+          "bug": 1960408,
+          "ca": "IdenTrust single purpose roots",
+          "filed": "2025-04-14",
+          "days_waiting": 379,
+          "stage": "verifying",
+          "request_type": "existing_ca"
+        },
+        {
+          "bug": 1968852,
+          "ca": "Telia Company's S/MIME & TLS Roots",
+          "filed": "2025-05-28",
+          "days_waiting": 335,
+          "stage": "unknown",
+          "request_type": "existing_ca"
+        },
+        {
+          "bug": 1978904,
+          "ca": "NETLOCK's S/MIME & TLS Root",
+          "filed": "2025-07-23",
+          "days_waiting": 279,
+          "stage": "initial",
+          "request_type": "new_org"
+        },
+        {
+          "bug": 1983217,
+          "ca": "Aretiico Group PLC and Aretiico Inc root certificates to Moz",
+          "filed": "2025-08-15",
+          "days_waiting": 256,
+          "stage": "initial",
+          "request_type": "existing_ca"
+        },
+        {
+          "bug": 1988341,
+          "ca": "ACCV ROOT RSA TLS 2024 and ACCV ROOT ECC TLS 2024 root certi",
+          "filed": "2025-09-12",
+          "days_waiting": 228,
+          "stage": "verifying",
+          "request_type": "new_org"
+        },
+        {
+          "bug": 1988361,
+          "ca": "SHECA Single-purpose Root CA Certificates",
+          "filed": "2025-09-12",
+          "days_waiting": 228,
+          "stage": "verifying",
+          "request_type": "new_org"
+        },
+        {
+          "bug": 1990213,
+          "ca": "certSIGN Root CA G4 root certificate",
+          "filed": "2025-09-23",
+          "days_waiting": 217,
+          "stage": "verifying",
+          "request_type": "existing_ca"
+        },
+        {
+          "bug": 1992971,
+          "ca": "Actalis TLS Root CAs 2025 and Actalis SMIME Root CAs 2025",
+          "filed": "2025-10-07",
+          "days_waiting": 203,
+          "stage": "verifying",
+          "request_type": "existing_ca"
+        },
+        {
+          "bug": 1996117,
+          "ca": "GoDaddy and Starfield TLS R1",
+          "filed": "2025-10-23",
+          "days_waiting": 187,
+          "stage": "verifying",
+          "request_type": "existing_ca"
+        },
+        {
+          "bug": 2001274,
+          "ca": "Cybertrust Japan Root CA Cybertrust iTrust TLS ECCP384 Root ",
+          "filed": "2025-11-20",
+          "days_waiting": 159,
+          "stage": "initial",
+          "request_type": "existing_ca"
+        },
+        {
+          "bug": 2001275,
+          "ca": "Cybertrust Japan Root CA Cybertrust iTrust TLS RSA4096 Root ",
+          "filed": "2025-11-20",
+          "days_waiting": 159,
+          "stage": "initial",
+          "request_type": "existing_ca"
+        },
+        {
+          "bug": 2007765,
+          "ca": "Chunghwa Telecom CHT TrustRoot CA",
+          "filed": "2025-12-26",
+          "days_waiting": 123,
+          "stage": "initial",
+          "request_type": "existing_ca"
+        },
+        {
+          "bug": 2011714,
+          "ca": "\"OATI webCARES Server Root CA\" to the Mozilla Root CA Progra",
+          "filed": "2026-01-21",
+          "days_waiting": 97,
+          "stage": "initial",
+          "request_type": "new_org"
+        },
+        {
+          "bug": 2031847,
+          "ca": "FNMT TLS RSA Root Certificate SERVIDORES SEGUROS G2R",
+          "filed": "2026-04-14",
+          "days_waiting": 14,
+          "stage": "initial",
+          "request_type": "new_org"
+        },
+        {
+          "bug": 2033449,
+          "ca": "A-Trust SMIME Root",
+          "filed": "2026-04-20",
+          "days_waiting": 8,
+          "stage": "initial",
+          "request_type": "existing_ca"
+        }
+      ],
+      "mozilla_completed_recent": [
+        {
+          "bug": 1658793,
+          "ca": "Cybertrust Japan SecureSign Roots (CA12, CA14 and CA15)",
+          "filed": "2020-08-12",
+          "resolved": "2025-01-24",
+          "days": 1626,
+          "request_type": "existing_ca"
+        },
+        {
+          "bug": 1647181,
+          "ca": "BJCA root certificate(s)",
+          "filed": "2020-06-22",
+          "resolved": "2023-05-11",
+          "days": 1053,
+          "request_type": "new_org"
+        },
+        {
+          "bug": 1688854,
+          "ca": "TrustAsia root certificates",
+          "filed": "2021-01-26",
+          "resolved": "2023-11-30",
+          "days": 1038,
+          "request_type": "existing_ca"
+        },
+        {
+          "bug": 1627552,
+          "ca": "e-commerce monitoring's GLOBALTRUST 2020 root certificate",
+          "filed": "2020-04-05",
+          "resolved": "2022-11-14",
+          "days": 953,
+          "request_type": "existing_ca"
+        },
+        {
+          "bug": 1628720,
+          "ca": "E-Tugra Root Certificates RSA v3 / ECC v3",
+          "filed": "2020-04-09",
+          "resolved": "2022-11-14",
+          "days": 949,
+          "request_type": "new_org"
+        },
+        {
+          "bug": 1637269,
+          "ca": "GlobalSign SMIME Roots to Mozilla root store",
+          "filed": "2020-05-12",
+          "resolved": "2022-11-14",
+          "days": 916,
+          "request_type": "existing_ca"
+        },
+        {
+          "bug": 1710831,
+          "ca": "LAWtrust Root CA2 to NSS",
+          "filed": "2021-05-12",
+          "resolved": "2023-08-01",
+          "days": 811,
+          "request_type": "existing_ca"
+        },
+        {
+          "bug": 1664161,
+          "ca": "Telia CA root certificate",
+          "filed": "2020-09-10",
+          "resolved": "2022-11-14",
+          "days": 795,
+          "request_type": "existing_ca"
+        },
+        {
+          "bug": 1873057,
+          "ca": "Microsec \"e-Szigno TLS Root CA 2023\"",
+          "filed": "2024-01-04",
+          "resolved": "2026-02-18",
+          "days": 776,
+          "request_type": "existing_ca"
+        },
+        {
+          "bug": 1675821,
+          "ca": "Re-Signed GTS Roots",
+          "filed": "2020-11-06",
+          "resolved": "2022-11-14",
+          "days": 738,
+          "request_type": "new_org"
+        },
+        {
+          "bug": 1845047,
+          "ca": "SwissSign RSA TLS Root CA 2022 - 1 and SwissSign RSA SMIME R",
+          "filed": "2023-07-24",
+          "resolved": "2025-07-12",
+          "days": 719,
+          "request_type": "existing_ca"
+        },
+        {
+          "bug": 1785215,
+          "ca": "\"FIRMAPROFESIONAL CA ROOT-A WEB\" Root Certificate",
+          "filed": "2022-08-17",
+          "resolved": "2024-06-10",
+          "days": 663,
+          "request_type": "new_org"
+        },
+        {
+          "bug": 1694421,
+          "ca": "DigitalSign's root certificates",
+          "filed": "2021-02-23",
+          "resolved": "2022-11-14",
+          "days": 629,
+          "request_type": "new_org"
+        },
+        {
+          "bug": 1836258,
+          "ca": "D-TRUST BR Root CA 2 2023 and D-TRUST EV Root CA 2 2023",
+          "filed": "2023-06-01",
+          "resolved": "2025-02-18",
+          "days": 628,
+          "request_type": "existing_ca"
+        },
+        {
+          "bug": 1695487,
+          "ca": "HARICA 2021 TLS Root CA Certificates to Mozilla Root store p",
+          "filed": "2021-02-28",
+          "resolved": "2022-11-14",
+          "days": 624,
+          "request_type": "existing_ca"
+        },
+        {
+          "bug": 1695486,
+          "ca": "HARICA 2021 SMIME Root CA Certificates to Mozilla Root store",
+          "filed": "2021-02-28",
+          "resolved": "2022-11-14",
+          "days": 624,
+          "request_type": "existing_ca"
+        },
+        {
+          "bug": 1763177,
+          "ca": "Commscope Root Certificates",
+          "filed": "2022-04-05",
+          "resolved": "2023-11-28",
+          "days": 602,
+          "request_type": "new_org"
+        },
+        {
+          "bug": 1706228,
+          "ca": "DigiCert root Certificates",
+          "filed": "2021-04-20",
+          "resolved": "2022-11-14",
+          "days": 573,
+          "request_type": "existing_ca"
+        },
+        {
+          "bug": 1781510,
+          "ca": "D-Trust SBR Root CAs 1 & 2 2022",
+          "filed": "2022-07-26",
+          "resolved": "2024-02-01",
+          "days": 555,
+          "request_type": "existing_ca"
+        },
+        {
+          "bug": 1799533,
+          "ca": "SSL.com 2022 TLS Root CA Certificates",
+          "filed": "2022-11-07",
+          "resolved": "2024-03-15",
+          "days": 494,
+          "request_type": "existing_ca"
+        },
+        {
+          "bug": 1720400,
+          "ca": "Actalis intermediate certs to OneCRL",
+          "filed": "2021-07-13",
+          "resolved": "2022-11-14",
+          "days": 489,
+          "request_type": "existing_ca"
+        },
+        {
+          "bug": 1727941,
+          "ca": "Certainly R1 and E1 Root Certificates",
+          "filed": "2021-08-27",
+          "resolved": "2022-11-14",
+          "days": 444,
+          "request_type": "existing_ca"
+        },
+        {
+          "bug": 1849702,
+          "ca": "Taiwan-CA Inc. (TWCA) root certificates",
+          "filed": "2023-08-22",
+          "resolved": "2024-09-13",
+          "days": 388,
+          "request_type": "existing_ca"
+        },
+        {
+          "bug": 1782092,
+          "ca": "Atos Roots",
+          "filed": "2022-07-28",
+          "resolved": "2023-08-01",
+          "days": 369,
+          "request_type": "new_org"
+        },
+        {
+          "bug": 1820592,
+          "ca": "Telekom Security Root Certificates",
+          "filed": "2023-03-06",
+          "resolved": "2024-02-16",
+          "days": 347,
+          "request_type": "existing_ca"
+        },
+        {
+          "bug": 1936279,
+          "ca": "OISTE root certificates",
+          "filed": "2024-12-10",
+          "resolved": "2025-11-19",
+          "days": 344,
+          "request_type": "existing_ca"
+        },
+        {
+          "bug": 1929329,
+          "ca": "TrustAsia Dedicated Roots",
+          "filed": "2024-11-05",
+          "resolved": "2025-09-27",
+          "days": 326,
+          "request_type": "existing_ca"
+        },
+        {
+          "bug": 1799703,
+          "ca": "SSL.com 2022 Client Root CA Certificates",
+          "filed": "2022-11-08",
+          "resolved": "2023-08-01",
+          "days": 266,
+          "request_type": "existing_ca"
+        },
+        {
+          "bug": 1817340,
+          "ca": "Sectigo R46/E46 Roots",
+          "filed": "2023-02-16",
+          "resolved": "2023-08-14",
+          "days": 179,
+          "request_type": "existing_ca"
+        }
+      ],
+      "mozilla_stats": {
+        "pending_count": 34,
+        "completed_count": 29,
+        "median_days": 624,
+        "mean_days": 652,
+        "max_days": 1626,
+        "longest_pending_days": 3326,
+        "new_org": {
+          "count": 7,
+          "median_days": 663,
+          "mean_days": 715,
+          "max_days": 1053,
+          "pending_count": 15,
+          "longest_pending_days": 2952
+        },
+        "existing_ca": {
+          "count": 22,
+          "median_days": 598,
+          "mean_days": 632,
+          "max_days": 1626,
+          "pending_count": 19,
+          "longest_pending_days": 3326
+        }
+      },
+      "note": "Mozilla only — only root program with a fully public inclusion pipeline (Bugzilla)."
+    },
+    "coverageRateByYear": [
+      {
+        "y": 2014,
+        "total_bugs": 3,
+        "chrome": 33.3,
+        "mozilla": 33.3,
+        "apple": 0.0,
+        "microsoft": 0.0
+      },
+      {
+        "y": 2015,
+        "total_bugs": 1,
+        "chrome": 0.0,
+        "mozilla": 100.0,
+        "apple": 0.0,
+        "microsoft": 0.0
+      },
+      {
+        "y": 2016,
+        "total_bugs": 5,
+        "chrome": 20.0,
+        "mozilla": 80.0,
+        "apple": 0.0,
+        "microsoft": 0.0
+      },
+      {
+        "y": 2017,
+        "total_bugs": 123,
+        "chrome": 49.6,
+        "mozilla": 86.2,
+        "apple": 0.0,
+        "microsoft": 0.0
+      },
+      {
+        "y": 2018,
+        "total_bugs": 108,
+        "chrome": 16.7,
+        "mozilla": 82.4,
+        "apple": 0.0,
+        "microsoft": 0.0
+      },
+      {
+        "y": 2019,
+        "total_bugs": 255,
+        "chrome": 67.8,
+        "mozilla": 78.0,
+        "apple": 0.0,
+        "microsoft": 0.0
+      },
+      {
+        "y": 2020,
+        "total_bugs": 237,
+        "chrome": 66.2,
+        "mozilla": 49.4,
+        "apple": 0.0,
+        "microsoft": 0.0
+      },
+      {
+        "y": 2021,
+        "total_bugs": 187,
+        "chrome": 58.3,
+        "mozilla": 30.5,
+        "apple": 0.0,
+        "microsoft": 0.0
+      },
+      {
+        "y": 2022,
+        "total_bugs": 106,
+        "chrome": 22.6,
+        "mozilla": 28.3,
+        "apple": 0.0,
+        "microsoft": 0.0
+      },
+      {
+        "y": 2023,
+        "total_bugs": 133,
+        "chrome": 15.0,
+        "mozilla": 27.1,
+        "apple": 0.0,
+        "microsoft": 0.0
+      },
+      {
+        "y": 2024,
+        "total_bugs": 236,
+        "chrome": 22.5,
+        "mozilla": 32.2,
+        "apple": 5.9,
+        "microsoft": 0.0
+      },
+      {
+        "y": 2025,
+        "total_bugs": 223,
+        "chrome": 18.4,
+        "mozilla": 9.9,
+        "apple": 5.4,
+        "microsoft": 0.0
+      },
+      {
+        "y": 2026,
+        "total_bugs": 120,
+        "chrome": 5.8,
+        "mozilla": 5.0,
+        "apple": 10.0,
+        "microsoft": 0.0
+      }
+    ]
+  },
+  "ecosystemParticipation": {
+    "meta": {
+      "generated_at": "2026-04-28T08:33:29.747595+00:00",
+      "pipeline_version": "1.1",
+      "total_orgs": 62,
+      "total_cabf_ca_members": 56,
+      "total_individuals": 128,
+      "total_ballots": 174,
+      "note_technical": "technical_comments counts LLM-classified substantive comments (cert/CRL analysis, specific BR citations, investigative questions). Values may exceed bugs_engaged since multiple technical comments per bug are counted.",
+      "note_baseline": "All CABF CA members included as org rows, even those with zero engagement. cabf_member=true indicates formal membership. Absence of engagement by a member is as meaningful as presence."
+    },
+    "cabfMemberCount": 56,
+    "activeMemberCount": 21,
+    "zeroContributionCount": 35,
+    "topOrganizations": [
+      {
+        "name": "Sectigo",
+        "cabfMember": true,
+        "bugzillaEngaged": 132,
+        "ballotsProposed": 9,
+        "ballotsEndorsed": 18,
+        "bugsFiled": 13
+      },
+      {
+        "name": "DigiCert",
+        "cabfMember": true,
+        "bugzillaEngaged": 31,
+        "ballotsProposed": 60,
+        "ballotsEndorsed": 38,
+        "bugsFiled": 0
+      },
+      {
+        "name": "HARICA",
+        "cabfMember": true,
+        "bugzillaEngaged": 52,
+        "ballotsProposed": 16,
+        "ballotsEndorsed": 29,
+        "bugsFiled": 0
+      },
+      {
+        "name": "Let's Encrypt",
+        "cabfMember": true,
+        "bugzillaEngaged": 59,
+        "ballotsProposed": 2,
+        "ballotsEndorsed": 2,
+        "bugsFiled": 0
+      },
+      {
+        "name": "iSigma",
+        "cabfMember": false,
+        "bugzillaEngaged": 17,
+        "ballotsProposed": 0,
+        "ballotsEndorsed": 0,
+        "bugsFiled": 7
+      },
+      {
+        "name": "Entrust",
+        "cabfMember": true,
+        "bugzillaEngaged": 0,
+        "ballotsProposed": 9,
+        "ballotsEndorsed": 20,
+        "bugsFiled": 0
+      },
+      {
+        "name": "Certainly/Fastly",
+        "cabfMember": true,
+        "bugzillaEngaged": 5,
+        "ballotsProposed": 5,
+        "ballotsEndorsed": 6,
+        "bugsFiled": 0
+      },
+      {
+        "name": "GlobalSign",
+        "cabfMember": true,
+        "bugzillaEngaged": 1,
+        "ballotsProposed": 5,
+        "ballotsEndorsed": 11,
+        "bugsFiled": 0
+      },
+      {
+        "name": "TrustCor Systems",
+        "cabfMember": false,
+        "bugzillaEngaged": 0,
+        "ballotsProposed": 5,
+        "ballotsEndorsed": 8,
+        "bugsFiled": 0
+      },
+      {
+        "name": "SwissSign",
+        "cabfMember": true,
+        "bugzillaEngaged": 6,
+        "ballotsProposed": 0,
+        "ballotsEndorsed": 4,
+        "bugsFiled": 0
+      },
+      {
+        "name": "SSL.com",
+        "cabfMember": true,
+        "bugzillaEngaged": 4,
+        "ballotsProposed": 1,
+        "ballotsEndorsed": 3,
+        "bugsFiled": 0
+      },
+      {
+        "name": "Amazon Trust Services",
+        "cabfMember": true,
+        "bugzillaEngaged": 1,
+        "ballotsProposed": 2,
+        "ballotsEndorsed": 5,
+        "bugsFiled": 0
+      },
+      {
+        "name": "Cisco",
+        "cabfMember": false,
+        "bugzillaEngaged": 0,
+        "ballotsProposed": 2,
+        "ballotsEndorsed": 1,
+        "bugsFiled": 0
+      },
+      {
+        "name": "Certum/Asseco",
+        "cabfMember": true,
+        "bugzillaEngaged": 0,
+        "ballotsProposed": 1,
+        "ballotsEndorsed": 0,
+        "bugsFiled": 0
+      },
+      {
+        "name": "Telia",
+        "cabfMember": true,
+        "bugzillaEngaged": 1,
+        "ballotsProposed": 0,
+        "ballotsEndorsed": 1,
+        "bugsFiled": 0
+      },
+      {
+        "name": "Certinomis",
+        "cabfMember": false,
+        "bugzillaEngaged": 1,
+        "ballotsProposed": 0,
+        "ballotsEndorsed": 0,
+        "bugsFiled": 0
+      },
+      {
+        "name": "Chunghwa Telecom",
+        "cabfMember": true,
+        "bugzillaEngaged": 1,
+        "ballotsProposed": 0,
+        "ballotsEndorsed": 0,
+        "bugsFiled": 0
+      },
+      {
+        "name": "PKIoverheid",
+        "cabfMember": false,
+        "bugzillaEngaged": 1,
+        "ballotsProposed": 0,
+        "ballotsEndorsed": 0,
+        "bugsFiled": 0
+      }
+    ],
+    "topBallotIndividuals": [
+      {
+        "name": "Stephen Davidson",
+        "proposed": 36,
+        "endorsed": 1
+      },
+      {
+        "name": "Dimitris Zacharopoulos",
+        "proposed": 15,
+        "endorsed": 28
+      },
+      {
+        "name": "Tim Hollebeek",
+        "proposed": 9,
+        "endorsed": 20
+      },
+      {
+        "name": "Bruce Morton",
+        "proposed": 6,
+        "endorsed": 20
+      },
+      {
+        "name": "Martijn Katerbarg",
+        "proposed": 8,
+        "endorsed": 13
+      },
+      {
+        "name": "Corey Bonnell",
+        "proposed": 8,
+        "endorsed": 10
+      },
+      {
+        "name": "Doug Beattie",
+        "proposed": 5,
+        "endorsed": 6
+      },
+      {
+        "name": "Ben Wilson",
+        "proposed": 4,
+        "endorsed": 2
+      },
+      {
+        "name": "Dean Coclin",
+        "proposed": 3,
+        "endorsed": 3
+      },
+      {
+        "name": "Neil Dunbar",
+        "proposed": 2,
+        "endorsed": 6
+      },
+      {
+        "name": "Daniel Jeffery",
+        "proposed": 3,
+        "endorsed": 2
+      },
+      {
+        "name": "Dunbar",
+        "proposed": 3,
+        "endorsed": 2
+      },
+      {
+        "name": "Wayne Thayer",
+        "proposed": 2,
+        "endorsed": 4
+      },
+      {
+        "name": "Aaron Gable",
+        "proposed": 2,
+        "endorsed": 2
+      },
+      {
+        "name": "Ben Slaughter",
+        "proposed": 2,
+        "endorsed": 1
+      }
+    ],
+    "individualCount": 128
+  },
+  "regulatorySurface": {
+    "currentYear": 2026,
+    "totalObligations": 6651,
+    "mandatory": 5050,
+    "recommended": 625,
+    "optional": 976,
+    "mandatoryPct": 76,
+    "baselineYear": 2000,
+    "baselineTotal": 55,
+    "growthMultiple": 121,
+    "sourceTotals": {
+      "cabfForum": 2779,
+      "rootPrograms": 537,
+      "auditIetf": 1972,
+      "regulatory": 761
+    },
+    "tlsBr": {
+      "v1_0_total": 278,
+      "current_total": 1262,
+      "operational": 560,
+      "profileSpec": 702
+    },
+    "ballots": {
+      "total": 0,
+      "since2022": 0,
+      "byDoc": {}
+    },
+    "timeSeries": [
+      {
+        "y": 2000,
+        "t": 55,
+        "m": 40
+      },
+      {
+        "y": 2001,
+        "t": 55,
+        "m": 40
+      },
+      {
+        "y": 2002,
+        "t": 55,
+        "m": 40
+      },
+      {
+        "y": 2003,
+        "t": 55,
+        "m": 40
+      },
+      {
+        "y": 2004,
+        "t": 286,
+        "m": 218
+      },
+      {
+        "y": 2005,
+        "t": 286,
+        "m": 218
+      },
+      {
+        "y": 2006,
+        "t": 286,
+        "m": 218
+      },
+      {
+        "y": 2007,
+        "t": 286,
+        "m": 218
+      },
+      {
+        "y": 2008,
+        "t": 883,
+        "m": 576
+      },
+      {
+        "y": 2009,
+        "t": 883,
+        "m": 576
+      },
+      {
+        "y": 2010,
+        "t": 883,
+        "m": 576
+      },
+      {
+        "y": 2011,
+        "t": 883,
+        "m": 576
+      },
+      {
+        "y": 2012,
+        "t": 1216,
+        "m": 838
+      },
+      {
+        "y": 2013,
+        "t": 1249,
+        "m": 856
+      },
+      {
+        "y": 2014,
+        "t": 1249,
+        "m": 856
+      },
+      {
+        "y": 2015,
+        "t": 1552,
+        "m": 1084
+      },
+      {
+        "y": 2016,
+        "t": 1594,
+        "m": 1114
+      },
+      {
+        "y": 2017,
+        "t": 1655,
+        "m": 1167
+      },
+      {
+        "y": 2018,
+        "t": 1850,
+        "m": 1306
+      },
+      {
+        "y": 2019,
+        "t": 2257,
+        "m": 1563
+      },
+      {
+        "y": 2020,
+        "t": 2627,
+        "m": 1933
+      },
+      {
+        "y": 2021,
+        "t": 3821,
+        "m": 2832
+      },
+      {
+        "y": 2022,
+        "t": 3980,
+        "m": 2942
+      },
+      {
+        "y": 2023,
+        "t": 4533,
+        "m": 3401
+      },
+      {
+        "y": 2024,
+        "t": 6562,
+        "m": 4981
+      },
+      {
+        "y": 2025,
+        "t": 6698,
+        "m": 5086
+      },
+      {
+        "y": 2026,
+        "t": 6651,
+        "m": 5050
+      }
+    ],
+    "methodology": ""
+  },
+  "brThresholds": [
+    {
+      "from": "2020-09-01",
+      "days": 398,
+      "label": "398 days"
+    },
+    {
+      "from": "2026-03-15",
+      "days": 200,
+      "label": "200 days"
+    },
+    {
+      "from": "2027-03-15",
+      "days": 100,
+      "label": "100 days"
+    },
+    {
+      "from": "2029-03-15",
+      "days": 47,
+      "label": "47 days"
+    }
+  ],
+  "brReadiness": {
+    "cas": [
+      {
+        "ca": "OISTE",
+        "useDays": 363,
+        "status": "subscriber_risk",
+        "share": 0.0003,
+        "unexpiredCerts": 3678
+      },
+      {
+        "ca": "HARICA",
+        "useDays": 333,
+        "status": "subscriber_risk",
+        "share": 0.0463,
+        "unexpiredCerts": 575751
+      },
+      {
+        "ca": "TrustAsia Technologies, Inc.",
+        "useDays": 276,
+        "status": "subscriber_risk",
+        "share": 0.0361,
+        "unexpiredCerts": 449634
+      },
+      {
+        "ca": "NAVER Cloud Trust Services",
+        "useDays": 260,
+        "status": "subscriber_risk",
+        "share": 0.0013,
+        "unexpiredCerts": 15697
+      },
+      {
+        "ca": "Shanghai Electronic Certification Authority Co., Ltd.",
+        "useDays": 180,
+        "status": "risk_2027",
+        "share": 0.0025,
+        "unexpiredCerts": 31578
+      },
+      {
+        "ca": "D-Trust",
+        "useDays": 165,
+        "status": "risk_2027",
+        "share": 0.0055,
+        "unexpiredCerts": 67835
+      },
+      {
+        "ca": "GoDaddy",
+        "useDays": 136,
+        "status": "risk_2027",
+        "share": 12.9261,
+        "unexpiredCerts": 160835233
+      },
+      {
+        "ca": "IdenTrust Services, LLC",
+        "useDays": 130,
+        "status": "risk_2027",
+        "share": 1.112,
+        "unexpiredCerts": 13836432
+      },
+      {
+        "ca": "Amazon Trust Services",
+        "useDays": 117,
+        "status": "risk_2027",
+        "share": 0.023,
+        "unexpiredCerts": 285940
+      },
+      {
+        "ca": "eMudhra Technologies Limited",
+        "useDays": 95,
+        "status": "risk_2029",
+        "share": 0.0007,
+        "unexpiredCerts": 8322
+      },
+      {
+        "ca": "SwissSign AG",
+        "useDays": 94,
+        "status": "risk_2029",
+        "share": 0.0036,
+        "unexpiredCerts": 44651
+      },
+      {
+        "ca": "Telia Company",
+        "useDays": 94,
+        "status": "risk_2029",
+        "share": 0.0028,
+        "unexpiredCerts": 35285
+      },
+      {
+        "ca": "Microsec Ltd.",
+        "useDays": 90,
+        "status": "risk_2029",
+        "share": 0.0002,
+        "unexpiredCerts": 2729
+      },
+      {
+        "ca": "certSIGN",
+        "useDays": 83,
+        "status": "risk_2029",
+        "share": 0.0003,
+        "unexpiredCerts": 4205
+      },
+      {
+        "ca": "Actalis",
+        "useDays": 80,
+        "status": "risk_2029",
+        "share": 0.1152,
+        "unexpiredCerts": 1433862
+      },
+      {
+        "ca": "China Financial Certification Authority (CFCA)",
+        "useDays": 72,
+        "status": "risk_2029",
+        "share": 0.0004,
+        "unexpiredCerts": 5259
+      },
+      {
+        "ca": "Open Access Technology International, Inc. (OATI)",
+        "useDays": 71,
+        "status": "risk_2029",
+        "share": 0.0002,
+        "unexpiredCerts": 2226
+      },
+      {
+        "ca": "Izenpe S.A.",
+        "useDays": 70,
+        "status": "risk_2029",
+        "share": 0.0001,
+        "unexpiredCerts": 1458
+      },
+      {
+        "ca": "PostSignum",
+        "useDays": 69,
+        "status": "risk_2029",
+        "share": 0.0001,
+        "unexpiredCerts": 1023
+      },
+      {
+        "ca": "Government of Finland, Population Register Centre’s (Väestörekisterikeskus, VRK)",
+        "useDays": 68,
+        "status": "risk_2029",
+        "share": 0.0002,
+        "unexpiredCerts": 2504
+      },
+      {
+        "ca": "Autoridad de Certificacion Firmaprofesional",
+        "useDays": 65,
+        "status": "risk_2029",
+        "share": 0.0002,
+        "unexpiredCerts": 1880
+      },
+      {
+        "ca": "Microsoft Corporation",
+        "useDays": 64,
+        "status": "risk_2029",
+        "share": 4.5434,
+        "unexpiredCerts": 56531769
+      },
+      {
+        "ca": "Government of Hong Kong (SAR), Hongkong Post, Certizen",
+        "useDays": 64,
+        "status": "risk_2029",
+        "share": 0.0002,
+        "unexpiredCerts": 2826
+      },
+      {
+        "ca": "Deutsche Telekom Security GmbH",
+        "useDays": 63,
+        "status": "risk_2029",
+        "share": 0.0017,
+        "unexpiredCerts": 20671
+      },
+      {
+        "ca": "Government of Spain, Fábrica Nacional de Moneda y Timbre (FNMT)",
+        "useDays": 63,
+        "status": "risk_2029",
+        "share": 0.0002,
+        "unexpiredCerts": 2769
+      },
+      {
+        "ca": "Taiwan-CA Inc. (TWCA)",
+        "useDays": 62,
+        "status": "risk_2029",
+        "share": 0.0048,
+        "unexpiredCerts": 59870
+      },
+      {
+        "ca": "Cybertrust Japan Co., Ltd.",
+        "useDays": 61,
+        "status": "risk_2029",
+        "share": 0.0027,
+        "unexpiredCerts": 34001
+      },
+      {
+        "ca": "WISeKey",
+        "useDays": 59,
+        "status": "risk_2029",
+        "share": 0.0002,
+        "unexpiredCerts": 2489
+      },
+      {
+        "ca": "DigiCert",
+        "useDays": 56,
+        "status": "risk_2029",
+        "share": 13.9046,
+        "unexpiredCerts": 173010143
+      },
+      {
+        "ca": "Government of Spain, Autoritat de Certificació de la Comunitat Valenciana (ACCV)",
+        "useDays": 54,
+        "status": "risk_2029",
+        "share": 0.0002,
+        "unexpiredCerts": 2495
+      },
+      {
+        "ca": "Chunghwa Telecom",
+        "useDays": 45,
+        "status": "compliant",
+        "share": 0.0004,
+        "unexpiredCerts": 5146
+      },
+      {
+        "ca": "Asseco Data Systems S.A.",
+        "useDays": 40,
+        "status": "compliant",
+        "share": 0.0529,
+        "unexpiredCerts": 657857
+      },
+      {
+        "ca": "Google Trust Services LLC",
+        "useDays": 38,
+        "status": "compliant",
+        "share": 15.0644,
+        "unexpiredCerts": 187441166
+      },
+      {
+        "ca": "Sectigo",
+        "useDays": 38,
+        "status": "compliant",
+        "share": 10.6907,
+        "unexpiredCerts": 133021384
+      },
+      {
+        "ca": "SECOM Trust Systems CO., LTD.",
+        "useDays": 30,
+        "status": "compliant",
+        "share": 0.0032,
+        "unexpiredCerts": 40364
+      },
+      {
+        "ca": "Eviden",
+        "useDays": 29,
+        "status": "compliant",
+        "share": 0.0001,
+        "unexpiredCerts": 1387
+      },
+      {
+        "ca": "Internet Security Research Group",
+        "useDays": 21,
+        "status": "compliant",
+        "share": 41.0872,
+        "unexpiredCerts": 511233808
+      },
+      {
+        "ca": "Certainly LLC",
+        "useDays": 14,
+        "status": "compliant",
+        "share": 0.0401,
+        "unexpiredCerts": 498582
+      },
+      {
+        "ca": "Certigna",
+        "useDays": 14,
+        "status": "compliant",
+        "share": 0.0002,
+        "unexpiredCerts": 2902
+      },
+      {
+        "ca": "GlobalSign nv-sa",
+        "useDays": 11,
+        "status": "compliant",
+        "share": 0.1224,
+        "unexpiredCerts": 1523346
+      },
+      {
+        "ca": "SSL.com",
+        "useDays": 9,
+        "status": "compliant",
+        "share": 0.1832,
+        "unexpiredCerts": 2279448
+      },
+      {
+        "ca": "Buypass",
+        "useDays": 1,
+        "status": "compliant",
+        "share": 0.0002,
+        "unexpiredCerts": 2647
+      }
+    ],
+    "totalActiveTls": 42,
+    "subscriberRisk200d": 4,
+    "subscriberRisk100d": 5,
+    "ready47d": 12,
+    "medianUseDays": 65
+  },
+  "auditIntelligence": {
+    "generatedAt": "2026-04-28T08:30:59.982041Z",
+    "summary": {
+      "totalCAOwners": 88,
+      "parsedLetters": 81,
+      "highTransparencyGap": 38,
+      "qualifiedOpinions": 6,
+      "mattersWithoutBzAnchor": 12,
+      "auditorHHI": 486.2,
+      "auditRecordStatus": {
+        "named": 86,
+        "extractable": 1,
+        "lapsed": 1,
+        "no_record": 0
+      },
+      "stalenessDistribution": {
+        "current": 14,
+        "stale": 29,
+        "aging": 34,
+        "very_stale": 11
+      }
+    },
+    "frameworkStats": {
+      "WebTrust": 50,
+      "ETSI": 38
+    },
+    "selfReportByFramework": {
+      "webTrust": 57.2,
+      "etsi": 62.7
+    },
+    "inPeriodDetection": {
+      "covered": 415,
+      "caught": 109,
+      "multiCycleMisses": 39,
+      "detectionPct": 26.3,
+      "note": "Denominator = unique bugs with at least one covering audit period. Caught = mentioned in any covering letter."
+    },
+    "perAuditorDetection": [
+      {
+        "auditor": "MATRIX Ltd.",
+        "caught": 11,
+        "total": 11,
+        "detectionPct": 100.0
+      },
+      {
+        "auditor": "Anthony Kam & Associates Ltd.",
+        "caught": 3,
+        "total": 3,
+        "detectionPct": 100.0
+      },
+      {
+        "auditor": "Bureau Veritas Italia S.p.A",
+        "caught": 3,
+        "total": 4,
+        "detectionPct": 75.0
+      },
+      {
+        "auditor": "Crowe FST Audit Ltd",
+        "caught": 3,
+        "total": 5,
+        "detectionPct": 60.0
+      },
+      {
+        "auditor": "SunRise CPAs / DFK",
+        "caught": 7,
+        "total": 12,
+        "detectionPct": 58.3
+      },
+      {
+        "auditor": "TÜV Austria",
+        "caught": 7,
+        "total": 18,
+        "detectionPct": 38.9
+      },
+      {
+        "auditor": "AENOR",
+        "caught": 3,
+        "total": 8,
+        "detectionPct": 37.5
+      },
+      {
+        "auditor": "TÜV NORD",
+        "caught": 1,
+        "total": 3,
+        "detectionPct": 33.3
+      },
+      {
+        "auditor": "QSCert",
+        "caught": 1,
+        "total": 3,
+        "detectionPct": 33.3
+      },
+      {
+        "auditor": "BDO International",
+        "caught": 41,
+        "total": 153,
+        "detectionPct": 26.8
+      },
+      {
+        "auditor": "Deloitte",
+        "caught": 5,
+        "total": 21,
+        "detectionPct": 23.8
+      },
+      {
+        "auditor": "Ernst & Young",
+        "caught": 14,
+        "total": 70,
+        "detectionPct": 20.0
+      },
+      {
+        "auditor": "datenschutz cert GmbH",
+        "caught": 1,
+        "total": 5,
+        "detectionPct": 20.0
+      },
+      {
+        "auditor": "Schellman",
+        "caught": 4,
+        "total": 34,
+        "detectionPct": 11.8
+      },
+      {
+        "auditor": "KPMG",
+        "caught": 5,
+        "total": 51,
+        "detectionPct": 9.8
+      },
+      {
+        "auditor": "LSTI",
+        "caught": 0,
+        "total": 8,
+        "detectionPct": 0.0
+      },
+      {
+        "auditor": "QMSCERT",
+        "caught": 0,
+        "total": 6,
+        "detectionPct": 0.0
+      },
+      {
+        "auditor": "PwC",
+        "caught": 0,
+        "total": 5,
+        "detectionPct": 0.0
+      },
+      {
+        "auditor": "TÜViT",
+        "caught": 0,
+        "total": 8,
+        "detectionPct": 0.0
+      },
+      {
+        "auditor": "BDO Consulting (Malaysia)",
+        "caught": 0,
+        "total": 7,
+        "detectionPct": 0.0
+      },
+      {
+        "auditor": "Certop Informatikai Tanúsítási Szolgáltatások Kft.",
+        "caught": 0,
+        "total": 6,
+        "detectionPct": 0.0
+      },
+      {
+        "auditor": "Scott S. Perry CPA, PLLC",
+        "caught": 0,
+        "total": 32,
+        "detectionPct": 0.0
+      }
+    ],
+    "alvEquivalentFindings": {
+      "parsedLetters": 81,
+      "missingRootFingerprints": 0,
+      "certificateScopeGaps": 9,
+      "accurateFingerprintCoverage": 0,
+      "untracedRoots": 3,
+      "missingFingerprintsPct": 0,
+      "scopeGapsPct": 11
+    },
+    "perAuditorAlvFindings": [
+      {
+        "auditor": "Ernst & Young",
+        "clients": 6,
+        "missingFingerprintsPct": 0,
+        "scopeGapPct": 0
+      },
+      {
+        "auditor": "KPMG",
+        "clients": 10,
+        "missingFingerprintsPct": 0,
+        "scopeGapPct": 10
+      },
+      {
+        "auditor": "TayllorCox PCEB",
+        "clients": 4,
+        "missingFingerprintsPct": 0,
+        "scopeGapPct": 0
+      },
+      {
+        "auditor": "Deloitte",
+        "clients": 8,
+        "missingFingerprintsPct": 0,
+        "scopeGapPct": 0
+      },
+      {
+        "auditor": "SunRise CPAs / DFK",
+        "clients": 5,
+        "missingFingerprintsPct": 0,
+        "scopeGapPct": 40
+      },
+      {
+        "auditor": "CSQA Certificazioni",
+        "clients": 2,
+        "missingFingerprintsPct": 0,
+        "scopeGapPct": 0
+      },
+      {
+        "auditor": "QMSCERT",
+        "clients": 2,
+        "missingFingerprintsPct": 0,
+        "scopeGapPct": 0
+      },
+      {
+        "auditor": "A-SIT",
+        "clients": 2,
+        "missingFingerprintsPct": 0,
+        "scopeGapPct": 0
+      },
+      {
+        "auditor": "AENOR",
+        "clients": 4,
+        "missingFingerprintsPct": 0,
+        "scopeGapPct": 0
+      },
+      {
+        "auditor": "TÜV NORD",
+        "clients": 2,
+        "missingFingerprintsPct": 0,
+        "scopeGapPct": 0
+      },
+      {
+        "auditor": "datenschutz cert GmbH",
+        "clients": 2,
+        "missingFingerprintsPct": 0,
+        "scopeGapPct": 0
+      },
+      {
+        "auditor": "Auren",
+        "clients": 2,
+        "missingFingerprintsPct": 0,
+        "scopeGapPct": 50
+      },
+      {
+        "auditor": "Schellman",
+        "clients": 3,
+        "missingFingerprintsPct": 0,
+        "scopeGapPct": 33
+      },
+      {
+        "auditor": "BDO International",
+        "clients": 6,
+        "missingFingerprintsPct": 0,
+        "scopeGapPct": 0
+      }
+    ],
+    "qualifiedOpinions": [
+      {
+        "ca": "Swiss BIT, Swiss Federal Office of Information Technology, Systems and Telecommunication (FOITT)",
+        "stores": [
+          "microsoft"
+        ],
+        "auditor": "KPMG"
+      },
+      {
+        "ca": "Entrust",
+        "stores": [
+          "apple",
+          "microsoft"
+        ],
+        "auditor": "Deloitte"
+      },
+      {
+        "ca": "e-commerce monitoring GmbH",
+        "stores": [
+          "microsoft"
+        ],
+        "auditor": "A-SIT"
+      },
+      {
+        "ca": "Microsoft Corporation",
+        "stores": [
+          "apple",
+          "chrome",
+          "microsoft",
+          "mozilla"
+        ],
+        "auditor": "Deloitte"
+      },
+      {
+        "ca": "Government of Finland, Population Register Centre’s (Väestörekisterikeskus, VRK)",
+        "stores": [
+          "microsoft"
+        ],
+        "auditor": "QMSCERT"
+      },
+      {
+        "ca": "Government of The Netherlands, PKIoverheid (Logius)",
+        "stores": [
+          "microsoft",
+          "mozilla"
+        ],
+        "auditor": "KPMG"
+      }
+    ],
+    "highTransparencyGapCAs": [
+      {
+        "ca": "DigiCert",
+        "incidentCount": 173,
+        "gapScore": 98.3,
+        "mattersCount": 3,
+        "auditor": "BDO International",
+        "framework": "WebTrust"
+      },
+      {
+        "ca": "Sectigo",
+        "incidentCount": 110,
+        "gapScore": 98.2,
+        "mattersCount": 2,
+        "auditor": "BDO International",
+        "framework": "WebTrust"
+      },
+      {
+        "ca": "IdenTrust Services, LLC",
+        "incidentCount": 75,
+        "gapScore": 96.0,
+        "mattersCount": 4,
+        "auditor": "BDO International",
+        "framework": "WebTrust"
+      },
+      {
+        "ca": "SwissSign AG",
+        "incidentCount": 65,
+        "gapScore": 93.8,
+        "mattersCount": 4,
+        "auditor": "TÜV Austria",
+        "framework": "ETSI"
+      },
+      {
+        "ca": "GlobalSign nv-sa",
+        "incidentCount": 56,
+        "gapScore": 91.1,
+        "mattersCount": 5,
+        "auditor": "KPMG",
+        "framework": "WebTrust"
+      },
+      {
+        "ca": "Microsoft Corporation",
+        "incidentCount": 51,
+        "gapScore": 94.1,
+        "mattersCount": 3,
+        "auditor": "Deloitte",
+        "framework": "WebTrust"
+      },
+      {
+        "ca": "Asseco Data Systems S.A.",
+        "incidentCount": 47,
+        "gapScore": 97.9,
+        "mattersCount": 2,
+        "auditor": "Ernst & Young",
+        "framework": "WebTrust"
+      },
+      {
+        "ca": "GoDaddy",
+        "incidentCount": 47,
+        "gapScore": 93.6,
+        "mattersCount": 3,
+        "auditor": "Schellman",
+        "framework": "WebTrust"
+      },
+      {
+        "ca": "Government of The Netherlands, PKIoverheid (Logius)",
+        "incidentCount": 45,
+        "gapScore": 100.0,
+        "mattersCount": 0,
+        "auditor": "KPMG",
+        "framework": "WebTrust"
+      },
+      {
+        "ca": "Netlock",
+        "incidentCount": 39,
+        "gapScore": 82.1,
+        "mattersCount": 7,
+        "auditor": "MATRIX Ltd.",
+        "framework": "ETSI"
+      }
+    ],
+    "etsiAalAdoption": {
+      "unknown": 7,
+      "2": 1,
+      "3.1": 5,
+      "2.9": 1,
+      "3.3": 3,
+      "3.0": 1,
+      "3.4": 14,
+      "3.5": 1
+    },
+    "auditorChanges": [
+      {
+        "year": 2024,
+        "ca": "Government of Brazil, Instituto Nacional de Tecnologia da Informação (ITI)",
+        "from": "Ernst & Young",
+        "to": "Moreira Associados Auditores Independentes"
+      },
+      {
+        "year": 2025,
+        "ca": "certSIGN",
+        "from": "LSTI",
+        "to": "Crowe FST Audit Ltd"
+      },
+      {
+        "year": 2024,
+        "ca": "Department of Defence Australia",
+        "from": "Deloitte",
+        "to": "Ionize"
+      },
+      {
+        "year": 2025,
+        "ca": "Autoridad de Certificación (ANF AC)",
+        "from": "CSQA Certificazioni",
+        "to": "DEKRA"
+      },
+      {
+        "year": 2025,
+        "ca": "EDICOM",
+        "from": "Audit Trust",
+        "to": "AENOR"
+      },
+      {
+        "year": 2025,
+        "ca": "ComSign",
+        "from": "Sharony - Shefler & Co. CPA",
+        "to": "BDO Israel"
+      },
+      {
+        "year": 2025,
+        "ca": "Microsoft Corporation",
+        "from": "BDO International",
+        "to": "Deloitte"
+      },
+      {
+        "year": 2025,
+        "ca": "Government of Japan, Digital Agency",
+        "from": "Ernst & Young",
+        "to": "Deloitte"
+      },
+      {
+        "year": 2025,
+        "ca": "Halcom D.D.",
+        "from": "SLOVENIAN ACCREDITATION",
+        "to": "Bureau Veritas d.o.o."
+      },
+      {
+        "year": 2025,
+        "ca": "Actalis",
+        "from": "IMQ S.p.A.",
+        "to": "Bureau Veritas Italia S.p.A"
+      },
+      {
+        "year": 2025,
+        "ca": "IdenTrust Services, LLC",
+        "from": "Schellman",
+        "to": "BDO International"
+      },
+      {
+        "year": 2026,
+        "ca": "IdenTrust Services, LLC",
+        "from": "BDO International",
+        "to": "Schellman"
+      },
+      {
+        "year": 2025,
+        "ca": "Government of Finland, Population Register Centre’s (Väestörekisterikeskus, VRK)",
+        "from": "datenschutz cert GmbH",
+        "to": "QMSCERT"
+      },
+      {
+        "year": 2024,
+        "ca": "Netlock",
+        "from": "Certop Informatikai Tanúsítási Szolgáltatások Kft.",
+        "to": "MATRIX Ltd."
+      },
+      {
+        "year": 2025,
+        "ca": "China Financial Certification Authority (CFCA)",
+        "from": "PwC",
+        "to": "Anthony Kam & Associates Ltd."
+      },
+      {
+        "year": 2025,
+        "ca": "TrustAsia Technologies, Inc.",
+        "from": "Anthony Kam & Associates Ltd.",
+        "to": "SunRise CPAs / DFK"
+      },
+      {
+        "year": 2025,
+        "ca": "Sectigo",
+        "from": "Deloitte",
+        "to": "BDO International"
+      },
+      {
+        "year": 2025,
+        "ca": "Sectigo",
+        "from": "BDO International",
+        "to": "Deloitte"
+      },
+      {
+        "year": 2025,
+        "ca": "Government of Turkey, Kamu Sertifikasyon Merkezi (Kamu SM)",
+        "from": "ICTA/BTK - Turkish Information and Communication Technologies Authority",
+        "to": "KIWA CERMET Italia S.p.A"
+      },
+      {
+        "year": 2025,
+        "ca": "Agence Nationale de Certification Electronique",
+        "from": "LSTI",
+        "to": "Deloitte"
+      },
+      {
+        "year": 2025,
+        "ca": "Chunghwa Telecom",
+        "from": "SunRise CPAs / DFK",
+        "to": "KPMG"
+      },
+      {
+        "year": 2025,
+        "ca": "Chunghwa Telecom",
+        "from": "KPMG",
+        "to": "SunRise CPAs / DFK"
+      },
+      {
+        "year": 2025,
+        "ca": "Izenpe S.A.",
+        "from": "LSTI",
+        "to": "AENOR"
+      },
+      {
+        "year": 2026,
+        "ca": "Buypass",
+        "from": "BSI",
+        "to": "Attestic B.V."
+      },
+      {
+        "year": 2025,
+        "ca": "Telia Company",
+        "from": "KPMG",
+        "to": "datenschutz cert GmbH"
+      },
+      {
+        "year": 2026,
+        "ca": "A-Trust",
+        "from": "Ernst & Young",
+        "to": "A-SIT"
+      },
+      {
+        "year": 2026,
+        "ca": "GoDaddy",
+        "from": "KPMG",
+        "to": "Schellman"
+      },
+      {
+        "year": 2026,
+        "ca": "Government of Hong Kong (SAR), Hongkong Post, Certizen",
+        "from": "PwC",
+        "to": "RSM Hong Kong"
+      }
+    ],
+    "mattersWithoutBzAnchor": [
+      {
+        "ca": "Swiss BIT, Swiss Federal Office of Information Technology, Systems and Telecommunication (FOITT)",
+        "summary": "Not all necessary information is described in the terms of use (REQ-6.2-02)."
+      },
+      {
+        "ca": "Swiss BIT, Swiss Federal Office of Information Technology, Systems and Telecommunication (FOITT)",
+        "summary": "The validity period of an identification in which certificates may be issued is "
+      },
+      {
+        "ca": "Swiss BIT, Swiss Federal Office of Information Technology, Systems and Telecommunication (FOITT)",
+        "summary": "The asset management documentation has not been finalized and formally approved "
+      },
+      {
+        "ca": "Swiss BIT, Swiss Federal Office of Information Technology, Systems and Telecommunication (FOITT)",
+        "summary": "The racks are in a server room shared with other departments and are physically "
+      },
+      {
+        "ca": "Swiss BIT, Swiss Federal Office of Information Technology, Systems and Telecommunication (FOITT)",
+        "summary": "The Policy and Layout document does not formally list id-etsi-qcs-QcCompliance ("
+      },
+      {
+        "ca": "Macao Post and Telecommunications Bureau",
+        "summary": "All certificates issued by eSignTrust contain an \"Organisation\" attribute of \"Ma"
+      },
+      {
+        "ca": "Carillon Information Security Inc.",
+        "summary": "On March 16, 2024, Carillon migrated to a new CIS infrastructure, which included"
+      },
+      {
+        "ca": "Asseco Data Systems S.A.",
+        "summary": "ADS failed to update its Certification Policy version at least once every 365 da"
+      },
+      {
+        "ca": "Government of Sweden (Försäkringskassan)",
+        "summary": "SSIA overlooked CA/Browser Forum ballot SC47v2 when published in 2021, which pro"
+      },
+      {
+        "ca": "Shanghai Electronic Certification Authority Co., Ltd.",
+        "summary": "SHECA's management disclosed 4 incidents during the audit period, with remedial "
+      },
+      {
+        "ca": "DigitalSign - Certificadora Digital, S.A.",
+        "summary": "One minor non-conformity was identified regarding lack of documentation of the v"
+      },
+      {
+        "ca": "IdenTrust Services, LLC",
+        "summary": "For two out of two quarters selected for testing, IdenTrust did not select at le"
+      },
+      {
+        "ca": "Saudi Data and Artificial Intelligence Authority (SDAIA)",
+        "summary": "During the examination period there were no instances or occurrences of key gene"
+      },
+      {
+        "ca": "Google Trust Services LLC",
+        "summary": "GTS issued one certificate to a new team member without proper authorization wor"
+      },
+      {
+        "ca": "Izenpe S.A.",
+        "summary": "The OCSP responder certificate contained a not allowed Key Usage."
+      },
+      {
+        "ca": "A-Trust",
+        "summary": "No assertion to a mass revocation plan in section 5.7.1 of the combined CP/CPS v"
+      }
+    ],
+    "topAuditors": [
+      {
+        "name": "KPMG",
+        "caCount": 10,
+        "country": "Global (US/UK)",
+        "avgQualityScore": 67.0,
+        "avgGapScore": 98.2,
+        "highGapCount": 5,
+        "avgMattersPerCA": 1.0
+      },
+      {
+        "name": "Deloitte",
+        "caCount": 8,
+        "country": "Global (US/UK)",
+        "avgQualityScore": 76.9,
+        "avgGapScore": 72.0,
+        "highGapCount": 1,
+        "avgMattersPerCA": 1.2
+      },
+      {
+        "name": "Ernst & Young",
+        "caCount": 6,
+        "country": "Global (US/UK)",
+        "avgQualityScore": 62.2,
+        "avgGapScore": 93.2,
+        "highGapCount": 3,
+        "avgMattersPerCA": 1.3
+      },
+      {
+        "name": "BDO International",
+        "caCount": 6,
+        "country": "Global (US/UK)",
+        "avgQualityScore": 51.5,
+        "avgGapScore": 96.8,
+        "highGapCount": 6,
+        "avgMattersPerCA": 2.0
+      },
+      {
+        "name": "SunRise CPAs / DFK",
+        "caCount": 5,
+        "country": "United States",
+        "avgQualityScore": 58.3,
+        "avgGapScore": 86.6,
+        "highGapCount": 3,
+        "avgMattersPerCA": 1.6
+      },
+      {
+        "name": "AENOR",
+        "caCount": 4,
+        "country": "Spain",
+        "avgQualityScore": 77.7,
+        "avgGapScore": 78.9,
+        "highGapCount": 1,
+        "avgMattersPerCA": 2.5
+      },
+      {
+        "name": "TayllorCox PCEB",
+        "caCount": 4,
+        "country": "Czech Republic",
+        "avgQualityScore": 84.8,
+        "avgGapScore": 100.0,
+        "highGapCount": 1,
+        "avgMattersPerCA": 0.0
+      },
+      {
+        "name": "CSQA Certificazioni",
+        "caCount": 3,
+        "country": "Italy",
+        "avgQualityScore": 80.8,
+        "avgGapScore": null,
+        "highGapCount": 0,
+        "avgMattersPerCA": 0.5
+      },
+      {
+        "name": "Schellman",
+        "caCount": 3,
+        "country": "United States",
+        "avgQualityScore": 57.4,
+        "avgGapScore": 85.7,
+        "highGapCount": 2,
+        "avgMattersPerCA": 1.7
+      },
+      {
+        "name": "LSTI",
+        "caCount": 3,
+        "country": "France",
+        "avgQualityScore": 91.7,
+        "avgGapScore": null,
+        "highGapCount": 0,
+        "avgMattersPerCA": 0.0
+      },
+      {
+        "name": "A-SIT",
+        "caCount": 2,
+        "country": "Austria",
+        "avgQualityScore": 85.7,
+        "avgGapScore": null,
+        "highGapCount": 0,
+        "avgMattersPerCA": 1.0
+      },
+      {
+        "name": "DEKRA",
+        "caCount": 2,
+        "country": "Spain",
+        "avgQualityScore": null,
+        "avgGapScore": null,
+        "highGapCount": 0,
+        "avgMattersPerCA": null
+      }
+    ]
+  },
+  "tabIntros": {
+    "generatedAt": "2026-04-28T08:50:42.725511+00:00",
+    "model": "claude-sonnet-4-5",
+    "note": "Analyst summaries generated by Claude from the prior day's snapshot. Each paragraph states the key finding for that tab with specific numbers and connects to related tabs.",
+    "intros": {
+      "market": "Five CAs control 93.7% of the public web certificate market. The Internet Security Research Group leads at 41.1%, followed by Google Trust Services (15.1%), DigiCert (13.9%), GoDaddy (12.9%), and Sectigo (10.7%). The remaining 80 CAs share just 6.3% of issuance despite holding equal trust store access, creating a systemic dependency on a handful of operators whose failure would cascade across the internet.",
+      "trust": "335 roots are trusted across the four major browser stores, but only 90 roots appear in all four and just 38 CA owners hold universal trust. Microsoft's store contains 142 roots not trusted by Chrome, Mozilla, or Apple, creating operational fragmentation where certificate chains valid in Edge fail in other browsers. This disagreement reflects divergent oversight models and forces CAs to maintain parallel hierarchies, multiplying the attack surface while complicating incident response coordination.",
+      "conc": "The market HHI of 2412 sits in the moderately concentrated range, but the top three CAs alone control 70% of issuance (CR3). Chrome and Safari together represent 94.6% of browser usage, amplifying the impact of any failure at ISRG, Google, or DigiCert. This concentration creates single points of systemic failure where a CA compromise or distrust event could instantly affect hundreds of millions of sites.",
+      "tail": "80 CAs in the trust store tail collectively issue just 6.3% of certificates, yet each holds the same browser trust as the top five. Many operate below meaningful audit scrutiny and lack the operational maturity of high-volume CAs, as evidenced by 54 CAs appearing in the 1,464-incident corpus. Low issuance volume correlates with reduced root program oversight attention, creating disproportionate risk per certificate issued.",
+      "geo": "US-incorporated CAs issue 88.9% of all certificates despite representing only 16 of 95 trusted CAs. European CAs account for 48 organizations but just 11.05% of issuance, while 17 Asia-Pacific CAs collectively issue 0.05%. This geographic concentration creates regulatory jurisdiction risk and positions US legal frameworks as de facto global policy, with GDPR-region CAs largely marginalized despite local compliance advantages.",
+      "gov": "31 government-operated or state-owned CAs hold trust store inclusion but collectively issue only 0.06% of certificates. These entities span high-risk jurisdictions including China, Russia, and several Middle Eastern states, creating surveillance and interception risks disproportionate to their issuance volume. Their trust store presence enables man-in-the-middle attacks within their territories regardless of market share, as seen in historical incidents involving CNNIC and Kazakhstan.",
+      "jurisdiction": "Five jurisdictions are classified as high-risk for compelled certificate issuance or surveillance abuse: China, Russia, the United Kingdom, Australia, and Hong Kong. India and Turkey present moderate risk. These classifications reflect laws enabling state access to private keys, gag orders preventing disclosure, or demonstrated willingness to weaponize PKI for censorship. The 88.9% US concentration creates a separate risk surface under FISA and national security letter frameworks.",
+      "ops": "1,464 incidents across 54 CAs break down into misissuance (581), governance failures (451), revocation problems (310), and validation errors (122). Only 23% of incidents are self-detected by CAs, with external researchers (19%), automated tools (18%), and audits (8%) finding the majority. 168 incidents involved policy violations and 118 involved disclosure failures, indicating systemic gaps in both controls and transparency even among high-volume operators.",
+      "crypto": "Root algorithm and key size data reveal ongoing exposure to deprecated cryptography and non-compliant standards. The expanding regulatory surface creates a moving target where CAs must simultaneously maintain legacy roots for compatibility while deploying quantum-resistant algorithms. The 47-day validity floor arriving in 2029 will force cryptographic agility that many CAs have not demonstrated in their incident histories.",
+      "distrust": "16 total distrust events show a pattern of compliance and operational failures rather than cryptographic compromises. 10 events involved patterns of repeated issues, 14 involved compliance or operational failures, and the posture distribution skews toward negligent noncompliance (7) and demonstrated incompetence (3). The median runway of 1,185 days from incident disclosure to distrust reflects root programs' reluctance to act decisively, allowing prolonged risk exposure before removal.",
+      "policy": "Among 42 active TLS issuers, only 12 are ready for the March 2029 47-day validity limit based on actual certificate replacement behavior. 4 CAs remain at risk of missing even the March 2026 200-day threshold, and 5 face risk at the March 2027 100-day step. This readiness gap exists partly because the regulatory surface has grown 121-fold since 2000 to 6,651 total obligations, with 76% classified as mandatory. The compliance complexity increases faster than CA operational maturity, as evidenced by zero new ballots since 2022 despite this expansion.",
+      "governance": "Root program oversight covered only 18.4% of Chrome incidents, 9.9% of Mozilla incidents, and 5.4% of Apple incidents in 2025, down from 67.8% and 78% in 2019 for Chrome and Mozilla respectively. Microsoft provided zero substantive oversight across all 223 incidents. Chrome has commented on 290 substantive bugs lifetime and Mozilla on 248, but recent engagement (109 and 46 bugs respectively) has not kept pace with incident growth, creating a surveillance gap where CAs operate with declining accountability.",
+      "community": "56 organizations are CA/Browser Forum members but only 21 actively contribute, leaving 35 with zero ballot participation. Stephen Davidson of Sectigo has proposed 36 ballots and Sectigo leads organizational contribution, but the silent majority of CAs consume policy without shaping it. This participation gap means high-volume operators in the market tab effectively write rules for the 80-CA tail that lacks voice or technical engagement in standards development.",
+      "audit": "Auditors detected only 26% of the 415 in-scope incidents that occurred during their audit periods, despite issuing letters for 88 CAs. 38 CAs show high transparency gaps between clean audit opinions and documented Bugzilla incident histories, and 6 CAs received qualified opinions. Only 1 CA has adopted ETSI EN 319 411-1 v3.5, and 57.2% of WebTrust findings and 62.7% of ETSI findings are self-reported rather than auditor-discovered. 20 CAs changed auditors in 2025, suggesting dissatisfaction or opinion shopping, while auditor concentration (HHI 486.2) remains low enough that CAs can migrate to more permissive firms."
+    }
+  }
+}

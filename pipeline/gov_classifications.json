@@ -1,0 +1,418 @@
+{
+  "_comment": "Classifies all CA operators by type. Types: 'government' (directly operated by a government agency or ministry), 'state_enterprise' (entity with direct state ownership or control), 'commercial' (for-profit private company), 'non_profit' (non-profit or foundation), 'regulated' (private entity operating under specific regulatory mandate, e.g. payment networks, notarial authorities, defence contractors). The 'jurisdiction' field is the country of incorporation/operation. Customer relationships alone do not constitute a structural tie for government types.",
+  "classifications": {
+    "Government of Spain, Fábrica Nacional de Moneda y Timbre (FNMT)": {
+      "type": "government",
+      "state_influence": "Spanish Royal Mint, government agency",
+      "jurisdiction": "Spain"
+    },
+    "Government of Hong Kong (SAR), Hongkong Post, Certizen": {
+      "type": "government",
+      "state_influence": "Hong Kong Post, SAR government agency",
+      "jurisdiction": "Hong Kong"
+    },
+    "Government of Spain, Autoritat de Certificació de la Comunitat Valenciana (ACCV)": {
+      "type": "government",
+      "state_influence": "Valencian regional government agency",
+      "jurisdiction": "Spain"
+    },
+    "Government of Finland, Population Register Centre’s (Väestörekisterikeskus, VRK)": {
+      "type": "government",
+      "state_influence": "Finnish population register, government agency",
+      "jurisdiction": "Finland"
+    },
+    "Government of Turkey, Kamu Sertifikasyon Merkezi (Kamu SM)": {
+      "type": "government",
+      "state_influence": "Turkish government certification center",
+      "jurisdiction": "Turkey"
+    },
+    "Government of Brazil, Instituto Nacional de Tecnologia da Informação (ITI)": {
+      "type": "government",
+      "state_influence": "Brazilian federal IT institute, operates ICP-Brasil",
+      "jurisdiction": "Brazil"
+    },
+    "Government of Korea, KLID": {
+      "type": "government",
+      "state_influence": "Korean government agency",
+      "jurisdiction": "South Korea"
+    },
+    "Government of India, Ministry of Communications & Information Technology, Controller of Certifying Authorities (CCA)": {
+      "type": "government",
+      "state_influence": "Indian federal ministry",
+      "jurisdiction": "India"
+    },
+    "Government of The Netherlands, PKIoverheid (Logius)": {
+      "type": "government",
+      "state_influence": "Dutch government PKI operated by Logius",
+      "jurisdiction": "Netherlands"
+    },
+    "Government of Japan, Digital Agency": {
+      "type": "government",
+      "state_influence": "Japanese Digital Agency, cabinet-level",
+      "jurisdiction": "Japan"
+    },
+    "Swiss BIT, Swiss Federal Office of Information Technology, Systems and Telecommunication": {
+      "type": "government",
+      "state_influence": "Swiss federal IT office",
+      "jurisdiction": "Switzerland"
+    },
+    "Government of Sweden (Försäkringskassan)": {
+      "type": "government",
+      "state_influence": "Swedish Social Insurance Agency",
+      "jurisdiction": "Sweden"
+    },
+    "Government of Saudi Arabia, NIC (SDAIA)": {
+      "type": "government",
+      "state_influence": "Saudi Data and AI Authority",
+      "jurisdiction": "Saudi Arabia"
+    },
+    "Thailand National Root Certificate Authority (Electronic Transactions Development Agency)": {
+      "type": "government",
+      "state_influence": "Thai Electronic Transactions Development Agency",
+      "jurisdiction": "Thailand"
+    },
+    "Autoridad de Certificacion Firmaprofesional": {
+      "type": "government",
+      "state_influence": "Spanish notarial professional body, quasi-governmental",
+      "jurisdiction": "Spain"
+    },
+    "Financijska agencija (Fina)": {
+      "type": "state_enterprise",
+      "state_influence": "Croatian state-owned financial agency",
+      "jurisdiction": "Croatia"
+    },
+    "Agence Nationale de Certification Electronique": {
+      "type": "government",
+      "state_influence": "Tunisian national certification agency",
+      "jurisdiction": "Tunisia"
+    },
+    "Autoridad de Certificación (ANF AC)": {
+      "type": "government",
+      "state_influence": "Spanish certification authority",
+      "jurisdiction": "Spain"
+    },
+    "U.S. Federal Public Key Infrastructure (US FPKI)": {
+      "type": "government",
+      "state_influence": "US federal government PKI",
+      "jurisdiction": "United States"
+    },
+    "Chunghwa Telecom": {
+      "type": "state_enterprise",
+      "state_influence": "Majority state-owned telecom (Taiwan Ministry of Transportation)",
+      "jurisdiction": "Taiwan"
+    },
+    "Telia Company": {
+      "type": "state_enterprise",
+      "state_influence": "Swedish and Finnish state partial ownership (~37% Swedish state)",
+      "jurisdiction": "Sweden"
+    },
+    "Deutsche Telekom Security GmbH": {
+      "type": "state_enterprise",
+      "state_influence": "German federal government holds ~30% of Deutsche Telekom via KfW",
+      "jurisdiction": "Germany"
+    },
+    "Shanghai Electronic Certification Authority Co., Ltd.": {
+      "type": "state_enterprise",
+      "state_influence": "State-affiliated entity, Shanghai municipality",
+      "jurisdiction": "China"
+    },
+    "China Financial Certification Authority (CFCA)": {
+      "type": "state_enterprise",
+      "state_influence": "Established by People's Bank of China",
+      "jurisdiction": "China"
+    },
+    "HARICA": {
+      "type": "state_enterprise",
+      "state_influence": "Operated by Greek academic/research network, government-funded institution",
+      "jurisdiction": "Greece"
+    },
+    "DigiCert": {
+      "type": "commercial",
+      "jurisdiction": "United States"
+    },
+    "Sectigo": {
+      "type": "commercial",
+      "jurisdiction": "United Kingdom"
+    },
+    "GoDaddy": {
+      "type": "commercial",
+      "jurisdiction": "United States"
+    },
+    "GlobalSign nv-sa": {
+      "type": "commercial",
+      "jurisdiction": "Belgium"
+    },
+    "Entrust": {
+      "type": "commercial",
+      "jurisdiction": "United States"
+    },
+    "SSL.com": {
+      "type": "commercial",
+      "jurisdiction": "United States"
+    },
+    "IdenTrust Services, LLC": {
+      "type": "commercial",
+      "jurisdiction": "United States"
+    },
+    "Actalis": {
+      "type": "commercial",
+      "jurisdiction": "Italy"
+    },
+    "SwissSign AG": {
+      "type": "commercial",
+      "jurisdiction": "Switzerland"
+    },
+    "D-Trust": {
+      "type": "commercial",
+      "jurisdiction": "Germany"
+    },
+    "Buypass": {
+      "type": "commercial",
+      "jurisdiction": "Norway"
+    },
+    "Certigna": {
+      "type": "commercial",
+      "jurisdiction": "France"
+    },
+    "certSIGN": {
+      "type": "commercial",
+      "jurisdiction": "Romania"
+    },
+    "TrustAsia Technologies, Inc.": {
+      "type": "commercial",
+      "jurisdiction": "China"
+    },
+    "Taiwan-CA Inc. (TWCA)": {
+      "type": "commercial",
+      "jurisdiction": "Taiwan"
+    },
+    "NAVER Cloud Trust Services": {
+      "type": "commercial",
+      "jurisdiction": "South Korea"
+    },
+    "Asseco Data Systems S.A.": {
+      "type": "commercial",
+      "jurisdiction": "Poland"
+    },
+    "eMudhra Technologies Limited": {
+      "type": "commercial",
+      "jurisdiction": "India"
+    },
+    "Microsec Ltd.": {
+      "type": "commercial",
+      "jurisdiction": "Hungary"
+    },
+    "Netlock": {
+      "type": "commercial",
+      "jurisdiction": "Hungary"
+    },
+    "Disig, a.s.": {
+      "type": "commercial",
+      "jurisdiction": "Slovakia"
+    },
+    "Izenpe S.A.": {
+      "type": "commercial",
+      "jurisdiction": "Spain"
+    },
+    "MULTICERT": {
+      "type": "commercial",
+      "jurisdiction": "Portugal"
+    },
+    "DigitalSign - Certificadora Digital, S.A.": {
+      "type": "commercial",
+      "jurisdiction": "Portugal"
+    },
+    "ComSign": {
+      "type": "commercial",
+      "jurisdiction": "Israel"
+    },
+    "LAWtrust": {
+      "type": "commercial",
+      "jurisdiction": "South Africa"
+    },
+    "TrustFactory(Pty)Ltd": {
+      "type": "commercial",
+      "jurisdiction": "South Africa"
+    },
+    "Viking Cloud, Inc.": {
+      "type": "commercial",
+      "jurisdiction": "United States"
+    },
+    "e-commerce monitoring GmbH": {
+      "type": "commercial",
+      "jurisdiction": "Austria"
+    },
+    "A-Trust": {
+      "type": "commercial",
+      "jurisdiction": "Austria"
+    },
+    "Trustis": {
+      "type": "commercial",
+      "jurisdiction": "United Kingdom"
+    },
+    "Netrust Pte Ltd": {
+      "type": "commercial",
+      "jurisdiction": "Singapore"
+    },
+    "AC Camerfirma, S.A.": {
+      "type": "commercial",
+      "jurisdiction": "Spain"
+    },
+    "Docaposte Certinomis SAS": {
+      "type": "commercial",
+      "jurisdiction": "France"
+    },
+    "Eviden": {
+      "type": "commercial",
+      "jurisdiction": "France"
+    },
+    "Global Digital Cybersecurity Authority Co., Ltd. (Formerly Guang Dong Certificate Authority (GDCA))": {
+      "type": "commercial",
+      "jurisdiction": "China"
+    },
+    "iTrusChina Co., Ltd.": {
+      "type": "commercial",
+      "jurisdiction": "China"
+    },
+    "BEIJING CERTIFICATE AUTHORITY Co., Ltd.": {
+      "type": "commercial",
+      "jurisdiction": "China"
+    },
+    "Cybertrust Japan / JCSI": {
+      "type": "commercial",
+      "jurisdiction": "Japan"
+    },
+    "First certifikační autorita, a.s.": {
+      "type": "commercial",
+      "jurisdiction": "Czechia"
+    },
+    "První certifikační autorita, a.s.": {
+      "type": "commercial",
+      "jurisdiction": "Czechia"
+    },
+    "Halcom D.D.": {
+      "type": "commercial",
+      "jurisdiction": "Slovenia"
+    },
+    "Byte Computer S.A.": {
+      "type": "commercial",
+      "jurisdiction": "Greece"
+    },
+    "Skaitmeninio sertifikavimo centras (SSC)": {
+      "type": "commercial",
+      "jurisdiction": "Lithuania"
+    },
+    "Notarius": {
+      "type": "commercial",
+      "jurisdiction": "Canada"
+    },
+    "Internet Security Research Group": {
+      "type": "non_profit",
+      "jurisdiction": "United States"
+    },
+    "OISTE": {
+      "type": "non_profit",
+      "jurisdiction": "Switzerland"
+    },
+    "Amazon Trust Services": {
+      "type": "commercial",
+      "jurisdiction": "United States"
+    },
+    "Google Trust Services LLC": {
+      "type": "commercial",
+      "jurisdiction": "United States"
+    },
+    "Microsoft Corporation": {
+      "type": "commercial",
+      "jurisdiction": "United States"
+    },
+    "Certainly LLC": {
+      "type": "commercial",
+      "jurisdiction": "United States"
+    },
+    "Visa": {
+      "type": "commercial",
+      "jurisdiction": "United States",
+      "note": "Payment network CA, certificates for Visa ecosystem participants"
+    },
+    "Open Access Technology International, Inc. (OATI)": {
+      "type": "commercial",
+      "jurisdiction": "United States",
+      "note": "Energy sector B2B certificates for NAESB/NERC-regulated entities"
+    },
+    "Carillon Information Security Inc.": {
+      "type": "commercial",
+      "jurisdiction": "Canada",
+      "note": "Canadian federal PKI for government/regulated sector"
+    },
+    "Image-X Enterprises Inc": {
+      "type": "commercial",
+      "jurisdiction": "United States",
+      "note": "Legacy Microsoft-only inclusion, minimal active issuance"
+    },
+    "EDICOM": {
+      "type": "commercial",
+      "jurisdiction": "Spain",
+      "note": "EDI/e-invoicing certificates for tax authority compliance"
+    },
+    "Agencia Notarial de Certificación (ANCERT)": {
+      "type": "government",
+      "jurisdiction": "Spain",
+      "note": "Spanish notarial authority CA, identity certificates for notaries",
+      "state_influence": "Operated by Consejo General del Notariado (Spanish General Council of Notaries), a statutory professional body created by Spanish law"
+    },
+    "Consejo General de la Abogacía Española": {
+      "type": "government",
+      "jurisdiction": "Spain",
+      "note": "Spanish bar association CA, certificates for lawyers",
+      "state_influence": "Spanish General Council of Bar Associations — statutory professional body established by Spanish law"
+    },
+    "Consorci Administració Oberta de Catalunya (Consorci AOC, CATCert)": {
+      "type": "government",
+      "jurisdiction": "Spain",
+      "note": "Catalan public administration consortium CA",
+      "state_influence": "Public-sector consortium of Catalan regional and local governments, established by act of the Catalan Parliament (Law 29/2010)"
+    },
+    "Zetes": {
+      "type": "commercial",
+      "jurisdiction": "Belgium",
+      "note": "Identity document and biometric CA for government programmes"
+    },
+    "PostSignum": {
+      "type": "state_enterprise",
+      "jurisdiction": "Czechia",
+      "note": "Czech Post qualified trust service provider",
+      "state_influence": "Operated by Česká pošta, s.p. (Czech Post), a state-owned enterprise of the Czech Republic"
+    },
+    "Macao Post and Telecommunications Bureau": {
+      "type": "government",
+      "state_influence": "Macao SAR government postal and telecom bureau",
+      "jurisdiction": "Macao"
+    },
+    "Department of Defence Australia": {
+      "type": "government",
+      "state_influence": "Australian Department of Defence, federal government",
+      "jurisdiction": "Australia"
+    },
+    "Swiss BIT, Swiss Federal Office of Information Technology, Systems and Telecommunication (FOITT)": {
+      "type": "government",
+      "state_influence": "Swiss Federal Office of Information Technology, Systems and Telecommunication",
+      "jurisdiction": "Switzerland"
+    },
+    "SI-TRUST": {
+      "type": "government",
+      "state_influence": "Slovenian government trust service provider",
+      "jurisdiction": "Slovenia"
+    },
+    "Krajowa Izba Rozliczeniowa S.A. (KIR)": {
+      "type": "state_enterprise",
+      "jurisdiction": "Poland",
+      "note": "Polish interbank clearing house, certificates for financial sector",
+      "state_influence": "Polish interbank clearing house, established by statute, owned by National Bank of Poland and commercial banks under state mandate"
+    },
+    "SECOM Trust Systems Co., Ltd.": {
+      "type": "commercial",
+      "jurisdiction": "Japan"
+    }
+  }
+}

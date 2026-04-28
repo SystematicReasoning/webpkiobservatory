@@ -1,0 +1,1608 @@
+{
+  "generated_at": "2026-04-28T08:50:41.525302+00:00",
+  "source_groups": {
+    "tls_br_op": {
+      "label": "TLS BR (operational)",
+      "color": "#2ecc71"
+    },
+    "tls_br_prof": {
+      "label": "TLS BR (profile spec)",
+      "color": "#82e0aa"
+    },
+    "ev_g_op": {
+      "label": "EV Guidelines (operational)",
+      "color": "#27ae60"
+    },
+    "ev_g_prof": {
+      "label": "EV Guidelines (profile spec)",
+      "color": "#7dcea0"
+    },
+    "ns_reqs": {
+      "label": "CA/B Forum NS Reqs",
+      "color": "#1abc9c"
+    },
+    "ns_reqs_op": {
+      "label": "CA/B Forum NS Reqs",
+      "color": "#1abc9c"
+    },
+    "smime_br_op": {
+      "label": "S/MIME BR (operational)",
+      "color": "#16a085"
+    },
+    "smime_br_prof": {
+      "label": "S/MIME BR (profile spec)",
+      "color": "#76d7c4"
+    },
+    "cs_br_op": {
+      "label": "CS BR (operational)",
+      "color": "#0e8a73"
+    },
+    "cs_br_prof": {
+      "label": "CS BR (profile spec)",
+      "color": "#45b39d"
+    },
+    "mozilla_mrsp": {
+      "label": "Mozilla MRSP",
+      "color": "#ff6f00"
+    },
+    "chrome_root": {
+      "label": "Chrome Root Policy",
+      "color": "#4285f4"
+    },
+    "apple_root": {
+      "label": "Apple Root Policy",
+      "color": "#555555"
+    },
+    "rfc_pkix": {
+      "label": "RFC 5280 (PKIX)",
+      "color": "#8e44ad"
+    },
+    "rfc_ct": {
+      "label": "RFC 9162 (CT)",
+      "color": "#9b59b6"
+    },
+    "rfc_caa": {
+      "label": "RFC 8659 (CAA)",
+      "color": "#a569bd"
+    },
+    "rfc_acme": {
+      "label": "RFC 8555 (ACME)",
+      "color": "#b07cc6"
+    },
+    "webtrust": {
+      "label": "WebTrust / ETSI Audit",
+      "color": "#e67e22"
+    },
+    "etsi_stack": {
+      "label": "ETSI TSP Stack",
+      "color": "#16a085"
+    },
+    "nist": {
+      "label": "NIST SP 800-53 Rev 5",
+      "color": "#c0392b"
+    },
+    "nis2": {
+      "label": "NIS2 Directive",
+      "color": "#922b21"
+    }
+  },
+  "methodology": {
+    "computed_sources": [
+      "tls_br (PDF 2012-2021 + GitHub 2021-present)",
+      "ev_g, ns_reqs, smime_br, cs_br (GitHub tags)",
+      "mozilla_mrsp (GitHub markdown)",
+      "rfc_pkix (RFC 5280), rfc_ct (RFC 9162), rfc_caa (RFC 8659), rfc_acme (RFC 8555)",
+      "nis2 (EUR-Lex HTML)",
+      "nist_800_53 (OSCAL JSON)"
+    ],
+    "curated_sources": [
+      "chrome_root",
+      "apple_root",
+      "webtrust",
+      "etsi_stack"
+    ],
+    "parsers": {
+      "RFC2119_INLINE": "MUST/MUST NOT/SHALL/SHALL NOT/SHOULD/MAY uppercase keywords. Used by: TLS BR, EVG, CS BR, Mozilla MRSP, RFCs.",
+      "SHALL_LETTERED_LIST": "SHALL: section header + lettered sub-items (a. b. c.) + numbered/roman sub-sub-items. Structural item count as primary, inline keyword count as floor. Used by: NSR, S/MIME BR.",
+      "EU_LEGAL": "Lowercase 'shall' = binding obligation. EU 'should' excluded (recital/political guidance, not operative). Used by: NIS2.",
+      "NIST_OSCAL": "Structured JSON control catalog count: base controls + enhancements. Used by: NIST SP 800-53 Rev 5."
+    },
+    "rfc_approach": "Operative versions only — no stacking superseded RFCs. A CA reads the current operative version, not its predecessors. RFC 5280 superseded 3280/2459; RFC 9162 superseded 6962; RFC 8659 superseded 6844.",
+    "caveats": [
+      "Keyword/structural counts include some definitional and example uses — trends are more reliable than absolute values.",
+      "NIST 800-53 shown in full; CAs under NIS2 must demonstrate alignment but not all controls apply directly.",
+      "NIS2 counts full directive; TSP-specific obligations are a subset (~150-180).",
+      "Curated sources (ETSI, WebTrust, Chrome, Apple) are expert estimates from published document summaries."
+    ]
+  },
+  "time_series": [
+    {
+      "year": 2000,
+      "by_source": {
+        "webtrust": {
+          "label": "WebTrust / ETSI Audit",
+          "mandatory": 40,
+          "recommended": 10,
+          "optional": 5
+        }
+      },
+      "totals": {
+        "mandatory": 40,
+        "recommended": 10,
+        "optional": 5,
+        "total": 55
+      }
+    },
+    {
+      "year": 2001,
+      "by_source": {
+        "webtrust": {
+          "label": "WebTrust / ETSI Audit",
+          "mandatory": 40,
+          "recommended": 10,
+          "optional": 5
+        }
+      },
+      "totals": {
+        "mandatory": 40,
+        "recommended": 10,
+        "optional": 5,
+        "total": 55
+      }
+    },
+    {
+      "year": 2002,
+      "by_source": {
+        "webtrust": {
+          "label": "WebTrust / ETSI Audit",
+          "mandatory": 40,
+          "recommended": 10,
+          "optional": 5
+        }
+      },
+      "totals": {
+        "mandatory": 40,
+        "recommended": 10,
+        "optional": 5,
+        "total": 55
+      }
+    },
+    {
+      "year": 2003,
+      "by_source": {
+        "webtrust": {
+          "label": "WebTrust / ETSI Audit",
+          "mandatory": 40,
+          "recommended": 10,
+          "optional": 5
+        }
+      },
+      "totals": {
+        "mandatory": 40,
+        "recommended": 10,
+        "optional": 5,
+        "total": 55
+      }
+    },
+    {
+      "year": 2004,
+      "by_source": {
+        "webtrust": {
+          "label": "WebTrust / ETSI Audit",
+          "mandatory": 40,
+          "recommended": 10,
+          "optional": 5
+        },
+        "mozilla_mrsp": {
+          "label": "Mozilla MRSP",
+          "mandatory": 178,
+          "recommended": 10,
+          "optional": 43
+        }
+      },
+      "totals": {
+        "mandatory": 218,
+        "recommended": 20,
+        "optional": 48,
+        "total": 286
+      }
+    },
+    {
+      "year": 2005,
+      "by_source": {
+        "webtrust": {
+          "label": "WebTrust / ETSI Audit",
+          "mandatory": 40,
+          "recommended": 10,
+          "optional": 5
+        },
+        "mozilla_mrsp": {
+          "label": "Mozilla MRSP",
+          "mandatory": 178,
+          "recommended": 10,
+          "optional": 43
+        }
+      },
+      "totals": {
+        "mandatory": 218,
+        "recommended": 20,
+        "optional": 48,
+        "total": 286
+      }
+    },
+    {
+      "year": 2006,
+      "by_source": {
+        "webtrust": {
+          "label": "WebTrust / ETSI Audit",
+          "mandatory": 40,
+          "recommended": 10,
+          "optional": 5
+        },
+        "mozilla_mrsp": {
+          "label": "Mozilla MRSP",
+          "mandatory": 178,
+          "recommended": 10,
+          "optional": 43
+        }
+      },
+      "totals": {
+        "mandatory": 218,
+        "recommended": 20,
+        "optional": 48,
+        "total": 286
+      }
+    },
+    {
+      "year": 2007,
+      "by_source": {
+        "webtrust": {
+          "label": "WebTrust / ETSI Audit",
+          "mandatory": 40,
+          "recommended": 10,
+          "optional": 5
+        },
+        "mozilla_mrsp": {
+          "label": "Mozilla MRSP",
+          "mandatory": 178,
+          "recommended": 10,
+          "optional": 43
+        }
+      },
+      "totals": {
+        "mandatory": 218,
+        "recommended": 20,
+        "optional": 48,
+        "total": 286
+      }
+    },
+    {
+      "year": 2008,
+      "by_source": {
+        "webtrust": {
+          "label": "WebTrust / ETSI Audit",
+          "mandatory": 80,
+          "recommended": 20,
+          "optional": 10
+        },
+        "mozilla_mrsp": {
+          "label": "Mozilla MRSP",
+          "mandatory": 178,
+          "recommended": 10,
+          "optional": 43
+        },
+        "rfc_pkix": {
+          "label": "RFC 5280 (PKIX)",
+          "mandatory": 318,
+          "recommended": 83,
+          "optional": 141
+        }
+      },
+      "totals": {
+        "mandatory": 576,
+        "recommended": 113,
+        "optional": 194,
+        "total": 883
+      }
+    },
+    {
+      "year": 2009,
+      "by_source": {
+        "webtrust": {
+          "label": "WebTrust / ETSI Audit",
+          "mandatory": 80,
+          "recommended": 20,
+          "optional": 10
+        },
+        "mozilla_mrsp": {
+          "label": "Mozilla MRSP",
+          "mandatory": 178,
+          "recommended": 10,
+          "optional": 43
+        },
+        "rfc_pkix": {
+          "label": "RFC 5280 (PKIX)",
+          "mandatory": 318,
+          "recommended": 83,
+          "optional": 141
+        }
+      },
+      "totals": {
+        "mandatory": 576,
+        "recommended": 113,
+        "optional": 194,
+        "total": 883
+      }
+    },
+    {
+      "year": 2010,
+      "by_source": {
+        "webtrust": {
+          "label": "WebTrust / ETSI Audit",
+          "mandatory": 80,
+          "recommended": 20,
+          "optional": 10
+        },
+        "mozilla_mrsp": {
+          "label": "Mozilla MRSP",
+          "mandatory": 178,
+          "recommended": 10,
+          "optional": 43
+        },
+        "rfc_pkix": {
+          "label": "RFC 5280 (PKIX)",
+          "mandatory": 318,
+          "recommended": 83,
+          "optional": 141
+        }
+      },
+      "totals": {
+        "mandatory": 576,
+        "recommended": 113,
+        "optional": 194,
+        "total": 883
+      }
+    },
+    {
+      "year": 2011,
+      "by_source": {
+        "webtrust": {
+          "label": "WebTrust / ETSI Audit",
+          "mandatory": 80,
+          "recommended": 20,
+          "optional": 10
+        },
+        "mozilla_mrsp": {
+          "label": "Mozilla MRSP",
+          "mandatory": 178,
+          "recommended": 10,
+          "optional": 43
+        },
+        "rfc_pkix": {
+          "label": "RFC 5280 (PKIX)",
+          "mandatory": 318,
+          "recommended": 83,
+          "optional": 141
+        }
+      },
+      "totals": {
+        "mandatory": 576,
+        "recommended": 113,
+        "optional": 194,
+        "total": 883
+      }
+    },
+    {
+      "year": 2012,
+      "by_source": {
+        "tls_br": {
+          "label": "tls_br",
+          "mandatory": 222,
+          "recommended": 17,
+          "optional": 39
+        },
+        "webtrust": {
+          "label": "WebTrust / ETSI Audit",
+          "mandatory": 120,
+          "recommended": 30,
+          "optional": 15
+        },
+        "mozilla_mrsp": {
+          "label": "Mozilla MRSP",
+          "mandatory": 178,
+          "recommended": 10,
+          "optional": 43
+        },
+        "rfc_pkix": {
+          "label": "RFC 5280 (PKIX)",
+          "mandatory": 318,
+          "recommended": 83,
+          "optional": 141
+        }
+      },
+      "totals": {
+        "mandatory": 838,
+        "recommended": 140,
+        "optional": 238,
+        "total": 1216
+      }
+    },
+    {
+      "year": 2013,
+      "by_source": {
+        "tls_br": {
+          "label": "tls_br",
+          "mandatory": 220,
+          "recommended": 21,
+          "optional": 42
+        },
+        "webtrust": {
+          "label": "WebTrust / ETSI Audit",
+          "mandatory": 120,
+          "recommended": 30,
+          "optional": 15
+        },
+        "mozilla_mrsp": {
+          "label": "Mozilla MRSP",
+          "mandatory": 178,
+          "recommended": 10,
+          "optional": 43
+        },
+        "rfc_pkix": {
+          "label": "RFC 5280 (PKIX)",
+          "mandatory": 318,
+          "recommended": 83,
+          "optional": 141
+        },
+        "apple_root": {
+          "label": "Apple Root Policy",
+          "mandatory": 20,
+          "recommended": 5,
+          "optional": 3
+        }
+      },
+      "totals": {
+        "mandatory": 856,
+        "recommended": 149,
+        "optional": 244,
+        "total": 1249
+      }
+    },
+    {
+      "year": 2014,
+      "by_source": {
+        "tls_br": {
+          "label": "tls_br",
+          "mandatory": 220,
+          "recommended": 21,
+          "optional": 42
+        },
+        "webtrust": {
+          "label": "WebTrust / ETSI Audit",
+          "mandatory": 120,
+          "recommended": 30,
+          "optional": 15
+        },
+        "mozilla_mrsp": {
+          "label": "Mozilla MRSP",
+          "mandatory": 178,
+          "recommended": 10,
+          "optional": 43
+        },
+        "rfc_pkix": {
+          "label": "RFC 5280 (PKIX)",
+          "mandatory": 318,
+          "recommended": 83,
+          "optional": 141
+        },
+        "apple_root": {
+          "label": "Apple Root Policy",
+          "mandatory": 20,
+          "recommended": 5,
+          "optional": 3
+        }
+      },
+      "totals": {
+        "mandatory": 856,
+        "recommended": 149,
+        "optional": 244,
+        "total": 1249
+      }
+    },
+    {
+      "year": 2015,
+      "by_source": {
+        "tls_br": {
+          "label": "tls_br",
+          "mandatory": 268,
+          "recommended": 30,
+          "optional": 48
+        },
+        "webtrust": {
+          "label": "WebTrust / ETSI Audit",
+          "mandatory": 120,
+          "recommended": 30,
+          "optional": 15
+        },
+        "mozilla_mrsp": {
+          "label": "Mozilla MRSP",
+          "mandatory": 178,
+          "recommended": 10,
+          "optional": 43
+        },
+        "rfc_pkix": {
+          "label": "RFC 5280 (PKIX)",
+          "mandatory": 318,
+          "recommended": 83,
+          "optional": 141
+        },
+        "etsi_stack": {
+          "label": "ETSI TSP Stack",
+          "mandatory": 180,
+          "recommended": 40,
+          "optional": 20
+        },
+        "apple_root": {
+          "label": "Apple Root Policy",
+          "mandatory": 20,
+          "recommended": 5,
+          "optional": 3
+        }
+      },
+      "totals": {
+        "mandatory": 1084,
+        "recommended": 198,
+        "optional": 270,
+        "total": 1552
+      }
+    },
+    {
+      "year": 2016,
+      "by_source": {
+        "tls_br": {
+          "label": "tls_br",
+          "mandatory": 298,
+          "recommended": 29,
+          "optional": 61
+        },
+        "webtrust": {
+          "label": "WebTrust / ETSI Audit",
+          "mandatory": 120,
+          "recommended": 30,
+          "optional": 15
+        },
+        "mozilla_mrsp": {
+          "label": "Mozilla MRSP",
+          "mandatory": 178,
+          "recommended": 10,
+          "optional": 43
+        },
+        "rfc_pkix": {
+          "label": "RFC 5280 (PKIX)",
+          "mandatory": 318,
+          "recommended": 83,
+          "optional": 141
+        },
+        "etsi_stack": {
+          "label": "ETSI TSP Stack",
+          "mandatory": 180,
+          "recommended": 40,
+          "optional": 20
+        },
+        "apple_root": {
+          "label": "Apple Root Policy",
+          "mandatory": 20,
+          "recommended": 5,
+          "optional": 3
+        }
+      },
+      "totals": {
+        "mandatory": 1114,
+        "recommended": 197,
+        "optional": 283,
+        "total": 1594
+      }
+    },
+    {
+      "year": 2017,
+      "by_source": {
+        "tls_br": {
+          "label": "tls_br",
+          "mandatory": 291,
+          "recommended": 31,
+          "optional": 52
+        },
+        "webtrust": {
+          "label": "WebTrust / ETSI Audit",
+          "mandatory": 180,
+          "recommended": 40,
+          "optional": 20
+        },
+        "mozilla_mrsp": {
+          "label": "Mozilla MRSP",
+          "mandatory": 178,
+          "recommended": 10,
+          "optional": 43
+        },
+        "rfc_pkix": {
+          "label": "RFC 5280 (PKIX)",
+          "mandatory": 318,
+          "recommended": 83,
+          "optional": 141
+        },
+        "etsi_stack": {
+          "label": "ETSI TSP Stack",
+          "mandatory": 180,
+          "recommended": 40,
+          "optional": 20
+        },
+        "apple_root": {
+          "label": "Apple Root Policy",
+          "mandatory": 20,
+          "recommended": 5,
+          "optional": 3
+        }
+      },
+      "totals": {
+        "mandatory": 1167,
+        "recommended": 209,
+        "optional": 279,
+        "total": 1655
+      }
+    },
+    {
+      "year": 2018,
+      "by_source": {
+        "tls_br": {
+          "label": "tls_br",
+          "mandatory": 310,
+          "recommended": 32,
+          "optional": 70
+        },
+        "webtrust": {
+          "label": "WebTrust / ETSI Audit",
+          "mandatory": 180,
+          "recommended": 40,
+          "optional": 20
+        },
+        "mozilla_mrsp": {
+          "label": "Mozilla MRSP",
+          "mandatory": 178,
+          "recommended": 10,
+          "optional": 43
+        },
+        "rfc_pkix": {
+          "label": "RFC 5280 (PKIX)",
+          "mandatory": 318,
+          "recommended": 83,
+          "optional": 141
+        },
+        "etsi_stack": {
+          "label": "ETSI TSP Stack",
+          "mandatory": 280,
+          "recommended": 60,
+          "optional": 30
+        },
+        "apple_root": {
+          "label": "Apple Root Policy",
+          "mandatory": 40,
+          "recommended": 10,
+          "optional": 5
+        }
+      },
+      "totals": {
+        "mandatory": 1306,
+        "recommended": 235,
+        "optional": 309,
+        "total": 1850
+      }
+    },
+    {
+      "year": 2019,
+      "by_source": {
+        "tls_br": {
+          "label": "tls_br",
+          "mandatory": 386,
+          "recommended": 32,
+          "optional": 108
+        },
+        "rfc_acme": {
+          "label": "RFC 8555 (ACME)",
+          "mandatory": 160,
+          "recommended": 65,
+          "optional": 23
+        },
+        "webtrust": {
+          "label": "WebTrust / ETSI Audit",
+          "mandatory": 180,
+          "recommended": 40,
+          "optional": 20
+        },
+        "rfc_caa": {
+          "label": "RFC 8659 (CAA)",
+          "mandatory": 21,
+          "recommended": 12,
+          "optional": 12
+        },
+        "mozilla_mrsp": {
+          "label": "Mozilla MRSP",
+          "mandatory": 178,
+          "recommended": 10,
+          "optional": 43
+        },
+        "rfc_pkix": {
+          "label": "RFC 5280 (PKIX)",
+          "mandatory": 318,
+          "recommended": 83,
+          "optional": 141
+        },
+        "etsi_stack": {
+          "label": "ETSI TSP Stack",
+          "mandatory": 280,
+          "recommended": 60,
+          "optional": 30
+        },
+        "apple_root": {
+          "label": "Apple Root Policy",
+          "mandatory": 40,
+          "recommended": 10,
+          "optional": 5
+        }
+      },
+      "totals": {
+        "mandatory": 1563,
+        "recommended": 312,
+        "optional": 382,
+        "total": 2257
+      }
+    },
+    {
+      "year": 2020,
+      "by_source": {
+        "tls_br": {
+          "label": "tls_br",
+          "mandatory": 386,
+          "recommended": 32,
+          "optional": 108
+        },
+        "rfc_acme": {
+          "label": "RFC 8555 (ACME)",
+          "mandatory": 160,
+          "recommended": 65,
+          "optional": 23
+        },
+        "nist": {
+          "label": "NIST SP 800-53 Rev 5",
+          "mandatory": 370,
+          "recommended": 0,
+          "optional": 0
+        },
+        "webtrust": {
+          "label": "WebTrust / ETSI Audit",
+          "mandatory": 180,
+          "recommended": 40,
+          "optional": 20
+        },
+        "rfc_caa": {
+          "label": "RFC 8659 (CAA)",
+          "mandatory": 21,
+          "recommended": 12,
+          "optional": 12
+        },
+        "mozilla_mrsp": {
+          "label": "Mozilla MRSP",
+          "mandatory": 178,
+          "recommended": 10,
+          "optional": 43
+        },
+        "rfc_pkix": {
+          "label": "RFC 5280 (PKIX)",
+          "mandatory": 318,
+          "recommended": 83,
+          "optional": 141
+        },
+        "etsi_stack": {
+          "label": "ETSI TSP Stack",
+          "mandatory": 280,
+          "recommended": 60,
+          "optional": 30
+        },
+        "apple_root": {
+          "label": "Apple Root Policy",
+          "mandatory": 40,
+          "recommended": 10,
+          "optional": 5
+        }
+      },
+      "totals": {
+        "mandatory": 1933,
+        "recommended": 312,
+        "optional": 382,
+        "total": 2627
+      }
+    },
+    {
+      "year": 2021,
+      "by_source": {
+        "ev_g_prof": {
+          "label": "EV Guidelines (profile spec)",
+          "mandatory": 0,
+          "recommended": 0,
+          "optional": 0
+        },
+        "tls_br_op": {
+          "label": "TLS BR (operational)",
+          "mandatory": 333,
+          "recommended": 24,
+          "optional": 83
+        },
+        "ns_reqs_op": {
+          "label": "CA/B Forum NS Reqs",
+          "mandatory": 68,
+          "recommended": 2,
+          "optional": 2
+        },
+        "rfc_ct": {
+          "label": "RFC 9162 (CT)",
+          "mandatory": 94,
+          "recommended": 35,
+          "optional": 20
+        },
+        "tls_br": {
+          "label": "tls_br",
+          "mandatory": 452,
+          "recommended": 39,
+          "optional": 111
+        },
+        "rfc_acme": {
+          "label": "RFC 8555 (ACME)",
+          "mandatory": 160,
+          "recommended": 65,
+          "optional": 23
+        },
+        "ns_reqs_prof": {
+          "label": "ns_reqs_prof",
+          "mandatory": 0,
+          "recommended": 0,
+          "optional": 0
+        },
+        "ev_g_op": {
+          "label": "EV Guidelines (operational)",
+          "mandatory": 227,
+          "recommended": 6,
+          "optional": 83
+        },
+        "nist": {
+          "label": "NIST SP 800-53 Rev 5",
+          "mandatory": 370,
+          "recommended": 0,
+          "optional": 0
+        },
+        "webtrust": {
+          "label": "WebTrust / ETSI Audit",
+          "mandatory": 180,
+          "recommended": 40,
+          "optional": 20
+        },
+        "rfc_caa": {
+          "label": "RFC 8659 (CAA)",
+          "mandatory": 21,
+          "recommended": 12,
+          "optional": 12
+        },
+        "mozilla_mrsp": {
+          "label": "Mozilla MRSP",
+          "mandatory": 178,
+          "recommended": 10,
+          "optional": 43
+        },
+        "rfc_pkix": {
+          "label": "RFC 5280 (PKIX)",
+          "mandatory": 318,
+          "recommended": 83,
+          "optional": 141
+        },
+        "etsi_stack": {
+          "label": "ETSI TSP Stack",
+          "mandatory": 380,
+          "recommended": 80,
+          "optional": 40
+        },
+        "apple_root": {
+          "label": "Apple Root Policy",
+          "mandatory": 40,
+          "recommended": 10,
+          "optional": 5
+        },
+        "tls_br_prof": {
+          "label": "TLS BR (profile spec)",
+          "mandatory": 11,
+          "recommended": 0,
+          "optional": 0
+        }
+      },
+      "totals": {
+        "mandatory": 2832,
+        "recommended": 406,
+        "optional": 583,
+        "total": 3821
+      }
+    },
+    {
+      "year": 2022,
+      "by_source": {
+        "ev_g_prof": {
+          "label": "EV Guidelines (profile spec)",
+          "mandatory": 0,
+          "recommended": 0,
+          "optional": 0
+        },
+        "tls_br_op": {
+          "label": "TLS BR (operational)",
+          "mandatory": 333,
+          "recommended": 24,
+          "optional": 83
+        },
+        "ns_reqs_op": {
+          "label": "CA/B Forum NS Reqs",
+          "mandatory": 68,
+          "recommended": 2,
+          "optional": 2
+        },
+        "rfc_ct": {
+          "label": "RFC 9162 (CT)",
+          "mandatory": 94,
+          "recommended": 35,
+          "optional": 20
+        },
+        "chrome_root": {
+          "label": "Chrome Root Policy",
+          "mandatory": 45,
+          "recommended": 18,
+          "optional": 8
+        },
+        "tls_br": {
+          "label": "tls_br",
+          "mandatory": 452,
+          "recommended": 39,
+          "optional": 111
+        },
+        "rfc_acme": {
+          "label": "RFC 8555 (ACME)",
+          "mandatory": 160,
+          "recommended": 65,
+          "optional": 23
+        },
+        "ns_reqs_prof": {
+          "label": "ns_reqs_prof",
+          "mandatory": 0,
+          "recommended": 0,
+          "optional": 0
+        },
+        "ev_g_op": {
+          "label": "EV Guidelines (operational)",
+          "mandatory": 227,
+          "recommended": 6,
+          "optional": 83
+        },
+        "nist": {
+          "label": "NIST SP 800-53 Rev 5",
+          "mandatory": 370,
+          "recommended": 0,
+          "optional": 0
+        },
+        "webtrust": {
+          "label": "WebTrust / ETSI Audit",
+          "mandatory": 220,
+          "recommended": 50,
+          "optional": 25
+        },
+        "rfc_caa": {
+          "label": "RFC 8659 (CAA)",
+          "mandatory": 21,
+          "recommended": 12,
+          "optional": 12
+        },
+        "mozilla_mrsp": {
+          "label": "Mozilla MRSP",
+          "mandatory": 178,
+          "recommended": 10,
+          "optional": 43
+        },
+        "rfc_pkix": {
+          "label": "RFC 5280 (PKIX)",
+          "mandatory": 318,
+          "recommended": 83,
+          "optional": 141
+        },
+        "etsi_stack": {
+          "label": "ETSI TSP Stack",
+          "mandatory": 380,
+          "recommended": 80,
+          "optional": 40
+        },
+        "apple_root": {
+          "label": "Apple Root Policy",
+          "mandatory": 65,
+          "recommended": 15,
+          "optional": 8
+        },
+        "tls_br_prof": {
+          "label": "TLS BR (profile spec)",
+          "mandatory": 11,
+          "recommended": 0,
+          "optional": 0
+        }
+      },
+      "totals": {
+        "mandatory": 2942,
+        "recommended": 439,
+        "optional": 599,
+        "total": 3980
+      }
+    },
+    {
+      "year": 2023,
+      "by_source": {
+        "ev_g_prof": {
+          "label": "EV Guidelines (profile spec)",
+          "mandatory": 0,
+          "recommended": 0,
+          "optional": 0
+        },
+        "tls_br_op": {
+          "label": "TLS BR (operational)",
+          "mandatory": 333,
+          "recommended": 24,
+          "optional": 83
+        },
+        "smime_br_prof": {
+          "label": "S/MIME BR (profile spec)",
+          "mandatory": 170,
+          "recommended": 0,
+          "optional": 0
+        },
+        "ns_reqs_op": {
+          "label": "CA/B Forum NS Reqs",
+          "mandatory": 68,
+          "recommended": 2,
+          "optional": 2
+        },
+        "rfc_ct": {
+          "label": "RFC 9162 (CT)",
+          "mandatory": 94,
+          "recommended": 35,
+          "optional": 20
+        },
+        "chrome_root": {
+          "label": "Chrome Root Policy",
+          "mandatory": 80,
+          "recommended": 25,
+          "optional": 12
+        },
+        "tls_br": {
+          "label": "tls_br",
+          "mandatory": 452,
+          "recommended": 39,
+          "optional": 111
+        },
+        "rfc_acme": {
+          "label": "RFC 8555 (ACME)",
+          "mandatory": 160,
+          "recommended": 65,
+          "optional": 23
+        },
+        "ns_reqs_prof": {
+          "label": "ns_reqs_prof",
+          "mandatory": 0,
+          "recommended": 0,
+          "optional": 0
+        },
+        "ev_g_op": {
+          "label": "EV Guidelines (operational)",
+          "mandatory": 227,
+          "recommended": 6,
+          "optional": 83
+        },
+        "nist": {
+          "label": "NIST SP 800-53 Rev 5",
+          "mandatory": 370,
+          "recommended": 0,
+          "optional": 0
+        },
+        "webtrust": {
+          "label": "WebTrust / ETSI Audit",
+          "mandatory": 220,
+          "recommended": 50,
+          "optional": 25
+        },
+        "rfc_caa": {
+          "label": "RFC 8659 (CAA)",
+          "mandatory": 21,
+          "recommended": 12,
+          "optional": 12
+        },
+        "smime_br_op": {
+          "label": "S/MIME BR (operational)",
+          "mandatory": 254,
+          "recommended": 18,
+          "optional": 65
+        },
+        "mozilla_mrsp": {
+          "label": "Mozilla MRSP",
+          "mandatory": 178,
+          "recommended": 10,
+          "optional": 43
+        },
+        "rfc_pkix": {
+          "label": "RFC 5280 (PKIX)",
+          "mandatory": 318,
+          "recommended": 83,
+          "optional": 141
+        },
+        "etsi_stack": {
+          "label": "ETSI TSP Stack",
+          "mandatory": 380,
+          "recommended": 80,
+          "optional": 40
+        },
+        "apple_root": {
+          "label": "Apple Root Policy",
+          "mandatory": 65,
+          "recommended": 15,
+          "optional": 8
+        },
+        "tls_br_prof": {
+          "label": "TLS BR (profile spec)",
+          "mandatory": 11,
+          "recommended": 0,
+          "optional": 0
+        }
+      },
+      "totals": {
+        "mandatory": 3401,
+        "recommended": 464,
+        "optional": 668,
+        "total": 4533
+      }
+    },
+    {
+      "year": 2024,
+      "by_source": {
+        "cs_br_prof": {
+          "label": "CS BR (profile spec)",
+          "mandatory": 106,
+          "recommended": 10,
+          "optional": 23
+        },
+        "ev_g_prof": {
+          "label": "EV Guidelines (profile spec)",
+          "mandatory": 0,
+          "recommended": 0,
+          "optional": 0
+        },
+        "tls_br_op": {
+          "label": "TLS BR (operational)",
+          "mandatory": 416,
+          "recommended": 31,
+          "optional": 93
+        },
+        "cs_br_op": {
+          "label": "CS BR (operational)",
+          "mandatory": 372,
+          "recommended": 15,
+          "optional": 96
+        },
+        "smime_br_prof": {
+          "label": "S/MIME BR (profile spec)",
+          "mandatory": 170,
+          "recommended": 0,
+          "optional": 0
+        },
+        "ns_reqs_op": {
+          "label": "CA/B Forum NS Reqs",
+          "mandatory": 68,
+          "recommended": 2,
+          "optional": 2
+        },
+        "nis2": {
+          "label": "NIS2 Directive",
+          "mandatory": 315,
+          "recommended": 0,
+          "optional": 76
+        },
+        "rfc_ct": {
+          "label": "RFC 9162 (CT)",
+          "mandatory": 94,
+          "recommended": 35,
+          "optional": 20
+        },
+        "chrome_root": {
+          "label": "Chrome Root Policy",
+          "mandatory": 110,
+          "recommended": 32,
+          "optional": 15
+        },
+        "tls_br": {
+          "label": "tls_br",
+          "mandatory": 452,
+          "recommended": 39,
+          "optional": 111
+        },
+        "rfc_acme": {
+          "label": "RFC 8555 (ACME)",
+          "mandatory": 160,
+          "recommended": 65,
+          "optional": 23
+        },
+        "ns_reqs_prof": {
+          "label": "ns_reqs_prof",
+          "mandatory": 0,
+          "recommended": 0,
+          "optional": 0
+        },
+        "ev_g_op": {
+          "label": "EV Guidelines (operational)",
+          "mandatory": 227,
+          "recommended": 6,
+          "optional": 83
+        },
+        "nist": {
+          "label": "NIST SP 800-53 Rev 5",
+          "mandatory": 370,
+          "recommended": 0,
+          "optional": 0
+        },
+        "webtrust": {
+          "label": "WebTrust / ETSI Audit",
+          "mandatory": 220,
+          "recommended": 50,
+          "optional": 25
+        },
+        "rfc_caa": {
+          "label": "RFC 8659 (CAA)",
+          "mandatory": 21,
+          "recommended": 12,
+          "optional": 12
+        },
+        "smime_br_op": {
+          "label": "S/MIME BR (operational)",
+          "mandatory": 254,
+          "recommended": 18,
+          "optional": 65
+        },
+        "mozilla_mrsp": {
+          "label": "Mozilla MRSP",
+          "mandatory": 178,
+          "recommended": 10,
+          "optional": 43
+        },
+        "rfc_pkix": {
+          "label": "RFC 5280 (PKIX)",
+          "mandatory": 318,
+          "recommended": 83,
+          "optional": 141
+        },
+        "etsi_stack": {
+          "label": "ETSI TSP Stack",
+          "mandatory": 515,
+          "recommended": 95,
+          "optional": 45
+        },
+        "apple_root": {
+          "label": "Apple Root Policy",
+          "mandatory": 90,
+          "recommended": 20,
+          "optional": 10
+        },
+        "tls_br_prof": {
+          "label": "TLS BR (profile spec)",
+          "mandatory": 525,
+          "recommended": 83,
+          "optional": 92
+        }
+      },
+      "totals": {
+        "mandatory": 4981,
+        "recommended": 606,
+        "optional": 975,
+        "total": 6562
+      }
+    },
+    {
+      "year": 2025,
+      "by_source": {
+        "cs_br_prof": {
+          "label": "CS BR (profile spec)",
+          "mandatory": 106,
+          "recommended": 10,
+          "optional": 23
+        },
+        "ev_g_prof": {
+          "label": "EV Guidelines (profile spec)",
+          "mandatory": 0,
+          "recommended": 0,
+          "optional": 0
+        },
+        "tls_br_op": {
+          "label": "TLS BR (operational)",
+          "mandatory": 468,
+          "recommended": 36,
+          "optional": 102
+        },
+        "cs_br_op": {
+          "label": "CS BR (operational)",
+          "mandatory": 372,
+          "recommended": 15,
+          "optional": 96
+        },
+        "smime_br_prof": {
+          "label": "S/MIME BR (profile spec)",
+          "mandatory": 170,
+          "recommended": 0,
+          "optional": 0
+        },
+        "ns_reqs_op": {
+          "label": "CA/B Forum NS Reqs",
+          "mandatory": 68,
+          "recommended": 2,
+          "optional": 2
+        },
+        "nis2": {
+          "label": "NIS2 Directive",
+          "mandatory": 315,
+          "recommended": 0,
+          "optional": 76
+        },
+        "rfc_ct": {
+          "label": "RFC 9162 (CT)",
+          "mandatory": 94,
+          "recommended": 35,
+          "optional": 20
+        },
+        "chrome_root": {
+          "label": "Chrome Root Policy",
+          "mandatory": 130,
+          "recommended": 38,
+          "optional": 18
+        },
+        "tls_br": {
+          "label": "tls_br",
+          "mandatory": 452,
+          "recommended": 39,
+          "optional": 111
+        },
+        "rfc_acme": {
+          "label": "RFC 8555 (ACME)",
+          "mandatory": 160,
+          "recommended": 65,
+          "optional": 23
+        },
+        "ns_reqs_prof": {
+          "label": "ns_reqs_prof",
+          "mandatory": 0,
+          "recommended": 0,
+          "optional": 0
+        },
+        "ev_g_op": {
+          "label": "EV Guidelines (operational)",
+          "mandatory": 227,
+          "recommended": 6,
+          "optional": 83
+        },
+        "nist": {
+          "label": "NIST SP 800-53 Rev 5",
+          "mandatory": 370,
+          "recommended": 0,
+          "optional": 0
+        },
+        "webtrust": {
+          "label": "WebTrust / ETSI Audit",
+          "mandatory": 250,
+          "recommended": 55,
+          "optional": 28
+        },
+        "rfc_caa": {
+          "label": "RFC 8659 (CAA)",
+          "mandatory": 21,
+          "recommended": 12,
+          "optional": 12
+        },
+        "smime_br_op": {
+          "label": "S/MIME BR (operational)",
+          "mandatory": 254,
+          "recommended": 18,
+          "optional": 65
+        },
+        "mozilla_mrsp": {
+          "label": "Mozilla MRSP",
+          "mandatory": 178,
+          "recommended": 10,
+          "optional": 43
+        },
+        "rfc_pkix": {
+          "label": "RFC 5280 (PKIX)",
+          "mandatory": 318,
+          "recommended": 83,
+          "optional": 141
+        },
+        "etsi_stack": {
+          "label": "ETSI TSP Stack",
+          "mandatory": 515,
+          "recommended": 95,
+          "optional": 45
+        },
+        "apple_root": {
+          "label": "Apple Root Policy",
+          "mandatory": 90,
+          "recommended": 20,
+          "optional": 10
+        },
+        "tls_br_prof": {
+          "label": "TLS BR (profile spec)",
+          "mandatory": 528,
+          "recommended": 83,
+          "optional": 92
+        }
+      },
+      "totals": {
+        "mandatory": 5086,
+        "recommended": 622,
+        "optional": 990,
+        "total": 6698
+      }
+    },
+    {
+      "year": 2026,
+      "by_source": {
+        "cs_br_prof": {
+          "label": "CS BR (profile spec)",
+          "mandatory": 106,
+          "recommended": 10,
+          "optional": 23
+        },
+        "ev_g_prof": {
+          "label": "EV Guidelines (profile spec)",
+          "mandatory": 0,
+          "recommended": 0,
+          "optional": 0
+        },
+        "tls_br_op": {
+          "label": "TLS BR (operational)",
+          "mandatory": 433,
+          "recommended": 38,
+          "optional": 89
+        },
+        "cs_br_op": {
+          "label": "CS BR (operational)",
+          "mandatory": 372,
+          "recommended": 15,
+          "optional": 96
+        },
+        "smime_br_prof": {
+          "label": "S/MIME BR (profile spec)",
+          "mandatory": 170,
+          "recommended": 0,
+          "optional": 0
+        },
+        "ns_reqs_op": {
+          "label": "CA/B Forum NS Reqs",
+          "mandatory": 68,
+          "recommended": 2,
+          "optional": 2
+        },
+        "nis2": {
+          "label": "NIS2 Directive",
+          "mandatory": 315,
+          "recommended": 0,
+          "optional": 76
+        },
+        "rfc_ct": {
+          "label": "RFC 9162 (CT)",
+          "mandatory": 94,
+          "recommended": 35,
+          "optional": 20
+        },
+        "chrome_root": {
+          "label": "Chrome Root Policy",
+          "mandatory": 130,
+          "recommended": 38,
+          "optional": 18
+        },
+        "tls_br": {
+          "label": "tls_br",
+          "mandatory": 452,
+          "recommended": 39,
+          "optional": 111
+        },
+        "rfc_acme": {
+          "label": "RFC 8555 (ACME)",
+          "mandatory": 160,
+          "recommended": 65,
+          "optional": 23
+        },
+        "ns_reqs_prof": {
+          "label": "ns_reqs_prof",
+          "mandatory": 0,
+          "recommended": 0,
+          "optional": 0
+        },
+        "ev_g_op": {
+          "label": "EV Guidelines (operational)",
+          "mandatory": 227,
+          "recommended": 6,
+          "optional": 83
+        },
+        "nist": {
+          "label": "NIST SP 800-53 Rev 5",
+          "mandatory": 370,
+          "recommended": 0,
+          "optional": 0
+        },
+        "webtrust": {
+          "label": "WebTrust / ETSI Audit",
+          "mandatory": 250,
+          "recommended": 55,
+          "optional": 28
+        },
+        "rfc_caa": {
+          "label": "RFC 8659 (CAA)",
+          "mandatory": 21,
+          "recommended": 12,
+          "optional": 12
+        },
+        "smime_br_op": {
+          "label": "S/MIME BR (operational)",
+          "mandatory": 254,
+          "recommended": 18,
+          "optional": 65
+        },
+        "mozilla_mrsp": {
+          "label": "Mozilla MRSP",
+          "mandatory": 178,
+          "recommended": 10,
+          "optional": 43
+        },
+        "rfc_pkix": {
+          "label": "RFC 5280 (PKIX)",
+          "mandatory": 318,
+          "recommended": 83,
+          "optional": 141
+        },
+        "etsi_stack": {
+          "label": "ETSI TSP Stack",
+          "mandatory": 515,
+          "recommended": 95,
+          "optional": 45
+        },
+        "apple_root": {
+          "label": "Apple Root Policy",
+          "mandatory": 90,
+          "recommended": 20,
+          "optional": 10
+        },
+        "tls_br_prof": {
+          "label": "TLS BR (profile spec)",
+          "mandatory": 527,
+          "recommended": 84,
+          "optional": 91
+        }
+      },
+      "totals": {
+        "mandatory": 5050,
+        "recommended": 625,
+        "optional": 976,
+        "total": 6651
+      }
+    }
+  ],
+  "current": {
+    "year": 2026,
+    "totals": {
+      "mandatory": 5050,
+      "recommended": 625,
+      "optional": 976,
+      "total": 6651
+    }
+  }
+}

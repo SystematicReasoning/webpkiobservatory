@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CA Compliance Posture — WebPKI Observatory</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#080c14;--s1:#0f1520;--s2:#161d2d;--bd:#1c2538;--bl:#2a3654;--tx:#e2e8f0;--t2:#94a3b8;--t3:#5a6a82;--t4:#3a4a60;--ac:#3b82f6;--gn:#10b981;--am:#f59e0b;--rd:#ef4444;--pu:#8b5cf6;--cy:#06b6d4;--mono:'IBM Plex Mono',monospace;--sans:'IBM Plex Sans',sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--tx);font-family:var(--sans);font-size:13px;line-height:1.6;min-height:100vh}
+.hdr{border-bottom:1px solid var(--bd);padding:12px 28px;display:flex;align-items:center;gap:14px;background:var(--s1);position:sticky;top:0;z-index:200}
+.hdr-back{color:var(--t2);text-decoration:none;font-size:12px}.hdr-back:hover{color:var(--tx)}
+.hdr-sep{color:var(--t4)}.hdr-title{font-size:13px;font-weight:500}
+.hdr-badge{background:color-mix(in srgb,var(--am) 14%,transparent);color:var(--am);border:1px solid color-mix(in srgb,var(--am) 28%,transparent);border-radius:3px;padding:1px 6px;font-size:9px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;font-family:var(--mono)}
+.hdr-meta{margin-left:auto;font-size:10px;color:var(--t3);font-family:var(--mono)}
+.page{max-width:1360px;margin:0 auto;padding:32px 28px 80px}
+/* section */
+.sec{margin-bottom:56px}
+.sec-hd{display:flex;align-items:baseline;gap:16px;margin-bottom:10px;padding-bottom:12px;border-bottom:1px solid var(--bd)}
+.sec-num{font-family:var(--mono);font-size:10px;color:var(--t4);letter-spacing:.08em;flex-shrink:0}
+.sec-title{font-size:17px;font-weight:300;letter-spacing:-.01em}
+.sec-intro{font-size:12px;color:var(--t2);line-height:1.7;margin-bottom:18px;max-width:820px}
+.sec-intro strong{color:var(--tx);font-weight:500}
+/* stats */
+.summary-row{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--bd);border:1px solid var(--bd);border-radius:7px;overflow:hidden;margin-bottom:20px}
+.stat-block{background:var(--s1);padding:16px 18px}
+.stat-num{font-family:var(--mono);font-size:26px;font-weight:500;letter-spacing:-.03em;line-height:1;margin-bottom:5px}
+.stat-denom{font-size:14px;color:var(--t3);font-weight:400}
+.stat-label{font-size:11px;color:var(--t2);margin-bottom:3px}
+.stat-note{font-size:10px;color:var(--t3);line-height:1.5}
+/* filters */
+.filter-row{display:flex;align-items:center;gap:8px;margin-bottom:14px;flex-wrap:wrap}
+.f-label{font-size:10px;color:var(--t3);font-family:var(--mono);letter-spacing:.05em;text-transform:uppercase;white-space:nowrap}
+.f-input{background:var(--s2);border:1px solid var(--bd);border-radius:4px;color:var(--tx);font-family:var(--sans);font-size:12px;padding:5px 10px;outline:none;min-width:0}.f-input:focus{border-color:var(--ac)}
+.f-chip{background:transparent;border:1px solid var(--bd);border-radius:4px;color:var(--t2);cursor:pointer;font-family:var(--sans);font-size:11px;padding:4px 10px;transition:all .12s;white-space:nowrap}
+.f-chip:hover{border-color:var(--bl);color:var(--tx)}.f-chip.on{background:color-mix(in srgb,var(--ac) 10%,transparent);border-color:var(--ac);color:var(--ac)}
+.f-div{width:1px;height:18px;background:var(--bd);flex-shrink:0}
+.f-count{font-size:11px;color:var(--t3);font-family:var(--mono)}
+/* tiers */
+.tier{display:inline-flex;align-items:center;gap:5px;border-radius:3px;padding:2px 8px;font-size:9px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;font-family:var(--mono);white-space:nowrap}
+.dot{width:5px;height:5px;border-radius:50%;flex-shrink:0}
+.t-el{background:color-mix(in srgb,var(--rd) 12%,transparent);color:var(--rd);border:1px solid color-mix(in srgb,var(--rd) 24%,transparent)}.t-el .dot{background:var(--rd)}
+.t-mo{background:color-mix(in srgb,var(--am) 12%,transparent);color:var(--am);border:1px solid color-mix(in srgb,var(--am) 24%,transparent)}.t-mo .dot{background:var(--am)}
+.t-ro{background:color-mix(in srgb,var(--gn) 8%,transparent);color:var(--gn);border:1px solid color-mix(in srgb,var(--gn) 18%,transparent)}.t-ro .dot{background:var(--gn)}
+.t-di{background:color-mix(in srgb,var(--pu) 10%,transparent);color:var(--pu);border:1px solid color-mix(in srgb,var(--pu) 22%,transparent)}.t-di .dot{background:var(--pu)}
+/* CA list */
+.ca-list{display:flex;flex-direction:column;gap:2px}
+.ca-card{background:var(--s1);border:1px solid var(--bd);border-radius:6px;overflow:hidden;transition:border-color .12s}.ca-card:hover{border-color:var(--bl)}.ca-card.open{border-color:color-mix(in srgb,var(--ac) 60%,transparent)}
+.ca-row{display:grid;grid-template-columns:210px 110px 1fr 20px;align-items:center;gap:14px;padding:11px 16px;cursor:pointer;user-select:none}
+.ca-row:hover .ca-nm{color:var(--ac)}
+.ca-nm{font-size:12px;font-weight:500;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;transition:color .12s}
+.ca-signals{display:flex;align-items:center;gap:6px;flex-wrap:wrap}
+.sig{display:inline-flex;align-items:center;gap:3px;font-size:10px;border-radius:3px;padding:2px 7px;white-space:nowrap}
+.sig-n{color:var(--t2);background:var(--s2);border:1px solid var(--bd)}
+.sig-w{color:var(--am);background:color-mix(in srgb,var(--am) 7%,transparent);border:1px solid color-mix(in srgb,var(--am) 18%,transparent)}
+.sig-a{color:var(--rd);background:color-mix(in srgb,var(--rd) 7%,transparent);border:1px solid color-mix(in srgb,var(--rd) 18%,transparent)}
+.chevron{color:var(--t3);font-size:11px;transition:transform .14s;flex-shrink:0}.ca-card.open .chevron{transform:rotate(180deg)}
+/* detail */
+.ca-detail{border-top:1px solid var(--bd);background:var(--bg);display:none}
+.ca-card.open .ca-detail{display:grid;grid-template-columns:1fr 1fr 1fr;gap:0}
+.detail-col{padding:16px 20px;border-right:1px solid var(--bd)}.detail-col:last-child{border-right:none}
+.d-label{font-size:9px;font-weight:600;color:var(--t3);text-transform:uppercase;letter-spacing:.08em;font-family:var(--mono);margin-bottom:8px}
+.d-item{font-size:11px;color:var(--t2);margin-bottom:5px;line-height:1.5}.d-item b{color:var(--tx);font-weight:500}
+.d-item.w{color:var(--am)}.d-item.a{color:var(--rd)}.d-item.g{color:var(--gn)}
+.comp-box{background:var(--s2);border:1px solid var(--bd);border-radius:5px;padding:10px 12px;margin-top:6px}
+.comp-name{font-size:12px;font-weight:500}.comp-meta{font-size:10px;color:var(--t2);margin-top:1px}
+.sim-row{display:flex;align-items:center;gap:8px;margin-top:6px}.sim-track{flex:1;height:3px;background:var(--bd);border-radius:2px}.sim-fill{height:100%;border-radius:2px;background:var(--cy)}.sim-n{font-size:9px;color:var(--t3);font-family:var(--mono);width:26px;text-align:right}
+.arc-row{display:flex;align-items:center;gap:8px;margin-bottom:4px}.arc-label{font-size:10px;color:var(--t2);width:110px;flex-shrink:0}.arc-track{flex:1;height:4px;background:var(--bd);border-radius:2px;overflow:hidden}.arc-fill{height:100%;border-radius:2px}.arc-pct{font-size:9px;color:var(--t3);font-family:var(--mono);width:26px;text-align:right}
+/* IRQ panel — behavioral/epistemic split */
+.irq-hdr{display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:12px}
+.irq-score-num{font-size:26px;font-weight:600;font-family:var(--mono);line-height:1;letter-spacing:-.03em}
+.irq-score-sub{font-size:9px;color:var(--t3);font-family:var(--mono);text-align:right;margin-top:2px}
+.irq-trend{display:inline-flex;align-items:center;gap:4px;font-size:9px;font-family:var(--mono);padding:2px 7px;border-radius:3px;margin-top:5px;letter-spacing:.03em}
+.irq-trend.worsening{background:color-mix(in srgb,var(--rd) 10%,transparent);color:var(--rd);border:1px solid color-mix(in srgb,var(--rd) 22%,transparent)}
+.irq-trend.stable{background:color-mix(in srgb,var(--t3) 8%,transparent);color:var(--t3);border:1px solid var(--bd)}
+.irq-trend.improving{background:color-mix(in srgb,var(--gn) 10%,transparent);color:var(--gn);border:1px solid color-mix(in srgb,var(--gn) 22%,transparent)}
+.layer-div{display:flex;align-items:center;gap:8px;margin:12px 0 8px}
+.layer-div-label{font-size:8px;letter-spacing:.1em;text-transform:uppercase;font-family:var(--mono);color:var(--t4);white-space:nowrap}
+.layer-div-line{flex:1;height:1px;background:var(--bd)}
+.pc-callout{display:flex;align-items:center;gap:10px;padding:8px 10px;background:var(--s2);border:1px solid var(--bd);border-radius:5px;margin-top:8px}
+.pc-callout.warn{border-color:color-mix(in srgb,var(--rd) 28%,transparent)}
+.pc-callout.mild{border-color:color-mix(in srgb,var(--am) 28%,transparent)}
+.pc-callout.ok  {border-color:color-mix(in srgb,var(--gn) 20%,transparent)}
+.pc-num{font-size:22px;font-weight:600;font-family:var(--mono);line-height:1;flex-shrink:0}
+.pc-num.warn{color:var(--rd)}.pc-num.mild{color:var(--am)}.pc-num.ok{color:var(--t3)}
+.pc-desc{font-size:10px;color:var(--t2);line-height:1.4}
+.pc-sub{font-size:9px;color:var(--t3);font-family:var(--mono);margin-top:2px}
+.integ-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:5px;margin-top:2px}
+.integ-cell{background:var(--s2);border:1px solid var(--bd);border-radius:5px;padding:6px 8px}
+.integ-cell.good {border-color:color-mix(in srgb,var(--gn) 30%,transparent)}
+.integ-cell.partial{border-color:color-mix(in srgb,var(--am) 30%,transparent)}
+.integ-cell.poor{border-color:color-mix(in srgb,var(--rd) 30%,transparent)}
+.integ-dim{font-size:8px;color:var(--t3);letter-spacing:.07em;text-transform:uppercase;font-family:var(--mono);margin-bottom:3px}
+.integ-val{font-size:10px;font-weight:500;font-family:var(--mono)}
+.integ-val.good{color:var(--gn)}.integ-val.partial{color:var(--am)}.integ-val.poor{color:var(--rd)}.integ-val.pending{color:var(--t4)}
+.rca-row{display:flex;align-items:center;gap:8px;margin-top:8px}
+.rca-lbl{font-size:10px;color:var(--t2);width:78px;flex-shrink:0}
+.rca-pips{display:flex;gap:3px;flex:1}
+.rca-pip{flex:1;height:5px;border-radius:2px;background:var(--bd)}
+.rca-pip.d1{background:var(--rd)}.rca-pip.d2{background:var(--am)}.rca-pip.d3{background:#84cc16}.rca-pip.d4{background:var(--gn)}
+.rca-val{font-size:9px;font-family:var(--mono);color:var(--t3);width:62px;text-align:right;line-height:1.3}
+.commit-row{display:flex;align-items:center;gap:8px;margin-top:6px}
+.commit-lbl{font-size:10px;color:var(--t2);width:78px;flex-shrink:0}
+.commit-bar{display:flex;flex:1;height:7px;border-radius:3px;overflow:hidden;gap:1px}
+.commit-seg{height:100%}
+.commit-val{font-size:9px;font-family:var(--mono);color:var(--t3);width:62px;text-align:right;line-height:1.3}
+.commit-legend{display:flex;gap:7px;margin-top:3px;font-size:8px;font-family:var(--mono);color:var(--t4);padding-left:86px}
+.epist-pending{display:flex;align-items:center;gap:6px;padding:5px 8px;background:color-mix(in srgb,var(--t4) 6%,transparent);border:1px solid var(--bd);border-radius:4px;font-size:9px;color:var(--t4);font-family:var(--mono);margin-top:6px}
+.epist-dot{width:4px;height:4px;border-radius:50%;background:var(--t4);flex-shrink:0;animation:epulse 2.2s ease-in-out infinite}
+@keyframes epulse{0%,100%{opacity:.3}50%{opacity:.9}}
+.epist-warn{display:flex;align-items:flex-start;gap:6px;padding:6px 8px;background:color-mix(in srgb,var(--am) 6%,transparent);border:1px solid color-mix(in srgb,var(--am) 20%,transparent);border-radius:4px;font-size:9px;color:var(--am);line-height:1.5;margin-top:6px}
+.spark-svg{overflow:visible;display:block}
+/* trajectory chart */
+.traj-wrap{background:var(--s1);border:1px solid var(--bd);border-radius:7px;padding:20px}
+.traj-svg-wrap{overflow-x:auto}
+.traj-legend{display:flex;flex-wrap:wrap;gap:12px;margin-top:14px;padding-top:12px;border-top:1px solid var(--bd)}
+.traj-leg-item{display:flex;align-items:center;gap:6px;font-size:10px;color:var(--t2);cursor:pointer;padding:2px 4px;border-radius:3px}
+.traj-leg-item:hover{color:var(--tx)}.traj-leg-item.dim{opacity:.35}
+.traj-leg-dot{width:8px;height:3px;border-radius:2px;flex-shrink:0}
+/* heatmap */
+.hm-legend{display:flex;align-items:center;gap:5px;margin-bottom:10px;font-size:10px;color:var(--t3);font-family:var(--mono)}
+.hm-swatch{width:22px;height:9px;border-radius:2px}
+.hm-scroll{overflow-x:auto;border:1px solid var(--bd);border-radius:7px;max-height:680px;overflow-y:auto}
+.hm-tbl{border-collapse:collapse;font-size:11px;min-width:max-content}
+.hm-tbl th{background:var(--s1);color:var(--t3);font-size:9px;font-weight:600;font-family:var(--mono);letter-spacing:.06em;text-transform:uppercase;padding:7px 5px;text-align:center;white-space:nowrap;border-bottom:1px solid var(--bd);position:sticky;top:0;z-index:2}
+.hm-tbl th.ca-th{text-align:left;position:sticky;left:0;z-index:3;min-width:195px;padding:7px 14px;background:var(--s1)}
+.hm-tbl td{padding:1px 2px;border-bottom:1px solid color-mix(in srgb,var(--bd) 35%,transparent)}
+.hm-tbl td.ca-td{position:sticky;left:0;z-index:1;background:var(--s1);padding:5px 14px;white-space:nowrap;font-size:11px;border-right:1px solid var(--bd)}
+.hm-tbl tr:hover td{background:color-mix(in srgb,var(--bl) 28%,transparent)}.hm-tbl tr:hover td.ca-td{background:var(--s2);color:var(--ac)}
+.hm-tbl tr.dim td.ca-td{opacity:.55}.hm-tbl tr.dim .hm-cell{opacity:.45}
+.hm-cell{width:46px;height:26px;border-radius:3px;margin:1px;display:flex;align-items:center;justify-content:center;font-family:var(--mono);font-size:9px;font-weight:500;cursor:default}
+.hm-cell.empty{background:color-mix(in srgb,var(--bd) 28%,transparent);color:var(--t4)}.hm-cell.ab{box-shadow:inset 0 0 0 1px rgba(255,255,255,.18)}
+/* tooltip */
+.tt{position:fixed;z-index:999;pointer-events:none;background:var(--s1);border:1px solid var(--bl);border-radius:6px;padding:10px 14px;font-size:11px;line-height:1.7;max-width:290px;box-shadow:0 8px 32px rgba(0,0,0,.6);display:none;font-family:var(--sans)}
+.tt-h{font-weight:600;font-size:12px;margin-bottom:5px}.tt-r{display:flex;justify-content:space-between;gap:18px}.tt-l{color:var(--t2)}.tt-v{color:var(--tx);font-weight:500;font-family:var(--mono)}.tt-n{font-size:10px;color:var(--t3);margin-top:4px;line-height:1.5}
+.footnote{font-size:10px;color:var(--t3);line-height:1.7;margin-top:10px}
+.loading{display:flex;align-items:center;justify-content:center;min-height:300px;color:var(--t3);font-family:var(--mono);font-size:12px}
+@media(max-width:860px){.ca-row{grid-template-columns:1fr auto}.ca-tier,.ca-signals{display:none}.ca-card.open .ca-detail{grid-template-columns:1fr}.summary-row{grid-template-columns:1fr 1fr}}
+</style>
+</head>
+<body>
+<header class="hdr">
+  <a class="hdr-back" href="/">← Observatory</a>
+  <span class="hdr-sep">›</span>
+  <span class="hdr-title">CA Compliance Posture</span>
+  <span class="hdr-badge">Prototype</span>
+  <span class="hdr-meta" id="hdr-meta"></span>
+</header>
+<div class="page" id="page"><div class="loading">Loading…</div></div>
+<div class="tt" id="tt"></div>
+<script>
+// ── Color ─────────────────────────────────────────────────────────────────
+function alsRGB(v){if(v==null)return null;const t=Math.min(v/80,1);let r,g,b;if(t<0.6){const u=t/0.6;r=Math.round(16+u*(245-16));g=Math.round(185+u*(158-185));b=Math.round(129+u*(11-129));}else{const u=(t-0.6)/0.4;r=Math.round(245+u*(239-245));g=Math.round(158+u*(68-158));b=Math.round(11+u*(68-11));}return[r,g,b];}
+function alsC(v,a=1){const rgb=alsRGB(v);return rgb?`rgba(${rgb[0]},${rgb[1]},${rgb[2]},${a})`:`rgba(28,37,56,${a*.4})`}
+function lum(v){const rgb=alsRGB(v);if(!rgb)return.2;return(0.2126*rgb[0]+0.7152*rgb[1]+0.0722*rgb[2])/255}
+function tc(v){return lum(v)>0.42?'#111':'#eee'}
+
+// ── Tooltip ───────────────────────────────────────────────────────────────
+const TT=document.getElementById('tt');
+const esc=s=>(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/'/g,'&#39;').replace(/>/g,'&gt;');
+function showTT(e,h){TT.innerHTML=h;TT.style.display='block';posT(e)}
+function posT(e){TT.style.left=Math.min(e.clientX+14,window.innerWidth-TT.offsetWidth-10)+'px';TT.style.top=Math.min(e.clientY-8,window.innerHeight-TT.offsetHeight-10)+'px'}
+function hideTT(){TT.style.display='none'}
+document.addEventListener('mousemove',e=>TT.style.display==='block'&&posT(e));
+
+// ── Tier HTML ─────────────────────────────────────────────────────────────
+function tierHTML(r){
+  if(r.population==='distrusted')return`<span class="tier t-di"><span class="dot"></span>Distrusted</span>`;
+  if(r.tier==='elevated')return`<span class="tier t-el"><span class="dot"></span>Elevated</span>`;
+  if(r.tier==='monitoring')return`<span class="tier t-mo"><span class="dot"></span>Monitoring</span>`;
+  return`<span class="tier t-ro"><span class="dot"></span>Routine</span>`;
+}
+
+// ── Signal tags ───────────────────────────────────────────────────────────
+function sigTags(r){
+  const t=[];
+  if(r.n_chronic>=5)t.push(['a',`↻ ${r.n_chronic} recurring classes`]);
+  else if(r.n_chronic>=2)t.push(['w',`↻ ${r.n_chronic} recurring classes`]);
+  else if(r.n_chronic===1)t.push(['n','↻ 1 recurring class']);
+  if(r.self_pct<30)t.push(['a',`◉ ${r.self_pct}% self-detected`]);
+  else if(r.self_pct<50)t.push(['w',`◉ ${r.self_pct}% self-detected`]);
+  if(r.esc_frac>=15)t.push(['a',`⚑ ${r.esc_frac}% escalating`]);
+  if(r.pc_ignored>=5)t.push(['w',`⊘ ${r.pc_ignored} patterns ignored`]);
+  if(r.accel>1.5)t.push(['w',`↑ ${r.accel.toFixed(1)}× acceleration`]);
+  return t.slice(0,4).map(([c,l])=>`<span class="sig sig-${c}">${l}</span>`).join('');
+}
+
+// ── Sparkline ─────────────────────────────────────────────────────────────
+function spark(series,W=190,H=34){
+  if(!series||series.length<2)return'';
+  const PX=2,PY=3;
+  const xS=y=>PX+(y-2016)/9*(W-PX*2);
+  const yS=v=>PY+(H-PY*2)-(Math.min(v/85,1))*(H-PY*2);
+  const thY=yS(48);const col=series.some(d=>d.als>=48)?'var(--rd)':'var(--ac)';
+  let h=`<line x1="${PX}" y1="${thY}" x2="${W-PX}" y2="${thY}" stroke="var(--am)" stroke-width=".8" stroke-dasharray="2 2" opacity=".7"/>`;
+  h+=`<polyline points="${series.map(d=>`${xS(d.year)},${yS(d.als)}`).join(' ')}" fill="none" stroke="${col}" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/>`;
+  series.forEach(d=>{const ab=d.als>=48;h+=`<circle cx="${xS(d.year)}" cy="${yS(d.als)}" r="${ab?3:2}" fill="${ab?col:'var(--s1)'}" stroke="${col}" stroke-width="1.4"/>`;});
+  return`<svg class="spark-svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}">${h}</svg>`;
+}
+
+// ── CA detail panel ───────────────────────────────────────────────────────
+function detailHTML(r){
+  let c1=`<div class="d-label">What the record shows</div>`;
+  if(r.why_structural&&r.why_structural.length){r.why_structural.forEach(w=>{c1+=`<div class="d-item ${w.includes('recurring')&&r.n_chronic>=5?'a':w.includes('recurring')?'w':''}">${w}</div>`;});}
+  else{c1+=`<div class="d-item" style="color:var(--t3)">No structural concerns at current threshold</div>`;}
+  if(r.series&&r.series.length>=2){
+    const yrs=r.series.map(d=>d.year);
+    c1+=`<div style="margin-top:12px"><div class="d-label">Score history — amber line = engagement threshold</div>${spark(r.series,210,36)}<div style="display:flex;justify-content:space-between;font-size:9px;color:var(--t3);font-family:var(--mono);margin-top:2px"><span>${yrs[0]}</span><span>${yrs[yrs.length-1]}</span></div></div>`;
+    if(r.first_flagged)c1+=`<div class="d-item w" style="margin-top:6px">Would have flagged for engagement: <b style="color:var(--am)">${r.first_flagged}</b></div>`;
+  }
+  // ── Column 2: Compliance behavior (behavioral + epistemic layers) ──────
+  const healthy=Math.max(0,100-(r.esc_frac||0)-(r.ap_frac||0));
+  const irqCol=(r.irq||0)>=20?'var(--rd)':(r.irq||0)>=12?'var(--am)':'var(--gn)';
+  const trendKey=r.arc_trend||r.trend||'stable';
+  const trendLabel=trendKey==='worsening'?'↑ worsening':trendKey==='improving'?'↓ improving':'→ stable';
+  const confLabel=r.irq_confidence_label||'';
+  const confVal=r.irq_confidence!=null?Math.round(r.irq_confidence*100):null;
+  const confCol=confLabel==='high'?'var(--gn)':confLabel==='moderate'?'var(--am)':'var(--rd)';
+
+  let c2=`<div class="irq-hdr">
+    <div>
+      <div class="d-label" style="margin-bottom:5px">Compliance behavior</div>
+      <div style="display:flex;align-items:center;gap:6px;flex-wrap:wrap">
+        <div class="irq-trend ${trendKey==='worsening'?'worsening':trendKey==='improving'?'improving':'stable'}">${trendLabel}</div>
+        ${confVal!=null?`<div style="font-size:9px;font-family:var(--mono);color:${confCol};padding:2px 6px;background:color-mix(in srgb,${confCol} 8%,transparent);border:1px solid color-mix(in srgb,${confCol} 20%,transparent);border-radius:3px">${confLabel} confidence · ${r.n_bugs} incidents</div>`:''}
+      </div>
+    </div>
+    <div style="text-align:right">
+      <div class="irq-score-num" style="color:${irqCol}">${(r.irq||0).toFixed(1)}</div>
+      <div class="irq-score-sub">behavioral risk / 30</div>
+    </div>
+  </div>`;
+
+  // Behavioral layer
+  c2+=`<div class="layer-div"><div class="layer-div-label">Behavioral</div><div class="layer-div-line"></div></div>`;
+  c2+=`<div class="arc-row"><div class="arc-label">Closed cleanly</div><div class="arc-track"><div class="arc-fill" style="width:${healthy}%;background:var(--gn)"></div></div><div class="arc-pct">${healthy.toFixed(0)}%</div></div>`;
+  c2+=`<div class="arc-row"><div class="arc-label">Needed prompting</div><div class="arc-track"><div class="arc-fill" style="width:${r.ap_frac||0}%;background:var(--am)"></div></div><div class="arc-pct">${r.ap_frac||0}%</div></div>`;
+  c2+=`<div class="arc-row"><div class="arc-label">Contested openly</div><div class="arc-track"><div class="arc-fill" style="width:${r.esc_frac||0}%;background:var(--rd)"></div></div><div class="arc-pct">${r.esc_frac||0}%</div></div>`;
+
+  // Pattern connection callout
+  const pcIgn=r.pc_ignored||0;
+  const pcCls=pcIgn>=5?'warn':pcIgn>=2?'mild':'ok';
+  const pcLabel=pcIgn===0?'no pattern connections ignored':'pattern connection'+(pcIgn===1?'':'s')+' ignored';
+  const pcSub=pcIgn===0?'CA engaged with all systemic framing offered':'community raised recurring class — CA didn\'t engage';
+  c2+=`<div class="pc-callout ${pcCls}">
+    <div class="pc-num ${pcCls}">${pcIgn}</div>
+    <div><div class="pc-desc">${pcLabel}</div><div class="pc-sub">${pcSub}</div></div>
+  </div>`;
+
+  // Epistemic layer
+  c2+=`<div class="layer-div" style="margin-top:14px"><div class="layer-div-label">Epistemic</div><div class="layer-div-line"></div></div>`;
+
+  // Integrity badges — populate if data present, else pending
+  const hasCandor=r.candor!=null, hasAcct=r.accountability!=null, hasOblig=r.obligation_understanding!=null;
+  const hasInteg=hasCandor||hasAcct||hasOblig;
+  const integVal=(v)=>v||'—';
+  const integCls=(v)=>v?v:'pending';
+  c2+=`<div class="integ-grid">
+    <div class="integ-cell ${hasCandor?integCls(r.candor):''}">
+      <div class="integ-dim">Candor</div>
+      <div class="integ-val ${hasCandor?integCls(r.candor):'pending'}">${hasCandor?integVal(r.candor):'—'}</div>
+    </div>
+    <div class="integ-cell ${hasAcct?integCls(r.accountability):''}">
+      <div class="integ-dim">Ownership</div>
+      <div class="integ-val ${hasAcct?integCls(r.accountability):'pending'}">${hasAcct?integVal(r.accountability):'—'}</div>
+    </div>
+    <div class="integ-cell ${hasOblig?integCls(r.obligation_understanding):''}">
+      <div class="integ-dim">Obligation</div>
+      <div class="integ-val ${hasOblig?integCls(r.obligation_understanding):'pending'}">${hasOblig?integVal(r.obligation_understanding):'—'}</div>
+    </div>
+  </div>`;
+
+  // RCA depth pips
+  const rca=r.avg_rca_depth;
+  const rcaFilled=rca!=null?Math.round(rca):0;
+  const rcaColor=rcaFilled<=1?'var(--rd)':rcaFilled===2?'var(--am)':rcaFilled===3?'#84cc16':'var(--gn)';
+  const rcaDesc=rca==null?'pending':rcaFilled<=1?'proximate only':rcaFilled===2?'proximate only':rcaFilled===3?'systemic, partial':'systemic, accepted';
+  c2+=`<div class="rca-row">
+    <div class="rca-lbl">RCA quality</div>
+    <div class="rca-pips">
+      <div class="rca-pip ${rca!=null&&rcaFilled>=1?'d'+Math.min(rcaFilled,4):''}"></div>
+      <div class="rca-pip ${rca!=null&&rcaFilled>=2?'d'+Math.min(rcaFilled,4):''}"></div>
+      <div class="rca-pip ${rca!=null&&rcaFilled>=3?'d'+Math.min(rcaFilled,4):''}"></div>
+      <div class="rca-pip ${rca!=null&&rcaFilled>=4?'d'+Math.min(rcaFilled,4):''}"></div>
+    </div>
+    <div class="rca-val" style="${rca!=null?'color:'+rcaColor:''}">${rca!=null?'avg '+rca.toFixed(1)+' — '+rcaDesc:'pending'}</div>
+  </div>`;
+
+  // Commitment quality bar
+  const nComm=r.n_commitments, nA=r.n_commitments_grade_A||0, nDF=r.n_commitments_grade_DF||0, nRe=r.n_restatements||0;
+  const restateFrac=r.restatement_fraction!=null?Math.round(r.restatement_fraction*100):null;
+  if(nComm>0){
+    // Approximate: A=gn, B=bl, DF=rd+t3, rest=am
+    const pA=Math.round(nA/nComm*100), pDF=Math.round(nDF/nComm*100), pRest=100-pA-pDF;
+    c2+=`<div class="commit-row">
+      <div class="commit-lbl">Commitments</div>
+      <div class="commit-bar">
+        ${pA>0?`<div class="commit-seg" style="width:${pA}%;background:var(--gn)"></div>`:''}
+        ${pRest>0?`<div class="commit-seg" style="width:${pRest}%;background:var(--am)"></div>`:''}
+        ${pDF>0?`<div class="commit-seg" style="width:${pDF}%;background:var(--t4)"></div>`:''}
+      </div>
+      <div class="commit-val">${nComm} total${restateFrac!=null?`<br>${restateFrac}% restate`:''}</div>
+    </div>
+    <div class="commit-legend"><span style="color:var(--gn)">■ A–B</span><span style="color:var(--am)">■ C</span><span>■ D–F</span></div>`;
+  } else if(r.n_commitments===0){
+    c2+=`<div class="commit-row">
+      <div class="commit-lbl">Commitments</div>
+      <div style="flex:1;font-size:10px;color:var(--rd)">No commitments made</div>
+    </div>`;
+  }
+
+  // Pending note if no epistemic data at all
+  if(!hasInteg&&rca==null&&nComm==null){
+    c2+=`<div class="epist-pending"><div class="epist-dot"></div>Epistemic signals available after rescore</div>`;
+  }
+
+  // Surface the key cross-layer finding: moderate arc + poor obligation = elevated recurrence risk
+  // Only show if confidence is moderate or better — low confidence means too few threads to be sure
+  if(hasOblig&&r.obligation_understanding==='poor'&&(r.esc_frac||0)<20&&confLabel!=='low'){
+    c2+=`<div class="epist-warn">⚠ Poor obligation understanding despite moderate arc score — surface-level compliance without grasp of underlying requirement. Recurrence risk elevated.</div>`;
+  }
+  let c3=`<div class="d-label">Context and trajectory</div>`;
+  c3+=`<div class="d-item"><b>Failure mode:</b> ${r.mode==='A'?'External parties are finding this CA\'s problems before it finds them':'The same compliance failures keep recurring year after year'}</div>`;
+  if(r.trend){const tc2=r.trend==='worsening'?'var(--rd)':r.trend==='improving'?'var(--gn)':'var(--t3)';c3+=`<div class="d-item"><b>3-year trend:</b> <span style="color:${tc2}">${r.trend==='worsening'?'↑ Getting worse':r.trend==='improving'?'↓ Improving':'→ Stable'}</span></div>`;}
+  if(r.comparables&&r.comparables.length){
+    const validComps=r.comparables.filter(c=>c.sim>=40);
+    if(validComps.length){
+    c3+=`<div style="margin-top:10px"><div class="d-label">Historical parallels</div>`;
+    validComps.forEach((c,i)=>{
+      const opacity=i===0?1:i===1?.75:.55;
+      c3+=`<div class="comp-box" style="margin-bottom:6px;opacity:${opacity}">
+        <div style="display:flex;align-items:center;justify-content:space-between">
+          <div class="comp-name">${esc(c.ca)}</div>
+          <div style="font-size:9px;color:var(--t3);font-family:var(--mono)">${c.sim}% match</div>
+        </div>
+        <div class="comp-meta">Distrusted via ${c.pathway} pathway</div>
+        ${c.narrative?`<div style="font-size:10px;color:var(--t2);margin-top:4px;line-height:1.5">${esc(c.narrative)}</div>`:''}
+        <div class="sim-row"><div class="sim-track"><div class="sim-fill" style="width:${c.sim}%"></div></div><div class="sim-n">${c.sim}%</div></div>
+      </div>`;
+    });
+    c3+=`</div>`;
+    }
+  }
+  const confPct=Math.round((r.confidence||0)*100);
+  const confCol=confPct>=80?'var(--gn)':confPct>=50?'var(--am)':'var(--rd)';
+  c3+=`<div style="margin-top:10px"><div class="d-label">Signal confidence</div>
+    <div class="d-item"><b>Data basis:</b> ${r.n_bugs} incidents on record — <span style="color:${confCol}">${confPct}% confidence</span></div>
+    <div class="d-item" style="color:var(--t3);font-size:10px;line-height:1.5">${confPct<80?'Limited Bugzilla record. Score is directionally correct but treat with caution — a CA with few incidents may simply have low oversight visibility, not good posture.':'Sufficient record for reliable scoring.'}</div>
+  </div>`;
+  c3+=`<div style="margin-top:8px"><div class="d-label">Raw scores</div><div class="d-item" style="font-family:var(--mono);color:var(--t3)">ALS: ${r.als.toFixed(0)} / IRQ: ${r.irq.toFixed(0)} / EPS: ${r.eps.toFixed(0)}</div></div>`;
+  return`<div class="detail-col">${c1}</div><div class="detail-col">${c2}</div><div class="detail-col">${c3}</div>`;
+}
+
+// ── State ─────────────────────────────────────────────────────────────────
+let DATA=[],TIER='elevated',SEARCH='',REGION='',EXPANDED=null,SHOW_DISTRUSTED=false;
+let TL_REGION='',TL_TIER='elevated',TL_SEARCH='',TL_HIDDEN=new Set();
+let HM_REGION='',HM_ACTIVE_ONLY=true;
+
+function getRows(){
+  return DATA.filter(r=>{
+    if(r.population==='distrusted'&&!SHOW_DISTRUSTED)return false;
+    if(TIER==='elevated'&&r.tier!=='elevated')return false;
+    if(TIER==='monitoring'&&r.tier==='routine')return false;
+    if(SEARCH&&!r.ca.toLowerCase().includes(SEARCH))return false;
+    if(REGION&&r.region!==REGION)return false;
+    return true;
+  });
+}
+
+function renderList(){
+  const rows=getRows();
+  const el=document.getElementById('ca-list');if(!el)return;
+  document.getElementById('f-count').textContent=`${rows.length} CA${rows.length!==1?'s':''}`;
+  el.innerHTML=rows.length===0?`<div style="color:var(--t3);padding:32px;text-align:center;font-size:12px">No CAs match the current filters</div>`:rows.map(r=>{
+    const open=EXPANDED===r.ca;
+    return`<div class="ca-card${open?' open':''}" id="c-${esc(r.ca)}">
+      <div class="ca-row" onclick="toggle('${esc(r.ca)}')">
+        <div class="ca-nm" title="${esc(r.ca)}">${esc(r.ca)}</div>
+        <div class="ca-tier">${tierHTML(r)}</div>
+        <div class="ca-signals">${sigTags(r)}</div>
+        <div class="chevron">▾</div>
+      </div>
+      <div class="ca-detail">${open?detailHTML(r):''}</div>
+    </div>`;
+  }).join('');
+}
+
+function toggle(ca){
+  if(EXPANDED===ca){EXPANDED=null;}else{EXPANDED=ca;const r=DATA.find(x=>x.ca===ca);const card=document.getElementById('c-'+ca);if(r&&card)card.querySelector('.ca-detail').innerHTML=detailHTML(r);}
+  renderList();
+  if(EXPANDED)setTimeout(()=>{const el=document.getElementById('c-'+EXPANDED);if(el)el.scrollIntoView({behavior:'smooth',block:'nearest'});},60);
+}
+window.toggle=toggle;
+function setTier(t){TIER=t;['elevated','monitoring','all'].forEach(k=>{document.getElementById('f-'+k).classList.toggle('on',k===t);});EXPANDED=null;renderList();}
+function setDistrusted(v){SHOW_DISTRUSTED=v;document.getElementById('f-distrusted').classList.toggle('on',v);EXPANDED=null;renderList();}
+window.setTier=setTier;window.setDistrusted=setDistrusted;
+
+// ── Trajectory chart ──────────────────────────────────────────────────────
+const YEARS=[2016,2017,2018,2019,2020,2021,2022,2023,2024,2025];
+
+// Distinct colors for lines — enough for ~15 highlighted CAs
+const LINE_COLORS=['#3b82f6','#10b981','#f59e0b','#ef4444','#8b5cf6','#06b6d4','#f97316','#ec4899','#84cc16','#a78bfa','#34d399','#fb923c','#60a5fa','#4ade80','#fbbf24'];
+
+function getTrajRows(){
+  return DATA.filter(r=>{
+    if(TL_TIER==='active'&&r.population!=='active')return false;
+    if(TL_TIER==='elevated'&&r.tier!=='elevated')return false;
+    if(TL_SEARCH&&!r.ca.toLowerCase().includes(TL_SEARCH))return false;
+    if(TL_REGION&&r.region!==TL_REGION)return false;
+    if(!r.series||r.series.length<2)return false;
+    return true;
+  });
+}
+
+function renderTrajectory(){
+  const rows=getTrajRows();
+  const el=document.getElementById('traj-container');if(!el)return;
+
+  if(rows.length===0){el.innerHTML=`<div style="color:var(--t3);padding:32px;text-align:center;font-size:12px">No CAs match the current filters</div>`;return;}
+
+  const W=900,H=280,PL=44,PR=90,PT=16,PB=28;
+  const cW=W-PL-PR,cH=H-PT-PB;
+  const xS=y=>PL+(y-2016)/9*cW;
+  const yS=v=>PT+cH-(Math.min(v/90,1))*cH;
+  const THRESH=48;const thY=yS(THRESH);
+
+  // Sort: distrusted first (drawn underneath), then by current ALS desc
+  const sorted=[...rows].sort((a,b)=>{
+    if(a.population==='distrusted'&&b.population!=='distrusted')return -1;
+    if(b.population==='distrusted'&&a.population!=='distrusted')return 1;
+    return b.als-a.als;
+  });
+
+  // Assign colors to non-hidden active CAs by EPS rank
+  const colorMap={};let ci=0;
+  sorted.filter(r=>r.population!=='active').forEach(r=>colorMap[r.ca]='var(--pu)');
+  sorted.filter(r=>r.population==='active').forEach(r=>{colorMap[r.ca]=LINE_COLORS[ci%LINE_COLORS.length];ci++;});
+
+  let svg=`<svg viewBox="0 0 ${W} ${H}" style="width:100%;min-width:600px;height:${H}px;overflow:visible">`;
+
+  // Grid
+  [0,20,40,60,80].forEach(v=>{const y=yS(v);svg+=`<line x1="${PL}" y1="${y}" x2="${W-PR}" y2="${y}" stroke="var(--bd)" stroke-width=".5"/>`;svg+=`<text x="${PL-5}" y="${y+3}" text-anchor="end" font-size="9" fill="var(--t3)">${v}</text>`;});
+  // Threshold
+  svg+=`<line x1="${PL}" y1="${thY}" x2="${W-PR}" y2="${thY}" stroke="var(--am)" stroke-width="1.2" stroke-dasharray="4 3"/>`;
+  svg+=`<text x="${W-PR+3}" y="${thY+3}" font-size="9" fill="var(--am)">threshold</text>`;
+  // Year axis
+  YEARS.forEach(y=>{svg+=`<text x="${xS(y)}" y="${H-6}" text-anchor="middle" font-size="9" fill="var(--t3)">${y}</text>`;});
+
+  // Lines — collect end labels separately for collision resolution
+  const endLabels=[];
+  sorted.forEach(r=>{
+    if(TL_HIDDEN.has(r.ca))return;
+    const col=colorMap[r.ca];
+    const isDist=r.population==='distrusted';
+    const pts=r.series.map(d=>`${xS(d.year)},${yS(d.als)}`).join(' ');
+    const strokeW=isDist?1.2:1.8;
+    const dash=isDist?'stroke-dasharray="4 3"':'';
+    const op=isDist?'opacity=".5"':'';
+    svg+=`<polyline points="${pts}" fill="none" stroke="${col}" stroke-width="${strokeW}" stroke-linejoin="round" stroke-linecap="round" ${dash} ${op}/>`;
+    r.series.forEach(d=>{
+      const ab=d.als>=48;
+      const tt=`<div class="tt-h">${esc(r.ca)}</div><div class="tt-r"><span class="tt-l">Year</span><span class="tt-v">${d.year}</span></div><div class="tt-r"><span class="tt-l">Score</span><span class="tt-v">${d.als.toFixed(1)}</span></div>${ab?`<div class="tt-n" style="color:var(--am)">Above engagement threshold</div>`:''}${isDist?`<div class="tt-n" style="color:var(--pu)">Eventually distrusted</div>`:''}`;
+      svg+=`<circle cx="${xS(d.year)}" cy="${yS(d.als)}" r="${ab?3.5:2}" fill="${ab?col:'var(--s1)'}" stroke="${col}" stroke-width="1.5" opacity="${isDist?.5:1}" onmouseenter="showTT(event,'${esc(tt)}')" onmouseleave="hideTT()" style="cursor:default"/>`;
+    });
+    // Collect end labels, resolve collisions, then render
+    if(!isDist){const last=r.series[r.series.length-1];endLabels.push({ca:r.ca,col,x:xS(last.year),y:yS(last.als)});}
+  });
+
+  // Resolve label collisions — nudge overlapping labels apart
+  const MIN_GAP=11;
+  endLabels.sort((a,b)=>a.y-b.y);
+  for(let pass=0;pass<4;pass++){
+    for(let i=1;i<endLabels.length;i++){
+      const gap=endLabels[i].y-endLabels[i-1].y;
+      if(gap<MIN_GAP){const push=(MIN_GAP-gap)/2;endLabels[i-1].y-=push;endLabels[i].y+=push;}
+    }
+  }
+  endLabels.forEach(({ca,col,x,y})=>{
+    svg+=`<text x="${x+7}" y="${y+3}" font-size="9" fill="${col}" opacity=".85">${esc(ca.split(' ')[0])}</text>`;
+  });
+
+  svg+='</svg>';
+
+  // Legend
+  const legendItems=sorted.map(r=>{
+    const col=colorMap[r.ca];
+    const dim=TL_HIDDEN.has(r.ca);
+    const isDist=r.population==='distrusted';
+    return`<div class="traj-leg-item${dim?' dim':''}" onclick="toggleTrajLine('${esc(r.ca)}')">
+      <div class="traj-leg-dot" style="background:${col};${isDist?'opacity:.5':''}"></div>
+      <span>${esc(r.ca)}${isDist?' ✕':''}</span>
+    </div>`;
+  }).join('');
+
+  el.innerHTML=`<div class="traj-wrap">
+    <div class="traj-svg-wrap">${svg}</div>
+    <div class="traj-legend">${legendItems}</div>
+  </div>`;
+}
+
+function toggleTrajLine(ca){if(TL_HIDDEN.has(ca))TL_HIDDEN.delete(ca);else TL_HIDDEN.add(ca);renderTrajectory();}
+window.toggleTrajLine=toggleTrajLine;
+function setTrajFilter(key,val){if(key==='region')TL_REGION=val;else if(key==='tier')TL_TIER=val;else if(key==='search')TL_SEARCH=val.toLowerCase();TL_HIDDEN.clear();renderTrajectory();}
+window.setTrajFilter=setTrajFilter;
+
+// ── Heatmap ───────────────────────────────────────────────────────────────
+function getHmRows(){
+  const active=DATA.filter(r=>r.series&&r.series.length>=2&&r.population==='active');
+  const dist=DATA.filter(r=>r.series&&r.series.length>=2&&r.population==='distrusted');
+  let rows=active.sort((a,b)=>b.als-a.als);
+  if(HM_REGION)rows=rows.filter(r=>r.region===HM_REGION);
+  return HM_ACTIVE_ONLY?rows:[...rows,...dist.sort((a,b)=>b.als-a.als)];
+}
+
+function renderHeatmap(){
+  const el=document.getElementById('hm-body');if(!el)return;
+  const allRows=getHmRows();
+  el.innerHTML=allRows.map(r=>{
+    const dist=r.population==='distrusted';
+    const sm=Object.fromEntries((r.series||[]).map(s=>[s.year,s.als]));
+    const cells=YEARS.map(y=>{
+      const v=sm[y];
+      if(v==null)return`<td><div class="hm-cell empty">—</div></td>`;
+      const bg=alsC(v,.9),fg=tc(v),ab=v>=48;
+      const tt=`<div class="tt-h">${esc(r.ca)}</div><div class="tt-r"><span class="tt-l">Year</span><span class="tt-v">${y}</span></div><div class="tt-r"><span class="tt-l">Score</span><span class="tt-v">${v.toFixed(1)}</span></div>${ab?`<div class="tt-n" style="color:var(--am)">Above engagement threshold at this point</div>`:''}`;
+      return`<td><div class="hm-cell${ab?' ab':''}" style="background:${bg};color:${fg}" onmouseenter="showTT(event,'${esc(tt)}')" onmouseleave="hideTT()">${v.toFixed(0)}</div></td>`;
+    }).join('');
+    const cur=r.als,cbg=alsC(cur,.92),cfg=tc(cur);
+    return`<tr class="${dist?'dim':''}"><td class="ca-td">${esc(r.ca)}${dist?` <span style="font-size:9px;color:var(--pu);font-family:var(--mono)">✕</span>`:''}</td>${cells}<td style="border-left:1px solid var(--bl)"><div class="hm-cell${cur>=48?' ab':''}" style="background:${cbg};color:${cfg};font-weight:600;border:1px solid rgba(255,255,255,.1)">${cur.toFixed(0)}</div></td></tr>`;
+  }).join('');
+}
+
+function setHmFilter(key,val){if(key==='region')HM_REGION=val;else if(key==='active')HM_ACTIVE_ONLY=val;renderHeatmap();}
+window.setHmFilter=setHmFilter;
+
+// ── Build page ────────────────────────────────────────────────────────────
+function buildPage(){
+  const ac=DATA.filter(r=>r.population==='active');
+  const n=ac.length,el=ac.filter(r=>r.tier==='elevated').length,mo=ac.filter(r=>r.tier==='monitoring').length,ch=ac.filter(r=>r.n_chronic>=1).length;
+
+  document.getElementById('page').innerHTML=`
+
+  <!-- 01: Engagement list -->
+  <div class="sec">
+    <div class="sec-hd">
+      <span class="sec-num">01</span>
+      <span class="sec-title">Which CAs warrant closer engagement</span>
+    </div>
+    <div class="sec-intro">
+      This section ranks CAs by how closely their compliance record matches the profile of CAs that were eventually distrusted.
+      The assessment draws on two independent signals: <strong>structural</strong> (whether the same failure classes keep recurring year after year, suggesting root causes aren't being fixed)
+      and <strong>behavioral</strong> (whether the CA engages constructively when the oversight community presses for deeper accountability).
+      Expand any row to see the full diagnosis, the closest historical parallel from the distrust record, and how confident we are in the score.
+      <br><br>
+      <strong>A note on scale:</strong> Larger CAs file more incidents because they issue more certificates and have more active compliance programs —
+      incidents themselves are not the signal. The framework focuses on <em>patterns</em>: whether the same failure class recurs year after year
+      (suggesting the root cause wasn't fixed), and whether the CA's engagement with oversight is improving or entrenching.
+      A CA with 150 incidents and no recurring failure classes is in better shape than one with 15 incidents and the same three failures every year.
+      <strong>Tail CAs with thin Bugzilla records are underrepresented here</strong> — low scores for small CAs may reflect low oversight visibility as much as good posture.
+      Each expanded row shows a confidence indicator based on the depth of the record.
+    </div>
+    <div class="summary-row">
+      <div class="stat-block"><div class="stat-num" style="color:var(--rd)">${el}<span class="stat-denom">/${n}</span></div><div class="stat-label">Elevated — warrant proactive engagement</div><div class="stat-note">Both structural and behavioral signals consistent with eventually-distrusted CAs</div></div>
+      <div class="stat-block"><div class="stat-num" style="color:var(--am)">${mo}<span class="stat-denom">/${n}</span></div><div class="stat-label">Monitoring — elevated sub-signals</div><div class="stat-note">Not at full threshold, but one or more dimensions worth tracking</div></div>
+      <div class="stat-block"><div class="stat-num" style="color:var(--am)">${ch}<span class="stat-denom">/${n}</span></div><div class="stat-label">Have recurring failure classes</div><div class="stat-note">Same compliance failure type recurring across 3+ distinct calendar years</div></div>
+      <div class="stat-block"><div class="stat-num" style="color:var(--pu)">6.7×</div><div class="stat-label">More pushback in distrusted CA threads</div><div class="stat-note">CAs later distrusted contested requirements 6.7× more often in compliance threads (p&lt;10⁻¹⁶)</div></div>
+    </div>
+    <div class="filter-row">
+      <span class="f-label">Show</span>
+      <button class="f-chip on" id="f-elevated" onclick="setTier('elevated')">Elevated only</button>
+      <button class="f-chip" id="f-monitoring" onclick="setTier('monitoring')">Elevated + Monitoring</button>
+      <button class="f-chip" id="f-all" onclick="setTier('all')">All CAs</button>
+      <div class="f-div"></div>
+      <button class="f-chip" id="f-distrusted" onclick="setDistrusted(!SHOW_DISTRUSTED)">Include distrusted</button>
+      <div class="f-div"></div>
+      <input class="f-input" type="text" placeholder="Search CA name…" style="width:190px" oninput="SEARCH=this.value.toLowerCase();EXPANDED=null;renderList()">
+      <select class="f-input" onchange="REGION=this.value;EXPANDED=null;renderList()">
+        <option value="">All regions</option><option>North America</option><option>EU</option><option>APAC</option><option>Other</option>
+      </select>
+      <span class="f-count" id="f-count"></span>
+    </div>
+    <div class="ca-list" id="ca-list"></div>
+  </div>
+
+  <!-- 02: Trajectories -->
+  <div class="sec">
+    <div class="sec-hd">
+      <span class="sec-num">02</span>
+      <span class="sec-title">How individual CAs have trended over time</span>
+    </div>
+    <div class="sec-intro">
+      Each line shows a CA's compliance posture score computed year by year, using only the incidents available at that time.
+      This is what a root program would have seen had it been running this framework at each point — making the question concrete:
+      <strong>when did the signal become readable?</strong>
+      The amber dashed line is the engagement threshold. Lines crossing above it represent moments when proactive engagement was warranted.
+      Distrusted CAs are shown as dashed lines with a ✕ marker for reference.
+      Click any CA name in the legend to show or hide its line.
+    </div>
+    <div class="filter-row">
+      <span class="f-label">Show</span>
+      <button class="f-chip on" id="tl-f-elevated" onclick="document.querySelectorAll('[id^=tl-f-]').forEach(b=>b.classList.remove('on'));this.classList.add('on');setTrajFilter('tier','elevated')">Elevated only</button>
+      <button class="f-chip" id="tl-f-active" onclick="document.querySelectorAll('[id^=tl-f-]').forEach(b=>b.classList.remove('on'));this.classList.add('on');setTrajFilter('tier','active')">Active CAs</button>
+      <button class="f-chip" id="tl-f-all" onclick="document.querySelectorAll('[id^=tl-f-]').forEach(b=>b.classList.remove('on'));this.classList.add('on');setTrajFilter('tier','all')">Active + Distrusted</button>
+      <div class="f-div"></div>
+      <select class="f-input" onchange="setTrajFilter('region',this.value)">
+        <option value="">All regions</option><option>North America</option><option>EU</option><option>APAC</option><option>Other</option>
+      </select>
+      <input class="f-input" type="text" placeholder="Search CA…" style="width:160px" oninput="setTrajFilter('search',this.value)">
+    </div>
+    <div id="traj-container"></div>
+    <div class="footnote">Score computed from incidents available at end of each year using the same methodology as current scores. Scores reflect structural signals only (chronic class recurrence, self-report rate, acceleration) — behavioral thread analysis not included in historical series. All active CAs shown by default; use filters or legend to focus.</div>
+  </div>
+
+  <!-- 03: Heatmap -->
+  <div class="sec">
+    <div class="sec-hd">
+      <span class="sec-num">03</span>
+      <span class="sec-title">Ecosystem posture at a glance — year by year</span>
+    </div>
+    <div class="sec-intro">
+      The heatmap shows the same data as the trajectory chart but in a compact grid format, making it easier to spot
+      <strong>cohort patterns</strong> — years where many CAs worsened simultaneously (often driven by ecosystem-wide enforcement campaigns)
+      versus individual trajectories that stand out. Green means low concern; red means high. Each cell shows the score at that year.
+      Cells with a subtle highlight border crossed the engagement threshold that year.
+      Hover any cell for detail.
+    </div>
+    <div class="filter-row">
+      <select class="f-input" onchange="setHmFilter('region',this.value)">
+        <option value="">All regions</option><option>North America</option><option>EU</option><option>APAC</option><option>Other</option>
+      </select>
+      <button class="f-chip on" id="hm-active" onclick="HM_ACTIVE_ONLY=true;this.classList.add('on');document.getElementById('hm-all').classList.remove('on');renderHeatmap()">Active only</button>
+      <button class="f-chip" id="hm-all" onclick="HM_ACTIVE_ONLY=false;this.classList.add('on');document.getElementById('hm-active').classList.remove('on');renderHeatmap()">Include distrusted</button>
+    </div>
+    <div class="hm-legend">
+      Low concern &nbsp;
+      ${[0,16,32,48,64,80].map(v=>`<div class="hm-swatch" style="background:${alsC(v,.9)}"></div>`).join('')}
+      &nbsp; High concern &nbsp;&nbsp;
+      <svg width="22" height="9" style="flex-shrink:0"><line x1="0" y1="5" x2="22" y2="5" stroke="var(--am)" stroke-width="1.2" stroke-dasharray="3 2"/></svg>
+      &nbsp;= engagement threshold (48)
+    </div>
+    <div class="hm-scroll">
+      <table class="hm-tbl">
+        <thead><tr>
+          <th class="ca-th">CA</th>
+          ${YEARS.map(y=>`<th>${y}</th>`).join('')}
+          <th style="border-left:1px solid var(--bl)">Now</th>
+        </tr></thead>
+        <tbody id="hm-body"></tbody>
+      </table>
+    </div>
+    <div class="footnote">Active CAs sorted by current score (highest first). Empty cells = fewer than 3 incidents on record at that year. Bright border = above engagement threshold that year.</div>
+  </div>`;
+
+  renderList();
+  renderTrajectory();
+  renderHeatmap();
+}
+
+// ── Boot ──────────────────────────────────────────────────────────────────
+fetch('cpf_data.json').then(r=>r.json()).then(d=>{
+  DATA=d.rows;
+  document.getElementById('hdr-meta').textContent=d.generated_at;
+  buildPage();
+}).catch(e=>{document.getElementById('page').innerHTML=`<div class="loading">Error: ${e.message}</div>`;});
+</script>
+</body>
+</html>

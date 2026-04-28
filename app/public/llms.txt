@@ -1,0 +1,29 @@
+# WebPKI Observatory
+> Quantitative, evidence-based analysis of the Certificate Authority trust ecosystem that underpins TLS on the public internet.
+
+Maintained by Systematic Reasoning, Inc.
+
+## Data Resources
+
+- [LLM Snapshot](https://webpki.systematicreasoning.com/llm_snapshot.json): Complete observatory dataset (~50K tokens). Self-describing JSON with schema reference and slice index. Updated daily. Contains: 96 trusted CAs with issuance metrics, concentration analysis, trust store intersections, geographic/government/jurisdiction risk, incident history, cryptographic posture, distrust event classifications, and root program governance comparison.
+- [Slice Index](https://webpki.systematicreasoning.com/llm_snapshot_index.json): Index of all available slices with descriptions and direct URLs. Fetch this first to find the right slice for your task.
+- [Governance Slice](https://webpki.systematicreasoning.com/llm_snapshot_governance.json): CA/Browser Forum governance, oversight rates by root program, compliance complexity, BR validity readiness, ecosystem participation. Best for policy and compliance analysis.
+- [Distrust Slice](https://webpki.systematicreasoning.com/llm_snapshot_distrust.json): All 16 distrust events (2011-2024) with timelines, posture classifications, references, and full Bugzilla incident history.
+- [Market Slice](https://webpki.systematicreasoning.com/llm_snapshot_market.json): CA market share, browser coverage, trust surface, concentration metrics, Chrome Root Store growth.
+- [Risk Slice](https://webpki.systematicreasoning.com/llm_snapshot_risk.json): Geographic, government, jurisdiction, and cryptographic risk. Includes full per-root algorithm inventory (317 roots).
+- [JSON Schema](https://webpki.systematicreasoning.com/schema.json): Validation schema for the snapshot (JSON Schema draft 2020-12).
+- [Per-CA Details](https://webpki.systematicreasoning.com/data/ca/): Individual CA profiles with root certificates, intermediates, and PEM data.
+
+## Data Sources
+
+- crt.sh: Certificate Transparency logs (certificate population counts per CA)
+- CCADB: Common CA Database (trust store metadata, CA organization details)
+- Mozilla Bugzilla: CA Certificate Compliance incidents (2014-present)
+- StatCounter: Global browser market share
+- CA/Browser Forum: Ballot records across 4 working groups
+
+## Methodology
+
+Full methodology documentation: https://github.com/systematicreasoning/webpki-observatory/blob/main/METHODOLOGY.md
+
+Pipeline runs daily at 06:00 UTC. All analysis is scoped to currently trusted CAs.
