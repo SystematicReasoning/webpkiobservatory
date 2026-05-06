@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-04-28T08:30:59.982041Z",
+  "generated_at": "2026-05-06T20:46:43.325777Z",
   "chart_insights": {
-    "auditor_changes": "Auditor changes remained rare and steady through 2023 (1\u20134 per year) before spiking dramatically to 20 in 2025, likely driven by the mandatory transition from ETSI AAL v3.4 to v3.5 in March 2026, with a secondary wave of 5 changes already appearing in 2026.",
-    "self_report": "ETSI CAs self-report compliance at 62.7% compared to WebTrust CAs at 57.2%, a 5.5 percentage point difference that may reflect stricter document retention or clearer audit trail practices under ETSI standards, though both remain substantially below full compliance.",
-    "detection_rate": "Auditors detected only 26% of in-period issues (109 of 415 cases), with detection rates varying from 0% to 100% across firms\u2014MATRIX Ltd. achieved perfect detection while LSTI, QMSCERT, PwC, T\u00dcViT, BDO Consulting (Malaysia), Certop, and Scott S. Perry caught nothing\u2014indicating significant inconsistency in audit quality and rigor.",
-    "etsi_aal": "ETSI CAs are using seven versions spanning from v2.0 to v3.5, with v3.3 (superseded in 2022) still deployed by 3 CAs and older versions (v2, v2.9, v3.0, v3.1) in use by 8 CAs\u2014a 4-year lag for the oldest deployed version; v3.5 adoption has begun with 1 CA but remains negligible as the March 2026 mandate approaches."
+    "auditor_changes": "Auditor changes remained stable at 1\u20134 per year from 2015 through 2023, then spiked dramatically to 20 in 2025 before dropping to 6 in 2026, likely reflecting significant ecosystem disruption or mandatory audit program transitions.",
+    "self_report": "ETSI CAs self-report compliance 5.5 percentage points higher than WebTrust CAs (62.7% vs 57.2%), which may reflect differences in audit rigor, disclosure practices, or the populations each framework serves rather than inherent framework quality.",
+    "detection_rate": "Auditors detected only 26% of violations (108 of 411 in-period incidents), but detection rates vary from 0% to 100% across individual auditors, indicating inconsistent audit quality and creating material gaps in ecosystem oversight.",
+    "etsi_aal": "ETSI CAs are using AAL versions 2, 2.9, 3.0, 3.1, 3.3, 3.4, and 3.5, with 7 still on versions predating 2020 (3.1 and earlier) and only 1 on the newly mandatory V3.5, showing slow adoption of current standards despite V3.4 being mandatory since March 2022."
   },
   "summary": {
     "total_ca_owners": 88,
@@ -20,7 +20,7 @@
       "lapsed": 1,
       "no_record": 0
     },
-    "auditor_hhi": 486.2,
+    "auditor_hhi": 496.8,
     "framework_stats": {
       "WebTrust": 50,
       "ETSI": 38
@@ -34,15 +34,15 @@
     "pdf_parsed_count": 81,
     "qualified_opinions": 6,
     "fp_coverage_gaps": 0,
-    "incident_disclosure_gaps": 24,
-    "outdated_criteria": 38,
+    "incident_disclosure_gaps": 23,
+    "outdated_criteria": 37,
     "high_transparency_gap": 38,
-    "matters_without_bz_anchor": 12,
+    "matters_without_bz_anchor": 11,
     "cross_signed_gap_cas": 3,
     "cross_signed_gap_fps": 10,
     "in_period_detection_rate": 26,
-    "in_period_caught": 109,
-    "in_period_covered": 415
+    "in_period_caught": 108,
+    "in_period_covered": 411
   },
   "auditor_concentration": [
     {
@@ -183,27 +183,29 @@
         "unqualified": 6
       },
       "avg_fp_coverage": null,
-      "avg_disclosure_rate": 36.1,
-      "total_undisclosed_bugs": 11,
+      "avg_disclosure_rate": 30.6,
+      "total_undisclosed_bugs": 9,
       "avg_matters_per_ca": 1.3,
-      "criteria_current_pct": 16.7,
+      "criteria_current_pct": 33.3,
       "aal_current_pct": 0.0,
-      "avg_quality_score": 62.2,
-      "avg_gap_score": 93.2,
+      "avg_quality_score": 65.3,
+      "avg_gap_score": 92.5,
       "high_gap_count": 3,
       "total_incidents": 105,
-      "total_matters_with_bz": 6,
+      "total_matters_with_bz": 7,
       "externally_found_count": 0,
-      "avg_tenure_years": 4.2,
-      "avg_historical_depth": 2.0,
+      "avg_tenure_years": 4.3,
+      "avg_historical_depth": 2.2,
       "quality_trends": {},
       "quality_by_year": {
         "2023": 60.0,
         "2024": 100.0,
-        "2025": 51.1
+        "2025": 54.7,
+        "2026": 62.5
       },
       "disclosure_by_year": {
-        "2025": 36.1
+        "2025": 45.9,
+        "2026": 0.0
       }
     },
     {
@@ -256,6 +258,50 @@
       }
     },
     {
+      "auditor": "TayllorCox PCEB",
+      "ca_count": 5,
+      "ca_owners": [
+        "Actalis",
+        "Financijska agencija (Fina)",
+        "PostSignum",
+        "Prvn\u00ed certifika\u010dn\u00ed autorita, a.s.",
+        "SI-TRUST"
+      ],
+      "share_pct": 5.7,
+      "parsed_count": 5,
+      "ca_names": [
+        "Actalis",
+        "Financijska agencija (Fina)",
+        "PostSignum",
+        "Prvn\u00ed certifika\u010dn\u00ed autorita, a.s.",
+        "SI-TRUST"
+      ],
+      "auditor_country": "Czech Republic",
+      "opinion_counts": {
+        "unqualified": 5
+      },
+      "avg_fp_coverage": null,
+      "avg_disclosure_rate": 100.0,
+      "total_undisclosed_bugs": 0,
+      "avg_matters_per_ca": 0.6,
+      "criteria_current_pct": 100.0,
+      "aal_current_pct": 40.0,
+      "avg_quality_score": 83.8,
+      "avg_gap_score": 93.5,
+      "high_gap_count": 2,
+      "total_incidents": 25,
+      "total_matters_with_bz": 3,
+      "externally_found_count": 0,
+      "avg_tenure_years": 2.4,
+      "avg_historical_depth": 2.0,
+      "quality_trends": {},
+      "quality_by_year": {
+        "2025": 71.4,
+        "2026": 96.2
+      },
+      "disclosure_by_year": {}
+    },
+    {
       "auditor": "SunRise CPAs / DFK",
       "ca_count": 5,
       "ca_owners": [
@@ -289,7 +335,7 @@
       "high_gap_count": 3,
       "total_incidents": 40,
       "total_matters_with_bz": 8,
-      "externally_found_count": 1,
+      "externally_found_count": 2,
       "avg_tenure_years": 0.4,
       "avg_historical_depth": 1.8,
       "quality_trends": {},
@@ -340,48 +386,6 @@
       "quality_by_year": {
         "2023": 65.4,
         "2025": 71.4
-      },
-      "disclosure_by_year": {}
-    },
-    {
-      "auditor": "TayllorCox PCEB",
-      "ca_count": 4,
-      "ca_owners": [
-        "Financijska agencija (Fina)",
-        "PostSignum",
-        "Prvn\u00ed certifika\u010dn\u00ed autorita, a.s.",
-        "SI-TRUST"
-      ],
-      "share_pct": 4.6,
-      "parsed_count": 4,
-      "ca_names": [
-        "Financijska agencija (Fina)",
-        "PostSignum",
-        "Prvn\u00ed certifika\u010dn\u00ed autorita, a.s.",
-        "SI-TRUST"
-      ],
-      "auditor_country": "Czech Republic",
-      "opinion_counts": {
-        "unqualified": 4
-      },
-      "avg_fp_coverage": null,
-      "avg_disclosure_rate": null,
-      "total_undisclosed_bugs": 0,
-      "avg_matters_per_ca": 0.0,
-      "criteria_current_pct": 100.0,
-      "aal_current_pct": 50.0,
-      "avg_quality_score": 84.8,
-      "avg_gap_score": 100.0,
-      "high_gap_count": 1,
-      "total_incidents": 2,
-      "total_matters_with_bz": 0,
-      "externally_found_count": 0,
-      "avg_tenure_years": 3.0,
-      "avg_historical_depth": 2.0,
-      "quality_trends": {},
-      "quality_by_year": {
-        "2025": 71.4,
-        "2026": 96.2
       },
       "disclosure_by_year": {}
     },
@@ -455,7 +459,7 @@
       "high_gap_count": 2,
       "total_incidents": 56,
       "total_matters_with_bz": 5,
-      "externally_found_count": 1,
+      "externally_found_count": 2,
       "avg_tenure_years": 0.7,
       "avg_historical_depth": 1.7,
       "quality_trends": {},
@@ -766,43 +770,6 @@
         "2025": 50.0
       },
       "disclosure_by_year": {}
-    },
-    {
-      "auditor": "Bureau Veritas Italia S.p.A",
-      "ca_count": 1,
-      "ca_owners": [
-        "Actalis"
-      ],
-      "share_pct": 1.1,
-      "parsed_count": 1,
-      "ca_names": [
-        "Actalis"
-      ],
-      "auditor_country": "Italy",
-      "opinion_counts": {
-        "unqualified": 1
-      },
-      "avg_fp_coverage": null,
-      "avg_disclosure_rate": 75.0,
-      "total_undisclosed_bugs": 1,
-      "avg_matters_per_ca": 3.0,
-      "criteria_current_pct": 100.0,
-      "aal_current_pct": 0.0,
-      "avg_quality_score": 72.5,
-      "avg_gap_score": 87.0,
-      "high_gap_count": 1,
-      "total_incidents": 23,
-      "total_matters_with_bz": 3,
-      "externally_found_count": 0,
-      "avg_tenure_years": 0.0,
-      "avg_historical_depth": 2.0,
-      "quality_trends": {},
-      "quality_by_year": {
-        "2025": 72.5
-      },
-      "disclosure_by_year": {
-        "2025": 75.0
-      }
     },
     {
       "auditor": "Attestic B.V.",
@@ -1581,27 +1548,29 @@
         "unqualified": 6
       },
       "avg_fp_coverage": null,
-      "avg_disclosure_rate": 36.1,
-      "total_undisclosed_bugs": 11,
+      "avg_disclosure_rate": 30.6,
+      "total_undisclosed_bugs": 9,
       "avg_matters_per_ca": 1.3,
-      "criteria_current_pct": 16.7,
+      "criteria_current_pct": 33.3,
       "aal_current_pct": 0.0,
-      "avg_quality_score": 62.2,
-      "avg_gap_score": 93.2,
+      "avg_quality_score": 65.3,
+      "avg_gap_score": 92.5,
       "high_gap_count": 3,
       "total_incidents": 105,
-      "total_matters_with_bz": 6,
+      "total_matters_with_bz": 7,
       "externally_found_count": 0,
-      "avg_tenure_years": 4.2,
-      "avg_historical_depth": 2.0,
+      "avg_tenure_years": 4.3,
+      "avg_historical_depth": 2.2,
       "quality_trends": {},
       "quality_by_year": {
         "2023": 60.0,
         "2024": 100.0,
-        "2025": 51.1
+        "2025": 54.7,
+        "2026": 62.5
       },
       "disclosure_by_year": {
-        "2025": 36.1
+        "2025": 45.9,
+        "2026": 0.0
       }
     },
     "BDO International": {
@@ -1643,6 +1612,41 @@
         "2026": 100.0
       }
     },
+    "TayllorCox PCEB": {
+      "ca_count": 5,
+      "parsed_count": 5,
+      "ca_names": [
+        "Actalis",
+        "Financijska agencija (Fina)",
+        "PostSignum",
+        "Prvn\u00ed certifika\u010dn\u00ed autorita, a.s.",
+        "SI-TRUST"
+      ],
+      "auditor_country": "Czech Republic",
+      "opinion_counts": {
+        "unqualified": 5
+      },
+      "avg_fp_coverage": null,
+      "avg_disclosure_rate": 100.0,
+      "total_undisclosed_bugs": 0,
+      "avg_matters_per_ca": 0.6,
+      "criteria_current_pct": 100.0,
+      "aal_current_pct": 40.0,
+      "avg_quality_score": 83.8,
+      "avg_gap_score": 93.5,
+      "high_gap_count": 2,
+      "total_incidents": 25,
+      "total_matters_with_bz": 3,
+      "externally_found_count": 0,
+      "avg_tenure_years": 2.4,
+      "avg_historical_depth": 2.0,
+      "quality_trends": {},
+      "quality_by_year": {
+        "2025": 71.4,
+        "2026": 96.2
+      },
+      "disclosure_by_year": {}
+    },
     "SunRise CPAs / DFK": {
       "ca_count": 5,
       "parsed_count": 5,
@@ -1668,7 +1672,7 @@
       "high_gap_count": 3,
       "total_incidents": 40,
       "total_matters_with_bz": 8,
-      "externally_found_count": 1,
+      "externally_found_count": 2,
       "avg_tenure_years": 0.4,
       "avg_historical_depth": 1.8,
       "quality_trends": {},
@@ -1711,40 +1715,6 @@
       "quality_by_year": {
         "2023": 65.4,
         "2025": 71.4
-      },
-      "disclosure_by_year": {}
-    },
-    "TayllorCox PCEB": {
-      "ca_count": 4,
-      "parsed_count": 4,
-      "ca_names": [
-        "Financijska agencija (Fina)",
-        "PostSignum",
-        "Prvn\u00ed certifika\u010dn\u00ed autorita, a.s.",
-        "SI-TRUST"
-      ],
-      "auditor_country": "Czech Republic",
-      "opinion_counts": {
-        "unqualified": 4
-      },
-      "avg_fp_coverage": null,
-      "avg_disclosure_rate": null,
-      "total_undisclosed_bugs": 0,
-      "avg_matters_per_ca": 0.0,
-      "criteria_current_pct": 100.0,
-      "aal_current_pct": 50.0,
-      "avg_quality_score": 84.8,
-      "avg_gap_score": 100.0,
-      "high_gap_count": 1,
-      "total_incidents": 2,
-      "total_matters_with_bz": 0,
-      "externally_found_count": 0,
-      "avg_tenure_years": 3.0,
-      "avg_historical_depth": 2.0,
-      "quality_trends": {},
-      "quality_by_year": {
-        "2025": 71.4,
-        "2026": 96.2
       },
       "disclosure_by_year": {}
     },
@@ -1804,7 +1774,7 @@
       "high_gap_count": 2,
       "total_incidents": 56,
       "total_matters_with_bz": 5,
-      "externally_found_count": 1,
+      "externally_found_count": 2,
       "avg_tenure_years": 0.7,
       "avg_historical_depth": 1.7,
       "quality_trends": {},
@@ -2066,38 +2036,6 @@
         "2025": 50.0
       },
       "disclosure_by_year": {}
-    },
-    "Bureau Veritas Italia S.p.A": {
-      "ca_count": 1,
-      "parsed_count": 1,
-      "ca_names": [
-        "Actalis"
-      ],
-      "auditor_country": "Italy",
-      "opinion_counts": {
-        "unqualified": 1
-      },
-      "avg_fp_coverage": null,
-      "avg_disclosure_rate": 75.0,
-      "total_undisclosed_bugs": 1,
-      "avg_matters_per_ca": 3.0,
-      "criteria_current_pct": 100.0,
-      "aal_current_pct": 0.0,
-      "avg_quality_score": 72.5,
-      "avg_gap_score": 87.0,
-      "high_gap_count": 1,
-      "total_incidents": 23,
-      "total_matters_with_bz": 3,
-      "externally_found_count": 0,
-      "avg_tenure_years": 0.0,
-      "avg_historical_depth": 2.0,
-      "quality_trends": {},
-      "quality_by_year": {
-        "2025": 72.5
-      },
-      "disclosure_by_year": {
-        "2025": 75.0
-      }
     },
     "Attestic B.V.": {
       "ca_count": 1,
@@ -2695,8 +2633,8 @@
       "latest_stmt_date": "2014-11-24",
       "latest_period_end": "2014-11-24",
       "earliest_period_start": "2014-11-24",
-      "stmt_age_days": 4173,
-      "coverage_gap_days": 4173,
+      "stmt_age_days": 4181,
+      "coverage_gap_days": 4181,
       "staleness": "very_stale",
       "root_count": 1,
       "no_audit_roots": 0,
@@ -2796,8 +2734,8 @@
       "latest_stmt_date": "2017-06-12",
       "latest_period_end": "2017-06-12",
       "earliest_period_start": "2017-06-12",
-      "stmt_age_days": 3242,
-      "coverage_gap_days": 3242,
+      "stmt_age_days": 3250,
+      "coverage_gap_days": 3250,
       "staleness": "very_stale",
       "root_count": 1,
       "no_audit_roots": 0,
@@ -2983,8 +2921,8 @@
       "latest_stmt_date": "2020-03-09",
       "latest_period_end": "2019-12-13",
       "earliest_period_start": "2018-12-14",
-      "stmt_age_days": 2241,
-      "coverage_gap_days": 2328,
+      "stmt_age_days": 2249,
+      "coverage_gap_days": 2336,
       "staleness": "very_stale",
       "root_count": 1,
       "no_audit_roots": 0,
@@ -3006,7 +2944,7 @@
       "pdf_parsed": true,
       "opinion_type": "unqualified",
       "audit_framework": "ETSI",
-      "audit_criteria": "ETSI EN 319 411-2 V2.2.2 (2018-04); ETSI EN 319 411-1 V1.2.2 (2018-04); ETSI EN 319 401 V2.2.1 (2018-02); CA Browser Forum Baseline Requirements version 1.6.6",
+      "audit_criteria": "ETSI EN 319 411-2 V2.2.2 (2018-04); ETSI EN 319 411-1 V1.2.2 (2018-04); ETSI EN 319 401 V2.2.1 (2018-02); CA Browser Forum Baseline Requirements version 1.6.6; ETSI EN 319 403 V2.2.2 (2015-08)",
       "etsi_aal_version": "2",
       "policy_oids_present": [
         "1.2.250.1.86.2.3.1.20.1",
@@ -3027,6 +2965,7 @@
         "25F2CFF2D8A3D8E903B4331D76F3B946756E693C9A589F7A5E121A2C6EC5A086",
         "03B5FFE7DB4D85717CB2ED07119DD63A8D592C2FD04F2988D1C074F0FFFAAA2E",
         "7109C8A0A805DA664733E6139DC10668B760D2E308756572B090A7F3FAE7FB9A",
+        "AC374ADD6F654ADB5F1F76A7FAC5EA8FBBA2045D5647193547985208092FC6F2",
         "E51E998355F742822F6BC4F7AA6342041F031E10F730DB6F9A67722B03F36819",
         "97ABD7593E9AE8DF22FF46C417C763DD69AC551E2A78B164B66B97E63B1F86A8",
         "3066579F5F7B5382F40C5AB8B20315FE92E27D0A29A6B955E1378C72A8A0AAF8",
@@ -3045,7 +2984,7 @@
       "pdf_pages": 10,
       "fingerprint_check": {
         "engagement_roots_expected": 0,
-        "engagement_fps_in_letter": 13,
+        "engagement_fps_in_letter": 14,
         "engagement_fps_matched": 0,
         "engagement_fps_missing": [],
         "engagement_fps_extra": [
@@ -3058,6 +2997,7 @@
           "7109C8A0A805DA664733E6139DC10668B760D2E308756572B090A7F3FAE7FB9A",
           "97ABD7593E9AE8DF22FF46C417C763DD69AC551E2A78B164B66B97E63B1F86A8",
           "A05A130E6D21E4EDF2466B20DCBAF3DE75962B9623D145C8F84D33286D214DDE",
+          "AC374ADD6F654ADB5F1F76A7FAC5EA8FBBA2045D5647193547985208092FC6F2",
           "ADF2D6193E97685B33CD306869A016594347AB260F160BDD8FD56FC273CEDE5E",
           "E51E998355F742822F6BC4F7AA6342041F031E10F730DB6F9A67722B03F36819",
           "E6E8C0C0008AF7B6910ED50DDD88B118167805958DD67A778B390B72D9BBB5E6",
@@ -3070,6 +3010,7 @@
           "2A99F5BC1174B73CBB1D620884E01C34E51CCB3978DA125F0E33268883BF4158",
           "7109C8A0A805DA664733E6139DC10668B760D2E308756572B090A7F3FAE7FB9A",
           "97ABD7593E9AE8DF22FF46C417C763DD69AC551E2A78B164B66B97E63B1F86A8",
+          "AC374ADD6F654ADB5F1F76A7FAC5EA8FBBA2045D5647193547985208092FC6F2",
           "ADF2D6193E97685B33CD306869A016594347AB260F160BDD8FD56FC273CEDE5E",
           "E51E998355F742822F6BC4F7AA6342041F031E10F730DB6F9A67722B03F36819",
           "E6E8C0C0008AF7B6910ED50DDD88B118167805958DD67A778B390B72D9BBB5E6",
@@ -3081,6 +3022,7 @@
           "25F2CFF2D8A3D8E903B4331D76F3B946756E693C9A589F7A5E121A2C6EC5A086",
           "7109C8A0A805DA664733E6139DC10668B760D2E308756572B090A7F3FAE7FB9A",
           "97ABD7593E9AE8DF22FF46C417C763DD69AC551E2A78B164B66B97E63B1F86A8",
+          "AC374ADD6F654ADB5F1F76A7FAC5EA8FBBA2045D5647193547985208092FC6F2",
           "ADF2D6193E97685B33CD306869A016594347AB260F160BDD8FD56FC273CEDE5E",
           "E51E998355F742822F6BC4F7AA6342041F031E10F730DB6F9A67722B03F36819",
           "E6E8C0C0008AF7B6910ED50DDD88B118167805958DD67A778B390B72D9BBB5E6",
@@ -3115,7 +3057,7 @@
         "note": null
       },
       "criteria_check": {
-        "criteria_raw": "ETSI EN 319 411-2 V2.2.2 (2018-04); ETSI EN 319 411-1 V1.2.2 (2018-04); ETSI EN 319 401 V2.2.1 (2018-02); CA Browser Forum Baseline Requirements version 1.6.6",
+        "criteria_raw": "ETSI EN 319 411-2 V2.2.2 (2018-04); ETSI EN 319 411-1 V1.2.2 (2018-04); ETSI EN 319 401 V2.2.1 (2018-02); CA Browser Forum Baseline Requirements version 1.6.6; ETSI EN 319 403 V2.2.2 (2015-08)",
         "framework": "ETSI",
         "criteria_version": "EN 319 411-2 V2.2.2",
         "criteria_current": true,
@@ -3245,8 +3187,8 @@
       "latest_stmt_date": "2020-03-30",
       "latest_period_end": "2020-01-15",
       "earliest_period_start": "2019-01-16",
-      "stmt_age_days": 2220,
-      "coverage_gap_days": 2295,
+      "stmt_age_days": 2228,
+      "coverage_gap_days": 2303,
       "staleness": "very_stale",
       "root_count": 1,
       "no_audit_roots": 0,
@@ -3444,8 +3386,8 @@
       "latest_stmt_date": "2023-06-30",
       "latest_period_end": "2023-05-19",
       "earliest_period_start": "2022-05-20",
-      "stmt_age_days": 1033,
-      "coverage_gap_days": 1075,
+      "stmt_age_days": 1041,
+      "coverage_gap_days": 1083,
       "staleness": "very_stale",
       "root_count": 2,
       "no_audit_roots": 0,
@@ -3639,8 +3581,8 @@
       "latest_stmt_date": "2023-11-10",
       "latest_period_end": "2023-06-01",
       "earliest_period_start": "2022-06-10",
-      "stmt_age_days": 900,
-      "coverage_gap_days": 1062,
+      "stmt_age_days": 908,
+      "coverage_gap_days": 1070,
       "staleness": "very_stale",
       "root_count": 1,
       "no_audit_roots": 0,
@@ -3862,8 +3804,8 @@
       "latest_stmt_date": "2024-03-29",
       "latest_period_end": "2024-02-19",
       "earliest_period_start": "2023-02-20",
-      "stmt_age_days": 760,
-      "coverage_gap_days": 799,
+      "stmt_age_days": 768,
+      "coverage_gap_days": 807,
       "staleness": "very_stale",
       "root_count": 1,
       "no_audit_roots": 0,
@@ -4068,8 +4010,8 @@
       "latest_stmt_date": "2024-06-05",
       "latest_period_end": "2024-03-10",
       "earliest_period_start": "2023-03-11",
-      "stmt_age_days": 692,
-      "coverage_gap_days": 779,
+      "stmt_age_days": 700,
+      "coverage_gap_days": 787,
       "staleness": "very_stale",
       "root_count": 1,
       "no_audit_roots": 0,
@@ -4169,8 +4111,8 @@
       "latest_stmt_date": "2024-03-20",
       "latest_period_end": "2024-03-20",
       "earliest_period_start": "2023-03-21",
-      "stmt_age_days": 769,
-      "coverage_gap_days": 769,
+      "stmt_age_days": 777,
+      "coverage_gap_days": 777,
       "staleness": "very_stale",
       "root_count": 2,
       "no_audit_roots": 0,
@@ -4362,8 +4304,8 @@
       "latest_stmt_date": "2024-07-29",
       "latest_period_end": "2024-03-28",
       "earliest_period_start": "2020-03-29",
-      "stmt_age_days": 638,
-      "coverage_gap_days": 761,
+      "stmt_age_days": 646,
+      "coverage_gap_days": 769,
       "staleness": "very_stale",
       "root_count": 1,
       "no_audit_roots": 0,
@@ -4465,8 +4407,8 @@
       "latest_stmt_date": "2024-05-27",
       "latest_period_end": "2024-03-31",
       "earliest_period_start": "2023-04-01",
-      "stmt_age_days": 701,
-      "coverage_gap_days": 758,
+      "stmt_age_days": 709,
+      "coverage_gap_days": 766,
       "staleness": "very_stale",
       "root_count": 1,
       "no_audit_roots": 0,
@@ -4649,241 +4591,6 @@
       "bug_retrospective": []
     },
     {
-      "ca_owner": "Government of Brazil, Instituto Nacional de Tecnologia da Informa\u00e7\u00e3o (ITI)",
-      "ca_country": "Brazil",
-      "primary_auditor": "Ernst & Young",
-      "auditor_country": "Global (US/UK)",
-      "all_auditors": [
-        "Ernst & Young",
-        "Moreira Associados Auditores Independentes"
-      ],
-      "auditor_count": 2,
-      "primary_framework": "WebTrust",
-      "audit_record_status": "named",
-      "trusted_stores": [
-        "microsoft"
-      ],
-      "exclusive_store": "microsoft",
-      "latest_stmt_date": "2024-12-05",
-      "latest_period_end": "2024-09-08",
-      "earliest_period_start": "2021-09-09",
-      "stmt_age_days": 509,
-      "coverage_gap_days": 597,
-      "staleness": "stale",
-      "root_count": 2,
-      "no_audit_roots": 0,
-      "tls_br_pdf_url": "https://www.cpacanada.ca/api/getPDFWebTrust?attachmentId=274068b4-bede-4ad1-97c4-030c33d76449",
-      "has_tls_br_url": true,
-      "separate_audit_types": [
-        "TLS EVG"
-      ],
-      "combined_audit_types": [],
-      "ca_type": "government",
-      "smime_br_url_in_ccadb": false,
-      "ca_capabilities": {
-        "tls": true,
-        "ev": false,
-        "smime": false,
-        "cs": false
-      },
-      "incident_count": null,
-      "self_report_pct": null,
-      "ext_report_count": null,
-      "pdf_parsed": true,
-      "opinion_type": "unqualified",
-      "audit_framework": "WebTrust",
-      "audit_criteria": "WebTrust Principles and Criteria for Certification Authorities \u2013 SSL Baseline with Network Security Version 2.6",
-      "etsi_aal_version": null,
-      "policy_oids_present": [],
-      "in_scope_sha256": [],
-      "locations_audited": [
-        "Bras\u00edlia, Brazil",
-        "Florian\u00f3polis, Brazil"
-      ],
-      "subservice_organizations": [],
-      "qualifications": [],
-      "disclosed_matters": [],
-      "pdf_auditor_firm": "Ernst & Young Auditores Independentes S.S.",
-      "pdf_period_start": "September 9, 2021",
-      "pdf_period_end": "September 8, 2022",
-      "pdf_pages": 5,
-      "fingerprint_check": {
-        "engagement_roots_expected": 0,
-        "engagement_fps_in_letter": 0,
-        "engagement_fps_matched": 0,
-        "engagement_fps_missing": [],
-        "engagement_fps_extra": [],
-        "engagement_fps_extra_disclosed": [],
-        "engagement_fps_extra_intermediates": [],
-        "engagement_fps_extra_old_roots": [],
-        "engagement_fps_extra_undisclosed": [],
-        "engagement_accurate": null,
-        "ca_total_roots": 2,
-        "ca_roots_with_url": 2,
-        "ca_roots_without_url": 0,
-        "ca_unaudited_fps": [],
-        "ca_audit_regime": "multi",
-        "cross_signed_fps_expected": [],
-        "cross_signed_fps_missing": [],
-        "cross_signed_fps_present": [],
-        "cross_signed_gap": false
-      },
-      "incident_disclosure_check": {
-        "period_start_used": "2021-09-09",
-        "period_end_used": "2024-09-08",
-        "bugs_in_period": [],
-        "disclosed_in_letter": [],
-        "undisclosed_bugs": [],
-        "disclosure_rate": null,
-        "note": null
-      },
-      "criteria_check": {
-        "criteria_raw": "WebTrust Principles and Criteria for Certification Authorities \u2013 SSL Baseline with Network Security Version 2.6",
-        "framework": "WebTrust",
-        "criteria_version": "2.6",
-        "criteria_current": false,
-        "criteria_current_today": false,
-        "aal_version": null,
-        "aal_current": null,
-        "aal_current_today": null,
-        "score_epoch": "aal_v3x",
-        "aal_applicable": false
-      },
-      "oid_check": {
-        "inferred_oids": [
-          "2.23.140.1.2.1",
-          "2.23.140.1.2.2"
-        ],
-        "cert_types": [
-          "TLS DV",
-          "TLS OV"
-        ],
-        "capabilities_match": true,
-        "gaps": [],
-        "covered_separately": [],
-        "note": null
-      },
-      "letter_quality_score": {
-        "overall": 60.0,
-        "dimensions": {
-          "opinion_clarity": 100,
-          "criteria_currency": 0,
-          "scope_coverage": 100
-        },
-        "score_epoch": "aal_v3x",
-        "note": null
-      },
-      "transparency_gap": {
-        "incident_count": 0,
-        "matters_count": 0,
-        "matters_with_bugzilla": 0,
-        "externally_found": 0,
-        "gap_score": null,
-        "gap_level": "unknown"
-      },
-      "score_epoch": "aal_v3x",
-      "root_coverage": {
-        "total_roots": 2,
-        "roots_with_url": 2,
-        "roots_without_url": 0,
-        "unaudited_fps": [],
-        "distinct_letters": 2,
-        "audit_regime": "multi"
-      },
-      "audit_timeline": [
-        {
-          "stmt_date": "2016-12-14",
-          "period_start": "2015-09-09",
-          "period_end": "2016-09-08",
-          "auditor": "Ernst & Young",
-          "audit_type": "WebTrust",
-          "url": "https://cert.webtrust.org/SealFile?seal=2210&file=pdf",
-          "letter_parsed": false,
-          "opinion_type": null,
-          "disclosed_matters": [],
-          "disclosed_matters_count": null,
-          "disclosure_rate": null,
-          "fp_coverage_pct": null,
-          "quality_score": null,
-          "criteria_version": null,
-          "criteria_current": null,
-          "etsi_aal_version": null
-        },
-        {
-          "stmt_date": "2022-01-18",
-          "period_start": "2020-09-09",
-          "period_end": "2021-09-08",
-          "auditor": "Ernst & Young",
-          "audit_type": "WebTrust",
-          "url": "https://www.cpacanada.ca/api/getPDFWebTrust?attachmentId=7a74b056-0edd-488e-a92c-53733f4ed854",
-          "letter_parsed": true,
-          "opinion_type": "unqualified",
-          "disclosed_matters": [],
-          "disclosed_matters_count": 0,
-          "disclosure_rate": null,
-          "fp_coverage_pct": null,
-          "quality_score": null,
-          "criteria_version": "2.2.1",
-          "criteria_current": false,
-          "etsi_aal_version": null
-        },
-        {
-          "stmt_date": "2023-01-30",
-          "period_start": "2021-09-09",
-          "period_end": "2022-09-08",
-          "auditor": "Ernst & Young",
-          "audit_type": "WebTrust",
-          "url": "https://www.cpacanada.ca/api/getPDFWebTrust?attachmentId=1ee4abfb-6162-4025-aa4e-89cc9f1be04a",
-          "letter_parsed": true,
-          "opinion_type": "unqualified",
-          "disclosed_matters": [],
-          "disclosed_matters_count": 0,
-          "disclosure_rate": null,
-          "fp_coverage_pct": null,
-          "quality_score": null,
-          "criteria_version": "2.2.2",
-          "criteria_current": true,
-          "etsi_aal_version": null
-        },
-        {
-          "stmt_date": "2024-12-05",
-          "period_start": "2023-09-09",
-          "period_end": "2024-09-08",
-          "auditor": "Moreira Associados Auditores Independentes",
-          "audit_type": "WebTrust",
-          "url": "https://www.cpacanada.ca/api/getPDFWebTrust?attachmentId=745b5c06-2bb9-49cf-b633-283de1c82ddf",
-          "letter_parsed": true,
-          "opinion_type": "unqualified",
-          "disclosed_matters": [],
-          "disclosed_matters_count": 0,
-          "disclosure_rate": null,
-          "fp_coverage_pct": null,
-          "quality_score": null,
-          "criteria_version": "2.2.2",
-          "criteria_current": true,
-          "etsi_aal_version": null
-        }
-      ],
-      "timeline_trends": {
-        "letter_count": 4,
-        "years_covered": 8,
-        "oldest_stmt_date": "2016-12-14",
-        "newest_stmt_date": "2024-12-05",
-        "auditor_changes": [
-          {
-            "year": 2024,
-            "from_auditor": "Ernst & Young",
-            "to_auditor": "Moreira Associados Auditores Independentes"
-          }
-        ],
-        "auditor_tenure_years": 8,
-        "quality_trend": null,
-        "quality_by_year": {},
-        "disclosure_by_year": {}
-      },
-      "bug_retrospective": []
-    },
-    {
       "ca_owner": "Swiss BIT, Swiss Federal Office of Information Technology, Systems and Telecommunication (FOITT)",
       "ca_country": "Switzerland",
       "primary_auditor": "KPMG",
@@ -4901,8 +4608,8 @@
       "latest_stmt_date": "2025-01-24",
       "latest_period_end": "2024-10-31",
       "earliest_period_start": "2023-11-01",
-      "stmt_age_days": 459,
-      "coverage_gap_days": 544,
+      "stmt_age_days": 467,
+      "coverage_gap_days": 552,
       "staleness": "stale",
       "root_count": 1,
       "no_audit_roots": 0,
@@ -5198,8 +4905,8 @@
       "latest_stmt_date": "2025-01-28",
       "latest_period_end": "2024-12-15",
       "earliest_period_start": "2023-12-16",
-      "stmt_age_days": 455,
-      "coverage_gap_days": 499,
+      "stmt_age_days": 463,
+      "coverage_gap_days": 507,
       "staleness": "stale",
       "root_count": 1,
       "no_audit_roots": 0,
@@ -5398,8 +5105,8 @@
       "latest_stmt_date": "2025-03-14",
       "latest_period_end": "2025-01-31",
       "earliest_period_start": "2024-02-01",
-      "stmt_age_days": 410,
-      "coverage_gap_days": 452,
+      "stmt_age_days": 418,
+      "coverage_gap_days": 460,
       "staleness": "stale",
       "root_count": 1,
       "no_audit_roots": 0,
@@ -5613,8 +5320,8 @@
       "latest_stmt_date": "2025-02-18",
       "latest_period_end": "2025-02-09",
       "earliest_period_start": "2024-02-10",
-      "stmt_age_days": 434,
-      "coverage_gap_days": 443,
+      "stmt_age_days": 442,
+      "coverage_gap_days": 451,
       "staleness": "stale",
       "root_count": 1,
       "no_audit_roots": 0,
@@ -5802,370 +5509,6 @@
       "bug_retrospective": []
     },
     {
-      "ca_owner": "Asseco Data Systems S.A.",
-      "ca_country": "Polska",
-      "primary_auditor": "Ernst & Young",
-      "auditor_country": "Global (US/UK)",
-      "all_auditors": [
-        "Ernst & Young"
-      ],
-      "auditor_count": 1,
-      "primary_framework": "WebTrust",
-      "audit_record_status": "named",
-      "trusted_stores": [
-        "apple",
-        "chrome",
-        "microsoft",
-        "mozilla"
-      ],
-      "exclusive_store": null,
-      "latest_stmt_date": "2025-04-22",
-      "latest_period_end": "2025-02-10",
-      "earliest_period_start": "2024-02-11",
-      "stmt_age_days": 371,
-      "coverage_gap_days": 442,
-      "staleness": "stale",
-      "root_count": 5,
-      "no_audit_roots": 0,
-      "tls_br_pdf_url": "https://www.cpacanada.ca/api/getPDFWebTrust?attachmentId=df1c5588-75d5-4a0f-a787-bab5571f76b5",
-      "has_tls_br_url": true,
-      "separate_audit_types": [
-        "Code Signing",
-        "S/MIME BR",
-        "TLS EVG"
-      ],
-      "combined_audit_types": [],
-      "ca_type": "commercial",
-      "smime_br_url_in_ccadb": true,
-      "ca_capabilities": {
-        "tls": true,
-        "ev": true,
-        "smime": true,
-        "cs": true
-      },
-      "incident_count": 47,
-      "self_report_pct": 53,
-      "ext_report_count": 22,
-      "pdf_parsed": true,
-      "opinion_type": "unqualified",
-      "audit_framework": "WebTrust",
-      "audit_criteria": "WebTrust Principles and Criteria for Certification Authorities \u2013 SSL Baseline with Network Security v2.7",
-      "etsi_aal_version": null,
-      "policy_oids_present": [],
-      "in_scope_sha256": [],
-      "locations_audited": [
-        "Szczecin, Poland",
-        "\u0141\u00f3d\u017a, Poland"
-      ],
-      "subservice_organizations": [],
-      "qualifications": [],
-      "disclosed_matters": [
-        {
-          "item": 1,
-          "topic": "Certification Policy Update",
-          "summary": "ADS failed to update its Certification Policy version at least once every 365 days as required by Mozilla Root Store Policy Section 4, due to a gap in internal procedures and reliance on individual methods for handling annual updates.",
-          "bugzilla_ids": [],
-          "certificate_count": null,
-          "self_reported": true
-        },
-        {
-          "item": 2,
-          "topic": "Service Availability",
-          "summary": "During scheduled network maintenance on July 21, 2024, incorrect route configuration caused unavailability of CP/CPS, revocation request response, Certificate Problem Report, CRL, and OCSP services for approximately 1-2 hours, though no certificate issuance was affected.",
-          "bugzilla_ids": [
-            "1909203"
-          ],
-          "certificate_count": null,
-          "self_reported": true
-        }
-      ],
-      "pdf_auditor_firm": "Ernst & Young Audyt Polska sp. z o.o. sp.k.",
-      "pdf_period_start": "February 11, 2024",
-      "pdf_period_end": "February 10, 2025",
-      "pdf_pages": 43,
-      "fingerprint_check": {
-        "engagement_roots_expected": 0,
-        "engagement_fps_in_letter": 0,
-        "engagement_fps_matched": 0,
-        "engagement_fps_missing": [],
-        "engagement_fps_extra": [],
-        "engagement_fps_extra_disclosed": [],
-        "engagement_fps_extra_intermediates": [],
-        "engagement_fps_extra_old_roots": [],
-        "engagement_fps_extra_undisclosed": [],
-        "engagement_accurate": null,
-        "ca_total_roots": 5,
-        "ca_roots_with_url": 5,
-        "ca_roots_without_url": 0,
-        "ca_unaudited_fps": [],
-        "ca_audit_regime": "single",
-        "cross_signed_fps_expected": [
-          "BB61408AED9F530B2EC0545E53BA2C8EBEAA57D9976447DB1663CED4600CD6B7",
-          "BFA95C5DF164B659FA32F6D10564D7170DDE661A853A782E6AB63639433BCB41",
-          "CE0DF856EA6CC0EBE068F55C4CC4DE77DEF45CACB2D4E946D8ADE706666F5887",
-          "FBE52F7D83E613D166F592A9227B08A9235E3DAA875FBA2ACD10A8C0D220DA2F"
-        ],
-        "cross_signed_fps_missing": [
-          "BB61408AED9F530B2EC0545E53BA2C8EBEAA57D9976447DB1663CED4600CD6B7",
-          "BFA95C5DF164B659FA32F6D10564D7170DDE661A853A782E6AB63639433BCB41",
-          "CE0DF856EA6CC0EBE068F55C4CC4DE77DEF45CACB2D4E946D8ADE706666F5887",
-          "FBE52F7D83E613D166F592A9227B08A9235E3DAA875FBA2ACD10A8C0D220DA2F"
-        ],
-        "cross_signed_fps_present": [],
-        "cross_signed_gap": true
-      },
-      "incident_disclosure_check": {
-        "period_start_used": "2024-02-11",
-        "period_end_used": "2025-02-10",
-        "bugs_in_period": [
-          1879845,
-          1888689,
-          1904494,
-          1909203,
-          1917571,
-          1935393
-        ],
-        "disclosed_in_letter": [
-          1909203
-        ],
-        "undisclosed_bugs": [
-          1879845,
-          1888689,
-          1904494,
-          1917571,
-          1935393
-        ],
-        "disclosure_rate": 16.7,
-        "note": null
-      },
-      "criteria_check": {
-        "criteria_raw": "WebTrust Principles and Criteria for Certification Authorities \u2013 SSL Baseline with Network Security v2.7",
-        "framework": "WebTrust",
-        "criteria_version": "2.7",
-        "criteria_current": false,
-        "criteria_current_today": false,
-        "aal_version": null,
-        "aal_current": null,
-        "aal_current_today": null,
-        "score_epoch": "aal_v3x",
-        "aal_applicable": false
-      },
-      "oid_check": {
-        "inferred_oids": [
-          "2.23.140.1.2.1",
-          "2.23.140.1.2.2"
-        ],
-        "cert_types": [
-          "TLS DV",
-          "TLS OV"
-        ],
-        "capabilities_match": true,
-        "gaps": [],
-        "covered_separately": [
-          "Code Signing",
-          "S/MIME",
-          "TLS EV"
-        ],
-        "note": null
-      },
-      "letter_quality_score": {
-        "overall": 43.8,
-        "dimensions": {
-          "opinion_clarity": 100,
-          "criteria_currency": 0,
-          "disclosure_completeness": 16.7,
-          "scope_coverage": 100
-        },
-        "score_epoch": "aal_v3x",
-        "note": null
-      },
-      "transparency_gap": {
-        "incident_count": 47,
-        "matters_count": 2,
-        "matters_with_bugzilla": 1,
-        "externally_found": 0,
-        "gap_score": 97.9,
-        "gap_level": "high"
-      },
-      "score_epoch": "aal_v3x",
-      "root_coverage": {
-        "total_roots": 5,
-        "roots_with_url": 5,
-        "roots_without_url": 0,
-        "unaudited_fps": [],
-        "distinct_letters": 1,
-        "audit_regime": "single"
-      },
-      "audit_timeline": [
-        {
-          "stmt_date": "2025-04-22",
-          "period_start": "2024-02-11",
-          "period_end": "2025-02-10",
-          "auditor": "Ernst & Young",
-          "audit_type": "WebTrust",
-          "url": "https://www.cpacanada.ca/api/getPDFWebTrust?attachmentId=df1c5588-75d5-4a0f-a787-bab5571f76b5",
-          "letter_parsed": true,
-          "opinion_type": "unqualified",
-          "disclosed_matters": [
-            {
-              "item": 1,
-              "topic": "Certification Policy Update",
-              "summary": "ADS failed to update its Certification Policy version at least once every 365 days as required by Mozilla Root Store Policy Section 4, due to a gap in internal procedures and reliance on individual methods for handling annual updates.",
-              "bugzilla_ids": [],
-              "certificate_count": null,
-              "self_reported": true
-            },
-            {
-              "item": 2,
-              "topic": "Service Availability",
-              "summary": "During scheduled network maintenance on July 21, 2024, incorrect route configuration caused unavailability of CP/CPS, revocation request response, Certificate Problem Report, CRL, and OCSP services for approximately 1-2 hours, though no certificate issuance was affected.",
-              "bugzilla_ids": [
-                "1909203"
-              ],
-              "certificate_count": null,
-              "self_reported": true
-            }
-          ],
-          "disclosed_matters_count": 2,
-          "disclosure_rate": 16.7,
-          "fp_coverage_pct": null,
-          "quality_score": 43.8,
-          "criteria_version": "2.7",
-          "criteria_current": false,
-          "etsi_aal_version": null,
-          "score_epoch": "aal_v3x",
-          "criteria_current_today": false,
-          "aal_current": null,
-          "aal_current_today": null
-        }
-      ],
-      "timeline_trends": {
-        "letter_count": 1,
-        "years_covered": 0,
-        "oldest_stmt_date": "2025-04-22",
-        "newest_stmt_date": "2025-04-22",
-        "auditor_changes": [],
-        "auditor_tenure_years": 0,
-        "quality_trend": null,
-        "quality_by_year": {
-          "2025": 43.8
-        },
-        "disclosure_by_year": {
-          "2025": 16.7
-        }
-      },
-      "bug_retrospective": [
-        {
-          "id": 1879845,
-          "filed": "2024-02-12",
-          "summary": "Asseco DS / Certum: S/MIME certificates with error in subjectAlternativeName",
-          "self_reported": true,
-          "whiteboard": "[ca-compliance] [smime-misissuance]",
-          "covering_letters": 1,
-          "mentioned_in": 0,
-          "missed_by": 1,
-          "audit_coverage": [
-            {
-              "stmt_date": "2025-04-22",
-              "period_start": "2024-02-11",
-              "period_end": "2025-02-10",
-              "mentioned": false
-            }
-          ]
-        },
-        {
-          "id": 1888689,
-          "filed": "2024-03-29",
-          "summary": "Asseco DS / Certum: CRL non-conformance with the TLS BRs",
-          "self_reported": false,
-          "whiteboard": "[ca-compliance] [crl-failure] [external]",
-          "covering_letters": 1,
-          "mentioned_in": 0,
-          "missed_by": 1,
-          "audit_coverage": [
-            {
-              "stmt_date": "2025-04-22",
-              "period_start": "2024-02-11",
-              "period_end": "2025-02-10",
-              "mentioned": false
-            }
-          ]
-        },
-        {
-          "id": 1904494,
-          "filed": "2024-06-25",
-          "summary": "Asseco DS / Certum: Cross-certificate not included in 2024 S/MIME Audit statement",
-          "self_reported": true,
-          "whiteboard": "[ca-compliance] [audit-failure]",
-          "covering_letters": 1,
-          "mentioned_in": 0,
-          "missed_by": 1,
-          "audit_coverage": [
-            {
-              "stmt_date": "2025-04-22",
-              "period_start": "2024-02-11",
-              "period_end": "2025-02-10",
-              "mentioned": false
-            }
-          ]
-        },
-        {
-          "id": 1917571,
-          "filed": "2024-09-09",
-          "summary": "Asseco DS / Certum: Organization Identifier and Country field discrepancies",
-          "self_reported": true,
-          "whiteboard": "[ca-compliance] [smime-misissuance]",
-          "covering_letters": 1,
-          "mentioned_in": 0,
-          "missed_by": 1,
-          "audit_coverage": [
-            {
-              "stmt_date": "2025-04-22",
-              "period_start": "2024-02-11",
-              "period_end": "2025-02-10",
-              "mentioned": false
-            }
-          ]
-        },
-        {
-          "id": 1935393,
-          "filed": "2024-12-05",
-          "summary": "Asseco DS / Certum: Failure to Update Policy Documents within 365 Days",
-          "self_reported": true,
-          "whiteboard": "[ca-compliance] [policy-failure]",
-          "covering_letters": 1,
-          "mentioned_in": 0,
-          "missed_by": 1,
-          "audit_coverage": [
-            {
-              "stmt_date": "2025-04-22",
-              "period_start": "2024-02-11",
-              "period_end": "2025-02-10",
-              "mentioned": false
-            }
-          ]
-        },
-        {
-          "id": 1909203,
-          "filed": "2024-07-22",
-          "summary": "Asseco DS / Certum: CP/CPS, Revocation Requests Mechanism, Certificate Problem Report, CRL and OCSP disruption",
-          "self_reported": true,
-          "whiteboard": "[ca-compliance] [policy-failure]",
-          "covering_letters": 1,
-          "mentioned_in": 1,
-          "missed_by": 0,
-          "audit_coverage": [
-            {
-              "stmt_date": "2025-04-22",
-              "period_start": "2024-02-11",
-              "period_end": "2025-02-10",
-              "mentioned": true
-            }
-          ]
-        }
-      ]
-    },
-    {
       "ca_owner": "certSIGN",
       "ca_country": "Romania",
       "primary_auditor": "Crowe FST Audit Ltd",
@@ -6187,8 +5530,8 @@
       "latest_stmt_date": "2025-04-30",
       "latest_period_end": "2025-02-12",
       "earliest_period_start": "2024-02-08",
-      "stmt_age_days": 363,
-      "coverage_gap_days": 440,
+      "stmt_age_days": 371,
+      "coverage_gap_days": 448,
       "staleness": "stale",
       "root_count": 2,
       "no_audit_roots": 0,
@@ -6594,8 +5937,8 @@
       "latest_stmt_date": "2025-05-15",
       "latest_period_end": "2025-02-28",
       "earliest_period_start": "2023-03-01",
-      "stmt_age_days": 348,
-      "coverage_gap_days": 424,
+      "stmt_age_days": 356,
+      "coverage_gap_days": 432,
       "staleness": "stale",
       "root_count": 1,
       "no_audit_roots": 0,
@@ -6796,8 +6139,8 @@
       "latest_stmt_date": "2025-06-27",
       "latest_period_end": "2025-02-28",
       "earliest_period_start": "2024-03-01",
-      "stmt_age_days": 305,
-      "coverage_gap_days": 424,
+      "stmt_age_days": 313,
+      "coverage_gap_days": 432,
       "staleness": "stale",
       "root_count": 9,
       "no_audit_roots": 0,
@@ -7078,8 +6421,8 @@
       "latest_stmt_date": "2025-05-20",
       "latest_period_end": "2025-02-28",
       "earliest_period_start": "2024-03-01",
-      "stmt_age_days": 343,
-      "coverage_gap_days": 424,
+      "stmt_age_days": 351,
+      "coverage_gap_days": 432,
       "staleness": "stale",
       "root_count": 1,
       "no_audit_roots": 0,
@@ -7353,8 +6696,8 @@
       "latest_stmt_date": "2025-05-27",
       "latest_period_end": "2025-03-01",
       "earliest_period_start": "2023-03-02",
-      "stmt_age_days": 336,
-      "coverage_gap_days": 423,
+      "stmt_age_days": 344,
+      "coverage_gap_days": 431,
       "staleness": "stale",
       "root_count": 4,
       "no_audit_roots": 0,
@@ -7588,8 +6931,8 @@
       "latest_stmt_date": "2025-05-20",
       "latest_period_end": "2025-03-09",
       "earliest_period_start": "2023-03-10",
-      "stmt_age_days": 343,
-      "coverage_gap_days": 415,
+      "stmt_age_days": 351,
+      "coverage_gap_days": 423,
       "staleness": "stale",
       "root_count": 2,
       "no_audit_roots": 0,
@@ -7768,8 +7111,8 @@
       "latest_stmt_date": "2025-05-14",
       "latest_period_end": "2025-03-20",
       "earliest_period_start": "2018-03-23",
-      "stmt_age_days": 349,
-      "coverage_gap_days": 404,
+      "stmt_age_days": 357,
+      "coverage_gap_days": 412,
       "staleness": "stale",
       "root_count": 2,
       "no_audit_roots": 0,
@@ -7967,8 +7310,8 @@
       "latest_stmt_date": "2025-06-16",
       "latest_period_end": "2025-03-27",
       "earliest_period_start": "2024-03-28",
-      "stmt_age_days": 316,
-      "coverage_gap_days": 397,
+      "stmt_age_days": 324,
+      "coverage_gap_days": 405,
       "staleness": "stale",
       "root_count": 2,
       "no_audit_roots": 0,
@@ -8117,8 +7460,8 @@
       "latest_stmt_date": "2025-06-03",
       "latest_period_end": "2025-03-28",
       "earliest_period_start": "2024-04-12",
-      "stmt_age_days": 329,
-      "coverage_gap_days": 396,
+      "stmt_age_days": 337,
+      "coverage_gap_days": 404,
       "staleness": "stale",
       "root_count": 2,
       "no_audit_roots": 0,
@@ -8269,8 +7612,8 @@
       "latest_stmt_date": "2025-06-27",
       "latest_period_end": "2025-03-29",
       "earliest_period_start": "2024-03-30",
-      "stmt_age_days": 305,
-      "coverage_gap_days": 395,
+      "stmt_age_days": 313,
+      "coverage_gap_days": 403,
       "staleness": "stale",
       "root_count": 8,
       "no_audit_roots": 0,
@@ -8296,7 +7639,7 @@
       "pdf_parsed": true,
       "opinion_type": "unqualified",
       "audit_framework": "ETSI",
-      "audit_criteria": "ETSI EN 319 411-1 V1.4.1; ETSI EN 319 401 V2.3.1; ETSI EN 319 411-2 V2.5.1; ETSI TS 119 495 V1.7.1; Baseline Requirements for the Issuance and Management of Publicly-Trusted TLS Server Certificates version 2.1.4; Network and Certificate System Security Requirements version 1.7; ETSI EN 319 403-1 V2.3.1; ETSI TS 119 403-2 V1.3.1",
+      "audit_criteria": "ETSI EN 319 411-1 V1.4.1 (2023-10); ETSI EN 319 401 V2.3.1 (2021-05); ETSI EN 319 411-2 V2.5.1 (2023-10); ETSI TS 119 495 V1.7.1 (2024-07); Baseline Requirements for the Issuance and Management of Publicly-Trusted TLS Server Certificates, version 2.1.4; Network and Certificate System Security Requirements, version 1.7",
       "etsi_aal_version": "3.3",
       "policy_oids_present": [],
       "in_scope_sha256": [
@@ -8362,7 +7705,7 @@
         "note": null
       },
       "criteria_check": {
-        "criteria_raw": "ETSI EN 319 411-1 V1.4.1; ETSI EN 319 401 V2.3.1; ETSI EN 319 411-2 V2.5.1; ETSI TS 119 495 V1.7.1; Baseline Requirements for the Issuance and Management of Publicly-Trusted TLS Server Certificates version 2.1.4; Network and Certificate System Security Requirements version 1.7; ETSI EN 319 403-1 V2.3.1; ETSI TS 119 403-2 V1.3.1",
+        "criteria_raw": "ETSI EN 319 411-1 V1.4.1 (2023-10); ETSI EN 319 401 V2.3.1 (2021-05); ETSI EN 319 411-2 V2.5.1 (2023-10); ETSI TS 119 495 V1.7.1 (2024-07); Baseline Requirements for the Issuance and Management of Publicly-Trusted TLS Server Certificates, version 2.1.4; Network and Certificate System Security Requirements, version 1.7",
         "framework": "ETSI",
         "criteria_version": "EN 319 411-1 V1.4.1",
         "criteria_current": true,
@@ -8600,8 +7943,8 @@
       "latest_stmt_date": "2025-06-27",
       "latest_period_end": "2025-03-31",
       "earliest_period_start": "2023-04-01",
-      "stmt_age_days": 305,
-      "coverage_gap_days": 393,
+      "stmt_age_days": 313,
+      "coverage_gap_days": 401,
       "staleness": "stale",
       "root_count": 3,
       "no_audit_roots": 0,
@@ -8807,8 +8150,8 @@
       "latest_stmt_date": "2025-06-27",
       "latest_period_end": "2025-03-31",
       "earliest_period_start": "2024-04-01",
-      "stmt_age_days": 305,
-      "coverage_gap_days": 393,
+      "stmt_age_days": 313,
+      "coverage_gap_days": 401,
       "staleness": "stale",
       "root_count": 15,
       "no_audit_roots": 0,
@@ -9229,8 +8572,8 @@
       "latest_stmt_date": "2025-06-05",
       "latest_period_end": "2025-03-31",
       "earliest_period_start": "2023-04-01",
-      "stmt_age_days": 327,
-      "coverage_gap_days": 393,
+      "stmt_age_days": 335,
+      "coverage_gap_days": 401,
       "staleness": "stale",
       "root_count": 1,
       "no_audit_roots": 0,
@@ -9444,8 +8787,8 @@
       "latest_stmt_date": "2025-06-26",
       "latest_period_end": "2025-03-31",
       "earliest_period_start": "2022-04-07",
-      "stmt_age_days": 306,
-      "coverage_gap_days": 393,
+      "stmt_age_days": 314,
+      "coverage_gap_days": 401,
       "staleness": "stale",
       "root_count": 1,
       "no_audit_roots": 0,
@@ -9654,8 +8997,8 @@
       "latest_stmt_date": "2025-05-09",
       "latest_period_end": "2025-03-31",
       "earliest_period_start": "2024-04-01",
-      "stmt_age_days": 354,
-      "coverage_gap_days": 393,
+      "stmt_age_days": 362,
+      "coverage_gap_days": 401,
       "staleness": "stale",
       "root_count": 2,
       "no_audit_roots": 0,
@@ -9953,8 +9296,8 @@
       "latest_stmt_date": "2025-06-27",
       "latest_period_end": "2025-03-31",
       "earliest_period_start": "2024-04-01",
-      "stmt_age_days": 305,
-      "coverage_gap_days": 393,
+      "stmt_age_days": 313,
+      "coverage_gap_days": 401,
       "staleness": "stale",
       "root_count": 3,
       "no_audit_roots": 0,
@@ -10185,8 +9528,8 @@
       "latest_stmt_date": "2025-06-18",
       "latest_period_end": "2025-04-03",
       "earliest_period_start": "2022-04-08",
-      "stmt_age_days": 314,
-      "coverage_gap_days": 390,
+      "stmt_age_days": 322,
+      "coverage_gap_days": 398,
       "staleness": "stale",
       "root_count": 6,
       "no_audit_roots": 0,
@@ -10657,8 +10000,8 @@
       "latest_stmt_date": "2025-06-13",
       "latest_period_end": "2025-04-08",
       "earliest_period_start": "2024-04-09",
-      "stmt_age_days": 319,
-      "coverage_gap_days": 385,
+      "stmt_age_days": 327,
+      "coverage_gap_days": 393,
       "staleness": "stale",
       "root_count": 1,
       "no_audit_roots": 0,
@@ -11012,8 +10355,8 @@
       "latest_stmt_date": "2025-06-06",
       "latest_period_end": "2025-04-18",
       "earliest_period_start": "2024-04-19",
-      "stmt_age_days": 326,
-      "coverage_gap_days": 375,
+      "stmt_age_days": 334,
+      "coverage_gap_days": 383,
       "staleness": "stale",
       "root_count": 1,
       "no_audit_roots": 0,
@@ -11037,7 +10380,7 @@
       "pdf_parsed": true,
       "opinion_type": "unqualified",
       "audit_framework": "ETSI",
-      "audit_criteria": "ETSI EN 319 411-2 V2.5.1 (2023-10); ETSI EN 319 411-1 V1.5.1 (2025-04); ETSI EN 319 401 V3.1.1 (2024-06); ETSI EN 319 403 V2.2.2 (2015-08); ETSI EN 319 403-1 V2.3.1 (2020-06); ETSI TS 119 403-2 V1.3.1 (2023-03)",
+      "audit_criteria": "ETSI EN 319 411-2 V2.5.1 (2023-10); ETSI EN 319 411-1 V1.5.1 (2025-04); ETSI EN 319 401 V3.1.1 (2024-06); Baseline Requirements for the Issuance and Management of Publicly-Trusted TLS Server Certificates, version 2.1.4",
       "etsi_aal_version": "3.1",
       "policy_oids_present": [],
       "in_scope_sha256": [
@@ -11045,7 +10388,7 @@
         "C96F24C45113FD91AE2F9E40E106653BFA0FFBCFA07E209524C844E7C8DA4148"
       ],
       "locations_audited": [
-        "Galvaniho 17/C, Bratislava - mestsk\u00e1 \u010das\u0165 Ru\u017einov 821 04"
+        "Galvaniho 17/C, Bratislava - mestsk\u00e1 \u010das\u0165 Ru\u017einov 821 04, Slovakia"
       ],
       "subservice_organizations": [],
       "qualifications": [],
@@ -11053,7 +10396,7 @@
         {
           "item": 1,
           "topic": "Certificate Serial Number and Extension Order",
-          "summary": "Disig issued two certificates with the same serial number but different certificate extension orders, reported in Mozilla Bug 1907667 on July 12, 2024, and marked fixed on August 17, 2024.",
+          "summary": "Disig issued two certificates with the same serial number but different certificate extension orders on July 12, 2024, reported as Mozilla Bug 1907667 and resolved by August 17, 2024.",
           "bugzilla_ids": [
             "1907667"
           ],
@@ -11110,7 +10453,7 @@
         "note": null
       },
       "criteria_check": {
-        "criteria_raw": "ETSI EN 319 411-2 V2.5.1 (2023-10); ETSI EN 319 411-1 V1.5.1 (2025-04); ETSI EN 319 401 V3.1.1 (2024-06); ETSI EN 319 403 V2.2.2 (2015-08); ETSI EN 319 403-1 V2.3.1 (2020-06); ETSI TS 119 403-2 V1.3.1 (2023-03)",
+        "criteria_raw": "ETSI EN 319 411-2 V2.5.1 (2023-10); ETSI EN 319 411-1 V1.5.1 (2025-04); ETSI EN 319 401 V3.1.1 (2024-06); Baseline Requirements for the Issuance and Management of Publicly-Trusted TLS Server Certificates, version 2.1.4",
         "framework": "ETSI",
         "criteria_version": "EN 319 411-2 V2.5.1",
         "criteria_current": true,
@@ -11218,7 +10561,7 @@
             {
               "item": 1,
               "topic": "Certificate Serial Number and Extension Order",
-              "summary": "Disig issued two certificates with the same serial number but different certificate extension orders, reported in Mozilla Bug 1907667 on July 12, 2024, and marked fixed on August 17, 2024.",
+              "summary": "Disig issued two certificates with the same serial number but different certificate extension orders on July 12, 2024, reported as Mozilla Bug 1907667 and resolved by August 17, 2024.",
               "bugzilla_ids": [
                 "1907667"
               ],
@@ -11347,8 +10690,8 @@
       "latest_stmt_date": "2025-07-17",
       "latest_period_end": "2025-04-21",
       "earliest_period_start": "2024-04-22",
-      "stmt_age_days": 285,
-      "coverage_gap_days": 372,
+      "stmt_age_days": 293,
+      "coverage_gap_days": 380,
       "staleness": "stale",
       "root_count": 1,
       "no_audit_roots": 0,
@@ -11556,8 +10899,8 @@
       "latest_stmt_date": "2025-05-09",
       "latest_period_end": "2025-04-25",
       "earliest_period_start": "2023-04-25",
-      "stmt_age_days": 354,
-      "coverage_gap_days": 368,
+      "stmt_age_days": 362,
+      "coverage_gap_days": 376,
       "staleness": "stale",
       "root_count": 1,
       "no_audit_roots": 0,
@@ -11780,8 +11123,8 @@
       "latest_stmt_date": "2025-04-27",
       "latest_period_end": "2025-04-26",
       "earliest_period_start": "2024-04-27",
-      "stmt_age_days": 366,
-      "coverage_gap_days": 367,
+      "stmt_age_days": 374,
+      "coverage_gap_days": 375,
       "staleness": "stale",
       "root_count": 1,
       "no_audit_roots": 0,
@@ -12002,8 +11345,8 @@
       "latest_stmt_date": "2025-05-07",
       "latest_period_end": "2025-04-26",
       "earliest_period_start": "2022-04-27",
-      "stmt_age_days": 356,
-      "coverage_gap_days": 367,
+      "stmt_age_days": 364,
+      "coverage_gap_days": 375,
       "staleness": "stale",
       "root_count": 5,
       "no_audit_roots": 0,
@@ -12267,9 +11610,9 @@
       "latest_stmt_date": "2025-07-24",
       "latest_period_end": "2025-04-30",
       "earliest_period_start": "2024-05-01",
-      "stmt_age_days": 278,
-      "coverage_gap_days": 363,
-      "staleness": "aging",
+      "stmt_age_days": 286,
+      "coverage_gap_days": 371,
+      "staleness": "stale",
       "root_count": 1,
       "no_audit_roots": 0,
       "tls_br_pdf_url": "https://www.cpacanada.ca/api/getPDFWebTrust?attachmentId=aaf67a24-a77d-4e22-8d02-c05e40d3a0a2",
@@ -12512,9 +11855,9 @@
       "latest_stmt_date": "2025-07-16",
       "latest_period_end": "2025-04-30",
       "earliest_period_start": "2024-05-01",
-      "stmt_age_days": 286,
-      "coverage_gap_days": 363,
-      "staleness": "aging",
+      "stmt_age_days": 294,
+      "coverage_gap_days": 371,
+      "staleness": "stale",
       "root_count": 3,
       "no_audit_roots": 0,
       "tls_br_pdf_url": "https://www.cpacanada.ca/api/getPDFWebTrust?attachmentId=0436398e-8a3b-42d4-84c8-f15b4149087c",
@@ -12957,8 +12300,8 @@
       "latest_stmt_date": "2025-07-09",
       "latest_period_end": "2025-05-08",
       "earliest_period_start": "2024-05-09",
-      "stmt_age_days": 293,
-      "coverage_gap_days": 355,
+      "stmt_age_days": 301,
+      "coverage_gap_days": 363,
       "staleness": "aging",
       "root_count": 7,
       "no_audit_roots": 0,
@@ -13192,8 +12535,8 @@
       "latest_stmt_date": "2025-08-19",
       "latest_period_end": "2025-05-31",
       "earliest_period_start": "2024-06-01",
-      "stmt_age_days": 252,
-      "coverage_gap_days": 332,
+      "stmt_age_days": 260,
+      "coverage_gap_days": 340,
       "staleness": "aging",
       "root_count": 6,
       "no_audit_roots": 0,
@@ -13431,8 +12774,8 @@
       "latest_stmt_date": "2025-07-23",
       "latest_period_end": "2025-05-31",
       "earliest_period_start": "2024-06-01",
-      "stmt_age_days": 279,
-      "coverage_gap_days": 332,
+      "stmt_age_days": 287,
+      "coverage_gap_days": 340,
       "staleness": "aging",
       "root_count": 1,
       "no_audit_roots": 0,
@@ -13665,8 +13008,8 @@
       "latest_stmt_date": "2025-06-06",
       "latest_period_end": "2025-05-31",
       "earliest_period_start": "2024-06-01",
-      "stmt_age_days": 326,
-      "coverage_gap_days": 332,
+      "stmt_age_days": 334,
+      "coverage_gap_days": 340,
       "staleness": "aging",
       "root_count": 1,
       "no_audit_roots": 0,
@@ -13895,420 +13238,6 @@
       "bug_retrospective": []
     },
     {
-      "ca_owner": "Actalis",
-      "ca_country": "Italy",
-      "primary_auditor": "Bureau Veritas Italia S.p.A",
-      "auditor_country": "Italy",
-      "all_auditors": [
-        "Bureau Veritas Italia S.p.A"
-      ],
-      "auditor_count": 1,
-      "primary_framework": "ETSI",
-      "audit_record_status": "named",
-      "trusted_stores": [
-        "apple",
-        "chrome",
-        "microsoft",
-        "mozilla"
-      ],
-      "exclusive_store": null,
-      "latest_stmt_date": "2025-06-16",
-      "latest_period_end": "2025-06-06",
-      "earliest_period_start": "2024-06-07",
-      "stmt_age_days": 316,
-      "coverage_gap_days": 326,
-      "staleness": "aging",
-      "root_count": 1,
-      "no_audit_roots": 0,
-      "tls_br_pdf_url": "https://cdn1-www.bureauveritas.it/sites/g/files/zypfnx256/files/media/document/25_CAB-Forum_AAL_Actalis_TLS-BR_Audit_E_V3.2.pdf",
-      "has_tls_br_url": true,
-      "separate_audit_types": [
-        "Code Signing",
-        "S/MIME BR",
-        "TLS EVG"
-      ],
-      "combined_audit_types": [],
-      "ca_type": "commercial",
-      "smime_br_url_in_ccadb": true,
-      "ca_capabilities": {
-        "tls": true,
-        "ev": true,
-        "smime": true,
-        "cs": true
-      },
-      "incident_count": 23,
-      "self_report_pct": 61,
-      "ext_report_count": 9,
-      "pdf_parsed": true,
-      "opinion_type": "unqualified",
-      "audit_framework": "ETSI",
-      "audit_criteria": "ETSI EN 319 411-2 V2.6.1 (2025-06); ETSI EN 319 411-1 V1.5.1 (2025-04); ETSI EN 319 401 V3.1.1 (2024-06); Baseline Requirements for TLS Server Certificates, version 2.1.5; ETSI EN 319 403 V2.2.2 (2015-08); ETSI EN 319 403-1 V2.3.1 (2020-06); ETSI TS 119 403-2 V1.2.4 (2023-03)",
-      "etsi_aal_version": "3.1",
-      "policy_oids_present": [],
-      "in_scope_sha256": [
-        "55926084EC963A64B96E2ABE01CE0BA86A64FBFEBCC7AAB5AFC155B37FD76066",
-        "A1D25D28941FAFC0C2A6EB9E596A54786E731D0A4A8E321DB9F1CF2C24FDD609",
-        "931AAA1EC9B2BA0FA59A82302F4F830628C86D9B2D2A50A4D1B2CE895C4CC648",
-        "124EAAF26F570C4FB4D89F5D61078F15B885345FCAF0C57F3477D8C63B5AB26F",
-        "3450B6D38290C3CA5D7BB38B71495BBF72C6D0C44DBA292245F9BCA9843A9FFF",
-        "8CC827CEA1CD8DB79AEB7CD4BEEAE36658AF7B4C0606C257B7538AB1E710BC6A",
-        "ABDEEC53149098F8A0B07EFD972B345A89BEDE8EDE6975E61BE95EE026DA7EFA",
-        "BB4D3EE661E5029409DB6740B9951494A7F22A7BC0FDC1A1900C07A4781F1419",
-        "AA0CA7B6C6A4DD5335761A7213801B3D2D1829CDD0A72F4587F8830804A03B7E",
-        "32322AE2E31A7430BE1D6C04BD8CABFBD240C74D2C9DBE82780DB1F3F73660A6",
-        "8B7ED5358484781F4C08376B183B018C957908CAAC32AA72ACD02E51707A58A7"
-      ],
-      "locations_audited": [
-        "Ponte San Pietro (BG), HQ",
-        "Arezzo (AR), operational site"
-      ],
-      "subservice_organizations": [],
-      "qualifications": [],
-      "disclosed_matters": [
-        {
-          "item": 1,
-          "topic": "CRL distribution point with ldap scheme",
-          "summary": "Bug 1906690 regarding CRL distribution point with ldap scheme",
-          "bugzilla_ids": [
-            "1906690"
-          ],
-          "certificate_count": null,
-          "self_reported": true
-        },
-        {
-          "item": 2,
-          "topic": "Use of CRLReason Code in Certificate revocation",
-          "summary": "Bug 1914419 regarding use of CRLReason Code in certificate revocation",
-          "bugzilla_ids": [
-            "1914419"
-          ],
-          "certificate_count": null,
-          "self_reported": true
-        },
-        {
-          "item": 3,
-          "topic": null,
-          "summary": "Bug 1943379 (text truncated in provided document)",
-          "bugzilla_ids": [
-            "1943379"
-          ],
-          "certificate_count": null,
-          "self_reported": true
-        }
-      ],
-      "pdf_auditor_firm": "Bureau Veritas Italia SpA",
-      "pdf_period_start": "2024-06-07",
-      "pdf_period_end": "2025-06-06",
-      "pdf_pages": 8,
-      "fingerprint_check": {
-        "engagement_roots_expected": 0,
-        "engagement_fps_in_letter": 11,
-        "engagement_fps_matched": 0,
-        "engagement_fps_missing": [],
-        "engagement_fps_extra": [
-          "124EAAF26F570C4FB4D89F5D61078F15B885345FCAF0C57F3477D8C63B5AB26F",
-          "32322AE2E31A7430BE1D6C04BD8CABFBD240C74D2C9DBE82780DB1F3F73660A6",
-          "3450B6D38290C3CA5D7BB38B71495BBF72C6D0C44DBA292245F9BCA9843A9FFF",
-          "55926084EC963A64B96E2ABE01CE0BA86A64FBFEBCC7AAB5AFC155B37FD76066",
-          "8B7ED5358484781F4C08376B183B018C957908CAAC32AA72ACD02E51707A58A7",
-          "8CC827CEA1CD8DB79AEB7CD4BEEAE36658AF7B4C0606C257B7538AB1E710BC6A",
-          "931AAA1EC9B2BA0FA59A82302F4F830628C86D9B2D2A50A4D1B2CE895C4CC648",
-          "A1D25D28941FAFC0C2A6EB9E596A54786E731D0A4A8E321DB9F1CF2C24FDD609",
-          "AA0CA7B6C6A4DD5335761A7213801B3D2D1829CDD0A72F4587F8830804A03B7E",
-          "ABDEEC53149098F8A0B07EFD972B345A89BEDE8EDE6975E61BE95EE026DA7EFA",
-          "BB4D3EE661E5029409DB6740B9951494A7F22A7BC0FDC1A1900C07A4781F1419"
-        ],
-        "engagement_fps_extra_disclosed": [
-          "124EAAF26F570C4FB4D89F5D61078F15B885345FCAF0C57F3477D8C63B5AB26F",
-          "32322AE2E31A7430BE1D6C04BD8CABFBD240C74D2C9DBE82780DB1F3F73660A6",
-          "3450B6D38290C3CA5D7BB38B71495BBF72C6D0C44DBA292245F9BCA9843A9FFF",
-          "55926084EC963A64B96E2ABE01CE0BA86A64FBFEBCC7AAB5AFC155B37FD76066",
-          "8B7ED5358484781F4C08376B183B018C957908CAAC32AA72ACD02E51707A58A7",
-          "931AAA1EC9B2BA0FA59A82302F4F830628C86D9B2D2A50A4D1B2CE895C4CC648",
-          "A1D25D28941FAFC0C2A6EB9E596A54786E731D0A4A8E321DB9F1CF2C24FDD609",
-          "AA0CA7B6C6A4DD5335761A7213801B3D2D1829CDD0A72F4587F8830804A03B7E",
-          "ABDEEC53149098F8A0B07EFD972B345A89BEDE8EDE6975E61BE95EE026DA7EFA",
-          "BB4D3EE661E5029409DB6740B9951494A7F22A7BC0FDC1A1900C07A4781F1419"
-        ],
-        "engagement_fps_extra_intermediates": [
-          "124EAAF26F570C4FB4D89F5D61078F15B885345FCAF0C57F3477D8C63B5AB26F",
-          "32322AE2E31A7430BE1D6C04BD8CABFBD240C74D2C9DBE82780DB1F3F73660A6",
-          "3450B6D38290C3CA5D7BB38B71495BBF72C6D0C44DBA292245F9BCA9843A9FFF",
-          "8B7ED5358484781F4C08376B183B018C957908CAAC32AA72ACD02E51707A58A7",
-          "931AAA1EC9B2BA0FA59A82302F4F830628C86D9B2D2A50A4D1B2CE895C4CC648",
-          "A1D25D28941FAFC0C2A6EB9E596A54786E731D0A4A8E321DB9F1CF2C24FDD609",
-          "AA0CA7B6C6A4DD5335761A7213801B3D2D1829CDD0A72F4587F8830804A03B7E",
-          "ABDEEC53149098F8A0B07EFD972B345A89BEDE8EDE6975E61BE95EE026DA7EFA",
-          "BB4D3EE661E5029409DB6740B9951494A7F22A7BC0FDC1A1900C07A4781F1419"
-        ],
-        "engagement_fps_extra_old_roots": [
-          "55926084EC963A64B96E2ABE01CE0BA86A64FBFEBCC7AAB5AFC155B37FD76066"
-        ],
-        "engagement_fps_extra_undisclosed": [
-          "8CC827CEA1CD8DB79AEB7CD4BEEAE36658AF7B4C0606C257B7538AB1E710BC6A"
-        ],
-        "engagement_accurate": null,
-        "ca_total_roots": 1,
-        "ca_roots_with_url": 1,
-        "ca_roots_without_url": 0,
-        "ca_unaudited_fps": [],
-        "ca_audit_regime": "single",
-        "cross_signed_fps_expected": [],
-        "cross_signed_fps_missing": [],
-        "cross_signed_fps_present": [],
-        "cross_signed_gap": false
-      },
-      "incident_disclosure_check": {
-        "period_start_used": "2024-06-07",
-        "period_end_used": "2025-06-06",
-        "bugs_in_period": [
-          1906690,
-          1914419,
-          1943379,
-          1949203
-        ],
-        "disclosed_in_letter": [
-          1906690,
-          1914419,
-          1943379
-        ],
-        "undisclosed_bugs": [
-          1949203
-        ],
-        "disclosure_rate": 75.0,
-        "note": null
-      },
-      "criteria_check": {
-        "criteria_raw": "ETSI EN 319 411-2 V2.6.1 (2025-06); ETSI EN 319 411-1 V1.5.1 (2025-04); ETSI EN 319 401 V3.1.1 (2024-06); Baseline Requirements for TLS Server Certificates, version 2.1.5; ETSI EN 319 403 V2.2.2 (2015-08); ETSI EN 319 403-1 V2.3.1 (2020-06); ETSI TS 119 403-2 V1.2.4 (2023-03)",
-        "framework": "ETSI",
-        "criteria_version": "EN 319 411-2 V2.6.1",
-        "criteria_current": true,
-        "criteria_current_today": true,
-        "aal_version": "3.1",
-        "aal_current": false,
-        "aal_current_today": false,
-        "score_epoch": "aal_v3x",
-        "aal_applicable": true
-      },
-      "oid_check": {
-        "inferred_oids": [
-          "2.23.140.1.2.1",
-          "2.23.140.1.2.2",
-          "2.23.140.1.4.1"
-        ],
-        "cert_types": [
-          "Code Signing",
-          "TLS DV",
-          "TLS OV"
-        ],
-        "capabilities_match": true,
-        "gaps": [],
-        "covered_separately": [
-          "Code Signing",
-          "S/MIME",
-          "TLS EV"
-        ],
-        "note": null
-      },
-      "letter_quality_score": {
-        "overall": 72.5,
-        "dimensions": {
-          "opinion_clarity": 100,
-          "criteria_currency": 100,
-          "template_compliance": 0,
-          "disclosure_completeness": 75.0,
-          "scope_coverage": 100
-        },
-        "score_epoch": "aal_v3x",
-        "note": null
-      },
-      "transparency_gap": {
-        "incident_count": 23,
-        "matters_count": 3,
-        "matters_with_bugzilla": 3,
-        "externally_found": 0,
-        "gap_score": 87.0,
-        "gap_level": "high"
-      },
-      "score_epoch": "aal_v3x",
-      "root_coverage": {
-        "total_roots": 1,
-        "roots_with_url": 1,
-        "roots_without_url": 0,
-        "unaudited_fps": [],
-        "distinct_letters": 1,
-        "audit_regime": "single"
-      },
-      "audit_timeline": [
-        {
-          "stmt_date": "2016-10-07",
-          "period_start": "2016-10-07",
-          "period_end": "2016-10-07",
-          "auditor": "IMQ S.p.A.",
-          "audit_type": "ETSI",
-          "url": "http://www.actalis.it/documenti-en/actalisca_audit_statement.pdf",
-          "letter_parsed": false,
-          "opinion_type": null,
-          "disclosed_matters": [],
-          "disclosed_matters_count": null,
-          "disclosure_rate": null,
-          "fp_coverage_pct": null,
-          "quality_score": null,
-          "criteria_version": null,
-          "criteria_current": null,
-          "etsi_aal_version": null
-        },
-        {
-          "stmt_date": "2025-06-16",
-          "period_start": "2024-06-07",
-          "period_end": "2025-06-06",
-          "auditor": "Bureau Veritas Italia S.p.A",
-          "audit_type": "ETSI",
-          "url": "https://cdn1-www.bureauveritas.it/sites/g/files/zypfnx256/files/media/document/25_CAB-Forum_AAL_Actalis_TLS-BR_Audit_E_V3.2.pdf",
-          "letter_parsed": true,
-          "opinion_type": "unqualified",
-          "disclosed_matters": [
-            {
-              "item": 1,
-              "topic": "CRL distribution point with ldap scheme",
-              "summary": "Bug 1906690 regarding CRL distribution point with ldap scheme",
-              "bugzilla_ids": [
-                "1906690"
-              ],
-              "certificate_count": null,
-              "self_reported": true
-            },
-            {
-              "item": 2,
-              "topic": "Use of CRLReason Code in Certificate revocation",
-              "summary": "Bug 1914419 regarding use of CRLReason Code in certificate revocation",
-              "bugzilla_ids": [
-                "1914419"
-              ],
-              "certificate_count": null,
-              "self_reported": true
-            },
-            {
-              "item": 3,
-              "topic": null,
-              "summary": "Bug 1943379 (text truncated in provided document)",
-              "bugzilla_ids": [
-                "1943379"
-              ],
-              "certificate_count": null,
-              "self_reported": true
-            }
-          ],
-          "disclosed_matters_count": 3,
-          "disclosure_rate": 75.0,
-          "fp_coverage_pct": null,
-          "quality_score": 72.5,
-          "criteria_version": "EN 319 411-2 V2.6.1",
-          "criteria_current": true,
-          "etsi_aal_version": "3.1",
-          "score_epoch": "aal_v3x",
-          "criteria_current_today": true,
-          "aal_current": false,
-          "aal_current_today": false
-        }
-      ],
-      "timeline_trends": {
-        "letter_count": 2,
-        "years_covered": 9,
-        "oldest_stmt_date": "2016-10-07",
-        "newest_stmt_date": "2025-06-16",
-        "auditor_changes": [
-          {
-            "year": 2025,
-            "from_auditor": "IMQ S.p.A.",
-            "to_auditor": "Bureau Veritas Italia S.p.A"
-          }
-        ],
-        "auditor_tenure_years": 0,
-        "quality_trend": null,
-        "quality_by_year": {
-          "2025": 72.5
-        },
-        "disclosure_by_year": {
-          "2025": 75.0
-        }
-      },
-      "bug_retrospective": [
-        {
-          "id": 1949203,
-          "filed": "2025-02-19",
-          "summary": "Actalis: two CAs with the same CRLDP",
-          "self_reported": false,
-          "whiteboard": "[ca-compliance] [crl-failure] [external]",
-          "covering_letters": 1,
-          "mentioned_in": 0,
-          "missed_by": 1,
-          "audit_coverage": [
-            {
-              "stmt_date": "2025-06-16",
-              "period_start": "2024-06-07",
-              "period_end": "2025-06-06",
-              "mentioned": false
-            }
-          ]
-        },
-        {
-          "id": 1906690,
-          "filed": "2024-07-08",
-          "summary": "Actalis: CRL distribution point with ldap scheme",
-          "self_reported": true,
-          "whiteboard": "[ca-compliance] [ov-misissuance]",
-          "covering_letters": 1,
-          "mentioned_in": 1,
-          "missed_by": 0,
-          "audit_coverage": [
-            {
-              "stmt_date": "2025-06-16",
-              "period_start": "2024-06-07",
-              "period_end": "2025-06-06",
-              "mentioned": true
-            }
-          ]
-        },
-        {
-          "id": 1914419,
-          "filed": "2024-08-22",
-          "summary": "Actalis: Use of CRLReason Code in Certificate Revocation",
-          "self_reported": true,
-          "whiteboard": "[ca-compliance] [crl-failure]",
-          "covering_letters": 1,
-          "mentioned_in": 1,
-          "missed_by": 0,
-          "audit_coverage": [
-            {
-              "stmt_date": "2025-06-16",
-              "period_start": "2024-06-07",
-              "period_end": "2025-06-06",
-              "mentioned": true
-            }
-          ]
-        },
-        {
-          "id": 1943379,
-          "filed": "2025-01-23",
-          "summary": "Actalis: CRL with duplicate serial number in revokedCertificates",
-          "self_reported": false,
-          "whiteboard": "[ca-compliance] [crl-failure]",
-          "covering_letters": 1,
-          "mentioned_in": 1,
-          "missed_by": 0,
-          "audit_coverage": [
-            {
-              "stmt_date": "2025-06-16",
-              "period_start": "2024-06-07",
-              "period_end": "2025-06-06",
-              "mentioned": true
-            }
-          ]
-        }
-      ]
-    },
-    {
       "ca_owner": "SECOM Trust Systems Co., Ltd.",
       "ca_country": "Japan",
       "primary_auditor": "KPMG",
@@ -14329,8 +13258,8 @@
       "latest_stmt_date": "2025-08-05",
       "latest_period_end": "2025-06-06",
       "earliest_period_start": "2022-06-07",
-      "stmt_age_days": 266,
-      "coverage_gap_days": 326,
+      "stmt_age_days": 274,
+      "coverage_gap_days": 334,
       "staleness": "aging",
       "root_count": 8,
       "no_audit_roots": 0,
@@ -14647,8 +13576,8 @@
       "latest_stmt_date": "2025-09-12",
       "latest_period_end": "2025-06-13",
       "earliest_period_start": "2023-06-17",
-      "stmt_age_days": 228,
-      "coverage_gap_days": 319,
+      "stmt_age_days": 236,
+      "coverage_gap_days": 327,
       "staleness": "aging",
       "root_count": 4,
       "no_audit_roots": 0,
@@ -15467,8 +14396,8 @@
       "latest_stmt_date": "2025-09-22",
       "latest_period_end": "2025-06-26",
       "earliest_period_start": "2024-06-27",
-      "stmt_age_days": 218,
-      "coverage_gap_days": 306,
+      "stmt_age_days": 226,
+      "coverage_gap_days": 314,
       "staleness": "aging",
       "root_count": 2,
       "no_audit_roots": 0,
@@ -15696,8 +14625,8 @@
       "latest_stmt_date": "2025-08-21",
       "latest_period_end": "2025-06-30",
       "earliest_period_start": "2024-07-01",
-      "stmt_age_days": 250,
-      "coverage_gap_days": 302,
+      "stmt_age_days": 258,
+      "coverage_gap_days": 310,
       "staleness": "aging",
       "root_count": 2,
       "no_audit_roots": 0,
@@ -15995,8 +14924,8 @@
       "latest_stmt_date": "2025-09-23",
       "latest_period_end": "2025-06-30",
       "earliest_period_start": "2024-07-01",
-      "stmt_age_days": 217,
-      "coverage_gap_days": 302,
+      "stmt_age_days": 225,
+      "coverage_gap_days": 310,
       "staleness": "aging",
       "root_count": 2,
       "no_audit_roots": 0,
@@ -16935,8 +15864,8 @@
       "latest_stmt_date": "2025-09-25",
       "latest_period_end": "2025-06-30",
       "earliest_period_start": "2024-07-01",
-      "stmt_age_days": 215,
-      "coverage_gap_days": 302,
+      "stmt_age_days": 223,
+      "coverage_gap_days": 310,
       "staleness": "aging",
       "root_count": 1,
       "no_audit_roots": 0,
@@ -17142,8 +16071,8 @@
       "latest_stmt_date": "2025-10-08",
       "latest_period_end": "2025-07-10",
       "earliest_period_start": "2024-07-11",
-      "stmt_age_days": 202,
-      "coverage_gap_days": 292,
+      "stmt_age_days": 210,
+      "coverage_gap_days": 300,
       "staleness": "aging",
       "root_count": 3,
       "no_audit_roots": 0,
@@ -17377,8 +16306,8 @@
       "latest_stmt_date": "2025-07-30",
       "latest_period_end": "2025-07-23",
       "earliest_period_start": "2022-09-01",
-      "stmt_age_days": 272,
-      "coverage_gap_days": 279,
+      "stmt_age_days": 280,
+      "coverage_gap_days": 287,
       "staleness": "aging",
       "root_count": 2,
       "no_audit_roots": 0,
@@ -17612,7 +16541,7 @@
           "audit_type": "ETSI",
           "url": "https://bugzilla.mozilla.org/attachment.cgi?id=8803550",
           "letter_parsed": true,
-          "opinion_type": "unknown",
+          "opinion_type": "unqualified",
           "disclosed_matters": [],
           "disclosed_matters_count": 0,
           "disclosure_rate": null,
@@ -18174,8 +17103,8 @@
       "latest_stmt_date": "2025-10-21",
       "latest_period_end": "2025-07-31",
       "earliest_period_start": "2024-08-01",
-      "stmt_age_days": 189,
-      "coverage_gap_days": 271,
+      "stmt_age_days": 197,
+      "coverage_gap_days": 279,
       "staleness": "aging",
       "root_count": 2,
       "no_audit_roots": 0,
@@ -18562,8 +17491,8 @@
       "latest_stmt_date": "2025-10-11",
       "latest_period_end": "2025-07-31",
       "earliest_period_start": "2024-08-01",
-      "stmt_age_days": 199,
-      "coverage_gap_days": 271,
+      "stmt_age_days": 207,
+      "coverage_gap_days": 279,
       "staleness": "aging",
       "root_count": 6,
       "no_audit_roots": 0,
@@ -18767,8 +17696,8 @@
       "latest_stmt_date": "2025-10-30",
       "latest_period_end": "2025-08-23",
       "earliest_period_start": "2023-08-24",
-      "stmt_age_days": 180,
-      "coverage_gap_days": 248,
+      "stmt_age_days": 188,
+      "coverage_gap_days": 256,
       "staleness": "aging",
       "root_count": 6,
       "no_audit_roots": 0,
@@ -18952,8 +17881,8 @@
       "latest_stmt_date": "2025-11-21",
       "latest_period_end": "2025-08-31",
       "earliest_period_start": "2019-11-01",
-      "stmt_age_days": 158,
-      "coverage_gap_days": 240,
+      "stmt_age_days": 166,
+      "coverage_gap_days": 248,
       "staleness": "aging",
       "root_count": 43,
       "no_audit_roots": 0,
@@ -19597,8 +18526,17 @@
           "url": "https://bugzilla.mozilla.org/attachment.cgi?id=9216270",
           "letter_parsed": true,
           "opinion_type": "unqualified",
-          "disclosed_matters": [],
-          "disclosed_matters_count": 0,
+          "disclosed_matters": [
+            {
+              "item": 1,
+              "topic": null,
+              "summary": "The World Health Organization classified the COVID-19 outbreak as a pandemic in March 2020, and the gravity or length of impact cannot be estimated at this time.",
+              "bugzilla_ids": [],
+              "certificate_count": null,
+              "self_reported": false
+            }
+          ],
+          "disclosed_matters_count": 1,
           "disclosure_rate": null,
           "fp_coverage_pct": null,
           "quality_score": null,
@@ -19780,148 +18718,6 @@
           "aal_current_today": null
         }
       ],
-      "secondary_audit": {
-        "framework": "ETSI",
-        "criteria": "ETSI EN 319 401 V2.3.1; ETSI EN 319 411-1 V1.4.1; S/MIME Baseline Requirements V1.0.2",
-        "auditor": "DQS GmbH",
-        "opinion_type": "unqualified",
-        "quality_score": {
-          "overall": 29.4,
-          "dimensions": {
-            "opinion_clarity": 50,
-            "criteria_currency": 0,
-            "disclosure_completeness": 3.4,
-            "scope_coverage": 100
-          },
-          "score_epoch": "aal_v3x",
-          "note": null
-        },
-        "in_scope_sha256": [
-          "56DCCD96F303DA826D8953E167A8902ECBC0734DF41B9B57B3F1201CA6E4A144",
-          "F26DB746B0F36178C5F276D67F4A8FCA1D61675F322480464F7EF853D1CBFFE7",
-          "6FA7C20DF1EAD795DF9DB33841C4909A843C9F3126E488236BBAD8C525993E2A",
-          "65787A22D9D045895617354E287E85D52B66B857ACCFE9F3FEF668D16ABECBE8",
-          "817D76354988C8E88D799E6EBB873A1033D54E1718F026D7835987932D3BC7B6",
-          "455AAFE6E80421171E484B3115A8383A07F09596BD9BA8C9BC540C9CBB8F92B3",
-          "167407C794A5BF5D3A4CE6B56FE81228300006A5FE55F01C07E8AA791762FA46",
-          "BDBE9089A284BE1C005E9AFB718424164C1989FA7EDF860ADE6BEEC84CDB99B3",
-          "244817A9C7D60184651D8041D8F34F9C6D26926689DA33233892FE915E40D065",
-          "524280BCA975F3BDB96ADC7B148D2CBDBB46CFA4CCBA030F3E70CEC592067B3D",
-          "8905AD1617C55305648EAB9533886155F8D4CE5B456F1783FB47887BF928821A",
-          "EDEF6CE049C13E3BD50AB54E1D5150AAEE4B3AB708492CA700740778FABDCFFC",
-          "68C752B1981F111510A8E678775406597696B6B752B89BE04C6BEDDFEF294419",
-          "4EC382E0CA1C62A28C88308DEE7799E5755745BEA4117EACEEE564E5E2A803A4",
-          "DAE7F8BE2008B90443B74C0907D57A6FB19055F6EA347C7A4E5C7E70D2DDA1CB",
-          "477868C56C81FCC0ECE3B8AFFBB54B1C3DF69E5D7AA54B4A2C65EA67BE83AD3A"
-        ],
-        "policy_oids_present": [],
-        "disclosed_matters": [],
-        "url": "https://bugzilla.mozilla.org/attachment.cgi?id=9398031",
-        "fw_label": "ETSI",
-        "fingerprint_check": {
-          "engagement_roots_expected": 15,
-          "engagement_fps_in_letter": 16,
-          "engagement_fps_matched": 0,
-          "engagement_fps_missing": [
-            "018E13F0772532CF809BD1B17281867283FC48C6E13BE9C69812854A490C1B05",
-            "18F1FC7F205DF8ADDDEB7FE007DD57E3AF375A9C4D8D73546BF4F1FED1E18D35",
-            "31AD6648F8104138C738F39EA4320133393E3A18CC02296EF97C2AC9EF6731D0",
-            "371A00DC0533B3721A7EEB40E8419E70799D2B0A0F2C1D80693165F7CEC4AD75",
-            "3E9099B5015E8F486C00BCEA9D111EE721FABA355A89BCF1DF69561E3DC6325C",
-            "4348A0E9444C78CB265E058D5E8944B4D84F9662BD26DB257F8934A443C70161",
-            "552F7BDCF1A7AF9E6CE672017F4F12ABF77240C78E761AC203D1D9D20AC89988",
-            "7431E5F4C3C1CE4690774F0B61E05440883BA9A01ED00BA6ABD7806ED3B118CF",
-            "7D05EBB682339F8C9451EE094EEBFEFA7953A114EDB2F44949452FAB7D2FC185",
-            "7E37CB8B4C47090CAB36551BA6F45DB840680FBA166A952DB100717F43053FC2",
-            "85A0DD7DD720ADB7FF05F83D542B209DC7FF4528F7D677B18389FEA5E5C49E86",
-            "88EF81DE202EB018452E43F864725CEA5FBD1FC2D9D205730709C5D8B8690F46",
-            "8A866FD1B276B57E578E921C65828A2BED58E9F2F288054134B7F1F4BFC9CC74",
-            "8FE4FB0AF93A4D0D67DB0BEBB23E37C71BF325DCBCDD240EA04DAF58B47E1840",
-            "CB3CCBB76031E5E0138F8DD39A23F9DE47FFC35E43C1144CEA27D46A5AB1CB5F"
-          ],
-          "engagement_fps_extra": [
-            "167407C794A5BF5D3A4CE6B56FE81228300006A5FE55F01C07E8AA791762FA46",
-            "244817A9C7D60184651D8041D8F34F9C6D26926689DA33233892FE915E40D065",
-            "455AAFE6E80421171E484B3115A8383A07F09596BD9BA8C9BC540C9CBB8F92B3",
-            "477868C56C81FCC0ECE3B8AFFBB54B1C3DF69E5D7AA54B4A2C65EA67BE83AD3A",
-            "4EC382E0CA1C62A28C88308DEE7799E5755745BEA4117EACEEE564E5E2A803A4",
-            "524280BCA975F3BDB96ADC7B148D2CBDBB46CFA4CCBA030F3E70CEC592067B3D",
-            "56DCCD96F303DA826D8953E167A8902ECBC0734DF41B9B57B3F1201CA6E4A144",
-            "65787A22D9D045895617354E287E85D52B66B857ACCFE9F3FEF668D16ABECBE8",
-            "68C752B1981F111510A8E678775406597696B6B752B89BE04C6BEDDFEF294419",
-            "6FA7C20DF1EAD795DF9DB33841C4909A843C9F3126E488236BBAD8C525993E2A",
-            "817D76354988C8E88D799E6EBB873A1033D54E1718F026D7835987932D3BC7B6",
-            "8905AD1617C55305648EAB9533886155F8D4CE5B456F1783FB47887BF928821A",
-            "BDBE9089A284BE1C005E9AFB718424164C1989FA7EDF860ADE6BEEC84CDB99B3",
-            "DAE7F8BE2008B90443B74C0907D57A6FB19055F6EA347C7A4E5C7E70D2DDA1CB",
-            "EDEF6CE049C13E3BD50AB54E1D5150AAEE4B3AB708492CA700740778FABDCFFC",
-            "F26DB746B0F36178C5F276D67F4A8FCA1D61675F322480464F7EF853D1CBFFE7"
-          ],
-          "engagement_fps_extra_disclosed": [
-            "455AAFE6E80421171E484B3115A8383A07F09596BD9BA8C9BC540C9CBB8F92B3",
-            "477868C56C81FCC0ECE3B8AFFBB54B1C3DF69E5D7AA54B4A2C65EA67BE83AD3A",
-            "4EC382E0CA1C62A28C88308DEE7799E5755745BEA4117EACEEE564E5E2A803A4",
-            "524280BCA975F3BDB96ADC7B148D2CBDBB46CFA4CCBA030F3E70CEC592067B3D",
-            "65787A22D9D045895617354E287E85D52B66B857ACCFE9F3FEF668D16ABECBE8",
-            "817D76354988C8E88D799E6EBB873A1033D54E1718F026D7835987932D3BC7B6",
-            "BDBE9089A284BE1C005E9AFB718424164C1989FA7EDF860ADE6BEEC84CDB99B3",
-            "DAE7F8BE2008B90443B74C0907D57A6FB19055F6EA347C7A4E5C7E70D2DDA1CB",
-            "EDEF6CE049C13E3BD50AB54E1D5150AAEE4B3AB708492CA700740778FABDCFFC",
-            "F26DB746B0F36178C5F276D67F4A8FCA1D61675F322480464F7EF853D1CBFFE7"
-          ],
-          "engagement_fps_extra_intermediates": [
-            "455AAFE6E80421171E484B3115A8383A07F09596BD9BA8C9BC540C9CBB8F92B3",
-            "477868C56C81FCC0ECE3B8AFFBB54B1C3DF69E5D7AA54B4A2C65EA67BE83AD3A",
-            "4EC382E0CA1C62A28C88308DEE7799E5755745BEA4117EACEEE564E5E2A803A4",
-            "524280BCA975F3BDB96ADC7B148D2CBDBB46CFA4CCBA030F3E70CEC592067B3D",
-            "65787A22D9D045895617354E287E85D52B66B857ACCFE9F3FEF668D16ABECBE8",
-            "817D76354988C8E88D799E6EBB873A1033D54E1718F026D7835987932D3BC7B6",
-            "BDBE9089A284BE1C005E9AFB718424164C1989FA7EDF860ADE6BEEC84CDB99B3",
-            "DAE7F8BE2008B90443B74C0907D57A6FB19055F6EA347C7A4E5C7E70D2DDA1CB",
-            "EDEF6CE049C13E3BD50AB54E1D5150AAEE4B3AB708492CA700740778FABDCFFC",
-            "F26DB746B0F36178C5F276D67F4A8FCA1D61675F322480464F7EF853D1CBFFE7"
-          ],
-          "engagement_fps_extra_old_roots": [],
-          "engagement_fps_extra_undisclosed": [
-            "167407C794A5BF5D3A4CE6B56FE81228300006A5FE55F01C07E8AA791762FA46",
-            "244817A9C7D60184651D8041D8F34F9C6D26926689DA33233892FE915E40D065",
-            "56DCCD96F303DA826D8953E167A8902ECBC0734DF41B9B57B3F1201CA6E4A144",
-            "68C752B1981F111510A8E678775406597696B6B752B89BE04C6BEDDFEF294419",
-            "6FA7C20DF1EAD795DF9DB33841C4909A843C9F3126E488236BBAD8C525993E2A",
-            "8905AD1617C55305648EAB9533886155F8D4CE5B456F1783FB47887BF928821A"
-          ],
-          "engagement_accurate": null,
-          "ca_total_roots": 43,
-          "ca_roots_with_url": 42,
-          "ca_roots_without_url": 1,
-          "ca_unaudited_fps": [
-            "A0459B9F63B22559F5FA5D4C6DB3F9F72FF19342033578F073BF1D1B46CBB912"
-          ],
-          "ca_audit_regime": "multi",
-          "cross_signed_fps_expected": [],
-          "cross_signed_fps_missing": [],
-          "cross_signed_fps_present": [],
-          "cross_signed_gap": false
-        },
-        "oid_check": {
-          "inferred_oids": [
-            "2.23.140.1.2.1",
-            "2.23.140.1.2.2"
-          ],
-          "cert_types": [
-            "TLS DV",
-            "TLS OV"
-          ],
-          "capabilities_match": true,
-          "gaps": [],
-          "covered_separately": [
-            "Code Signing",
-            "S/MIME",
-            "TLS EV"
-          ],
-          "note": null
-        }
-      },
       "timeline_trends": {
         "letter_count": 12,
         "years_covered": 11,
@@ -22422,8 +21218,8 @@
       "latest_stmt_date": "2025-11-06",
       "latest_period_end": "2025-08-31",
       "earliest_period_start": "2024-09-01",
-      "stmt_age_days": 173,
-      "coverage_gap_days": 240,
+      "stmt_age_days": 181,
+      "coverage_gap_days": 248,
       "staleness": "aging",
       "root_count": 2,
       "no_audit_roots": 0,
@@ -22789,8 +21585,8 @@
       "latest_stmt_date": "2025-10-16",
       "latest_period_end": "2025-08-31",
       "earliest_period_start": "2023-05-10",
-      "stmt_age_days": 194,
-      "coverage_gap_days": 240,
+      "stmt_age_days": 202,
+      "coverage_gap_days": 248,
       "staleness": "aging",
       "root_count": 5,
       "no_audit_roots": 0,
@@ -22817,53 +21613,49 @@
       "pdf_parsed": true,
       "opinion_type": "unqualified",
       "audit_framework": "ETSI",
-      "audit_criteria": "ETSI EN 319 411-1 V1.4.1 (2023-10); ETSI EN 319 411-2 V2.5.1 (2023-10); ETSI EN 319 412-1 V1.5.1 (2023-09); ETSI EN 319 412-2 V2.3.1 (2023-09); ETSI EN 319 412-3 V1.3.1 (2023-09); ETSI EN 319 412-4 V1.3.1 (2023-09); ETSI EN 319 412-5 V2.4.1 (2023-09); ETSI EN 319 401 V2.3.1 (2021-05); ETSI TS 119 312 V1.4.3 (2023-08); CA/Browser Forum Baseline Requirements v1.8.6; CA/Browser Forum EV Guidelines v1.8.0",
+      "audit_criteria": "ETSI EN 319 411-1 V1.4.1 (2023-10); ETSI EN 319 411-2 V2.5.1 (2023-10); ETSI EN 319 412-1 V1.5.1 (2023-09); ETSI EN 319 412-2 V2.3.1 (2023-09); ETSI EN 319 412-3 V1.3.1 (2023-09); ETSI EN 319 412-4 V1.3.1 (2023-09); ETSI EN 319 412-5 V2.4.1 (2023-09); ETSI EN 319 401 V2.3.1 (2021-05); ETSI TS 119 312 V1.4.3 (2023-08); CA/Browser Forum Baseline Requirements version 1.8.6; CA/Browser Forum EV Guidelines version 1.8.0",
       "etsi_aal_version": null,
       "policy_oids_present": [],
       "in_scope_sha256": [
         "D3D607A9FF24A19523B6DA9D2C649446F8788CB96D9FD130972E120C13677730",
         "DE2EA05839B82DCA5283A604C7D8DFF947F54695BBB4DAFB964840B1E611DA7E",
-        "75F5C8DB96B8E2148A6A958A478311F05C758FB7D96D5B8BC04E5B9D359C3B09",
-        "4AB8BC6061743E0980BFD121370A88C511C4F29EB4BC089765886B64C791F768",
-        "97384D1E5AA637AC601B19893715F9FE8B39A2FD29FE41A86A0930B655076A71"
+        "92A446D2789431227FF4B334189AA5A7B9302008AC3747E968C6AE68AD7AEB66",
+        "4AB8BC6061743E0980BFD121370A88C511C4F29EB4BC089765886B64C791F768"
       ],
       "locations_audited": [],
       "subservice_organizations": [],
       "qualifications": [],
       "disclosed_matters": [],
-      "pdf_auditor_firm": "TAYLLORCOX PCEB, TAYLLORCOX s.r.o.",
+      "pdf_auditor_firm": "TAYLLORCOX PCEB",
       "pdf_period_start": "10/05/2023",
       "pdf_period_end": "09/05/2024",
       "pdf_pages": 6,
       "fingerprint_check": {
         "engagement_roots_expected": 0,
-        "engagement_fps_in_letter": 5,
+        "engagement_fps_in_letter": 4,
         "engagement_fps_matched": 0,
         "engagement_fps_missing": [],
         "engagement_fps_extra": [
           "4AB8BC6061743E0980BFD121370A88C511C4F29EB4BC089765886B64C791F768",
-          "75F5C8DB96B8E2148A6A958A478311F05C758FB7D96D5B8BC04E5B9D359C3B09",
-          "97384D1E5AA637AC601B19893715F9FE8B39A2FD29FE41A86A0930B655076A71",
+          "92A446D2789431227FF4B334189AA5A7B9302008AC3747E968C6AE68AD7AEB66",
           "D3D607A9FF24A19523B6DA9D2C649446F8788CB96D9FD130972E120C13677730",
           "DE2EA05839B82DCA5283A604C7D8DFF947F54695BBB4DAFB964840B1E611DA7E"
         ],
         "engagement_fps_extra_disclosed": [
           "4AB8BC6061743E0980BFD121370A88C511C4F29EB4BC089765886B64C791F768",
-          "75F5C8DB96B8E2148A6A958A478311F05C758FB7D96D5B8BC04E5B9D359C3B09",
+          "92A446D2789431227FF4B334189AA5A7B9302008AC3747E968C6AE68AD7AEB66",
           "D3D607A9FF24A19523B6DA9D2C649446F8788CB96D9FD130972E120C13677730",
           "DE2EA05839B82DCA5283A604C7D8DFF947F54695BBB4DAFB964840B1E611DA7E"
         ],
         "engagement_fps_extra_intermediates": [
           "4AB8BC6061743E0980BFD121370A88C511C4F29EB4BC089765886B64C791F768",
-          "75F5C8DB96B8E2148A6A958A478311F05C758FB7D96D5B8BC04E5B9D359C3B09",
+          "92A446D2789431227FF4B334189AA5A7B9302008AC3747E968C6AE68AD7AEB66",
           "DE2EA05839B82DCA5283A604C7D8DFF947F54695BBB4DAFB964840B1E611DA7E"
         ],
         "engagement_fps_extra_old_roots": [
           "D3D607A9FF24A19523B6DA9D2C649446F8788CB96D9FD130972E120C13677730"
         ],
-        "engagement_fps_extra_undisclosed": [
-          "97384D1E5AA637AC601B19893715F9FE8B39A2FD29FE41A86A0930B655076A71"
-        ],
+        "engagement_fps_extra_undisclosed": [],
         "engagement_accurate": null,
         "ca_total_roots": 5,
         "ca_roots_with_url": 5,
@@ -22885,7 +21677,7 @@
         "note": null
       },
       "criteria_check": {
-        "criteria_raw": "ETSI EN 319 411-1 V1.4.1 (2023-10); ETSI EN 319 411-2 V2.5.1 (2023-10); ETSI EN 319 412-1 V1.5.1 (2023-09); ETSI EN 319 412-2 V2.3.1 (2023-09); ETSI EN 319 412-3 V1.3.1 (2023-09); ETSI EN 319 412-4 V1.3.1 (2023-09); ETSI EN 319 412-5 V2.4.1 (2023-09); ETSI EN 319 401 V2.3.1 (2021-05); ETSI TS 119 312 V1.4.3 (2023-08); CA/Browser Forum Baseline Requirements v1.8.6; CA/Browser Forum EV Guidelines v1.8.0",
+        "criteria_raw": "ETSI EN 319 411-1 V1.4.1 (2023-10); ETSI EN 319 411-2 V2.5.1 (2023-10); ETSI EN 319 412-1 V1.5.1 (2023-09); ETSI EN 319 412-2 V2.3.1 (2023-09); ETSI EN 319 412-3 V1.3.1 (2023-09); ETSI EN 319 412-4 V1.3.1 (2023-09); ETSI EN 319 412-5 V2.4.1 (2023-09); ETSI EN 319 401 V2.3.1 (2021-05); ETSI TS 119 312 V1.4.3 (2023-08); CA/Browser Forum Baseline Requirements version 1.8.6; CA/Browser Forum EV Guidelines version 1.8.0",
         "framework": "ETSI",
         "criteria_version": "EN 319 411-1 V1.4.1",
         "criteria_current": true,
@@ -23032,8 +21824,8 @@
       "latest_stmt_date": "2025-11-21",
       "latest_period_end": "2025-08-31",
       "earliest_period_start": "2022-07-01",
-      "stmt_age_days": 158,
-      "coverage_gap_days": 240,
+      "stmt_age_days": 166,
+      "coverage_gap_days": 248,
       "staleness": "aging",
       "root_count": 18,
       "no_audit_roots": 0,
@@ -23309,10 +22101,10 @@
             {
               "item": 1,
               "topic": "Root CA Protection",
-              "summary": "The SSL.com EV Root Certification Authority RSA was used in an online manner and not air-gapped from all other networks during remote signing of a subordinate CA key, violating Criterion 4.1.",
+              "summary": "The SSL.com EV Root Certification Authority RSA was used in an online manner and not air-gapped from all other networks during remote signing of a subordinate CA key, causing Criterion 4.1 to not be met.",
               "bugzilla_ids": [],
               "certificate_count": null,
-              "self_reported": true
+              "self_reported": false
             }
           ],
           "disclosed_matters_count": 1,
@@ -23860,8 +22652,8 @@
       "latest_stmt_date": "2026-04-07",
       "latest_period_end": "2025-08-31",
       "earliest_period_start": "2024-09-01",
-      "stmt_age_days": 21,
-      "coverage_gap_days": 240,
+      "stmt_age_days": 29,
+      "coverage_gap_days": 248,
       "staleness": "aging",
       "root_count": 1,
       "no_audit_roots": 0,
@@ -24014,6 +22806,241 @@
       "bug_retrospective": []
     },
     {
+      "ca_owner": "Government of Brazil, Instituto Nacional de Tecnologia da Informa\u00e7\u00e3o (ITI)",
+      "ca_country": "Brazil",
+      "primary_auditor": "Ernst & Young",
+      "auditor_country": "Global (US/UK)",
+      "all_auditors": [
+        "Ernst & Young",
+        "Moreira Associados Auditores Independentes"
+      ],
+      "auditor_count": 2,
+      "primary_framework": "WebTrust",
+      "audit_record_status": "named",
+      "trusted_stores": [
+        "microsoft"
+      ],
+      "exclusive_store": "microsoft",
+      "latest_stmt_date": "2025-12-04",
+      "latest_period_end": "2025-09-08",
+      "earliest_period_start": "2021-09-09",
+      "stmt_age_days": 153,
+      "coverage_gap_days": 240,
+      "staleness": "aging",
+      "root_count": 2,
+      "no_audit_roots": 0,
+      "tls_br_pdf_url": "https://www.cpacanada.ca/api/getPDFWebTrust?attachmentId=274068b4-bede-4ad1-97c4-030c33d76449",
+      "has_tls_br_url": true,
+      "separate_audit_types": [
+        "TLS EVG"
+      ],
+      "combined_audit_types": [],
+      "ca_type": "government",
+      "smime_br_url_in_ccadb": false,
+      "ca_capabilities": {
+        "tls": true,
+        "ev": false,
+        "smime": false,
+        "cs": false
+      },
+      "incident_count": null,
+      "self_report_pct": null,
+      "ext_report_count": null,
+      "pdf_parsed": true,
+      "opinion_type": "unqualified",
+      "audit_framework": "WebTrust",
+      "audit_criteria": "WebTrust Principles and Criteria for Certification Authorities \u2013 SSL Baseline with Network Security Version 2.6",
+      "etsi_aal_version": null,
+      "policy_oids_present": [],
+      "in_scope_sha256": [],
+      "locations_audited": [
+        "Bras\u00edlia, Brazil",
+        "Florian\u00f3polis, Brazil"
+      ],
+      "subservice_organizations": [],
+      "qualifications": [],
+      "disclosed_matters": [],
+      "pdf_auditor_firm": "Ernst & Young Auditores Independentes S.S.",
+      "pdf_period_start": "September 9, 2021",
+      "pdf_period_end": "September 8, 2022",
+      "pdf_pages": 5,
+      "fingerprint_check": {
+        "engagement_roots_expected": 0,
+        "engagement_fps_in_letter": 0,
+        "engagement_fps_matched": 0,
+        "engagement_fps_missing": [],
+        "engagement_fps_extra": [],
+        "engagement_fps_extra_disclosed": [],
+        "engagement_fps_extra_intermediates": [],
+        "engagement_fps_extra_old_roots": [],
+        "engagement_fps_extra_undisclosed": [],
+        "engagement_accurate": null,
+        "ca_total_roots": 2,
+        "ca_roots_with_url": 2,
+        "ca_roots_without_url": 0,
+        "ca_unaudited_fps": [],
+        "ca_audit_regime": "multi",
+        "cross_signed_fps_expected": [],
+        "cross_signed_fps_missing": [],
+        "cross_signed_fps_present": [],
+        "cross_signed_gap": false
+      },
+      "incident_disclosure_check": {
+        "period_start_used": "2021-09-09",
+        "period_end_used": "2025-09-08",
+        "bugs_in_period": [],
+        "disclosed_in_letter": [],
+        "undisclosed_bugs": [],
+        "disclosure_rate": null,
+        "note": null
+      },
+      "criteria_check": {
+        "criteria_raw": "WebTrust Principles and Criteria for Certification Authorities \u2013 SSL Baseline with Network Security Version 2.6",
+        "framework": "WebTrust",
+        "criteria_version": "2.6",
+        "criteria_current": false,
+        "criteria_current_today": false,
+        "aal_version": null,
+        "aal_current": null,
+        "aal_current_today": null,
+        "score_epoch": "aal_v3x",
+        "aal_applicable": false
+      },
+      "oid_check": {
+        "inferred_oids": [
+          "2.23.140.1.2.1",
+          "2.23.140.1.2.2"
+        ],
+        "cert_types": [
+          "TLS DV",
+          "TLS OV"
+        ],
+        "capabilities_match": true,
+        "gaps": [],
+        "covered_separately": [],
+        "note": null
+      },
+      "letter_quality_score": {
+        "overall": 60.0,
+        "dimensions": {
+          "opinion_clarity": 100,
+          "criteria_currency": 0,
+          "scope_coverage": 100
+        },
+        "score_epoch": "aal_v3x",
+        "note": null
+      },
+      "transparency_gap": {
+        "incident_count": 0,
+        "matters_count": 0,
+        "matters_with_bugzilla": 0,
+        "externally_found": 0,
+        "gap_score": null,
+        "gap_level": "unknown"
+      },
+      "score_epoch": "aal_v3x",
+      "root_coverage": {
+        "total_roots": 2,
+        "roots_with_url": 2,
+        "roots_without_url": 0,
+        "unaudited_fps": [],
+        "distinct_letters": 2,
+        "audit_regime": "multi"
+      },
+      "audit_timeline": [
+        {
+          "stmt_date": "2016-12-14",
+          "period_start": "2015-09-09",
+          "period_end": "2016-09-08",
+          "auditor": "Ernst & Young",
+          "audit_type": "WebTrust",
+          "url": "https://cert.webtrust.org/SealFile?seal=2210&file=pdf",
+          "letter_parsed": false,
+          "opinion_type": null,
+          "disclosed_matters": [],
+          "disclosed_matters_count": null,
+          "disclosure_rate": null,
+          "fp_coverage_pct": null,
+          "quality_score": null,
+          "criteria_version": null,
+          "criteria_current": null,
+          "etsi_aal_version": null
+        },
+        {
+          "stmt_date": "2022-01-18",
+          "period_start": "2020-09-09",
+          "period_end": "2021-09-08",
+          "auditor": "Ernst & Young",
+          "audit_type": "WebTrust",
+          "url": "https://www.cpacanada.ca/api/getPDFWebTrust?attachmentId=7a74b056-0edd-488e-a92c-53733f4ed854",
+          "letter_parsed": true,
+          "opinion_type": "unqualified",
+          "disclosed_matters": [],
+          "disclosed_matters_count": 0,
+          "disclosure_rate": null,
+          "fp_coverage_pct": null,
+          "quality_score": null,
+          "criteria_version": "2.2.1",
+          "criteria_current": false,
+          "etsi_aal_version": null
+        },
+        {
+          "stmt_date": "2023-01-30",
+          "period_start": "2021-09-09",
+          "period_end": "2022-09-08",
+          "auditor": "Ernst & Young",
+          "audit_type": "WebTrust",
+          "url": "https://www.cpacanada.ca/api/getPDFWebTrust?attachmentId=1ee4abfb-6162-4025-aa4e-89cc9f1be04a",
+          "letter_parsed": true,
+          "opinion_type": "unqualified",
+          "disclosed_matters": [],
+          "disclosed_matters_count": 0,
+          "disclosure_rate": null,
+          "fp_coverage_pct": null,
+          "quality_score": null,
+          "criteria_version": "2.2.2",
+          "criteria_current": true,
+          "etsi_aal_version": null
+        },
+        {
+          "stmt_date": "2025-12-04",
+          "period_start": "2024-09-09",
+          "period_end": "2025-09-08",
+          "auditor": "Moreira Associados Auditores Independentes",
+          "audit_type": "WebTrust",
+          "url": "https://www.cpacanada.ca/api/getPDFWebTrust?attachmentId=80a19ff0-bc51-4a4f-b565-cfcdfe09d288",
+          "letter_parsed": true,
+          "opinion_type": "unqualified",
+          "disclosed_matters": [],
+          "disclosed_matters_count": 0,
+          "disclosure_rate": null,
+          "fp_coverage_pct": null,
+          "quality_score": null,
+          "criteria_version": "2.2.2",
+          "criteria_current": true,
+          "etsi_aal_version": null
+        }
+      ],
+      "timeline_trends": {
+        "letter_count": 4,
+        "years_covered": 9,
+        "oldest_stmt_date": "2016-12-14",
+        "newest_stmt_date": "2025-12-04",
+        "auditor_changes": [
+          {
+            "year": 2025,
+            "from_auditor": "Ernst & Young",
+            "to_auditor": "Moreira Associados Auditores Independentes"
+          }
+        ],
+        "auditor_tenure_years": 9,
+        "quality_trend": null,
+        "quality_by_year": {},
+        "disclosure_by_year": {}
+      },
+      "bug_retrospective": []
+    },
+    {
       "ca_owner": "Microsec Ltd.",
       "ca_country": "Hungary",
       "primary_auditor": "Hunguard",
@@ -24034,8 +23061,8 @@
       "latest_stmt_date": "2025-12-05",
       "latest_period_end": "2025-09-09",
       "earliest_period_start": "2024-09-10",
-      "stmt_age_days": 144,
-      "coverage_gap_days": 231,
+      "stmt_age_days": 152,
+      "coverage_gap_days": 239,
       "staleness": "aging",
       "root_count": 3,
       "no_audit_roots": 0,
@@ -24315,8 +23342,8 @@
       "latest_stmt_date": "2025-11-21",
       "latest_period_end": "2025-09-17",
       "earliest_period_start": "2022-03-01",
-      "stmt_age_days": 158,
-      "coverage_gap_days": 223,
+      "stmt_age_days": 166,
+      "coverage_gap_days": 231,
       "staleness": "aging",
       "root_count": 26,
       "no_audit_roots": 0,
@@ -24829,8 +23856,8 @@
       ],
       "secondary_audit": {
         "framework": "ETSI",
-        "criteria": "ETSI EN 319 411-2 V2.4.1 (2021-11); ETSI EN 319 411-1 V1.3.1 (2021-05); ETSI EN 319 401 V2.3.1 (2021-05); Baseline Requirements for the Issuance and Management of Publicly-Trusted Certificates, version 2.1.7; Network and Certificate System Security Requirements, version 2.0.5",
-        "auditor": "T\u00dcV NORD",
+        "criteria": "ETSI TS 119 411-6 V1.1.1 (2023-08); ETSI EN 319 411-1 V1.5.1 (2025-04); ETSI EN 319 401 V3.2.0 (2025-06); Baseline Requirements for the Issuance and Management of Publicly-Trusted S/MIME Certificates V1.0.10 (2025-07-02); Network and Certificate System Security Requirements, version 2.0.5 (2025-07-09); ETSI EN 319 403 V2.2.2 (2015-08); ETSI EN 319 403-1 V2.3.1 (2020-06); ETSI TS 119 403-2 V1.3.1 (2023-03)",
+        "auditor": "DQS GmbH",
         "opinion_type": "unqualified",
         "quality_score": {
           "overall": 35.6,
@@ -24844,69 +23871,30 @@
           "note": null
         },
         "in_scope_sha256": [
-          "7BB647A62AEEAC88BF257AA522D01FFEA395E0AB45C73F93F65654EC38F25A06",
-          "3CCF0306BED8C910B327A15F2159FDD1E414474F77696C3D98781B1160277BCA",
-          "AC8C7EF96EB4B535FBFB4E7521F130536198A60DFF716312B22D4ACC4AFE9A7D"
+          "56DCCD96F303DA826D8953E167A8902ECBC0734DF41B9B57B3F1201CA6E4A144",
+          "524280BCA975F3BDB96ADC7B148D2CBDBB46CFA4CCBA030F3E70CEC592067B3D",
+          "244817A9C7D60184651D8041D8F34F9C6D26926689DA33233892FE915E40D065",
+          "BDBE9089A284BE1C005E9AFB718424164C1989FA7EDF860ADE6BEEC84CDB99B3",
+          "167407C794A5BF5D3A4CE6B56FE81228300006A5FE55F01C07E8AA791762FA46",
+          "EDEF6CE049C13E3BD50AB54E1D5150AAEE4B3AB708492CA700740778FABDCFFC",
+          "8905AD1617C55305648EAB9533886155F8D4CE5B456F1783FB47887BF928821A",
+          "DAE7F8BE2008B90443B74C0907D57A6FB19055F6EA347C7A4E5C7E70D2DDA1CB",
+          "68C752B1981F111510A8E678775406597696B6B752B89BE04C6BEDDFEF294419",
+          "886110DB72AFD26B58BE2F8CD9F6B58258B697C0D06BEEC9ADF34BE5E0AAF7DF",
+          "9586FCA3106DC6048313D65BABB6F94F9469AE7C8B6CFB0F1C342B976D9E099C",
+          "CEC450B3354FCAC90219D71FAC4DC1CFF4A67B6102F87B00A0301207FC2A4EFA",
+          "05E7AB4F1795F4E76E9EF5D49B5AE1E46CB22DA833B1758D031B8AAA7E2FDF84",
+          "6DC59E8EF20AE4304A53A0BDC15E0244897BEB6C75DEF5F6999AD5BB882EC3F6",
+          "1D4E9F45681E59D88853B38CA704F3738EE6E2B0BA2DFADEB3ACACF4A0555739"
         ],
         "policy_oids_present": [],
-        "disclosed_matters": [
-          {
-            "item": 1,
-            "topic": "Late receipt and disclosure to CCADB of ETSI audit letters",
-            "summary": "Sectigo disclosed late receipt and disclosure to CCADB of ETSI audit letters.",
-            "bugzilla_ids": [
-              "1945197"
-            ],
-            "certificate_count": null,
-            "self_reported": true
-          },
-          {
-            "item": 2,
-            "topic": "Intermittent OCSP unauthorized responses for certificates older than 15 minutes",
-            "summary": "Sectigo disclosed intermittent OCSP unauthorized responses for certificates older than 15 minutes.",
-            "bugzilla_ids": [
-              "1946927"
-            ],
-            "certificate_count": null,
-            "self_reported": true
-          },
-          {
-            "item": 3,
-            "topic": "Temporary failure to publish OCSP responses for newly issued certificates",
-            "summary": "Sectigo disclosed temporary failure to publish OCSP responses for newly issued certificates.",
-            "bugzilla_ids": [
-              "1954580"
-            ],
-            "certificate_count": null,
-            "self_reported": true
-          },
-          {
-            "item": 4,
-            "topic": "Lack of documentation for vulnerability NVD rating adjustment",
-            "summary": "Sectigo disclosed lack of documentation for vulnerability NVD rating adjustment.",
-            "bugzilla_ids": [
-              "1972158"
-            ],
-            "certificate_count": null,
-            "self_reported": true
-          },
-          {
-            "item": 5,
-            "topic": "Lack of technical controls for multiparty control access to Secure Zone",
-            "summary": "Sectigo disclosed lack of technical controls for multiparty control access to Secure Zone.",
-            "bugzilla_ids": [
-              "1972547"
-            ],
-            "certificate_count": null,
-            "self_reported": true
-          }
-        ],
-        "url": "https://www.tuev-nord.de/fileadmin/Sites/TUEV_NORD/Zertifikate/Certification/IT-Zertifikate/de/AA2025111401_Sectigo-eIDAS-CAs_TLS-BR_V1.0.pdf",
+        "disclosed_matters": [],
+        "url": "https://bugzilla.mozilla.org/attachment.cgi?id=9573393",
         "fw_label": "ETSI",
         "fingerprint_check": {
           "engagement_roots_expected": 14,
-          "engagement_fps_in_letter": 3,
-          "engagement_fps_matched": 1,
+          "engagement_fps_in_letter": 15,
+          "engagement_fps_matched": 0,
           "engagement_fps_missing": [
             "02ED0EB28C14DA45165C566791700D6451D7FB56F0B2AB1D3B8EB070E56EDFF5",
             "0C2CD63DF7806FA399EDE809116B575BF87989F06518F9808C860503178BAF66",
@@ -24917,26 +23905,61 @@
             "52F0E1C4E58EC629291B60317F074671B85D7EA80D5B07273463534B32B40234",
             "6DC47172E01CBCB0BF62580D895FE2B8AC9AD4F873801E0C10B9C837D21EB177",
             "73C176434F1BC6D5ADF45B0E76E727287C8DE57616C1E6E6141A2B2CBC7D8E4C",
+            "7BB647A62AEEAC88BF257AA522D01FFEA395E0AB45C73F93F65654EC38F25A06",
             "C90F26F0FB1B4018B22227519B5CA2B53E2CA5B3BE5CF18EFE1BEF47380C5383",
             "D7A7A0FB5D7E2731D771E9484EBCDEF71D5F0C3E0A2948782BC83EE0EA699EF4",
             "DB3517D1F6732A2D5AB97C533EC70779EE3270A62FB4AC4238372460E6F01E88",
             "E793C9B02FD8AA13E21C31228ACCB08119643B749C898964B1746D46C3D4CBD2"
           ],
           "engagement_fps_extra": [
-            "3CCF0306BED8C910B327A15F2159FDD1E414474F77696C3D98781B1160277BCA",
-            "AC8C7EF96EB4B535FBFB4E7521F130536198A60DFF716312B22D4ACC4AFE9A7D"
+            "05E7AB4F1795F4E76E9EF5D49B5AE1E46CB22DA833B1758D031B8AAA7E2FDF84",
+            "167407C794A5BF5D3A4CE6B56FE81228300006A5FE55F01C07E8AA791762FA46",
+            "1D4E9F45681E59D88853B38CA704F3738EE6E2B0BA2DFADEB3ACACF4A0555739",
+            "244817A9C7D60184651D8041D8F34F9C6D26926689DA33233892FE915E40D065",
+            "524280BCA975F3BDB96ADC7B148D2CBDBB46CFA4CCBA030F3E70CEC592067B3D",
+            "56DCCD96F303DA826D8953E167A8902ECBC0734DF41B9B57B3F1201CA6E4A144",
+            "68C752B1981F111510A8E678775406597696B6B752B89BE04C6BEDDFEF294419",
+            "6DC59E8EF20AE4304A53A0BDC15E0244897BEB6C75DEF5F6999AD5BB882EC3F6",
+            "886110DB72AFD26B58BE2F8CD9F6B58258B697C0D06BEEC9ADF34BE5E0AAF7DF",
+            "8905AD1617C55305648EAB9533886155F8D4CE5B456F1783FB47887BF928821A",
+            "9586FCA3106DC6048313D65BABB6F94F9469AE7C8B6CFB0F1C342B976D9E099C",
+            "BDBE9089A284BE1C005E9AFB718424164C1989FA7EDF860ADE6BEEC84CDB99B3",
+            "CEC450B3354FCAC90219D71FAC4DC1CFF4A67B6102F87B00A0301207FC2A4EFA",
+            "DAE7F8BE2008B90443B74C0907D57A6FB19055F6EA347C7A4E5C7E70D2DDA1CB",
+            "EDEF6CE049C13E3BD50AB54E1D5150AAEE4B3AB708492CA700740778FABDCFFC"
           ],
           "engagement_fps_extra_disclosed": [
-            "3CCF0306BED8C910B327A15F2159FDD1E414474F77696C3D98781B1160277BCA",
-            "AC8C7EF96EB4B535FBFB4E7521F130536198A60DFF716312B22D4ACC4AFE9A7D"
+            "05E7AB4F1795F4E76E9EF5D49B5AE1E46CB22DA833B1758D031B8AAA7E2FDF84",
+            "1D4E9F45681E59D88853B38CA704F3738EE6E2B0BA2DFADEB3ACACF4A0555739",
+            "524280BCA975F3BDB96ADC7B148D2CBDBB46CFA4CCBA030F3E70CEC592067B3D",
+            "6DC59E8EF20AE4304A53A0BDC15E0244897BEB6C75DEF5F6999AD5BB882EC3F6",
+            "9586FCA3106DC6048313D65BABB6F94F9469AE7C8B6CFB0F1C342B976D9E099C",
+            "BDBE9089A284BE1C005E9AFB718424164C1989FA7EDF860ADE6BEEC84CDB99B3",
+            "CEC450B3354FCAC90219D71FAC4DC1CFF4A67B6102F87B00A0301207FC2A4EFA",
+            "DAE7F8BE2008B90443B74C0907D57A6FB19055F6EA347C7A4E5C7E70D2DDA1CB",
+            "EDEF6CE049C13E3BD50AB54E1D5150AAEE4B3AB708492CA700740778FABDCFFC"
           ],
           "engagement_fps_extra_intermediates": [
-            "3CCF0306BED8C910B327A15F2159FDD1E414474F77696C3D98781B1160277BCA",
-            "AC8C7EF96EB4B535FBFB4E7521F130536198A60DFF716312B22D4ACC4AFE9A7D"
+            "05E7AB4F1795F4E76E9EF5D49B5AE1E46CB22DA833B1758D031B8AAA7E2FDF84",
+            "1D4E9F45681E59D88853B38CA704F3738EE6E2B0BA2DFADEB3ACACF4A0555739",
+            "524280BCA975F3BDB96ADC7B148D2CBDBB46CFA4CCBA030F3E70CEC592067B3D",
+            "6DC59E8EF20AE4304A53A0BDC15E0244897BEB6C75DEF5F6999AD5BB882EC3F6",
+            "9586FCA3106DC6048313D65BABB6F94F9469AE7C8B6CFB0F1C342B976D9E099C",
+            "BDBE9089A284BE1C005E9AFB718424164C1989FA7EDF860ADE6BEEC84CDB99B3",
+            "CEC450B3354FCAC90219D71FAC4DC1CFF4A67B6102F87B00A0301207FC2A4EFA",
+            "DAE7F8BE2008B90443B74C0907D57A6FB19055F6EA347C7A4E5C7E70D2DDA1CB",
+            "EDEF6CE049C13E3BD50AB54E1D5150AAEE4B3AB708492CA700740778FABDCFFC"
           ],
           "engagement_fps_extra_old_roots": [],
-          "engagement_fps_extra_undisclosed": [],
-          "engagement_accurate": false,
+          "engagement_fps_extra_undisclosed": [
+            "167407C794A5BF5D3A4CE6B56FE81228300006A5FE55F01C07E8AA791762FA46",
+            "244817A9C7D60184651D8041D8F34F9C6D26926689DA33233892FE915E40D065",
+            "56DCCD96F303DA826D8953E167A8902ECBC0734DF41B9B57B3F1201CA6E4A144",
+            "68C752B1981F111510A8E678775406597696B6B752B89BE04C6BEDDFEF294419",
+            "886110DB72AFD26B58BE2F8CD9F6B58258B697C0D06BEEC9ADF34BE5E0AAF7DF",
+            "8905AD1617C55305648EAB9533886155F8D4CE5B456F1783FB47887BF928821A"
+          ],
+          "engagement_accurate": null,
           "ca_total_roots": 26,
           "ca_roots_with_url": 26,
           "ca_roots_without_url": 0,
@@ -24959,10 +23982,10 @@
           "inferred_oids": [
             "2.23.140.1.2.1",
             "2.23.140.1.2.2",
-            "2.23.140.1.4.1"
+            "2.23.140.1.5.1.1"
           ],
           "cert_types": [
-            "Code Signing",
+            "S/MIME",
             "TLS DV",
             "TLS OV"
           ],
@@ -25901,8 +24924,8 @@
       "latest_stmt_date": "2025-12-11",
       "latest_period_end": "2025-09-19",
       "earliest_period_start": "2024-09-20",
-      "stmt_age_days": 138,
-      "coverage_gap_days": 221,
+      "stmt_age_days": 146,
+      "coverage_gap_days": 229,
       "staleness": "aging",
       "root_count": 1,
       "no_audit_roots": 0,
@@ -26142,8 +25165,8 @@
       "latest_stmt_date": "2025-12-16",
       "latest_period_end": "2025-09-30",
       "earliest_period_start": "2024-10-01",
-      "stmt_age_days": 133,
-      "coverage_gap_days": 210,
+      "stmt_age_days": 141,
+      "coverage_gap_days": 218,
       "staleness": "aging",
       "root_count": 1,
       "no_audit_roots": 0,
@@ -26435,8 +25458,8 @@
       "latest_stmt_date": "2025-11-18",
       "latest_period_end": "2025-09-30",
       "earliest_period_start": "2022-06-01",
-      "stmt_age_days": 161,
-      "coverage_gap_days": 210,
+      "stmt_age_days": 169,
+      "coverage_gap_days": 218,
       "staleness": "aging",
       "root_count": 4,
       "no_audit_roots": 0,
@@ -27051,8 +26074,8 @@
       "latest_stmt_date": "2025-10-30",
       "latest_period_end": "2025-09-30",
       "earliest_period_start": "2024-10-01",
-      "stmt_age_days": 180,
-      "coverage_gap_days": 210,
+      "stmt_age_days": 188,
+      "coverage_gap_days": 218,
       "staleness": "aging",
       "root_count": 10,
       "no_audit_roots": 0,
@@ -27513,8 +26536,8 @@
       "latest_stmt_date": "2025-11-21",
       "latest_period_end": "2025-09-30",
       "earliest_period_start": "2024-10-01",
-      "stmt_age_days": 158,
-      "coverage_gap_days": 210,
+      "stmt_age_days": 166,
+      "coverage_gap_days": 218,
       "staleness": "aging",
       "root_count": 3,
       "no_audit_roots": 0,
@@ -27703,8 +26726,8 @@
       "latest_stmt_date": "2026-01-15",
       "latest_period_end": "2025-10-07",
       "earliest_period_start": "2024-10-08",
-      "stmt_age_days": 103,
-      "coverage_gap_days": 203,
+      "stmt_age_days": 111,
+      "coverage_gap_days": 211,
       "staleness": "aging",
       "root_count": 9,
       "no_audit_roots": 0,
@@ -27950,8 +26973,8 @@
       "latest_stmt_date": "2025-12-04",
       "latest_period_end": "2025-10-07",
       "earliest_period_start": "2024-10-08",
-      "stmt_age_days": 145,
-      "coverage_gap_days": 203,
+      "stmt_age_days": 153,
+      "coverage_gap_days": 211,
       "staleness": "aging",
       "root_count": 1,
       "no_audit_roots": 0,
@@ -28141,8 +27164,8 @@
       "latest_stmt_date": "2025-11-28",
       "latest_period_end": "2025-10-22",
       "earliest_period_start": "2024-10-23",
-      "stmt_age_days": 151,
-      "coverage_gap_days": 188,
+      "stmt_age_days": 159,
+      "coverage_gap_days": 196,
       "staleness": "aging",
       "root_count": 1,
       "no_audit_roots": 0,
@@ -28363,8 +27386,8 @@
       "latest_stmt_date": "2025-12-18",
       "latest_period_end": "2025-10-30",
       "earliest_period_start": "2024-10-31",
-      "stmt_age_days": 131,
-      "coverage_gap_days": 180,
+      "stmt_age_days": 139,
+      "coverage_gap_days": 188,
       "staleness": "aging",
       "root_count": 1,
       "no_audit_roots": 0,
@@ -28872,9 +27895,9 @@
       "latest_stmt_date": "2026-01-29",
       "latest_period_end": "2025-10-31",
       "earliest_period_start": "2024-11-01",
-      "stmt_age_days": 89,
-      "coverage_gap_days": 179,
-      "staleness": "current",
+      "stmt_age_days": 97,
+      "coverage_gap_days": 187,
+      "staleness": "aging",
       "root_count": 3,
       "no_audit_roots": 0,
       "tls_br_pdf_url": "https://attestic.eu/wp-content/uploads/2026/02/Attestic-AAL-CT016-2500902-TLS-BR.pdf",
@@ -29099,9 +28122,9 @@
       "latest_stmt_date": "2025-12-17",
       "latest_period_end": "2025-10-31",
       "earliest_period_start": "2024-11-01",
-      "stmt_age_days": 132,
-      "coverage_gap_days": 179,
-      "staleness": "current",
+      "stmt_age_days": 140,
+      "coverage_gap_days": 187,
+      "staleness": "aging",
       "root_count": 10,
       "no_audit_roots": 0,
       "tls_br_pdf_url": "https://www.datenschutz-cert.de/fileadmin/uploads/tx_dscertcertlist/DSC1257-8_AAL_TLS-BR_Audit_Telia_V1.pdf",
@@ -29142,7 +28165,7 @@
         {
           "item": 1,
           "topic": null,
-          "summary": "Bug 1936741 - Findings in 2024 Audit; remediation measures taken by Telia Company AB have been checked by auditors and properly addressed the incident.",
+          "summary": "Remediation measures for Bug 1936741 regarding findings in 2024 Audit have been checked by auditors and properly addressed.",
           "bugzilla_ids": [
             "1936741"
           ],
@@ -29528,8 +28551,8 @@
       "latest_stmt_date": "2026-02-10",
       "latest_period_end": "2025-11-28",
       "earliest_period_start": "2024-11-30",
-      "stmt_age_days": 77,
-      "coverage_gap_days": 151,
+      "stmt_age_days": 85,
+      "coverage_gap_days": 159,
       "staleness": "current",
       "root_count": 2,
       "no_audit_roots": 0,
@@ -29551,7 +28574,7 @@
       "pdf_parsed": true,
       "opinion_type": "unknown",
       "audit_framework": "ETSI",
-      "audit_criteria": "EN 319 401 V3.1.1; EN 319 411-1 V1.5.1; EN 319 412-1 V1.6.1; EN 319 412-2 V2.4.1; EN 319 412-3 V1.2.1; TS 119 312 V1.4.3",
+      "audit_criteria": "ETSI EN 319 401 V3.1.1; ETSI EN 319 411-1 V1.5.1; ETSI EN 319 412-1 V1.6.1; ETSI EN 319 412-2 V2.4.1; ETSI EN 319 412-3 V1.2.1; TS 119 312 V1.4.3",
       "etsi_aal_version": null,
       "policy_oids_present": [
         "2.16.124.113550.2.2.2.1",
@@ -29578,8 +28601,8 @@
       "qualifications": [],
       "disclosed_matters": [],
       "pdf_auditor_firm": null,
-      "pdf_period_start": null,
-      "pdf_period_end": "12-01-2028",
+      "pdf_period_start": "30-11-2024",
+      "pdf_period_end": "28-11-2025",
       "pdf_pages": 4,
       "fingerprint_check": {
         "engagement_roots_expected": 0,
@@ -29612,7 +28635,7 @@
         "note": null
       },
       "criteria_check": {
-        "criteria_raw": "EN 319 401 V3.1.1; EN 319 411-1 V1.5.1; EN 319 412-1 V1.6.1; EN 319 412-2 V2.4.1; EN 319 412-3 V1.2.1; TS 119 312 V1.4.3",
+        "criteria_raw": "ETSI EN 319 401 V3.1.1; ETSI EN 319 411-1 V1.5.1; ETSI EN 319 412-1 V1.6.1; ETSI EN 319 412-2 V2.4.1; ETSI EN 319 412-3 V1.2.1; TS 119 312 V1.4.3",
         "framework": "ETSI",
         "criteria_version": "EN 319 411-1 V1.5.1",
         "criteria_current": true,
@@ -29722,8 +28745,8 @@
       "latest_stmt_date": "2026-03-11",
       "latest_period_end": "2025-12-14",
       "earliest_period_start": "2024-12-15",
-      "stmt_age_days": 48,
-      "coverage_gap_days": 135,
+      "stmt_age_days": 56,
+      "coverage_gap_days": 143,
       "staleness": "current",
       "root_count": 2,
       "no_audit_roots": 0,
@@ -29978,8 +29001,8 @@
       "latest_stmt_date": "2026-02-24",
       "latest_period_end": "2025-12-31",
       "earliest_period_start": "2022-07-01",
-      "stmt_age_days": 63,
-      "coverage_gap_days": 118,
+      "stmt_age_days": 71,
+      "coverage_gap_days": 126,
       "staleness": "current",
       "root_count": 4,
       "no_audit_roots": 0,
@@ -30042,12 +29065,12 @@
             "1924992"
           ],
           "certificate_count": null,
-          "self_reported": true
+          "self_reported": false
         },
         {
           "item": 2,
           "topic": "Delayed CRL File Updates",
-          "summary": "On February 19, 2025, GoDaddy identified an issue which prevented CRL updates from happening as expected, impacting 7,899 certificate revocations that were not updated on CRL files within 24 hours of their revocation.",
+          "summary": "GoDaddy identified an issue on February 19, 2025 which prevented CRL updates from happening as expected, impacting 7,899 certificate revocations that were not updated on CRL files within 24 hours of their revocation.",
           "bugzilla_ids": [
             "1949895"
           ],
@@ -30057,7 +29080,7 @@
         {
           "item": 3,
           "topic": "Delayed Revocation",
-          "summary": "On January 21, 2025, GoDaddy received a problem report alerting them to a delayed revocation of 31 certificates reported to have compromised keys due to the Fortinet leak.",
+          "summary": "On January 21, 2025, GoDaddy received a problem report for delayed revocation of 31 certificates with compromised keys due to the Fortinet leak, initially reported on January 17, 2025.",
           "bugzilla_ids": [
             "1942877"
           ],
@@ -30248,7 +29271,7 @@
         "incident_count": 47,
         "matters_count": 3,
         "matters_with_bugzilla": 3,
-        "externally_found": 1,
+        "externally_found": 2,
         "gap_score": 93.6,
         "gap_level": "high"
       },
@@ -30298,12 +29321,12 @@
                 "1924992"
               ],
               "certificate_count": null,
-              "self_reported": true
+              "self_reported": false
             },
             {
               "item": 2,
               "topic": "Delayed CRL File Updates",
-              "summary": "On February 19, 2025, GoDaddy identified an issue which prevented CRL updates from happening as expected, impacting 7,899 certificate revocations that were not updated on CRL files within 24 hours of their revocation.",
+              "summary": "GoDaddy identified an issue on February 19, 2025 which prevented CRL updates from happening as expected, impacting 7,899 certificate revocations that were not updated on CRL files within 24 hours of their revocation.",
               "bugzilla_ids": [
                 "1949895"
               ],
@@ -30313,7 +29336,7 @@
             {
               "item": 3,
               "topic": "Delayed Revocation",
-              "summary": "On January 21, 2025, GoDaddy received a problem report alerting them to a delayed revocation of 31 certificates reported to have compromised keys due to the Fortinet leak.",
+              "summary": "On January 21, 2025, GoDaddy received a problem report for delayed revocation of 31 certificates with compromised keys due to the Fortinet leak, initially reported on January 17, 2025.",
               "bugzilla_ids": [
                 "1942877"
               ],
@@ -30469,7 +29492,7 @@
           "filed": "2025-12-20",
           "summary": "GoDaddy: CRL Disclosure in CCADB Mismatch with Issued Certificates",
           "self_reported": true,
-          "whiteboard": "[ca-compliance] [disclosure failure] Next update 2026-05-01",
+          "whiteboard": "[ca-compliance] [disclosure failure] Next update 2026-06-30",
           "covering_letters": 1,
           "mentioned_in": 0,
           "missed_by": 1,
@@ -30559,8 +29582,8 @@
       "latest_stmt_date": "2026-02-24",
       "latest_period_end": "2025-12-31",
       "earliest_period_start": "2024-12-01",
-      "stmt_age_days": 63,
-      "coverage_gap_days": 118,
+      "stmt_age_days": 71,
+      "coverage_gap_days": 126,
       "staleness": "current",
       "root_count": 2,
       "no_audit_roots": 0,
@@ -30588,6 +29611,7 @@
       "etsi_aal_version": null,
       "policy_oids_present": [],
       "in_scope_sha256": [
+        "69ECDBC3147F581DFDCB522D9DEFB260B26784AD4955C74E6A52522CCC4C4408",
         "CB730C3A5FE958B8BDC5B363892C9F530B33F98A43CE3C2578FCE096B4AE233C",
         "C18D53BF9864DD09BCBCACFD672E2566D4C81F6889E36DF5DD425C04211D0763",
         "7ADADC0DBA5B9A97BEB1580947B0738537C9239934E88C67512B5D22D9D47FF7"
@@ -30606,20 +29630,23 @@
       "pdf_pages": 16,
       "fingerprint_check": {
         "engagement_roots_expected": 0,
-        "engagement_fps_in_letter": 3,
+        "engagement_fps_in_letter": 4,
         "engagement_fps_matched": 0,
         "engagement_fps_missing": [],
         "engagement_fps_extra": [
+          "69ECDBC3147F581DFDCB522D9DEFB260B26784AD4955C74E6A52522CCC4C4408",
           "7ADADC0DBA5B9A97BEB1580947B0738537C9239934E88C67512B5D22D9D47FF7",
           "C18D53BF9864DD09BCBCACFD672E2566D4C81F6889E36DF5DD425C04211D0763",
           "CB730C3A5FE958B8BDC5B363892C9F530B33F98A43CE3C2578FCE096B4AE233C"
         ],
         "engagement_fps_extra_disclosed": [
+          "69ECDBC3147F581DFDCB522D9DEFB260B26784AD4955C74E6A52522CCC4C4408",
           "7ADADC0DBA5B9A97BEB1580947B0738537C9239934E88C67512B5D22D9D47FF7",
           "C18D53BF9864DD09BCBCACFD672E2566D4C81F6889E36DF5DD425C04211D0763",
           "CB730C3A5FE958B8BDC5B363892C9F530B33F98A43CE3C2578FCE096B4AE233C"
         ],
         "engagement_fps_extra_intermediates": [
+          "69ECDBC3147F581DFDCB522D9DEFB260B26784AD4955C74E6A52522CCC4C4408",
           "7ADADC0DBA5B9A97BEB1580947B0738537C9239934E88C67512B5D22D9D47FF7",
           "C18D53BF9864DD09BCBCACFD672E2566D4C81F6889E36DF5DD425C04211D0763",
           "CB730C3A5FE958B8BDC5B363892C9F530B33F98A43CE3C2578FCE096B4AE233C"
@@ -30805,8 +29832,8 @@
       "latest_stmt_date": "2026-03-25",
       "latest_period_end": "2025-12-31",
       "earliest_period_start": "2022-01-01",
-      "stmt_age_days": 34,
-      "coverage_gap_days": 118,
+      "stmt_age_days": 42,
+      "coverage_gap_days": 126,
       "staleness": "current",
       "root_count": 2,
       "no_audit_roots": 0,
@@ -31097,8 +30124,8 @@
       ],
       "secondary_audit": {
         "framework": "ETSI",
-        "criteria": "ETSI EN 319 411-1 v1.5.1 (2025-04); ETSI EN 319 401 v3.1.1 (2024-06); CA/Browser Forum \u2013 Network and Certificate System Security Requirements v2.0.5 (9 July 2025); PKIoverheid Programme of Requirements, version 5.2, 8 July 2025",
-        "auditor": "Attestic Certification",
+        "criteria": "ETSI EN 319 411-2 V2.5.1 (2023-10); ETSI TS 119 411-6 V1.1.1 (2023-08); ETSI EN 319 411-1 V1.4.1 (2023-10); ETSI EN 319 401 V3.1.1 (2024-06); Baseline Requirements for the Issuance and Management of Publicly-Trusted S/MIME Certificates, version 1.0.12; Network and Certificate System Security Requirements, version 2.0.5",
+        "auditor": "TAYLLORCOX PCEB established by TAYLLORCOX s.r.o.",
         "opinion_type": "unqualified",
         "quality_score": {
           "overall": 28.1,
@@ -31112,31 +30139,39 @@
           "note": null
         },
         "in_scope_sha256": [
-          "5F6CAA44A4663C441DD92C8B6655FBF97CF6E1D6934DB8F5F8D97ADF7033FAAC"
+          "C3FB1A9E37B754E6FE2E313D8D33838E96211087958F70616F49B812FFFF6A8D",
+          "B63A82CE98E9FE704DC42B7CB4B63D4BF0646B1D0754F9A4C696A4AFB39436BC"
         ],
         "policy_oids_present": [
           "2.16.528.1.1003.1.2.5.1",
-          "2.16.528.1.1003.1.2.5.3"
+          "2.16.528.1.1003.1.2.5.2",
+          "2.16.528.1.1003.1.2.5.3",
+          "2.16.528.1.1003.1.2.8.1",
+          "2.16.528.1.1003.1.2.8.2",
+          "2.16.528.1.1003.1.2.8.3",
+          "2.16.528.1.1003.1.2.8.4",
+          "2.16.528.1.1003.1.2.8.5",
+          "2.16.528.1.1003.1.2.8.6"
         ],
         "disclosed_matters": [],
-        "url": "https://attestic.eu/wp-content/uploads/2026/02/CT-014-Mindef-2026-02-Certificate-ETSI-319-411-1-v1.pdf",
+        "url": "https://pceb.tayllorcox.cz/files/DIGICERT_AAL_2025_SMIME-BR_Audit_v2_signed.pdf",
         "fw_label": "ETSI",
         "fingerprint_check": {
           "engagement_roots_expected": 0,
-          "engagement_fps_in_letter": 1,
+          "engagement_fps_in_letter": 2,
           "engagement_fps_matched": 0,
           "engagement_fps_missing": [],
           "engagement_fps_extra": [
-            "5F6CAA44A4663C441DD92C8B6655FBF97CF6E1D6934DB8F5F8D97ADF7033FAAC"
+            "B63A82CE98E9FE704DC42B7CB4B63D4BF0646B1D0754F9A4C696A4AFB39436BC",
+            "C3FB1A9E37B754E6FE2E313D8D33838E96211087958F70616F49B812FFFF6A8D"
           ],
-          "engagement_fps_extra_disclosed": [
-            "5F6CAA44A4663C441DD92C8B6655FBF97CF6E1D6934DB8F5F8D97ADF7033FAAC"
-          ],
-          "engagement_fps_extra_intermediates": [
-            "5F6CAA44A4663C441DD92C8B6655FBF97CF6E1D6934DB8F5F8D97ADF7033FAAC"
-          ],
+          "engagement_fps_extra_disclosed": [],
+          "engagement_fps_extra_intermediates": [],
           "engagement_fps_extra_old_roots": [],
-          "engagement_fps_extra_undisclosed": [],
+          "engagement_fps_extra_undisclosed": [
+            "B63A82CE98E9FE704DC42B7CB4B63D4BF0646B1D0754F9A4C696A4AFB39436BC",
+            "C3FB1A9E37B754E6FE2E313D8D33838E96211087958F70616F49B812FFFF6A8D"
+          ],
           "engagement_accurate": null,
           "ca_total_roots": 2,
           "ca_roots_with_url": 2,
@@ -31151,9 +30186,13 @@
         "oid_check": {
           "inferred_oids": [
             "2.23.140.1.2.1",
-            "2.23.140.1.2.2"
+            "2.23.140.1.2.2",
+            "2.23.140.1.4.1",
+            "2.23.140.1.5.1.1"
           ],
           "cert_types": [
+            "Code Signing",
+            "S/MIME",
             "TLS DV",
             "TLS OV"
           ],
@@ -31779,8 +30818,8 @@
       "latest_stmt_date": "2026-03-20",
       "latest_period_end": "2025-12-31",
       "earliest_period_start": "2025-01-01",
-      "stmt_age_days": 39,
-      "coverage_gap_days": 118,
+      "stmt_age_days": 47,
+      "coverage_gap_days": 126,
       "staleness": "current",
       "root_count": 2,
       "no_audit_roots": 0,
@@ -31977,8 +31016,8 @@
       "latest_stmt_date": "2026-01-20",
       "latest_period_end": "2025-12-31",
       "earliest_period_start": "2025-01-01",
-      "stmt_age_days": 98,
-      "coverage_gap_days": 118,
+      "stmt_age_days": 106,
+      "coverage_gap_days": 126,
       "staleness": "current",
       "root_count": 1,
       "no_audit_roots": 0,
@@ -32185,8 +31224,8 @@
       "latest_stmt_date": "2026-02-26",
       "latest_period_end": "2025-12-31",
       "earliest_period_start": "2024-01-01",
-      "stmt_age_days": 61,
-      "coverage_gap_days": 118,
+      "stmt_age_days": 69,
+      "coverage_gap_days": 126,
       "staleness": "current",
       "root_count": 4,
       "no_audit_roots": 0,
@@ -32532,8 +31571,8 @@
       "latest_stmt_date": "2026-03-11",
       "latest_period_end": "2026-01-08",
       "earliest_period_start": "2025-01-09",
-      "stmt_age_days": 48,
-      "coverage_gap_days": 110,
+      "stmt_age_days": 56,
+      "coverage_gap_days": 118,
       "staleness": "current",
       "root_count": 2,
       "no_audit_roots": 0,
@@ -32571,12 +31610,12 @@
         {
           "item": 1,
           "topic": "Certificate Issuance Records and SSL Baseline Requirements Version Tracking",
-          "summary": "iTrusChina records domain validation methods in the Certificate Management System but records SSL Baseline Requirements version numbers via an internal monitoring mechanism rather than directly in certificate issuance logs; the CA filed Bugzilla thread to address the interpretation of Criterion 4.1.",
+          "summary": "iTrusChina records domain validation methods in its Certificate Management System but tracks SSL Baseline Requirements version numbers through a separate internal monitoring mechanism rather than directly in the system logs; a Bugzilla thread was filed to address the CA's interpretation of the criterion.",
           "bugzilla_ids": [
             "2013805"
           ],
           "certificate_count": null,
-          "self_reported": true
+          "self_reported": false
         }
       ],
       "pdf_auditor_firm": "SUN RISE CPAS' FIRM",
@@ -32657,7 +31696,7 @@
         "incident_count": 0,
         "matters_count": 1,
         "matters_with_bugzilla": 1,
-        "externally_found": 0,
+        "externally_found": 1,
         "gap_score": null,
         "gap_level": "unknown"
       },
@@ -32684,12 +31723,12 @@
             {
               "item": 1,
               "topic": "Certificate Issuance Records and SSL Baseline Requirements Version Tracking",
-              "summary": "iTrusChina records domain validation methods in the Certificate Management System but records SSL Baseline Requirements version numbers via an internal monitoring mechanism rather than directly in certificate issuance logs; the CA filed Bugzilla thread to address the interpretation of Criterion 4.1.",
+              "summary": "iTrusChina records domain validation methods in its Certificate Management System but tracks SSL Baseline Requirements version numbers through a separate internal monitoring mechanism rather than directly in the system logs; a Bugzilla thread was filed to address the CA's interpretation of the criterion.",
               "bugzilla_ids": [
                 "2013805"
               ],
               "certificate_count": null,
-              "self_reported": true
+              "self_reported": false
             }
           ],
           "disclosed_matters_count": 1,
@@ -32741,8 +31780,8 @@
       "latest_stmt_date": "2026-04-01",
       "latest_period_end": "2026-01-12",
       "earliest_period_start": "2016-05-18",
-      "stmt_age_days": 27,
-      "coverage_gap_days": 106,
+      "stmt_age_days": 35,
+      "coverage_gap_days": 114,
       "staleness": "current",
       "root_count": 4,
       "no_audit_roots": 0,
@@ -32767,7 +31806,7 @@
       "pdf_parsed": true,
       "opinion_type": "unqualified",
       "audit_framework": "ETSI",
-      "audit_criteria": "ETSI EN 319 411-2 V2.6.1 (2025-06); ETSI EN 319 411-1 V1.5.1 (2025-04); ETSI EN 319 401 V3.1.1 (2024-06); Baseline Requirements for TLS Server Certificates version 2.2.2; Network and Certificate System Security Requirements version 2.0.4; Mozilla Root Store Policy section 6.1.3",
+      "audit_criteria": "ETSI EN 319 411-2 V2.6.1 (2025-06); ETSI EN 319 411-1 V1.5.1 (2025-04); ETSI EN 319 401 V3.1.1 (2024-06); Baseline Requirements for TLS Server Certificates version 2.2.2; Network and Certificate System Security Requirements version 2.0.4; Mozilla Root Store Policy section 6.1.3; ETSI EN 319 403-1 V2.3.1 (2020-06); ETSI TS 119 403-2 V1.3.1 (2023-03)",
       "etsi_aal_version": "3.5",
       "policy_oids_present": [
         "1.3.6.1.5.5.7.3.1"
@@ -32786,7 +31825,7 @@
         {
           "item": 1,
           "topic": "Delayed Disclosure of Updated Policy Documents in the CCADB",
-          "summary": "FNMT delayed disclosure of updated policy documents in the CCADB as documented in Bug 1967951, with remediation measures checked and properly addressed by auditors.",
+          "summary": "FNMT delayed disclosure of updated policy documents in the CCADB, as documented in Bug 1967951.",
           "bugzilla_ids": [
             "1967951"
           ],
@@ -32795,8 +31834,8 @@
         },
         {
           "item": 2,
-          "topic": "CP/CPS, Revocation Requests Mechanism, Certificate Problem Report, CRL and OCSP disruption",
-          "summary": "FNMT experienced disruptions in revocation requests mechanism, certificate problem reporting, CRL and OCSP as documented in Bug 1963778, with remediation measures checked and properly addressed by auditors.",
+          "topic": "Revocation Requests Mechanism, Certificate Problem Report, CRL and OCSP disruption",
+          "summary": "FNMT experienced disruption in CP/CPS, revocation requests mechanism, certificate problem report, CRL and OCSP, as documented in Bug 1963778.",
           "bugzilla_ids": [
             "1963778"
           ],
@@ -32863,7 +31902,7 @@
         "note": null
       },
       "criteria_check": {
-        "criteria_raw": "ETSI EN 319 411-2 V2.6.1 (2025-06); ETSI EN 319 411-1 V1.5.1 (2025-04); ETSI EN 319 401 V3.1.1 (2024-06); Baseline Requirements for TLS Server Certificates version 2.2.2; Network and Certificate System Security Requirements version 2.0.4; Mozilla Root Store Policy section 6.1.3",
+        "criteria_raw": "ETSI EN 319 411-2 V2.6.1 (2025-06); ETSI EN 319 411-1 V1.5.1 (2025-04); ETSI EN 319 401 V3.1.1 (2024-06); Baseline Requirements for TLS Server Certificates version 2.2.2; Network and Certificate System Security Requirements version 2.0.4; Mozilla Root Store Policy section 6.1.3; ETSI EN 319 403-1 V2.3.1 (2020-06); ETSI TS 119 403-2 V1.3.1 (2023-03)",
         "framework": "ETSI",
         "criteria_version": "EN 319 411-2 V2.6.1",
         "criteria_current": true,
@@ -33051,8 +32090,8 @@
       "latest_stmt_date": "2026-04-07",
       "latest_period_end": "2026-01-15",
       "earliest_period_start": "2025-01-16",
-      "stmt_age_days": 21,
-      "coverage_gap_days": 103,
+      "stmt_age_days": 29,
+      "coverage_gap_days": 111,
       "staleness": "current",
       "root_count": 5,
       "no_audit_roots": 0,
@@ -33110,7 +32149,7 @@
         {
           "item": 1,
           "topic": "Certificate Revocation List (CRL)",
-          "summary": "Amazon Trust Services disclosed in Mozilla Bug #2009525 that additional CRL Characteristics were desired in CP/CPS.",
+          "summary": "Amazon Trust Services disclosed that additional CRL characteristics were desired in CP/CPS.",
           "bugzilla_ids": [
             "2009525"
           ],
@@ -33273,7 +32312,7 @@
             {
               "item": 1,
               "topic": "Certificate Revocation List (CRL)",
-              "summary": "Amazon Trust Services disclosed in Mozilla Bug #2009525 that additional CRL Characteristics were desired in CP/CPS.",
+              "summary": "Amazon Trust Services disclosed that additional CRL characteristics were desired in CP/CPS.",
               "bugzilla_ids": [
                 "2009525"
               ],
@@ -33348,8 +32387,8 @@
       "latest_stmt_date": "2026-02-18",
       "latest_period_end": "2026-02-06",
       "earliest_period_start": "2025-06-03",
-      "stmt_age_days": 69,
-      "coverage_gap_days": 81,
+      "stmt_age_days": 77,
+      "coverage_gap_days": 89,
       "staleness": "current",
       "root_count": 1,
       "no_audit_roots": 0,
@@ -33528,6 +32567,731 @@
         "disclosure_by_year": {}
       },
       "bug_retrospective": []
+    },
+    {
+      "ca_owner": "Asseco Data Systems S.A.",
+      "ca_country": "Polska",
+      "primary_auditor": "Ernst & Young",
+      "auditor_country": "Global (US/UK)",
+      "all_auditors": [
+        "Ernst & Young"
+      ],
+      "auditor_count": 1,
+      "primary_framework": "WebTrust",
+      "audit_record_status": "named",
+      "trusted_stores": [
+        "apple",
+        "chrome",
+        "microsoft",
+        "mozilla"
+      ],
+      "exclusive_store": null,
+      "latest_stmt_date": "2026-04-27",
+      "latest_period_end": "2026-02-10",
+      "earliest_period_start": "2025-02-11",
+      "stmt_age_days": 9,
+      "coverage_gap_days": 85,
+      "staleness": "current",
+      "root_count": 5,
+      "no_audit_roots": 0,
+      "tls_br_pdf_url": "https://www.cpacanada.ca/api/getPDFWebTrust?attachmentId=a23fcf5d-bdb5-45d3-abbb-2b230214f989",
+      "has_tls_br_url": true,
+      "separate_audit_types": [
+        "Code Signing",
+        "S/MIME BR",
+        "TLS EVG"
+      ],
+      "combined_audit_types": [],
+      "ca_type": "commercial",
+      "smime_br_url_in_ccadb": true,
+      "ca_capabilities": {
+        "tls": true,
+        "ev": true,
+        "smime": true,
+        "cs": true
+      },
+      "incident_count": 47,
+      "self_report_pct": 53,
+      "ext_report_count": 22,
+      "pdf_parsed": true,
+      "opinion_type": "unqualified",
+      "audit_framework": "WebTrust",
+      "audit_criteria": "WebTrust Principles and Criteria for Certification Authorities \u2013 TLS Baseline, v2.10",
+      "etsi_aal_version": null,
+      "policy_oids_present": [],
+      "in_scope_sha256": [],
+      "locations_audited": [
+        "Szczecin, Poland",
+        "\u0141\u00f3d\u017a, Poland"
+      ],
+      "subservice_organizations": [],
+      "qualifications": [],
+      "disclosed_matters": [
+        {
+          "item": 1,
+          "topic": "S/MIME Certificate Validity Period",
+          "summary": "S/MIME email validation certificates were issued with validity periods exceeding the 30-day limit; 101 certificates were identified and revoked on 7 March 2026, with an additional 32 certificates revoked on 12 March 2026.",
+          "bugzilla_ids": [
+            "2021685"
+          ],
+          "certificate_count": 133,
+          "self_reported": true
+        },
+        {
+          "item": 2,
+          "topic": "S/MIME Certificate Revocation Delay",
+          "summary": "A subset of S/MIME certificates affected by the same misissuance issue were not revoked within the required timeframe; the omission was discovered on 11 March 2026 during internal review.",
+          "bugzilla_ids": [
+            "2023190"
+          ],
+          "certificate_count": null,
+          "self_reported": true
+        }
+      ],
+      "pdf_auditor_firm": "Ernst & Young",
+      "pdf_period_start": "February 11, 2025",
+      "pdf_period_end": "February 10, 2026",
+      "pdf_pages": 37,
+      "fingerprint_check": {
+        "engagement_roots_expected": 0,
+        "engagement_fps_in_letter": 0,
+        "engagement_fps_matched": 0,
+        "engagement_fps_missing": [],
+        "engagement_fps_extra": [],
+        "engagement_fps_extra_disclosed": [],
+        "engagement_fps_extra_intermediates": [],
+        "engagement_fps_extra_old_roots": [],
+        "engagement_fps_extra_undisclosed": [],
+        "engagement_accurate": null,
+        "ca_total_roots": 5,
+        "ca_roots_with_url": 5,
+        "ca_roots_without_url": 0,
+        "ca_unaudited_fps": [],
+        "ca_audit_regime": "single",
+        "cross_signed_fps_expected": [
+          "BB61408AED9F530B2EC0545E53BA2C8EBEAA57D9976447DB1663CED4600CD6B7",
+          "BFA95C5DF164B659FA32F6D10564D7170DDE661A853A782E6AB63639433BCB41",
+          "CE0DF856EA6CC0EBE068F55C4CC4DE77DEF45CACB2D4E946D8ADE706666F5887",
+          "FBE52F7D83E613D166F592A9227B08A9235E3DAA875FBA2ACD10A8C0D220DA2F"
+        ],
+        "cross_signed_fps_missing": [
+          "BB61408AED9F530B2EC0545E53BA2C8EBEAA57D9976447DB1663CED4600CD6B7",
+          "BFA95C5DF164B659FA32F6D10564D7170DDE661A853A782E6AB63639433BCB41",
+          "CE0DF856EA6CC0EBE068F55C4CC4DE77DEF45CACB2D4E946D8ADE706666F5887",
+          "FBE52F7D83E613D166F592A9227B08A9235E3DAA875FBA2ACD10A8C0D220DA2F"
+        ],
+        "cross_signed_fps_present": [],
+        "cross_signed_gap": true
+      },
+      "incident_disclosure_check": {
+        "period_start_used": "2025-02-11",
+        "period_end_used": "2026-02-10",
+        "bugs_in_period": [
+          1958645,
+          2002281,
+          2007105
+        ],
+        "disclosed_in_letter": [
+          2021685,
+          2023190
+        ],
+        "undisclosed_bugs": [
+          1958645,
+          2002281,
+          2007105
+        ],
+        "disclosure_rate": 0.0,
+        "note": null
+      },
+      "criteria_check": {
+        "criteria_raw": "WebTrust Principles and Criteria for Certification Authorities \u2013 TLS Baseline, v2.10",
+        "framework": "WebTrust",
+        "criteria_version": "2.10",
+        "criteria_current": true,
+        "criteria_current_today": true,
+        "aal_version": null,
+        "aal_current": null,
+        "aal_current_today": null,
+        "score_epoch": "aal_v3x",
+        "aal_applicable": false
+      },
+      "oid_check": {
+        "inferred_oids": [
+          "2.23.140.1.2.1",
+          "2.23.140.1.2.2"
+        ],
+        "cert_types": [
+          "TLS DV",
+          "TLS OV"
+        ],
+        "capabilities_match": true,
+        "gaps": [],
+        "covered_separately": [
+          "Code Signing",
+          "S/MIME",
+          "TLS EV"
+        ],
+        "note": null
+      },
+      "letter_quality_score": {
+        "overall": 62.5,
+        "dimensions": {
+          "opinion_clarity": 100,
+          "criteria_currency": 100,
+          "disclosure_completeness": 0.0,
+          "scope_coverage": 100
+        },
+        "score_epoch": "aal_v3x",
+        "note": null
+      },
+      "transparency_gap": {
+        "incident_count": 47,
+        "matters_count": 2,
+        "matters_with_bugzilla": 2,
+        "externally_found": 0,
+        "gap_score": 95.7,
+        "gap_level": "high"
+      },
+      "score_epoch": "post_v35",
+      "root_coverage": {
+        "total_roots": 5,
+        "roots_with_url": 5,
+        "roots_without_url": 0,
+        "unaudited_fps": [],
+        "distinct_letters": 1,
+        "audit_regime": "single"
+      },
+      "audit_timeline": [
+        {
+          "stmt_date": "2026-04-03",
+          "period_start": "2025-02-11",
+          "period_end": "2026-02-10",
+          "auditor": "Ernst & Young",
+          "audit_type": "WebTrust",
+          "url": "https://www.cpacanada.ca/api/getPDFWebTrust?attachmentId=a23fcf5d-bdb5-45d3-abbb-2b230214f989",
+          "letter_parsed": true,
+          "opinion_type": "unqualified",
+          "disclosed_matters": [
+            {
+              "item": 1,
+              "topic": "S/MIME Certificate Validity Period",
+              "summary": "S/MIME email validation certificates were issued with validity periods exceeding the 30-day limit; 101 certificates were identified and revoked on 7 March 2026, with an additional 32 certificates revoked on 12 March 2026.",
+              "bugzilla_ids": [
+                "2021685"
+              ],
+              "certificate_count": 133,
+              "self_reported": true
+            },
+            {
+              "item": 2,
+              "topic": "S/MIME Certificate Revocation Delay",
+              "summary": "A subset of S/MIME certificates affected by the same misissuance issue were not revoked within the required timeframe; the omission was discovered on 11 March 2026 during internal review.",
+              "bugzilla_ids": [
+                "2023190"
+              ],
+              "certificate_count": null,
+              "self_reported": true
+            }
+          ],
+          "disclosed_matters_count": 2,
+          "disclosure_rate": 0.0,
+          "fp_coverage_pct": null,
+          "quality_score": 62.5,
+          "criteria_version": "2.10",
+          "criteria_current": true,
+          "etsi_aal_version": null,
+          "score_epoch": "aal_v3x",
+          "criteria_current_today": true,
+          "aal_current": null,
+          "aal_current_today": null
+        },
+        {
+          "stmt_date": "2026-04-27",
+          "period_start": "2025-02-11",
+          "period_end": "2026-02-10",
+          "auditor": "Ernst & Young",
+          "audit_type": "WebTrust",
+          "url": "https://www.cpacanada.ca/api/getPDFWebTrust?attachmentId=84a61b66-db2a-4a62-a227-ea3624e52f3e",
+          "letter_parsed": true,
+          "opinion_type": "unqualified",
+          "disclosed_matters": [
+            {
+              "item": 1,
+              "topic": "S/MIME",
+              "summary": "101 S/MIME certificates with validity exceeding 30-day limit were identified and revoked on 7 March 2026, with an additional 32 certificates revoked on 12 March 2026 following a secondary investigation.",
+              "bugzilla_ids": [
+                "2021685"
+              ],
+              "certificate_count": 133,
+              "self_reported": true
+            },
+            {
+              "item": 2,
+              "topic": "S/MIME",
+              "summary": "Delayed revocation of a subset of S/MIME certificates was detected on 11 March 2026 during internal review; the complete set of additionally affected certificates was revoked on 12 March 2026 with corrected search logic.",
+              "bugzilla_ids": [
+                "2023190"
+              ],
+              "certificate_count": null,
+              "self_reported": true
+            }
+          ],
+          "disclosed_matters_count": 2,
+          "disclosure_rate": null,
+          "fp_coverage_pct": null,
+          "quality_score": null,
+          "criteria_version": "2.2.2",
+          "criteria_current": true,
+          "etsi_aal_version": null
+        }
+      ],
+      "timeline_trends": {
+        "letter_count": 2,
+        "years_covered": 0,
+        "oldest_stmt_date": "2026-04-03",
+        "newest_stmt_date": "2026-04-27",
+        "auditor_changes": [],
+        "auditor_tenure_years": 0,
+        "quality_trend": null,
+        "quality_by_year": {
+          "2026": 62.5
+        },
+        "disclosure_by_year": {
+          "2026": 0.0
+        }
+      },
+      "bug_retrospective": [
+        {
+          "id": 1958645,
+          "filed": "2025-04-05",
+          "summary": "Asseco DS / Certum: DNS service outage",
+          "self_reported": true,
+          "whiteboard": "[ca-compliance] [uncategorized]",
+          "covering_letters": 2,
+          "mentioned_in": 0,
+          "missed_by": 2,
+          "audit_coverage": [
+            {
+              "stmt_date": "2026-04-03",
+              "period_start": "2025-02-11",
+              "period_end": "2026-02-10",
+              "mentioned": false
+            },
+            {
+              "stmt_date": "2026-04-27",
+              "period_start": "2025-02-11",
+              "period_end": "2026-02-10",
+              "mentioned": false
+            }
+          ]
+        },
+        {
+          "id": 2002281,
+          "filed": "2025-11-25",
+          "summary": "Asseco DS / Certum: Irregularities in Xinchacha/Xcc Brand SSL Certificates",
+          "self_reported": false,
+          "whiteboard": "",
+          "covering_letters": 2,
+          "mentioned_in": 0,
+          "missed_by": 2,
+          "audit_coverage": [
+            {
+              "stmt_date": "2026-04-03",
+              "period_start": "2025-02-11",
+              "period_end": "2026-02-10",
+              "mentioned": false
+            },
+            {
+              "stmt_date": "2026-04-27",
+              "period_start": "2025-02-11",
+              "period_end": "2026-02-10",
+              "mentioned": false
+            }
+          ]
+        },
+        {
+          "id": 2007105,
+          "filed": "2025-12-19",
+          "summary": "Asseco DS / Certum: CRL URLs disclosed in CCADB do not exactly match the CRL URLs in certificates",
+          "self_reported": true,
+          "whiteboard": "[ca-compliance] [disclosure-failure]",
+          "covering_letters": 2,
+          "mentioned_in": 0,
+          "missed_by": 2,
+          "audit_coverage": [
+            {
+              "stmt_date": "2026-04-03",
+              "period_start": "2025-02-11",
+              "period_end": "2026-02-10",
+              "mentioned": false
+            },
+            {
+              "stmt_date": "2026-04-27",
+              "period_start": "2025-02-11",
+              "period_end": "2026-02-10",
+              "mentioned": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ca_owner": "Actalis",
+      "ca_country": "Italy",
+      "primary_auditor": "TayllorCox PCEB",
+      "auditor_country": "Czech Republic",
+      "all_auditors": [
+        "TayllorCox PCEB"
+      ],
+      "auditor_count": 1,
+      "primary_framework": "ETSI",
+      "audit_record_status": "named",
+      "trusted_stores": [
+        "apple",
+        "chrome",
+        "microsoft",
+        "mozilla"
+      ],
+      "exclusive_store": null,
+      "latest_stmt_date": "2026-04-02",
+      "latest_period_end": "2026-03-31",
+      "earliest_period_start": "2024-06-07",
+      "stmt_age_days": 34,
+      "coverage_gap_days": 36,
+      "staleness": "current",
+      "root_count": 1,
+      "no_audit_roots": 0,
+      "tls_br_pdf_url": "https://pceb.tayllorcox.cz/files/2026_Actalis_AAL_TLS-BR_Audit_v2_signedTS.pdf",
+      "has_tls_br_url": true,
+      "separate_audit_types": [
+        "Code Signing",
+        "S/MIME BR",
+        "TLS EVG"
+      ],
+      "combined_audit_types": [],
+      "ca_type": "commercial",
+      "smime_br_url_in_ccadb": true,
+      "ca_capabilities": {
+        "tls": true,
+        "ev": true,
+        "smime": true,
+        "cs": true
+      },
+      "incident_count": 23,
+      "self_report_pct": 61,
+      "ext_report_count": 9,
+      "pdf_parsed": true,
+      "opinion_type": "unqualified",
+      "audit_framework": "ETSI",
+      "audit_criteria": "ETSI EN 319 411-2 V2.6.1 (2025-06); ETSI EN 319 411-1 V1.5.1 (2025-04); ETSI EN 319 401 V3.1.1 (2024-06); Guidelines for the Issuance and Management of Extended Validation Certificates, version 2.0.1; Baseline Requirements for the Issuance and Management of Publicly\u2010Trusted TLS Server Certificates, version 2.2.5; Network and Certificate System Security Requirements, version 2.0.5; Mozilla Root Store Policy, section 6.1.3; ETSI EN 319 403-1 V2.3.1 (2020-06); ETSI TS 119 403-2 V1.3.1 (2023-03); ETSI TS 119 403-3 V1.1.1 (2019-03)",
+      "etsi_aal_version": "3.4",
+      "policy_oids_present": [],
+      "in_scope_sha256": [
+        "4EFAADA2543E1E02666998574B3BAD96AE264088FA5917F75D32E7A609D1869C",
+        "E102A52A016B025B31C749A9A0A7F4650E1227AFA27C27E9A37C846AD42FA8B0",
+        "E7929CDA1A88D2E94016A3F2D52BE95DB1C28C178C425B4303A82E3E29293544",
+        "12D8FBFFEB27481EB0EECD032336D6D1E2B1A678A9B1018E653E7FC253D929A5"
+      ],
+      "locations_audited": [
+        "Ponte San Pietro (BG), Italia"
+      ],
+      "subservice_organizations": [],
+      "qualifications": [],
+      "disclosed_matters": [
+        {
+          "item": 1,
+          "topic": null,
+          "summary": "Incident covered by Mozilla Bug 1973238.",
+          "bugzilla_ids": [
+            "1973238"
+          ],
+          "certificate_count": null,
+          "self_reported": true
+        },
+        {
+          "item": 2,
+          "topic": null,
+          "summary": "Incident covered by Mozilla Bug 1982646.",
+          "bugzilla_ids": [
+            "1982646"
+          ],
+          "certificate_count": null,
+          "self_reported": true
+        },
+        {
+          "item": 3,
+          "topic": null,
+          "summary": "Incident covered by Mozilla Bug 2012157.",
+          "bugzilla_ids": [
+            "2012157"
+          ],
+          "certificate_count": null,
+          "self_reported": true
+        }
+      ],
+      "pdf_auditor_firm": "TAYLLORCOX PCEB established by TAYLLORCOX s.r.o.",
+      "pdf_period_start": "2025-06-07",
+      "pdf_period_end": "2026-03-31",
+      "pdf_pages": 13,
+      "fingerprint_check": {
+        "engagement_roots_expected": 0,
+        "engagement_fps_in_letter": 4,
+        "engagement_fps_matched": 0,
+        "engagement_fps_missing": [],
+        "engagement_fps_extra": [
+          "12D8FBFFEB27481EB0EECD032336D6D1E2B1A678A9B1018E653E7FC253D929A5",
+          "4EFAADA2543E1E02666998574B3BAD96AE264088FA5917F75D32E7A609D1869C",
+          "E102A52A016B025B31C749A9A0A7F4650E1227AFA27C27E9A37C846AD42FA8B0",
+          "E7929CDA1A88D2E94016A3F2D52BE95DB1C28C178C425B4303A82E3E29293544"
+        ],
+        "engagement_fps_extra_disclosed": [
+          "12D8FBFFEB27481EB0EECD032336D6D1E2B1A678A9B1018E653E7FC253D929A5",
+          "4EFAADA2543E1E02666998574B3BAD96AE264088FA5917F75D32E7A609D1869C",
+          "E102A52A016B025B31C749A9A0A7F4650E1227AFA27C27E9A37C846AD42FA8B0",
+          "E7929CDA1A88D2E94016A3F2D52BE95DB1C28C178C425B4303A82E3E29293544"
+        ],
+        "engagement_fps_extra_intermediates": [
+          "12D8FBFFEB27481EB0EECD032336D6D1E2B1A678A9B1018E653E7FC253D929A5",
+          "E102A52A016B025B31C749A9A0A7F4650E1227AFA27C27E9A37C846AD42FA8B0",
+          "E7929CDA1A88D2E94016A3F2D52BE95DB1C28C178C425B4303A82E3E29293544"
+        ],
+        "engagement_fps_extra_old_roots": [
+          "4EFAADA2543E1E02666998574B3BAD96AE264088FA5917F75D32E7A609D1869C"
+        ],
+        "engagement_fps_extra_undisclosed": [],
+        "engagement_accurate": null,
+        "ca_total_roots": 1,
+        "ca_roots_with_url": 1,
+        "ca_roots_without_url": 0,
+        "ca_unaudited_fps": [],
+        "ca_audit_regime": "single",
+        "cross_signed_fps_expected": [],
+        "cross_signed_fps_missing": [],
+        "cross_signed_fps_present": [],
+        "cross_signed_gap": false
+      },
+      "incident_disclosure_check": {
+        "period_start_used": "2025-06-07",
+        "period_end_used": "2026-03-31",
+        "bugs_in_period": [
+          1973238,
+          1982646,
+          2012157
+        ],
+        "disclosed_in_letter": [
+          1973238,
+          1982646,
+          2012157
+        ],
+        "undisclosed_bugs": [],
+        "disclosure_rate": 100.0,
+        "note": null
+      },
+      "criteria_check": {
+        "criteria_raw": "ETSI EN 319 411-2 V2.6.1 (2025-06); ETSI EN 319 411-1 V1.5.1 (2025-04); ETSI EN 319 401 V3.1.1 (2024-06); Guidelines for the Issuance and Management of Extended Validation Certificates, version 2.0.1; Baseline Requirements for the Issuance and Management of Publicly\u2010Trusted TLS Server Certificates, version 2.2.5; Network and Certificate System Security Requirements, version 2.0.5; Mozilla Root Store Policy, section 6.1.3; ETSI EN 319 403-1 V2.3.1 (2020-06); ETSI TS 119 403-2 V1.3.1 (2023-03); ETSI TS 119 403-3 V1.1.1 (2019-03)",
+        "framework": "ETSI",
+        "criteria_version": "EN 319 411-2 V2.6.1",
+        "criteria_current": true,
+        "criteria_current_today": true,
+        "aal_version": "3.4",
+        "aal_current": false,
+        "aal_current_today": false,
+        "score_epoch": "post_v35",
+        "aal_applicable": true
+      },
+      "oid_check": {
+        "inferred_oids": [
+          "2.23.140.1.1",
+          "2.23.140.1.2.1",
+          "2.23.140.1.2.2",
+          "2.23.140.1.4.1"
+        ],
+        "cert_types": [
+          "Code Signing",
+          "TLS DV",
+          "TLS EV",
+          "TLS OV"
+        ],
+        "capabilities_match": true,
+        "gaps": [],
+        "covered_separately": [
+          "Code Signing",
+          "S/MIME",
+          "TLS EV"
+        ],
+        "note": null
+      },
+      "letter_quality_score": {
+        "overall": 80.0,
+        "dimensions": {
+          "opinion_clarity": 100,
+          "criteria_currency": 100,
+          "template_compliance": 0,
+          "disclosure_completeness": 100.0,
+          "scope_coverage": 100
+        },
+        "score_epoch": "post_v35",
+        "note": null
+      },
+      "transparency_gap": {
+        "incident_count": 23,
+        "matters_count": 3,
+        "matters_with_bugzilla": 3,
+        "externally_found": 0,
+        "gap_score": 87.0,
+        "gap_level": "high"
+      },
+      "score_epoch": "post_v35",
+      "root_coverage": {
+        "total_roots": 1,
+        "roots_with_url": 1,
+        "roots_without_url": 0,
+        "unaudited_fps": [],
+        "distinct_letters": 1,
+        "audit_regime": "single"
+      },
+      "audit_timeline": [
+        {
+          "stmt_date": "2016-10-07",
+          "period_start": "2016-10-07",
+          "period_end": "2016-10-07",
+          "auditor": "IMQ S.p.A.",
+          "audit_type": "ETSI",
+          "url": "http://www.actalis.it/documenti-en/actalisca_audit_statement.pdf",
+          "letter_parsed": false,
+          "opinion_type": null,
+          "disclosed_matters": [],
+          "disclosed_matters_count": null,
+          "disclosure_rate": null,
+          "fp_coverage_pct": null,
+          "quality_score": null,
+          "criteria_version": null,
+          "criteria_current": null,
+          "etsi_aal_version": null
+        },
+        {
+          "stmt_date": "2026-04-02",
+          "period_start": "2025-06-07",
+          "period_end": "2026-03-31",
+          "auditor": "TayllorCox PCEB",
+          "audit_type": "ETSI",
+          "url": "https://pceb.tayllorcox.cz/files/2026_Actalis_AAL_Standard_Audit_v2_signedTS.pdf",
+          "letter_parsed": true,
+          "opinion_type": "unqualified",
+          "disclosed_matters": [
+            {
+              "item": 1,
+              "topic": null,
+              "summary": "Incident disclosed by CA and covered in audit.",
+              "bugzilla_ids": [
+                "1973238"
+              ],
+              "certificate_count": null,
+              "self_reported": true
+            },
+            {
+              "item": 2,
+              "topic": null,
+              "summary": "Incident disclosed by CA and covered in audit.",
+              "bugzilla_ids": [
+                "1982646"
+              ],
+              "certificate_count": null,
+              "self_reported": true
+            },
+            {
+              "item": 3,
+              "topic": null,
+              "summary": "Incident disclosed by CA and covered in audit.",
+              "bugzilla_ids": [
+                "2012157"
+              ],
+              "certificate_count": null,
+              "self_reported": true
+            }
+          ],
+          "disclosed_matters_count": 3,
+          "disclosure_rate": null,
+          "fp_coverage_pct": null,
+          "quality_score": null,
+          "criteria_version": "EN 319 411-2 V2.6.1",
+          "criteria_current": true,
+          "etsi_aal_version": "3.4"
+        }
+      ],
+      "timeline_trends": {
+        "letter_count": 2,
+        "years_covered": 10,
+        "oldest_stmt_date": "2016-10-07",
+        "newest_stmt_date": "2026-04-02",
+        "auditor_changes": [
+          {
+            "year": 2026,
+            "from_auditor": "IMQ S.p.A.",
+            "to_auditor": "TayllorCox PCEB"
+          }
+        ],
+        "auditor_tenure_years": 0,
+        "quality_trend": null,
+        "quality_by_year": {},
+        "disclosure_by_year": {}
+      },
+      "bug_retrospective": [
+        {
+          "id": 1973238,
+          "filed": "2025-06-20",
+          "summary": "Actalis: incorrect CP/S Last Update date in CCADB",
+          "self_reported": true,
+          "whiteboard": "[ca-compliance] [disclosure-failure]",
+          "covering_letters": 1,
+          "mentioned_in": 1,
+          "missed_by": 0,
+          "audit_coverage": [
+            {
+              "stmt_date": "2026-04-02",
+              "period_start": "2025-06-07",
+              "period_end": "2026-03-31",
+              "mentioned": true
+            }
+          ]
+        },
+        {
+          "id": 1982646,
+          "filed": "2025-08-12",
+          "summary": "Actalis: missing CCADB disclosure for new SubCA",
+          "self_reported": true,
+          "whiteboard": "[ca-compliance] [disclosure-failure]",
+          "covering_letters": 1,
+          "mentioned_in": 1,
+          "missed_by": 0,
+          "audit_coverage": [
+            {
+              "stmt_date": "2026-04-02",
+              "period_start": "2025-06-07",
+              "period_end": "2026-03-31",
+              "mentioned": true
+            }
+          ]
+        },
+        {
+          "id": 2012157,
+          "filed": "2026-01-23",
+          "summary": "Actalis:  Issuance of certificate using keys previously reported as compromised",
+          "self_reported": true,
+          "whiteboard": "[ca-compliance] [dv-misissuance]",
+          "covering_letters": 1,
+          "mentioned_in": 1,
+          "missed_by": 0,
+          "audit_coverage": [
+            {
+              "stmt_date": "2026-04-02",
+              "period_start": "2025-06-07",
+              "period_end": "2026-03-31",
+              "mentioned": true
+            }
+          ]
+        }
+      ]
     }
   ],
   "distrust_audit_retrospective": [
