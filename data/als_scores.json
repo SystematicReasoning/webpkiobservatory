@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-08T07:47:48.824503+00:00",
+  "generated_at": "2026-05-09T08:16:25.167956+00:00",
   "methodology": "paper/loop-failure/loop-failure-v1.tex",
   "parameters": {
     "min_bugs": 2,
@@ -8,24 +8,6704 @@
   },
   "test_vector_evaluation": {
     "description": "Graduated-pathway distrusted CAs used as positive test vectors. Non-graduated (immediate/triggered/negotiated) used as negative vectors. B >= threshold is the non-remediation flag.",
-    "gradual_cases": [],
-    "non_gradual_cases": [],
-    "sensitivity": null,
-    "specificity": null,
+    "gradual_cases": [
+      {
+        "ca": "Camerfirma",
+        "pathway": "gradual",
+        "posture": "negligent_noncompliance",
+        "n": 46,
+        "n_chronic": 4,
+        "score": 63.8,
+        "mode_A": 25.4,
+        "mode_B": 60.5,
+        "flagged": true
+      },
+      {
+        "ca": "Certinomis",
+        "pathway": "gradual",
+        "posture": "negligent_noncompliance",
+        "n": 14,
+        "n_chronic": 1,
+        "score": 55.8,
+        "mode_A": 47.0,
+        "mode_B": 25.0,
+        "flagged": true
+      },
+      {
+        "ca": "Entrust",
+        "pathway": "gradual",
+        "posture": "argumentative_noncompliance",
+        "n": 71,
+        "n_chronic": 4,
+        "score": 55.8,
+        "mode_A": 12.7,
+        "mode_B": 53.1,
+        "flagged": true
+      },
+      {
+        "ca": "e-commerce monitoring GmbH",
+        "pathway": "gradual",
+        "posture": "demonstrated_incompetence",
+        "n": 5,
+        "n_chronic": 0,
+        "score": 13.0,
+        "mode_A": 13.0,
+        "mode_B": 6.5,
+        "flagged": false
+      }
+    ],
+    "non_gradual_cases": [
+      {
+        "ca": "E-Tugra",
+        "pathway": "triggered",
+        "posture": "demonstrated_incompetence",
+        "n": 14,
+        "n_chronic": 1,
+        "score": 29.5,
+        "mode_A": 25.9,
+        "mode_B": 28.1,
+        "flagged": false
+      },
+      {
+        "ca": "TrustCor",
+        "pathway": "immediate",
+        "posture": "negligent_noncompliance",
+        "n": 5,
+        "n_chronic": 0,
+        "score": 14.0,
+        "mode_A": 6.0,
+        "mode_B": 14.0,
+        "flagged": false
+      }
+    ],
+    "sensitivity": 0.75,
+    "specificity": 1.0,
     "false_positives": [],
-    "false_negatives": [],
+    "false_negatives": [
+      "e-commerce monitoring GmbH"
+    ],
     "note": "False positives (Symantec, e-Tugra) are argued to be correct structural identifications — both had genuine non-remediation patterns; their pathways differed due to external factors. See paper for full discussion."
   },
   "population_summary": {
-    "active_cas_scored": 0,
-    "active_b_flagged": 0,
-    "active_b_flagged_pct": null,
-    "chronic_1plus": 0,
-    "chronic_1plus_pct": null,
-    "chronic_3plus": 0,
-    "chronic_3plus_pct": null,
-    "chronic_5plus": 0,
-    "chronic_5plus_pct": null
+    "active_cas_scored": 54,
+    "active_b_flagged": 23,
+    "active_b_flagged_pct": 42.6,
+    "chronic_1plus": 40,
+    "chronic_1plus_pct": 74.1,
+    "chronic_3plus": 21,
+    "chronic_3plus_pct": 38.9,
+    "chronic_5plus": 11,
+    "chronic_5plus_pct": 20.4
   },
-  "scores": []
+  "scores": [
+    {
+      "ca": "GoDaddy",
+      "population": "active",
+      "distrust_event": null,
+      "signals": {
+        "n": 47,
+        "n_orig": 47,
+        "batches_collapsed": 0,
+        "low_confidence": false,
+        "years": [
+          2014,
+          2026
+        ],
+        "years_active": 11,
+        "self_pct": 57.4,
+        "n_chronic": 7,
+        "n_solo_chronic": 7,
+        "chronic_classes": {
+          "ov-misissuance": [
+            2014,
+            2017,
+            2019,
+            2020,
+            2022,
+            2024
+          ],
+          "ev-misissuance": [
+            2017,
+            2018,
+            2019,
+            2021,
+            2024
+          ],
+          "dv-misissuance": [
+            2017,
+            2018,
+            2019,
+            2020,
+            2024,
+            2025
+          ],
+          "disclosure-failure": [
+            2018,
+            2019,
+            2023,
+            2025,
+            2026
+          ],
+          "leaf-revocation-delay": [
+            2019,
+            2020,
+            2021,
+            2022,
+            2025
+          ],
+          "crl-failure": [
+            2020,
+            2021,
+            2022,
+            2025
+          ],
+          "policy-failure": [
+            2021,
+            2024,
+            2025
+          ]
+        },
+        "solo_chronic_classes": {
+          "ov-misissuance": [
+            2014,
+            2017,
+            2019,
+            2020,
+            2022,
+            2024
+          ],
+          "ev-misissuance": [
+            2017,
+            2018,
+            2019,
+            2021,
+            2024
+          ],
+          "dv-misissuance": [
+            2017,
+            2018,
+            2019,
+            2020,
+            2024,
+            2025
+          ],
+          "disclosure-failure": [
+            2018,
+            2019,
+            2023,
+            2025,
+            2026
+          ],
+          "leaf-revocation-delay": [
+            2019,
+            2020,
+            2021,
+            2022,
+            2025
+          ],
+          "crl-failure": [
+            2020,
+            2021,
+            2022,
+            2025
+          ],
+          "policy-failure": [
+            2021,
+            2024,
+            2025
+          ]
+        },
+        "chronic_knowledge": {
+          "ov-misissuance": {
+            "prior_cas": 0,
+            "eco_age": 0,
+            "weight": 1.0
+          },
+          "ev-misissuance": {
+            "prior_cas": 1,
+            "eco_age": 1,
+            "weight": 1.006
+          },
+          "dv-misissuance": {
+            "prior_cas": 1,
+            "eco_age": 1,
+            "weight": 1.006
+          },
+          "disclosure-failure": {
+            "prior_cas": 8,
+            "eco_age": 1,
+            "weight": 1.05
+          },
+          "leaf-revocation-delay": {
+            "prior_cas": 3,
+            "eco_age": 1,
+            "weight": 1.019
+          },
+          "crl-failure": {
+            "prior_cas": 5,
+            "eco_age": 3,
+            "weight": 1.094
+          },
+          "policy-failure": {
+            "prior_cas": 10,
+            "eco_age": 4,
+            "weight": 1.25
+          }
+        },
+        "avg_knowledge_weight": 1.061,
+        "n_broken_promise": 2,
+        "broken_promise_classes": [
+          "disclosure-failure",
+          "policy-failure"
+        ],
+        "n_closed_loop": 0,
+        "closed_loop_classes": [],
+        "gov_frac": 0.234,
+        "accel": 1.125,
+        "year_density": 4.27,
+        "chronic_span_avg": 4.86,
+        "severity_score": 0.1516,
+        "recency_score": 0.1161,
+        "recent_ap_rate": 0.0,
+        "n_recent": 7,
+        "n_sev5": 2
+      },
+      "scores": {
+        "total": 74.3,
+        "mode_A": 18.6,
+        "mode_B": 73.2,
+        "accel_boost": 1.1,
+        "dominant_mode": "B",
+        "threshold": 42,
+        "flagged": true,
+        "n_solo_chronic": 7,
+        "solo_ratio": 1.0,
+        "ecosystem_factor": 1.0,
+        "avg_knowledge_weight": 1.061,
+        "n_broken_promise": 2,
+        "n_closed_loop": 0,
+        "broken_boost": 1.2,
+        "severity_amp": 1.152,
+        "recency_amp": 1.116,
+        "gap_level": "high",
+        "staleness": "current",
+        "audit_quality": 37.2,
+        "has_audit_profile": true
+      }
+    },
+    {
+      "ca": "DigiCert",
+      "population": "active",
+      "distrust_event": null,
+      "signals": {
+        "n": 170,
+        "n_orig": 173,
+        "batches_collapsed": 3,
+        "low_confidence": false,
+        "years": [
+          2014,
+          2026
+        ],
+        "years_active": 12,
+        "self_pct": 48.2,
+        "n_chronic": 10,
+        "n_solo_chronic": 10,
+        "chronic_classes": {
+          "ov-misissuance": [
+            2016,
+            2017,
+            2018,
+            2019,
+            2020,
+            2021,
+            2022,
+            2023,
+            2024,
+            2025,
+            2026
+          ],
+          "ev-misissuance": [
+            2017,
+            2018,
+            2019,
+            2020,
+            2021,
+            2022,
+            2023,
+            2024,
+            2026
+          ],
+          "disclosure-failure": [
+            2017,
+            2018,
+            2019,
+            2020,
+            2023,
+            2024,
+            2025
+          ],
+          "audit-failure": [
+            2017,
+            2018,
+            2019,
+            2020
+          ],
+          "ocsp-failure": [
+            2017,
+            2018,
+            2019,
+            2020,
+            2021,
+            2023,
+            2024
+          ],
+          "dv-misissuance": [
+            2017,
+            2019,
+            2020,
+            2024,
+            2025,
+            2026
+          ],
+          "crl-failure": [
+            2017,
+            2018,
+            2019,
+            2021,
+            2023,
+            2024
+          ],
+          "policy-failure": [
+            2017,
+            2019,
+            2023,
+            2024,
+            2025,
+            2026
+          ],
+          "leaf-revocation-delay": [
+            2018,
+            2019,
+            2020,
+            2021,
+            2022,
+            2023,
+            2024
+          ],
+          "ca-misissuance": [
+            2019,
+            2020,
+            2023
+          ]
+        },
+        "solo_chronic_classes": {
+          "ov-misissuance": [
+            2016,
+            2017,
+            2018,
+            2019,
+            2020,
+            2021,
+            2022,
+            2023,
+            2024,
+            2025,
+            2026
+          ],
+          "ev-misissuance": [
+            2017,
+            2018,
+            2019,
+            2020,
+            2021,
+            2022,
+            2023,
+            2024,
+            2026
+          ],
+          "disclosure-failure": [
+            2017,
+            2018,
+            2019,
+            2020,
+            2023,
+            2024,
+            2025
+          ],
+          "audit-failure": [
+            2017,
+            2018,
+            2019,
+            2020
+          ],
+          "ocsp-failure": [
+            2017,
+            2018,
+            2019,
+            2020,
+            2021,
+            2023,
+            2024
+          ],
+          "dv-misissuance": [
+            2017,
+            2019,
+            2020,
+            2024,
+            2025,
+            2026
+          ],
+          "crl-failure": [
+            2017,
+            2018,
+            2019,
+            2021,
+            2023,
+            2024
+          ],
+          "policy-failure": [
+            2017,
+            2019,
+            2023,
+            2024,
+            2025
+          ],
+          "leaf-revocation-delay": [
+            2018,
+            2019,
+            2020,
+            2021,
+            2022,
+            2023,
+            2024
+          ],
+          "ca-misissuance": [
+            2019,
+            2020,
+            2023
+          ]
+        },
+        "chronic_knowledge": {
+          "ov-misissuance": {
+            "prior_cas": 1,
+            "eco_age": 2,
+            "weight": 1.012
+          },
+          "ev-misissuance": {
+            "prior_cas": 1,
+            "eco_age": 1,
+            "weight": 1.006
+          },
+          "disclosure-failure": {
+            "prior_cas": 0,
+            "eco_age": 0,
+            "weight": 1.0
+          },
+          "audit-failure": {
+            "prior_cas": 0,
+            "eco_age": 0,
+            "weight": 1.0
+          },
+          "ocsp-failure": {
+            "prior_cas": 0,
+            "eco_age": 0,
+            "weight": 1.0
+          },
+          "dv-misissuance": {
+            "prior_cas": 1,
+            "eco_age": 1,
+            "weight": 1.006
+          },
+          "crl-failure": {
+            "prior_cas": 0,
+            "eco_age": 0,
+            "weight": 1.0
+          },
+          "policy-failure": {
+            "prior_cas": 0,
+            "eco_age": 0,
+            "weight": 1.0
+          },
+          "leaf-revocation-delay": {
+            "prior_cas": 0,
+            "eco_age": 0,
+            "weight": 1.0
+          },
+          "ca-misissuance": {
+            "prior_cas": 5,
+            "eco_age": 2,
+            "weight": 1.062
+          }
+        },
+        "avg_knowledge_weight": 1.009,
+        "n_broken_promise": 2,
+        "broken_promise_classes": [
+          "disclosure-failure",
+          "policy-failure"
+        ],
+        "n_closed_loop": 2,
+        "closed_loop_classes": [
+          "audit-failure",
+          "ca-misissuance"
+        ],
+        "gov_frac": 0.135,
+        "accel": 0.504,
+        "year_density": 14.17,
+        "chronic_span_avg": 6.6,
+        "severity_score": 0.1449,
+        "recency_score": 0.0764,
+        "recent_ap_rate": 0.0,
+        "n_recent": 9,
+        "n_sev5": 7
+      },
+      "scores": {
+        "total": 79.3,
+        "mode_A": 17.6,
+        "mode_B": 79.3,
+        "accel_boost": 0.0,
+        "dominant_mode": "B",
+        "threshold": 42,
+        "flagged": true,
+        "n_solo_chronic": 10,
+        "solo_ratio": 1.0,
+        "ecosystem_factor": 1.0,
+        "avg_knowledge_weight": 1.009,
+        "n_broken_promise": 2,
+        "n_closed_loop": 2,
+        "broken_boost": 1.2,
+        "severity_amp": 1.145,
+        "recency_amp": 1.076,
+        "gap_level": "high",
+        "staleness": "aging",
+        "audit_quality": 38.8,
+        "has_audit_profile": true
+      }
+    },
+    {
+      "ca": "SwissSign AG",
+      "population": "active",
+      "distrust_event": null,
+      "signals": {
+        "n": 52,
+        "n_orig": 65,
+        "batches_collapsed": 13,
+        "low_confidence": false,
+        "years": [
+          2015,
+          2026
+        ],
+        "years_active": 11,
+        "self_pct": 71.2,
+        "n_chronic": 7,
+        "n_solo_chronic": 6,
+        "chronic_classes": {
+          "ov-misissuance": [
+            2018,
+            2020,
+            2021,
+            2024
+          ],
+          "dv-misissuance": [
+            2018,
+            2020,
+            2024
+          ],
+          "ev-misissuance": [
+            2018,
+            2019,
+            2020,
+            2021,
+            2022,
+            2023,
+            2024
+          ],
+          "disclosure-failure": [
+            2018,
+            2020,
+            2022
+          ],
+          "leaf-revocation-delay": [
+            2019,
+            2020,
+            2023,
+            2026
+          ],
+          "ocsp-failure": [
+            2020,
+            2023,
+            2025
+          ],
+          "smime-misissuance": [
+            2023,
+            2024,
+            2026
+          ]
+        },
+        "solo_chronic_classes": {
+          "ov-misissuance": [
+            2018,
+            2020,
+            2021,
+            2024
+          ],
+          "dv-misissuance": [
+            2018,
+            2020,
+            2024
+          ],
+          "ev-misissuance": [
+            2018,
+            2019,
+            2020,
+            2021,
+            2022,
+            2023,
+            2024
+          ],
+          "disclosure-failure": [
+            2018,
+            2020,
+            2022
+          ],
+          "leaf-revocation-delay": [
+            2019,
+            2020,
+            2023,
+            2026
+          ],
+          "smime-misissuance": [
+            2023,
+            2024,
+            2026
+          ]
+        },
+        "chronic_knowledge": {
+          "ov-misissuance": {
+            "prior_cas": 24,
+            "eco_age": 4,
+            "weight": 1.5
+          },
+          "dv-misissuance": {
+            "prior_cas": 9,
+            "eco_age": 2,
+            "weight": 1.113
+          },
+          "ev-misissuance": {
+            "prior_cas": 11,
+            "eco_age": 2,
+            "weight": 1.137
+          },
+          "disclosure-failure": {
+            "prior_cas": 8,
+            "eco_age": 1,
+            "weight": 1.05
+          },
+          "leaf-revocation-delay": {
+            "prior_cas": 3,
+            "eco_age": 1,
+            "weight": 1.019
+          },
+          "ocsp-failure": {
+            "prior_cas": 25,
+            "eco_age": 3,
+            "weight": 1.375
+          },
+          "smime-misissuance": {
+            "prior_cas": 0,
+            "eco_age": 0,
+            "weight": 1.0
+          }
+        },
+        "avg_knowledge_weight": 1.171,
+        "n_broken_promise": 1,
+        "broken_promise_classes": [
+          "disclosure-failure"
+        ],
+        "n_closed_loop": 0,
+        "closed_loop_classes": [],
+        "gov_frac": 0.077,
+        "accel": 0.9,
+        "year_density": 4.73,
+        "chronic_span_avg": 3.86,
+        "severity_score": 0.1154,
+        "recency_score": 0.075,
+        "recent_ap_rate": 0.0,
+        "n_recent": 5,
+        "n_sev5": 2
+      },
+      "scores": {
+        "total": 69.0,
+        "mode_A": 9.8,
+        "mode_B": 69.0,
+        "accel_boost": 0.0,
+        "dominant_mode": "B",
+        "threshold": 39,
+        "flagged": true,
+        "n_solo_chronic": 6,
+        "solo_ratio": 0.86,
+        "ecosystem_factor": 0.98,
+        "avg_knowledge_weight": 1.171,
+        "n_broken_promise": 1,
+        "n_closed_loop": 0,
+        "broken_boost": 1.1,
+        "severity_amp": 1.115,
+        "recency_amp": 1.075,
+        "gap_level": "high",
+        "staleness": "aging",
+        "audit_quality": 90.0,
+        "has_audit_profile": true
+      }
+    },
+    {
+      "ca": "Izenpe S.A.",
+      "population": "active",
+      "distrust_event": null,
+      "signals": {
+        "n": 23,
+        "n_orig": 23,
+        "batches_collapsed": 0,
+        "low_confidence": false,
+        "years": [
+          2016,
+          2025
+        ],
+        "years_active": 7,
+        "self_pct": 56.5,
+        "n_chronic": 3,
+        "n_solo_chronic": 2,
+        "chronic_classes": {
+          "ev-misissuance": [
+            2016,
+            2017,
+            2019,
+            2020,
+            2024
+          ],
+          "ov-misissuance": [
+            2017,
+            2019,
+            2024,
+            2025
+          ],
+          "disclosure-failure": [
+            2020,
+            2024,
+            2025
+          ]
+        },
+        "solo_chronic_classes": {
+          "ev-misissuance": [
+            2016,
+            2017,
+            2019,
+            2020,
+            2024
+          ],
+          "disclosure-failure": [
+            2020,
+            2024,
+            2025
+          ]
+        },
+        "chronic_knowledge": {
+          "ev-misissuance": {
+            "prior_cas": 0,
+            "eco_age": 0,
+            "weight": 1.0
+          },
+          "ov-misissuance": {
+            "prior_cas": 2,
+            "eco_age": 3,
+            "weight": 1.038
+          },
+          "disclosure-failure": {
+            "prior_cas": 22,
+            "eco_age": 3,
+            "weight": 1.375
+          }
+        },
+        "avg_knowledge_weight": 1.138,
+        "n_broken_promise": 0,
+        "broken_promise_classes": [],
+        "n_closed_loop": 0,
+        "closed_loop_classes": [],
+        "gov_frac": 0.174,
+        "accel": 1.714,
+        "year_density": 3.29,
+        "chronic_span_avg": 4.0,
+        "severity_score": 0.163,
+        "recency_score": 0.125,
+        "recent_ap_rate": 0.3333,
+        "n_recent": 3,
+        "n_sev5": 1
+      },
+      "scores": {
+        "total": 49.1,
+        "mode_A": 26.4,
+        "mode_B": 44.2,
+        "accel_boost": 4.8,
+        "dominant_mode": "B",
+        "threshold": 44,
+        "flagged": true,
+        "n_solo_chronic": 2,
+        "solo_ratio": 0.67,
+        "ecosystem_factor": 0.95,
+        "avg_knowledge_weight": 1.138,
+        "n_broken_promise": 0,
+        "n_closed_loop": 0,
+        "broken_boost": 1.0,
+        "severity_amp": 1.163,
+        "recency_amp": 1.125,
+        "gap_level": "moderate",
+        "staleness": "aging",
+        "audit_quality": 94.0,
+        "has_audit_profile": true
+      }
+    },
+    {
+      "ca": "Sectigo",
+      "population": "active",
+      "distrust_event": null,
+      "signals": {
+        "n": 104,
+        "n_orig": 110,
+        "batches_collapsed": 6,
+        "low_confidence": false,
+        "years": [
+          2016,
+          2026
+        ],
+        "years_active": 11,
+        "self_pct": 63.5,
+        "n_chronic": 9,
+        "n_solo_chronic": 9,
+        "chronic_classes": {
+          "ev-misissuance": [
+            2017,
+            2019,
+            2020,
+            2021,
+            2022,
+            2023,
+            2024
+          ],
+          "ov-misissuance": [
+            2017,
+            2019,
+            2020,
+            2021,
+            2022,
+            2023,
+            2024,
+            2025
+          ],
+          "dv-misissuance": [
+            2017,
+            2018,
+            2019,
+            2020,
+            2021,
+            2022,
+            2024
+          ],
+          "disclosure-failure": [
+            2017,
+            2019,
+            2020,
+            2021,
+            2023,
+            2026
+          ],
+          "leaf-revocation-delay": [
+            2018,
+            2020,
+            2021,
+            2022,
+            2023
+          ],
+          "policy-failure": [
+            2019,
+            2020,
+            2021,
+            2023,
+            2024,
+            2025
+          ],
+          "crl-failure": [
+            2021,
+            2024,
+            2025
+          ],
+          "ocsp-failure": [
+            2021,
+            2022,
+            2025,
+            2026
+          ],
+          "smime-misissuance": [
+            2023,
+            2024,
+            2025
+          ]
+        },
+        "solo_chronic_classes": {
+          "ev-misissuance": [
+            2017,
+            2019,
+            2020,
+            2021,
+            2022,
+            2023,
+            2024
+          ],
+          "ov-misissuance": [
+            2021,
+            2022,
+            2023,
+            2024,
+            2025
+          ],
+          "dv-misissuance": [
+            2017,
+            2018,
+            2019,
+            2020,
+            2021,
+            2022,
+            2024
+          ],
+          "disclosure-failure": [
+            2017,
+            2019,
+            2020,
+            2021,
+            2023,
+            2026
+          ],
+          "leaf-revocation-delay": [
+            2018,
+            2020,
+            2021,
+            2022,
+            2023
+          ],
+          "policy-failure": [
+            2019,
+            2020,
+            2021,
+            2023,
+            2025
+          ],
+          "crl-failure": [
+            2021,
+            2024,
+            2025
+          ],
+          "ocsp-failure": [
+            2021,
+            2022,
+            2025,
+            2026
+          ],
+          "smime-misissuance": [
+            2023,
+            2024,
+            2025
+          ]
+        },
+        "chronic_knowledge": {
+          "ev-misissuance": {
+            "prior_cas": 1,
+            "eco_age": 1,
+            "weight": 1.006
+          },
+          "ov-misissuance": {
+            "prior_cas": 2,
+            "eco_age": 3,
+            "weight": 1.038
+          },
+          "dv-misissuance": {
+            "prior_cas": 1,
+            "eco_age": 1,
+            "weight": 1.006
+          },
+          "disclosure-failure": {
+            "prior_cas": 0,
+            "eco_age": 0,
+            "weight": 1.0
+          },
+          "leaf-revocation-delay": {
+            "prior_cas": 0,
+            "eco_age": 0,
+            "weight": 1.0
+          },
+          "policy-failure": {
+            "prior_cas": 3,
+            "eco_age": 2,
+            "weight": 1.038
+          },
+          "crl-failure": {
+            "prior_cas": 7,
+            "eco_age": 4,
+            "weight": 1.175
+          },
+          "ocsp-failure": {
+            "prior_cas": 34,
+            "eco_age": 4,
+            "weight": 1.5
+          },
+          "smime-misissuance": {
+            "prior_cas": 0,
+            "eco_age": 0,
+            "weight": 1.0
+          }
+        },
+        "avg_knowledge_weight": 1.085,
+        "n_broken_promise": 2,
+        "broken_promise_classes": [
+          "disclosure-failure",
+          "policy-failure"
+        ],
+        "n_closed_loop": 1,
+        "closed_loop_classes": [
+          "leaf-revocation-delay"
+        ],
+        "gov_frac": 0.173,
+        "accel": 1.643,
+        "year_density": 9.45,
+        "chronic_span_avg": 5.44,
+        "severity_score": 0.104,
+        "recency_score": 0.15,
+        "recent_ap_rate": 0.1,
+        "n_recent": 10,
+        "n_sev5": 0
+      },
+      "scores": {
+        "total": 83.9,
+        "mode_A": 23.5,
+        "mode_B": 79.3,
+        "accel_boost": 4.6,
+        "dominant_mode": "B",
+        "threshold": 43,
+        "flagged": true,
+        "n_solo_chronic": 9,
+        "solo_ratio": 1.0,
+        "ecosystem_factor": 1.0,
+        "avg_knowledge_weight": 1.085,
+        "n_broken_promise": 2,
+        "n_closed_loop": 1,
+        "broken_boost": 1.2,
+        "severity_amp": 1.104,
+        "recency_amp": 1.15,
+        "gap_level": "high",
+        "staleness": "aging",
+        "audit_quality": 45.0,
+        "has_audit_profile": true
+      }
+    },
+    {
+      "ca": "Internet Security Research Group",
+      "population": "active",
+      "distrust_event": null,
+      "signals": {
+        "n": 39,
+        "n_orig": 39,
+        "batches_collapsed": 0,
+        "low_confidence": false,
+        "years": [
+          2016,
+          2026
+        ],
+        "years_active": 11,
+        "self_pct": 48.7,
+        "n_chronic": 3,
+        "n_solo_chronic": 3,
+        "chronic_classes": {
+          "dv-misissuance": [
+            2016,
+            2017,
+            2018,
+            2020,
+            2021,
+            2022,
+            2023,
+            2024
+          ],
+          "ocsp-failure": [
+            2018,
+            2019,
+            2020,
+            2021,
+            2022
+          ],
+          "leaf-revocation-delay": [
+            2020,
+            2021,
+            2022
+          ]
+        },
+        "solo_chronic_classes": {
+          "dv-misissuance": [
+            2016,
+            2017,
+            2018,
+            2020,
+            2021,
+            2022,
+            2023,
+            2024
+          ],
+          "ocsp-failure": [
+            2018,
+            2019,
+            2020,
+            2021,
+            2022
+          ],
+          "leaf-revocation-delay": [
+            2020,
+            2021,
+            2022
+          ]
+        },
+        "chronic_knowledge": {
+          "dv-misissuance": {
+            "prior_cas": 0,
+            "eco_age": 0,
+            "weight": 1.0
+          },
+          "ocsp-failure": {
+            "prior_cas": 18,
+            "eco_age": 1,
+            "weight": 1.113
+          },
+          "leaf-revocation-delay": {
+            "prior_cas": 10,
+            "eco_age": 2,
+            "weight": 1.125
+          }
+        },
+        "avg_knowledge_weight": 1.079,
+        "n_broken_promise": 0,
+        "broken_promise_classes": [],
+        "n_closed_loop": 0,
+        "closed_loop_classes": [],
+        "gov_frac": 0.077,
+        "accel": 0.877,
+        "year_density": 3.55,
+        "chronic_span_avg": 5.33,
+        "severity_score": 0.0753,
+        "recency_score": 0.0833,
+        "recent_ap_rate": 0.0,
+        "n_recent": 3,
+        "n_sev5": 0
+      },
+      "scores": {
+        "total": 43.8,
+        "mode_A": 16.5,
+        "mode_B": 43.8,
+        "accel_boost": 0.0,
+        "dominant_mode": "B",
+        "threshold": 48,
+        "flagged": false,
+        "n_solo_chronic": 3,
+        "solo_ratio": 1.0,
+        "ecosystem_factor": 1.0,
+        "avg_knowledge_weight": 1.079,
+        "n_broken_promise": 0,
+        "n_closed_loop": 0,
+        "broken_boost": 1.0,
+        "severity_amp": 1.075,
+        "recency_amp": 1.083,
+        "gap_level": "high",
+        "staleness": "aging",
+        "audit_quality": 52.5,
+        "has_audit_profile": true
+      }
+    },
+    {
+      "ca": "GlobalSign nv-sa",
+      "population": "active",
+      "distrust_event": null,
+      "signals": {
+        "n": 56,
+        "n_orig": 56,
+        "batches_collapsed": 0,
+        "low_confidence": false,
+        "years": [
+          2017,
+          2026
+        ],
+        "years_active": 9,
+        "self_pct": 60.7,
+        "n_chronic": 6,
+        "n_solo_chronic": 6,
+        "chronic_classes": {
+          "ov-misissuance": [
+            2017,
+            2019,
+            2020,
+            2021,
+            2023,
+            2024
+          ],
+          "ev-misissuance": [
+            2017,
+            2019,
+            2020,
+            2021,
+            2022,
+            2023
+          ],
+          "dv-misissuance": [
+            2017,
+            2019,
+            2020,
+            2022,
+            2024
+          ],
+          "ocsp-failure": [
+            2017,
+            2019,
+            2020,
+            2022
+          ],
+          "disclosure-failure": [
+            2020,
+            2023,
+            2025,
+            2026
+          ],
+          "crl-failure": [
+            2022,
+            2023,
+            2024
+          ]
+        },
+        "solo_chronic_classes": {
+          "ov-misissuance": [
+            2017,
+            2021,
+            2023,
+            2024
+          ],
+          "ev-misissuance": [
+            2017,
+            2019,
+            2020,
+            2021,
+            2022,
+            2023
+          ],
+          "dv-misissuance": [
+            2017,
+            2019,
+            2020,
+            2022,
+            2024
+          ],
+          "ocsp-failure": [
+            2019,
+            2020,
+            2022
+          ],
+          "disclosure-failure": [
+            2020,
+            2023,
+            2025,
+            2026
+          ],
+          "crl-failure": [
+            2022,
+            2023,
+            2024
+          ]
+        },
+        "chronic_knowledge": {
+          "ov-misissuance": {
+            "prior_cas": 2,
+            "eco_age": 3,
+            "weight": 1.038
+          },
+          "ev-misissuance": {
+            "prior_cas": 1,
+            "eco_age": 1,
+            "weight": 1.006
+          },
+          "dv-misissuance": {
+            "prior_cas": 1,
+            "eco_age": 1,
+            "weight": 1.006
+          },
+          "ocsp-failure": {
+            "prior_cas": 0,
+            "eco_age": 0,
+            "weight": 1.0
+          },
+          "disclosure-failure": {
+            "prior_cas": 22,
+            "eco_age": 3,
+            "weight": 1.375
+          },
+          "crl-failure": {
+            "prior_cas": 17,
+            "eco_age": 5,
+            "weight": 1.425
+          }
+        },
+        "avg_knowledge_weight": 1.142,
+        "n_broken_promise": 1,
+        "broken_promise_classes": [
+          "disclosure-failure"
+        ],
+        "n_closed_loop": 2,
+        "closed_loop_classes": [
+          "ev-misissuance",
+          "ocsp-failure"
+        ],
+        "gov_frac": 0.071,
+        "accel": 0.32,
+        "year_density": 6.22,
+        "chronic_span_avg": 4.67,
+        "severity_score": 0.1663,
+        "recency_score": 0.25,
+        "recent_ap_rate": 0.0,
+        "n_recent": 2,
+        "n_sev5": 4
+      },
+      "scores": {
+        "total": 64.3,
+        "mode_A": 12.9,
+        "mode_B": 64.3,
+        "accel_boost": 0.0,
+        "dominant_mode": "B",
+        "threshold": 45,
+        "flagged": true,
+        "n_solo_chronic": 6,
+        "solo_ratio": 1.0,
+        "ecosystem_factor": 1.0,
+        "avg_knowledge_weight": 1.142,
+        "n_broken_promise": 1,
+        "n_closed_loop": 2,
+        "broken_boost": 1.1,
+        "severity_amp": 1.166,
+        "recency_amp": 1.25,
+        "gap_level": "high",
+        "staleness": "stale",
+        "audit_quality": 75.0,
+        "has_audit_profile": true
+      }
+    },
+    {
+      "ca": "Autoridad de Certificacion Firmaprofesional",
+      "population": "active",
+      "distrust_event": null,
+      "signals": {
+        "n": 33,
+        "n_orig": 37,
+        "batches_collapsed": 4,
+        "low_confidence": false,
+        "years": [
+          2017,
+          2026
+        ],
+        "years_active": 9,
+        "self_pct": 60.6,
+        "n_chronic": 4,
+        "n_solo_chronic": 3,
+        "chronic_classes": {
+          "disclosure-failure": [
+            2018,
+            2023,
+            2026
+          ],
+          "ov-misissuance": [
+            2019,
+            2021,
+            2022,
+            2024
+          ],
+          "ev-misissuance": [
+            2019,
+            2021,
+            2022
+          ],
+          "policy-failure": [
+            2022,
+            2024,
+            2026
+          ]
+        },
+        "solo_chronic_classes": {
+          "disclosure-failure": [
+            2018,
+            2023,
+            2026
+          ],
+          "ov-misissuance": [
+            2021,
+            2022,
+            2024
+          ],
+          "ev-misissuance": [
+            2019,
+            2021,
+            2022
+          ]
+        },
+        "chronic_knowledge": {
+          "disclosure-failure": {
+            "prior_cas": 8,
+            "eco_age": 1,
+            "weight": 1.05
+          },
+          "ov-misissuance": {
+            "prior_cas": 31,
+            "eco_age": 5,
+            "weight": 1.5
+          },
+          "ev-misissuance": {
+            "prior_cas": 15,
+            "eco_age": 3,
+            "weight": 1.281
+          },
+          "policy-failure": {
+            "prior_cas": 20,
+            "eco_age": 5,
+            "weight": 1.5
+          }
+        },
+        "avg_knowledge_weight": 1.333,
+        "n_broken_promise": 1,
+        "broken_promise_classes": [
+          "policy-failure"
+        ],
+        "n_closed_loop": 1,
+        "closed_loop_classes": [
+          "ev-misissuance"
+        ],
+        "gov_frac": 0.303,
+        "accel": 0.96,
+        "year_density": 3.67,
+        "chronic_span_avg": 3.25,
+        "severity_score": 0.1989,
+        "recency_score": 0.4167,
+        "recent_ap_rate": 0.5,
+        "n_recent": 6,
+        "n_sev5": 1
+      },
+      "scores": {
+        "total": 54.5,
+        "mode_A": 16.4,
+        "mode_B": 54.5,
+        "accel_boost": 0.0,
+        "dominant_mode": "B",
+        "threshold": 34,
+        "flagged": true,
+        "n_solo_chronic": 3,
+        "solo_ratio": 0.75,
+        "ecosystem_factor": 0.96,
+        "avg_knowledge_weight": 1.333,
+        "n_broken_promise": 1,
+        "n_closed_loop": 1,
+        "broken_boost": 1.1,
+        "severity_amp": 1.199,
+        "recency_amp": 1.417,
+        "gap_level": "unknown",
+        "staleness": "stale",
+        "audit_quality": null,
+        "has_audit_profile": true
+      }
+    },
+    {
+      "ca": "Actalis",
+      "population": "active",
+      "distrust_event": null,
+      "signals": {
+        "n": 23,
+        "n_orig": 23,
+        "batches_collapsed": 0,
+        "low_confidence": false,
+        "years": [
+          2017,
+          2026
+        ],
+        "years_active": 8,
+        "self_pct": 60.9,
+        "n_chronic": 6,
+        "n_solo_chronic": 5,
+        "chronic_classes": {
+          "dv-misissuance": [
+            2017,
+            2019,
+            2026
+          ],
+          "ov-misissuance": [
+            2017,
+            2019,
+            2020,
+            2023,
+            2024
+          ],
+          "ev-misissuance": [
+            2017,
+            2019,
+            2020,
+            2024
+          ],
+          "ca-misissuance": [
+            2017,
+            2019,
+            2021
+          ],
+          "leaf-revocation-delay": [
+            2019,
+            2020,
+            2024
+          ],
+          "crl-failure": [
+            2023,
+            2024,
+            2025
+          ]
+        },
+        "solo_chronic_classes": {
+          "dv-misissuance": [
+            2017,
+            2019,
+            2026
+          ],
+          "ov-misissuance": [
+            2020,
+            2023,
+            2024
+          ],
+          "ev-misissuance": [
+            2017,
+            2019,
+            2020,
+            2024
+          ],
+          "ca-misissuance": [
+            2017,
+            2019,
+            2021
+          ],
+          "crl-failure": [
+            2023,
+            2024,
+            2025
+          ]
+        },
+        "chronic_knowledge": {
+          "dv-misissuance": {
+            "prior_cas": 1,
+            "eco_age": 1,
+            "weight": 1.006
+          },
+          "ov-misissuance": {
+            "prior_cas": 2,
+            "eco_age": 3,
+            "weight": 1.038
+          },
+          "ev-misissuance": {
+            "prior_cas": 1,
+            "eco_age": 1,
+            "weight": 1.006
+          },
+          "ca-misissuance": {
+            "prior_cas": 0,
+            "eco_age": 0,
+            "weight": 1.0
+          },
+          "leaf-revocation-delay": {
+            "prior_cas": 3,
+            "eco_age": 1,
+            "weight": 1.019
+          },
+          "crl-failure": {
+            "prior_cas": 21,
+            "eco_age": 6,
+            "weight": 1.5
+          }
+        },
+        "avg_knowledge_weight": 1.095,
+        "n_broken_promise": 0,
+        "broken_promise_classes": [],
+        "n_closed_loop": 1,
+        "closed_loop_classes": [
+          "ca-misissuance"
+        ],
+        "gov_frac": 0.13,
+        "accel": 0.917,
+        "year_density": 2.88,
+        "chronic_span_avg": 3.5,
+        "severity_score": 0.2554,
+        "recency_score": 0.1875,
+        "recent_ap_rate": 0.0,
+        "n_recent": 3,
+        "n_sev5": 3
+      },
+      "scores": {
+        "total": 62.4,
+        "mode_A": 13.7,
+        "mode_B": 62.4,
+        "accel_boost": 0.0,
+        "dominant_mode": "B",
+        "threshold": 47,
+        "flagged": true,
+        "n_solo_chronic": 5,
+        "solo_ratio": 0.83,
+        "ecosystem_factor": 0.97,
+        "avg_knowledge_weight": 1.095,
+        "n_broken_promise": 0,
+        "n_closed_loop": 1,
+        "broken_boost": 1.0,
+        "severity_amp": 1.255,
+        "recency_amp": 1.188,
+        "gap_level": "high",
+        "staleness": "current",
+        "audit_quality": 80.0,
+        "has_audit_profile": true
+      }
+    },
+    {
+      "ca": "certSIGN",
+      "population": "active",
+      "distrust_event": null,
+      "signals": {
+        "n": 17,
+        "n_orig": 21,
+        "batches_collapsed": 4,
+        "low_confidence": false,
+        "years": [
+          2017,
+          2026
+        ],
+        "years_active": 9,
+        "self_pct": 70.6,
+        "n_chronic": 2,
+        "n_solo_chronic": 1,
+        "chronic_classes": {
+          "ov-misissuance": [
+            2017,
+            2019,
+            2020,
+            2022,
+            2024,
+            2026
+          ],
+          "policy-failure": [
+            2021,
+            2024,
+            2026
+          ]
+        },
+        "solo_chronic_classes": {
+          "ov-misissuance": [
+            2020,
+            2022,
+            2026
+          ]
+        },
+        "chronic_knowledge": {
+          "ov-misissuance": {
+            "prior_cas": 2,
+            "eco_age": 3,
+            "weight": 1.038
+          },
+          "policy-failure": {
+            "prior_cas": 10,
+            "eco_age": 4,
+            "weight": 1.25
+          }
+        },
+        "avg_knowledge_weight": 1.144,
+        "n_broken_promise": 0,
+        "broken_promise_classes": [],
+        "n_closed_loop": 0,
+        "closed_loop_classes": [],
+        "gov_frac": 0.235,
+        "accel": 1.92,
+        "year_density": 1.89,
+        "chronic_span_avg": 4.5,
+        "severity_score": 0.125,
+        "recency_score": 0.1458,
+        "recent_ap_rate": 0.0,
+        "n_recent": 3,
+        "n_sev5": 0
+      },
+      "scores": {
+        "total": 37.0,
+        "mode_A": 25.4,
+        "mode_B": 31.0,
+        "accel_boost": 6.0,
+        "dominant_mode": "B",
+        "threshold": 43,
+        "flagged": false,
+        "n_solo_chronic": 1,
+        "solo_ratio": 0.5,
+        "ecosystem_factor": 0.92,
+        "avg_knowledge_weight": 1.144,
+        "n_broken_promise": 0,
+        "n_closed_loop": 0,
+        "broken_boost": 1.0,
+        "severity_amp": 1.125,
+        "recency_amp": 1.146,
+        "gap_level": "high",
+        "staleness": "current",
+        "audit_quality": 56.3,
+        "has_audit_profile": true
+      }
+    },
+    {
+      "ca": "Consorci AOC",
+      "population": "active",
+      "distrust_event": null,
+      "signals": {
+        "n": 8,
+        "n_orig": 8,
+        "batches_collapsed": 0,
+        "low_confidence": true,
+        "years": [
+          2017,
+          2019
+        ],
+        "years_active": 3,
+        "self_pct": 25.0,
+        "n_chronic": 0,
+        "n_solo_chronic": 0,
+        "chronic_classes": {},
+        "solo_chronic_classes": {},
+        "chronic_knowledge": {},
+        "avg_knowledge_weight": 1.0,
+        "n_broken_promise": 0,
+        "broken_promise_classes": [],
+        "n_closed_loop": 0,
+        "closed_loop_classes": [],
+        "gov_frac": 0.25,
+        "accel": 0.833,
+        "year_density": 2.67,
+        "chronic_span_avg": 0.0,
+        "severity_score": 0.1328,
+        "recency_score": 0.0,
+        "recent_ap_rate": 0.0,
+        "n_recent": 0,
+        "n_sev5": 0
+      },
+      "scores": {
+        "total": 15.8,
+        "mode_A": 15.8,
+        "mode_B": 11.0,
+        "accel_boost": 0.0,
+        "dominant_mode": "A",
+        "threshold": 44,
+        "flagged": false,
+        "n_solo_chronic": 0,
+        "solo_ratio": 1.0,
+        "ecosystem_factor": 1.0,
+        "avg_knowledge_weight": 1.0,
+        "n_broken_promise": 0,
+        "n_closed_loop": 0,
+        "broken_boost": 1.0,
+        "severity_amp": 1.133,
+        "recency_amp": 1.0,
+        "gap_level": "—",
+        "staleness": "—",
+        "audit_quality": null,
+        "has_audit_profile": false
+      }
+    },
+    {
+      "ca": "D-TRUST",
+      "population": "active",
+      "distrust_event": null,
+      "signals": {
+        "n": 32,
+        "n_orig": 32,
+        "batches_collapsed": 0,
+        "low_confidence": false,
+        "years": [
+          2017,
+          2026
+        ],
+        "years_active": 10,
+        "self_pct": 68.8,
+        "n_chronic": 5,
+        "n_solo_chronic": 5,
+        "chronic_classes": {
+          "ev-misissuance": [
+            2017,
+            2018,
+            2019,
+            2020,
+            2021,
+            2024,
+            2025
+          ],
+          "policy-failure": [
+            2017,
+            2024,
+            2025,
+            2026
+          ],
+          "leaf-revocation-delay": [
+            2019,
+            2023,
+            2024
+          ],
+          "dv-misissuance": [
+            2020,
+            2022,
+            2023
+          ],
+          "crl-failure": [
+            2022,
+            2024,
+            2026
+          ]
+        },
+        "solo_chronic_classes": {
+          "ev-misissuance": [
+            2017,
+            2018,
+            2019,
+            2020,
+            2021,
+            2024,
+            2025
+          ],
+          "policy-failure": [
+            2017,
+            2025,
+            2026
+          ],
+          "leaf-revocation-delay": [
+            2019,
+            2023,
+            2024
+          ],
+          "dv-misissuance": [
+            2020,
+            2022,
+            2023
+          ],
+          "crl-failure": [
+            2022,
+            2024,
+            2026
+          ]
+        },
+        "chronic_knowledge": {
+          "ev-misissuance": {
+            "prior_cas": 1,
+            "eco_age": 1,
+            "weight": 1.006
+          },
+          "policy-failure": {
+            "prior_cas": 0,
+            "eco_age": 0,
+            "weight": 1.0
+          },
+          "leaf-revocation-delay": {
+            "prior_cas": 3,
+            "eco_age": 1,
+            "weight": 1.019
+          },
+          "dv-misissuance": {
+            "prior_cas": 14,
+            "eco_age": 4,
+            "weight": 1.35
+          },
+          "crl-failure": {
+            "prior_cas": 17,
+            "eco_age": 5,
+            "weight": 1.425
+          }
+        },
+        "avg_knowledge_weight": 1.16,
+        "n_broken_promise": 0,
+        "broken_promise_classes": [],
+        "n_closed_loop": 1,
+        "closed_loop_classes": [
+          "dv-misissuance"
+        ],
+        "gov_frac": 0.188,
+        "accel": 2.2,
+        "year_density": 3.2,
+        "chronic_span_avg": 4.0,
+        "severity_score": 0.0996,
+        "recency_score": 0.1458,
+        "recent_ap_rate": 0.2222,
+        "n_recent": 9,
+        "n_sev5": 0
+      },
+      "scores": {
+        "total": 60.6,
+        "mode_A": 27.9,
+        "mode_B": 53.4,
+        "accel_boost": 7.2,
+        "dominant_mode": "B",
+        "threshold": 42,
+        "flagged": true,
+        "n_solo_chronic": 5,
+        "solo_ratio": 1.0,
+        "ecosystem_factor": 1.0,
+        "avg_knowledge_weight": 1.16,
+        "n_broken_promise": 0,
+        "n_closed_loop": 1,
+        "broken_boost": 1.0,
+        "severity_amp": 1.1,
+        "recency_amp": 1.146,
+        "gap_level": "—",
+        "staleness": "—",
+        "audit_quality": null,
+        "has_audit_profile": false
+      }
+    },
+    {
+      "ca": "Disig, a.s.",
+      "population": "active",
+      "distrust_event": null,
+      "signals": {
+        "n": 11,
+        "n_orig": 11,
+        "batches_collapsed": 0,
+        "low_confidence": false,
+        "years": [
+          2017,
+          2026
+        ],
+        "years_active": 7,
+        "self_pct": 54.5,
+        "n_chronic": 1,
+        "n_solo_chronic": 1,
+        "chronic_classes": {
+          "disclosure-failure": [
+            2020,
+            2023,
+            2025
+          ]
+        },
+        "solo_chronic_classes": {
+          "disclosure-failure": [
+            2020,
+            2023,
+            2025
+          ]
+        },
+        "chronic_knowledge": {
+          "disclosure-failure": {
+            "prior_cas": 22,
+            "eco_age": 3,
+            "weight": 1.375
+          }
+        },
+        "avg_knowledge_weight": 1.375,
+        "n_broken_promise": 0,
+        "broken_promise_classes": [],
+        "n_closed_loop": 0,
+        "closed_loop_classes": [],
+        "gov_frac": 0.364,
+        "accel": 1.312,
+        "year_density": 1.57,
+        "chronic_span_avg": 3.0,
+        "severity_score": 0.1193,
+        "recency_score": 0.1667,
+        "recent_ap_rate": 0.0,
+        "n_recent": 3,
+        "n_sev5": 0
+      },
+      "scores": {
+        "total": 25.2,
+        "mode_A": 20.9,
+        "mode_B": 22.6,
+        "accel_boost": 2.5,
+        "dominant_mode": "B",
+        "threshold": 37,
+        "flagged": false,
+        "n_solo_chronic": 1,
+        "solo_ratio": 1.0,
+        "ecosystem_factor": 1.0,
+        "avg_knowledge_weight": 1.375,
+        "n_broken_promise": 0,
+        "n_closed_loop": 0,
+        "broken_boost": 1.0,
+        "severity_amp": 1.119,
+        "recency_amp": 1.167,
+        "gap_level": "high",
+        "staleness": "stale",
+        "audit_quality": 80.0,
+        "has_audit_profile": true
+      }
+    },
+    {
+      "ca": "Certigna",
+      "population": "active",
+      "distrust_event": null,
+      "signals": {
+        "n": 25,
+        "n_orig": 27,
+        "batches_collapsed": 2,
+        "low_confidence": false,
+        "years": [
+          2017,
+          2025
+        ],
+        "years_active": 7,
+        "self_pct": 40.0,
+        "n_chronic": 2,
+        "n_solo_chronic": 1,
+        "chronic_classes": {
+          "ov-misissuance": [
+            2017,
+            2018,
+            2020,
+            2022,
+            2024,
+            2025
+          ],
+          "leaf-revocation-delay": [
+            2020,
+            2021,
+            2024
+          ]
+        },
+        "solo_chronic_classes": {
+          "ov-misissuance": [
+            2018,
+            2022,
+            2025
+          ]
+        },
+        "chronic_knowledge": {
+          "ov-misissuance": {
+            "prior_cas": 2,
+            "eco_age": 3,
+            "weight": 1.038
+          },
+          "leaf-revocation-delay": {
+            "prior_cas": 10,
+            "eco_age": 2,
+            "weight": 1.125
+          }
+        },
+        "avg_knowledge_weight": 1.082,
+        "n_broken_promise": 0,
+        "broken_promise_classes": [],
+        "n_closed_loop": 0,
+        "closed_loop_classes": [],
+        "gov_frac": 0.12,
+        "accel": 0.955,
+        "year_density": 3.57,
+        "chronic_span_avg": 4.5,
+        "severity_score": 0.1675,
+        "recency_score": 0.1375,
+        "recent_ap_rate": 0.0,
+        "n_recent": 5,
+        "n_sev5": 2
+      },
+      "scores": {
+        "total": 35.0,
+        "mode_A": 19.8,
+        "mode_B": 35.0,
+        "accel_boost": 0.0,
+        "dominant_mode": "B",
+        "threshold": 37,
+        "flagged": false,
+        "n_solo_chronic": 1,
+        "solo_ratio": 0.5,
+        "ecosystem_factor": 0.92,
+        "avg_knowledge_weight": 1.082,
+        "n_broken_promise": 0,
+        "n_closed_loop": 0,
+        "broken_boost": 1.0,
+        "severity_amp": 1.167,
+        "recency_amp": 1.137,
+        "gap_level": "unknown",
+        "staleness": "stale",
+        "audit_quality": null,
+        "has_audit_profile": true
+      }
+    },
+    {
+      "ca": "Government of Turkey, Kamu Sertifikasyon Merkezi (Kamu SM)",
+      "population": "active",
+      "distrust_event": null,
+      "signals": {
+        "n": 3,
+        "n_orig": 3,
+        "batches_collapsed": 0,
+        "low_confidence": true,
+        "years": [
+          2017,
+          2019
+        ],
+        "years_active": 2,
+        "self_pct": 0.0,
+        "n_chronic": 0,
+        "n_solo_chronic": 0,
+        "chronic_classes": {},
+        "solo_chronic_classes": {},
+        "chronic_knowledge": {},
+        "avg_knowledge_weight": 1.0,
+        "n_broken_promise": 0,
+        "broken_promise_classes": [],
+        "n_closed_loop": 0,
+        "closed_loop_classes": [],
+        "gov_frac": 0.0,
+        "accel": 2.0,
+        "year_density": 1.5,
+        "chronic_span_avg": 0.0,
+        "severity_score": 0.0625,
+        "recency_score": 0.0,
+        "recent_ap_rate": 0.0,
+        "n_recent": 0,
+        "n_sev5": 0
+      },
+      "scores": {
+        "total": 11.8,
+        "mode_A": 10.2,
+        "mode_B": 3.5,
+        "accel_boost": 1.7,
+        "dominant_mode": "A",
+        "threshold": 41,
+        "flagged": false,
+        "n_solo_chronic": 0,
+        "solo_ratio": 1.0,
+        "ecosystem_factor": 1.0,
+        "avg_knowledge_weight": 1.0,
+        "n_broken_promise": 0,
+        "n_closed_loop": 0,
+        "broken_boost": 1.0,
+        "severity_amp": 1.062,
+        "recency_amp": 1.0,
+        "gap_level": "high",
+        "staleness": "aging",
+        "audit_quality": 100.0,
+        "has_audit_profile": true
+      }
+    },
+    {
+      "ca": "IdenTrust Services, LLC",
+      "population": "active",
+      "distrust_event": null,
+      "signals": {
+        "n": 70,
+        "n_orig": 75,
+        "batches_collapsed": 5,
+        "low_confidence": false,
+        "years": [
+          2017,
+          2026
+        ],
+        "years_active": 10,
+        "self_pct": 80.0,
+        "n_chronic": 8,
+        "n_solo_chronic": 8,
+        "chronic_classes": {
+          "ca-misissuance": [
+            2017,
+            2020,
+            2024,
+            2025,
+            2026
+          ],
+          "ev-misissuance": [
+            2017,
+            2020,
+            2021,
+            2022
+          ],
+          "disclosure-failure": [
+            2017,
+            2019,
+            2020,
+            2023
+          ],
+          "ocsp-failure": [
+            2017,
+            2020,
+            2022,
+            2023,
+            2024,
+            2026
+          ],
+          "ov-misissuance": [
+            2018,
+            2019,
+            2020,
+            2021,
+            2024
+          ],
+          "crl-failure": [
+            2021,
+            2022,
+            2023,
+            2024
+          ],
+          "leaf-revocation-delay": [
+            2021,
+            2022,
+            2023
+          ],
+          "policy-failure": [
+            2023,
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "solo_chronic_classes": {
+          "ca-misissuance": [
+            2017,
+            2020,
+            2024,
+            2025,
+            2026
+          ],
+          "ev-misissuance": [
+            2017,
+            2020,
+            2021,
+            2022
+          ],
+          "disclosure-failure": [
+            2017,
+            2019,
+            2020,
+            2023
+          ],
+          "ocsp-failure": [
+            2020,
+            2022,
+            2023,
+            2024,
+            2026
+          ],
+          "ov-misissuance": [
+            2018,
+            2021,
+            2024
+          ],
+          "crl-failure": [
+            2021,
+            2022,
+            2023,
+            2024
+          ],
+          "leaf-revocation-delay": [
+            2021,
+            2022,
+            2023
+          ],
+          "policy-failure": [
+            2023,
+            2024,
+            2025
+          ]
+        },
+        "chronic_knowledge": {
+          "ca-misissuance": {
+            "prior_cas": 0,
+            "eco_age": 0,
+            "weight": 1.0
+          },
+          "ev-misissuance": {
+            "prior_cas": 1,
+            "eco_age": 1,
+            "weight": 1.006
+          },
+          "disclosure-failure": {
+            "prior_cas": 0,
+            "eco_age": 0,
+            "weight": 1.0
+          },
+          "ocsp-failure": {
+            "prior_cas": 0,
+            "eco_age": 0,
+            "weight": 1.0
+          },
+          "ov-misissuance": {
+            "prior_cas": 24,
+            "eco_age": 4,
+            "weight": 1.5
+          },
+          "crl-failure": {
+            "prior_cas": 7,
+            "eco_age": 4,
+            "weight": 1.175
+          },
+          "leaf-revocation-delay": {
+            "prior_cas": 17,
+            "eco_age": 3,
+            "weight": 1.319
+          },
+          "policy-failure": {
+            "prior_cas": 22,
+            "eco_age": 6,
+            "weight": 1.5
+          }
+        },
+        "avg_knowledge_weight": 1.188,
+        "n_broken_promise": 2,
+        "broken_promise_classes": [
+          "disclosure-failure",
+          "policy-failure"
+        ],
+        "n_closed_loop": 2,
+        "closed_loop_classes": [
+          "ev-misissuance",
+          "leaf-revocation-delay"
+        ],
+        "gov_frac": 0.171,
+        "accel": 2.182,
+        "year_density": 7.0,
+        "chronic_span_avg": 4.38,
+        "severity_score": 0.1812,
+        "recency_score": 0.3239,
+        "recent_ap_rate": 0.4545,
+        "n_recent": 11,
+        "n_sev5": 6
+      },
+      "scores": {
+        "total": 92.1,
+        "mode_A": 24.2,
+        "mode_B": 83.8,
+        "accel_boost": 8.3,
+        "dominant_mode": "B",
+        "threshold": 39,
+        "flagged": true,
+        "n_solo_chronic": 8,
+        "solo_ratio": 1.0,
+        "ecosystem_factor": 1.0,
+        "avg_knowledge_weight": 1.188,
+        "n_broken_promise": 2,
+        "n_closed_loop": 2,
+        "broken_boost": 1.2,
+        "severity_amp": 1.181,
+        "recency_amp": 1.324,
+        "gap_level": "high",
+        "staleness": "aging",
+        "audit_quality": 60.0,
+        "has_audit_profile": true
+      }
+    },
+    {
+      "ca": "Microsec Ltd.",
+      "population": "active",
+      "distrust_event": null,
+      "signals": {
+        "n": 17,
+        "n_orig": 17,
+        "batches_collapsed": 0,
+        "low_confidence": false,
+        "years": [
+          2017,
+          2026
+        ],
+        "years_active": 8,
+        "self_pct": 64.7,
+        "n_chronic": 1,
+        "n_solo_chronic": 0,
+        "chronic_classes": {
+          "ov-misissuance": [
+            2017,
+            2020,
+            2021
+          ]
+        },
+        "solo_chronic_classes": {},
+        "chronic_knowledge": {
+          "ov-misissuance": {
+            "prior_cas": 2,
+            "eco_age": 3,
+            "weight": 1.038
+          }
+        },
+        "avg_knowledge_weight": 1.038,
+        "n_broken_promise": 0,
+        "broken_promise_classes": [],
+        "n_closed_loop": 0,
+        "closed_loop_classes": [],
+        "gov_frac": 0.235,
+        "accel": 1.125,
+        "year_density": 2.12,
+        "chronic_span_avg": 3.0,
+        "severity_score": 0.1434,
+        "recency_score": 0.125,
+        "recent_ap_rate": 0.0,
+        "n_recent": 2,
+        "n_sev5": 0
+      },
+      "scores": {
+        "total": 21.3,
+        "mode_A": 16.5,
+        "mode_B": 20.2,
+        "accel_boost": 1.1,
+        "dominant_mode": "B",
+        "threshold": 43,
+        "flagged": false,
+        "n_solo_chronic": 0,
+        "solo_ratio": 0.0,
+        "ecosystem_factor": 0.85,
+        "avg_knowledge_weight": 1.038,
+        "n_broken_promise": 0,
+        "n_closed_loop": 0,
+        "broken_boost": 1.0,
+        "severity_amp": 1.143,
+        "recency_amp": 1.125,
+        "gap_level": "high",
+        "staleness": "aging",
+        "audit_quality": 70.0,
+        "has_audit_profile": true
+      }
+    },
+    {
+      "ca": "Netlock",
+      "population": "active",
+      "distrust_event": null,
+      "signals": {
+        "n": 39,
+        "n_orig": 39,
+        "batches_collapsed": 0,
+        "low_confidence": false,
+        "years": [
+          2017,
+          2026
+        ],
+        "years_active": 9,
+        "self_pct": 61.5,
+        "n_chronic": 5,
+        "n_solo_chronic": 4,
+        "chronic_classes": {
+          "ov-misissuance": [
+            2017,
+            2018,
+            2023
+          ],
+          "disclosure-failure": [
+            2017,
+            2024,
+            2025
+          ],
+          "policy-failure": [
+            2019,
+            2024,
+            2025,
+            2026
+          ],
+          "leaf-revocation-delay": [
+            2021,
+            2023,
+            2024,
+            2025
+          ],
+          "crl-failure": [
+            2023,
+            2024,
+            2026
+          ]
+        },
+        "solo_chronic_classes": {
+          "disclosure-failure": [
+            2017,
+            2024,
+            2025
+          ],
+          "policy-failure": [
+            2019,
+            2024,
+            2025,
+            2026
+          ],
+          "leaf-revocation-delay": [
+            2021,
+            2023,
+            2024,
+            2025
+          ],
+          "crl-failure": [
+            2023,
+            2024,
+            2026
+          ]
+        },
+        "chronic_knowledge": {
+          "ov-misissuance": {
+            "prior_cas": 2,
+            "eco_age": 3,
+            "weight": 1.038
+          },
+          "disclosure-failure": {
+            "prior_cas": 0,
+            "eco_age": 0,
+            "weight": 1.0
+          },
+          "policy-failure": {
+            "prior_cas": 3,
+            "eco_age": 2,
+            "weight": 1.038
+          },
+          "leaf-revocation-delay": {
+            "prior_cas": 17,
+            "eco_age": 3,
+            "weight": 1.319
+          },
+          "crl-failure": {
+            "prior_cas": 21,
+            "eco_age": 6,
+            "weight": 1.5
+          }
+        },
+        "avg_knowledge_weight": 1.179,
+        "n_broken_promise": 0,
+        "broken_promise_classes": [],
+        "n_closed_loop": 1,
+        "closed_loop_classes": [
+          "ov-misissuance"
+        ],
+        "gov_frac": 0.41,
+        "accel": 2.667,
+        "year_density": 4.33,
+        "chronic_span_avg": 3.4,
+        "severity_score": 0.1827,
+        "recency_score": 0.2014,
+        "recent_ap_rate": 0.3333,
+        "n_recent": 9,
+        "n_sev5": 1
+      },
+      "scores": {
+        "total": 69.0,
+        "mode_A": 37.3,
+        "mode_B": 59.6,
+        "accel_boost": 9.4,
+        "dominant_mode": "B",
+        "threshold": 36,
+        "flagged": true,
+        "n_solo_chronic": 4,
+        "solo_ratio": 0.8,
+        "ecosystem_factor": 0.97,
+        "avg_knowledge_weight": 1.179,
+        "n_broken_promise": 0,
+        "n_closed_loop": 1,
+        "broken_boost": 1.0,
+        "severity_amp": 1.183,
+        "recency_amp": 1.201,
+        "gap_level": "high",
+        "staleness": "aging",
+        "audit_quality": 100.0,
+        "has_audit_profile": true
+      }
+    },
+    {
+      "ca": "SECOM Trust Systems CO., LTD.",
+      "population": "active",
+      "distrust_event": null,
+      "signals": {
+        "n": 36,
+        "n_orig": 36,
+        "batches_collapsed": 0,
+        "low_confidence": false,
+        "years": [
+          2017,
+          2026
+        ],
+        "years_active": 9,
+        "self_pct": 52.8,
+        "n_chronic": 3,
+        "n_solo_chronic": 2,
+        "chronic_classes": {
+          "ov-misissuance": [
+            2017,
+            2019,
+            2021,
+            2024,
+            2025
+          ],
+          "disclosure-failure": [
+            2018,
+            2019,
+            2026
+          ],
+          "policy-failure": [
+            2021,
+            2022,
+            2026
+          ]
+        },
+        "solo_chronic_classes": {
+          "ov-misissuance": [
+            2021,
+            2024,
+            2025
+          ],
+          "disclosure-failure": [
+            2018,
+            2019,
+            2026
+          ]
+        },
+        "chronic_knowledge": {
+          "ov-misissuance": {
+            "prior_cas": 2,
+            "eco_age": 3,
+            "weight": 1.038
+          },
+          "disclosure-failure": {
+            "prior_cas": 8,
+            "eco_age": 1,
+            "weight": 1.05
+          },
+          "policy-failure": {
+            "prior_cas": 10,
+            "eco_age": 4,
+            "weight": 1.25
+          }
+        },
+        "avg_knowledge_weight": 1.113,
+        "n_broken_promise": 2,
+        "broken_promise_classes": [
+          "disclosure-failure",
+          "policy-failure"
+        ],
+        "n_closed_loop": 0,
+        "closed_loop_classes": [],
+        "gov_frac": 0.222,
+        "accel": 1.0,
+        "year_density": 4.0,
+        "chronic_span_avg": 3.67,
+        "severity_score": 0.1788,
+        "recency_score": 0.25,
+        "recent_ap_rate": 0.0,
+        "n_recent": 7,
+        "n_sev5": 2
+      },
+      "scores": {
+        "total": 50.9,
+        "mode_A": 17.5,
+        "mode_B": 50.9,
+        "accel_boost": 0.0,
+        "dominant_mode": "B",
+        "threshold": 39,
+        "flagged": true,
+        "n_solo_chronic": 2,
+        "solo_ratio": 0.67,
+        "ecosystem_factor": 0.95,
+        "avg_knowledge_weight": 1.113,
+        "n_broken_promise": 2,
+        "n_closed_loop": 0,
+        "broken_boost": 1.2,
+        "severity_amp": 1.179,
+        "recency_amp": 1.25,
+        "gap_level": "—",
+        "staleness": "—",
+        "audit_quality": null,
+        "has_audit_profile": false
+      }
+    },
+    {
+      "ca": "Taiwan-CA Inc. (TWCA)",
+      "population": "active",
+      "distrust_event": null,
+      "signals": {
+        "n": 15,
+        "n_orig": 15,
+        "batches_collapsed": 0,
+        "low_confidence": false,
+        "years": [
+          2017,
+          2025
+        ],
+        "years_active": 8,
+        "self_pct": 60.0,
+        "n_chronic": 1,
+        "n_solo_chronic": 0,
+        "chronic_classes": {
+          "ov-misissuance": [
+            2019,
+            2020,
+            2021,
+            2024
+          ]
+        },
+        "solo_chronic_classes": {},
+        "chronic_knowledge": {
+          "ov-misissuance": {
+            "prior_cas": 31,
+            "eco_age": 5,
+            "weight": 1.5
+          }
+        },
+        "avg_knowledge_weight": 1.5,
+        "n_broken_promise": 0,
+        "broken_promise_classes": [],
+        "n_closed_loop": 0,
+        "closed_loop_classes": [],
+        "gov_frac": 0.133,
+        "accel": 1.5,
+        "year_density": 1.88,
+        "chronic_span_avg": 4.0,
+        "severity_score": 0.1833,
+        "recency_score": 0.25,
+        "recent_ap_rate": 0.0,
+        "n_recent": 1,
+        "n_sev5": 1
+      },
+      "scores": {
+        "total": 27.1,
+        "mode_A": 22.1,
+        "mode_B": 23.1,
+        "accel_boost": 4.1,
+        "dominant_mode": "B",
+        "threshold": 42,
+        "flagged": false,
+        "n_solo_chronic": 0,
+        "solo_ratio": 0.0,
+        "ecosystem_factor": 0.85,
+        "avg_knowledge_weight": 1.5,
+        "n_broken_promise": 0,
+        "n_closed_loop": 0,
+        "broken_boost": 1.0,
+        "severity_amp": 1.183,
+        "recency_amp": 1.25,
+        "gap_level": "high",
+        "staleness": "current",
+        "audit_quality": 62.5,
+        "has_audit_profile": true
+      }
+    },
+    {
+      "ca": "Deutsche Telekom Security GmbH",
+      "population": "active",
+      "distrust_event": null,
+      "signals": {
+        "n": 29,
+        "n_orig": 29,
+        "batches_collapsed": 0,
+        "low_confidence": false,
+        "years": [
+          2017,
+          2025
+        ],
+        "years_active": 8,
+        "self_pct": 48.3,
+        "n_chronic": 1,
+        "n_solo_chronic": 0,
+        "chronic_classes": {
+          "ov-misissuance": [
+            2017,
+            2019,
+            2020,
+            2021,
+            2024
+          ]
+        },
+        "solo_chronic_classes": {},
+        "chronic_knowledge": {
+          "ov-misissuance": {
+            "prior_cas": 2,
+            "eco_age": 3,
+            "weight": 1.038
+          }
+        },
+        "avg_knowledge_weight": 1.038,
+        "n_broken_promise": 0,
+        "broken_promise_classes": [],
+        "n_closed_loop": 0,
+        "closed_loop_classes": [],
+        "gov_frac": 0.103,
+        "accel": 0.526,
+        "year_density": 3.62,
+        "chronic_span_avg": 5.0,
+        "severity_score": 0.0927,
+        "recency_score": 0.25,
+        "recent_ap_rate": 0.0,
+        "n_recent": 2,
+        "n_sev5": 0
+      },
+      "scores": {
+        "total": 26.1,
+        "mode_A": 17.1,
+        "mode_B": 26.1,
+        "accel_boost": 0.0,
+        "dominant_mode": "B",
+        "threshold": 41,
+        "flagged": false,
+        "n_solo_chronic": 0,
+        "solo_ratio": 0.0,
+        "ecosystem_factor": 0.85,
+        "avg_knowledge_weight": 1.038,
+        "n_broken_promise": 0,
+        "n_closed_loop": 0,
+        "broken_boost": 1.0,
+        "severity_amp": 1.093,
+        "recency_amp": 1.25,
+        "gap_level": "high",
+        "staleness": "stale",
+        "audit_quality": 65.0,
+        "has_audit_profile": true
+      }
+    },
+    {
+      "ca": "Visa",
+      "population": "active",
+      "distrust_event": null,
+      "signals": {
+        "n": 3,
+        "n_orig": 3,
+        "batches_collapsed": 0,
+        "low_confidence": true,
+        "years": [
+          2017,
+          2018
+        ],
+        "years_active": 2,
+        "self_pct": 0.0,
+        "n_chronic": 0,
+        "n_solo_chronic": 0,
+        "chronic_classes": {},
+        "solo_chronic_classes": {},
+        "chronic_knowledge": {},
+        "avg_knowledge_weight": 1.0,
+        "n_broken_promise": 0,
+        "broken_promise_classes": [],
+        "n_closed_loop": 0,
+        "closed_loop_classes": [],
+        "gov_frac": 0.0,
+        "accel": 0.5,
+        "year_density": 1.5,
+        "chronic_span_avg": 0.0,
+        "severity_score": 0.0833,
+        "recency_score": 0.0,
+        "recent_ap_rate": 0.0,
+        "n_recent": 0,
+        "n_sev5": 0
+      },
+      "scores": {
+        "total": 6.0,
+        "mode_A": 6.0,
+        "mode_B": 3.5,
+        "accel_boost": 0.0,
+        "dominant_mode": "A",
+        "threshold": 41,
+        "flagged": false,
+        "n_solo_chronic": 0,
+        "solo_ratio": 1.0,
+        "ecosystem_factor": 1.0,
+        "avg_knowledge_weight": 1.0,
+        "n_broken_promise": 0,
+        "n_closed_loop": 0,
+        "broken_boost": 1.0,
+        "severity_amp": 1.083,
+        "recency_amp": 1.0,
+        "gap_level": "high",
+        "staleness": "stale",
+        "audit_quality": 60.0,
+        "has_audit_profile": true
+      }
+    },
+    {
+      "ca": "WISeKey",
+      "population": "active",
+      "distrust_event": null,
+      "signals": {
+        "n": 16,
+        "n_orig": 16,
+        "batches_collapsed": 0,
+        "low_confidence": false,
+        "years": [
+          2017,
+          2025
+        ],
+        "years_active": 8,
+        "self_pct": 68.8,
+        "n_chronic": 2,
+        "n_solo_chronic": 0,
+        "chronic_classes": {
+          "ov-misissuance": [
+            2017,
+            2020,
+            2022
+          ],
+          "ocsp-failure": [
+            2020,
+            2022,
+            2024
+          ]
+        },
+        "solo_chronic_classes": {},
+        "chronic_knowledge": {
+          "ov-misissuance": {
+            "prior_cas": 2,
+            "eco_age": 3,
+            "weight": 1.038
+          },
+          "ocsp-failure": {
+            "prior_cas": 25,
+            "eco_age": 3,
+            "weight": 1.375
+          }
+        },
+        "avg_knowledge_weight": 1.207,
+        "n_broken_promise": 0,
+        "broken_promise_classes": [],
+        "n_closed_loop": 0,
+        "closed_loop_classes": [],
+        "gov_frac": 0.062,
+        "accel": 0.6,
+        "year_density": 2.0,
+        "chronic_span_avg": 3.0,
+        "severity_score": 0.0977,
+        "recency_score": 0.0,
+        "recent_ap_rate": 0.0,
+        "n_recent": 0,
+        "n_sev5": 0
+      },
+      "scores": {
+        "total": 26.7,
+        "mode_A": 10.3,
+        "mode_B": 26.7,
+        "accel_boost": 0.0,
+        "dominant_mode": "B",
+        "threshold": 39,
+        "flagged": false,
+        "n_solo_chronic": 0,
+        "solo_ratio": 0.0,
+        "ecosystem_factor": 0.85,
+        "avg_knowledge_weight": 1.207,
+        "n_broken_promise": 0,
+        "n_closed_loop": 0,
+        "broken_boost": 1.0,
+        "severity_amp": 1.098,
+        "recency_amp": 1.0,
+        "gap_level": "—",
+        "staleness": "—",
+        "audit_quality": null,
+        "has_audit_profile": false
+      }
+    },
+    {
+      "ca": "Government of The Netherlands, PKIoverheid (Logius)",
+      "population": "active",
+      "distrust_event": null,
+      "signals": {
+        "n": 23,
+        "n_orig": 45,
+        "batches_collapsed": 22,
+        "low_confidence": false,
+        "years": [
+          2017,
+          2025
+        ],
+        "years_active": 7,
+        "self_pct": 43.5,
+        "n_chronic": 3,
+        "n_solo_chronic": 2,
+        "chronic_classes": {
+          "ov-misissuance": [
+            2017,
+            2019,
+            2021
+          ],
+          "policy-failure": [
+            2019,
+            2020,
+            2021
+          ],
+          "audit-delay": [
+            2020,
+            2023,
+            2024
+          ]
+        },
+        "solo_chronic_classes": {
+          "policy-failure": [
+            2019,
+            2020,
+            2021
+          ],
+          "audit-delay": [
+            2020,
+            2023,
+            2024
+          ]
+        },
+        "chronic_knowledge": {
+          "ov-misissuance": {
+            "prior_cas": 2,
+            "eco_age": 3,
+            "weight": 1.038
+          },
+          "policy-failure": {
+            "prior_cas": 3,
+            "eco_age": 2,
+            "weight": 1.038
+          },
+          "audit-delay": {
+            "prior_cas": 3,
+            "eco_age": 3,
+            "weight": 1.056
+          }
+        },
+        "avg_knowledge_weight": 1.044,
+        "n_broken_promise": 1,
+        "broken_promise_classes": [
+          "policy-failure"
+        ],
+        "n_closed_loop": 1,
+        "closed_loop_classes": [
+          "ov-misissuance"
+        ],
+        "gov_frac": 0.13,
+        "accel": 0.4,
+        "year_density": 3.29,
+        "chronic_span_avg": 3.0,
+        "severity_score": 0.1793,
+        "recency_score": 0.125,
+        "recent_ap_rate": 0.3333,
+        "n_recent": 3,
+        "n_sev5": 0
+      },
+      "scores": {
+        "total": 33.9,
+        "mode_A": 18.9,
+        "mode_B": 33.9,
+        "accel_boost": 0.0,
+        "dominant_mode": "B",
+        "threshold": 44,
+        "flagged": false,
+        "n_solo_chronic": 2,
+        "solo_ratio": 0.67,
+        "ecosystem_factor": 0.95,
+        "avg_knowledge_weight": 1.044,
+        "n_broken_promise": 1,
+        "n_closed_loop": 1,
+        "broken_boost": 1.1,
+        "severity_amp": 1.179,
+        "recency_amp": 1.125,
+        "gap_level": "high",
+        "staleness": "current",
+        "audit_quality": 37.5,
+        "has_audit_profile": true
+      }
+    },
+    {
+      "ca": "Amazon Trust Services",
+      "population": "active",
+      "distrust_event": null,
+      "signals": {
+        "n": 16,
+        "n_orig": 16,
+        "batches_collapsed": 0,
+        "low_confidence": false,
+        "years": [
+          2017,
+          2026
+        ],
+        "years_active": 7,
+        "self_pct": 50.0,
+        "n_chronic": 1,
+        "n_solo_chronic": 1,
+        "chronic_classes": {
+          "dv-misissuance": [
+            2017,
+            2019,
+            2021
+          ]
+        },
+        "solo_chronic_classes": {
+          "dv-misissuance": [
+            2017,
+            2019,
+            2021
+          ]
+        },
+        "chronic_knowledge": {
+          "dv-misissuance": {
+            "prior_cas": 1,
+            "eco_age": 1,
+            "weight": 1.006
+          }
+        },
+        "avg_knowledge_weight": 1.006,
+        "n_broken_promise": 0,
+        "broken_promise_classes": [],
+        "n_closed_loop": 0,
+        "closed_loop_classes": [],
+        "gov_frac": 0.188,
+        "accel": 1.25,
+        "year_density": 2.29,
+        "chronic_span_avg": 3.0,
+        "severity_score": 0.2266,
+        "recency_score": 0.25,
+        "recent_ap_rate": 1.0,
+        "n_recent": 1,
+        "n_sev5": 1
+      },
+      "scores": {
+        "total": 24.5,
+        "mode_A": 22.3,
+        "mode_B": 22.0,
+        "accel_boost": 2.2,
+        "dominant_mode": "A",
+        "threshold": 39,
+        "flagged": false,
+        "n_solo_chronic": 1,
+        "solo_ratio": 1.0,
+        "ecosystem_factor": 1.0,
+        "avg_knowledge_weight": 1.006,
+        "n_broken_promise": 0,
+        "n_closed_loop": 0,
+        "broken_boost": 1.0,
+        "severity_amp": 1.227,
+        "recency_amp": 1.25,
+        "gap_level": "high",
+        "staleness": "current",
+        "audit_quality": 75.0,
+        "has_audit_profile": true
+      }
+    },
+    {
+      "ca": "Asseco Data Systems S.A.",
+      "population": "active",
+      "distrust_event": null,
+      "signals": {
+        "n": 47,
+        "n_orig": 47,
+        "batches_collapsed": 0,
+        "low_confidence": false,
+        "years": [
+          2017,
+          2026
+        ],
+        "years_active": 9,
+        "self_pct": 53.2,
+        "n_chronic": 5,
+        "n_solo_chronic": 4,
+        "chronic_classes": {
+          "leaf-revocation-delay": [
+            2018,
+            2020,
+            2023,
+            2026
+          ],
+          "ev-misissuance": [
+            2018,
+            2019,
+            2021,
+            2023
+          ],
+          "ov-misissuance": [
+            2018,
+            2019,
+            2020,
+            2021
+          ],
+          "disclosure-failure": [
+            2019,
+            2020,
+            2025
+          ],
+          "smime-misissuance": [
+            2023,
+            2024,
+            2026
+          ]
+        },
+        "solo_chronic_classes": {
+          "leaf-revocation-delay": [
+            2018,
+            2020,
+            2023,
+            2026
+          ],
+          "ev-misissuance": [
+            2018,
+            2019,
+            2021,
+            2023
+          ],
+          "disclosure-failure": [
+            2019,
+            2020,
+            2025
+          ],
+          "smime-misissuance": [
+            2023,
+            2024,
+            2026
+          ]
+        },
+        "chronic_knowledge": {
+          "leaf-revocation-delay": {
+            "prior_cas": 0,
+            "eco_age": 0,
+            "weight": 1.0
+          },
+          "ev-misissuance": {
+            "prior_cas": 11,
+            "eco_age": 2,
+            "weight": 1.137
+          },
+          "ov-misissuance": {
+            "prior_cas": 24,
+            "eco_age": 4,
+            "weight": 1.5
+          },
+          "disclosure-failure": {
+            "prior_cas": 21,
+            "eco_age": 2,
+            "weight": 1.25
+          },
+          "smime-misissuance": {
+            "prior_cas": 0,
+            "eco_age": 0,
+            "weight": 1.0
+          }
+        },
+        "avg_knowledge_weight": 1.177,
+        "n_broken_promise": 1,
+        "broken_promise_classes": [
+          "disclosure-failure"
+        ],
+        "n_closed_loop": 2,
+        "closed_loop_classes": [
+          "ev-misissuance",
+          "ov-misissuance"
+        ],
+        "gov_frac": 0.128,
+        "accel": 0.835,
+        "year_density": 5.22,
+        "chronic_span_avg": 3.6,
+        "severity_score": 0.1941,
+        "recency_score": 0.1094,
+        "recent_ap_rate": 0.0,
+        "n_recent": 4,
+        "n_sev5": 3
+      },
+      "scores": {
+        "total": 52.3,
+        "mode_A": 16.0,
+        "mode_B": 52.3,
+        "accel_boost": 0.0,
+        "dominant_mode": "B",
+        "threshold": 37,
+        "flagged": true,
+        "n_solo_chronic": 4,
+        "solo_ratio": 0.8,
+        "ecosystem_factor": 0.97,
+        "avg_knowledge_weight": 1.177,
+        "n_broken_promise": 1,
+        "n_closed_loop": 2,
+        "broken_boost": 1.1,
+        "severity_amp": 1.194,
+        "recency_amp": 1.109,
+        "gap_level": "high",
+        "staleness": "current",
+        "audit_quality": 62.5,
+        "has_audit_profile": true
+      }
+    },
+    {
+      "ca": "Microsoft Corporation",
+      "population": "active",
+      "distrust_event": null,
+      "signals": {
+        "n": 48,
+        "n_orig": 51,
+        "batches_collapsed": 3,
+        "low_confidence": false,
+        "years": [
+          2017,
+          2026
+        ],
+        "years_active": 9,
+        "self_pct": 45.8,
+        "n_chronic": 7,
+        "n_solo_chronic": 6,
+        "chronic_classes": {
+          "ca-misissuance": [
+            2019,
+            2020,
+            2021,
+            2025
+          ],
+          "policy-failure": [
+            2019,
+            2020,
+            2021,
+            2023,
+            2024,
+            2025,
+            2026
+          ],
+          "ocsp-failure": [
+            2020,
+            2022,
+            2024,
+            2025
+          ],
+          "ov-misissuance": [
+            2020,
+            2021,
+            2025
+          ],
+          "disclosure-failure": [
+            2021,
+            2023,
+            2026
+          ],
+          "crl-failure": [
+            2021,
+            2023,
+            2025
+          ],
+          "external": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "solo_chronic_classes": {
+          "ca-misissuance": [
+            2019,
+            2020,
+            2021,
+            2025
+          ],
+          "policy-failure": [
+            2019,
+            2020,
+            2021,
+            2023,
+            2024,
+            2025,
+            2026
+          ],
+          "ocsp-failure": [
+            2020,
+            2022,
+            2024,
+            2025
+          ],
+          "disclosure-failure": [
+            2021,
+            2023,
+            2026
+          ],
+          "crl-failure": [
+            2021,
+            2023,
+            2025
+          ],
+          "external": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "chronic_knowledge": {
+          "ca-misissuance": {
+            "prior_cas": 5,
+            "eco_age": 2,
+            "weight": 1.062
+          },
+          "policy-failure": {
+            "prior_cas": 3,
+            "eco_age": 2,
+            "weight": 1.038
+          },
+          "ocsp-failure": {
+            "prior_cas": 25,
+            "eco_age": 3,
+            "weight": 1.375
+          },
+          "ov-misissuance": {
+            "prior_cas": 44,
+            "eco_age": 6,
+            "weight": 1.5
+          },
+          "disclosure-failure": {
+            "prior_cas": 29,
+            "eco_age": 4,
+            "weight": 1.5
+          },
+          "crl-failure": {
+            "prior_cas": 7,
+            "eco_age": 4,
+            "weight": 1.175
+          },
+          "external": {
+            "prior_cas": 2,
+            "eco_age": 1,
+            "weight": 1.012
+          }
+        },
+        "avg_knowledge_weight": 1.237,
+        "n_broken_promise": 2,
+        "broken_promise_classes": [
+          "policy-failure",
+          "disclosure-failure"
+        ],
+        "n_closed_loop": 0,
+        "closed_loop_classes": [],
+        "gov_frac": 0.438,
+        "accel": 1.029,
+        "year_density": 5.33,
+        "chronic_span_avg": 3.86,
+        "severity_score": 0.2617,
+        "recency_score": 0.2208,
+        "recent_ap_rate": 0.2,
+        "n_recent": 15,
+        "n_sev5": 6
+      },
+      "scores": {
+        "total": 88.9,
+        "mode_A": 23.4,
+        "mode_B": 88.6,
+        "accel_boost": 0.3,
+        "dominant_mode": "B",
+        "threshold": 43,
+        "flagged": true,
+        "n_solo_chronic": 6,
+        "solo_ratio": 0.86,
+        "ecosystem_factor": 0.98,
+        "avg_knowledge_weight": 1.237,
+        "n_broken_promise": 2,
+        "n_closed_loop": 0,
+        "broken_boost": 1.2,
+        "severity_amp": 1.262,
+        "recency_amp": 1.221,
+        "gap_level": "high",
+        "staleness": "stale",
+        "audit_quality": 60.0,
+        "has_audit_profile": true
+      }
+    },
+    {
+      "ca": "Telia Company",
+      "population": "active",
+      "distrust_event": null,
+      "signals": {
+        "n": 34,
+        "n_orig": 37,
+        "batches_collapsed": 3,
+        "low_confidence": false,
+        "years": [
+          2017,
+          2026
+        ],
+        "years_active": 9,
+        "self_pct": 73.5,
+        "n_chronic": 3,
+        "n_solo_chronic": 3,
+        "chronic_classes": {
+          "disclosure-failure": [
+            2018,
+            2019,
+            2026
+          ],
+          "ov-misissuance": [
+            2019,
+            2020,
+            2021,
+            2023,
+            2024,
+            2025
+          ],
+          "smime-misissuance": [
+            2023,
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "solo_chronic_classes": {
+          "disclosure-failure": [
+            2018,
+            2019,
+            2026
+          ],
+          "ov-misissuance": [
+            2020,
+            2021,
+            2023,
+            2024,
+            2025
+          ],
+          "smime-misissuance": [
+            2023,
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "chronic_knowledge": {
+          "disclosure-failure": {
+            "prior_cas": 8,
+            "eco_age": 1,
+            "weight": 1.05
+          },
+          "ov-misissuance": {
+            "prior_cas": 31,
+            "eco_age": 5,
+            "weight": 1.5
+          },
+          "smime-misissuance": {
+            "prior_cas": 0,
+            "eco_age": 0,
+            "weight": 1.0
+          }
+        },
+        "avg_knowledge_weight": 1.183,
+        "n_broken_promise": 1,
+        "broken_promise_classes": [
+          "disclosure-failure"
+        ],
+        "n_closed_loop": 0,
+        "closed_loop_classes": [],
+        "gov_frac": 0.118,
+        "accel": 1.143,
+        "year_density": 3.78,
+        "chronic_span_avg": 4.33,
+        "severity_score": 0.1066,
+        "recency_score": 0.1354,
+        "recent_ap_rate": 0.0,
+        "n_recent": 6,
+        "n_sev5": 0
+      },
+      "scores": {
+        "total": 50.4,
+        "mode_A": 12.4,
+        "mode_B": 49.2,
+        "accel_boost": 1.2,
+        "dominant_mode": "B",
+        "threshold": 44,
+        "flagged": true,
+        "n_solo_chronic": 3,
+        "solo_ratio": 1.0,
+        "ecosystem_factor": 1.0,
+        "avg_knowledge_weight": 1.183,
+        "n_broken_promise": 1,
+        "n_closed_loop": 0,
+        "broken_boost": 1.1,
+        "severity_amp": 1.107,
+        "recency_amp": 1.135,
+        "gap_level": "high",
+        "staleness": "aging",
+        "audit_quality": 77.5,
+        "has_audit_profile": true
+      }
+    },
+    {
+      "ca": "Government of Spain, Autoritat de Certificació de la Comunitat Valenciana (ACCV)",
+      "population": "active",
+      "distrust_event": null,
+      "signals": {
+        "n": 7,
+        "n_orig": 7,
+        "batches_collapsed": 0,
+        "low_confidence": true,
+        "years": [
+          2018,
+          2024
+        ],
+        "years_active": 3,
+        "self_pct": 71.4,
+        "n_chronic": 0,
+        "n_solo_chronic": 0,
+        "chronic_classes": {},
+        "solo_chronic_classes": {},
+        "chronic_knowledge": {},
+        "avg_knowledge_weight": 1.0,
+        "n_broken_promise": 0,
+        "broken_promise_classes": [],
+        "n_closed_loop": 0,
+        "closed_loop_classes": [],
+        "gov_frac": 0.286,
+        "accel": 1.25,
+        "year_density": 2.33,
+        "chronic_span_avg": 0.0,
+        "severity_score": 0.1339,
+        "recency_score": 0.0,
+        "recent_ap_rate": 0.0,
+        "n_recent": 0,
+        "n_sev5": 0
+      },
+      "scores": {
+        "total": 12.7,
+        "mode_A": 11.4,
+        "mode_B": 10.2,
+        "accel_boost": 1.2,
+        "dominant_mode": "A",
+        "threshold": 46,
+        "flagged": false,
+        "n_solo_chronic": 0,
+        "solo_ratio": 1.0,
+        "ecosystem_factor": 1.0,
+        "avg_knowledge_weight": 1.0,
+        "n_broken_promise": 0,
+        "n_closed_loop": 0,
+        "broken_boost": 1.0,
+        "severity_amp": 1.134,
+        "recency_amp": 1.0,
+        "gap_level": "high",
+        "staleness": "stale",
+        "audit_quality": 50.0,
+        "has_audit_profile": true
+      }
+    },
+    {
+      "ca": "Cybertrust Japan Co., Ltd.",
+      "population": "active",
+      "distrust_event": null,
+      "signals": {
+        "n": 3,
+        "n_orig": 3,
+        "batches_collapsed": 0,
+        "low_confidence": true,
+        "years": [
+          2018,
+          2023
+        ],
+        "years_active": 3,
+        "self_pct": 33.3,
+        "n_chronic": 0,
+        "n_solo_chronic": 0,
+        "chronic_classes": {},
+        "solo_chronic_classes": {},
+        "chronic_knowledge": {},
+        "avg_knowledge_weight": 1.0,
+        "n_broken_promise": 0,
+        "broken_promise_classes": [],
+        "n_closed_loop": 0,
+        "closed_loop_classes": [],
+        "gov_frac": 0.0,
+        "accel": 1.0,
+        "year_density": 1.0,
+        "chronic_span_avg": 0.0,
+        "severity_score": 0.0417,
+        "recency_score": 0.0,
+        "recent_ap_rate": 0.0,
+        "n_recent": 0,
+        "n_sev5": 0
+      },
+      "scores": {
+        "total": 4.0,
+        "mode_A": 4.0,
+        "mode_B": 0.0,
+        "accel_boost": 0.0,
+        "dominant_mode": "A",
+        "threshold": 44,
+        "flagged": false,
+        "n_solo_chronic": 0,
+        "solo_ratio": 1.0,
+        "ecosystem_factor": 1.0,
+        "avg_knowledge_weight": 1.0,
+        "n_broken_promise": 0,
+        "n_closed_loop": 0,
+        "broken_boost": 1.0,
+        "severity_amp": 1.042,
+        "recency_amp": 1.0,
+        "gap_level": "—",
+        "staleness": "—",
+        "audit_quality": null,
+        "has_audit_profile": false
+      }
+    },
+    {
+      "ca": "Global Digital Cybersecurity Authority Co., Ltd. (Formerly Guang Dong Certificate Authority (GDCA))",
+      "population": "active",
+      "distrust_event": null,
+      "signals": {
+        "n": 9,
+        "n_orig": 9,
+        "batches_collapsed": 0,
+        "low_confidence": true,
+        "years": [
+          2018,
+          2024
+        ],
+        "years_active": 5,
+        "self_pct": 77.8,
+        "n_chronic": 0,
+        "n_solo_chronic": 0,
+        "chronic_classes": {},
+        "solo_chronic_classes": {},
+        "chronic_knowledge": {},
+        "avg_knowledge_weight": 1.0,
+        "n_broken_promise": 0,
+        "broken_promise_classes": [],
+        "n_closed_loop": 0,
+        "closed_loop_classes": [],
+        "gov_frac": 0.0,
+        "accel": 0.833,
+        "year_density": 1.8,
+        "chronic_span_avg": 0.0,
+        "severity_score": 0.0556,
+        "recency_score": 0.0,
+        "recent_ap_rate": 0.0,
+        "n_recent": 0,
+        "n_sev5": 0
+      },
+      "scores": {
+        "total": 5.1,
+        "mode_A": 4.0,
+        "mode_B": 5.1,
+        "accel_boost": 0.0,
+        "dominant_mode": "B",
+        "threshold": 47,
+        "flagged": false,
+        "n_solo_chronic": 0,
+        "solo_ratio": 1.0,
+        "ecosystem_factor": 1.0,
+        "avg_knowledge_weight": 1.0,
+        "n_broken_promise": 0,
+        "n_closed_loop": 0,
+        "broken_boost": 1.0,
+        "severity_amp": 1.056,
+        "recency_amp": 1.0,
+        "gap_level": "high",
+        "staleness": "stale",
+        "audit_quality": 68.8,
+        "has_audit_profile": true
+      }
+    },
+    {
+      "ca": "Krajowa Izba Rozliczeniowa S.A. (KIR)",
+      "population": "active",
+      "distrust_event": null,
+      "signals": {
+        "n": 19,
+        "n_orig": 19,
+        "batches_collapsed": 0,
+        "low_confidence": false,
+        "years": [
+          2018,
+          2025
+        ],
+        "years_active": 5,
+        "self_pct": 0.0,
+        "n_chronic": 1,
+        "n_solo_chronic": 0,
+        "chronic_classes": {
+          "ov-misissuance": [
+            2018,
+            2019,
+            2021
+          ]
+        },
+        "solo_chronic_classes": {},
+        "chronic_knowledge": {
+          "ov-misissuance": {
+            "prior_cas": 24,
+            "eco_age": 4,
+            "weight": 1.5
+          }
+        },
+        "avg_knowledge_weight": 1.5,
+        "n_broken_promise": 0,
+        "broken_promise_classes": [],
+        "n_closed_loop": 0,
+        "closed_loop_classes": [],
+        "gov_frac": 0.211,
+        "accel": 3.556,
+        "year_density": 3.8,
+        "chronic_span_avg": 3.0,
+        "severity_score": 0.2204,
+        "recency_score": 0.25,
+        "recent_ap_rate": 0.0,
+        "n_recent": 2,
+        "n_sev5": 2
+      },
+      "scores": {
+        "total": 71.2,
+        "mode_A": 58.5,
+        "mode_B": 28.9,
+        "accel_boost": 12.7,
+        "dominant_mode": "A",
+        "threshold": 35,
+        "flagged": true,
+        "n_solo_chronic": 0,
+        "solo_ratio": 0.0,
+        "ecosystem_factor": 0.85,
+        "avg_knowledge_weight": 1.5,
+        "n_broken_promise": 0,
+        "n_closed_loop": 0,
+        "broken_boost": 1.0,
+        "severity_amp": 1.22,
+        "recency_amp": 1.25,
+        "gap_level": "high",
+        "staleness": "stale",
+        "audit_quality": 43.8,
+        "has_audit_profile": true
+      }
+    },
+    {
+      "ca": "Government of Spain, Fábrica Nacional de Moneda y Timbre (FNMT)",
+      "population": "active",
+      "distrust_event": null,
+      "signals": {
+        "n": 17,
+        "n_orig": 17,
+        "batches_collapsed": 0,
+        "low_confidence": false,
+        "years": [
+          2018,
+          2026
+        ],
+        "years_active": 8,
+        "self_pct": 76.5,
+        "n_chronic": 3,
+        "n_solo_chronic": 2,
+        "chronic_classes": {
+          "ov-misissuance": [
+            2018,
+            2021,
+            2024
+          ],
+          "policy-failure": [
+            2019,
+            2025,
+            2026
+          ],
+          "ev-misissuance": [
+            2021,
+            2024,
+            2026
+          ]
+        },
+        "solo_chronic_classes": {
+          "ov-misissuance": [
+            2018,
+            2021,
+            2024
+          ],
+          "ev-misissuance": [
+            2021,
+            2024,
+            2026
+          ]
+        },
+        "chronic_knowledge": {
+          "ov-misissuance": {
+            "prior_cas": 24,
+            "eco_age": 4,
+            "weight": 1.5
+          },
+          "policy-failure": {
+            "prior_cas": 3,
+            "eco_age": 2,
+            "weight": 1.038
+          },
+          "ev-misissuance": {
+            "prior_cas": 30,
+            "eco_age": 5,
+            "weight": 1.5
+          }
+        },
+        "avg_knowledge_weight": 1.346,
+        "n_broken_promise": 0,
+        "broken_promise_classes": [],
+        "n_closed_loop": 0,
+        "closed_loop_classes": [],
+        "gov_frac": 0.294,
+        "accel": 0.889,
+        "year_density": 2.12,
+        "chronic_span_avg": 3.0,
+        "severity_score": 0.114,
+        "recency_score": 0.1875,
+        "recent_ap_rate": 0.0,
+        "n_recent": 3,
+        "n_sev5": 0
+      },
+      "scores": {
+        "total": 43.7,
+        "mode_A": 11.5,
+        "mode_B": 43.7,
+        "accel_boost": 0.0,
+        "dominant_mode": "B",
+        "threshold": 42,
+        "flagged": true,
+        "n_solo_chronic": 2,
+        "solo_ratio": 0.67,
+        "ecosystem_factor": 0.95,
+        "avg_knowledge_weight": 1.346,
+        "n_broken_promise": 0,
+        "n_closed_loop": 0,
+        "broken_boost": 1.0,
+        "severity_amp": 1.114,
+        "recency_amp": 1.188,
+        "gap_level": "high",
+        "staleness": "current",
+        "audit_quality": 80.0,
+        "has_audit_profile": true
+      }
+    },
+    {
+      "ca": "Google Trust Services LLC",
+      "population": "active",
+      "distrust_event": null,
+      "signals": {
+        "n": 39,
+        "n_orig": 39,
+        "batches_collapsed": 0,
+        "low_confidence": false,
+        "years": [
+          2019,
+          2026
+        ],
+        "years_active": 8,
+        "self_pct": 20.5,
+        "n_chronic": 4,
+        "n_solo_chronic": 4,
+        "chronic_classes": {
+          "ocsp-failure": [
+            2019,
+            2020,
+            2022,
+            2024,
+            2026
+          ],
+          "crl-failure": [
+            2019,
+            2020,
+            2021,
+            2022
+          ],
+          "disclosure-failure": [
+            2020,
+            2021,
+            2022,
+            2026
+          ],
+          "policy-failure": [
+            2021,
+            2022,
+            2023,
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "solo_chronic_classes": {
+          "ocsp-failure": [
+            2019,
+            2020,
+            2022,
+            2024,
+            2026
+          ],
+          "crl-failure": [
+            2019,
+            2020,
+            2021,
+            2022
+          ],
+          "disclosure-failure": [
+            2020,
+            2021,
+            2022,
+            2026
+          ],
+          "policy-failure": [
+            2021,
+            2022,
+            2023,
+            2024,
+            2025
+          ]
+        },
+        "chronic_knowledge": {
+          "ocsp-failure": {
+            "prior_cas": 20,
+            "eco_age": 2,
+            "weight": 1.25
+          },
+          "crl-failure": {
+            "prior_cas": 2,
+            "eco_age": 2,
+            "weight": 1.025
+          },
+          "disclosure-failure": {
+            "prior_cas": 22,
+            "eco_age": 3,
+            "weight": 1.375
+          },
+          "policy-failure": {
+            "prior_cas": 10,
+            "eco_age": 4,
+            "weight": 1.25
+          }
+        },
+        "avg_knowledge_weight": 1.225,
+        "n_broken_promise": 2,
+        "broken_promise_classes": [
+          "disclosure-failure",
+          "policy-failure"
+        ],
+        "n_closed_loop": 1,
+        "closed_loop_classes": [
+          "crl-failure"
+        ],
+        "gov_frac": 0.308,
+        "accel": 0.625,
+        "year_density": 4.88,
+        "chronic_span_avg": 4.75,
+        "severity_score": 0.1875,
+        "recency_score": 0.2031,
+        "recent_ap_rate": 0.0,
+        "n_recent": 4,
+        "n_sev5": 3
+      },
+      "scores": {
+        "total": 60.3,
+        "mode_A": 28.5,
+        "mode_B": 60.3,
+        "accel_boost": 0.0,
+        "dominant_mode": "B",
+        "threshold": 42,
+        "flagged": true,
+        "n_solo_chronic": 4,
+        "solo_ratio": 1.0,
+        "ecosystem_factor": 1.0,
+        "avg_knowledge_weight": 1.225,
+        "n_broken_promise": 2,
+        "n_closed_loop": 1,
+        "broken_boost": 1.2,
+        "severity_amp": 1.188,
+        "recency_amp": 1.203,
+        "gap_level": "high",
+        "staleness": "aging",
+        "audit_quality": 65.6,
+        "has_audit_profile": true
+      }
+    },
+    {
+      "ca": "China Financial Certification Authority (CFCA)",
+      "population": "active",
+      "distrust_event": null,
+      "signals": {
+        "n": 31,
+        "n_orig": 31,
+        "batches_collapsed": 0,
+        "low_confidence": false,
+        "years": [
+          2019,
+          2026
+        ],
+        "years_active": 8,
+        "self_pct": 48.4,
+        "n_chronic": 4,
+        "n_solo_chronic": 3,
+        "chronic_classes": {
+          "ov-misissuance": [
+            2019,
+            2020,
+            2023,
+            2024,
+            2025
+          ],
+          "ev-misissuance": [
+            2019,
+            2022,
+            2023,
+            2025
+          ],
+          "policy-failure": [
+            2019,
+            2020,
+            2024,
+            2025,
+            2026
+          ],
+          "disclosure-failure": [
+            2022,
+            2025,
+            2026
+          ]
+        },
+        "solo_chronic_classes": {
+          "ov-misissuance": [
+            2020,
+            2023,
+            2025
+          ],
+          "ev-misissuance": [
+            2019,
+            2022,
+            2023,
+            2025
+          ],
+          "disclosure-failure": [
+            2022,
+            2025,
+            2026
+          ]
+        },
+        "chronic_knowledge": {
+          "ov-misissuance": {
+            "prior_cas": 31,
+            "eco_age": 5,
+            "weight": 1.5
+          },
+          "ev-misissuance": {
+            "prior_cas": 15,
+            "eco_age": 3,
+            "weight": 1.281
+          },
+          "policy-failure": {
+            "prior_cas": 3,
+            "eco_age": 2,
+            "weight": 1.038
+          },
+          "disclosure-failure": {
+            "prior_cas": 30,
+            "eco_age": 5,
+            "weight": 1.5
+          }
+        },
+        "avg_knowledge_weight": 1.33,
+        "n_broken_promise": 1,
+        "broken_promise_classes": [
+          "policy-failure"
+        ],
+        "n_closed_loop": 0,
+        "closed_loop_classes": [],
+        "gov_frac": 0.355,
+        "accel": 0.938,
+        "year_density": 3.88,
+        "chronic_span_avg": 4.25,
+        "severity_score": 0.1734,
+        "recency_score": 0.1562,
+        "recent_ap_rate": 0.0,
+        "n_recent": 6,
+        "n_sev5": 1
+      },
+      "scores": {
+        "total": 67.7,
+        "mode_A": 20.8,
+        "mode_B": 67.7,
+        "accel_boost": 0.0,
+        "dominant_mode": "B",
+        "threshold": 40,
+        "flagged": true,
+        "n_solo_chronic": 3,
+        "solo_ratio": 0.75,
+        "ecosystem_factor": 0.96,
+        "avg_knowledge_weight": 1.33,
+        "n_broken_promise": 1,
+        "n_closed_loop": 0,
+        "broken_boost": 1.1,
+        "severity_amp": 1.173,
+        "recency_amp": 1.156,
+        "gap_level": "high",
+        "staleness": "aging",
+        "audit_quality": 68.8,
+        "has_audit_profile": true
+      }
+    },
+    {
+      "ca": "HARICA",
+      "population": "active",
+      "distrust_event": null,
+      "signals": {
+        "n": 17,
+        "n_orig": 17,
+        "batches_collapsed": 0,
+        "low_confidence": false,
+        "years": [
+          2019,
+          2026
+        ],
+        "years_active": 7,
+        "self_pct": 58.8,
+        "n_chronic": 1,
+        "n_solo_chronic": 0,
+        "chronic_classes": {
+          "ov-misissuance": [
+            2019,
+            2021,
+            2025
+          ]
+        },
+        "solo_chronic_classes": {},
+        "chronic_knowledge": {
+          "ov-misissuance": {
+            "prior_cas": 31,
+            "eco_age": 5,
+            "weight": 1.5
+          }
+        },
+        "avg_knowledge_weight": 1.5,
+        "n_broken_promise": 0,
+        "broken_promise_classes": [],
+        "n_closed_loop": 0,
+        "closed_loop_classes": [],
+        "gov_frac": 0.059,
+        "accel": 0.844,
+        "year_density": 2.43,
+        "chronic_span_avg": 3.0,
+        "severity_score": 0.2022,
+        "recency_score": 0.0,
+        "recent_ap_rate": 0.0,
+        "n_recent": 2,
+        "n_sev5": 2
+      },
+      "scores": {
+        "total": 23.3,
+        "mode_A": 13.2,
+        "mode_B": 23.3,
+        "accel_boost": 0.0,
+        "dominant_mode": "B",
+        "threshold": 43,
+        "flagged": false,
+        "n_solo_chronic": 0,
+        "solo_ratio": 0.0,
+        "ecosystem_factor": 0.85,
+        "avg_knowledge_weight": 1.5,
+        "n_broken_promise": 0,
+        "n_closed_loop": 0,
+        "broken_boost": 1.0,
+        "severity_amp": 1.202,
+        "recency_amp": 1.0,
+        "gap_level": "high",
+        "staleness": "stale",
+        "audit_quality": 50.0,
+        "has_audit_profile": true
+      }
+    },
+    {
+      "ca": "Chunghwa Telecom",
+      "population": "active",
+      "distrust_event": null,
+      "signals": {
+        "n": 22,
+        "n_orig": 28,
+        "batches_collapsed": 6,
+        "low_confidence": false,
+        "years": [
+          2019,
+          2026
+        ],
+        "years_active": 5,
+        "self_pct": 63.6,
+        "n_chronic": 2,
+        "n_solo_chronic": 1,
+        "chronic_classes": {
+          "ov-misissuance": [
+            2019,
+            2024,
+            2025,
+            2026
+          ],
+          "policy-failure": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "solo_chronic_classes": {
+          "ov-misissuance": [
+            2024,
+            2025,
+            2026
+          ]
+        },
+        "chronic_knowledge": {
+          "ov-misissuance": {
+            "prior_cas": 31,
+            "eco_age": 5,
+            "weight": 1.5
+          },
+          "policy-failure": {
+            "prior_cas": 25,
+            "eco_age": 7,
+            "weight": 1.5
+          }
+        },
+        "avg_knowledge_weight": 1.5,
+        "n_broken_promise": 1,
+        "broken_promise_classes": [
+          "policy-failure"
+        ],
+        "n_closed_loop": 0,
+        "closed_loop_classes": [],
+        "gov_frac": 0.545,
+        "accel": 6.667,
+        "year_density": 4.4,
+        "chronic_span_avg": 3.5,
+        "severity_score": 0.1562,
+        "recency_score": 0.1875,
+        "recent_ap_rate": 0.1429,
+        "n_recent": 7,
+        "n_sev5": 0
+      },
+      "scores": {
+        "total": 75.1,
+        "mode_A": 57.0,
+        "mode_B": 48.0,
+        "accel_boost": 18.0,
+        "dominant_mode": "A",
+        "threshold": 39,
+        "flagged": true,
+        "n_solo_chronic": 1,
+        "solo_ratio": 0.5,
+        "ecosystem_factor": 0.92,
+        "avg_knowledge_weight": 1.5,
+        "n_broken_promise": 1,
+        "n_closed_loop": 0,
+        "broken_boost": 1.1,
+        "severity_amp": 1.156,
+        "recency_amp": 1.188,
+        "gap_level": "high",
+        "staleness": "aging",
+        "audit_quality": 42.6,
+        "has_audit_profile": true
+      }
+    },
+    {
+      "ca": "SSL.com",
+      "population": "active",
+      "distrust_event": null,
+      "signals": {
+        "n": 31,
+        "n_orig": 31,
+        "batches_collapsed": 0,
+        "low_confidence": false,
+        "years": [
+          2019,
+          2026
+        ],
+        "years_active": 8,
+        "self_pct": 54.8,
+        "n_chronic": 4,
+        "n_solo_chronic": 3,
+        "chronic_classes": {
+          "ev-misissuance": [
+            2019,
+            2021,
+            2022
+          ],
+          "ov-misissuance": [
+            2019,
+            2020,
+            2024
+          ],
+          "dv-misissuance": [
+            2019,
+            2020,
+            2021,
+            2022,
+            2024,
+            2025,
+            2026
+          ],
+          "ocsp-failure": [
+            2019,
+            2024,
+            2025
+          ]
+        },
+        "solo_chronic_classes": {
+          "ev-misissuance": [
+            2019,
+            2021,
+            2022
+          ],
+          "dv-misissuance": [
+            2019,
+            2020,
+            2021,
+            2022,
+            2024,
+            2025,
+            2026
+          ],
+          "ocsp-failure": [
+            2019,
+            2024,
+            2025
+          ]
+        },
+        "chronic_knowledge": {
+          "ev-misissuance": {
+            "prior_cas": 15,
+            "eco_age": 3,
+            "weight": 1.281
+          },
+          "ov-misissuance": {
+            "prior_cas": 31,
+            "eco_age": 5,
+            "weight": 1.5
+          },
+          "dv-misissuance": {
+            "prior_cas": 12,
+            "eco_age": 3,
+            "weight": 1.225
+          },
+          "ocsp-failure": {
+            "prior_cas": 20,
+            "eco_age": 2,
+            "weight": 1.25
+          }
+        },
+        "avg_knowledge_weight": 1.314,
+        "n_broken_promise": 0,
+        "broken_promise_classes": [],
+        "n_closed_loop": 1,
+        "closed_loop_classes": [
+          "ev-misissuance"
+        ],
+        "gov_frac": 0.097,
+        "accel": 0.938,
+        "year_density": 3.88,
+        "chronic_span_avg": 4.0,
+        "severity_score": 0.1472,
+        "recency_score": 0.0625,
+        "recent_ap_rate": 0.0,
+        "n_recent": 1,
+        "n_sev5": 2
+      },
+      "scores": {
+        "total": 48.9,
+        "mode_A": 15.0,
+        "mode_B": 48.9,
+        "accel_boost": 0.0,
+        "dominant_mode": "B",
+        "threshold": 48,
+        "flagged": true,
+        "n_solo_chronic": 3,
+        "solo_ratio": 0.75,
+        "ecosystem_factor": 0.96,
+        "avg_knowledge_weight": 1.314,
+        "n_broken_promise": 0,
+        "n_closed_loop": 1,
+        "broken_boost": 1.0,
+        "severity_amp": 1.147,
+        "recency_amp": 1.062,
+        "gap_level": "high",
+        "staleness": "aging",
+        "audit_quality": 37.5,
+        "has_audit_profile": true
+      }
+    },
+    {
+      "ca": "Buypass",
+      "population": "active",
+      "distrust_event": null,
+      "signals": {
+        "n": 16,
+        "n_orig": 16,
+        "batches_collapsed": 0,
+        "low_confidence": false,
+        "years": [
+          2019,
+          2025
+        ],
+        "years_active": 5,
+        "self_pct": 87.5,
+        "n_chronic": 1,
+        "n_solo_chronic": 0,
+        "chronic_classes": {
+          "leaf-revocation-delay": [
+            2020,
+            2023,
+            2024
+          ]
+        },
+        "solo_chronic_classes": {},
+        "chronic_knowledge": {
+          "leaf-revocation-delay": {
+            "prior_cas": 10,
+            "eco_age": 2,
+            "weight": 1.125
+          }
+        },
+        "avg_knowledge_weight": 1.125,
+        "n_broken_promise": 0,
+        "broken_promise_classes": [],
+        "n_closed_loop": 0,
+        "closed_loop_classes": [],
+        "gov_frac": 0.0,
+        "accel": 0.857,
+        "year_density": 3.2,
+        "chronic_span_avg": 3.0,
+        "severity_score": 0.1836,
+        "recency_score": 0.125,
+        "recent_ap_rate": 0.0,
+        "n_recent": 2,
+        "n_sev5": 1
+      },
+      "scores": {
+        "total": 22.3,
+        "mode_A": 3.8,
+        "mode_B": 22.3,
+        "accel_boost": 0.0,
+        "dominant_mode": "B",
+        "threshold": 38,
+        "flagged": false,
+        "n_solo_chronic": 0,
+        "solo_ratio": 0.0,
+        "ecosystem_factor": 0.85,
+        "avg_knowledge_weight": 1.125,
+        "n_broken_promise": 0,
+        "n_closed_loop": 0,
+        "broken_boost": 1.0,
+        "severity_amp": 1.184,
+        "recency_amp": 1.125,
+        "gap_level": "high",
+        "staleness": "aging",
+        "audit_quality": 100.0,
+        "has_audit_profile": true
+      }
+    },
+    {
+      "ca": "Eviden",
+      "population": "active",
+      "distrust_event": null,
+      "signals": {
+        "n": 5,
+        "n_orig": 5,
+        "batches_collapsed": 0,
+        "low_confidence": true,
+        "years": [
+          2019,
+          2026
+        ],
+        "years_active": 4,
+        "self_pct": 40.0,
+        "n_chronic": 0,
+        "n_solo_chronic": 0,
+        "chronic_classes": {},
+        "solo_chronic_classes": {},
+        "chronic_knowledge": {},
+        "avg_knowledge_weight": 1.0,
+        "n_broken_promise": 0,
+        "broken_promise_classes": [],
+        "n_closed_loop": 0,
+        "closed_loop_classes": [],
+        "gov_frac": 0.2,
+        "accel": 0.667,
+        "year_density": 1.25,
+        "chronic_span_avg": 0.0,
+        "severity_score": 0.1375,
+        "recency_score": 0.25,
+        "recent_ap_rate": 0.0,
+        "n_recent": 1,
+        "n_sev5": 0
+      },
+      "scores": {
+        "total": 9.0,
+        "mode_A": 9.0,
+        "mode_B": 3.9,
+        "accel_boost": 0.0,
+        "dominant_mode": "A",
+        "threshold": 40,
+        "flagged": false,
+        "n_solo_chronic": 0,
+        "solo_ratio": 1.0,
+        "ecosystem_factor": 1.0,
+        "avg_knowledge_weight": 1.0,
+        "n_broken_promise": 0,
+        "n_closed_loop": 0,
+        "broken_boost": 1.0,
+        "severity_amp": 1.137,
+        "recency_amp": 1.25,
+        "gap_level": "high",
+        "staleness": "stale",
+        "audit_quality": 50.0,
+        "has_audit_profile": true
+      }
+    },
+    {
+      "ca": "Viking Cloud, Inc.",
+      "population": "active",
+      "distrust_event": null,
+      "signals": {
+        "n": 20,
+        "n_orig": 20,
+        "batches_collapsed": 0,
+        "low_confidence": false,
+        "years": [
+          2019,
+          2026
+        ],
+        "years_active": 8,
+        "self_pct": 40.0,
+        "n_chronic": 2,
+        "n_solo_chronic": 1,
+        "chronic_classes": {
+          "ov-misissuance": [
+            2019,
+            2020,
+            2021,
+            2023,
+            2024
+          ],
+          "policy-failure": [
+            2020,
+            2024,
+            2026
+          ]
+        },
+        "solo_chronic_classes": {
+          "ov-misissuance": [
+            2020,
+            2021,
+            2023
+          ]
+        },
+        "chronic_knowledge": {
+          "ov-misissuance": {
+            "prior_cas": 31,
+            "eco_age": 5,
+            "weight": 1.5
+          },
+          "policy-failure": {
+            "prior_cas": 9,
+            "eco_age": 3,
+            "weight": 1.169
+          }
+        },
+        "avg_knowledge_weight": 1.335,
+        "n_broken_promise": 0,
+        "broken_promise_classes": [],
+        "n_closed_loop": 0,
+        "closed_loop_classes": [],
+        "gov_frac": 0.25,
+        "accel": 0.667,
+        "year_density": 2.5,
+        "chronic_span_avg": 4.0,
+        "severity_score": 0.1656,
+        "recency_score": 0.125,
+        "recent_ap_rate": 0.5,
+        "n_recent": 2,
+        "n_sev5": 1
+      },
+      "scores": {
+        "total": 36.3,
+        "mode_A": 21.8,
+        "mode_B": 36.3,
+        "accel_boost": 0.0,
+        "dominant_mode": "B",
+        "threshold": 48,
+        "flagged": false,
+        "n_solo_chronic": 1,
+        "solo_ratio": 0.5,
+        "ecosystem_factor": 0.92,
+        "avg_knowledge_weight": 1.335,
+        "n_broken_promise": 0,
+        "n_closed_loop": 0,
+        "broken_boost": 1.0,
+        "severity_amp": 1.166,
+        "recency_amp": 1.125,
+        "gap_level": "—",
+        "staleness": "—",
+        "audit_quality": null,
+        "has_audit_profile": false
+      }
+    },
+    {
+      "ca": "Apple Inc.",
+      "population": "active",
+      "distrust_event": null,
+      "signals": {
+        "n": 14,
+        "n_orig": 14,
+        "batches_collapsed": 0,
+        "low_confidence": false,
+        "years": [
+          2019,
+          2025
+        ],
+        "years_active": 6,
+        "self_pct": 100.0,
+        "n_chronic": 2,
+        "n_solo_chronic": 2,
+        "chronic_classes": {
+          "ocsp-failure": [
+            2019,
+            2020,
+            2022
+          ],
+          "ev-misissuance": [
+            2020,
+            2022,
+            2023,
+            2025
+          ]
+        },
+        "solo_chronic_classes": {
+          "ocsp-failure": [
+            2019,
+            2020,
+            2022
+          ],
+          "ev-misissuance": [
+            2020,
+            2022,
+            2023,
+            2025
+          ]
+        },
+        "chronic_knowledge": {
+          "ocsp-failure": {
+            "prior_cas": 20,
+            "eco_age": 2,
+            "weight": 1.25
+          },
+          "ev-misissuance": {
+            "prior_cas": 25,
+            "eco_age": 4,
+            "weight": 1.5
+          }
+        },
+        "avg_knowledge_weight": 1.375,
+        "n_broken_promise": 0,
+        "broken_promise_classes": [],
+        "n_closed_loop": 1,
+        "closed_loop_classes": [
+          "ocsp-failure"
+        ],
+        "gov_frac": 0.071,
+        "accel": 1.0,
+        "year_density": 2.33,
+        "chronic_span_avg": 3.5,
+        "severity_score": 0.0804,
+        "recency_score": 0.0,
+        "recent_ap_rate": 0.0,
+        "n_recent": 0,
+        "n_sev5": 0
+      },
+      "scores": {
+        "total": 23.5,
+        "mode_A": 1.1,
+        "mode_B": 23.5,
+        "accel_boost": 0.0,
+        "dominant_mode": "B",
+        "threshold": 46,
+        "flagged": false,
+        "n_solo_chronic": 2,
+        "solo_ratio": 1.0,
+        "ecosystem_factor": 1.0,
+        "avg_knowledge_weight": 1.375,
+        "n_broken_promise": 0,
+        "n_closed_loop": 1,
+        "broken_boost": 1.0,
+        "severity_amp": 1.08,
+        "recency_amp": 1.0,
+        "gap_level": "—",
+        "staleness": "—",
+        "audit_quality": null,
+        "has_audit_profile": false
+      }
+    },
+    {
+      "ca": "SK ID Solutions AS",
+      "population": "active",
+      "distrust_event": null,
+      "signals": {
+        "n": 2,
+        "n_orig": 2,
+        "batches_collapsed": 0,
+        "low_confidence": true,
+        "years": [
+          2020,
+          2020
+        ],
+        "years_active": 1,
+        "self_pct": 0.0,
+        "n_chronic": 0,
+        "n_solo_chronic": 0,
+        "chronic_classes": {},
+        "solo_chronic_classes": {},
+        "chronic_knowledge": {},
+        "avg_knowledge_weight": 1.0,
+        "n_broken_promise": 0,
+        "broken_promise_classes": [],
+        "n_closed_loop": 0,
+        "closed_loop_classes": [],
+        "gov_frac": 0.0,
+        "accel": 1.0,
+        "year_density": 2.0,
+        "chronic_span_avg": 0.0,
+        "severity_score": 0.1562,
+        "recency_score": 0.0,
+        "recent_ap_rate": 0.0,
+        "n_recent": 0,
+        "n_sev5": 0
+      },
+      "scores": {
+        "total": 6.0,
+        "mode_A": 4.0,
+        "mode_B": 6.0,
+        "accel_boost": 0.0,
+        "dominant_mode": "B",
+        "threshold": 40,
+        "flagged": false,
+        "n_solo_chronic": 0,
+        "solo_ratio": 1.0,
+        "ecosystem_factor": 1.0,
+        "avg_knowledge_weight": 1.0,
+        "n_broken_promise": 0,
+        "n_closed_loop": 0,
+        "broken_boost": 1.0,
+        "severity_amp": 1.156,
+        "recency_amp": 1.0,
+        "gap_level": "—",
+        "staleness": "—",
+        "audit_quality": null,
+        "has_audit_profile": false
+      }
+    },
+    {
+      "ca": "Agence Nationale de Certification Electronique",
+      "population": "active",
+      "distrust_event": null,
+      "signals": {
+        "n": 4,
+        "n_orig": 4,
+        "batches_collapsed": 0,
+        "low_confidence": true,
+        "years": [
+          2020,
+          2025
+        ],
+        "years_active": 3,
+        "self_pct": 75.0,
+        "n_chronic": 0,
+        "n_solo_chronic": 0,
+        "chronic_classes": {},
+        "solo_chronic_classes": {},
+        "chronic_knowledge": {},
+        "avg_knowledge_weight": 1.0,
+        "n_broken_promise": 0,
+        "broken_promise_classes": [],
+        "n_closed_loop": 0,
+        "closed_loop_classes": [],
+        "gov_frac": 0.25,
+        "accel": 1.5,
+        "year_density": 1.33,
+        "chronic_span_avg": 0.0,
+        "severity_score": 0.1094,
+        "recency_score": 0.1562,
+        "recent_ap_rate": 0.0,
+        "n_recent": 2,
+        "n_sev5": 0
+      },
+      "scores": {
+        "total": 10.5,
+        "mode_A": 9.0,
+        "mode_B": 5.0,
+        "accel_boost": 1.5,
+        "dominant_mode": "A",
+        "threshold": 47,
+        "flagged": false,
+        "n_solo_chronic": 0,
+        "solo_ratio": 1.0,
+        "ecosystem_factor": 1.0,
+        "avg_knowledge_weight": 1.0,
+        "n_broken_promise": 0,
+        "n_closed_loop": 0,
+        "broken_boost": 1.0,
+        "severity_amp": 1.109,
+        "recency_amp": 1.156,
+        "gap_level": "moderate",
+        "staleness": "aging",
+        "audit_quality": 75.0,
+        "has_audit_profile": true
+      }
+    },
+    {
+      "ca": "eMudhra Technologies Limited",
+      "population": "active",
+      "distrust_event": null,
+      "signals": {
+        "n": 19,
+        "n_orig": 19,
+        "batches_collapsed": 0,
+        "low_confidence": false,
+        "years": [
+          2020,
+          2025
+        ],
+        "years_active": 6,
+        "self_pct": 78.9,
+        "n_chronic": 2,
+        "n_solo_chronic": 2,
+        "chronic_classes": {
+          "dv-misissuance": [
+            2021,
+            2022,
+            2024
+          ],
+          "disclosure-failure": [
+            2022,
+            2024,
+            2025
+          ]
+        },
+        "solo_chronic_classes": {
+          "dv-misissuance": [
+            2021,
+            2022,
+            2024
+          ],
+          "disclosure-failure": [
+            2022,
+            2024,
+            2025
+          ]
+        },
+        "chronic_knowledge": {
+          "dv-misissuance": {
+            "prior_cas": 20,
+            "eco_age": 5,
+            "weight": 1.5
+          },
+          "disclosure-failure": {
+            "prior_cas": 30,
+            "eco_age": 5,
+            "weight": 1.5
+          }
+        },
+        "avg_knowledge_weight": 1.5,
+        "n_broken_promise": 1,
+        "broken_promise_classes": [
+          "disclosure-failure"
+        ],
+        "n_closed_loop": 0,
+        "closed_loop_classes": [],
+        "gov_frac": 0.368,
+        "accel": 2.8,
+        "year_density": 3.17,
+        "chronic_span_avg": 3.0,
+        "severity_score": 0.1414,
+        "recency_score": 0.1696,
+        "recent_ap_rate": 0.2857,
+        "n_recent": 7,
+        "n_sev5": 0
+      },
+      "scores": {
+        "total": 54.0,
+        "mode_A": 32.4,
+        "mode_B": 44.4,
+        "accel_boost": 9.6,
+        "dominant_mode": "B",
+        "threshold": 38,
+        "flagged": true,
+        "n_solo_chronic": 2,
+        "solo_ratio": 1.0,
+        "ecosystem_factor": 1.0,
+        "avg_knowledge_weight": 1.5,
+        "n_broken_promise": 1,
+        "n_closed_loop": 0,
+        "broken_boost": 1.1,
+        "severity_amp": 1.141,
+        "recency_amp": 1.17,
+        "gap_level": "unknown",
+        "staleness": "aging",
+        "audit_quality": null,
+        "has_audit_profile": true
+      }
+    },
+    {
+      "ca": "iTrusChina",
+      "population": "active",
+      "distrust_event": null,
+      "signals": {
+        "n": 9,
+        "n_orig": 9,
+        "batches_collapsed": 0,
+        "low_confidence": true,
+        "years": [
+          2021,
+          2026
+        ],
+        "years_active": 4,
+        "self_pct": 77.8,
+        "n_chronic": 0,
+        "n_solo_chronic": 0,
+        "chronic_classes": {},
+        "solo_chronic_classes": {},
+        "chronic_knowledge": {},
+        "avg_knowledge_weight": 1.0,
+        "n_broken_promise": 0,
+        "broken_promise_classes": [],
+        "n_closed_loop": 0,
+        "closed_loop_classes": [],
+        "gov_frac": 0.444,
+        "accel": 3.5,
+        "year_density": 2.25,
+        "chronic_span_avg": 0.0,
+        "severity_score": 0.1736,
+        "recency_score": 0.2083,
+        "recent_ap_rate": 0.3333,
+        "n_recent": 3,
+        "n_sev5": 0
+      },
+      "scores": {
+        "total": 44.1,
+        "mode_A": 33.2,
+        "mode_B": 11.5,
+        "accel_boost": 10.9,
+        "dominant_mode": "A",
+        "threshold": 43,
+        "flagged": true,
+        "n_solo_chronic": 0,
+        "solo_ratio": 1.0,
+        "ecosystem_factor": 1.0,
+        "avg_knowledge_weight": 1.0,
+        "n_broken_promise": 0,
+        "n_closed_loop": 0,
+        "broken_boost": 1.0,
+        "severity_amp": 1.174,
+        "recency_amp": 1.208,
+        "gap_level": "—",
+        "staleness": "—",
+        "audit_quality": null,
+        "has_audit_profile": false
+      }
+    },
+    {
+      "ca": "Certainly LLC",
+      "population": "active",
+      "distrust_event": null,
+      "signals": {
+        "n": 9,
+        "n_orig": 9,
+        "batches_collapsed": 0,
+        "low_confidence": true,
+        "years": [
+          2021,
+          2025
+        ],
+        "years_active": 5,
+        "self_pct": 22.2,
+        "n_chronic": 1,
+        "n_solo_chronic": 1,
+        "chronic_classes": {
+          "crl-failure": [
+            2021,
+            2024,
+            2025
+          ]
+        },
+        "solo_chronic_classes": {
+          "crl-failure": [
+            2021,
+            2024,
+            2025
+          ]
+        },
+        "chronic_knowledge": {
+          "crl-failure": {
+            "prior_cas": 7,
+            "eco_age": 4,
+            "weight": 1.175
+          }
+        },
+        "avg_knowledge_weight": 1.175,
+        "n_broken_promise": 0,
+        "broken_promise_classes": [],
+        "n_closed_loop": 0,
+        "closed_loop_classes": [],
+        "gov_frac": 0.222,
+        "accel": 0.533,
+        "year_density": 1.8,
+        "chronic_span_avg": 3.0,
+        "severity_score": 0.2083,
+        "recency_score": 0.25,
+        "recent_ap_rate": 0.0,
+        "n_recent": 1,
+        "n_sev5": 1
+      },
+      "scores": {
+        "total": 21.5,
+        "mode_A": 17.3,
+        "mode_B": 21.5,
+        "accel_boost": 0.0,
+        "dominant_mode": "B",
+        "threshold": 44,
+        "flagged": false,
+        "n_solo_chronic": 1,
+        "solo_ratio": 1.0,
+        "ecosystem_factor": 1.0,
+        "avg_knowledge_weight": 1.175,
+        "n_broken_promise": 0,
+        "n_closed_loop": 0,
+        "broken_boost": 1.0,
+        "severity_amp": 1.208,
+        "recency_amp": 1.25,
+        "gap_level": "high",
+        "staleness": "aging",
+        "audit_quality": 75.0,
+        "has_audit_profile": true
+      }
+    },
+    {
+      "ca": "Shanghai Electronic Certification Authority Co., Ltd.",
+      "population": "active",
+      "distrust_event": null,
+      "signals": {
+        "n": 27,
+        "n_orig": 27,
+        "batches_collapsed": 0,
+        "low_confidence": false,
+        "years": [
+          2021,
+          2026
+        ],
+        "years_active": 6,
+        "self_pct": 70.4,
+        "n_chronic": 2,
+        "n_solo_chronic": 2,
+        "chronic_classes": {
+          "ev-misissuance": [
+            2022,
+            2023,
+            2024
+          ],
+          "crl-failure": [
+            2023,
+            2024,
+            2026
+          ]
+        },
+        "solo_chronic_classes": {
+          "ev-misissuance": [
+            2022,
+            2023,
+            2024
+          ],
+          "crl-failure": [
+            2023,
+            2024,
+            2026
+          ]
+        },
+        "chronic_knowledge": {
+          "ev-misissuance": {
+            "prior_cas": 31,
+            "eco_age": 6,
+            "weight": 1.5
+          },
+          "crl-failure": {
+            "prior_cas": 21,
+            "eco_age": 6,
+            "weight": 1.5
+          }
+        },
+        "avg_knowledge_weight": 1.5,
+        "n_broken_promise": 0,
+        "broken_promise_classes": [],
+        "n_closed_loop": 0,
+        "closed_loop_classes": [],
+        "gov_frac": 0.296,
+        "accel": 1.455,
+        "year_density": 4.5,
+        "chronic_span_avg": 3.0,
+        "severity_score": 0.1736,
+        "recency_score": 0.1705,
+        "recent_ap_rate": 0.2727,
+        "n_recent": 11,
+        "n_sev5": 1
+      },
+      "scores": {
+        "total": 48.5,
+        "mode_A": 20.8,
+        "mode_B": 45.0,
+        "accel_boost": 3.5,
+        "dominant_mode": "B",
+        "threshold": 40,
+        "flagged": true,
+        "n_solo_chronic": 2,
+        "solo_ratio": 1.0,
+        "ecosystem_factor": 1.0,
+        "avg_knowledge_weight": 1.5,
+        "n_broken_promise": 0,
+        "n_closed_loop": 0,
+        "broken_boost": 1.0,
+        "severity_amp": 1.174,
+        "recency_amp": 1.171,
+        "gap_level": "high",
+        "staleness": "stale",
+        "audit_quality": 37.5,
+        "has_audit_profile": true
+      }
+    },
+    {
+      "ca": "NAVER Cloud Trust Services",
+      "population": "active",
+      "distrust_event": null,
+      "signals": {
+        "n": 10,
+        "n_orig": 10,
+        "batches_collapsed": 0,
+        "low_confidence": false,
+        "years": [
+          2022,
+          2025
+        ],
+        "years_active": 4,
+        "self_pct": 70.0,
+        "n_chronic": 0,
+        "n_solo_chronic": 0,
+        "chronic_classes": {},
+        "solo_chronic_classes": {},
+        "chronic_knowledge": {},
+        "avg_knowledge_weight": 1.0,
+        "n_broken_promise": 0,
+        "broken_promise_classes": [],
+        "n_closed_loop": 0,
+        "closed_loop_classes": [],
+        "gov_frac": 0.3,
+        "accel": 1.0,
+        "year_density": 2.5,
+        "chronic_span_avg": 0.0,
+        "severity_score": 0.1125,
+        "recency_score": 0.1667,
+        "recent_ap_rate": 0.0,
+        "n_recent": 3,
+        "n_sev5": 0
+      },
+      "scores": {
+        "total": 11.0,
+        "mode_A": 10.5,
+        "mode_B": 11.0,
+        "accel_boost": 0.0,
+        "dominant_mode": "B",
+        "threshold": 48,
+        "flagged": false,
+        "n_solo_chronic": 0,
+        "solo_ratio": 1.0,
+        "ecosystem_factor": 1.0,
+        "avg_knowledge_weight": 1.0,
+        "n_broken_promise": 0,
+        "n_closed_loop": 0,
+        "broken_boost": 1.0,
+        "severity_amp": 1.113,
+        "recency_amp": 1.167,
+        "gap_level": "high",
+        "staleness": "aging",
+        "audit_quality": 50.0,
+        "has_audit_profile": true
+      }
+    },
+    {
+      "ca": "Government of Hong Kong (SAR), Hongkong Post, Certizen",
+      "population": "active",
+      "distrust_event": null,
+      "signals": {
+        "n": 8,
+        "n_orig": 8,
+        "batches_collapsed": 0,
+        "low_confidence": true,
+        "years": [
+          2022,
+          2026
+        ],
+        "years_active": 4,
+        "self_pct": 87.5,
+        "n_chronic": 1,
+        "n_solo_chronic": 0,
+        "chronic_classes": {
+          "ov-misissuance": [
+            2022,
+            2024,
+            2026
+          ]
+        },
+        "solo_chronic_classes": {},
+        "chronic_knowledge": {
+          "ov-misissuance": {
+            "prior_cas": 48,
+            "eco_age": 8,
+            "weight": 1.5
+          }
+        },
+        "avg_knowledge_weight": 1.5,
+        "n_broken_promise": 0,
+        "broken_promise_classes": [],
+        "n_closed_loop": 0,
+        "closed_loop_classes": [],
+        "gov_frac": 0.125,
+        "accel": 3.0,
+        "year_density": 2.0,
+        "chronic_span_avg": 3.0,
+        "severity_score": 0.1016,
+        "recency_score": 0.0625,
+        "recent_ap_rate": 0.0,
+        "n_recent": 1,
+        "n_sev5": 0
+      },
+      "scores": {
+        "total": 28.9,
+        "mode_A": 21.5,
+        "mode_B": 21.4,
+        "accel_boost": 7.5,
+        "dominant_mode": "A",
+        "threshold": 46,
+        "flagged": false,
+        "n_solo_chronic": 0,
+        "solo_ratio": 0.0,
+        "ecosystem_factor": 0.85,
+        "avg_knowledge_weight": 1.5,
+        "n_broken_promise": 0,
+        "n_closed_loop": 0,
+        "broken_boost": 1.0,
+        "severity_amp": 1.102,
+        "recency_amp": 1.062,
+        "gap_level": "high",
+        "staleness": "current",
+        "audit_quality": 100.0,
+        "has_audit_profile": true
+      }
+    },
+    {
+      "ca": "Autoridad de Certificación (ANF AC)",
+      "population": "active",
+      "distrust_event": null,
+      "signals": {
+        "n": 6,
+        "n_orig": 8,
+        "batches_collapsed": 2,
+        "low_confidence": true,
+        "years": [
+          2023,
+          2025
+        ],
+        "years_active": 2,
+        "self_pct": 83.3,
+        "n_chronic": 0,
+        "n_solo_chronic": 0,
+        "chronic_classes": {},
+        "solo_chronic_classes": {},
+        "chronic_knowledge": {},
+        "avg_knowledge_weight": 1.0,
+        "n_broken_promise": 0,
+        "broken_promise_classes": [],
+        "n_closed_loop": 0,
+        "closed_loop_classes": [],
+        "gov_frac": 0.5,
+        "accel": 5.0,
+        "year_density": 3.0,
+        "chronic_span_avg": 0.0,
+        "severity_score": 0.1875,
+        "recency_score": 0.2,
+        "recent_ap_rate": 0.0,
+        "n_recent": 5,
+        "n_sev5": 0
+      },
+      "scores": {
+        "total": 38.1,
+        "mode_A": 28.8,
+        "mode_B": 14.5,
+        "accel_boost": 9.3,
+        "dominant_mode": "A",
+        "threshold": 45,
+        "flagged": false,
+        "n_solo_chronic": 0,
+        "solo_ratio": 1.0,
+        "ecosystem_factor": 1.0,
+        "avg_knowledge_weight": 1.0,
+        "n_broken_promise": 0,
+        "n_closed_loop": 0,
+        "broken_boost": 1.0,
+        "severity_amp": 1.188,
+        "recency_amp": 1.2,
+        "gap_level": "unknown",
+        "staleness": "stale",
+        "audit_quality": null,
+        "has_audit_profile": true
+      }
+    },
+    {
+      "ca": "CommScope",
+      "population": "active",
+      "distrust_event": null,
+      "signals": {
+        "n": 8,
+        "n_orig": 8,
+        "batches_collapsed": 0,
+        "low_confidence": true,
+        "years": [
+          2023,
+          2025
+        ],
+        "years_active": 3,
+        "self_pct": 62.5,
+        "n_chronic": 1,
+        "n_solo_chronic": 1,
+        "chronic_classes": {
+          "dv-misissuance": [
+            2023,
+            2024,
+            2025
+          ]
+        },
+        "solo_chronic_classes": {
+          "dv-misissuance": [
+            2023,
+            2024,
+            2025
+          ]
+        },
+        "chronic_knowledge": {
+          "dv-misissuance": {
+            "prior_cas": 23,
+            "eco_age": 7,
+            "weight": 1.5
+          }
+        },
+        "avg_knowledge_weight": 1.5,
+        "n_broken_promise": 0,
+        "broken_promise_classes": [],
+        "n_closed_loop": 0,
+        "closed_loop_classes": [],
+        "gov_frac": 0.375,
+        "accel": 1.5,
+        "year_density": 2.67,
+        "chronic_span_avg": 3.0,
+        "severity_score": 0.1328,
+        "recency_score": 0.0,
+        "recent_ap_rate": 0.0,
+        "n_recent": 0,
+        "n_sev5": 0
+      },
+      "scores": {
+        "total": 31.1,
+        "mode_A": 18.1,
+        "mode_B": 28.5,
+        "accel_boost": 2.6,
+        "dominant_mode": "B",
+        "threshold": 44,
+        "flagged": false,
+        "n_solo_chronic": 1,
+        "solo_ratio": 1.0,
+        "ecosystem_factor": 1.0,
+        "avg_knowledge_weight": 1.5,
+        "n_broken_promise": 0,
+        "n_closed_loop": 0,
+        "broken_boost": 1.0,
+        "severity_amp": 1.133,
+        "recency_amp": 1.0,
+        "gap_level": "—",
+        "staleness": "—",
+        "audit_quality": null,
+        "has_audit_profile": false
+      }
+    },
+    {
+      "ca": "TrustAsia Technologies, Inc.",
+      "population": "active",
+      "distrust_event": null,
+      "signals": {
+        "n": 3,
+        "n_orig": 3,
+        "batches_collapsed": 0,
+        "low_confidence": true,
+        "years": [
+          2025,
+          2026
+        ],
+        "years_active": 2,
+        "self_pct": 100.0,
+        "n_chronic": 0,
+        "n_solo_chronic": 0,
+        "chronic_classes": {},
+        "solo_chronic_classes": {},
+        "chronic_knowledge": {},
+        "avg_knowledge_weight": 1.0,
+        "n_broken_promise": 0,
+        "broken_promise_classes": [],
+        "n_closed_loop": 0,
+        "closed_loop_classes": [],
+        "gov_frac": 0.333,
+        "accel": 2.0,
+        "year_density": 1.5,
+        "chronic_span_avg": 0.0,
+        "severity_score": 0.125,
+        "recency_score": 0.125,
+        "recent_ap_rate": 0.0,
+        "n_recent": 3,
+        "n_sev5": 0
+      },
+      "scores": {
+        "total": 11.0,
+        "mode_A": 9.2,
+        "mode_B": 6.9,
+        "accel_boost": 1.9,
+        "dominant_mode": "A",
+        "threshold": 48,
+        "flagged": false,
+        "n_solo_chronic": 0,
+        "solo_ratio": 1.0,
+        "ecosystem_factor": 1.0,
+        "avg_knowledge_weight": 1.0,
+        "n_broken_promise": 0,
+        "n_closed_loop": 0,
+        "broken_boost": 1.0,
+        "severity_amp": 1.125,
+        "recency_amp": 1.125,
+        "gap_level": "high",
+        "staleness": "aging",
+        "audit_quality": 60.0,
+        "has_audit_profile": true
+      }
+    },
+    {
+      "ca": "PostSignum",
+      "population": "active",
+      "distrust_event": null,
+      "signals": {
+        "n": 2,
+        "n_orig": 2,
+        "batches_collapsed": 0,
+        "low_confidence": true,
+        "years": [
+          2026,
+          2026
+        ],
+        "years_active": 1,
+        "self_pct": 100.0,
+        "n_chronic": 0,
+        "n_solo_chronic": 0,
+        "chronic_classes": {},
+        "solo_chronic_classes": {},
+        "chronic_knowledge": {},
+        "avg_knowledge_weight": 1.0,
+        "n_broken_promise": 0,
+        "broken_promise_classes": [],
+        "n_closed_loop": 0,
+        "closed_loop_classes": [],
+        "gov_frac": 0.0,
+        "accel": 1.0,
+        "year_density": 2.0,
+        "chronic_span_avg": 0.0,
+        "severity_score": 0.0625,
+        "recency_score": 0.0625,
+        "recent_ap_rate": 0.0,
+        "n_recent": 2,
+        "n_sev5": 0
+      },
+      "scores": {
+        "total": 6.0,
+        "mode_A": 0.0,
+        "mode_B": 6.0,
+        "accel_boost": 0.0,
+        "dominant_mode": "B",
+        "threshold": 41,
+        "flagged": false,
+        "n_solo_chronic": 0,
+        "solo_ratio": 1.0,
+        "ecosystem_factor": 1.0,
+        "avg_knowledge_weight": 1.0,
+        "n_broken_promise": 0,
+        "n_closed_loop": 0,
+        "broken_boost": 1.0,
+        "severity_amp": 1.062,
+        "recency_amp": 1.062,
+        "gap_level": "high",
+        "staleness": "aging",
+        "audit_quality": 100.0,
+        "has_audit_profile": true
+      }
+    },
+    {
+      "ca": "Symantec",
+      "population": "distrusted",
+      "distrust_event": {
+        "pathway": "negotiated",
+        "posture": "argumentative_noncompliance",
+        "response": "inadequate"
+      },
+      "signals": {
+        "n": 3,
+        "n_orig": 3,
+        "batches_collapsed": 0,
+        "low_confidence": true,
+        "years": [
+          2017,
+          2017
+        ],
+        "years_active": 1,
+        "self_pct": 0.0,
+        "n_chronic": 0,
+        "n_solo_chronic": 0,
+        "chronic_classes": {},
+        "solo_chronic_classes": {},
+        "chronic_knowledge": {},
+        "avg_knowledge_weight": 1.0,
+        "n_broken_promise": 0,
+        "broken_promise_classes": [],
+        "n_closed_loop": 0,
+        "closed_loop_classes": [],
+        "gov_frac": 0.333,
+        "accel": 1.0,
+        "year_density": 3.0,
+        "chronic_span_avg": 0.0,
+        "severity_score": 0.1875,
+        "recency_score": 0.0,
+        "recent_ap_rate": 0.0,
+        "n_recent": 0,
+        "n_sev5": 0
+      },
+      "scores": {
+        "total": 12.9,
+        "mode_A": 11.0,
+        "mode_B": 12.9,
+        "accel_boost": 0.0,
+        "dominant_mode": "B",
+        "threshold": 48,
+        "flagged": false,
+        "n_solo_chronic": 0,
+        "solo_ratio": 1.0,
+        "ecosystem_factor": 1.0,
+        "avg_knowledge_weight": 1.0,
+        "n_broken_promise": 0,
+        "n_closed_loop": 0,
+        "broken_boost": 1.0,
+        "severity_amp": 1.188,
+        "recency_amp": 1.0,
+        "gap_level": "—",
+        "staleness": "—",
+        "audit_quality": null,
+        "has_audit_profile": false
+      }
+    },
+    {
+      "ca": "Camerfirma",
+      "population": "distrusted",
+      "distrust_event": {
+        "pathway": "gradual",
+        "posture": "negligent_noncompliance",
+        "response": "inadequate"
+      },
+      "signals": {
+        "n": 46,
+        "n_orig": 46,
+        "batches_collapsed": 0,
+        "low_confidence": false,
+        "years": [
+          2017,
+          2021
+        ],
+        "years_active": 5,
+        "self_pct": 47.8,
+        "n_chronic": 4,
+        "n_solo_chronic": 4,
+        "chronic_classes": {
+          "ov-misissuance": [
+            2017,
+            2018,
+            2019,
+            2020,
+            2021
+          ],
+          "ca-misissuance": [
+            2017,
+            2020,
+            2021
+          ],
+          "ev-misissuance": [
+            2018,
+            2019,
+            2020
+          ],
+          "audit-failure": [
+            2018,
+            2019,
+            2021
+          ]
+        },
+        "solo_chronic_classes": {
+          "ov-misissuance": [
+            2017,
+            2018,
+            2020,
+            2021
+          ],
+          "ca-misissuance": [
+            2017,
+            2020,
+            2021
+          ],
+          "ev-misissuance": [
+            2018,
+            2019,
+            2020
+          ],
+          "audit-failure": [
+            2018,
+            2019,
+            2021
+          ]
+        },
+        "chronic_knowledge": {
+          "ov-misissuance": {
+            "prior_cas": 2,
+            "eco_age": 3,
+            "weight": 1.038
+          },
+          "ca-misissuance": {
+            "prior_cas": 0,
+            "eco_age": 0,
+            "weight": 1.0
+          },
+          "ev-misissuance": {
+            "prior_cas": 11,
+            "eco_age": 2,
+            "weight": 1.137
+          },
+          "audit-failure": {
+            "prior_cas": 5,
+            "eco_age": 1,
+            "weight": 1.031
+          }
+        },
+        "avg_knowledge_weight": 1.051,
+        "n_broken_promise": 0,
+        "broken_promise_classes": [],
+        "n_closed_loop": 0,
+        "closed_loop_classes": [],
+        "gov_frac": 0.087,
+        "accel": 1.524,
+        "year_density": 9.2,
+        "chronic_span_avg": 3.5,
+        "severity_score": 0.1997,
+        "recency_score": 0.0,
+        "recent_ap_rate": 0.0,
+        "n_recent": 0,
+        "n_sev5": 3
+      },
+      "scores": {
+        "total": 63.8,
+        "mode_A": 25.4,
+        "mode_B": 60.5,
+        "accel_boost": 3.4,
+        "dominant_mode": "B",
+        "threshold": 48,
+        "flagged": true,
+        "n_solo_chronic": 4,
+        "solo_ratio": 1.0,
+        "ecosystem_factor": 1.0,
+        "avg_knowledge_weight": 1.051,
+        "n_broken_promise": 0,
+        "n_closed_loop": 0,
+        "broken_boost": 1.0,
+        "severity_amp": 1.2,
+        "recency_amp": 1.0,
+        "gap_level": "—",
+        "staleness": "—",
+        "audit_quality": null,
+        "has_audit_profile": false
+      }
+    },
+    {
+      "ca": "Trustis",
+      "population": "distrusted",
+      "distrust_event": null,
+      "signals": {
+        "n": 3,
+        "n_orig": 3,
+        "batches_collapsed": 0,
+        "low_confidence": true,
+        "years": [
+          2017,
+          2020
+        ],
+        "years_active": 2,
+        "self_pct": 0.0,
+        "n_chronic": 0,
+        "n_solo_chronic": 0,
+        "chronic_classes": {},
+        "solo_chronic_classes": {},
+        "chronic_knowledge": {},
+        "avg_knowledge_weight": 1.0,
+        "n_broken_promise": 0,
+        "broken_promise_classes": [],
+        "n_closed_loop": 0,
+        "closed_loop_classes": [],
+        "gov_frac": 0.0,
+        "accel": 0.5,
+        "year_density": 1.5,
+        "chronic_span_avg": 0.0,
+        "severity_score": 0.125,
+        "recency_score": 0.0,
+        "recent_ap_rate": 0.0,
+        "n_recent": 0,
+        "n_sev5": 0
+      },
+      "scores": {
+        "total": 6.0,
+        "mode_A": 6.0,
+        "mode_B": 3.5,
+        "accel_boost": 0.0,
+        "dominant_mode": "A",
+        "threshold": 48,
+        "flagged": false,
+        "n_solo_chronic": 0,
+        "solo_ratio": 1.0,
+        "ecosystem_factor": 1.0,
+        "avg_knowledge_weight": 1.0,
+        "n_broken_promise": 0,
+        "n_closed_loop": 0,
+        "broken_boost": 1.0,
+        "severity_amp": 1.125,
+        "recency_amp": 1.0,
+        "gap_level": "unknown",
+        "staleness": "very_stale",
+        "audit_quality": 79.2,
+        "has_audit_profile": true
+      }
+    },
+    {
+      "ca": "TurkTrust",
+      "population": "distrusted",
+      "distrust_event": {
+        "pathway": "gradual",
+        "posture": "negligent_noncompliance",
+        "response": "inadequate"
+      },
+      "signals": {
+        "n": 2,
+        "n_orig": 2,
+        "batches_collapsed": 0,
+        "low_confidence": true,
+        "years": [
+          2017,
+          2018
+        ],
+        "years_active": 2,
+        "self_pct": 0.0,
+        "n_chronic": 0,
+        "n_solo_chronic": 0,
+        "chronic_classes": {},
+        "solo_chronic_classes": {},
+        "chronic_knowledge": {},
+        "avg_knowledge_weight": 1.0,
+        "n_broken_promise": 0,
+        "broken_promise_classes": [],
+        "n_closed_loop": 0,
+        "closed_loop_classes": [],
+        "gov_frac": 1.0,
+        "accel": 1.0,
+        "year_density": 1.0,
+        "chronic_span_avg": 0.0,
+        "severity_score": 0.25,
+        "recency_score": 0.0,
+        "recent_ap_rate": 0.0,
+        "n_recent": 0,
+        "n_sev5": 0
+      },
+      "scores": {
+        "total": 19.0,
+        "mode_A": 19.0,
+        "mode_B": 10.0,
+        "accel_boost": 0.0,
+        "dominant_mode": "A",
+        "threshold": 48,
+        "flagged": false,
+        "n_solo_chronic": 0,
+        "solo_ratio": 1.0,
+        "ecosystem_factor": 1.0,
+        "avg_knowledge_weight": 1.0,
+        "n_broken_promise": 0,
+        "n_closed_loop": 0,
+        "broken_boost": 1.0,
+        "severity_amp": 1.25,
+        "recency_amp": 1.0,
+        "gap_level": "—",
+        "staleness": "—",
+        "audit_quality": null,
+        "has_audit_profile": false
+      }
+    },
+    {
+      "ca": "StartCom",
+      "population": "distrusted",
+      "distrust_event": {
+        "pathway": "immediate",
+        "posture": "willful_circumvention",
+        "response": "moot"
+      },
+      "signals": {
+        "n": 4,
+        "n_orig": 4,
+        "batches_collapsed": 0,
+        "low_confidence": true,
+        "years": [
+          2017,
+          2017
+        ],
+        "years_active": 1,
+        "self_pct": 0.0,
+        "n_chronic": 0,
+        "n_solo_chronic": 0,
+        "chronic_classes": {},
+        "solo_chronic_classes": {},
+        "chronic_knowledge": {},
+        "avg_knowledge_weight": 1.0,
+        "n_broken_promise": 0,
+        "broken_promise_classes": [],
+        "n_closed_loop": 0,
+        "closed_loop_classes": [],
+        "gov_frac": 0.0,
+        "accel": 1.0,
+        "year_density": 4.0,
+        "chronic_span_avg": 0.0,
+        "severity_score": 0.0312,
+        "recency_score": 0.0,
+        "recent_ap_rate": 0.0,
+        "n_recent": 0,
+        "n_sev5": 0
+      },
+      "scores": {
+        "total": 12.0,
+        "mode_A": 8.0,
+        "mode_B": 12.0,
+        "accel_boost": 0.0,
+        "dominant_mode": "B",
+        "threshold": 48,
+        "flagged": false,
+        "n_solo_chronic": 0,
+        "solo_ratio": 1.0,
+        "ecosystem_factor": 1.0,
+        "avg_knowledge_weight": 1.0,
+        "n_broken_promise": 0,
+        "n_closed_loop": 0,
+        "broken_boost": 1.0,
+        "severity_amp": 1.031,
+        "recency_amp": 1.0,
+        "gap_level": "—",
+        "staleness": "—",
+        "audit_quality": null,
+        "has_audit_profile": false
+      }
+    },
+    {
+      "ca": "Certinomis",
+      "population": "distrusted",
+      "distrust_event": {
+        "pathway": "gradual",
+        "posture": "negligent_noncompliance",
+        "response": "inadequate"
+      },
+      "signals": {
+        "n": 14,
+        "n_orig": 18,
+        "batches_collapsed": 4,
+        "low_confidence": false,
+        "years": [
+          2017,
+          2019
+        ],
+        "years_active": 3,
+        "self_pct": 14.3,
+        "n_chronic": 1,
+        "n_solo_chronic": 0,
+        "chronic_classes": {
+          "ov-misissuance": [
+            2017,
+            2018,
+            2019
+          ]
+        },
+        "solo_chronic_classes": {},
+        "chronic_knowledge": {
+          "ov-misissuance": {
+            "prior_cas": 2,
+            "eco_age": 3,
+            "weight": 1.038
+          }
+        },
+        "avg_knowledge_weight": 1.038,
+        "n_broken_promise": 0,
+        "broken_promise_classes": [],
+        "n_closed_loop": 0,
+        "closed_loop_classes": [],
+        "gov_frac": 0.071,
+        "accel": 3.0,
+        "year_density": 4.67,
+        "chronic_span_avg": 3.0,
+        "severity_score": 0.0714,
+        "recency_score": 0.0,
+        "recent_ap_rate": 0.0,
+        "n_recent": 0,
+        "n_sev5": 0
+      },
+      "scores": {
+        "total": 55.8,
+        "mode_A": 47.0,
+        "mode_B": 25.0,
+        "accel_boost": 8.8,
+        "dominant_mode": "A",
+        "threshold": 48,
+        "flagged": true,
+        "n_solo_chronic": 0,
+        "solo_ratio": 0.0,
+        "ecosystem_factor": 0.85,
+        "avg_knowledge_weight": 1.038,
+        "n_broken_promise": 0,
+        "n_closed_loop": 0,
+        "broken_boost": 1.0,
+        "severity_amp": 1.071,
+        "recency_amp": 1.0,
+        "gap_level": "—",
+        "staleness": "—",
+        "audit_quality": null,
+        "has_audit_profile": false
+      }
+    },
+    {
+      "ca": "Entrust",
+      "population": "distrusted",
+      "distrust_event": {
+        "pathway": "gradual",
+        "posture": "argumentative_noncompliance",
+        "response": "inadequate"
+      },
+      "signals": {
+        "n": 71,
+        "n_orig": 71,
+        "batches_collapsed": 0,
+        "low_confidence": false,
+        "years": [
+          2017,
+          2025
+        ],
+        "years_active": 9,
+        "self_pct": 84.5,
+        "n_chronic": 4,
+        "n_solo_chronic": 4,
+        "chronic_classes": {
+          "ov-misissuance": [
+            2017,
+            2018,
+            2019,
+            2020,
+            2021,
+            2022
+          ],
+          "ocsp-failure": [
+            2018,
+            2021,
+            2024
+          ],
+          "leaf-revocation-delay": [
+            2019,
+            2020,
+            2022,
+            2024,
+            2025
+          ],
+          "ev-misissuance": [
+            2019,
+            2020,
+            2021,
+            2022,
+            2023,
+            2024
+          ]
+        },
+        "solo_chronic_classes": {
+          "ov-misissuance": [
+            2018,
+            2020,
+            2021,
+            2022
+          ],
+          "ocsp-failure": [
+            2018,
+            2021,
+            2024
+          ],
+          "leaf-revocation-delay": [
+            2019,
+            2020,
+            2022,
+            2024,
+            2025
+          ],
+          "ev-misissuance": [
+            2019,
+            2020,
+            2021,
+            2022,
+            2023,
+            2024
+          ]
+        },
+        "chronic_knowledge": {
+          "ov-misissuance": {
+            "prior_cas": 2,
+            "eco_age": 3,
+            "weight": 1.038
+          },
+          "ocsp-failure": {
+            "prior_cas": 18,
+            "eco_age": 1,
+            "weight": 1.113
+          },
+          "leaf-revocation-delay": {
+            "prior_cas": 3,
+            "eco_age": 1,
+            "weight": 1.019
+          },
+          "ev-misissuance": {
+            "prior_cas": 15,
+            "eco_age": 3,
+            "weight": 1.281
+          }
+        },
+        "avg_knowledge_weight": 1.113,
+        "n_broken_promise": 0,
+        "broken_promise_classes": [],
+        "n_closed_loop": 1,
+        "closed_loop_classes": [
+          "ov-misissuance"
+        ],
+        "gov_frac": 0.183,
+        "accel": 1.304,
+        "year_density": 7.89,
+        "chronic_span_avg": 5.0,
+        "severity_score": 0.1224,
+        "recency_score": 0.25,
+        "recent_ap_rate": 0.0,
+        "n_recent": 1,
+        "n_sev5": 1
+      },
+      "scores": {
+        "total": 55.8,
+        "mode_A": 12.7,
+        "mode_B": 53.1,
+        "accel_boost": 2.7,
+        "dominant_mode": "B",
+        "threshold": 48,
+        "flagged": true,
+        "n_solo_chronic": 4,
+        "solo_ratio": 1.0,
+        "ecosystem_factor": 1.0,
+        "avg_knowledge_weight": 1.113,
+        "n_broken_promise": 0,
+        "n_closed_loop": 1,
+        "broken_boost": 1.0,
+        "severity_amp": 1.122,
+        "recency_amp": 1.25,
+        "gap_level": "unknown",
+        "staleness": "stale",
+        "audit_quality": 60.0,
+        "has_audit_profile": true
+      }
+    },
+    {
+      "ca": "PROCERT",
+      "population": "distrusted",
+      "distrust_event": {
+        "pathway": "gradual",
+        "posture": "demonstrated_incompetence",
+        "response": "non_responsive"
+      },
+      "signals": {
+        "n": 2,
+        "n_orig": 2,
+        "batches_collapsed": 0,
+        "low_confidence": true,
+        "years": [
+          2017,
+          2017
+        ],
+        "years_active": 1,
+        "self_pct": 0.0,
+        "n_chronic": 0,
+        "n_solo_chronic": 0,
+        "chronic_classes": {},
+        "solo_chronic_classes": {},
+        "chronic_knowledge": {},
+        "avg_knowledge_weight": 1.0,
+        "n_broken_promise": 0,
+        "broken_promise_classes": [],
+        "n_closed_loop": 0,
+        "closed_loop_classes": [],
+        "gov_frac": 0.0,
+        "accel": 1.0,
+        "year_density": 2.0,
+        "chronic_span_avg": 0.0,
+        "severity_score": 0.0,
+        "recency_score": 0.0,
+        "recent_ap_rate": 0.0,
+        "n_recent": 0,
+        "n_sev5": 0
+      },
+      "scores": {
+        "total": 6.0,
+        "mode_A": 4.0,
+        "mode_B": 6.0,
+        "accel_boost": 0.0,
+        "dominant_mode": "B",
+        "threshold": 48,
+        "flagged": false,
+        "n_solo_chronic": 0,
+        "solo_ratio": 1.0,
+        "ecosystem_factor": 1.0,
+        "avg_knowledge_weight": 1.0,
+        "n_broken_promise": 0,
+        "n_closed_loop": 0,
+        "broken_boost": 1.0,
+        "severity_amp": 1.0,
+        "recency_amp": 1.0,
+        "gap_level": "—",
+        "staleness": "—",
+        "audit_quality": null,
+        "has_audit_profile": false
+      }
+    },
+    {
+      "ca": "GRCA",
+      "population": "distrusted",
+      "distrust_event": null,
+      "signals": {
+        "n": 4,
+        "n_orig": 4,
+        "batches_collapsed": 0,
+        "low_confidence": true,
+        "years": [
+          2017,
+          2020
+        ],
+        "years_active": 4,
+        "self_pct": 0.0,
+        "n_chronic": 0,
+        "n_solo_chronic": 0,
+        "chronic_classes": {},
+        "solo_chronic_classes": {},
+        "chronic_knowledge": {},
+        "avg_knowledge_weight": 1.0,
+        "n_broken_promise": 0,
+        "broken_promise_classes": [],
+        "n_closed_loop": 0,
+        "closed_loop_classes": [],
+        "gov_frac": 0.0,
+        "accel": 1.0,
+        "year_density": 1.0,
+        "chronic_span_avg": 0.0,
+        "severity_score": 0.0938,
+        "recency_score": 0.0,
+        "recent_ap_rate": 0.0,
+        "n_recent": 0,
+        "n_sev5": 0
+      },
+      "scores": {
+        "total": 8.0,
+        "mode_A": 8.0,
+        "mode_B": 0.0,
+        "accel_boost": 0.0,
+        "dominant_mode": "A",
+        "threshold": 48,
+        "flagged": false,
+        "n_solo_chronic": 0,
+        "solo_ratio": 1.0,
+        "ecosystem_factor": 1.0,
+        "avg_knowledge_weight": 1.0,
+        "n_broken_promise": 0,
+        "n_closed_loop": 0,
+        "broken_boost": 1.0,
+        "severity_amp": 1.094,
+        "recency_amp": 1.0,
+        "gap_level": "—",
+        "staleness": "—",
+        "audit_quality": null,
+        "has_audit_profile": false
+      }
+    },
+    {
+      "ca": "Certinomis / Docapost",
+      "population": "distrusted",
+      "distrust_event": {
+        "pathway": "gradual",
+        "posture": "negligent_noncompliance",
+        "response": "inadequate"
+      },
+      "signals": {
+        "n": 2,
+        "n_orig": 2,
+        "batches_collapsed": 0,
+        "low_confidence": true,
+        "years": [
+          2017,
+          2018
+        ],
+        "years_active": 2,
+        "self_pct": 0.0,
+        "n_chronic": 0,
+        "n_solo_chronic": 0,
+        "chronic_classes": {},
+        "solo_chronic_classes": {},
+        "chronic_knowledge": {},
+        "avg_knowledge_weight": 1.0,
+        "n_broken_promise": 0,
+        "broken_promise_classes": [],
+        "n_closed_loop": 0,
+        "closed_loop_classes": [],
+        "gov_frac": 0.5,
+        "accel": 1.0,
+        "year_density": 1.0,
+        "chronic_span_avg": 0.0,
+        "severity_score": 0.1562,
+        "recency_score": 0.0,
+        "recent_ap_rate": 0.0,
+        "n_recent": 0,
+        "n_sev5": 0
+      },
+      "scores": {
+        "total": 11.5,
+        "mode_A": 11.5,
+        "mode_B": 5.0,
+        "accel_boost": 0.0,
+        "dominant_mode": "A",
+        "threshold": 48,
+        "flagged": false,
+        "n_solo_chronic": 0,
+        "solo_ratio": 1.0,
+        "ecosystem_factor": 1.0,
+        "avg_knowledge_weight": 1.0,
+        "n_broken_promise": 0,
+        "n_closed_loop": 0,
+        "broken_boost": 1.0,
+        "severity_amp": 1.156,
+        "recency_amp": 1.0,
+        "gap_level": "—",
+        "staleness": "—",
+        "audit_quality": null,
+        "has_audit_profile": false
+      }
+    },
+    {
+      "ca": "E-Tugra",
+      "population": "distrusted",
+      "distrust_event": {
+        "pathway": "triggered",
+        "posture": "demonstrated_incompetence",
+        "response": "inadequate"
+      },
+      "signals": {
+        "n": 14,
+        "n_orig": 14,
+        "batches_collapsed": 0,
+        "low_confidence": false,
+        "years": [
+          2018,
+          2022
+        ],
+        "years_active": 5,
+        "self_pct": 35.7,
+        "n_chronic": 1,
+        "n_solo_chronic": 1,
+        "chronic_classes": {
+          "ov-misissuance": [
+            2018,
+            2019,
+            2021
+          ]
+        },
+        "solo_chronic_classes": {
+          "ov-misissuance": [
+            2018,
+            2019,
+            2021
+          ]
+        },
+        "chronic_knowledge": {
+          "ov-misissuance": {
+            "prior_cas": 24,
+            "eco_age": 4,
+            "weight": 1.5
+          }
+        },
+        "avg_knowledge_weight": 1.5,
+        "n_broken_promise": 0,
+        "broken_promise_classes": [],
+        "n_closed_loop": 0,
+        "closed_loop_classes": [],
+        "gov_frac": 0.286,
+        "accel": 1.2,
+        "year_density": 2.8,
+        "chronic_span_avg": 3.0,
+        "severity_score": 0.1429,
+        "recency_score": 0.0,
+        "recent_ap_rate": 0.0,
+        "n_recent": 0,
+        "n_sev5": 0
+      },
+      "scores": {
+        "total": 29.5,
+        "mode_A": 25.9,
+        "mode_B": 28.1,
+        "accel_boost": 1.5,
+        "dominant_mode": "B",
+        "threshold": 48,
+        "flagged": false,
+        "n_solo_chronic": 1,
+        "solo_ratio": 1.0,
+        "ecosystem_factor": 1.0,
+        "avg_knowledge_weight": 1.5,
+        "n_broken_promise": 0,
+        "n_closed_loop": 0,
+        "broken_boost": 1.0,
+        "severity_amp": 1.143,
+        "recency_amp": 1.0,
+        "gap_level": "—",
+        "staleness": "—",
+        "audit_quality": null,
+        "has_audit_profile": false
+      }
+    },
+    {
+      "ca": "Certicamara",
+      "population": "distrusted",
+      "distrust_event": null,
+      "signals": {
+        "n": 3,
+        "n_orig": 3,
+        "batches_collapsed": 0,
+        "low_confidence": true,
+        "years": [
+          2018,
+          2026
+        ],
+        "years_active": 2,
+        "self_pct": 0.0,
+        "n_chronic": 0,
+        "n_solo_chronic": 0,
+        "chronic_classes": {},
+        "solo_chronic_classes": {},
+        "chronic_knowledge": {},
+        "avg_knowledge_weight": 1.0,
+        "n_broken_promise": 0,
+        "broken_promise_classes": [],
+        "n_closed_loop": 0,
+        "closed_loop_classes": [],
+        "gov_frac": 1.0,
+        "accel": 0.5,
+        "year_density": 1.5,
+        "chronic_span_avg": 0.0,
+        "severity_score": 0.25,
+        "recency_score": 0.25,
+        "recent_ap_rate": 0.0,
+        "n_recent": 1,
+        "n_sev5": 0
+      },
+      "scores": {
+        "total": 21.0,
+        "mode_A": 21.0,
+        "mode_B": 13.5,
+        "accel_boost": 0.0,
+        "dominant_mode": "A",
+        "threshold": 48,
+        "flagged": false,
+        "n_solo_chronic": 0,
+        "solo_ratio": 1.0,
+        "ecosystem_factor": 1.0,
+        "avg_knowledge_weight": 1.0,
+        "n_broken_promise": 0,
+        "n_closed_loop": 0,
+        "broken_boost": 1.0,
+        "severity_amp": 1.25,
+        "recency_amp": 1.25,
+        "gap_level": "—",
+        "staleness": "—",
+        "audit_quality": null,
+        "has_audit_profile": false
+      }
+    },
+    {
+      "ca": "TrustCor",
+      "population": "distrusted",
+      "distrust_event": {
+        "pathway": "immediate",
+        "posture": "negligent_noncompliance",
+        "response": "cooperative"
+      },
+      "signals": {
+        "n": 5,
+        "n_orig": 5,
+        "batches_collapsed": 0,
+        "low_confidence": true,
+        "years": [
+          2019,
+          2019
+        ],
+        "years_active": 1,
+        "self_pct": 40.0,
+        "n_chronic": 0,
+        "n_solo_chronic": 0,
+        "chronic_classes": {},
+        "solo_chronic_classes": {},
+        "chronic_knowledge": {},
+        "avg_knowledge_weight": 1.0,
+        "n_broken_promise": 0,
+        "broken_promise_classes": [],
+        "n_closed_loop": 0,
+        "closed_loop_classes": [],
+        "gov_frac": 0.0,
+        "accel": 1.0,
+        "year_density": 5.0,
+        "chronic_span_avg": 0.0,
+        "severity_score": 0.225,
+        "recency_score": 0.0,
+        "recent_ap_rate": 0.0,
+        "n_recent": 0,
+        "n_sev5": 0
+      },
+      "scores": {
+        "total": 14.0,
+        "mode_A": 6.0,
+        "mode_B": 14.0,
+        "accel_boost": 0.0,
+        "dominant_mode": "B",
+        "threshold": 48,
+        "flagged": false,
+        "n_solo_chronic": 0,
+        "solo_ratio": 1.0,
+        "ecosystem_factor": 1.0,
+        "avg_knowledge_weight": 1.0,
+        "n_broken_promise": 0,
+        "n_closed_loop": 0,
+        "broken_boost": 1.0,
+        "severity_amp": 1.225,
+        "recency_amp": 1.0,
+        "gap_level": "—",
+        "staleness": "—",
+        "audit_quality": null,
+        "has_audit_profile": false
+      }
+    },
+    {
+      "ca": "e-commerce monitoring GmbH",
+      "population": "distrusted",
+      "distrust_event": {
+        "pathway": "gradual",
+        "posture": "demonstrated_incompetence",
+        "response": "inadequate"
+      },
+      "signals": {
+        "n": 5,
+        "n_orig": 5,
+        "batches_collapsed": 0,
+        "low_confidence": true,
+        "years": [
+          2021,
+          2024
+        ],
+        "years_active": 3,
+        "self_pct": 0.0,
+        "n_chronic": 0,
+        "n_solo_chronic": 0,
+        "chronic_classes": {},
+        "solo_chronic_classes": {},
+        "chronic_knowledge": {},
+        "avg_knowledge_weight": 1.0,
+        "n_broken_promise": 0,
+        "broken_promise_classes": [],
+        "n_closed_loop": 0,
+        "closed_loop_classes": [],
+        "gov_frac": 0.2,
+        "accel": 0.75,
+        "year_density": 1.67,
+        "chronic_span_avg": 0.0,
+        "severity_score": 0.1125,
+        "recency_score": 0.0,
+        "recent_ap_rate": 0.0,
+        "n_recent": 0,
+        "n_sev5": 0
+      },
+      "scores": {
+        "total": 13.0,
+        "mode_A": 13.0,
+        "mode_B": 6.5,
+        "accel_boost": 0.0,
+        "dominant_mode": "A",
+        "threshold": 48,
+        "flagged": false,
+        "n_solo_chronic": 0,
+        "solo_ratio": 1.0,
+        "ecosystem_factor": 1.0,
+        "avg_knowledge_weight": 1.0,
+        "n_broken_promise": 0,
+        "n_closed_loop": 0,
+        "broken_boost": 1.0,
+        "severity_amp": 1.113,
+        "recency_amp": 1.0,
+        "gap_level": "unknown",
+        "staleness": "stale",
+        "audit_quality": 71.4,
+        "has_audit_profile": true
+      }
+    },
+    {
+      "ca": "e-commerce monitoring gmbh",
+      "population": "distrusted",
+      "distrust_event": {
+        "pathway": "gradual",
+        "posture": "demonstrated_incompetence",
+        "response": "inadequate"
+      },
+      "signals": {
+        "n": 4,
+        "n_orig": 4,
+        "batches_collapsed": 0,
+        "low_confidence": true,
+        "years": [
+          2023,
+          2024
+        ],
+        "years_active": 2,
+        "self_pct": 50.0,
+        "n_chronic": 0,
+        "n_solo_chronic": 0,
+        "chronic_classes": {},
+        "solo_chronic_classes": {},
+        "chronic_knowledge": {},
+        "avg_knowledge_weight": 1.0,
+        "n_broken_promise": 0,
+        "broken_promise_classes": [],
+        "n_closed_loop": 0,
+        "closed_loop_classes": [],
+        "gov_frac": 0.5,
+        "accel": 3.0,
+        "year_density": 2.0,
+        "chronic_span_avg": 0.0,
+        "severity_score": 0.1562,
+        "recency_score": 0.0,
+        "recent_ap_rate": 0.0,
+        "n_recent": 0,
+        "n_sev5": 0
+      },
+      "scores": {
+        "total": 23.8,
+        "mode_A": 20.3,
+        "mode_B": 11.0,
+        "accel_boost": 3.5,
+        "dominant_mode": "A",
+        "threshold": 48,
+        "flagged": false,
+        "n_solo_chronic": 0,
+        "solo_ratio": 1.0,
+        "ecosystem_factor": 1.0,
+        "avg_knowledge_weight": 1.0,
+        "n_broken_promise": 0,
+        "n_closed_loop": 0,
+        "broken_boost": 1.0,
+        "severity_amp": 1.156,
+        "recency_amp": 1.0,
+        "gap_level": "—",
+        "staleness": "—",
+        "audit_quality": null,
+        "has_audit_profile": false
+      }
+    }
+  ]
 }
