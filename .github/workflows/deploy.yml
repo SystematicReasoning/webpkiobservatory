@@ -1,0 +1,355 @@
+name: Update Data & Deploy
+
+on:
+  schedule:
+    - cron: '0 6 * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'app/**'
+      - 'pipeline/**'
+      - '.github/workflows/**'
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  # Only cancel in-progress runs for the data job — allows a new push to
+  # start fresh data collection without waiting. The build+deploy jobs use
+  # a separate group so they are never cancelled mid-flight.
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  update-data:
+    timeout-minutes: 60
+    runs-on: ubuntu-latest
+    outputs:
+      cache_run_id: ${{ github.run_id }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Save git-tracked files before cache restore
+        run: |
+          cp pipeline/ops_cache/comment_count_meta.json /tmp/comment_count_meta.json 2>/dev/null || true
+          cp pipeline/ops_cache/comment_classifications.json /tmp/comment_classifications.json 2>/dev/null || true
+
+      - name: Restore pipeline ops cache
+        uses: actions/cache@v4
+        with:
+          path: |
+            pipeline/ops_cache/comments_cache.json
+            pipeline/ops_cache/cabf_members.json
+            pipeline/ops_cache/chrome_root_store_cache.json
+            pipeline/ops_cache/microsoft_ctl_cache.json
+            pipeline/audit_pdf_cache/
+            data/crl_health.json
+            data/crl_health_history.json
+            data/crl_health_events.json
+          key: ops-cache-${{ runner.os }}-v6-${{ github.run_id }}
+          restore-keys: |
+            ops-cache-${{ runner.os }}-v6-
+            ops-cache-${{ runner.os }}-v6
+
+      - name: Restore git-tracked files (override stale cached versions)
+        run: |
+          if [ -f /tmp/comment_count_meta.json ]; then
+            cp /tmp/comment_count_meta.json pipeline/ops_cache/comment_count_meta.json
+            echo "  Restored comment_count_meta.json from git"
+          fi
+          if [ -f /tmp/comment_classifications.json ]; then
+            cp /tmp/comment_classifications.json pipeline/ops_cache/comment_classifications.json
+            echo "  Restored comment_classifications.json from git ($(wc -c < /tmp/comment_classifications.json) bytes)"
+          fi
+
+      - name: Install dependencies
+        run: pip install -r pipeline/requirements.txt
+
+      - name: Run root algorithm pipeline (generates PEM cache)
+        run: python pipeline/fetch_root_algo.py
+
+      - name: Run market/trust pipeline (reads PEM cache for cert viewer)
+        run: python pipeline/fetch_and_join.py
+
+      - name: Run browser share pipeline
+        run: python pipeline/fetch_browser_share.py
+
+      - name: Run incident pipeline
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python pipeline/fetch_incidents.py
+
+      - name: Run audit intelligence pipeline
+        continue-on-error: true
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python pipeline/fetch_audits.py 999
+
+      - name: Run Microsoft CTL changelog pipeline
+        continue-on-error: true
+        run: python pipeline/fetch_microsoft_ctl.py
+
+      - name: Run Chrome Root Store changelog pipeline
+        continue-on-error: true
+        run: python pipeline/fetch_chrome_root_store.py
+
+      - name: Run daily trust store snapshot
+        continue-on-error: true
+        run: python pipeline/fetch_trust_snapshots.py
+
+      - name: Run governance risk pipeline
+        continue-on-error: true
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python pipeline/fetch_rpe.py
+
+      - name: Run community engagement pipeline
+        continue-on-error: true
+        run: python pipeline/fetch_community.py
+
+      - name: Run BR validity changelog pipeline
+        continue-on-error: true
+        run: python pipeline/fetch_br_validity_changelog.py
+
+      - name: Run CRL infrastructure health pipeline
+        continue-on-error: true
+        run: python pipeline/fetch_crl_health.py
+
+      - name: Upload CRL health data as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: crl-health-data
+          path: |
+            data/crl_health.json
+            data/crl_health_history.json
+            data/crl_health_events.json
+          retention-days: 1
+          if-no-files-found: warn
+
+      - name: Run revision history pipeline
+        continue-on-error: true
+        run: python pipeline/fetch_revision_history.py
+
+      - name: Run compliance obligation growth pipeline
+        continue-on-error: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python pipeline/fetch_compliance_growth.py
+
+      - name: Compute Accountability Loop Scores
+        continue-on-error: true
+        run: python pipeline/compute_als.py
+
+      - name: Build CPF engagement data
+        continue-on-error: true
+        run: python pipeline/build_cpf_data.py
+
+      - name: Compute comparable cases
+        continue-on-error: true
+        run: python pipeline/compute_comparable_cases.py
+        # Note: score_incident_response.py (IRQ) is NOT run in CI.
+        # IRQ scoring calls the Anthropic API (~$2-3 per full corpus run).
+        # The scored cache (pipeline/ops_cache/irq_score_cache.json) is committed
+        # and incrementally updated manually: ANTHROPIC_API_KEY=... python pipeline/score_incident_response.py
+
+      - name: Export LLM snapshot (initial)
+        run: python pipeline/export_llm_snapshot.py
+
+      - name: Generate tab intro text
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python pipeline/fetch_tab_intros.py
+
+      - name: Export LLM snapshot (final, includes tab intros)
+        run: python pipeline/export_llm_snapshot.py
+
+      - name: Rotate dated LLM snapshots (keep last 7)
+        run: python pipeline/rotate_snapshots.py
+
+      - name: Commit data if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          # Save generated data to temp (before any git operations)
+          mkdir -p /tmp/pipeline-data
+          cp -r data/* /tmp/pipeline-data/
+          cp pipeline/algo_cache.json /tmp/algo_cache.json 2>/dev/null || true
+          cp pipeline/pem_cache.json /tmp/pem_cache.json 2>/dev/null || true
+          cp pipeline/incident_classifications.json /tmp/incident_classifications.json 2>/dev/null || true
+          cp pipeline/ops_cache/comment_classifications.json /tmp/comment_classifications.json 2>/dev/null || true
+          cp pipeline/ops_cache/compliance_growth_cache.json /tmp/compliance_growth_cache.json 2>/dev/null || true
+          cp pipeline/ops_cache/irq_score_cache.json /tmp/irq_score_cache.json 2>/dev/null || true
+          # Preserve CRL health files (not git-tracked, would be lost by git clean)
+          cp data/crl_health.json /tmp/crl_health.json 2>/dev/null || true
+          cp data/crl_health_history.json /tmp/crl_health_history.json 2>/dev/null || true
+          cp data/crl_health_events.json /tmp/crl_health_events.json 2>/dev/null || true
+          # Reset working tree, pull latest
+          git checkout -- . 2>/dev/null || true
+          git clean -fd data/ 2>/dev/null || true
+          git pull origin main --rebase || true
+          # Restore generated outputs
+          cp -r /tmp/pipeline-data/* data/
+          cp /tmp/algo_cache.json pipeline/algo_cache.json 2>/dev/null || true
+          cp /tmp/pem_cache.json pipeline/pem_cache.json 2>/dev/null || true
+          cp /tmp/incident_classifications.json pipeline/incident_classifications.json 2>/dev/null || true
+          cp /tmp/comment_classifications.json pipeline/ops_cache/comment_classifications.json 2>/dev/null || true
+          cp /tmp/compliance_growth_cache.json pipeline/ops_cache/compliance_growth_cache.json 2>/dev/null || true
+          cp /tmp/irq_score_cache.json pipeline/ops_cache/irq_score_cache.json 2>/dev/null || true
+          # Restore CRL files preserved above (cp -r may have overwritten with stale committed version)
+          cp /tmp/crl_health.json data/crl_health.json 2>/dev/null || true
+          cp /tmp/crl_health_history.json data/crl_health_history.json 2>/dev/null || true
+          cp /tmp/crl_health_events.json data/crl_health_events.json 2>/dev/null || true
+          # Stage and commit data outputs + git-tracked pipeline files
+          # Note: crl_health.json excluded — regenerated daily from live CRL
+          # scans, too large for GitHub (235MB+), preserved via ops cache.
+          git add data/ \
+            pipeline/algo_cache.json \
+            pipeline/pem_cache.json \
+            pipeline/incident_classifications.json \
+            pipeline/ops_cache/comment_classifications.json \
+            pipeline/ops_cache/compliance_growth_cache.json \
+            pipeline/ops_cache/irq_score_cache.json
+          # Exclude large files regenerated daily — kept in ops cache, not git
+          git reset HEAD data/crl_health.json || true
+          git reset HEAD data/crl_health_history.json || true
+          git reset HEAD data/crl_health_events.json || true
+          if git diff --staged --quiet; then
+            echo "No data changes"
+          else
+            git commit -m "Update WebPKI data $(date -u +%Y-%m-%d)"
+            # Stash anything untracked so rebase can proceed cleanly
+            git add -u
+            git stash --include-untracked 2>/dev/null || true
+            # Retry rebase+push up to 3 times to handle concurrent pushes
+            pushed=false
+            for attempt in 1 2 3; do
+              if git pull --rebase origin main; then
+                git stash pop 2>/dev/null || true
+                if git push origin main; then
+                  pushed=true
+                  break
+                else
+                  echo "Push rejected on attempt $attempt — rebasing again"
+                  git stash 2>/dev/null || true
+                fi
+              else
+                echo "Rebase failed on attempt $attempt"
+                git stash pop 2>/dev/null || true
+                git rebase --abort 2>/dev/null || true
+                break
+              fi
+            done
+            if [ "$pushed" = false ]; then
+              echo "Failed to push after 3 attempts"
+              exit 1
+            fi
+          fi
+
+      - name: Save pipeline ops cache
+        uses: actions/cache/save@v4
+        if: always()
+        with:
+          path: |
+            pipeline/ops_cache/comments_cache.json
+            pipeline/ops_cache/cabf_members.json
+            pipeline/ops_cache/chrome_root_store_cache.json
+            pipeline/ops_cache/microsoft_ctl_cache.json
+            pipeline/audit_pdf_cache/
+            data/crl_health.json
+            data/crl_health_history.json
+            data/crl_health_events.json
+          key: ops-cache-${{ runner.os }}-v6-${{ github.run_id }}
+
+  build:
+    needs: update-data
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    concurrency:
+      group: pages-build
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+
+      - name: Download CRL health data from update-data job
+        uses: actions/download-artifact@v4
+        with:
+          name: crl-health-data
+          path: data/
+
+      - name: Install pipeline dependencies
+        run: pip install -r pipeline/requirements.txt
+
+      - name: Run pipeline smoke tests
+        run: python -m pytest pipeline/test_pipeline.py -v --tb=short
+
+      - name: Run deterministic scoring property tests
+        run: python -m pytest pipeline/test_scoring_properties.py -v --tb=short
+
+      - name: Generate UI bundle
+        env:
+          PIPELINE_DATA_DIR: ${{ github.workspace }}/data
+          PIPELINE_DIR: ${{ github.workspace }}/pipeline
+        run: python pipeline/export_ui_bundle.py
+
+      - name: Verify bundle has AUDITS_DATA
+        run: python3 pipeline/verify_bundle.py
+
+      - name: Install dependencies
+        working-directory: app
+        run: npm ci
+
+      - name: Build
+        working-directory: app
+        env:
+          PIPELINE_DATA_DIR: ${{ github.workspace }}/data
+          PIPELINE_DIR: ${{ github.workspace }}/pipeline
+        run: |
+          npm run build
+          mkdir -p dist/data
+          cp -r ${{ github.workspace }}/data/ca dist/data/ca
+          cp ${{ github.workspace }}/data/llm_snapshot.json dist/llm_snapshot.json
+          for f in ${{ github.workspace }}/data/llm_snapshot_*.json; do cp "$f" dist/; done
+          cp ${{ github.workspace }}/data/crl_health.json dist/crl_health.json
+          cp ${{ github.workspace }}/data/crl_health_history.json dist/crl_health_history.json 2>/dev/null || true
+          cp ${{ github.workspace }}/data/crl_health_events.json dist/crl_health_events.json 2>/dev/null || true
+
+      - name: Inject SEO content
+        env:
+          PIPELINE_DATA_DIR: ${{ github.workspace }}/data
+          DIST_DIR: ${{ github.workspace }}/app/dist
+        run: python pipeline/generate_seo.py
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: app/dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

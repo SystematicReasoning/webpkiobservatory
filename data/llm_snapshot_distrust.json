@@ -1,0 +1,2062 @@
+{
+  "$schema": "https://webpki.systematicreasoning.com/schema.json",
+  "version": "1.0.0",
+  "generatedAt": "2026-08-12T22:30:34.364547+00:00",
+  "snapshotUrl": "https://webpki.systematicreasoning.com/llm_snapshot.json",
+  "note": "Sliced subset of llm_snapshot.json. Fetch the full snapshot for complete data.",
+  "distrustEvents": [
+    {
+      "ca": "DigiNotar",
+      "caOwner": "DigiNotar",
+      "crtshUrl": "https://crt.sh/?CAName=DigiNotar",
+      "year": 2011,
+      "country": "Netherlands",
+      "compliancePosture": "willful_circumvention",
+      "distrustPathway": "immediate",
+      "responseQuality": "moot",
+      "reasonTags": [
+        "infrastructure_compromise",
+        "rogue_certificate_issuance",
+        "concealed_breach_or_incident",
+        "certificates_used_for_mitm"
+      ],
+      "summary": "CA infrastructure was fully compromised. Attacker issued 531+ fraudulent certificates including *.google.com, used in MITM surveillance of Iranian users. CA concealed the breach for weeks. Declared bankruptcy after distrust.",
+      "distrustDates": {
+        "chrome": "2011-08-29",
+        "mozilla": "2011-09-02",
+        "apple": "2011-09-09",
+        "microsoft": "2011-09-13"
+      },
+      "classificationTier": "curated",
+      "postureEvidence": "Concealed breach for weeks while fraudulent certs were actively used for surveillance.",
+      "tagEvidence": {
+        "infrastructure_compromise": "Curated from root program announcements",
+        "rogue_certificate_issuance": "Curated from root program announcements",
+        "concealed_breach_or_incident": "Curated from root program announcements",
+        "certificates_used_for_mitm": "Curated from root program announcements"
+      },
+      "timeline": {
+        "firstBugDate": null,
+        "lastBugDate": null,
+        "distrustDate": "2011-08-29",
+        "runwayDays": null
+      },
+      "references": {
+        "rootProgramAnnouncements": [
+          "https://blog.mozilla.org/security/2011/09/02/diginotar-removal-follow-up/",
+          "https://threatpost.com/final-report-diginotar-hack-shows-total-compromise-ca-servers-091511/"
+        ],
+        "mdspThreads": [
+          "https://groups.google.com/g/mozilla.dev.security.policy/c/eFp_xmfNhAw"
+        ],
+        "ccadbThreads": [],
+        "articles": [
+          {
+            "url": "https://www.enisa.europa.eu/sites/default/files/all_files/Operation_Black_Tulip_v2.pdf",
+            "source": "ENISA",
+            "title": "Operation Black Tulip: Certificate authorities lose authority"
+          },
+          {
+            "url": "https://www.theregister.com/2011/09/06/diginotar_audit_damning_fail/",
+            "source": "The Register",
+            "title": "Inside Operation Black Tulip: DigiNotar hack analysed"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/DigiNotar",
+            "source": "Wikipedia",
+            "title": "DigiNotar"
+          },
+          {
+            "url": "https://digitalcommons.usf.edu/cgi/viewcontent.cgi?article=1246&context=jss",
+            "source": "Journal of Strategic Security",
+            "title": "DigiNotar: Dissecting the First Dutch Digital Disaster"
+          }
+        ]
+      }
+    },
+    {
+      "ca": "ANSSI",
+      "caOwner": "Government of France (ANSSI, DCSSI)",
+      "crtshUrl": "https://crt.sh/?CAName=Government%20of%20France%20%28ANSSI%2C%20DCSSI%29",
+      "year": 2013,
+      "country": "France",
+      "compliancePosture": "accidental",
+      "distrustPathway": "triggered",
+      "responseQuality": "cooperative",
+      "reasonTags": [
+        "unauthorized_delegation",
+        "rogue_certificate_issuance",
+        "certificates_used_for_mitm"
+      ],
+      "summary": "Government CA issued intermediate certificate to network appliance company for traffic inspection. Used to issue MITM certificate for Google domains. ANSSI cooperated, certificate was revoked. Distrust limited to specific intermediate, not full root removal.",
+      "distrustDates": {
+        "chrome": "2013-12-09",
+        "mozilla": "2013-12-09",
+        "apple": "2013-12-09",
+        "microsoft": "2013-12-09"
+      },
+      "classificationTier": "curated",
+      "postureEvidence": "Government CA delegated cert to network appliance company. Didn't understand WebPKI constraints on delegation.",
+      "tagEvidence": {
+        "unauthorized_delegation": "Curated from root program announcements",
+        "rogue_certificate_issuance": "Curated from root program announcements",
+        "certificates_used_for_mitm": "Curated from root program announcements"
+      },
+      "timeline": {
+        "firstBugDate": null,
+        "lastBugDate": null,
+        "distrustDate": "2013-06-01",
+        "runwayDays": null
+      },
+      "references": {
+        "rootProgramAnnouncements": [
+          "https://security.googleblog.com/2013/12/further-improving-digital-certificate.html",
+          "https://blog.mozilla.org/security/2013/12/09/revoking-trust-in-one-anssi-certificate/"
+        ],
+        "mdspThreads": [],
+        "ccadbThreads": [],
+        "articles": [
+          {
+            "url": "https://security.googleblog.com/2013/12/further-improving-digital-certificate.html",
+            "source": "Chrome Blog",
+            "title": "Further improving digital certificate security"
+          },
+          {
+            "url": "https://blog.mozilla.org/security/2013/12/09/revoking-trust-in-one-anssi-certificate/",
+            "source": "Mozilla Blog",
+            "title": "Revoking trust in one ANSSI certificate"
+          }
+        ]
+      }
+    },
+    {
+      "ca": "India CCA (NIC)",
+      "caOwner": "India CCA",
+      "crtshUrl": "https://crt.sh/?CAName=India%20CCA",
+      "year": 2014,
+      "country": "IN",
+      "compliancePosture": "negligent_noncompliance",
+      "distrustPathway": "triggered",
+      "responseQuality": "inadequate",
+      "reasonTags": [
+        "unauthorized_certificate",
+        "government_ca",
+        "lack_of_controls"
+      ],
+      "summary": "Indian government CA (National Informatics Centre) issued unauthorized certificates for Google domains. Chrome, Mozilla, and Apple constrained or removed trust. Microsoft has not acted.",
+      "distrustDates": {
+        "chrome": "2014-07-12",
+        "mozilla": "2014-07-14",
+        "apple": "2014-07-14"
+      },
+      "classificationTier": "curated",
+      "postureEvidence": "NIC intermediate CA issued unauthorized Google certificates.",
+      "tagEvidence": {},
+      "timeline": {
+        "firstBugDate": null,
+        "lastBugDate": null,
+        "distrustDate": "2014-07-12",
+        "runwayDays": null
+      }
+    },
+    {
+      "ca": "CNNIC",
+      "caOwner": "China Internet Network Information Center (CNNIC)",
+      "crtshUrl": "https://crt.sh/?CAName=China%20Internet%20Network%20Information%20Center%20%28CNNIC%29",
+      "year": 2015,
+      "country": "China",
+      "compliancePosture": "negligent_noncompliance",
+      "distrustPathway": "triggered",
+      "responseQuality": "inadequate",
+      "reasonTags": [
+        "unauthorized_delegation",
+        "rogue_certificate_issuance",
+        "inadequate_incident_response",
+        "certificates_used_for_mitm"
+      ],
+      "summary": "Issued unconstrained intermediate certificate to MCS Holdings, an Egyptian company that used it as a MITM proxy to issue unauthorized certificates for Google domains.",
+      "distrustDates": {
+        "chrome": "2015-04-01",
+        "mozilla": "2015-04-02",
+        "apple": "2015-04-02",
+        "microsoft": "2015-04-02"
+      },
+      "classificationTier": "curated",
+      "postureEvidence": "Issued unconstrained intermediate to MCS Holdings without adequate oversight. MCS ran a MITM proxy.",
+      "tagEvidence": {
+        "unauthorized_delegation": "Curated from root program announcements",
+        "rogue_certificate_issuance": "Curated from root program announcements",
+        "inadequate_incident_response": "Curated from root program announcements",
+        "certificates_used_for_mitm": "Curated from root program announcements"
+      },
+      "timeline": {
+        "firstBugDate": null,
+        "lastBugDate": null,
+        "distrustDate": "2015-04-01",
+        "runwayDays": null
+      },
+      "references": {
+        "rootProgramAnnouncements": [
+          "https://blog.mozilla.org/security/2015/04/02/distrusting-new-cnnic-certificates/",
+          "https://security.googleblog.com/2015/03/maintaining-digital-certificate-security.html"
+        ],
+        "mdspThreads": [
+          "https://groups.google.com/a/mozilla.org/g/dev-security-policy/c/Z5701nXiDqA"
+        ],
+        "ccadbThreads": [],
+        "articles": [
+          {
+            "url": "https://security.googleblog.com/2015/03/maintaining-digital-certificate-security.html",
+            "source": "Chrome Blog",
+            "title": "Maintaining digital certificate security"
+          },
+          {
+            "url": "https://blog.mozilla.org/security/2015/04/02/distrusting-new-cnnic-certificates/",
+            "source": "Mozilla Blog",
+            "title": "Distrusting new CNNIC certificates"
+          }
+        ]
+      }
+    },
+    {
+      "ca": "WoSign",
+      "caOwner": "WoSign CA Limited",
+      "crtshUrl": "https://crt.sh/?CAName=WoSign%20CA%20Limited",
+      "year": 2016,
+      "country": "China",
+      "compliancePosture": "willful_circumvention",
+      "distrustPathway": "immediate",
+      "responseQuality": "moot",
+      "reasonTags": [
+        "baseline_requirements_violations",
+        "rogue_certificate_issuance",
+        "active_deception",
+        "hidden_corporate_changes",
+        "validation_bypass"
+      ],
+      "summary": "WoSign was distrusted for systematic rule circumvention including backdating SHA-1 certificates, issuing unauthorized certificates, and concealing their acquisition of StartCom. They deliberately built systems to violate browser restrictions and actively deceived the community about their operations.",
+      "distrustDates": {
+        "chrome": "2016-10-31",
+        "mozilla": "2016-10-24",
+        "apple": "2016-12-01",
+        "microsoft": "2017-01-01"
+      },
+      "classificationTier": "medium_high",
+      "postureEvidence": "",
+      "tagEvidence": {},
+      "timeline": {
+        "firstBugDate": "2019-02-05",
+        "lastBugDate": "2019-02-05",
+        "distrustDate": "2016-06-01",
+        "runwayDays": -979
+      },
+      "references": {
+        "rootProgramAnnouncements": [
+          "https://security.googleblog.com/2016/10/distrusting-wosign-and-startcom.html"
+        ],
+        "mdspThreads": [
+          "https://groups.google.com/g/mozilla.dev.security.policy/c/k9PBmyLCi8I",
+          "https://groups.google.com/g/mozilla.dev.security.policy/c/1XI3Y7PJ1Uc",
+          "https://groups.google.com/g/mozilla.dev.security.policy/c/BV5XyFJLnQM",
+          "https://groups.google.com/g/mozilla.dev.security.policy/c/VUj2glQYxLc"
+        ],
+        "ccadbThreads": [],
+        "articles": [
+          {
+            "url": "https://security.googleblog.com/2016/10/distrusting-wosign-and-startcom.html",
+            "source": "Chrome Blog",
+            "title": "Distrusting WoSign and StartCom Certificates"
+          },
+          {
+            "url": "https://blog.mozilla.org/security/2016/10/24/distrusting-new-wosign-and-startcom-certificates/",
+            "source": "Mozilla Blog",
+            "title": "Distrusting New WoSign and StartCom Certificates"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/WoSign",
+            "source": "Wikipedia",
+            "title": "WoSign"
+          }
+        ]
+      }
+    },
+    {
+      "ca": "StartCom",
+      "caOwner": "Start Commercial (StartCom) Ltd.",
+      "crtshUrl": "https://crt.sh/?CAName=Start%20Commercial%20%28StartCom%29%20Ltd.",
+      "year": 2016,
+      "country": "Israel",
+      "compliancePosture": "willful_circumvention",
+      "distrustPathway": "immediate",
+      "responseQuality": "moot",
+      "reasonTags": [
+        "active_deception",
+        "hidden_corporate_changes",
+        "rogue_certificate_issuance",
+        "baseline_requirements_violations",
+        "pattern_of_issues",
+        "validation_bypass"
+      ],
+      "summary": "StartCom was distrusted for concealing its acquisition by WoSign while maintaining false appearance of independence. Post-distrust bugs show continued attempts to circumvent restrictions through proxy issuance and certificate manipulation, demonstrating willful violation of trust boundaries.",
+      "distrustDates": {
+        "chrome": "2016-10-31",
+        "mozilla": "2016-10-24",
+        "apple": "2016-12-01",
+        "microsoft": "2017-01-01"
+      },
+      "classificationTier": "high",
+      "postureEvidence": "",
+      "tagEvidence": {},
+      "timeline": {
+        "firstBugDate": "2017-03-25",
+        "lastBugDate": "2019-02-05",
+        "distrustDate": "2016-06-01",
+        "runwayDays": -297
+      },
+      "references": {
+        "rootProgramAnnouncements": [
+          "https://security.googleblog.com/2016/10/distrusting-wosign-and-startcom.html"
+        ],
+        "mdspThreads": [
+          "https://groups.google.com/g/mozilla.dev.security.policy/c/TbDYE69YP8E"
+        ],
+        "ccadbThreads": [],
+        "articles": [
+          {
+            "url": "https://security.googleblog.com/2016/10/distrusting-wosign-and-startcom.html",
+            "source": "Chrome Blog",
+            "title": "Distrusting WoSign and StartCom Certificates"
+          },
+          {
+            "url": "https://blog.mozilla.org/security/2016/10/24/distrusting-new-wosign-and-startcom-certificates/",
+            "source": "Mozilla Blog",
+            "title": "Distrusting New WoSign and StartCom Certificates"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/StartCom",
+            "source": "Wikipedia",
+            "title": "StartCom"
+          }
+        ]
+      }
+    },
+    {
+      "ca": "Symantec",
+      "caOwner": "Symantec",
+      "crtshUrl": "https://crt.sh/?CAName=Symantec",
+      "year": 2017,
+      "country": "United States",
+      "compliancePosture": "argumentative_noncompliance",
+      "distrustPathway": "negotiated",
+      "responseQuality": "inadequate",
+      "reasonTags": [
+        "unauthorized_delegation",
+        "pattern_of_issues",
+        "validation_bypass",
+        "lack_of_meaningful_improvement",
+        "minimized_severity",
+        "baseline_requirements_violations",
+        "willful_misissuance"
+      ],
+      "summary": "Google documented years of misissuance incidents including test certificates, non-audited intermediates, and BR violations. DigiCert acquired Symantec's CA business and managed the transition. Gradual distrust over 12+ months with subscriber migration.",
+      "distrustDates": {
+        "chrome": "2018-04-17",
+        "mozilla": "2018-10-01",
+        "apple": "2018-10-15",
+        "microsoft": "2018-10-15"
+      },
+      "classificationTier": "curated",
+      "postureEvidence": "Third-party RA program was knowingly structured to bypass validation controls. Repeatedly minimized severity and argued rules should not apply as written. Willful misissuance in training infrastructure. Pattern of argumentative engagement with root programs eroded confidence.",
+      "tagEvidence": {
+        "unauthorized_delegation": "Curated from root program announcements",
+        "pattern_of_issues": "Curated from root program announcements",
+        "validation_bypass": "Curated from root program announcements",
+        "lack_of_meaningful_improvement": "Curated from root program announcements",
+        "minimized_severity": "Curated from root program announcements",
+        "baseline_requirements_violations": "Curated from root program announcements"
+      },
+      "timeline": {
+        "firstBugDate": "2017-01-27",
+        "lastBugDate": "2017-11-27",
+        "distrustDate": "2018-10-09",
+        "runwayDays": 620
+      },
+      "references": {
+        "rootProgramAnnouncements": [
+          "https://security.googleblog.com/2017/09/chromes-plan-to-distrust-symantec.html"
+        ],
+        "mdspThreads": [
+          "https://groups.google.com/g/mozilla.dev.security.policy/c/gLhzSzo-XFw"
+        ],
+        "ccadbThreads": [
+          "https://groups.google.com/a/ccadb.org/g/public/c/xoCKQLlU1F4",
+          "https://groups.google.com/a/ccadb.org/g/public/c/SXAeHT04TFc"
+        ],
+        "articles": [
+          {
+            "url": "https://security.googleblog.com/2017/09/chromes-plan-to-distrust-symantec.html",
+            "source": "Chrome Blog",
+            "title": "Chrome's Plan to Distrust Symantec Certificates"
+          },
+          {
+            "url": "https://arstechnica.com/information-technology/2017/03/google-takes-symantec-to-the-woodshed-for-mis-issuing-30000-https-certs/",
+            "source": "Ars Technica",
+            "title": "Google takes Symantec to the woodshed for mis-issuing 30,000 HTTPS certs"
+          },
+          {
+            "url": "https://www.bleepingcomputer.com/news/security/google-outlines-ssl-apocalypse-for-symantec-certificates/",
+            "source": "Bleeping Computer",
+            "title": "Google Outlines SSL Apocalypse for Symantec Certificates"
+          }
+        ]
+      }
+    },
+    {
+      "ca": "TurkTrust",
+      "caOwner": "TurkTrust",
+      "crtshUrl": "https://crt.sh/?CAName=TurkTrust",
+      "year": 2018,
+      "country": "Turkey",
+      "compliancePosture": "negligent_noncompliance",
+      "distrustPathway": "gradual",
+      "responseQuality": "inadequate",
+      "reasonTags": [
+        "baseline_requirements_violations",
+        "unauthorized_delegation",
+        "non_responsive_to_root_programs",
+        "audit_deficiencies",
+        "pattern_of_issues",
+        "rogue_certificate_issuance"
+      ],
+      "summary": "TurkTrust was distrusted following a pattern of compliance failures including issuing non-audited, non-constrained intermediate certificates and failing to respond to root program surveys. The distrust was triggered by the 2012 incident where their operational mistake led to a fraudulent Google certificate, followed by ongoing compliance deficiencies.",
+      "distrustDates": {
+        "chrome": "2018-06-01",
+        "mozilla": "2018-05-01",
+        "apple": "2018-06-01",
+        "microsoft": "2018-06-01"
+      },
+      "classificationTier": "medium_high",
+      "postureEvidence": "",
+      "tagEvidence": {},
+      "timeline": {
+        "firstBugDate": "2017-05-25",
+        "lastBugDate": "2018-02-17",
+        "distrustDate": "2018-06-01",
+        "runwayDays": 372
+      },
+      "references": {
+        "rootProgramAnnouncements": [
+          "https://krebsonsecurity.com/2013/01/turkish-registrar-enabled-phishers-to-spoof-google/"
+        ],
+        "mdspThreads": [],
+        "ccadbThreads": [],
+        "articles": [
+          {
+            "url": "https://krebsonsecurity.com/2013/01/turkish-registrar-enabled-phishers-to-spoof-google/",
+            "source": "Krebs on Security",
+            "title": "Turkish CA enabled phishers to spoof Google"
+          },
+          {
+            "url": "https://security.googleblog.com/2013/01/enhancing-digital-certificate-security.html",
+            "source": "Chrome Blog",
+            "title": "Enhancing digital certificate security"
+          }
+        ]
+      }
+    },
+    {
+      "ca": "Certinomis",
+      "caOwner": "Docaposte Certinomis SAS",
+      "crtshUrl": "https://crt.sh/?CAName=Docaposte%20Certinomis%20SAS",
+      "year": 2019,
+      "country": "France",
+      "compliancePosture": "negligent_noncompliance",
+      "distrustPathway": "gradual",
+      "responseQuality": "inadequate",
+      "reasonTags": [
+        "baseline_requirements_violations",
+        "pattern_of_issues",
+        "lack_of_meaningful_improvement",
+        "inadequate_incident_response",
+        "non_responsive_to_root_programs"
+      ],
+      "summary": "Certinomis was distrusted in 2019 following a sustained pattern of 20 documented incidents over 2+ years showing systematic BR violations including invalid DNS names, improper certificate profiles, and OCSP failures. Despite being aware of these issues through bug reports, the CA failed to implement effective systemic remediation, with the same violation categories recurring throughout the period.",
+      "distrustDates": {
+        "chrome": "2019-07-01",
+        "mozilla": "2019-06-01",
+        "apple": "2019-07-01"
+      },
+      "classificationTier": "high",
+      "postureEvidence": "",
+      "tagEvidence": {},
+      "timeline": {
+        "firstBugDate": "2017-08-02",
+        "lastBugDate": "2019-05-14",
+        "distrustDate": "2019-06-01",
+        "runwayDays": 668
+      },
+      "references": {
+        "rootProgramAnnouncements": [
+          "https://venafi.com/blog/mozilla-distrusts-certinomis-issued-certificates/"
+        ],
+        "mdspThreads": [
+          "https://groups.google.com/a/mozilla.org/g/dev-security-policy/c/XpknYMPO8dI",
+          "https://groups.google.com/a/mozilla.org/g/dev-security-policy/c/Ni4tS6OBBbw",
+          "https://groups.google.com/a/mozilla.org/g/dev-security-policy/c/rmU311hOIIc"
+        ],
+        "ccadbThreads": [],
+        "articles": [
+          {
+            "url": "https://venafi.com/blog/mozilla-distrusts-certinomis-issued-certificates/",
+            "source": "Venafi",
+            "title": "Mozilla distrusts Certinomis issued certificates"
+          }
+        ]
+      }
+    },
+    {
+      "ca": "PROCERT",
+      "caOwner": "PROCERT",
+      "crtshUrl": "https://crt.sh/?CAName=PROCERT",
+      "year": 2020,
+      "country": "Venezuela",
+      "compliancePosture": "demonstrated_incompetence",
+      "distrustPathway": "gradual",
+      "responseQuality": "non_responsive",
+      "reasonTags": [
+        "baseline_requirements_violations",
+        "non_responsive_to_root_programs",
+        "demonstrated_lack_of_understanding",
+        "limited_ecosystem_value"
+      ],
+      "summary": "PROCERT was a Venezuelan CA that demonstrated incompetence through non-BR-compliant issuance and complete non-responsiveness to Mozilla's action items. The sparse 2017 bug trail with no CA engagement suggests an organization that lacked the operational capacity to participate meaningfully in the WebPKI ecosystem.",
+      "distrustDates": {
+        "chrome": "2020-07-01",
+        "mozilla": "2020-06-01",
+        "apple": "2020-07-01",
+        "microsoft": "2020-07-01"
+      },
+      "classificationTier": "medium_high",
+      "postureEvidence": "",
+      "tagEvidence": {},
+      "timeline": {
+        "firstBugDate": "2017-08-16",
+        "lastBugDate": "2017-10-04",
+        "distrustDate": "2020-06-01",
+        "runwayDays": 1020
+      },
+      "references": {
+        "rootProgramAnnouncements": [
+          "https://venafi.com/blog/mozilla-distrusts-procert-local-certificate-authorities-have-global-impact/"
+        ],
+        "mdspThreads": [
+          "https://groups.google.com/a/mozilla.org/g/dev-security-policy/c/Ni4tS6OBBbw",
+          "https://groups.google.com/a/mozilla.org/g/dev-security-policy/c/lqZersN26VA"
+        ],
+        "ccadbThreads": [],
+        "articles": [
+          {
+            "url": "https://venafi.com/blog/mozilla-distrusts-procert-local-certificate-authorities-have-global-impact/",
+            "source": "Venafi",
+            "title": "Mozilla distrusts PROCERT: local CAs have global impact"
+          }
+        ]
+      }
+    },
+    {
+      "ca": "Camerfirma",
+      "caOwner": "AC Camerfirma, S.A.",
+      "crtshUrl": "https://crt.sh/?CAName=AC%20Camerfirma%2C%20S.A.",
+      "year": 2021,
+      "country": "Spain",
+      "compliancePosture": "negligent_noncompliance",
+      "distrustPathway": "gradual",
+      "responseQuality": "inadequate",
+      "reasonTags": [
+        "baseline_requirements_violations",
+        "delayed_or_refused_revocation",
+        "pattern_of_issues",
+        "lack_of_meaningful_improvement",
+        "unauthorized_delegation",
+        "audit_deficiencies",
+        "inadequate_incident_response"
+      ],
+      "summary": "Camerfirma was distrusted after years of systematic Baseline Requirements violations, delayed revocations, and unauthorized subordinate CA issuance. Despite repeated incidents and Mozilla oversight, the CA failed to implement effective controls, with the same types of violations recurring over multiple years.",
+      "distrustDates": {
+        "chrome": "2021-07-01",
+        "mozilla": "2021-06-01",
+        "apple": "2021-07-01"
+      },
+      "classificationTier": "high",
+      "postureEvidence": "",
+      "tagEvidence": {},
+      "timeline": {
+        "firstBugDate": "2017-03-25",
+        "lastBugDate": "2021-04-09",
+        "distrustDate": "2021-06-01",
+        "runwayDays": 1529
+      },
+      "references": {
+        "rootProgramAnnouncements": [
+          "https://www.theregister.com/2021/02/02/chrome_camerfirma_certificates/"
+        ],
+        "mdspThreads": [
+          "https://groups.google.com/a/mozilla.org/g/dev-security-policy/c/XpknYMPO8dI",
+          "https://groups.google.com/a/mozilla.org/g/dev-security-policy/c/Ni4tS6OBBbw",
+          "https://groups.google.com/a/mozilla.org/g/dev-security-policy/c/dSeD3dgnpzk"
+        ],
+        "ccadbThreads": [
+          "https://groups.google.com/a/ccadb.org/g/public/c/xoCKQLlU1F4"
+        ],
+        "articles": [
+          {
+            "url": "https://www.theregister.com/2021/02/02/chrome_camerfirma_certificates/",
+            "source": "The Register",
+            "title": "Chrome and Mozilla distrust Camerfirma certificates"
+          }
+        ]
+      }
+    },
+    {
+      "ca": "TrustCor",
+      "caOwner": "TrustCor Systems",
+      "crtshUrl": "https://crt.sh/?CAName=TrustCor%20Systems",
+      "year": 2022,
+      "country": "Canada",
+      "compliancePosture": "negligent_noncompliance",
+      "distrustPathway": "immediate",
+      "responseQuality": "cooperative",
+      "reasonTags": [
+        "baseline_requirements_violations",
+        "delayed_or_refused_revocation",
+        "audit_deficiencies",
+        "ties_to_adversarial_entities",
+        "pattern_of_issues"
+      ],
+      "summary": "TrustCor was distrusted in 2022 primarily due to discovered corporate ties to surveillance entities rather than the technical compliance issues shown in these 2019 Bugzilla reports. While they had routine compliance problems and delayed revocations, the fundamental issue was organizational trust incompatibility.",
+      "distrustDates": {
+        "chrome": "2022-12-02",
+        "mozilla": "2022-12-01",
+        "apple": "2022-12-02",
+        "microsoft": "2023-02-28"
+      },
+      "classificationTier": "high",
+      "postureEvidence": "",
+      "tagEvidence": {},
+      "timeline": {
+        "firstBugDate": "2019-03-04",
+        "lastBugDate": "2019-11-26",
+        "distrustDate": "2022-06-01",
+        "runwayDays": 1185
+      },
+      "references": {
+        "rootProgramAnnouncements": [
+          "https://www.ghacks.net/2022/12/02/mozilla-and-microsoft-distrust-trustcor-root-certificates-in-their-browsers/"
+        ],
+        "mdspThreads": [
+          "https://groups.google.com/a/mozilla.org/g/dev-security-policy/c/oxX69KFvsm4"
+        ],
+        "ccadbThreads": [
+          "https://groups.google.com/a/ccadb.org/g/public/c/xoCKQLlU1F4",
+          "https://groups.google.com/a/ccadb.org/g/public/c/SXAeHT04TFc"
+        ],
+        "articles": [
+          {
+            "url": "https://www.ghacks.net/2022/12/02/mozilla-and-microsoft-distrust-trustcor-root-certificates-in-their-browsers/",
+            "source": "gHacks",
+            "title": "Mozilla and Microsoft distrust TrustCor root certificates"
+          },
+          {
+            "url": "https://www.washingtonpost.com/technology/2022/11/08/trustcor-internet-addresses-browser-mozilla/",
+            "source": "Washington Post",
+            "title": "TrustCor linked to intelligence operations"
+          }
+        ]
+      }
+    },
+    {
+      "ca": "Visa",
+      "caOwner": "Visa",
+      "crtshUrl": "https://crt.sh/?CAName=Visa",
+      "year": 2022,
+      "country": "United States of America",
+      "compliancePosture": "negligent_noncompliance",
+      "distrustPathway": "gradual",
+      "responseQuality": "non_responsive",
+      "reasonTags": [
+        "baseline_requirements_violations",
+        "audit_deficiencies",
+        "non_responsive_to_root_programs",
+        "pattern_of_issues",
+        "limited_ecosystem_value"
+      ],
+      "summary": "Visa demonstrated a pattern of BR violations and audit deficiencies from 2017-2020 while completely failing to engage with root programs or respond to identified issues. The CA showed no meaningful participation in the WebPKI ecosystem it was supposed to serve.",
+      "distrustDates": {
+        "chrome": "2022-07-01",
+        "mozilla": "2022-06-01",
+        "apple": "2022-07-01"
+      },
+      "classificationTier": "medium_high",
+      "postureEvidence": "",
+      "tagEvidence": {},
+      "timeline": {
+        "firstBugDate": "2017-08-16",
+        "lastBugDate": "2020-07-07",
+        "distrustDate": "2022-06-01",
+        "runwayDays": 1750
+      },
+      "references": {
+        "rootProgramAnnouncements": [
+          "https://www.feistyduck.com/newsletter/issue_45_visa_certificate_authority_in_trouble"
+        ],
+        "mdspThreads": [
+          "https://groups.google.com/a/mozilla.org/g/dev-security-policy/c/yqALPG5PC4s",
+          "https://groups.google.com/a/mozilla.org/g/dev-security-policy/c/wOAsjdGla9g"
+        ],
+        "ccadbThreads": [
+          "https://groups.google.com/a/ccadb.org/g/public/c/SXAeHT04TFc"
+        ],
+        "articles": [
+          {
+            "url": "https://www.feistyduck.com/newsletter/issue_45_visa_certificate_authority_in_trouble",
+            "source": "Feisty Duck",
+            "title": "Visa Certificate Authority in trouble"
+          }
+        ]
+      }
+    },
+    {
+      "ca": "e-Tugra",
+      "caOwner": "E-Tugra",
+      "crtshUrl": "https://crt.sh/?CAName=E-Tugra",
+      "year": 2023,
+      "country": "Turkey",
+      "compliancePosture": "demonstrated_incompetence",
+      "distrustPathway": "triggered",
+      "responseQuality": "inadequate",
+      "reasonTags": [
+        "operational_security_failures",
+        "baseline_requirements_violations",
+        "pattern_of_issues",
+        "inadequate_incident_response",
+        "demonstrated_lack_of_understanding",
+        "non_responsive_to_root_programs",
+        "limited_ecosystem_value"
+      ],
+      "summary": "E-Tugra was distrusted after security researcher Ian Carroll discovered severe operational security failures including default passwords and exposed administrative interfaces. The CA had a 4-year pattern of baseline requirements violations but the security research findings triggered immediate distrust action.",
+      "distrustDates": {
+        "chrome": "2023-01-09",
+        "mozilla": "2023-01-16",
+        "apple": "2023-01-16",
+        "microsoft": "2023-03-01"
+      },
+      "classificationTier": "high",
+      "postureEvidence": "",
+      "tagEvidence": {},
+      "timeline": {
+        "firstBugDate": "2018-02-17",
+        "lastBugDate": "2022-11-18",
+        "distrustDate": "2023-06-01",
+        "runwayDays": 1930
+      },
+      "references": {
+        "rootProgramAnnouncements": [
+          "https://ian.sh/etugra"
+        ],
+        "mdspThreads": [
+          "https://groups.google.com/a/mozilla.org/g/dev-security-policy/c/C-HrP1SEq1A"
+        ],
+        "ccadbThreads": [
+          "https://groups.google.com/a/ccadb.org/g/public/c/SXAeHT04TFc"
+        ],
+        "articles": [
+          {
+            "url": "https://ian.sh/etugra",
+            "source": "Ian Carroll",
+            "title": "Security research findings on e-Tugra"
+          }
+        ]
+      }
+    },
+    {
+      "ca": "Ecommerce Monitoring",
+      "caOwner": "e-commerce monitoring GmbH",
+      "crtshUrl": "https://crt.sh/?CAName=e-commerce%20monitoring%20GmbH",
+      "year": 2024,
+      "country": "Austria",
+      "compliancePosture": "demonstrated_incompetence",
+      "distrustPathway": "gradual",
+      "responseQuality": "inadequate",
+      "reasonTags": [
+        "baseline_requirements_violations",
+        "delayed_or_refused_revocation",
+        "inadequate_incident_response",
+        "demonstrated_lack_of_understanding",
+        "pattern_of_issues",
+        "lack_of_meaningful_improvement"
+      ],
+      "summary": "Ecommerce Monitoring demonstrated fundamental operational incompetence through a sustained pattern of baseline requirements violations and delayed revocations spanning 2021-2024. Most notably, when asked for root cause analysis of incidents, they confused the investigative concept with their root certificate, revealing they didn't understand basic CA operational requirements.",
+      "distrustDates": {
+        "chrome": "2024-07-01",
+        "mozilla": "2024-06-01",
+        "apple": "2024-07-01",
+        "microsoft": "2024-07-01"
+      },
+      "classificationTier": "high",
+      "postureEvidence": "",
+      "tagEvidence": {},
+      "timeline": {
+        "firstBugDate": "2021-06-12",
+        "lastBugDate": "2024-05-17",
+        "distrustDate": "2024-06-01",
+        "runwayDays": 1085
+      },
+      "references": {
+        "rootProgramAnnouncements": [
+          "https://groups.google.com/a/mozilla.org/g/dev-security-policy/c/HFMEAMUe7v4/"
+        ],
+        "mdspThreads": [
+          "https://groups.google.com/a/mozilla.org/g/dev-security-policy/c/HFMEAMUe7v4/"
+        ],
+        "ccadbThreads": [
+          "https://groups.google.com/a/ccadb.org/g/public/c/wRs-zec8w7k",
+          "https://groups.google.com/a/ccadb.org/g/public/c/GmGydKS2lMA",
+          "https://groups.google.com/a/ccadb.org/g/public/c/xoCKQLlU1F4"
+        ],
+        "articles": [
+          {
+            "url": "https://groups.google.com/a/mozilla.org/g/dev-security-policy/c/HFMEAMUe7v4/",
+            "source": "MDSP",
+            "title": "Ecommerce Monitoring removal discussion"
+          }
+        ]
+      }
+    },
+    {
+      "ca": "Entrust",
+      "caOwner": "Entrust",
+      "crtshUrl": "https://crt.sh/?CAName=Entrust",
+      "year": 2024,
+      "country": "United States of America",
+      "compliancePosture": "argumentative_noncompliance",
+      "distrustPathway": "gradual",
+      "responseQuality": "inadequate",
+      "reasonTags": [
+        "baseline_requirements_violations",
+        "delayed_or_refused_revocation",
+        "argued_rules_dont_apply",
+        "recharacterized_incidents",
+        "minimized_severity",
+        "lack_of_meaningful_improvement",
+        "pattern_of_issues",
+        "inadequate_incident_response"
+      ],
+      "summary": "Entrust demonstrated a multi-year pattern of baseline requirements violations, delayed revocations, and argumentative responses that prioritized justifying non-compliance over fixing issues. Chrome explicitly noted Entrust's pattern of arguing that established practices should not apply to their circumstances rather than taking responsibility for mistakes.",
+      "distrustDates": {
+        "chrome": "2024-11-12",
+        "apple": "2024-11-15",
+        "mozilla": "2025-03-01",
+        "microsoft": "2025-04-16"
+      },
+      "classificationTier": "high",
+      "postureEvidence": "",
+      "tagEvidence": {},
+      "timeline": {
+        "firstBugDate": "2017-08-16",
+        "lastBugDate": "2024-04-06",
+        "distrustDate": "2024-11-11",
+        "runwayDays": 2644
+      },
+      "references": {
+        "rootProgramAnnouncements": [
+          "https://security.googleblog.com/2024/06/sustaining-digital-certificate-security.html"
+        ],
+        "mdspThreads": [
+          "https://groups.google.com/a/mozilla.org/g/dev-security-policy/c/LhTIUMFGHNw",
+          "https://groups.google.com/a/mozilla.org/g/dev-security-policy/c/jCvkhBjg9Yw"
+        ],
+        "ccadbThreads": [
+          "https://groups.google.com/a/ccadb.org/g/public/c/79fkkAXMLpY",
+          "https://groups.google.com/a/ccadb.org/g/public/c/YhpAYN5lRh0",
+          "https://groups.google.com/a/ccadb.org/g/public/c/tk2CV6Mc-xo"
+        ],
+        "articles": [
+          {
+            "url": "https://security.googleblog.com/2024/06/sustaining-digital-certificate-security.html",
+            "source": "Chrome Blog",
+            "title": "Sustaining Digital Certificate Security"
+          },
+          {
+            "url": "https://arstechnica.com/security/2025/06/chrome-boots-2-certificate-authorities-citing-a-lack-of-trust-and-confidence/",
+            "source": "Ars Technica",
+            "title": "Chrome boots certificate authorities citing lack of trust and confidence"
+          },
+          {
+            "url": "https://www.theregister.com/2024/08/01/mozilla_entrust/",
+            "source": "The Register",
+            "title": "Mozilla follows Google in distrusting Entrust's TLS certs"
+          },
+          {
+            "url": "https://blog.cloudflare.com/how-cloudflare-is-helping-domain-owners-with-the-upcoming-entrust-ca/",
+            "source": "Cloudflare Blog",
+            "title": "How Cloudflare is helping domain owners with the Entrust distrust"
+          }
+        ]
+      }
+    }
+  ],
+  "distrustStats": {
+    "totalEvents": 16,
+    "postureDistribution": {
+      "willful_circumvention": 3,
+      "accidental": 1,
+      "negligent_noncompliance": 7,
+      "argumentative_noncompliance": 2,
+      "demonstrated_incompetence": 3
+    },
+    "avgIntervalYears": 0.93,
+    "avgIntervalMonths": 11,
+    "medianRunwayDays": 1185,
+    "maxRunwayDays": 2644,
+    "avgRunwayDays": 1280,
+    "responseDrivenPct": 73
+  },
+  "incidents": {
+    "total": 1542,
+    "caCount": 54,
+    "years": [
+      {
+        "year": 2014,
+        "count": 2
+      },
+      {
+        "year": 2015,
+        "count": 1
+      },
+      {
+        "year": 2016,
+        "count": 5
+      },
+      {
+        "year": 2017,
+        "count": 80
+      },
+      {
+        "year": 2018,
+        "count": 78
+      },
+      {
+        "year": 2019,
+        "count": 196
+      },
+      {
+        "year": 2020,
+        "count": 203
+      },
+      {
+        "year": 2021,
+        "count": 161
+      },
+      {
+        "year": 2022,
+        "count": 96
+      },
+      {
+        "year": 2023,
+        "count": 126
+      },
+      {
+        "year": 2024,
+        "count": 200
+      },
+      {
+        "year": 2025,
+        "count": 214
+      },
+      {
+        "year": 2026,
+        "count": 180
+      }
+    ],
+    "perCA": [
+      {
+        "ca": "DigiCert",
+        "id": "digicert",
+        "count": 179,
+        "selfReported": 88,
+        "externallyReported": 91,
+        "selfReportPct": 49,
+        "ppm": 0.138,
+        "trusted": true
+      },
+      {
+        "ca": "Sectigo",
+        "id": "sectigo",
+        "count": 114,
+        "selfReported": 71,
+        "externallyReported": 43,
+        "selfReportPct": 62,
+        "ppm": 0.079,
+        "trusted": true
+      },
+      {
+        "ca": "IdenTrust Services, LLC",
+        "id": "identrust-services-llc",
+        "count": 77,
+        "selfReported": 63,
+        "externallyReported": 14,
+        "selfReportPct": 82,
+        "ppm": 1.68,
+        "trusted": true
+      },
+      {
+        "ca": "SwissSign AG",
+        "id": "swisssign-ag",
+        "count": 66,
+        "selfReported": 51,
+        "externallyReported": 15,
+        "selfReportPct": 77,
+        "ppm": 348.246,
+        "trusted": true
+      },
+      {
+        "ca": "GlobalSign nv-sa",
+        "id": "globalsign-nv-sa",
+        "count": 58,
+        "selfReported": 36,
+        "externallyReported": 22,
+        "selfReportPct": 62,
+        "ppm": 1.07,
+        "trusted": true
+      },
+      {
+        "ca": "Asseco Data Systems S.A.",
+        "id": "asseco-data-systems-s-a",
+        "count": 52,
+        "selfReported": 28,
+        "externallyReported": 24,
+        "selfReportPct": 54,
+        "ppm": 8.399,
+        "trusted": true
+      },
+      {
+        "ca": "Microsoft Corporation",
+        "id": "microsoft-corporation",
+        "count": 52,
+        "selfReported": 25,
+        "externallyReported": 27,
+        "selfReportPct": 48,
+        "ppm": 0.139,
+        "trusted": true
+      },
+      {
+        "ca": "GoDaddy",
+        "id": "godaddy",
+        "count": 47,
+        "selfReported": 27,
+        "externallyReported": 20,
+        "selfReportPct": 57,
+        "ppm": 0.09,
+        "trusted": true
+      },
+      {
+        "ca": "Government of The Netherlands, PKIoverheid (Logius)",
+        "id": "government-of-the-netherlands-pkioverheid-logius",
+        "count": 45,
+        "selfReported": 32,
+        "externallyReported": 13,
+        "selfReportPct": 71,
+        "ppm": 11250000.0,
+        "trusted": true
+      },
+      {
+        "ca": "Internet Security Research Group",
+        "id": "internet-security-research-group",
+        "count": 41,
+        "selfReported": 21,
+        "externallyReported": 20,
+        "selfReportPct": 51,
+        "ppm": 0.004,
+        "trusted": true
+      },
+      {
+        "ca": "Autoridad de Certificacion Firmaprofesional",
+        "id": "autoridad-de-certificacion-firmaprofesional",
+        "count": 41,
+        "selfReported": 28,
+        "externallyReported": 13,
+        "selfReportPct": 68,
+        "ppm": 3852.297,
+        "trusted": true
+      },
+      {
+        "ca": "Netlock",
+        "id": "netlock",
+        "count": 41,
+        "selfReported": 25,
+        "externallyReported": 16,
+        "selfReportPct": 61,
+        "ppm": 2039.902,
+        "trusted": true
+      },
+      {
+        "ca": "Google Trust Services LLC",
+        "id": "google-trust-services-llc",
+        "count": 40,
+        "selfReported": 8,
+        "externallyReported": 32,
+        "selfReportPct": 20,
+        "ppm": 0.018,
+        "trusted": true
+      },
+      {
+        "ca": "Telia Company",
+        "id": "telia-company",
+        "count": 37,
+        "selfReported": 25,
+        "externallyReported": 12,
+        "selfReportPct": 68,
+        "ppm": 258.783,
+        "trusted": true
+      },
+      {
+        "ca": "SECOM Trust Systems CO., LTD.",
+        "id": "secom-trust-systems-co-ltd",
+        "count": 36,
+        "selfReported": 19,
+        "externallyReported": 17,
+        "selfReportPct": 53,
+        "ppm": 71.5,
+        "trusted": true
+      },
+      {
+        "ca": "China Financial Certification Authority (CFCA)",
+        "id": "china-financial-certification-authority-cfca",
+        "count": 35,
+        "selfReported": 18,
+        "externallyReported": 17,
+        "selfReportPct": 51,
+        "ppm": 1231.224,
+        "trusted": true
+      },
+      {
+        "ca": "D-TRUST",
+        "id": "d-trust",
+        "count": 34,
+        "selfReported": 23,
+        "externallyReported": 11,
+        "selfReportPct": 68,
+        "ppm": 191.061,
+        "trusted": true
+      },
+      {
+        "ca": "SSL.com",
+        "id": "ssl-com",
+        "count": 33,
+        "selfReported": 19,
+        "externallyReported": 14,
+        "selfReportPct": 58,
+        "ppm": 0.275,
+        "trusted": true
+      },
+      {
+        "ca": "Certigna",
+        "id": "certigna",
+        "count": 30,
+        "selfReported": 14,
+        "externallyReported": 16,
+        "selfReportPct": 47,
+        "ppm": 379.439,
+        "trusted": true
+      },
+      {
+        "ca": "Shanghai Electronic Certification Authority Co., Ltd.",
+        "id": "shanghai-electronic-certification-authority-co-ltd",
+        "count": 30,
+        "selfReported": 22,
+        "externallyReported": 8,
+        "selfReportPct": 73,
+        "ppm": 428.964,
+        "trusted": true
+      },
+      {
+        "ca": "Deutsche Telekom Security GmbH",
+        "id": "deutsche-telekom-security-gmbh",
+        "count": 29,
+        "selfReported": 14,
+        "externallyReported": 15,
+        "selfReportPct": 48,
+        "ppm": 227.097,
+        "trusted": true
+      },
+      {
+        "ca": "Chunghwa Telecom",
+        "id": "chunghwa-telecom",
+        "count": 29,
+        "selfReported": 21,
+        "externallyReported": 8,
+        "selfReportPct": 72,
+        "ppm": 694.561,
+        "trusted": true
+      },
+      {
+        "ca": "Actalis",
+        "id": "actalis",
+        "count": 26,
+        "selfReported": 17,
+        "externallyReported": 9,
+        "selfReportPct": 65,
+        "ppm": 3.56,
+        "trusted": true
+      },
+      {
+        "ca": "Izenpe S.A.",
+        "id": "izenpe-s-a",
+        "count": 23,
+        "selfReported": 13,
+        "externallyReported": 10,
+        "selfReportPct": 57,
+        "ppm": 3037.507,
+        "trusted": true
+      },
+      {
+        "ca": "certSIGN",
+        "id": "certsign",
+        "count": 23,
+        "selfReported": 17,
+        "externallyReported": 6,
+        "selfReportPct": 74,
+        "ppm": 1173.829,
+        "trusted": true
+      },
+      {
+        "ca": "eMudhra Technologies Limited",
+        "id": "emudhra-technologies-limited",
+        "count": 22,
+        "selfReported": 18,
+        "externallyReported": 4,
+        "selfReportPct": 82,
+        "ppm": 269.199,
+        "trusted": true
+      },
+      {
+        "ca": "HARICA",
+        "id": "harica",
+        "count": 21,
+        "selfReported": 12,
+        "externallyReported": 9,
+        "selfReportPct": 57,
+        "ppm": 18.817,
+        "trusted": true
+      },
+      {
+        "ca": "Krajowa Izba Rozliczeniowa S.A. (KIR)",
+        "id": "krajowa-izba-rozliczeniowa-s-a-kir",
+        "count": 20,
+        "selfReported": 0,
+        "externallyReported": 20,
+        "selfReportPct": 0,
+        "ppm": 6349.206,
+        "trusted": true
+      },
+      {
+        "ca": "Government of Spain, Fábrica Nacional de Moneda y Timbre (FNMT)",
+        "id": "government-of-spain-f-brica-nacional-de-moneda-y-timbre-fnmt",
+        "count": 20,
+        "selfReported": 16,
+        "externallyReported": 4,
+        "selfReportPct": 80,
+        "ppm": 1183.152,
+        "trusted": true
+      },
+      {
+        "ca": "Viking Cloud, Inc.",
+        "id": "viking-cloud-inc",
+        "count": 20,
+        "selfReported": 8,
+        "externallyReported": 12,
+        "selfReportPct": 40,
+        "ppm": null,
+        "trusted": false
+      },
+      {
+        "ca": "Microsec Ltd.",
+        "id": "microsec-ltd",
+        "count": 17,
+        "selfReported": 11,
+        "externallyReported": 6,
+        "selfReportPct": 65,
+        "ppm": 1367.329,
+        "trusted": true
+      },
+      {
+        "ca": "WISeKey",
+        "id": "wisekey",
+        "count": 16,
+        "selfReported": 11,
+        "externallyReported": 5,
+        "selfReportPct": 69,
+        "ppm": 971.227,
+        "trusted": true
+      },
+      {
+        "ca": "Amazon Trust Services",
+        "id": "amazon-trust-services",
+        "count": 16,
+        "selfReported": 8,
+        "externallyReported": 8,
+        "selfReportPct": 50,
+        "ppm": 0.552,
+        "trusted": true
+      },
+      {
+        "ca": "Buypass",
+        "id": "buypass",
+        "count": 16,
+        "selfReported": 14,
+        "externallyReported": 2,
+        "selfReportPct": 88,
+        "ppm": 12.365,
+        "trusted": true
+      },
+      {
+        "ca": "Taiwan-CA Inc. (TWCA)",
+        "id": "taiwan-ca-inc-twca",
+        "count": 15,
+        "selfReported": 9,
+        "externallyReported": 6,
+        "selfReportPct": 60,
+        "ppm": 40.504,
+        "trusted": true
+      },
+      {
+        "ca": "Apple Inc.",
+        "id": "apple-inc",
+        "count": 15,
+        "selfReported": 15,
+        "externallyReported": 0,
+        "selfReportPct": 100,
+        "ppm": null,
+        "trusted": false
+      },
+      {
+        "ca": "Autoridad de Certificación (ANF AC)",
+        "id": "autoridad-de-certificaci-n-anf-ac",
+        "count": 13,
+        "selfReported": 12,
+        "externallyReported": 1,
+        "selfReportPct": 92,
+        "ppm": 288888.889,
+        "trusted": true
+      },
+      {
+        "ca": "Disig, a.s.",
+        "id": "disig-a-s",
+        "count": 12,
+        "selfReported": 7,
+        "externallyReported": 5,
+        "selfReportPct": 58,
+        "ppm": 6069.803,
+        "trusted": true
+      },
+      {
+        "ca": "Certainly LLC",
+        "id": "certainly-llc",
+        "count": 12,
+        "selfReported": 3,
+        "externallyReported": 9,
+        "selfReportPct": 25,
+        "ppm": 0.865,
+        "trusted": true
+      },
+      {
+        "ca": "iTrusChina",
+        "id": "itruschina",
+        "count": 10,
+        "selfReported": 8,
+        "externallyReported": 2,
+        "selfReportPct": 80,
+        "ppm": null,
+        "trusted": false
+      },
+      {
+        "ca": "NAVER Cloud Trust Services",
+        "id": "naver-cloud-trust-services",
+        "count": 10,
+        "selfReported": 7,
+        "externallyReported": 3,
+        "selfReportPct": 70,
+        "ppm": 404.367,
+        "trusted": true
+      },
+      {
+        "ca": "Global Digital Cybersecurity Authority Co., Ltd. (Formerly Guang Dong Certificate Authority (GDCA))",
+        "id": "global-digital-cybersecurity-authority-co-ltd-formerly-guang-dong-certificate-authority-gdca",
+        "count": 9,
+        "selfReported": 7,
+        "externallyReported": 2,
+        "selfReportPct": 78,
+        "ppm": 1434.263,
+        "trusted": true
+      },
+      {
+        "ca": "Consorci AOC",
+        "id": "consorci-aoc",
+        "count": 8,
+        "selfReported": 2,
+        "externallyReported": 6,
+        "selfReportPct": 25,
+        "ppm": null,
+        "trusted": false
+      },
+      {
+        "ca": "Government of Spain, Autoritat de Certificació de la Comunitat Valenciana (ACCV)",
+        "id": "government-of-spain-autoritat-de-certificaci-de-la-comunitat-valenciana-accv",
+        "count": 8,
+        "selfReported": 6,
+        "externallyReported": 2,
+        "selfReportPct": 75,
+        "ppm": 405.865,
+        "trusted": true
+      },
+      {
+        "ca": "Government of Hong Kong (SAR), Hongkong Post, Certizen",
+        "id": "government-of-hong-kong-sar-hongkong-post-certizen",
+        "count": 8,
+        "selfReported": 7,
+        "externallyReported": 1,
+        "selfReportPct": 88,
+        "ppm": 467.372,
+        "trusted": true
+      },
+      {
+        "ca": "CommScope",
+        "id": "commscope",
+        "count": 8,
+        "selfReported": 5,
+        "externallyReported": 3,
+        "selfReportPct": 62,
+        "ppm": null,
+        "trusted": false
+      },
+      {
+        "ca": "Eviden",
+        "id": "eviden",
+        "count": 6,
+        "selfReported": 3,
+        "externallyReported": 3,
+        "selfReportPct": 50,
+        "ppm": null,
+        "trusted": false
+      },
+      {
+        "ca": "Agence Nationale de Certification Electronique",
+        "id": "agence-nationale-de-certification-electronique",
+        "count": 5,
+        "selfReported": 4,
+        "externallyReported": 1,
+        "selfReportPct": 80,
+        "ppm": 5917.16,
+        "trusted": true
+      },
+      {
+        "ca": "Government of Turkey, Kamu Sertifikasyon Merkezi (Kamu SM)",
+        "id": "government-of-turkey-kamu-sertifikasyon-merkezi-kamu-sm",
+        "count": 4,
+        "selfReported": 1,
+        "externallyReported": 3,
+        "selfReportPct": 25,
+        "ppm": 4094.166,
+        "trusted": true
+      },
+      {
+        "ca": "Visa",
+        "id": "visa",
+        "count": 3,
+        "selfReported": 0,
+        "externallyReported": 3,
+        "selfReportPct": 0,
+        "ppm": 6880.734,
+        "trusted": true
+      },
+      {
+        "ca": "Cybertrust Japan Co., Ltd.",
+        "id": "cybertrust-japan-co-ltd",
+        "count": 3,
+        "selfReported": 1,
+        "externallyReported": 2,
+        "selfReportPct": 33,
+        "ppm": 13.976,
+        "trusted": true
+      },
+      {
+        "ca": "TrustAsia Technologies, Inc.",
+        "id": "trustasia-technologies-inc",
+        "count": 3,
+        "selfReported": 3,
+        "externallyReported": 0,
+        "selfReportPct": 100,
+        "ppm": 1.549,
+        "trusted": true
+      },
+      {
+        "ca": "SK ID Solutions AS",
+        "id": "sk-id-solutions-as",
+        "count": 2,
+        "selfReported": 0,
+        "externallyReported": 2,
+        "selfReportPct": 0,
+        "ppm": null,
+        "trusted": false
+      },
+      {
+        "ca": "PostSignum",
+        "id": "postsignum",
+        "count": 2,
+        "selfReported": 2,
+        "externallyReported": 0,
+        "selfReportPct": 100,
+        "ppm": 351.309,
+        "trusted": true
+      }
+    ],
+    "classification": {
+      "misissuance": 601,
+      "revocation": 325,
+      "governance": 493,
+      "validation": 123
+    },
+    "yearsByClass": [
+      {
+        "year": 2014,
+        "misissuance": 2,
+        "revocation": 0,
+        "governance": 0,
+        "validation": 0
+      },
+      {
+        "year": 2015,
+        "misissuance": 1,
+        "revocation": 0,
+        "governance": 0,
+        "validation": 0
+      },
+      {
+        "year": 2016,
+        "misissuance": 3,
+        "revocation": 0,
+        "governance": 0,
+        "validation": 2
+      },
+      {
+        "year": 2017,
+        "misissuance": 45,
+        "revocation": 14,
+        "governance": 9,
+        "validation": 12
+      },
+      {
+        "year": 2018,
+        "misissuance": 40,
+        "revocation": 5,
+        "governance": 26,
+        "validation": 7
+      },
+      {
+        "year": 2019,
+        "misissuance": 111,
+        "revocation": 29,
+        "governance": 47,
+        "validation": 9
+      },
+      {
+        "year": 2020,
+        "misissuance": 82,
+        "revocation": 62,
+        "governance": 47,
+        "validation": 12
+      },
+      {
+        "year": 2021,
+        "misissuance": 73,
+        "revocation": 33,
+        "governance": 37,
+        "validation": 18
+      },
+      {
+        "year": 2022,
+        "misissuance": 35,
+        "revocation": 36,
+        "governance": 15,
+        "validation": 10
+      },
+      {
+        "year": 2023,
+        "misissuance": 48,
+        "revocation": 38,
+        "governance": 27,
+        "validation": 13
+      },
+      {
+        "year": 2024,
+        "misissuance": 76,
+        "revocation": 48,
+        "governance": 56,
+        "validation": 20
+      },
+      {
+        "year": 2025,
+        "misissuance": 42,
+        "revocation": 32,
+        "governance": 129,
+        "validation": 11
+      },
+      {
+        "year": 2026,
+        "misissuance": 43,
+        "revocation": 28,
+        "governance": 100,
+        "validation": 9
+      }
+    ],
+    "fingerprints": [
+      {
+        "ca": "DigiCert",
+        "misissuance": 85,
+        "revocation": 33,
+        "governance": 43,
+        "validation": 18
+      },
+      {
+        "ca": "Sectigo",
+        "misissuance": 48,
+        "revocation": 19,
+        "governance": 23,
+        "validation": 24
+      },
+      {
+        "ca": "IdenTrust Services, LLC",
+        "misissuance": 30,
+        "revocation": 24,
+        "governance": 21,
+        "validation": 2
+      },
+      {
+        "ca": "SwissSign AG",
+        "misissuance": 32,
+        "revocation": 9,
+        "governance": 24,
+        "validation": 1
+      },
+      {
+        "ca": "GlobalSign nv-sa",
+        "misissuance": 34,
+        "revocation": 14,
+        "governance": 5,
+        "validation": 5
+      },
+      {
+        "ca": "Asseco Data Systems S.A.",
+        "misissuance": 24,
+        "revocation": 10,
+        "governance": 14,
+        "validation": 4
+      },
+      {
+        "ca": "Microsoft Corporation",
+        "misissuance": 13,
+        "revocation": 9,
+        "governance": 30,
+        "validation": 0
+      },
+      {
+        "ca": "GoDaddy",
+        "misissuance": 13,
+        "revocation": 16,
+        "governance": 10,
+        "validation": 8
+      },
+      {
+        "ca": "Government of The Netherlands, PKIoverheid (Logius)",
+        "misissuance": 7,
+        "revocation": 3,
+        "governance": 35,
+        "validation": 0
+      },
+      {
+        "ca": "Internet Security Research Group",
+        "misissuance": 10,
+        "revocation": 18,
+        "governance": 5,
+        "validation": 8
+      },
+      {
+        "ca": "Autoridad de Certificacion Firmaprofesional",
+        "misissuance": 8,
+        "revocation": 3,
+        "governance": 30,
+        "validation": 0
+      },
+      {
+        "ca": "Netlock",
+        "misissuance": 10,
+        "revocation": 11,
+        "governance": 19,
+        "validation": 1
+      },
+      {
+        "ca": "Google Trust Services LLC",
+        "misissuance": 6,
+        "revocation": 14,
+        "governance": 14,
+        "validation": 6
+      },
+      {
+        "ca": "Telia Company",
+        "misissuance": 20,
+        "revocation": 3,
+        "governance": 12,
+        "validation": 2
+      },
+      {
+        "ca": "SECOM Trust Systems CO., LTD.",
+        "misissuance": 19,
+        "revocation": 7,
+        "governance": 10,
+        "validation": 0
+      },
+      {
+        "ca": "China Financial Certification Authority (CFCA)",
+        "misissuance": 17,
+        "revocation": 6,
+        "governance": 12,
+        "validation": 0
+      },
+      {
+        "ca": "D-TRUST",
+        "misissuance": 19,
+        "revocation": 8,
+        "governance": 7,
+        "validation": 0
+      },
+      {
+        "ca": "SSL.com",
+        "misissuance": 8,
+        "revocation": 9,
+        "governance": 4,
+        "validation": 12
+      },
+      {
+        "ca": "Certigna",
+        "misissuance": 11,
+        "revocation": 4,
+        "governance": 14,
+        "validation": 1
+      },
+      {
+        "ca": "Shanghai Electronic Certification Authority Co., Ltd.",
+        "misissuance": 10,
+        "revocation": 7,
+        "governance": 13,
+        "validation": 0
+      },
+      {
+        "ca": "Deutsche Telekom Security GmbH",
+        "misissuance": 19,
+        "revocation": 5,
+        "governance": 4,
+        "validation": 1
+      },
+      {
+        "ca": "Chunghwa Telecom",
+        "misissuance": 4,
+        "revocation": 4,
+        "governance": 17,
+        "validation": 4
+      },
+      {
+        "ca": "Actalis",
+        "misissuance": 10,
+        "revocation": 10,
+        "governance": 6,
+        "validation": 0
+      },
+      {
+        "ca": "Izenpe S.A.",
+        "misissuance": 12,
+        "revocation": 4,
+        "governance": 6,
+        "validation": 1
+      },
+      {
+        "ca": "certSIGN",
+        "misissuance": 8,
+        "revocation": 3,
+        "governance": 12,
+        "validation": 0
+      },
+      {
+        "ca": "eMudhra Technologies Limited",
+        "misissuance": 5,
+        "revocation": 8,
+        "governance": 8,
+        "validation": 1
+      },
+      {
+        "ca": "HARICA",
+        "misissuance": 9,
+        "revocation": 5,
+        "governance": 3,
+        "validation": 4
+      },
+      {
+        "ca": "Krajowa Izba Rozliczeniowa S.A. (KIR)",
+        "misissuance": 10,
+        "revocation": 5,
+        "governance": 5,
+        "validation": 0
+      },
+      {
+        "ca": "Government of Spain, Fábrica Nacional de Moneda y Timbre (FNMT)",
+        "misissuance": 8,
+        "revocation": 1,
+        "governance": 10,
+        "validation": 1
+      },
+      {
+        "ca": "Viking Cloud, Inc.",
+        "misissuance": 7,
+        "revocation": 4,
+        "governance": 8,
+        "validation": 1
+      },
+      {
+        "ca": "Microsec Ltd.",
+        "misissuance": 10,
+        "revocation": 2,
+        "governance": 5,
+        "validation": 0
+      },
+      {
+        "ca": "WISeKey",
+        "misissuance": 9,
+        "revocation": 5,
+        "governance": 1,
+        "validation": 1
+      },
+      {
+        "ca": "Amazon Trust Services",
+        "misissuance": 5,
+        "revocation": 2,
+        "governance": 4,
+        "validation": 5
+      },
+      {
+        "ca": "Buypass",
+        "misissuance": 5,
+        "revocation": 4,
+        "governance": 4,
+        "validation": 3
+      },
+      {
+        "ca": "Taiwan-CA Inc. (TWCA)",
+        "misissuance": 8,
+        "revocation": 3,
+        "governance": 4,
+        "validation": 0
+      },
+      {
+        "ca": "Apple Inc.",
+        "misissuance": 2,
+        "revocation": 7,
+        "governance": 5,
+        "validation": 1
+      },
+      {
+        "ca": "Autoridad de Certificación (ANF AC)",
+        "misissuance": 1,
+        "revocation": 1,
+        "governance": 11,
+        "validation": 0
+      },
+      {
+        "ca": "Disig, a.s.",
+        "misissuance": 5,
+        "revocation": 1,
+        "governance": 6,
+        "validation": 0
+      },
+      {
+        "ca": "Certainly LLC",
+        "misissuance": 1,
+        "revocation": 6,
+        "governance": 3,
+        "validation": 2
+      },
+      {
+        "ca": "iTrusChina",
+        "misissuance": 2,
+        "revocation": 2,
+        "governance": 5,
+        "validation": 1
+      },
+      {
+        "ca": "NAVER Cloud Trust Services",
+        "misissuance": 6,
+        "revocation": 0,
+        "governance": 3,
+        "validation": 1
+      },
+      {
+        "ca": "Global Digital Cybersecurity Authority Co., Ltd. (Formerly Guang Dong Certificate Authority (GDCA))",
+        "misissuance": 5,
+        "revocation": 3,
+        "governance": 0,
+        "validation": 1
+      },
+      {
+        "ca": "Consorci AOC",
+        "misissuance": 3,
+        "revocation": 2,
+        "governance": 3,
+        "validation": 0
+      },
+      {
+        "ca": "Government of Spain, Autoritat de Certificació de la Comunitat Valenciana (ACCV)",
+        "misissuance": 3,
+        "revocation": 1,
+        "governance": 4,
+        "validation": 0
+      },
+      {
+        "ca": "Government of Hong Kong (SAR), Hongkong Post, Certizen",
+        "misissuance": 5,
+        "revocation": 2,
+        "governance": 1,
+        "validation": 0
+      },
+      {
+        "ca": "CommScope",
+        "misissuance": 2,
+        "revocation": 1,
+        "governance": 3,
+        "validation": 2
+      },
+      {
+        "ca": "Eviden",
+        "misissuance": 3,
+        "revocation": 0,
+        "governance": 3,
+        "validation": 0
+      },
+      {
+        "ca": "Agence Nationale de Certification Electronique",
+        "misissuance": 2,
+        "revocation": 3,
+        "governance": 0,
+        "validation": 0
+      },
+      {
+        "ca": "Government of Turkey, Kamu Sertifikasyon Merkezi (Kamu SM)",
+        "misissuance": 3,
+        "revocation": 1,
+        "governance": 0,
+        "validation": 0
+      },
+      {
+        "ca": "Visa",
+        "misissuance": 1,
+        "revocation": 1,
+        "governance": 1,
+        "validation": 0
+      },
+      {
+        "ca": "Cybertrust Japan Co., Ltd.",
+        "misissuance": 0,
+        "revocation": 2,
+        "governance": 1,
+        "validation": 0
+      },
+      {
+        "ca": "TrustAsia Technologies, Inc.",
+        "misissuance": 1,
+        "revocation": 0,
+        "governance": 1,
+        "validation": 1
+      },
+      {
+        "ca": "SK ID Solutions AS",
+        "misissuance": 1,
+        "revocation": 0,
+        "governance": 1,
+        "validation": 0
+      },
+      {
+        "ca": "PostSignum",
+        "misissuance": 2,
+        "revocation": 0,
+        "governance": 0,
+        "validation": 0
+      }
+    ],
+    "categories": [
+      {
+        "category": "Misissuance",
+        "count": 601
+      },
+      {
+        "category": "Governance",
+        "count": 493
+      },
+      {
+        "category": "Revocation",
+        "count": 325
+      },
+      {
+        "category": "Validation",
+        "count": 123
+      }
+    ],
+    "whiteboardTags": {
+      "ca-compliance": 1510,
+      "ov-misissuance": 325,
+      "policy-failure": 185,
+      "ev-misissuance": 178,
+      "disclosure-failure": 137,
+      "ocsp-failure": 131,
+      "dv-misissuance": 120,
+      "audit-finding": 107,
+      "leaf-revocation-delay": 100,
+      "crl-failure": 88,
+      "ca-misissuance": 60,
+      "audit-failure": 48,
+      "uncategorized": 45,
+      "smime-misissuance": 41,
+      "external": 32,
+      "ca-revocation-delay": 31,
+      "audit-delay": 17,
+      "covid-19": 7,
+      "disclosure failure": 7,
+      "__-misissuance": 7,
+      "ca-onecrl": 4,
+      "ca-investigation": 3,
+      "remediation-accepted": 3,
+      "ca compliance": 2,
+      "close on 2026-08-17": 2,
+      "iv-misissuance": 1,
+      "ca-infosharing": 1,
+      "ca-informational": 1,
+      "close on 2025-06-03": 1,
+      "close on 2025-12-10": 1,
+      "close on 2025-12-11": 1,
+      "close on 2025-12-08": 1,
+      "close on 2026-07-16": 1,
+      "code-signing-misissuance": 1,
+      "close on 2026-08-18": 1,
+      "cs-misissuance": 1,
+      "close on 20-26-08-17": 1,
+      "close on 2026-8-17": 1,
+      "Close as INVALID on 2026-08-17": 1
+    }
+  }
+}

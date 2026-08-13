@@ -1,0 +1,1325 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://webpki.systematicreasoning.com/schema.json",
+  "title": "WebPKI Observatory LLM Snapshot",
+  "description": "Complete analytical dataset of the Certificate Authority trust ecosystem. Designed for LLM consumption, programmatic analysis, and research. All metrics derived from public sources: crt.sh, CCADB, Bugzilla, StatCounter, cabforum.org.",
+  "type": "object",
+  "required": [
+    "$schema",
+    "version",
+    "generatedAt",
+    "market",
+    "concentration",
+    "trustSurface",
+    "geography",
+    "governmentRisk",
+    "jurisdictionRisk",
+    "incidents",
+    "brThresholds",
+    "brReadiness",
+    "distrustEvents",
+    "distrustStats",
+    "governance",
+    "browserCoverage",
+    "rootAlgorithms",
+    "cryptoSummary",
+    "ecosystemParticipation"
+  ],
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$"
+    },
+    "generatedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "snapshotUrl": {
+      "type": "string",
+      "format": "uri"
+    },
+    "dataSources": {
+      "type": "object",
+      "description": "Freshness metadata per data source"
+    },
+    "browserCoverage": {
+      "type": "object",
+      "description": "Global browser market share from StatCounter, mapped to root programs. Used for web coverage estimates.",
+      "required": [
+        "chrome",
+        "apple",
+        "mozilla",
+        "microsoft"
+      ],
+      "properties": {
+        "chrome": {
+          "type": "number",
+          "description": "Chrome + Chromium-based browsers (Edge, Samsung, Opera)"
+        },
+        "apple": {
+          "type": "number",
+          "description": "Safari"
+        },
+        "mozilla": {
+          "type": "number",
+          "description": "Firefox"
+        },
+        "microsoft": {
+          "type": "number",
+          "description": "Legacy IE/Edge — near 0 for web, relevant for enterprise"
+        }
+      }
+    },
+    "market": {
+      "type": "array",
+      "description": "Trusted CA owners ranked by unexpired precertificate count from CT logs (crt.sh). Scope: currently trusted CAs only.",
+      "items": {
+        "type": "object",
+        "required": [
+          "caOwner",
+          "share",
+          "ppm"
+        ],
+        "properties": {
+          "rank": {
+            "type": "integer"
+          },
+          "id": {
+            "type": "string",
+            "description": "Slug identifier"
+          },
+          "caOwner": {
+            "type": "string",
+            "description": "CA organization name from CCADB"
+          },
+          "certs": {
+            "type": "integer",
+            "description": "Currently unexpired precertificates"
+          },
+          "allTimeCerts": {
+            "type": "integer",
+            "description": "All-time precertificates (CT logs)"
+          },
+          "share": {
+            "type": "number",
+            "description": "Market share % of unexpired precerts"
+          },
+          "turnover": {
+            "type": "number",
+            "description": "all_time / unexpired — higher = faster renewal"
+          },
+          "usageDays": {
+            "type": [
+              "number",
+              "null"
+            ],
+            "description": "Average cert usage period in days (365/turnover). Measures subscriber renewal behavior, not certificate validity."
+          },
+          "webCoverage": {
+            "type": "number",
+            "description": "Fraction of web traffic trusting this CA"
+          },
+          "ppm": {
+            "type": [
+              "number",
+              "null"
+            ],
+            "description": "Incidents per million all-time certificates (lifetime rate)"
+          },
+          "selfReportPct": {
+            "type": [
+              "number",
+              "null"
+            ],
+            "description": "% of incidents self-reported by CA"
+          },
+          "incidentCount": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "tls": {
+            "type": "boolean"
+          },
+          "ev": {
+            "type": "boolean"
+          },
+          "smime": {
+            "type": "boolean"
+          },
+          "codeSigning": {
+            "type": "boolean"
+          },
+          "storeCount": {
+            "type": "integer",
+            "description": "Number of trust stores including this CA"
+          },
+          "trustedBy": {
+            "type": "object",
+            "description": "Per-store inclusion: {mozilla, chrome, microsoft, apple}"
+          },
+          "country": {
+            "type": "string"
+          },
+          "rootCount": {
+            "type": "integer"
+          },
+          "intermediateCount": {
+            "type": "integer"
+          },
+          "note": {
+            "type": "string"
+          },
+          "issuanceCaveat": {
+            "type": "string"
+          },
+          "matched": {
+            "type": "boolean"
+          },
+          "inferred": {
+            "type": "boolean"
+          },
+          "parent": {
+            "type": "string"
+          },
+          "crtshUrl": {
+            "type": "string",
+            "description": "crt.sh CA search URL — https://crt.sh/?CAName=<encoded_caOwner>. Fetch to see all certificates issued by this CA."
+          }
+        }
+      }
+    },
+    "concentration": {
+      "type": "object",
+      "description": "Market concentration metrics. HHI thresholds: <1500 unconcentrated, 1500-2500 moderate, >2500 highly concentrated.",
+      "properties": {
+        "hhi": {
+          "type": "number"
+        },
+        "hhiLabel": {
+          "type": "string"
+        },
+        "cr3": {
+          "type": "number"
+        },
+        "cr5": {
+          "type": "number"
+        },
+        "cr7": {
+          "type": "number"
+        }
+      }
+    },
+    "trustSurface": {
+      "type": "object",
+      "description": "Root certificate infrastructure across the four trust stores.",
+      "properties": {
+        "totalRoots": {
+          "type": "integer"
+        },
+        "totalOwners": {
+          "type": "integer"
+        },
+        "allFourStores": {
+          "description": "CAs trusted by all 4 stores: {roots: count, owners: count}"
+        },
+        "perStore": {
+          "type": "object",
+          "description": "Per-store: {owners, roots, exclusiveRoots, govCAs, webCoverage}",
+          "additionalProperties": {
+            "type": "object",
+            "properties": {
+              "owners": {
+                "type": "integer"
+              },
+              "roots": {
+                "type": "integer"
+              },
+              "exclusiveRoots": {
+                "type": "integer"
+              },
+              "govCAs": {
+                "type": "integer"
+              },
+              "webCoverage": {
+                "type": "number"
+              }
+            }
+          }
+        },
+        "rootCombinations": {
+          "type": "array"
+        }
+      }
+    },
+    "chromeRootStoreGrowth": {
+      "type": "object",
+      "description": "Chrome Root Store changelog from Chromium source git history (2022+).",
+      "properties": {
+        "source": {
+          "type": "string"
+        },
+        "entries": {
+          "type": "array",
+          "description": "Changelog entries with date, commit, added/removed hashes"
+        }
+      }
+    },
+    "geography": {
+      "type": "array",
+      "description": "CA issuance share by region. Regions: United States, Europe, Asia-Pacific, Americas, Middle East/Africa.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "region": {
+            "type": "string"
+          },
+          "caCount": {
+            "type": "integer"
+          },
+          "share": {
+            "type": "number"
+          },
+          "countries": {
+            "type": "array"
+          }
+        }
+      }
+    },
+    "governmentRisk": {
+      "type": "object",
+      "description": "CAs with structural government ties (operated by or state-owned). Customer relationships excluded.",
+      "properties": {
+        "total": {
+          "type": "integer"
+        },
+        "issuancePct": {
+          "type": "number"
+        },
+        "byType": {
+          "type": "object"
+        },
+        "cas": {
+          "type": "array"
+        }
+      }
+    },
+    "jurisdictionRisk": {
+      "type": "array",
+      "description": "Legal compulsion risk per jurisdiction. Three axes: key seizure, compelled issuance, secrecy.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "jurisdiction": {
+            "type": "string"
+          },
+          "riskLevel": {
+            "type": "string",
+            "enum": [
+              "high",
+              "moderate",
+              "low"
+            ]
+          },
+          "caCount": {
+            "type": "integer"
+          },
+          "issuanceShare": {
+            "type": "number"
+          },
+          "keySeizure": {
+            "type": "string"
+          },
+          "compelledIssuance": {
+            "type": "string"
+          },
+          "secrecy": {
+            "type": "string"
+          },
+          "laws": {
+            "type": "array"
+          }
+        }
+      }
+    },
+    "incidents": {
+      "type": "object",
+      "description": "Bugzilla CA Certificate Compliance incident data (2014-present).",
+      "properties": {
+        "total": {
+          "type": "integer"
+        },
+        "caCount": {
+          "type": "integer",
+          "description": "Number of CAs with at least one incident"
+        },
+        "years": {
+          "type": "array",
+          "description": "Annual incident totals: [{y: int, count: int}]"
+        },
+        "yearsByClass": {
+          "type": "array",
+          "description": "Annual totals by LLM-classified category: [{year, misissuance, revocation, governance, validation}]",
+          "items": {
+            "type": "object",
+            "properties": {
+              "misissuance": {
+                "type": "integer"
+              },
+              "revocation": {
+                "type": "integer"
+              },
+              "governance": {
+                "type": "integer"
+              },
+              "validation": {
+                "type": "integer"
+              },
+              "y": {
+                "type": "integer",
+                "description": "Year"
+              }
+            }
+          }
+        },
+        "perCA": {
+          "type": "array",
+          "description": "Per-CA: [{ca, n, self, ext, selfPct, ppm}]"
+        },
+        "classification": {
+          "type": "object"
+        },
+        "fingerprints": {
+          "type": "array"
+        },
+        "categories": {
+          "type": "array"
+        },
+        "whiteboardTags": {
+          "type": "object",
+          "description": "Bugzilla whiteboard tag counts: {tag: count}"
+        }
+      }
+    },
+    "brThresholds": {
+      "type": "array",
+      "description": "BR maximum certificate validity reduction schedule.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "days": {
+            "type": "integer"
+          },
+          "deadline": {
+            "type": "string"
+          },
+          "label": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "brReadiness": {
+      "type": "object",
+      "description": "BR validity readiness for active TLS issuers. useDays = 365/(all_precerts/unexpired_precerts) — measures actual subscriber replacement behavior.",
+      "properties": {
+        "totalActiveTls": {
+          "type": "integer",
+          "description": "Number of active TLS issuing CAs"
+        },
+        "subscriberRisk200d": {
+          "type": "integer",
+          "description": "CAs with avg usage period > 200d (subscriber readiness risk for Mar 2026 threshold)"
+        },
+        "subscriberRisk100d": {
+          "type": "integer",
+          "description": "CAs with avg usage period 100-200d (risk for Mar 2027 threshold)"
+        },
+        "ready47d": {
+          "type": "integer",
+          "description": "CAs already < 47d avg usage period (automation-ready)"
+        },
+        "medianUseDays": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "description": "Median usage period across active TLS issuers"
+        },
+        "cas": {
+          "type": "array",
+          "description": "Per-CA readiness data sorted by useDays descending",
+          "items": {
+            "type": "object",
+            "properties": {
+              "ca": {
+                "type": "string"
+              },
+              "useDays": {
+                "type": "integer"
+              },
+              "status": {
+                "type": "string",
+                "enum": [
+                  "subscriber_risk",
+                  "ok",
+                  "not_applicable"
+                ]
+              },
+              "share": {
+                "type": "number"
+              },
+              "unexpiredCerts": {
+                "type": "integer"
+              }
+            }
+          }
+        }
+      }
+    },
+    "cryptoSummary": {
+      "type": "object",
+      "description": "Root certificate cryptographic algorithm distribution.",
+      "properties": {
+        "totalRoots": {
+          "type": "integer"
+        },
+        "caCount": {
+          "type": "integer"
+        },
+        "keyFamilies": {
+          "type": "object"
+        },
+        "keySizes": {
+          "type": "object"
+        },
+        "sigHashes": {
+          "type": "object"
+        }
+      }
+    },
+    "rootAlgorithms": {
+      "type": "object",
+      "description": "Cryptographic posture summary across all 317 trusted root certificates. Full per-root detail in llm_snapshot_risk.json.",
+      "properties": {
+        "totalRoots": {
+          "type": "integer",
+          "description": "Total trusted root certificates across all browser stores"
+        },
+        "byKeyFamily": {
+          "type": "object",
+          "description": "Root count by key family (RSA, ECC)"
+        },
+        "byKeyBits": {
+          "type": "object",
+          "description": "Root count by key size in bits"
+        },
+        "bySigHash": {
+          "type": "object",
+          "description": "Root count by signature hash algorithm (SHA-256, SHA-384, SHA-1, SHA-512)"
+        },
+        "tlsCapable": {
+          "type": "integer",
+          "description": "Roots trusted for TLS server authentication"
+        },
+        "evCapable": {
+          "type": "integer",
+          "description": "Roots trusted for Extended Validation TLS"
+        },
+        "sha1Roots": {
+          "type": "integer",
+          "description": "Roots still using SHA-1 signature hash — migration risk"
+        },
+        "perCA": {
+          "type": "array",
+          "description": "Per-CA breakdown of root count and key family split, sorted by root count descending",
+          "items": {
+            "type": "object",
+            "properties": {
+              "caOwner": {
+                "type": "string"
+              },
+              "roots": {
+                "type": "integer",
+                "description": "Number of trusted roots for this CA"
+              },
+              "rsa": {
+                "type": "integer"
+              },
+              "ecc": {
+                "type": "integer"
+              },
+              "crtshUrl": {
+                "type": "string",
+                "description": "https://crt.sh/?CAName=<encoded_owner>"
+              }
+            }
+          }
+        },
+        "lookupUrl": {
+          "type": "string",
+          "description": "URL template for looking up a specific CA's roots on crt.sh"
+        },
+        "note": {
+          "type": "string"
+        }
+      }
+    },
+    "distrustEvents": {
+      "type": "array",
+      "description": "16 CA distrust events (2011-2024) with classification across four dimensions.",
+      "items": {
+        "type": "object",
+        "required": [
+          "ca",
+          "year",
+          "compliancePosture"
+        ],
+        "properties": {
+          "ca": {
+            "type": "string"
+          },
+          "caOwner": {
+            "type": "string"
+          },
+          "year": {
+            "type": "integer"
+          },
+          "country": {
+            "type": "string"
+          },
+          "compliancePosture": {
+            "type": "string",
+            "enum": [
+              "willful_circumvention",
+              "argumentative_noncompliance",
+              "negligent_noncompliance",
+              "demonstrated_incompetence",
+              "accidental"
+            ],
+            "description": "Root cause classification of compliance failure"
+          },
+          "distrustPathway": {
+            "type": "string"
+          },
+          "responseQuality": {
+            "type": "string"
+          },
+          "reasonTags": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "summary": {
+            "type": "string"
+          },
+          "distrustDates": {
+            "type": "object",
+            "description": "Per-store distrust dates: {mozilla, chrome, apple, microsoft}"
+          },
+          "classificationTier": {
+            "type": "string"
+          },
+          "timeline": {
+            "type": "object"
+          },
+          "references": {
+            "type": "object",
+            "description": "Reference URLs: {rootProgramAnnouncements: [], mdspThreads: [], securityReports: []}"
+          },
+          "crtshUrl": {
+            "type": "string",
+            "description": "crt.sh CA search URL for this CA — e.g. https://crt.sh/?CAName=DigiNotar. Fetch to see all certificates ever issued by this CA."
+          }
+        }
+      }
+    },
+    "distrustStats": {
+      "type": "object",
+      "properties": {
+        "totalEvents": {
+          "type": "integer"
+        },
+        "postureDistribution": {
+          "type": "object"
+        },
+        "avgIntervalYears": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "description": "Average years between distrust events"
+        },
+        "avgIntervalMonths": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "description": "Average months between distrust events (rounded)"
+        },
+        "medianRunwayDays": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "description": "Median days from first incident to distrust action"
+        },
+        "maxRunwayDays": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "description": "Maximum days from first incident to distrust action"
+        },
+        "avgRunwayDays": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "description": "Mean days from first incident to distrust action"
+        },
+        "responseDrivenPct": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "description": "% of events with response-quality behavioral failures (minimizing, concealment, non-responsive)"
+        }
+      }
+    },
+    "governance": {
+      "type": "object",
+      "description": "Root program governance metrics from Bugzilla, CCADB, cabforum.org. Phase 1-7 pipeline output.",
+      "properties": {
+        "meta": {
+          "type": "object"
+        },
+        "reportCard": {
+          "type": "object",
+          "description": "Per-store report card: enforcement, oversight coverage, substantive oversight, policy leadership, trust surface metrics"
+        },
+        "coverageRateByYear": {
+          "type": "array",
+          "description": "Annual Bugzilla oversight coverage rate per program. Coverage = unique CA compliance bugs commented on / total open bugs that year.",
+          "items": {
+            "type": "object",
+            "properties": {
+              "y": {
+                "type": "integer"
+              },
+              "total_bugs": {
+                "type": "integer"
+              },
+              "chrome": {
+                "type": "number"
+              },
+              "mozilla": {
+                "type": "number"
+              },
+              "apple": {
+                "type": "number"
+              },
+              "microsoft": {
+                "type": "number"
+              }
+            }
+          }
+        },
+        "oversightQuarterly": {
+          "type": "array",
+          "description": "Quarterly governance comment volume and unique contributor counts per program.",
+          "items": {
+            "type": "object",
+            "properties": {
+              "quarter": {
+                "type": "string"
+              },
+              "chrome_comments": {
+                "type": "integer"
+              },
+              "chrome_people": {
+                "type": "integer"
+              },
+              "mozilla_comments": {
+                "type": "integer"
+              },
+              "mozilla_people": {
+                "type": "integer"
+              },
+              "apple_comments": {
+                "type": "integer"
+              },
+              "apple_people": {
+                "type": "integer"
+              },
+              "microsoft_comments": {
+                "type": "integer"
+              },
+              "microsoft_people": {
+                "type": "integer"
+              }
+            }
+          }
+        },
+        "oversightConcentration": {
+          "type": "object",
+          "description": "Bus factor analysis: unique contributors, top contributor %, top-3 contributor % per program.",
+          "additionalProperties": {
+            "type": "object",
+            "properties": {
+              "total_oversight_comments": {
+                "type": "integer"
+              },
+              "unique_contributors": {
+                "type": "integer"
+              },
+              "top_contributor_pct": {
+                "type": "number"
+              },
+              "top_3_contributors_pct": {
+                "type": "number"
+              },
+              "top_contributor_email": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "top_contributor_first_quarter": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "top_contributor_last_quarter": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            }
+          }
+        },
+        "programCommentSummary": {
+          "type": "object",
+          "description": "Per-program oversight summary: bugs_oversight, bugs_technical_oversight, recent variants, comment counts."
+        },
+        "discoveryMethods": {
+          "type": "object",
+          "description": "How CA compliance incidents are discovered. Corpus: 1,505 active-CA bugs (distrusted CA bugs excluded).",
+          "properties": {
+            "totals": {
+              "type": "object",
+              "description": "All-time counts: {self_detected, external_researcher, community, audit, root_program, unknown}"
+            },
+            "classified_bugs": {
+              "type": "integer"
+            },
+            "excluded_distrusted": {
+              "type": "integer"
+            },
+            "corpus_note": {
+              "type": "string"
+            },
+            "by_year": {
+              "type": "array",
+              "description": "Annual discovery channel breakdown.",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "y": {
+                    "type": "integer"
+                  },
+                  "self_detected": {
+                    "type": "integer"
+                  },
+                  "external_researcher": {
+                    "type": "integer"
+                  },
+                  "root_program": {
+                    "type": "integer"
+                  },
+                  "community": {
+                    "type": "integer"
+                  },
+                  "audit": {
+                    "type": "integer"
+                  },
+                  "unknown": {
+                    "type": "integer"
+                  },
+                  "total": {
+                    "type": "integer"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "enforcement": {
+          "type": "object",
+          "description": "Per-store distrust enforcement record: {acted, total, initiated, followed, still_trusts}.",
+          "additionalProperties": {
+            "type": "object",
+            "properties": {
+              "acted": {
+                "type": "integer"
+              },
+              "total": {
+                "type": "integer"
+              },
+              "initiated": {
+                "type": "integer"
+              },
+              "followed": {
+                "type": "integer"
+              },
+              "still_trusts": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "storePosture": {
+          "type": "object",
+          "description": "Per-store trust surface and dark matter analysis.",
+          "additionalProperties": {
+            "type": "object",
+            "properties": {
+              "owners": {
+                "type": "integer"
+              },
+              "roots": {
+                "type": "integer"
+              },
+              "exclusive_count": {
+                "type": "integer"
+              },
+              "gov_ca_count": {
+                "type": "integer"
+              },
+              "dark_matter": {
+                "type": "object",
+                "description": "Ungoverned exclusive CAs: exclusive to this store with zero public Bugzilla record.",
+                "properties": {
+                  "exclusive_cas": {
+                    "type": "integer"
+                  },
+                  "exclusive_zero_incident": {
+                    "type": "integer",
+                    "description": "Count of exclusive CAs with zero Bugzilla history — compliance posture unknowable from public data"
+                  },
+                  "zero_incident_cas": {
+                    "type": "integer"
+                  },
+                  "total_cas": {
+                    "type": "integer"
+                  },
+                  "exclusive_zero_pct": {
+                    "type": "number"
+                  },
+                  "zero_incident_pct": {
+                    "type": "number"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "policyLeadership": {
+          "type": "object",
+          "description": "CA/B Forum ballot proposers, endorsers, voters per program"
+        },
+        "ballotClassification": {
+          "type": "object"
+        },
+        "notableGaps": {
+          "type": "object",
+          "description": "CAs with cross-store trust disagreements: {current: [], historical: []}"
+        },
+        "inclusionVelocity": {
+          "type": "object",
+          "description": "Mozilla root inclusion pipeline timing. Split by request type: new organizations vs existing CAs adding roots.",
+          "properties": {
+            "mozilla_pending": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "bug": {
+                    "type": "integer"
+                  },
+                  "ca": {
+                    "type": "string"
+                  },
+                  "filed": {
+                    "type": "string"
+                  },
+                  "days_waiting": {
+                    "type": "integer"
+                  },
+                  "stage": {
+                    "type": "string"
+                  },
+                  "request_type": {
+                    "type": "string",
+                    "enum": [
+                      "new_org",
+                      "existing_ca"
+                    ],
+                    "description": "new_org: first-ever trust request. existing_ca: existing trusted CA adding new/replacement roots."
+                  }
+                }
+              }
+            },
+            "mozilla_completed_recent": {
+              "type": "array"
+            },
+            "mozilla_stats": {
+              "type": "object",
+              "properties": {
+                "pending_count": {
+                  "type": "integer"
+                },
+                "completed_count": {
+                  "type": "integer"
+                },
+                "median_days": {
+                  "type": "integer"
+                },
+                "mean_days": {
+                  "type": "integer"
+                },
+                "max_days": {
+                  "type": "integer"
+                },
+                "longest_pending_days": {
+                  "type": "integer"
+                },
+                "new_org": {
+                  "type": "object",
+                  "description": "Stats for first-ever inclusion requests.",
+                  "properties": {
+                    "count": {
+                      "type": "integer"
+                    },
+                    "median_days": {
+                      "type": "integer"
+                    },
+                    "mean_days": {
+                      "type": "integer"
+                    },
+                    "max_days": {
+                      "type": "integer"
+                    },
+                    "pending_count": {
+                      "type": "integer"
+                    },
+                    "longest_pending_days": {
+                      "type": "integer"
+                    }
+                  }
+                },
+                "existing_ca": {
+                  "type": "object",
+                  "description": "Stats for existing CAs adding new or replacement roots.",
+                  "properties": {
+                    "count": {
+                      "type": "integer"
+                    },
+                    "median_days": {
+                      "type": "integer"
+                    },
+                    "mean_days": {
+                      "type": "integer"
+                    },
+                    "max_days": {
+                      "type": "integer"
+                    },
+                    "pending_count": {
+                      "type": "integer"
+                    },
+                    "longest_pending_days": {
+                      "type": "integer"
+                    }
+                  }
+                }
+              }
+            },
+            "note": {
+              "type": "string"
+            }
+          }
+        },
+        "bugCreationByYear": {
+          "type": "array",
+          "description": "Annual bug filing counts by program: [{y, chrome, mozilla, apple, microsoft, other}]"
+        },
+        "bugCreationTotals": {
+          "type": "object"
+        },
+        "distrustEvents": {
+          "type": "array"
+        },
+        "coverageRate": {
+          "type": "number",
+          "description": "Overall coverage rate (incidents with root-program-created bugs / total incidents). See coverageRateByYear for annual breakdown."
+        }
+      }
+    },
+    "ecosystemParticipation": {
+      "type": "object",
+      "description": "CA/B Forum participation analysis: Bugzilla engagement, ballot activity, bug filing.",
+      "required": [
+        "cabfMemberCount",
+        "activeMemberCount",
+        "zeroContributionCount"
+      ],
+      "properties": {
+        "meta": {
+          "type": "object"
+        },
+        "cabfMemberCount": {
+          "type": "integer",
+          "description": "Total CABF CA member organizations"
+        },
+        "activeMemberCount": {
+          "type": "integer",
+          "description": "Members with at least one recorded contribution"
+        },
+        "zeroContributionCount": {
+          "type": "integer",
+          "description": "CABF CA members with no recorded Bugzilla, ballot, or bug-filing activity"
+        },
+        "individualCount": {
+          "type": "integer"
+        },
+        "topOrganizations": {
+          "type": "array",
+          "description": "Most active CA organizations by composite engagement score.",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "cabfMember": {
+                "type": "boolean"
+              },
+              "bugzillaEngaged": {
+                "type": "integer"
+              },
+              "ballotsProposed": {
+                "type": "integer"
+              },
+              "ballotsEndorsed": {
+                "type": "integer"
+              },
+              "bugsFiled": {
+                "type": "integer"
+              }
+            }
+          }
+        },
+        "topBallotIndividuals": {
+          "type": "array"
+        }
+      }
+    },
+    "tabIntros": {
+      "type": "object",
+      "description": "LLM-generated tab introduction text. Regenerated when underlying metrics change (digest hash check).",
+      "properties": {
+        "generatedAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "model": {
+          "type": "string"
+        },
+        "digestHash": {
+          "type": "string",
+          "description": "Hash of data digest used to generate intros — unchanged hash means intros are current"
+        },
+        "intros": {
+          "type": "object",
+          "description": "Tab ID → intro text"
+        },
+        "note": {
+          "type": "string"
+        }
+      }
+    },
+    "regulatorySurface": {
+      "type": "object",
+      "description": "Growth of normative obligations placed on CAs over time, measured from primary source documents using convention-aware parsers.",
+      "properties": {
+        "currentYear": {
+          "type": "integer",
+          "description": "Year of the current snapshot"
+        },
+        "totalObligations": {
+          "type": "integer",
+          "description": "Total normative obligation language occurrences across all sources"
+        },
+        "mandatory": {
+          "type": "integer",
+          "description": "Mandatory obligations (MUST/SHALL/shall)"
+        },
+        "recommended": {
+          "type": "integer",
+          "description": "Recommended obligations (SHOULD)"
+        },
+        "optional": {
+          "type": "integer",
+          "description": "Optional provisions (MAY)"
+        },
+        "mandatoryPct": {
+          "type": "integer",
+          "description": "Percentage of total that is mandatory"
+        },
+        "baselineYear": {
+          "type": "integer",
+          "description": "Earliest year with data"
+        },
+        "baselineTotal": {
+          "type": "integer",
+          "description": "Total obligations in baseline year"
+        },
+        "growthMultiple": {
+          "type": "integer",
+          "description": "Growth multiple from baseline to current year"
+        },
+        "sourceTotals": {
+          "type": "object",
+          "description": "Obligation counts by source group",
+          "properties": {
+            "cabfForum": {
+              "type": "integer",
+              "description": "CA/Browser Forum documents (TLS BR, EVG, S/MIME BR, CS BR, NS Reqs) — operational + profile spec combined"
+            },
+            "rootPrograms": {
+              "type": "integer",
+              "description": "Root program policies (Mozilla MRSP, Chrome Root Policy, Apple Root Program)"
+            },
+            "auditIetf": {
+              "type": "integer",
+              "description": "Audit frameworks (WebTrust, ETSI) and IETF RFCs (5280, 9162, 8659, 8555)"
+            },
+            "regulatory": {
+              "type": "integer",
+              "description": "Regulatory frameworks (NIST SP 800-53 High baseline, NIS2 Directive)"
+            }
+          }
+        },
+        "tlsBr": {
+          "type": "object",
+          "description": "TLS Baseline Requirements obligation counts",
+          "properties": {
+            "v1_0_total": {
+              "type": "integer",
+              "description": "Total obligations at TLS BR v1.0 (2012)"
+            },
+            "current_total": {
+              "type": "integer",
+              "description": "Total obligations in current version"
+            },
+            "operational": {
+              "type": "integer",
+              "description": "Operational obligations only (sections 1-6, 8-9)"
+            },
+            "profileSpec": {
+              "type": "integer",
+              "description": "Certificate profile specifications (section 7)"
+            }
+          }
+        },
+        "ballots": {
+          "type": "object",
+          "description": "CA/Browser Forum ballot activity parsed from document revision history tables",
+          "properties": {
+            "total": {
+              "type": "integer",
+              "description": "Total dated ballot entries across all CABF documents"
+            },
+            "since2022": {
+              "type": "integer",
+              "description": "Ballots since 2022"
+            },
+            "byDoc": {
+              "type": "object",
+              "description": "Ballot count per document (tls_br, ev_g, ns_reqs, smime_br, cs_br)",
+              "additionalProperties": {
+                "type": "integer"
+              }
+            }
+          }
+        },
+        "timeSeries": {
+          "type": "array",
+          "description": "Annual obligation totals from 2000 to present",
+          "items": {
+            "type": "object",
+            "properties": {
+              "y": {
+                "type": "integer",
+                "description": "Year"
+              },
+              "t": {
+                "type": "integer",
+                "description": "Total obligations"
+              },
+              "m": {
+                "type": "integer",
+                "description": "Mandatory obligations"
+              }
+            }
+          }
+        },
+        "methodology": {
+          "type": "string",
+          "description": "Description of the counting methodology"
+        }
+      }
+    },
+    "slices": {
+      "type": "object",
+      "description": "URLs to focused slice files for LLMs with limited context windows. Each slice is self-contained.",
+      "properties": {
+        "index": {
+          "type": "string",
+          "description": "Slice index with URLs and guide for each slice"
+        },
+        "governance": {
+          "type": "string",
+          "description": "CA/Browser Forum oversight, compliance, BR readiness (~26k tokens)"
+        },
+        "distrust": {
+          "type": "string",
+          "description": "Distrust history and incident data (~16k tokens)"
+        },
+        "market": {
+          "type": "string",
+          "description": "CA market share and trust surface (~24k tokens)"
+        },
+        "risk": {
+          "type": "string",
+          "description": "Geographic, government, jurisdiction, full 317-root crypto data (~51k tokens)"
+        }
+      }
+    },
+    "sliceGuide": {
+      "type": "string",
+      "description": "Human-readable guide to available slices and when to use each one."
+    }
+  },
+  "version": "1.1.0"
+}
