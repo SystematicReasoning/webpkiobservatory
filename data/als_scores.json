@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-24T07:39:45.994421+00:00",
+  "generated_at": "2026-08-25T07:38:30.059051+00:00",
   "methodology": "paper/loop-failure/loop-failure-v1.tex",
   "parameters": {
     "min_bugs": 2,
@@ -2695,8 +2695,8 @@
       "population": "active",
       "distrust_event": null,
       "signals": {
-        "n": 36,
-        "n_orig": 36,
+        "n": 37,
+        "n_orig": 37,
         "batches_collapsed": 0,
         "low_confidence": false,
         "years": [
@@ -2704,7 +2704,7 @@
           2026
         ],
         "years_active": 9,
-        "self_pct": 52.8,
+        "self_pct": 54.1,
         "n_chronic": 3,
         "n_solo_chronic": 2,
         "chronic_classes": {
@@ -2763,21 +2763,21 @@
         ],
         "n_closed_loop": 0,
         "closed_loop_classes": [],
-        "gov_frac": 0.222,
-        "accel": 1.0,
-        "year_density": 4.0,
+        "gov_frac": 0.216,
+        "accel": 1.05,
+        "year_density": 4.11,
         "chronic_span_avg": 3.67,
-        "severity_score": 0.1788,
-        "recency_score": 0.2812,
+        "severity_score": 0.201,
+        "recency_score": 0.3839,
         "recent_ap_rate": 0.0,
-        "n_recent": 6,
-        "n_sev5": 2
+        "n_recent": 7,
+        "n_sev5": 3
       },
       "scores": {
-        "total": 45.7,
-        "mode_A": 17.5,
-        "mode_B": 45.7,
-        "accel_boost": 0.0,
+        "total": 46.9,
+        "mode_A": 18.0,
+        "mode_B": 46.3,
+        "accel_boost": 0.5,
         "dominant_mode": "B",
         "threshold": 48,
         "flagged": false,
@@ -2788,8 +2788,8 @@
         "n_broken_promise": 2,
         "n_closed_loop": 0,
         "broken_boost": 1.0,
-        "severity_amp": 1.179,
-        "recency_amp": 1.281,
+        "severity_amp": 1.201,
+        "recency_amp": 1.384,
         "gap_level": "—",
         "staleness": "—",
         "audit_quality": null,
@@ -4328,13 +4328,18 @@
         ],
         "years_active": 7,
         "self_pct": 57.1,
-        "n_chronic": 1,
-        "n_solo_chronic": 1,
+        "n_chronic": 2,
+        "n_solo_chronic": 2,
         "chronic_classes": {
           "ov-misissuance": [
             2019,
             2021,
             2025,
+            2026
+          ],
+          "ev-misissuance": [
+            2019,
+            2023,
             2026
           ]
         },
@@ -4343,6 +4348,11 @@
             2021,
             2025,
             2026
+          ],
+          "ev-misissuance": [
+            2019,
+            2023,
+            2026
           ]
         },
         "chronic_knowledge": {
@@ -4350,9 +4360,14 @@
             "prior_cas": 31,
             "eco_age": 5,
             "weight": 1.5
+          },
+          "ev-misissuance": {
+            "prior_cas": 15,
+            "eco_age": 3,
+            "weight": 1.281
           }
         },
-        "avg_knowledge_weight": 1.5,
+        "avg_knowledge_weight": 1.39,
         "n_broken_promise": 0,
         "broken_promise_classes": [],
         "n_closed_loop": 0,
@@ -4360,30 +4375,30 @@
         "gov_frac": 0.048,
         "accel": 1.219,
         "year_density": 3.0,
-        "chronic_span_avg": 4.0,
-        "severity_score": 0.1667,
-        "recency_score": 0.0104,
+        "chronic_span_avg": 3.5,
+        "severity_score": 0.1696,
+        "recency_score": 0.0208,
         "recent_ap_rate": 0.0,
         "n_recent": 6,
         "n_sev5": 2
       },
       "scores": {
-        "total": 29.6,
+        "total": 39.4,
         "mode_A": 17.6,
-        "mode_B": 28.0,
+        "mode_B": 37.8,
         "accel_boost": 1.6,
         "dominant_mode": "B",
         "threshold": 48,
         "flagged": false,
-        "n_solo_chronic": 1,
+        "n_solo_chronic": 2,
         "solo_ratio": 1.0,
         "ecosystem_factor": 1.0,
-        "avg_knowledge_weight": 1.5,
+        "avg_knowledge_weight": 1.39,
         "n_broken_promise": 0,
         "n_closed_loop": 0,
         "broken_boost": 1.0,
-        "severity_amp": 1.167,
-        "recency_amp": 1.01,
+        "severity_amp": 1.17,
+        "recency_amp": 1.021,
         "gap_level": "high",
         "staleness": "current",
         "audit_quality": 70.0,
@@ -5170,9 +5185,9 @@
         "broken_boost": 1.0,
         "severity_amp": 1.139,
         "recency_amp": 1.125,
-        "gap_level": "unknown",
-        "staleness": "stale",
-        "audit_quality": null,
+        "gap_level": "high",
+        "staleness": "current",
+        "audit_quality": 58.9,
         "has_audit_profile": true
       }
     },
