@@ -1,7 +1,7 @@
 {
   "$schema": "https://webpki.systematicreasoning.com/schema.json",
   "version": "1.0.0",
-  "generatedAt": "2026-08-25T07:39:31.492906+00:00",
+  "generatedAt": "2026-08-26T07:35:27.406646+00:00",
   "snapshotUrl": "https://webpki.systematicreasoning.com/llm_snapshot.json",
   "note": "Sliced subset of llm_snapshot.json. Fetch the full snapshot for complete data.",
   "distrustEvents": [
@@ -922,7 +922,7 @@
     "responseDrivenPct": 73
   },
   "incidents": {
-    "total": 1551,
+    "total": 1554,
     "caCount": 54,
     "years": [
       {
@@ -975,7 +975,7 @@
       },
       {
         "year": 2026,
-        "count": 189
+        "count": 192
       }
     ],
     "perCA": [
@@ -1030,6 +1030,16 @@
         "trusted": true
       },
       {
+        "ca": "Microsoft Corporation",
+        "id": "microsoft-corporation",
+        "count": 53,
+        "selfReported": 26,
+        "externallyReported": 27,
+        "selfReportPct": 49,
+        "ppm": 0.141,
+        "trusted": true
+      },
+      {
         "ca": "Asseco Data Systems S.A.",
         "id": "asseco-data-systems-s-a",
         "count": 52,
@@ -1040,23 +1050,13 @@
         "trusted": true
       },
       {
-        "ca": "Microsoft Corporation",
-        "id": "microsoft-corporation",
-        "count": 52,
-        "selfReported": 25,
-        "externallyReported": 27,
-        "selfReportPct": 48,
-        "ppm": 0.139,
-        "trusted": true
-      },
-      {
         "ca": "GoDaddy",
         "id": "godaddy",
-        "count": 47,
-        "selfReported": 27,
+        "count": 48,
+        "selfReported": 28,
         "externallyReported": 20,
-        "selfReportPct": 57,
-        "ppm": 0.089,
+        "selfReportPct": 58,
+        "ppm": 0.091,
         "trusted": true
       },
       {
@@ -1112,11 +1112,11 @@
       {
         "ca": "SECOM Trust Systems CO., LTD.",
         "id": "secom-trust-systems-co-ltd",
-        "count": 37,
-        "selfReported": 20,
+        "count": 38,
+        "selfReported": 21,
         "externallyReported": 17,
-        "selfReportPct": 54,
-        "ppm": 73.46,
+        "selfReportPct": 55,
+        "ppm": 75.445,
         "trusted": true
       },
       {
@@ -1523,7 +1523,7 @@
     "classification": {
       "misissuance": 604,
       "revocation": 328,
-      "governance": 496,
+      "governance": 499,
       "validation": 123
     },
     "yearsByClass": [
@@ -1615,7 +1615,7 @@
         "year": 2026,
         "misissuance": 46,
         "revocation": 31,
-        "governance": 103,
+        "governance": 106,
         "validation": 9
       }
     ],
@@ -1656,6 +1656,13 @@
         "validation": 5
       },
       {
+        "ca": "Microsoft Corporation",
+        "misissuance": 13,
+        "revocation": 9,
+        "governance": 31,
+        "validation": 0
+      },
+      {
         "ca": "Asseco Data Systems S.A.",
         "misissuance": 24,
         "revocation": 10,
@@ -1663,17 +1670,10 @@
         "validation": 4
       },
       {
-        "ca": "Microsoft Corporation",
-        "misissuance": 13,
-        "revocation": 9,
-        "governance": 30,
-        "validation": 0
-      },
-      {
         "ca": "GoDaddy",
         "misissuance": 13,
         "revocation": 16,
-        "governance": 10,
+        "governance": 11,
         "validation": 8
       },
       {
@@ -1715,7 +1715,7 @@
         "ca": "SECOM Trust Systems CO., LTD.",
         "misissuance": 19,
         "revocation": 7,
-        "governance": 11,
+        "governance": 12,
         "validation": 0
       },
       {
@@ -2006,7 +2006,7 @@
       },
       {
         "category": "Governance",
-        "count": 496
+        "count": 499
       },
       {
         "category": "Revocation",
@@ -2018,11 +2018,11 @@
       }
     ],
     "whiteboardTags": {
-      "ca-compliance": 1519,
+      "ca-compliance": 1521,
       "ov-misissuance": 327,
-      "policy-failure": 189,
+      "policy-failure": 190,
       "ev-misissuance": 179,
-      "disclosure-failure": 137,
+      "disclosure-failure": 138,
       "ocsp-failure": 131,
       "dv-misissuance": 121,
       "audit-finding": 107,
@@ -2052,8 +2052,10 @@
       "close on 2026-07-16": 1,
       "code-signing-misissuance": 1,
       "cs-misissuance": 1,
+      "close on 2026-09-01": 1,
       "close on 2026-08-31": 1,
-      "close on 2026-08-28": 1
+      "close on 2026-08-28": 1,
+      "close as INVALID on 2026-09-01": 1
     }
   }
 }
