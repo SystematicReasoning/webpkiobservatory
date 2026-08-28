@@ -1,7 +1,7 @@
 {
   "$schema": "https://webpki.systematicreasoning.com/schema.json",
   "version": "1.0.0",
-  "generatedAt": "2026-08-27T18:14:02.198511+00:00",
+  "generatedAt": "2026-08-28T19:05:57.408345+00:00",
   "snapshotUrl": "https://webpki.systematicreasoning.com/llm_snapshot.json",
   "note": "Sliced subset of llm_snapshot.json. Fetch the full snapshot for complete data.",
   "distrustEvents": [
@@ -922,7 +922,7 @@
     "responseDrivenPct": 73
   },
   "incidents": {
-    "total": 1558,
+    "total": 1560,
     "caCount": 54,
     "years": [
       {
@@ -975,7 +975,7 @@
       },
       {
         "year": 2026,
-        "count": 196
+        "count": 198
       }
     ],
     "perCA": [
@@ -1002,11 +1002,11 @@
       {
         "ca": "IdenTrust Services, LLC",
         "id": "identrust-services-llc",
-        "count": 78,
-        "selfReported": 64,
+        "count": 79,
+        "selfReported": 65,
         "externallyReported": 14,
         "selfReportPct": 82,
-        "ppm": 1.694,
+        "ppm": 1.716,
         "trusted": true
       },
       {
@@ -1140,6 +1140,16 @@
         "trusted": true
       },
       {
+        "ca": "SSL.com",
+        "id": "ssl-com",
+        "count": 35,
+        "selfReported": 21,
+        "externallyReported": 14,
+        "selfReportPct": 60,
+        "ppm": 0.29,
+        "trusted": true
+      },
+      {
         "ca": "D-TRUST",
         "id": "d-trust",
         "count": 34,
@@ -1147,16 +1157,6 @@
         "externallyReported": 11,
         "selfReportPct": 68,
         "ppm": 190.08,
-        "trusted": true
-      },
-      {
-        "ca": "SSL.com",
-        "id": "ssl-com",
-        "count": 34,
-        "selfReported": 20,
-        "externallyReported": 14,
-        "selfReportPct": 59,
-        "ppm": 0.282,
         "trusted": true
       },
       {
@@ -1523,7 +1523,7 @@
     "classification": {
       "misissuance": 606,
       "revocation": 329,
-      "governance": 500,
+      "governance": 502,
       "validation": 123
     },
     "yearsByClass": [
@@ -1615,7 +1615,7 @@
         "year": 2026,
         "misissuance": 48,
         "revocation": 32,
-        "governance": 107,
+        "governance": 109,
         "validation": 9
       }
     ],
@@ -1638,7 +1638,7 @@
         "ca": "IdenTrust Services, LLC",
         "misissuance": 30,
         "revocation": 25,
-        "governance": 21,
+        "governance": 22,
         "validation": 2
       },
       {
@@ -1733,18 +1733,18 @@
         "validation": 0
       },
       {
+        "ca": "SSL.com",
+        "misissuance": 9,
+        "revocation": 9,
+        "governance": 5,
+        "validation": 12
+      },
+      {
         "ca": "D-TRUST",
         "misissuance": 19,
         "revocation": 8,
         "governance": 7,
         "validation": 0
-      },
-      {
-        "ca": "SSL.com",
-        "misissuance": 9,
-        "revocation": 9,
-        "governance": 4,
-        "validation": 12
       },
       {
         "ca": "Certigna",
@@ -2006,7 +2006,7 @@
       },
       {
         "category": "Governance",
-        "count": 500
+        "count": 502
       },
       {
         "category": "Revocation",
@@ -2018,17 +2018,17 @@
       }
     ],
     "whiteboardTags": {
-      "ca-compliance": 1523,
-      "ov-misissuance": 327,
+      "ca-compliance": 1528,
+      "ov-misissuance": 329,
       "policy-failure": 192,
-      "ev-misissuance": 179,
-      "disclosure-failure": 138,
+      "ev-misissuance": 180,
+      "disclosure-failure": 139,
       "ocsp-failure": 131,
-      "dv-misissuance": 121,
-      "audit-finding": 107,
+      "dv-misissuance": 122,
+      "audit-finding": 108,
       "leaf-revocation-delay": 102,
       "crl-failure": 89,
-      "ca-misissuance": 61,
+      "ca-misissuance": 62,
       "audit-failure": 48,
       "uncategorized": 45,
       "smime-misissuance": 41,
@@ -2037,7 +2037,7 @@
       "audit-delay": 17,
       "covid-19": 7,
       "disclosure failure": 7,
-      "__-misissuance": 7,
+      "__-misissuance": 6,
       "ca-onecrl": 4,
       "ca-investigation": 3,
       "remediation-accepted": 3,
@@ -2050,6 +2050,7 @@
       "close on 2025-12-10": 1,
       "close on 2025-12-11": 1,
       "close on 2025-12-08": 1,
+      "close on 2026-09-03": 1,
       "close on 2026-07-16": 1,
       "code-signing-misissuance": 1,
       "cs-misissuance": 1,
