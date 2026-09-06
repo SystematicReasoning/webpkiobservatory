@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-05T10:53:19.297381+00:00",
+  "generated_at": "2026-09-06T11:05:53.538130+00:00",
   "methodology": "Similarity scored on: chronic class overlap (Jaccard, 35pts), dominant mode match (15pts), n_chronic magnitude (15pts), self-report rate (15pts), acceleration direction (10pts), years active (10pts). Min similarity score 10 to appear.",
   "n_active_with_comparables": 41,
   "n_distrusted_profiles": 15,
@@ -200,6 +200,71 @@
       ]
     },
     {
+      "ca": "Sectigo",
+      "als_total": 76.4,
+      "n_chronic": 9,
+      "n_solo_chronic": 9,
+      "dominant_mode": "B",
+      "best_comparable": {
+        "comparable_ca": "Entrust",
+        "distrust_pathway": "gradual",
+        "distrust_posture": "argumentative_noncompliance",
+        "distrust_last_year": 2025,
+        "similarity_score": 67.4,
+        "similarity_reasons": [
+          "shared chronic classes: ev-misissuance, leaf-revocation-delay, ocsp-failure",
+          "same failure mode (B)",
+          "accelerating"
+        ],
+        "comparable_n_chronic": 4,
+        "comparable_als": 64.0
+      },
+      "top_comparables": [
+        {
+          "comparable_ca": "Entrust",
+          "distrust_pathway": "gradual",
+          "distrust_posture": "argumentative_noncompliance",
+          "distrust_last_year": 2025,
+          "similarity_score": 67.4,
+          "similarity_reasons": [
+            "shared chronic classes: ev-misissuance, leaf-revocation-delay, ocsp-failure",
+            "same failure mode (B)",
+            "accelerating"
+          ],
+          "comparable_n_chronic": 4,
+          "comparable_als": 64.0
+        },
+        {
+          "comparable_ca": "Camerfirma",
+          "distrust_pathway": "gradual",
+          "distrust_posture": "negligent_noncompliance",
+          "distrust_last_year": 2021,
+          "similarity_score": 55.1,
+          "similarity_reasons": [
+            "shared chronic classes: ev-misissuance, ov-misissuance",
+            "same failure mode (B)",
+            "similar detection posture (64% vs 48%)",
+            "accelerating"
+          ],
+          "comparable_n_chronic": 4,
+          "comparable_als": 63.8
+        },
+        {
+          "comparable_ca": "E-Tugra",
+          "distrust_pathway": "triggered",
+          "distrust_posture": "demonstrated_incompetence",
+          "distrust_last_year": 2022,
+          "similarity_score": 35.8,
+          "similarity_reasons": [
+            "shared chronic classes: ov-misissuance",
+            "same failure mode (B)"
+          ],
+          "comparable_n_chronic": 1,
+          "comparable_als": 29.5
+        }
+      ]
+    },
+    {
       "ca": "Chunghwa Telecom",
       "als_total": 76.4,
       "n_chronic": 2,
@@ -256,71 +321,6 @@
           "similarity_score": 45.6,
           "similarity_reasons": [
             "shared chronic classes: ov-misissuance"
-          ],
-          "comparable_n_chronic": 1,
-          "comparable_als": 29.5
-        }
-      ]
-    },
-    {
-      "ca": "Sectigo",
-      "als_total": 76.1,
-      "n_chronic": 9,
-      "n_solo_chronic": 9,
-      "dominant_mode": "B",
-      "best_comparable": {
-        "comparable_ca": "Entrust",
-        "distrust_pathway": "gradual",
-        "distrust_posture": "argumentative_noncompliance",
-        "distrust_last_year": 2025,
-        "similarity_score": 67.3,
-        "similarity_reasons": [
-          "shared chronic classes: ev-misissuance, leaf-revocation-delay, ocsp-failure",
-          "same failure mode (B)",
-          "accelerating"
-        ],
-        "comparable_n_chronic": 4,
-        "comparable_als": 64.0
-      },
-      "top_comparables": [
-        {
-          "comparable_ca": "Entrust",
-          "distrust_pathway": "gradual",
-          "distrust_posture": "argumentative_noncompliance",
-          "distrust_last_year": 2025,
-          "similarity_score": 67.3,
-          "similarity_reasons": [
-            "shared chronic classes: ev-misissuance, leaf-revocation-delay, ocsp-failure",
-            "same failure mode (B)",
-            "accelerating"
-          ],
-          "comparable_n_chronic": 4,
-          "comparable_als": 64.0
-        },
-        {
-          "comparable_ca": "Camerfirma",
-          "distrust_pathway": "gradual",
-          "distrust_posture": "negligent_noncompliance",
-          "distrust_last_year": 2021,
-          "similarity_score": 55.2,
-          "similarity_reasons": [
-            "shared chronic classes: ev-misissuance, ov-misissuance",
-            "same failure mode (B)",
-            "similar detection posture (64% vs 48%)",
-            "accelerating"
-          ],
-          "comparable_n_chronic": 4,
-          "comparable_als": 63.8
-        },
-        {
-          "comparable_ca": "E-Tugra",
-          "distrust_pathway": "triggered",
-          "distrust_posture": "demonstrated_incompetence",
-          "distrust_last_year": 2022,
-          "similarity_score": 35.9,
-          "similarity_reasons": [
-            "shared chronic classes: ov-misissuance",
-            "same failure mode (B)"
           ],
           "comparable_n_chronic": 1,
           "comparable_als": 29.5
