@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-11T11:29:19.470743+00:00",
+  "generated_at": "2026-09-12T10:59:18.378806+00:00",
   "methodology": "Similarity scored on: chronic class overlap (Jaccard, 35pts), dominant mode match (15pts), n_chronic magnitude (15pts), self-report rate (15pts), acceleration direction (10pts), years active (10pts). Min similarity score 10 to appear.",
   "n_active_with_comparables": 41,
   "n_distrusted_profiles": 15,
@@ -331,7 +331,7 @@
     },
     {
       "ca": "SSL.com",
-      "als_total": 74.2,
+      "als_total": 74.6,
       "n_chronic": 5,
       "n_solo_chronic": 4,
       "dominant_mode": "B",
@@ -340,11 +340,12 @@
         "distrust_pathway": "gradual",
         "distrust_posture": "argumentative_noncompliance",
         "distrust_last_year": 2025,
-        "similarity_score": 64.7,
+        "similarity_score": 74.5,
         "similarity_reasons": [
           "shared chronic classes: ev-misissuance, ocsp-failure, ov-misissuance",
           "same failure mode (B)",
-          "similar chronic class count (5 vs 4)"
+          "similar chronic class count (5 vs 4)",
+          "accelerating"
         ],
         "comparable_n_chronic": 4,
         "comparable_als": 64.0
@@ -355,11 +356,12 @@
           "distrust_pathway": "gradual",
           "distrust_posture": "argumentative_noncompliance",
           "distrust_last_year": 2025,
-          "similarity_score": 64.7,
+          "similarity_score": 74.5,
           "similarity_reasons": [
             "shared chronic classes: ev-misissuance, ocsp-failure, ov-misissuance",
             "same failure mode (B)",
-            "similar chronic class count (5 vs 4)"
+            "similar chronic class count (5 vs 4)",
+            "accelerating"
           ],
           "comparable_n_chronic": 4,
           "comparable_als": 64.0
@@ -369,12 +371,13 @@
           "distrust_pathway": "gradual",
           "distrust_posture": "negligent_noncompliance",
           "distrust_last_year": 2021,
-          "similarity_score": 56.4,
+          "similarity_score": 66.7,
           "similarity_reasons": [
             "shared chronic classes: ev-misissuance, ov-misissuance",
             "same failure mode (B)",
             "similar chronic class count (5 vs 4)",
-            "similar detection posture (60% vs 48%)"
+            "similar detection posture (58% vs 48%)",
+            "accelerating"
           ],
           "comparable_n_chronic": 4,
           "comparable_als": 63.8
@@ -384,7 +387,7 @@
           "distrust_pathway": "triggered",
           "distrust_posture": "demonstrated_incompetence",
           "distrust_last_year": 2022,
-          "similarity_score": 42.6,
+          "similarity_score": 42.9,
           "similarity_reasons": [
             "shared chronic classes: ov-misissuance",
             "same failure mode (B)"
@@ -459,6 +462,72 @@
       ]
     },
     {
+      "ca": "Asseco Data Systems S.A.",
+      "als_total": 71.1,
+      "n_chronic": 5,
+      "n_solo_chronic": 4,
+      "dominant_mode": "B",
+      "best_comparable": {
+        "comparable_ca": "Entrust",
+        "distrust_pathway": "gradual",
+        "distrust_posture": "argumentative_noncompliance",
+        "distrust_last_year": 2025,
+        "similarity_score": 64.7,
+        "similarity_reasons": [
+          "shared chronic classes: ev-misissuance, leaf-revocation-delay, ov-misissuance",
+          "same failure mode (B)",
+          "similar chronic class count (5 vs 4)"
+        ],
+        "comparable_n_chronic": 4,
+        "comparable_als": 64.0
+      },
+      "top_comparables": [
+        {
+          "comparable_ca": "Entrust",
+          "distrust_pathway": "gradual",
+          "distrust_posture": "argumentative_noncompliance",
+          "distrust_last_year": 2025,
+          "similarity_score": 64.7,
+          "similarity_reasons": [
+            "shared chronic classes: ev-misissuance, leaf-revocation-delay, ov-misissuance",
+            "same failure mode (B)",
+            "similar chronic class count (5 vs 4)"
+          ],
+          "comparable_n_chronic": 4,
+          "comparable_als": 64.0
+        },
+        {
+          "comparable_ca": "Camerfirma",
+          "distrust_pathway": "gradual",
+          "distrust_posture": "negligent_noncompliance",
+          "distrust_last_year": 2021,
+          "similarity_score": 56.8,
+          "similarity_reasons": [
+            "shared chronic classes: ev-misissuance, ov-misissuance",
+            "same failure mode (B)",
+            "similar chronic class count (5 vs 4)",
+            "similar detection posture (53% vs 48%)"
+          ],
+          "comparable_n_chronic": 4,
+          "comparable_als": 63.8
+        },
+        {
+          "comparable_ca": "E-Tugra",
+          "distrust_pathway": "triggered",
+          "distrust_posture": "demonstrated_incompetence",
+          "distrust_last_year": 2022,
+          "similarity_score": 43.0,
+          "similarity_reasons": [
+            "shared chronic classes: ov-misissuance",
+            "same failure mode (B)",
+            "similar detection posture (53% vs 36%)"
+          ],
+          "comparable_n_chronic": 1,
+          "comparable_als": 29.5
+        }
+      ]
+    },
+    {
       "ca": "eMudhra Technologies Limited",
       "als_total": 71.1,
       "n_chronic": 4,
@@ -521,72 +590,6 @@
           "similarity_reasons": [
             "shared chronic classes: ov-misissuance",
             "same failure mode (B)"
-          ],
-          "comparable_n_chronic": 1,
-          "comparable_als": 29.5
-        }
-      ]
-    },
-    {
-      "ca": "Asseco Data Systems S.A.",
-      "als_total": 70.8,
-      "n_chronic": 5,
-      "n_solo_chronic": 4,
-      "dominant_mode": "B",
-      "best_comparable": {
-        "comparable_ca": "Entrust",
-        "distrust_pathway": "gradual",
-        "distrust_posture": "argumentative_noncompliance",
-        "distrust_last_year": 2025,
-        "similarity_score": 64.9,
-        "similarity_reasons": [
-          "shared chronic classes: ev-misissuance, leaf-revocation-delay, ov-misissuance",
-          "same failure mode (B)",
-          "similar chronic class count (5 vs 4)"
-        ],
-        "comparable_n_chronic": 4,
-        "comparable_als": 64.0
-      },
-      "top_comparables": [
-        {
-          "comparable_ca": "Entrust",
-          "distrust_pathway": "gradual",
-          "distrust_posture": "argumentative_noncompliance",
-          "distrust_last_year": 2025,
-          "similarity_score": 64.9,
-          "similarity_reasons": [
-            "shared chronic classes: ev-misissuance, leaf-revocation-delay, ov-misissuance",
-            "same failure mode (B)",
-            "similar chronic class count (5 vs 4)"
-          ],
-          "comparable_n_chronic": 4,
-          "comparable_als": 64.0
-        },
-        {
-          "comparable_ca": "Camerfirma",
-          "distrust_pathway": "gradual",
-          "distrust_posture": "negligent_noncompliance",
-          "distrust_last_year": 2021,
-          "similarity_score": 56.7,
-          "similarity_reasons": [
-            "shared chronic classes: ev-misissuance, ov-misissuance",
-            "same failure mode (B)",
-            "similar chronic class count (5 vs 4)",
-            "similar detection posture (54% vs 48%)"
-          ],
-          "comparable_n_chronic": 4,
-          "comparable_als": 63.8
-        },
-        {
-          "comparable_ca": "E-Tugra",
-          "distrust_pathway": "triggered",
-          "distrust_posture": "demonstrated_incompetence",
-          "distrust_last_year": 2022,
-          "similarity_score": 42.8,
-          "similarity_reasons": [
-            "shared chronic classes: ov-misissuance",
-            "same failure mode (B)",
-            "similar detection posture (54% vs 36%)"
           ],
           "comparable_n_chronic": 1,
           "comparable_als": 29.5
