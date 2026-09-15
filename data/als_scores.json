@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-14T12:39:43.692490+00:00",
+  "generated_at": "2026-09-15T11:57:49.537088+00:00",
   "methodology": "paper/loop-failure/loop-failure-v1.tex",
   "parameters": {
     "min_bugs": 2,
@@ -81,8 +81,8 @@
     "chronic_1plus_pct": 75.9,
     "chronic_3plus": 23,
     "chronic_3plus_pct": 42.6,
-    "chronic_5plus": 13,
-    "chronic_5plus_pct": 24.1
+    "chronic_5plus": 14,
+    "chronic_5plus_pct": 25.9
   },
   "scores": [
     {
@@ -1459,9 +1459,14 @@
         ],
         "years_active": 9,
         "self_pct": 67.5,
-        "n_chronic": 4,
+        "n_chronic": 5,
         "n_solo_chronic": 4,
         "chronic_classes": {
+          "ocsp-failure": [
+            2017,
+            2020,
+            2026
+          ],
           "disclosure-failure": [
             2018,
             2023,
@@ -1507,6 +1512,11 @@
           ]
         },
         "chronic_knowledge": {
+          "ocsp-failure": {
+            "prior_cas": 0,
+            "eco_age": 0,
+            "weight": 1.0
+          },
           "disclosure-failure": {
             "prior_cas": 8,
             "eco_age": 1,
@@ -1528,7 +1538,7 @@
             "weight": 1.5
           }
         },
-        "avg_knowledge_weight": 1.333,
+        "avg_knowledge_weight": 1.266,
         "n_broken_promise": 1,
         "broken_promise_classes": [
           "policy-failure"
@@ -1537,33 +1547,33 @@
         "closed_loop_classes": [
           "ev-misissuance"
         ],
-        "gov_frac": 0.35,
+        "gov_frac": 0.375,
         "accel": 1.333,
         "year_density": 4.44,
-        "chronic_span_avg": 3.25,
-        "severity_score": 0.1891,
-        "recency_score": 0.2692,
+        "chronic_span_avg": 3.2,
+        "severity_score": 0.1969,
+        "recency_score": 0.2933,
         "recent_ap_rate": 0.2308,
         "n_recent": 13,
         "n_sev5": 1
       },
       "scores": {
-        "total": 68.4,
-        "mode_A": 20.7,
-        "mode_B": 65.5,
-        "accel_boost": 2.9,
+        "total": 75.7,
+        "mode_A": 21.1,
+        "mode_B": 72.7,
+        "accel_boost": 3.0,
         "dominant_mode": "B",
         "threshold": 48,
         "flagged": true,
         "n_solo_chronic": 4,
-        "solo_ratio": 1.0,
-        "ecosystem_factor": 1.0,
-        "avg_knowledge_weight": 1.333,
+        "solo_ratio": 0.8,
+        "ecosystem_factor": 0.97,
+        "avg_knowledge_weight": 1.266,
         "n_broken_promise": 1,
         "n_closed_loop": 1,
         "broken_boost": 1.0,
-        "severity_amp": 1.189,
-        "recency_amp": 1.269,
+        "severity_amp": 1.197,
+        "recency_amp": 1.293,
         "gap_level": "high",
         "staleness": "current",
         "audit_quality": 95.0,
@@ -5762,9 +5772,9 @@
         "broken_boost": 1.0,
         "severity_amp": 1.125,
         "recency_amp": 1.125,
-        "gap_level": "high",
+        "gap_level": "unknown",
         "staleness": "stale",
-        "audit_quality": 60.0,
+        "audit_quality": null,
         "has_audit_profile": true
       }
     },
