@@ -1,7 +1,7 @@
 {
   "$schema": "https://webpki.systematicreasoning.com/schema.json",
   "version": "1.0.0",
-  "generatedAt": "2026-09-18T11:27:27.547751+00:00",
+  "generatedAt": "2026-09-19T11:06:12.692576+00:00",
   "snapshotUrl": "https://webpki.systematicreasoning.com/llm_snapshot.json",
   "note": "Sliced subset of llm_snapshot.json. Fetch the full snapshot for complete data.",
   "distrustEvents": [
@@ -922,7 +922,7 @@
     "responseDrivenPct": 73
   },
   "incidents": {
-    "total": 1580,
+    "total": 1585,
     "caCount": 54,
     "years": [
       {
@@ -975,28 +975,28 @@
       },
       {
         "year": 2026,
-        "count": 218
+        "count": 223
       }
     ],
     "perCA": [
       {
         "ca": "DigiCert",
         "id": "digicert",
-        "count": 183,
-        "selfReported": 92,
+        "count": 184,
+        "selfReported": 93,
         "externallyReported": 91,
-        "selfReportPct": 50,
-        "ppm": 0.135,
+        "selfReportPct": 51,
+        "ppm": 0.136,
         "trusted": true
       },
       {
         "ca": "Sectigo",
         "id": "sectigo",
-        "count": 118,
-        "selfReported": 74,
+        "count": 119,
+        "selfReported": 75,
         "externallyReported": 44,
         "selfReportPct": 63,
-        "ppm": 0.08,
+        "ppm": 0.081,
         "trusted": true
       },
       {
@@ -1032,11 +1032,11 @@
       {
         "ca": "Asseco Data Systems S.A.",
         "id": "asseco-data-systems-s-a",
-        "count": 53,
-        "selfReported": 28,
+        "count": 54,
+        "selfReported": 29,
         "externallyReported": 25,
-        "selfReportPct": 53,
-        "ppm": 8.465,
+        "selfReportPct": 54,
+        "ppm": 8.625,
         "trusted": true
       },
       {
@@ -1210,6 +1210,16 @@
         "trusted": true
       },
       {
+        "ca": "eMudhra Technologies Limited",
+        "id": "emudhra-technologies-limited",
+        "count": 25,
+        "selfReported": 21,
+        "externallyReported": 4,
+        "selfReportPct": 84,
+        "ppm": 196.28,
+        "trusted": true
+      },
+      {
         "ca": "Izenpe S.A.",
         "id": "izenpe-s-a",
         "count": 23,
@@ -1227,16 +1237,6 @@
         "externallyReported": 6,
         "selfReportPct": 74,
         "ppm": 1139.234,
-        "trusted": true
-      },
-      {
-        "ca": "eMudhra Technologies Limited",
-        "id": "emudhra-technologies-limited",
-        "count": 23,
-        "selfReported": 19,
-        "externallyReported": 4,
-        "selfReportPct": 83,
-        "ppm": 180.578,
         "trusted": true
       },
       {
@@ -1521,9 +1521,9 @@
       }
     ],
     "classification": {
-      "misissuance": 612,
-      "revocation": 337,
-      "governance": 506,
+      "misissuance": 614,
+      "revocation": 338,
+      "governance": 508,
       "validation": 125
     },
     "yearsByClass": [
@@ -1613,9 +1613,9 @@
       },
       {
         "year": 2026,
-        "misissuance": 54,
-        "revocation": 40,
-        "governance": 113,
+        "misissuance": 56,
+        "revocation": 41,
+        "governance": 115,
         "validation": 11
       }
     ],
@@ -1623,7 +1623,7 @@
       {
         "ca": "DigiCert",
         "misissuance": 86,
-        "revocation": 36,
+        "revocation": 37,
         "governance": 43,
         "validation": 18
       },
@@ -1631,7 +1631,7 @@
         "ca": "Sectigo",
         "misissuance": 49,
         "revocation": 20,
-        "governance": 24,
+        "governance": 25,
         "validation": 25
       },
       {
@@ -1657,7 +1657,7 @@
       },
       {
         "ca": "Asseco Data Systems S.A.",
-        "misissuance": 25,
+        "misissuance": 26,
         "revocation": 10,
         "governance": 14,
         "validation": 4
@@ -1782,6 +1782,13 @@
         "validation": 0
       },
       {
+        "ca": "eMudhra Technologies Limited",
+        "misissuance": 6,
+        "revocation": 8,
+        "governance": 10,
+        "validation": 1
+      },
+      {
         "ca": "Izenpe S.A.",
         "misissuance": 12,
         "revocation": 4,
@@ -1794,13 +1801,6 @@
         "revocation": 3,
         "governance": 12,
         "validation": 0
-      },
-      {
-        "ca": "eMudhra Technologies Limited",
-        "misissuance": 5,
-        "revocation": 8,
-        "governance": 9,
-        "validation": 1
       },
       {
         "ca": "Government of Spain, Fábrica Nacional de Moneda y Timbre (FNMT)",
@@ -2002,15 +2002,15 @@
     "categories": [
       {
         "category": "Misissuance",
-        "count": 612
+        "count": 614
       },
       {
         "category": "Governance",
-        "count": 506
+        "count": 508
       },
       {
         "category": "Revocation",
-        "count": 337
+        "count": 338
       },
       {
         "category": "Validation",
@@ -2018,31 +2018,32 @@
       }
     ],
     "whiteboardTags": {
-      "ca-compliance": 1543,
-      "ov-misissuance": 329,
-      "policy-failure": 195,
-      "ev-misissuance": 181,
+      "ca-compliance": 1547,
+      "ov-misissuance": 330,
+      "policy-failure": 196,
+      "ev-misissuance": 182,
       "disclosure-failure": 139,
       "ocsp-failure": 134,
-      "dv-misissuance": 123,
+      "dv-misissuance": 124,
       "audit-finding": 108,
       "leaf-revocation-delay": 102,
       "crl-failure": 90,
-      "ca-misissuance": 62,
+      "ca-misissuance": 64,
       "audit-failure": 48,
       "uncategorized": 45,
       "smime-misissuance": 41,
-      "ca-revocation-delay": 33,
+      "ca-revocation-delay": 34,
       "external": 32,
       "audit-delay": 17,
       "covid-19": 7,
       "disclosure failure": 7,
-      "__-misissuance": 6,
+      "__-misissuance": 5,
       "ca-onecrl": 4,
       "ca-investigation": 3,
       "remediation-accepted": 3,
       "ca-infosharing": 2,
       "ca compliance": 2,
+      "close on 2026-09-25": 2,
       "close on 2026-09-21": 2,
       "iv-misissuance": 1,
       "ca-informational": 1,
