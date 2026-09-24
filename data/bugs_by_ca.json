@@ -1632,6 +1632,13 @@
       "summary": "DigiCert: Revocation of SHA1 Issuing CAs",
       "self_reported": true,
       "whiteboard": "[ca-compliance] [ca-revocation-delay]"
+    },
+    {
+      "id": 2074611,
+      "filed": "2026-09-22",
+      "summary": "DigiCert:  EV JOI match with organizationIdentifer",
+      "self_reported": true,
+      "whiteboard": "[ca-compliance] [ev-misissuance]"
     }
   ],
   "SwissSign AG": [
@@ -2095,7 +2102,7 @@
       "filed": "2026-07-24",
       "summary": "SwissSign: Invalid Entry in State field",
       "self_reported": true,
-      "whiteboard": "[ca-compliance] [ov-misissuance] Next update 2026-09-23"
+      "whiteboard": "[close on 2026-09-30] [ca-compliance] [ov-misissuance]"
     },
     {
       "id": 2065061,
@@ -3072,7 +3079,7 @@
       "filed": "2026-08-10",
       "summary": "Sectigo: jurisdictionCountry versus organizationIdentifier mismatch in QWAC",
       "self_reported": true,
-      "whiteboard": "Next update 2026-09-18 [ca-compliance] [ev-misissuance]"
+      "whiteboard": "[close on 2026-09-30] [ca-compliance] [ev-misissuance]"
     },
     {
       "id": 2069636,
@@ -3093,7 +3100,7 @@
       "filed": "2026-09-08",
       "summary": "Sectigo: Issuance of certificates including a Subject:countryName not corresponding to a Country",
       "self_reported": true,
-      "whiteboard": "[ca-compliance]"
+      "whiteboard": "[close on 2026-09-30] [ca-compliance]"
     },
     {
       "id": 2072647,
@@ -3397,6 +3404,13 @@
       "summary": "Let's Encrypt: CPS missing root program attestation",
       "self_reported": true,
       "whiteboard": "Next update 2026-11-20 [ca-compliance] [policy-failure] "
+    },
+    {
+      "id": 2074944,
+      "filed": "2026-09-23",
+      "summary": "Let's Encrypt: Root CRLs Missing Reason Code",
+      "self_reported": true,
+      "whiteboard": "[ca-compliance] [crl-failure]"
     }
   ],
   "GlobalSign nv-sa": [
@@ -4079,7 +4093,7 @@
       "filed": "2026-07-13",
       "summary": "Firmaprofesional: Chrome Root Progam Policy - Dedicated TLS hierarchy / EKU requirements",
       "self_reported": true,
-      "whiteboard": "Next update 2026-09-18 [ca-compliance]"
+      "whiteboard": "[ca-compliance]"
     },
     {
       "id": 2054450,
@@ -4873,7 +4887,7 @@
       "filed": "2026-09-17",
       "summary": "Disig: Multi-purpose Subordinate CA with missing EKU",
       "self_reported": true,
-      "whiteboard": "[ca-compliance] [ca-misissuance]"
+      "whiteboard": "[close as INVALID on 2026-09-30] [ca-compliance]"
     }
   ],
   "Certigna": [
@@ -5656,7 +5670,7 @@
       "filed": "2026-07-09",
       "summary": "IdenTrust: Delayed disclosure of Intermediate CA in CCADB",
       "self_reported": true,
-      "whiteboard": "[ca-compliance] [disclosure-failure]"
+      "whiteboard": "[close on 2026-10-01] [ca-compliance] [disclosure-failure]"
     },
     {
       "id": 2065616,
@@ -5670,7 +5684,7 @@
       "filed": "2026-08-27",
       "summary": "IdenTrust: 2026 Audit Report Finding",
       "self_reported": true,
-      "whiteboard": "[close on 2026-09-23] [ca-compliance] [audit-finding]"
+      "whiteboard": "[ca-compliance] [audit-finding]"
     }
   ],
   "Microsec Ltd.": [
@@ -6369,7 +6383,7 @@
       "filed": "2026-09-01",
       "summary": "SECOM: Five Subordinate CA Certificates Issued Without Apple Prior Approval for Cybertrust Japan (CTJ)",
       "self_reported": true,
-      "whiteboard": "[ca-compliance] [policy-failure]"
+      "whiteboard": "[close on 2026-10-01] [ca-compliance] [policy-failure]"
     }
   ],
   "Taiwan-CA Inc. (TWCA)": [
@@ -6483,7 +6497,7 @@
       "filed": "2026-09-07",
       "summary": "TWCA: CPR subject.countryName",
       "self_reported": true,
-      "whiteboard": "[close as INVALID on 2026-09-23] [ca-compliance]"
+      "whiteboard": "[ca-compliance]"
     }
   ],
   "Deutsche Telekom Security GmbH": [
@@ -7149,7 +7163,7 @@
       "filed": "2026-09-21",
       "summary": "PKIoverheid: TSP KPN Delayed publication of audit attestation letters in the CCADB",
       "self_reported": true,
-      "whiteboard": ""
+      "whiteboard": "[ca-compliance] [audit-delay] [disclosure-failure]"
     }
   ],
   "Amazon Trust Services": [
@@ -7636,7 +7650,7 @@
       "filed": "2026-08-06",
       "summary": "Asseco DS / Certum: Incorrect Country in certificate",
       "self_reported": true,
-      "whiteboard": "[ca-compliance] [__-misissuance]"
+      "whiteboard": "[close on 2026-09-30] [ca-compliance] [ov-misissuance] [ev-misissuance]"
     },
     {
       "id": 2071348,
@@ -9250,21 +9264,21 @@
       "filed": "2026-07-29",
       "summary": "CFCA: Incorrect countryName values in OV subscriber certificates",
       "self_reported": true,
-      "whiteboard": "[ca-compliance] [ov-misissuance]"
+      "whiteboard": "[close on 2026-09-30] [ca-compliance] [ov-misissuance]"
     },
     {
       "id": 2058920,
       "filed": "2026-07-29",
       "summary": "CFCA: Delayed response to CPR related with bug 2058918",
       "self_reported": true,
-      "whiteboard": "[close on 2026-09-24] [ca-compliance] [policy-failure]"
+      "whiteboard": "[ca-compliance] [policy-failure]"
     },
     {
       "id": 2067050,
       "filed": "2026-08-27",
       "summary": "CFCA: Cross-signed certificate missing the Extended Key Usage (EKU) extension",
       "self_reported": true,
-      "whiteboard": "[ca-compliance] [ca-misissuance]"
+      "whiteboard": "[close on 2026-10-01] [ca-compliance] [ca-misissuance]"
     }
   ],
   "HARICA": [
@@ -9844,7 +9858,7 @@
       "filed": "2026-07-26",
       "summary": "SSL.com: Invalid Subject stateOrProvince Values",
       "self_reported": true,
-      "whiteboard": "[ca-compliance] [ov-misissuance]"
+      "whiteboard": "[ca-compliance] [ov-misissuance] Next update 2026-10-31"
     },
     {
       "id": 2057919,
@@ -9873,6 +9887,13 @@
       "summary": "SSL.com: MPIC not performed for specific DCV path",
       "self_reported": false,
       "whiteboard": "[ca-compliance] [dv-misissuance]"
+    },
+    {
+      "id": 2074980,
+      "filed": "2026-09-23",
+      "summary": "SSL.com: Failure to Post all Root and Intermediate CA certificates in Repository identified in CP/CPS",
+      "self_reported": true,
+      "whiteboard": "[ca-compliance] [policy-failure] [disclosure-failure]"
     }
   ],
   "Buypass": [
@@ -10872,7 +10893,7 @@
       "filed": "2026-07-24",
       "summary": "SHECA: Disclosure alerts indicating audit information missing for 2 Sub-CAs",
       "self_reported": true,
-      "whiteboard": "[ca-compliance] [disclosure-failure]"
+      "whiteboard": "[close on 2026-10-01] [ca-compliance] [disclosure-failure]"
     },
     {
       "id": 2057439,

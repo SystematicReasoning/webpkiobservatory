@@ -1,10 +1,10 @@
 {
   "meta": {
-    "generated_at": "2026-09-22T11:22:04.231758+00:00",
-    "bugs_total": 1873,
-    "bugs_with_comments": 1873,
-    "total_comments_raw": 24041,
-    "total_comments_analyzed": 6177,
+    "generated_at": "2026-09-24T11:31:38.572921+00:00",
+    "bugs_total": 1877,
+    "bugs_with_comments": 1877,
+    "total_comments_raw": 24099,
+    "total_comments_analyzed": 6178,
     "pipeline_version": "0.5",
     "note": "total_comments_analyzed = non-empty, non-bot comments. admin_comments filtered by LLM classification (short acks, boilerplate notices, tracking bug openers). Coverage = bugs_oversight/total_bugs. Substantive = bugs_technical_oversight/total_bugs."
   },
@@ -123,8 +123,8 @@
       "mozilla": 0,
       "apple": 9,
       "microsoft": 12,
-      "other": 235,
-      "total": 256
+      "other": 239,
+      "total": 260
     }
   ],
   "bug_creation_totals": {
@@ -132,7 +132,7 @@
     "mozilla": 269,
     "apple": 27,
     "microsoft": 31,
-    "other": 1482
+    "other": 1486
   },
   "bug_creation_samples": {
     "mozilla": [
@@ -349,8 +349,8 @@
       "external_researcher": 306,
       "unknown": 457,
       "community": 277,
-      "self_detected": 447,
-      "audit": 128,
+      "self_detected": 450,
+      "audit": 129,
       "root_program": 71
     },
     "by_year": [
@@ -476,18 +476,18 @@
       },
       {
         "y": 2026,
-        "self_detected": 151,
+        "self_detected": 154,
         "external_researcher": 19,
         "root_program": 14,
         "community": 17,
-        "audit": 20,
+        "audit": 21,
         "unknown": 34,
-        "total": 255
+        "total": 259
       }
     ],
-    "classified_bugs": 1686,
+    "classified_bugs": 1690,
     "excluded_distrusted": 187,
-    "corpus_note": "1686 bugs classified (excludes 187 distrusted-CA bugs). Corpus is larger than the 1,428-incident count in incidents.json because discovery classification runs on all non-distrusted bugs_raw entries, including ~75 sub-operator naming variants (e.g. 'DigiCert / ABB') that incidents.py normalizes into parent CA counts."
+    "corpus_note": "1690 bugs classified (excludes 187 distrusted-CA bugs). Corpus is larger than the 1,428-incident count in incidents.json because discovery classification runs on all non-distrusted bugs_raw entries, including ~75 sub-operator naming variants (e.g. 'DigiCert / ABB') that incidents.py normalizes into parent CA counts."
   },
   "oversight_by_year": [
     {
@@ -577,7 +577,7 @@
     {
       "y": 2026,
       "chrome": 23,
-      "mozilla": 11,
+      "mozilla": 12,
       "apple": 14,
       "microsoft": 0
     }
@@ -681,10 +681,10 @@
     },
     {
       "y": 2026,
-      "total_bugs": 256,
-      "chrome": 9.0,
-      "mozilla": 4.3,
-      "apple": 5.5,
+      "total_bugs": 260,
+      "chrome": 8.8,
+      "mozilla": 4.6,
+      "apple": 5.4,
       "microsoft": 0.0
     }
   ],
@@ -707,19 +707,19 @@
       "recent_bugs_technical_oversight": 112
     },
     "mozilla": {
-      "total_comments": 3263,
-      "substantive_comments": 3262,
+      "total_comments": 3264,
+      "substantive_comments": 3263,
       "workflow_events": 1,
       "admin_comments": 1458,
-      "oversight_comments": 1804,
-      "recent_oversight_comments": 441,
+      "oversight_comments": 1805,
+      "recent_oversight_comments": 442,
       "technical_oversight_comments": 453,
       "recent_technical_oversight_comments": 77,
       "self_incident_comments": 0,
       "recent_self_incident_comments": 0,
-      "bugs_engaged": 818,
-      "bugs_oversight": 818,
-      "recent_bugs_oversight": 273,
+      "bugs_engaged": 819,
+      "bugs_oversight": 819,
+      "recent_bugs_oversight": 274,
       "bugs_technical_oversight": 249,
       "recent_bugs_technical_oversight": 47
     },
@@ -796,7 +796,7 @@
       ]
     },
     "mozilla": {
-      "total_oversight_comments": 1804,
+      "total_oversight_comments": 1805,
       "unique_contributors": 9,
       "top_contributor_pct": 47,
       "top_3_contributors_pct": 90,
@@ -811,7 +811,7 @@
         },
         {
           "email": "b******@mozilla.com",
-          "comments": 613,
+          "comments": 614,
           "pct": 34
         },
         {
@@ -1341,7 +1341,7 @@
       "quarter": "2026-Q3",
       "chrome_comments": 13,
       "chrome_people": 1,
-      "mozilla_comments": 5,
+      "mozilla_comments": 6,
       "mozilla_people": 1,
       "apple_comments": 3,
       "apple_people": 1,
@@ -1349,9 +1349,9 @@
       "microsoft_people": 0
     }
   ],
-  "bugs_analyzed": 1873,
-  "total_comments": 24041,
-  "substantive_comments": 6177,
+  "bugs_analyzed": 1877,
+  "total_comments": 24099,
+  "substantive_comments": 6178,
   "sample_pct": 100,
   "enforcement": {
     "chrome": {
@@ -2306,7 +2306,7 @@
       {
         "ca": "TrustAsia Technologies, Inc.",
         "rank": 12,
-        "certs": 1153684,
+        "certs": 1148314,
         "stores": {
           "chrome": "included",
           "mozilla": "included",
@@ -2325,30 +2325,9 @@
         "wait_source": "root_creation"
       },
       {
-        "ca": "Certainly LLC",
-        "rank": 21,
-        "certs": 41252,
-        "stores": {
-          "chrome": "included",
-          "mozilla": "included",
-          "apple": "included",
-          "microsoft": "not_included"
-        },
-        "missing_from": [
-          "microsoft"
-        ],
-        "included_in": [
-          "chrome",
-          "mozilla",
-          "apple"
-        ],
-        "wait_years": 5,
-        "wait_source": "root_creation"
-      },
-      {
         "ca": "Cybertrust Japan Co., Ltd.",
-        "rank": 23,
-        "certs": 36650,
+        "rank": 22,
+        "certs": 36565,
         "stores": {
           "chrome": "not_included",
           "mozilla": "included",
@@ -2367,9 +2346,30 @@
         "wait_source": null
       },
       {
+        "ca": "Certainly LLC",
+        "rank": 24,
+        "certs": 33654,
+        "stores": {
+          "chrome": "included",
+          "mozilla": "included",
+          "apple": "included",
+          "microsoft": "not_included"
+        },
+        "missing_from": [
+          "microsoft"
+        ],
+        "included_in": [
+          "chrome",
+          "mozilla",
+          "apple"
+        ],
+        "wait_years": 5,
+        "wait_source": "root_creation"
+      },
+      {
         "ca": "Shanghai Electronic Certification Authority Co., Ltd.",
         "rank": 25,
-        "certs": 29070,
+        "certs": 29110,
         "stores": {
           "chrome": "included",
           "mozilla": "included",
@@ -2411,7 +2411,7 @@
       {
         "ca": "Government of Finland, Population Register Centre\u2019s (V\u00e4est\u00f6rekisterikeskus, VRK)",
         "rank": 37,
-        "certs": 2378,
+        "certs": 2372,
         "stores": {
           "chrome": "not_included",
           "mozilla": "not_included",
@@ -2432,7 +2432,7 @@
       {
         "ca": "PostSignum",
         "rank": 40,
-        "certs": 973,
+        "certs": 991,
         "stores": {
           "chrome": "not_included",
           "mozilla": "not_included",
@@ -2451,29 +2451,8 @@
         "wait_source": "root_creation"
       },
       {
-        "ca": "Krajowa Izba Rozliczeniowa S.A. (KIR)",
-        "rank": 46,
-        "certs": 473,
-        "stores": {
-          "chrome": "included",
-          "mozilla": "included",
-          "apple": "not_included",
-          "microsoft": "included"
-        },
-        "missing_from": [
-          "apple"
-        ],
-        "included_in": [
-          "chrome",
-          "mozilla",
-          "microsoft"
-        ],
-        "wait_years": 11,
-        "wait_source": "root_creation"
-      },
-      {
         "ca": "Government of Brazil, Instituto Nacional de Tecnologia da Informa\u00e7\u00e3o (ITI)",
-        "rank": 47,
+        "rank": 46,
         "certs": 471,
         "stores": {
           "chrome": "not_included",
@@ -2493,9 +2472,30 @@
         "wait_source": "root_creation"
       },
       {
+        "ca": "Krajowa Izba Rozliczeniowa S.A. (KIR)",
+        "rank": 47,
+        "certs": 469,
+        "stores": {
+          "chrome": "included",
+          "mozilla": "included",
+          "apple": "not_included",
+          "microsoft": "included"
+        },
+        "missing_from": [
+          "apple"
+        ],
+        "included_in": [
+          "chrome",
+          "mozilla",
+          "microsoft"
+        ],
+        "wait_years": 11,
+        "wait_source": "root_creation"
+      },
+      {
         "ca": "Prvn\u00ed certifika\u010dn\u00ed autorita, a.s.",
         "rank": 48,
-        "certs": 339,
+        "certs": 340,
         "stores": {
           "chrome": "not_included",
           "mozilla": "not_included",
@@ -2516,7 +2516,7 @@
       {
         "ca": "Financijska agencija (Fina)",
         "rank": 49,
-        "certs": 308,
+        "certs": 307,
         "stores": {
           "chrome": "not_included",
           "mozilla": "not_included",
@@ -2600,7 +2600,7 @@
       {
         "ca": "Agence Nationale de Certification Electronique",
         "rank": 55,
-        "certs": 73,
+        "certs": 71,
         "stores": {
           "chrome": "included",
           "mozilla": "included",
@@ -2642,7 +2642,7 @@
       {
         "ca": "Government of Korea, KLID",
         "rank": 57,
-        "certs": 36,
+        "certs": 37,
         "stores": {
           "chrome": "not_included",
           "mozilla": "not_included",
@@ -2888,7 +2888,7 @@
         "ca": "Internet Security Research Group",
         "common_name": "Let's Encrypt",
         "rank": 1,
-        "certs_now": 507522267,
+        "certs_now": 505787003,
         "timeline": {
           "root_created": "2015-06",
           "mozilla_included": "2016-08",
@@ -2907,7 +2907,7 @@
         "bug": 1348774,
         "ca": "Thailand National Root CAs - G2 and G3",
         "filed": "2017-03-20",
-        "days_waiting": 3473,
+        "days_waiting": 3475,
         "stage": "verifying",
         "request_type": "existing_ca"
       },
@@ -2915,7 +2915,7 @@
         "bug": 1449941,
         "ca": "Fina Root CA certificate",
         "filed": "2018-03-29",
-        "days_waiting": 3099,
+        "days_waiting": 3101,
         "stage": "unknown",
         "request_type": "new_org"
       },
@@ -2923,7 +2923,7 @@
         "bug": 1532206,
         "ca": "MSC Trustgate root certificate(s)",
         "filed": "2019-03-04",
-        "days_waiting": 2759,
+        "days_waiting": 2761,
         "stage": "verifying",
         "request_type": "new_org"
       },
@@ -2931,7 +2931,7 @@
         "bug": 1602415,
         "ca": "PostSignum Root QCA 4 and PostSignum Root QCA ECC R1",
         "filed": "2019-12-09",
-        "days_waiting": 2479,
+        "days_waiting": 2481,
         "stage": "verifying",
         "request_type": "existing_ca"
       },
@@ -2939,7 +2939,7 @@
         "bug": 1674669,
         "ca": "Autoridade Certificadora Raiz Brasileira root certificate",
         "filed": "2020-11-01",
-        "days_waiting": 2151,
+        "days_waiting": 2153,
         "stage": "unknown",
         "request_type": "existing_ca"
       },
@@ -2947,15 +2947,15 @@
         "bug": 1707136,
         "ca": "GSE SMIME Roots to Mozilla root store",
         "filed": "2021-04-23",
-        "days_waiting": 1978,
-        "stage": "verifying",
+        "days_waiting": 1980,
+        "stage": "unknown",
         "request_type": "new_org"
       },
       {
         "bug": 1845081,
         "ca": "MOIS SSL Root CA",
         "filed": "2023-07-24",
-        "days_waiting": 1156,
+        "days_waiting": 1158,
         "stage": "unknown",
         "request_type": "new_org"
       },
@@ -2963,7 +2963,7 @@
         "bug": 1870013,
         "ca": "Saudi National SSL root CA",
         "filed": "2023-12-14",
-        "days_waiting": 1013,
+        "days_waiting": 1015,
         "stage": "initial",
         "request_type": "existing_ca"
       },
@@ -2971,7 +2971,7 @@
         "bug": 1883983,
         "ca": "SOLUTI GLOBAL ROOT CA",
         "filed": "2024-03-06",
-        "days_waiting": 930,
+        "days_waiting": 932,
         "stage": "initial",
         "request_type": "new_org"
       },
@@ -2979,7 +2979,7 @@
         "bug": 1889859,
         "ca": "emSign Single-purpose Root CA Certificates",
         "filed": "2024-04-05",
-        "days_waiting": 900,
+        "days_waiting": 902,
         "stage": "unknown",
         "request_type": "new_org"
       },
@@ -2987,7 +2987,7 @@
         "bug": 1938884,
         "ca": "NAVER Cloud Trust Services Root Certificates",
         "filed": "2024-12-23",
-        "days_waiting": 638,
+        "days_waiting": 640,
         "stage": "verifying",
         "request_type": "existing_ca"
       },
@@ -2995,7 +2995,7 @@
         "bug": 1948085,
         "ca": "Amazon EU Roots: RSA 2048 EU M1, ECDSA 256 EU M1, and ECDSA ",
         "filed": "2025-02-13",
-        "days_waiting": 586,
+        "days_waiting": 588,
         "stage": "verifying",
         "request_type": "existing_ca"
       },
@@ -3003,7 +3003,7 @@
         "bug": 1960408,
         "ca": "IdenTrust single purpose roots",
         "filed": "2025-04-14",
-        "days_waiting": 526,
+        "days_waiting": 528,
         "stage": "unknown",
         "request_type": "existing_ca"
       },
@@ -3011,7 +3011,7 @@
         "bug": 1978904,
         "ca": "NETLOCK's S/MIME & TLS Root",
         "filed": "2025-07-23",
-        "days_waiting": 426,
+        "days_waiting": 428,
         "stage": "initial",
         "request_type": "new_org"
       },
@@ -3019,7 +3019,7 @@
         "bug": 1983217,
         "ca": "Aretiico Group PLC and Aretiico Inc root certificates to Moz",
         "filed": "2025-08-15",
-        "days_waiting": 403,
+        "days_waiting": 405,
         "stage": "initial",
         "request_type": "existing_ca"
       },
@@ -3027,7 +3027,7 @@
         "bug": 1988341,
         "ca": "ACCV ROOT RSA TLS 2024 and ACCV ROOT ECC TLS 2024 root certi",
         "filed": "2025-09-12",
-        "days_waiting": 375,
+        "days_waiting": 377,
         "stage": "verifying",
         "request_type": "new_org"
       },
@@ -3035,7 +3035,7 @@
         "bug": 1988361,
         "ca": "SHECA Single-purpose Root CA Certificates",
         "filed": "2025-09-12",
-        "days_waiting": 375,
+        "days_waiting": 377,
         "stage": "verifying",
         "request_type": "new_org"
       },
@@ -3043,7 +3043,7 @@
         "bug": 1990213,
         "ca": "certSIGN Root CA G4 root certificate",
         "filed": "2025-09-23",
-        "days_waiting": 364,
+        "days_waiting": 366,
         "stage": "verifying",
         "request_type": "existing_ca"
       },
@@ -3051,7 +3051,7 @@
         "bug": 1992971,
         "ca": "Actalis TLS Root CAs 2025 and Actalis SMIME Root CAs 2025",
         "filed": "2025-10-07",
-        "days_waiting": 350,
+        "days_waiting": 352,
         "stage": "verifying",
         "request_type": "existing_ca"
       },
@@ -3059,31 +3059,31 @@
         "bug": 2001274,
         "ca": "Cybertrust Japan Root CA Cybertrust iTrust TLS ECCP384 Root ",
         "filed": "2025-11-20",
-        "days_waiting": 306,
-        "stage": "initial",
+        "days_waiting": 308,
+        "stage": "verifying",
         "request_type": "existing_ca"
       },
       {
         "bug": 2001275,
         "ca": "Cybertrust Japan Root CA Cybertrust iTrust TLS RSA4096 Root ",
         "filed": "2025-11-20",
-        "days_waiting": 306,
-        "stage": "initial",
+        "days_waiting": 308,
+        "stage": "verifying",
         "request_type": "existing_ca"
       },
       {
         "bug": 2007765,
         "ca": "Chunghwa Telecom CHT TrustRoot CA",
         "filed": "2025-12-26",
-        "days_waiting": 270,
-        "stage": "initial",
+        "days_waiting": 272,
+        "stage": "verifying",
         "request_type": "existing_ca"
       },
       {
         "bug": 2011714,
         "ca": "\"OATI webCARES Server Root CA\" to the Mozilla Root CA Progra",
         "filed": "2026-01-21",
-        "days_waiting": 244,
+        "days_waiting": 246,
         "stage": "initial",
         "request_type": "new_org"
       },
@@ -3091,7 +3091,7 @@
         "bug": 2031847,
         "ca": "FNMT TLS RSA Root Certificate SERVIDORES SEGUROS G2R",
         "filed": "2026-04-14",
-        "days_waiting": 161,
+        "days_waiting": 163,
         "stage": "initial",
         "request_type": "new_org"
       },
@@ -3099,15 +3099,15 @@
         "bug": 2033449,
         "ca": "A-Trust SMIME Root",
         "filed": "2026-04-20",
-        "days_waiting": 155,
-        "stage": "initial",
+        "days_waiting": 157,
+        "stage": "verifying",
         "request_type": "existing_ca"
       },
       {
         "bug": 2033676,
         "ca": "National Certification Authority of Sri Lanka TLS Root CA - ",
         "filed": "2026-04-21",
-        "days_waiting": 154,
+        "days_waiting": 156,
         "stage": "initial",
         "request_type": "new_org"
       },
@@ -3115,15 +3115,15 @@
         "bug": 2033815,
         "ca": "Disig new S/MIME & TLS Roots",
         "filed": "2026-04-21",
-        "days_waiting": 154,
-        "stage": "initial",
+        "days_waiting": 156,
+        "stage": "verifying",
         "request_type": "new_org"
       },
       {
         "bug": 2035858,
         "ca": "GoDaddy and Starfield TLS R1 Root Certificates",
         "filed": "2026-04-29",
-        "days_waiting": 146,
+        "days_waiting": 148,
         "stage": "unknown",
         "request_type": "existing_ca"
       },
@@ -3131,15 +3131,15 @@
         "bug": 2037054,
         "ca": "Certum TLS RSA Root CA and Certum TLS ECC Root CA",
         "filed": "2026-05-05",
-        "days_waiting": 140,
-        "stage": "initial",
+        "days_waiting": 142,
+        "stage": "verifying",
         "request_type": "new_org"
       },
       {
         "bug": 2046825,
         "ca": "KIR single-purpose TLS and SMIME Root CA's",
         "filed": "2026-06-11",
-        "days_waiting": 103,
+        "days_waiting": 105,
         "stage": "initial",
         "request_type": "new_org"
       },
@@ -3147,7 +3147,7 @@
         "bug": 2059382,
         "ca": "Microsec \"e-Szigno RSA TLS Root CA 2025\" and \"e-Szigno SMIME",
         "filed": "2026-07-30",
-        "days_waiting": 54,
+        "days_waiting": 56,
         "stage": "initial",
         "request_type": "existing_ca"
       }
@@ -3424,14 +3424,14 @@
       "median_days": 624,
       "mean_days": 654,
       "max_days": 1626,
-      "longest_pending_days": 3473,
+      "longest_pending_days": 3475,
       "new_org": {
         "count": 6,
         "median_days": 700,
         "mean_days": 772,
         "max_days": 1053,
         "pending_count": 15,
-        "longest_pending_days": 3099
+        "longest_pending_days": 3101
       },
       "existing_ca": {
         "count": 27,
@@ -3439,7 +3439,7 @@
         "mean_days": 627,
         "max_days": 1626,
         "pending_count": 16,
-        "longest_pending_days": 3473
+        "longest_pending_days": 3475
       }
     },
     "note": "Mozilla only \u2014 only root program with a fully public inclusion pipeline (Bugzilla)."
