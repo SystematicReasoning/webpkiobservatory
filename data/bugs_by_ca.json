@@ -1639,6 +1639,13 @@
       "summary": "DigiCert:  EV JOI match with organizationIdentifer",
       "self_reported": true,
       "whiteboard": "[ca-compliance] [ev-misissuance]"
+    },
+    {
+      "id": 2075949,
+      "filed": "2026-09-27",
+      "summary": "DigiCert: Revocation of Undisclosed Issuing CAs",
+      "self_reported": true,
+      "whiteboard": "[ca-compliance] [audit-failure]"
     }
   ],
   "SwissSign AG": [
@@ -4149,7 +4156,7 @@
       "filed": "2026-09-25",
       "summary": "Firmaprofesional: certificateHold reasonCode entries in AC Firmaprofesional - CUALIFICADOS CRL",
       "self_reported": true,
-      "whiteboard": ""
+      "whiteboard": "[ca-compliance] [crl-failure]"
     }
   ],
   "Actalis": [
@@ -4326,7 +4333,7 @@
       "filed": "2026-07-22",
       "summary": "Actalis: failure to timely update CP/CPS for AgID SubCAs",
       "self_reported": true,
-      "whiteboard": "[ca-compliance] [policy-failure]"
+      "whiteboard": "[close on 2026-10-05] [ca-compliance] [policy-failure]"
     },
     {
       "id": 2060581,
@@ -4347,7 +4354,7 @@
       "filed": "2026-09-25",
       "summary": "Actalis: Incorrect Revocation dates in CRL entries",
       "self_reported": true,
-      "whiteboard": ""
+      "whiteboard": "[ca-compliance] [crl-failure]"
     }
   ],
   "certSIGN": [
@@ -4906,9 +4913,9 @@
     {
       "id": 2075878,
       "filed": "2026-09-26",
-      "summary": "Disig: CRL contains not allowed atributes.",
-      "self_reported": true,
-      "whiteboard": ""
+      "summary": "Disig: CRL contains not allowed attributes",
+      "self_reported": false,
+      "whiteboard": "[ca-compliance] [crl-failure]"
     }
   ],
   "Certigna": [
@@ -5157,7 +5164,7 @@
       "filed": "2026-09-26",
       "summary": "Kamu SM: Missing CRL Disclosure for Cross-Signed CA in CCADB",
       "self_reported": true,
-      "whiteboard": ""
+      "whiteboard": "[ca-compliance] [disclosure-failure]"
     }
   ],
   "IdenTrust Services, LLC": [
@@ -6151,6 +6158,13 @@
       "summary": "NETLOCK: Certificate Problem Report [CRL URL not disclosed in CCADB]",
       "self_reported": true,
       "whiteboard": "[ca-compliance] [disclosure-failure]"
+    },
+    {
+      "id": 2075720,
+      "filed": "2026-09-25",
+      "summary": "NETLOCK: Certificate Problem Report [CRL RFC 5280 S5.2.3]",
+      "self_reported": false,
+      "whiteboard": "[ca-compliance] [crl-failure]"
     }
   ],
   "SECOM Trust Systems CO., LTD.": [
@@ -7327,6 +7341,13 @@
       "summary": "Amazon Trust Services: CP/CPS missing explicit adherence to latest version of policies",
       "self_reported": true,
       "whiteboard": "[ca-compliance] [policy-failure]"
+    },
+    {
+      "id": 2075247,
+      "filed": "2026-09-24",
+      "summary": "Amazon Trust Services: CP/CPS for externally operated subordinate CAs not updated in CCADB within 14 days",
+      "self_reported": true,
+      "whiteboard": "[close on 2026-10-05] [ca-compliance] [disclosure-failure]"
     }
   ],
   "Asseco Data Systems S.A.": [
@@ -8086,14 +8107,14 @@
       "filed": "2026-07-31",
       "summary": "Microsoft PKI Services: Third-Party Code Signing CPS missed annual update and four Issuing CAs",
       "self_reported": false,
-      "whiteboard": "[ca-compliance] [policy-failure] Next update 2026-10-05"
+      "whiteboard": "[close on 2026-10-05] [ca-compliance] [policy-failure]"
     },
     {
       "id": 2066649,
       "filed": "2026-08-26",
       "summary": "Microsoft PKI Services: Missed Seven-Day Update for Bugzilla 2059818",
       "self_reported": true,
-      "whiteboard": "[ca-compliance] [policy-failure] Next update 2026-09-25"
+      "whiteboard": "[close on 2026-10-05] [ca-compliance] [policy-failure]"
     }
   ],
   "Telia Company": [
@@ -8663,7 +8684,7 @@
       "filed": "2026-09-25",
       "summary": "KIR: SZAFIR ROOT CA3 TLS CRL nextUpdate exceeds 12 months",
       "self_reported": true,
-      "whiteboard": ""
+      "whiteboard": "[ca-compliance] [crl-failure]"
     }
   ],
   "Government of Spain, Fábrica Nacional de Moneda y Timbre (FNMT)": [
@@ -10991,7 +11012,7 @@
       "filed": "2026-09-26",
       "summary": "SHECA: ECC CRL/OCSP Signature Algorithm Issue",
       "self_reported": true,
-      "whiteboard": ""
+      "whiteboard": "[ca-compliance] [ocsp-failure] [crl-failure]"
     }
   ],
   "NAVER Cloud Trust Services": [
@@ -11070,7 +11091,7 @@
       "filed": "2026-09-26",
       "summary": "NAVER Cloud Trust Services: Missing CRL disclosure for two subordinate CAs in CCADB",
       "self_reported": true,
-      "whiteboard": ""
+      "whiteboard": "[ca-compliance] [disclosure-failure]"
     }
   ],
   "Government of Hong Kong (SAR), Hongkong Post, Certizen": [
