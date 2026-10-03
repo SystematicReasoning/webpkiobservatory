@@ -1,7 +1,7 @@
 {
   "$schema": "https://webpki.systematicreasoning.com/schema.json",
   "version": "1.0.0",
-  "generatedAt": "2026-10-02T12:50:23.880661+00:00",
+  "generatedAt": "2026-10-03T11:59:02.101899+00:00",
   "snapshotUrl": "https://webpki.systematicreasoning.com/llm_snapshot.json",
   "note": "Sliced subset of llm_snapshot.json. Fetch the full snapshot for complete data.",
   "governance": {
@@ -80,9 +80,9 @@
       }
     },
     "meta": {
-      "bugsTotal": 1906,
-      "bugsWithComments": 1906,
-      "totalCommentsAnalyzed": 6183
+      "bugsTotal": 1910,
+      "bugsWithComments": 1910,
+      "totalCommentsAnalyzed": 6184
     },
     "bugCreationByYear": [
       {
@@ -187,7 +187,7 @@
         "mozilla": 0,
         "apple": 10,
         "microsoft": 12,
-        "other": 267
+        "other": 271
       }
     ],
     "bugCreationTotals": {
@@ -195,14 +195,14 @@
       "mozilla": 269,
       "apple": 28,
       "microsoft": 31,
-      "other": 1514
+      "other": 1518
     },
     "discoveryMethods": {
       "totals": {
         "external_researcher": 309,
         "unknown": 458,
         "community": 277,
-        "self_detected": 473,
+        "self_detected": 477,
         "audit": 130,
         "root_program": 72
       },
@@ -329,18 +329,18 @@
         },
         {
           "y": 2026,
-          "self_detected": 177,
+          "self_detected": 181,
           "external_researcher": 22,
           "root_program": 15,
           "community": 17,
           "audit": 22,
           "unknown": 35,
-          "total": 288
+          "total": 292
         }
       ],
-      "classified_bugs": 1719,
+      "classified_bugs": 1723,
       "excluded_distrusted": 187,
-      "corpus_note": "1719 bugs classified (excludes 187 distrusted-CA bugs). Corpus is larger than the 1,428-incident count in incidents.json because discovery classification runs on all non-distrusted bugs_raw entries, including ~75 sub-operator naming variants (e.g. 'DigiCert / ABB') that incidents.py normalizes into parent CA counts."
+      "corpus_note": "1723 bugs classified (excludes 187 distrusted-CA bugs). Corpus is larger than the 1,428-incident count in incidents.json because discovery classification runs on all non-distrusted bugs_raw entries, including ~75 sub-operator naming variants (e.g. 'DigiCert / ABB') that incidents.py normalizes into parent CA counts."
     },
     "programCommentSummary": {
       "chrome": {
@@ -361,10 +361,10 @@
         "recent_bugs_technical_oversight": 112
       },
       "mozilla": {
-        "total_comments": 3265,
-        "substantive_comments": 3264,
+        "total_comments": 3266,
+        "substantive_comments": 3265,
         "workflow_events": 1,
-        "admin_comments": 1459,
+        "admin_comments": 1460,
         "oversight_comments": 1805,
         "recent_oversight_comments": 442,
         "technical_oversight_comments": 453,
@@ -2484,7 +2484,7 @@
           "bug": 1348774,
           "ca": "Thailand National Root CAs - G2 and G3",
           "filed": "2017-03-20",
-          "days_waiting": 3483,
+          "days_waiting": 3484,
           "stage": "verifying",
           "request_type": "existing_ca"
         },
@@ -2492,7 +2492,7 @@
           "bug": 1449941,
           "ca": "Fina Root CA certificate",
           "filed": "2018-03-29",
-          "days_waiting": 3109,
+          "days_waiting": 3110,
           "stage": "unknown",
           "request_type": "new_org"
         },
@@ -2500,7 +2500,7 @@
           "bug": 1532206,
           "ca": "MSC Trustgate root certificate(s)",
           "filed": "2019-03-04",
-          "days_waiting": 2769,
+          "days_waiting": 2770,
           "stage": "verifying",
           "request_type": "new_org"
         },
@@ -2508,7 +2508,7 @@
           "bug": 1602415,
           "ca": "PostSignum Root QCA 4 and PostSignum Root QCA ECC R1",
           "filed": "2019-12-09",
-          "days_waiting": 2489,
+          "days_waiting": 2490,
           "stage": "verifying",
           "request_type": "existing_ca"
         },
@@ -2516,7 +2516,7 @@
           "bug": 1674669,
           "ca": "Autoridade Certificadora Raiz Brasileira root certificate",
           "filed": "2020-11-01",
-          "days_waiting": 2161,
+          "days_waiting": 2162,
           "stage": "unknown",
           "request_type": "existing_ca"
         },
@@ -2524,7 +2524,7 @@
           "bug": 1707136,
           "ca": "GSE SMIME Roots to Mozilla root store",
           "filed": "2021-04-23",
-          "days_waiting": 1988,
+          "days_waiting": 1989,
           "stage": "unknown",
           "request_type": "new_org"
         },
@@ -2532,7 +2532,7 @@
           "bug": 1845081,
           "ca": "MOIS SSL Root CA",
           "filed": "2023-07-24",
-          "days_waiting": 1166,
+          "days_waiting": 1167,
           "stage": "unknown",
           "request_type": "new_org"
         },
@@ -2540,7 +2540,7 @@
           "bug": 1870013,
           "ca": "Saudi National SSL root CA",
           "filed": "2023-12-14",
-          "days_waiting": 1023,
+          "days_waiting": 1024,
           "stage": "initial",
           "request_type": "existing_ca"
         },
@@ -2548,7 +2548,7 @@
           "bug": 1883983,
           "ca": "SOLUTI GLOBAL ROOT CA",
           "filed": "2024-03-06",
-          "days_waiting": 940,
+          "days_waiting": 941,
           "stage": "initial",
           "request_type": "new_org"
         },
@@ -2556,7 +2556,7 @@
           "bug": 1889859,
           "ca": "emSign Single-purpose Root CA Certificates",
           "filed": "2024-04-05",
-          "days_waiting": 910,
+          "days_waiting": 911,
           "stage": "unknown",
           "request_type": "new_org"
         },
@@ -2564,7 +2564,7 @@
           "bug": 1938884,
           "ca": "NAVER Cloud Trust Services Root Certificates",
           "filed": "2024-12-23",
-          "days_waiting": 648,
+          "days_waiting": 649,
           "stage": "verifying",
           "request_type": "existing_ca"
         },
@@ -2572,7 +2572,7 @@
           "bug": 1948085,
           "ca": "Amazon EU Roots: RSA 2048 EU M1, ECDSA 256 EU M1, and ECDSA ",
           "filed": "2025-02-13",
-          "days_waiting": 596,
+          "days_waiting": 597,
           "stage": "verifying",
           "request_type": "existing_ca"
         },
@@ -2580,7 +2580,7 @@
           "bug": 1960408,
           "ca": "IdenTrust single purpose roots",
           "filed": "2025-04-14",
-          "days_waiting": 536,
+          "days_waiting": 537,
           "stage": "unknown",
           "request_type": "existing_ca"
         },
@@ -2588,7 +2588,7 @@
           "bug": 1978904,
           "ca": "NETLOCK's S/MIME & TLS Root",
           "filed": "2025-07-23",
-          "days_waiting": 436,
+          "days_waiting": 437,
           "stage": "initial",
           "request_type": "new_org"
         },
@@ -2596,7 +2596,7 @@
           "bug": 1983217,
           "ca": "Aretiico Group PLC and Aretiico Inc root certificates to Moz",
           "filed": "2025-08-15",
-          "days_waiting": 413,
+          "days_waiting": 414,
           "stage": "initial",
           "request_type": "existing_ca"
         },
@@ -2604,7 +2604,7 @@
           "bug": 1988341,
           "ca": "ACCV ROOT RSA TLS 2024 and ACCV ROOT ECC TLS 2024 root certi",
           "filed": "2025-09-12",
-          "days_waiting": 385,
+          "days_waiting": 386,
           "stage": "verifying",
           "request_type": "new_org"
         },
@@ -2612,7 +2612,7 @@
           "bug": 1988361,
           "ca": "SHECA Single-purpose Root CA Certificates",
           "filed": "2025-09-12",
-          "days_waiting": 385,
+          "days_waiting": 386,
           "stage": "verifying",
           "request_type": "new_org"
         },
@@ -2620,7 +2620,7 @@
           "bug": 1990213,
           "ca": "certSIGN Root CA G4 root certificate",
           "filed": "2025-09-23",
-          "days_waiting": 374,
+          "days_waiting": 375,
           "stage": "verifying",
           "request_type": "existing_ca"
         },
@@ -2628,7 +2628,7 @@
           "bug": 1992971,
           "ca": "Actalis TLS Root CAs 2025 and Actalis SMIME Root CAs 2025",
           "filed": "2025-10-07",
-          "days_waiting": 360,
+          "days_waiting": 361,
           "stage": "verifying",
           "request_type": "existing_ca"
         },
@@ -2636,7 +2636,7 @@
           "bug": 2001274,
           "ca": "Cybertrust Japan Root CA Cybertrust iTrust TLS ECCP384 Root ",
           "filed": "2025-11-20",
-          "days_waiting": 316,
+          "days_waiting": 317,
           "stage": "verifying",
           "request_type": "existing_ca"
         },
@@ -2644,7 +2644,7 @@
           "bug": 2001275,
           "ca": "Cybertrust Japan Root CA Cybertrust iTrust TLS RSA4096 Root ",
           "filed": "2025-11-20",
-          "days_waiting": 316,
+          "days_waiting": 317,
           "stage": "verifying",
           "request_type": "existing_ca"
         },
@@ -2652,7 +2652,7 @@
           "bug": 2007765,
           "ca": "Chunghwa Telecom CHT TrustRoot CA",
           "filed": "2025-12-26",
-          "days_waiting": 280,
+          "days_waiting": 281,
           "stage": "verifying",
           "request_type": "existing_ca"
         },
@@ -2660,7 +2660,7 @@
           "bug": 2011714,
           "ca": "\"OATI webCARES Server Root CA\" to the Mozilla Root CA Progra",
           "filed": "2026-01-21",
-          "days_waiting": 254,
+          "days_waiting": 255,
           "stage": "initial",
           "request_type": "new_org"
         },
@@ -2668,7 +2668,7 @@
           "bug": 2031847,
           "ca": "FNMT TLS RSA Root Certificate SERVIDORES SEGUROS G2R",
           "filed": "2026-04-14",
-          "days_waiting": 171,
+          "days_waiting": 172,
           "stage": "initial",
           "request_type": "new_org"
         },
@@ -2676,7 +2676,7 @@
           "bug": 2033449,
           "ca": "A-Trust SMIME Root",
           "filed": "2026-04-20",
-          "days_waiting": 165,
+          "days_waiting": 166,
           "stage": "verifying",
           "request_type": "existing_ca"
         },
@@ -2684,7 +2684,7 @@
           "bug": 2033676,
           "ca": "National Certification Authority of Sri Lanka TLS Root CA - ",
           "filed": "2026-04-21",
-          "days_waiting": 164,
+          "days_waiting": 165,
           "stage": "initial",
           "request_type": "new_org"
         },
@@ -2692,7 +2692,7 @@
           "bug": 2033815,
           "ca": "Disig new S/MIME & TLS Roots",
           "filed": "2026-04-21",
-          "days_waiting": 164,
+          "days_waiting": 165,
           "stage": "verifying",
           "request_type": "new_org"
         },
@@ -2700,7 +2700,7 @@
           "bug": 2035858,
           "ca": "GoDaddy and Starfield TLS R1 Root Certificates",
           "filed": "2026-04-29",
-          "days_waiting": 156,
+          "days_waiting": 157,
           "stage": "unknown",
           "request_type": "existing_ca"
         },
@@ -2708,7 +2708,7 @@
           "bug": 2037054,
           "ca": "Certum TLS RSA Root CA and Certum TLS ECC Root CA",
           "filed": "2026-05-05",
-          "days_waiting": 150,
+          "days_waiting": 151,
           "stage": "verifying",
           "request_type": "new_org"
         },
@@ -2716,7 +2716,7 @@
           "bug": 2046825,
           "ca": "KIR single-purpose TLS and SMIME Root CA's",
           "filed": "2026-06-11",
-          "days_waiting": 113,
+          "days_waiting": 114,
           "stage": "initial",
           "request_type": "new_org"
         },
@@ -2724,7 +2724,7 @@
           "bug": 2059382,
           "ca": "Microsec \"e-Szigno RSA TLS Root CA 2025\" and \"e-Szigno SMIME",
           "filed": "2026-07-30",
-          "days_waiting": 64,
+          "days_waiting": 65,
           "stage": "initial",
           "request_type": "existing_ca"
         },
@@ -2732,7 +2732,7 @@
           "bug": 2074675,
           "ca": "ISRG Root Certificates",
           "filed": "2026-09-22",
-          "days_waiting": 10,
+          "days_waiting": 11,
           "stage": "initial",
           "request_type": "new_org"
         }
@@ -3009,14 +3009,14 @@
         "median_days": 624,
         "mean_days": 654,
         "max_days": 1626,
-        "longest_pending_days": 3483,
+        "longest_pending_days": 3484,
         "new_org": {
           "count": 6,
           "median_days": 700,
           "mean_days": 772,
           "max_days": 1053,
           "pending_count": 16,
-          "longest_pending_days": 3109
+          "longest_pending_days": 3110
         },
         "existing_ca": {
           "count": 27,
@@ -3024,7 +3024,7 @@
           "mean_days": 627,
           "max_days": 1626,
           "pending_count": 16,
-          "longest_pending_days": 3483
+          "longest_pending_days": 3484
         }
       },
       "note": "Mozilla only — only root program with a fully public inclusion pipeline (Bugzilla)."
@@ -3128,9 +3128,9 @@
       },
       {
         "y": 2026,
-        "total_bugs": 289,
-        "chrome": 8.0,
-        "mozilla": 4.2,
+        "total_bugs": 293,
+        "chrome": 7.8,
+        "mozilla": 4.1,
         "apple": 4.8,
         "microsoft": 0.0
       }
@@ -3138,7 +3138,7 @@
   },
   "ecosystemParticipation": {
     "meta": {
-      "generated_at": "2026-10-02T12:21:47.361662+00:00",
+      "generated_at": "2026-10-03T11:32:41.616949+00:00",
       "pipeline_version": "1.1",
       "total_orgs": 62,
       "total_cabf_ca_members": 56,
@@ -3833,13 +3833,13 @@
     "medianUseDays": 67
   },
   "auditIntelligence": {
-    "generatedAt": "2026-10-02T12:16:18.553035Z",
+    "generatedAt": "2026-10-03T11:28:09.466321Z",
     "summary": {
       "totalCAOwners": 83,
       "parsedLetters": 80,
       "highTransparencyGap": 40,
-      "qualifiedOpinions": 5,
-      "mattersWithoutBzAnchor": 8,
+      "qualifiedOpinions": 6,
+      "mattersWithoutBzAnchor": 7,
       "auditorHHI": 541.4,
       "auditRecordStatus": {
         "named": 83,
@@ -3859,14 +3859,14 @@
       "ETSI": 34
     },
     "selfReportByFramework": {
-      "webTrust": 60.0,
+      "webTrust": 60.1,
       "etsi": 67.6
     },
     "inPeriodDetection": {
       "covered": 429,
-      "caught": 118,
+      "caught": 131,
       "multiCycleMisses": 43,
-      "detectionPct": 27.5,
+      "detectionPct": 30.5,
       "note": "Denominator = unique bugs with at least one covering audit period. Caught = mentioned in any covering letter."
     },
     "perAuditorDetection": [
@@ -3905,6 +3905,12 @@
         "caught": 7,
         "total": 15,
         "detectionPct": 46.7
+      },
+      {
+        "auditor": "Ernst & Young",
+        "caught": 27,
+        "total": 66,
+        "detectionPct": 40.9
       },
       {
         "auditor": "DEKRA",
@@ -3947,12 +3953,6 @@
         "caught": 33,
         "total": 155,
         "detectionPct": 21.3
-      },
-      {
-        "auditor": "Ernst & Young",
-        "caught": 14,
-        "total": 66,
-        "detectionPct": 21.2
       },
       {
         "auditor": "SunRise CPAs / DFK",
@@ -4127,6 +4127,16 @@
         "auditor": "QMSCERT"
       },
       {
+        "ca": "Buypass",
+        "stores": [
+          "apple",
+          "chrome",
+          "microsoft",
+          "mozilla"
+        ],
+        "auditor": "Attestic B.V."
+      },
+      {
         "ca": "Swiss BIT, Swiss Federal Office of Information Technology, Systems and Telecommunication (FOITT)",
         "stores": [
           "microsoft"
@@ -4162,8 +4172,8 @@
       },
       {
         "ca": "Sectigo",
-        "incidentCount": 119,
-        "gapScore": 96.6,
+        "incidentCount": 121,
+        "gapScore": 96.7,
         "mattersCount": 4,
         "auditor": "BDO International",
         "framework": "WebTrust"
@@ -4210,7 +4220,7 @@
       },
       {
         "ca": "GoDaddy",
-        "incidentCount": 49,
+        "incidentCount": 50,
         "gapScore": 100.0,
         "mattersCount": 0,
         "auditor": "Schellman",
@@ -4386,19 +4396,11 @@
     "mattersWithoutBzAnchor": [
       {
         "ca": "Carillon Information Security Inc.",
-        "summary": "On March 16, 2024, Carillon migrated to a new CIS infrastructure with significan"
+        "summary": "On March 16, 2024, Carillon migrated to a new CIS infrastructure, which included"
       },
       {
         "ca": "Google Trust Services LLC",
-        "summary": "GTS disclosed that controls over the onboarding of new team members to the CA sy"
-      },
-      {
-        "ca": "Buypass",
-        "summary": "Documentation and implementation of compliance auditing on support processes sha"
-      },
-      {
-        "ca": "Buypass",
-        "summary": "Documentation and implementation of Supply Chain Policy shall be improved."
+        "summary": "GTS self-disclosed that audit log entries for a certificate lifecycle event were"
       },
       {
         "ca": "Swiss BIT, Swiss Federal Office of Information Technology, Systems and Telecommunication (FOITT)",
@@ -4450,7 +4452,7 @@
       },
       {
         "ca": "Government of Sweden (Försäkringskassan)",
-        "summary": "SSIA issued certificates with prohibited organizationalUnitName attribute from S"
+        "summary": "SSIA issued certificates with the prohibited organizationalUnitName attribute, o"
       },
       {
         "ca": "Saudi Data and Artificial Intelligence Authority (SDAIA)",
@@ -4481,7 +4483,7 @@
         "caCount": 7,
         "country": "Global (US/UK)",
         "avgQualityScore": 50.7,
-        "avgGapScore": 92.7,
+        "avgGapScore": 92.8,
         "highGapCount": 7,
         "avgMattersPerCA": 3.3
       },
@@ -4569,24 +4571,24 @@
     ]
   },
   "tabIntros": {
-    "generatedAt": "2026-10-02T12:49:30.291901+00:00",
+    "generatedAt": "2026-10-03T11:58:10.410888+00:00",
     "model": "claude-sonnet-4-5",
     "note": "Analyst summaries generated by Claude from the prior day's snapshot. Each paragraph states the key finding for that tab with specific numbers and connects to related tabs.",
     "intros": {
-      "market": "The global WebPKI certificate issuance market is concentrated among five dominant players controlling 90.18% of all issuance, led by Internet Security Research Group at 34.8% and Google Trust Services at 21.1%. The remaining 75 tail CAs collectively issue less than 10% of certificates yet maintain full trust store inclusion across 89 total trusted authorities. An HHI of 2132 indicates moderate concentration, with the top three CAs alone commanding 73.14% of the market.",
-      "trust": "The WebPKI operates on 335 total root certificates distributed across four major trust stores, but only 90 roots appear in all four stores simultaneously while 142 roots exist exclusively in Microsoft's program. Just 38 CA organizations hold roots in all four stores, creating a trust surface where most certificate chains face browser-specific validation paths. This fragmentation means a certificate chain trusted by Edge may fail in Chrome or Safari, forcing CAs to maintain multiple hierarchies and complicating incident response when a root faces distrust in one program but not others.",
-      "conc": "Three CAs control 73% of all certificate issuance while 75 tail operators share the remaining fraction, creating systemic dependency on a handful of organizations. The moderate HHI of 2132 understates operational risk because the top two issuers alone hold 55.9% market share, making widespread outages at Let's Encrypt or Google Trust Services capable of disrupting over half the web. This concentration exists despite 89 trusted CAs being available, revealing that trust store inclusion does not translate to meaningful market distribution.",
-      "tail": "Seventy-five CAs operate in the long tail with minimal issuance volumes yet maintain full trust store inclusion, creating asymmetric risk where low-capability operators wield the same cryptographic authority as major providers. These tail CAs have historically generated disproportionate compliance failures, as seen in the 1,618 total incidents spread across 54 CAs where smaller operators lack the engineering resources to match high-volume issuers. The tail represents 84% of all trusted CA organizations but contributes less than 10% of issuance, suggesting the ecosystem carries substantial unused capacity that remains privileged with universal browser trust.",
-      "geo": "Certificate issuance is dominated by US-incorporated CAs at 92.83% despite 44 European CAs and 17 Asia-Pacific authorities holding trust store positions. Europe accounts for just 7.07% of issuance across its substantially larger CA population, while Asia-Pacific CAs collectively issue only 0.09% of certificates. This geographic concentration means the global web depends almost exclusively on entities subject to US corporate governance and operational practices, with regional alternatives holding trust but seeing negligible adoption.",
-      "gov": "Thirty state-operated or state-owned CAs hold positions in global trust stores but collectively issue only 0.08% of certificates, indicating governments maintain cryptographic authority disproportionate to their actual usage. These government CAs span jurisdictions with varying transparency standards and legal frameworks, creating potential pathways for state-level cryptographic intervention that browser vendors cannot easily detect through issuance volume monitoring. The gap between trust store presence and market share suggests government authorities prioritize maintaining the capability to issue trusted certificates over operating competitive public certificate services.",
-      "jurisdiction": "Five jurisdictions classified as high-risk for compelled disclosure or interception include China, Russia, the United Kingdom, Australia, and Hong Kong based on legal frameworks enabling state access to private keys or surveillance mandates. India and Turkey carry moderate risk with legal ambiguity around government authority over CA operations. These classifications matter because CAs incorporated in high-risk jurisdictions hold trust store positions despite legal obligations that could force compliance with state demands incompatible with WebPKI security assumptions, as seen in the jurisdiction tab's analysis of which countries present structural threats regardless of individual CA operational quality.",
-      "ops": "CAs have reported 1,618 incidents across 54 organizations, with misissuance accounting for 620 cases and governance failures contributing 522 more. Only 28% of incidents are self-detected while external researchers discover 18% and automated tools find 16%, revealing that CAs systematically fail to identify their own compliance failures before public disclosure. Policy failures appear in 201 incidents and disclosure failures in 149 cases, indicating the operational baseline remains reactive rather than preventive even as the regulatory surface expands to over 6,600 obligations.",
-      "crypto": "Root certificate cryptographic posture has standardized on RSA 4096-bit and ECDSA P-384 keys with SHA-256 signatures, meeting current NIST and CA/Browser Forum requirements across the trusted population. Legacy SHA-1 roots persist in some trust stores but are prohibited from signing end-entity certificates, limiting their risk to intermediate CA validation. The 335 roots currently deployed show no widespread algorithm weaknesses, though the multi-year certificate lifetimes mean cryptographic transitions like post-quantum migration will require coordination across the 89 trusted CAs with sufficient lead time before quantum computing threats materialize.",
-      "distrust": "Sixteen distrust events have occurred across the measured history, with 14 cases involving compliance or operational failures rather than cryptographic compromise. Root programs classify CA behavior as negligent noncompliance in 7 cases, demonstrated incompetence in 3 cases, and willful circumvention in 3 cases, showing most distrusts result from inability or unwillingness to meet baseline requirements. The median runway between distrust announcement and effective date spans 1,185 days, giving site operators over three years to migrate but also allowing problematic CAs to continue issuance during extended transition periods.",
-      "policy": "Forty-three active TLS CAs face SC-081 certificate validity limits with only 9 demonstrating readiness at the 47-day threshold effective March 2029, while 5 remain at risk even for the 100-day limit coming March 2027. The median observed validity period stands at 67 days, suggesting many CAs operate near current thresholds without margin for the next reduction. This readiness challenge exists against a compliance surface that has grown 121-fold since 2000 to 6,657 total obligations spanning CA/Browser Forum requirements, four root program policies, WebTrust and ETSI audit criteria, and IETF standards, with 76% classified as mandatory and zero new ballots simplifying the requirements since 2022.",
-      "governance": "Root program oversight coverage has collapsed from 67.8% Chrome participation and 78.0% Mozilla participation in 2019 to just 18.4% and 9.9% respectively in 2025 across 223 reported incidents. Apple's coverage stands at 5.4% while Microsoft records zero participation in public incident review despite operating a trust program with 142 exclusive roots. This governance withdrawal occurs as Chrome has generated 732 oversight bugs with 293 substantive engagements while Mozilla's 819 bugs include 249 substantive comments, but recent substantive participation has dropped to 112 and 47 cases respectively, indicating the root programs increasingly rely on passive monitoring rather than active enforcement.",
-      "community": "The CA/Browser Forum includes 56 member organizations but only 21 contribute actively to policy development while 35 maintain zero-contribution status. Sectigo leads organizational participation and Stephen Davidson has proposed 36 ballots individually, demonstrating concentrated policy influence among a small subset of members. This participation gap means the majority of trusted CAs subject to Forum requirements play no role in shaping those requirements, leaving policy development to a vocal minority while the silent majority implements whatever the active members decide.",
-      "audit": "Annual audit letters show a 28% in-period detection rate for the 429 incidents that fell within audit scope, meaning auditors identified just 118 of the compliance failures that later appeared in public bug reports while issuing clean opinions on the remaining cases. Forty audit letters show high transparency gaps between their scope statements and public incident history, and 5 CAs received qualified opinions indicating material findings. WebTrust self-reporting stands at 60.0% while ETSI reaches 67.6%, with only 10 CAs audited against the current ETSI EN 319 411-1 v3.5 standard despite 32 parsed ETSI letters, and 8 CAs changed auditors in 2025. This surveillance gap reveals that the audit system designed to provide independent verification largely fails to detect operational problems before they surface through external researchers or Mozilla/Chrome incident investigations."
+      "market": "The WebPKI certificate market shows moderate concentration with five CAs controlling 90.2% of issuance volume. Internet Security Research Group leads at 34.8%, followed by Google Trust Services at 21.1% and DigiCert at 17.3%. The CR3 ratio of 73.1% and HHI of 2132 indicate a market dominated by three hyperscale providers, while 75 CAs in the long tail collectively issue fewer certificates than the top five combined.",
+      "trust": "335 roots exist across the four major trust stores, but only 90 roots appear in all four programs simultaneously. Microsoft's store includes 142 roots absent from Chrome, Mozilla, and Apple, creating significant disagreement that complicates chain-building and validation logic. Only 38 CA owners achieve presence in all four stores, concentrating effective universal trust in a small subset of the 89 operators measured by issuance volume.",
+      "conc": "Three CAs control 73.1% of all publicly trusted certificate issuance, pushing the market into a systemic dependency regime where operational failures at ISRG, Google, or DigiCert would affect the majority of HTTPS-enabled websites. The HHI of 2132 exceeds regulatory thresholds that typically trigger antitrust scrutiny in other industries. This concentration creates efficiency through economies of scale but transforms the top three providers into critical infrastructure whose failure modes propagate across the entire web.",
+      "tail": "75 CAs collectively control less than 10% of issuance yet maintain full inclusion in major root programs, creating asymmetric risk where low-volume operators carry disproportionate trust. These tail CAs often lack the automation, monitoring, and incident response capabilities of hyperscale providers, as evidenced by 54 CAs appearing in the 1,622-incident corpus. The uniform trust model treats a CA issuing 0.01% of certificates identically to one issuing 34.8%, despite vastly different risk profiles and operational maturity.",
+      "geo": "93% of trusted certificate issuance originates from CAs incorporated in the United States, with Europe accounting for 7% and Asia-Pacific barely registering at 0.09%. This geographic concentration means that 15 U.S.-based CAs dominate global web encryption, while 44 European and 17 Asia-Pacific CAs collectively issue a negligible share. The concentration mirrors market share patterns but introduces additional systemic risk by tying the global WebPKI to a single legal and regulatory jurisdiction.",
+      "gov": "30 government-operated or state-owned CAs hold trusted roots but collectively issue only 0.08% of certificates, indicating minimal public web presence. These operators appear disproportionately in the long tail and geographic diversity statistics, maintaining trust store inclusion despite negligible issuance. Their presence raises questions about trust criteria beyond volume, particularly when state-operated CAs appear in high-risk jurisdictions identified in the jurisdiction framework.",
+      "jurisdiction": "Five jurisdictions are classified as high-risk for compelled disclosure or surveillance-enabling legal frameworks: China, Russia, the United Kingdom, Australia, and Hong Kong. India and Turkey occupy a moderate-risk tier. These classifications intersect with the geographic distribution showing 30 government CAs and raise questions about the criteria for root inclusion when CAs operate under legal regimes that may compel certificate misuse or surveillance assistance.",
+      "ops": "1,622 incidents across 54 CAs reveal persistent compliance failures, with misissuance accounting for 620 cases and governance failures for 523. CAs self-detect only 28% of incidents, while root programs catch just 4% and external researchers discover 18%, exposing a surveillance gap where most problems surface through community vigilance rather than internal controls. The 201 policy failures and 149 disclosure failures indicate systemic weakness in both technical compliance and transparency obligations.",
+      "crypto": "Root algorithm distribution and key size compliance establish the cryptographic foundation of the trust model, with migration patterns reflecting responses to advancing computational threats and evolving standards. Legacy roots using SHA-1 or RSA-2048 create compatibility obligations that persist long after cryptographic best practices move forward. The posture data connects to distrust patterns, where demonstrated incompetence often includes failure to maintain current cryptographic hygiene or respond to deprecation timelines.",
+      "distrust": "16 distrust events reveal a pattern where 10 cases involved repeated issues and 14 reflected compliance or operational failures rather than isolated mistakes. Negligent noncompliance accounts for 7 cases, demonstrated incompetence for 3, and willful circumvention for 3, indicating that most distrusts stem from systemic capability gaps rather than malice. The median runway of 1,185 days shows root programs granting roughly three years between distrust announcement and enforcement, a timeline that reflects both the operational complexity of root removal and the ecosystem's dependence on avoiding sudden trust failures.",
+      "policy": "36 active TLS issuers face staggered validity caps under SC-081, but only 9 currently issue certificates at or below the 47-day target that becomes mandatory in March 2029, while 5 remain above the 100-day threshold enforced in March 2027. The median validity period of 67 days suggests moderate readiness, but 3 CAs still issue certificates above the 200-day cap already in effect since March 2026. This readiness challenge occurs against a regulatory surface that has grown 121-fold since 2000 to encompass 6,657 obligations spanning CA/B Forum ballots, root program requirements, and audit frameworks, with 76% classified as mandatory and zero new ballots adopted since 2022 despite continued complexity growth.",
+      "governance": "Root program oversight coverage has collapsed from 67.8% (Chrome) and 78.0% (Mozilla) of incidents receiving substantive engagement in 2019 to just 18.4% and 9.9% respectively in 2025. Chrome has commented substantively on 293 of 732 oversight bugs, Mozilla on 249 of 819, and Microsoft on zero incidents despite maintaining 142 unique roots. This declining engagement occurs as the incident corpus grows to 1,910 bugs and 54 CAs generate compliance failures, creating a widening gap between the volume of problems and the oversight capacity to address them.",
+      "community": "56 CA/B Forum members include only 21 active contributors, leaving 35 with zero ballot participation in the governance body that defines baseline requirements. Stephen Davidson leads individual ballot activity with 36 proposals and 1 endorsement, while Sectigo tops organizational contribution. The regulatory surface has grown to 6,657 obligations without a corresponding ballot since 2022, suggesting the forum's legislative function has stalled even as operational complexity continues expanding through root program policy and external standards development.",
+      "audit": "Auditors operating under WebTrust and ETSI frameworks detected only 31% of incidents that occurred during their audit periods, meaning 298 of 429 in-scope incidents proceeded to Bugzilla disclosure without appearing in audit letters. 40 CAs show high transparency gaps between clean audit opinions and documented incident histories, while 6 qualified opinions and 60.1% self-reported WebTrust exceptions suggest auditors rely heavily on CA disclosure rather than independent detection. This surveillance gap connects directly to the operational risk finding that CAs self-detect only 28% of their own incidents, revealing a compounding failure where neither internal controls nor external audits catch most compliance problems before they reach public disclosure."
     }
   }
 }

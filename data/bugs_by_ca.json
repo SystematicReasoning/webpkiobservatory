@@ -334,14 +334,21 @@
       "filed": "2026-08-25",
       "summary": "GoDaddy: CCADB Missing Partitioned CRL URL Disclosure",
       "self_reported": true,
-      "whiteboard": "[ca-compliance] [disclosure-failure]"
+      "whiteboard": "[ca-compliance] [disclosure-failure] Next update 2026-10-30"
     },
     {
       "id": 2072663,
       "filed": "2026-09-16",
       "summary": "GoDaddy: Delayed Revocation of SHA-1 Signed Subordinate CA Certificates",
       "self_reported": true,
-      "whiteboard": "[ca-compliance] [ca-revocation-delay] Next update 2026-10-02"
+      "whiteboard": "[ca-compliance] [ca-revocation-delay] Next update 2026-10-16"
+    },
+    {
+      "id": 2077611,
+      "filed": "2026-10-02",
+      "summary": "GoDaddy: Delayed CRL Updates",
+      "self_reported": true,
+      "whiteboard": "[ca-compliance] [crl-failure]"
     }
   ],
   "DigiCert": [
@@ -2102,14 +2109,14 @@
       "filed": "2026-04-23",
       "summary": "SwissSign: Delayed revocation related to Bugzilla 2033000",
       "self_reported": true,
-      "whiteboard": "[ca-compliance] [leaf-revocation-delay] Next update 2026-09-30"
+      "whiteboard": "[ca-compliance] [leaf-revocation-delay]"
     },
     {
       "id": 2057448,
       "filed": "2026-07-24",
       "summary": "SwissSign: Invalid Entry in State field",
       "self_reported": true,
-      "whiteboard": "[close on 2026-09-30] [ca-compliance] [ov-misissuance]"
+      "whiteboard": "[ca-compliance] [ov-misissuance]"
     },
     {
       "id": 2065061,
@@ -2293,7 +2300,7 @@
       "filed": "2026-09-28",
       "summary": "IZENPE: revocation reason code not included in CRL issued by Root",
       "self_reported": false,
-      "whiteboard": ""
+      "whiteboard": "[ca-compliance] [crl-failure]"
     }
   ],
   "Sectigo": [
@@ -3093,7 +3100,7 @@
       "filed": "2026-08-10",
       "summary": "Sectigo: jurisdictionCountry versus organizationIdentifier mismatch in QWAC",
       "self_reported": true,
-      "whiteboard": "[close on 2026-09-30] [ca-compliance] [ev-misissuance]"
+      "whiteboard": "[ca-compliance] [ev-misissuance]"
     },
     {
       "id": 2069636,
@@ -3114,7 +3121,7 @@
       "filed": "2026-09-08",
       "summary": "Sectigo: Issuance of certificates including a Subject:countryName not corresponding to a Country",
       "self_reported": true,
-      "whiteboard": "[close on 2026-09-30] [ca-compliance]"
+      "whiteboard": "[ca-compliance]"
     },
     {
       "id": 2072647,
@@ -3129,6 +3136,20 @@
       "summary": "Sectigo: Submitted CPR not replied to within 24 hours",
       "self_reported": true,
       "whiteboard": "[ca-compliance] [policy-failure]"
+    },
+    {
+      "id": 2077508,
+      "filed": "2026-10-02",
+      "summary": "Sectigo: Failure to announce completion of action item within prescribed time period",
+      "self_reported": true,
+      "whiteboard": ""
+    },
+    {
+      "id": 2077538,
+      "filed": "2026-10-02",
+      "summary": "Sectigo: Certificates issued for sanctioned entities",
+      "self_reported": true,
+      "whiteboard": ""
     }
   ],
   "Internet Security Research Group": [
@@ -3410,7 +3431,7 @@
       "filed": "2026-06-03",
       "summary": "Let's Encrypt: CRLs Temporarily Missing Revoked Serials",
       "self_reported": true,
-      "whiteboard": "[ca-compliance] [crl-failure] Next update 2026-09-30"
+      "whiteboard": "[close on 2026-10-09] [ca-compliance] [crl-failure]"
     },
     {
       "id": 2062418,
@@ -3839,7 +3860,7 @@
       "filed": "2026-08-23",
       "summary": "GlobalSign: StateOrProvince and LocalityName value inconsistency",
       "self_reported": true,
-      "whiteboard": "[ca-compliance] [__-misissuance] Next update 2026-10-01"
+      "whiteboard": "[ca-compliance] [__-misissuance]"
     }
   ],
   "Autoridad de Certificacion Firmaprofesional": [
@@ -4135,7 +4156,7 @@
       "filed": "2026-09-03",
       "summary": "Firmaprofesional: CP/CPS missing Chrome Root Program and CCADB policy attestation",
       "self_reported": true,
-      "whiteboard": "[ca-compliance] [policy-failure] Next update 2026-10-02"
+      "whiteboard": "[close on 2026-10-09] [ca-compliance] [policy-failure]"
     },
     {
       "id": 2071828,
@@ -4149,7 +4170,7 @@
       "filed": "2026-09-14",
       "summary": "Firmaprofesional: Delayed preliminary CPR response due to incomplete mailbox monitoring coverage",
       "self_reported": true,
-      "whiteboard": "Next update 2026-09-28 [ca-compliance] [policy-failure]"
+      "whiteboard": "[ca-compliance] [policy-failure] Next update 2026-10-09"
     },
     {
       "id": 2072600,
@@ -4170,7 +4191,7 @@
       "filed": "2026-10-02",
       "summary": "Firmaprofesional: AC Firmaprofesional - CA1 excluded from audit scope",
       "self_reported": true,
-      "whiteboard": ""
+      "whiteboard": "[ca-compliance] [audit-failure]"
     }
   ],
   "Actalis": [
@@ -4375,7 +4396,7 @@
       "filed": "2026-10-02",
       "summary": "Actalis: Root CA CRL not published within 24 hours after recording revocations",
       "self_reported": true,
-      "whiteboard": ""
+      "whiteboard": "[ca-compliance] [crl-failure]"
     }
   ],
   "certSIGN": [
@@ -4794,7 +4815,7 @@
       "filed": "2026-01-20",
       "summary": "D-Trust: Delayed publication of audit attestation letters in the CCADB",
       "self_reported": true,
-      "whiteboard": "[ca-compliance] [audit-delay] Next update 2026-10-02"
+      "whiteboard": "[ca-compliance] [audit-delay] Next update 2026-11-01"
     },
     {
       "id": 2012511,
@@ -4829,7 +4850,7 @@
       "filed": "2026-07-15",
       "summary": "D-TRUST: Incomplete Disclosure of CRL URLs",
       "self_reported": false,
-      "whiteboard": "[ca-compliance] [disclosure-failure] Next update 2026-10-01"
+      "whiteboard": "[ca-compliance] [disclosure-failure]"
     },
     {
       "id": 2056882,
@@ -5162,7 +5183,7 @@
       "filed": "2026-09-30",
       "summary": "Certigna: CRL HTTP Media Type",
       "self_reported": true,
-      "whiteboard": ""
+      "whiteboard": "[ca-compliance] [crl-failure]"
     }
   ],
   "Government of Turkey, Kamu Sertifikasyon Merkezi (Kamu SM)": [
@@ -5740,14 +5761,14 @@
       "filed": "2026-07-09",
       "summary": "IdenTrust: Delayed disclosure of Intermediate CA in CCADB",
       "self_reported": true,
-      "whiteboard": "[close on 2026-10-01] [ca-compliance] [disclosure-failure]"
+      "whiteboard": "[ca-compliance] [disclosure-failure]"
     },
     {
       "id": 2065616,
       "filed": "2026-08-21",
       "summary": "IdenTrust: Expired certificates for \"Revoked\" test websites",
       "self_reported": true,
-      "whiteboard": "[ca-compliance] [policy-failure] Next update 2026-09-30"
+      "whiteboard": "[ca-compliance] [policy-failure]"
     },
     {
       "id": 2067255,
@@ -6474,7 +6495,7 @@
       "filed": "2026-09-01",
       "summary": "SECOM: Five Subordinate CA Certificates Issued Without Apple Prior Approval for Cybertrust Japan (CTJ)",
       "self_reported": true,
-      "whiteboard": "[close on 2026-10-01] [ca-compliance] [policy-failure]"
+      "whiteboard": "[ca-compliance] [policy-failure]"
     }
   ],
   "Taiwan-CA Inc. (TWCA)": [
@@ -7396,7 +7417,7 @@
       "filed": "2026-09-24",
       "summary": "Amazon Trust Services: CP/CPS for externally operated subordinate CAs not updated in CCADB within 14 days",
       "self_reported": true,
-      "whiteboard": "[close on 2026-10-05] [ca-compliance] [disclosure-failure]"
+      "whiteboard": "[ca-compliance] [disclosure-failure]"
     }
   ],
   "Asseco Data Systems S.A.": [
@@ -7762,7 +7783,7 @@
       "filed": "2026-08-06",
       "summary": "Asseco DS / Certum: Incorrect Country in certificate",
       "self_reported": true,
-      "whiteboard": "[close on 2026-09-30] [ca-compliance] [ov-misissuance] [ev-misissuance]"
+      "whiteboard": "[ca-compliance] [ov-misissuance] [ev-misissuance] [smime-misissuance] [cs-misissuance]"
     },
     {
       "id": 2071348,
@@ -9418,7 +9439,7 @@
       "filed": "2026-08-27",
       "summary": "CFCA: Cross-signed certificate missing the Extended Key Usage (EKU) extension",
       "self_reported": true,
-      "whiteboard": "[close on 2026-10-01] [ca-compliance] [ca-misissuance]"
+      "whiteboard": "[ca-compliance] [ca-misissuance]"
     }
   ],
   "HARICA": [
@@ -9553,7 +9574,7 @@
       "filed": "2026-07-16",
       "summary": "HARICA: Issuance of Server TLS Certificates with id-kp-clientAuth KeyPurposeID against CP/CPS",
       "self_reported": true,
-      "whiteboard": "[ca-compliance] [dv-misissuance] [ov-misissuance] [ev-misissuance] Next update 2026-10-03"
+      "whiteboard": "[ca-compliance] [dv-misissuance] [ov-misissuance] [ev-misissuance] Next update 2026-10-31"
     },
     {
       "id": 2056668,
@@ -10048,6 +10069,13 @@
       "summary": "SSL.com: CRL URL typo in CRL URL disclosed to CCADB",
       "self_reported": false,
       "whiteboard": "[ca-compliance] [disclosure-failure]"
+    },
+    {
+      "id": 2077599,
+      "filed": "2026-10-02",
+      "summary": "SSL.com: Inconsistent published CRL for one ICA",
+      "self_reported": true,
+      "whiteboard": ""
     }
   ],
   "Buypass": [
@@ -10461,7 +10489,7 @@
       "filed": "2026-09-28",
       "summary": "Apple: CRL is signed incorrectly",
       "self_reported": true,
-      "whiteboard": ""
+      "whiteboard": "[ca-compliance] [crl-failure]"
     }
   ],
   "SK ID Solutions AS": [
@@ -11061,7 +11089,7 @@
       "filed": "2026-07-24",
       "summary": "SHECA: Disclosure alerts indicating audit information missing for 2 Sub-CAs",
       "self_reported": true,
-      "whiteboard": "[close on 2026-10-01] [ca-compliance] [disclosure-failure]"
+      "whiteboard": "[ca-compliance] [disclosure-failure]"
     },
     {
       "id": 2057439,
