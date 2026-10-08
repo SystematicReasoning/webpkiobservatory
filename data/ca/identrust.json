@@ -2,7 +2,7 @@
   "ca_owner": "IdenTrust Services, LLC",
   "country": "United States of America",
   "root_count": 29,
-  "intermediates_count": 28,
+  "intermediates_count": 27,
   "trusted_by": {
     "mozilla": true,
     "microsoft": true,
@@ -319,7 +319,7 @@
       "name": "IdenTrust Commercial Root Timestamp ECC CA 2",
       "sha256": "7BA2E6514976AF28A6001CDA8EADE532F7A1AAAF25E4731DF8A04DB00E7801CA",
       "mozilla_status": "Not Included",
-      "microsoft_status": "Included",
+      "microsoft_status": "NotBefore",
       "chrome_status": "Not Included",
       "apple_status": "Not Included",
       "valid_from": "2024.04.11",
@@ -658,19 +658,6 @@
       "code_signing_capable": false,
       "technically_constrained": false,
       "pem": "-----BEGIN CERTIFICATE-----\nMIID7DCCA02gAwIBAgIQQAGT9V97Im9rYhHLF+2PATAKBggqhkjOPQQDBDBUMQsw\nCQYDVQQGEwJVUzESMBAGA1UEChMJSWRlblRydXN0MTEwLwYDVQQDEyhJZGVuVHJ1\nc3QgQ29tbWVyY2lhbCBSb290IFNNSU1FIEVDQyBDQSAyMB4XDTI0MTIyMzIxMTQ1\nNVoXDTMyMDYyMTIwMTQ1NFowQjELMAkGA1UEBhMCVVMxEjAQBgNVBAoTCUlkZW5U\ncnVzdDEfMB0GA1UEAxMWVHJ1c3RJRCBFQ0MgU01JTUUgQ0EgMTB2MBAGByqGSM49\nAgEGBSuBBAAiA2IABOI1LGNYkbbaiEHpOZYPdotQpMetgTgFSLtKATRNWQWRr1kL\nlbMXgQUCabF0QEKpaqJNwzoN0fad8xzgmNuvgZlScRgOJ5o3mAlHqYJTotKGGnG7\n2FFnTV8NDBsnsU2viaOCAfQwggHwMBIGA1UdEwEB/wQIMAYBAf8CAQAwDgYDVR0P\nAQH/BAQDAgGGMIGSBggrBgEFBQcBAQSBhTCBgjAwBggrBgEFBQcwAYYkaHR0cDov\nL2NvbW1lcmNpYWwub2NzcC5pZGVudHJ1c3QuY29tME4GCCsGAQUFBzAChkJodHRw\nOi8vdmFsaWRhdGlvbi5pZGVudHJ1c3QuY29tL3Jvb3RzL2lkZW50cnVzdHNtaW1l\nZWNjcm9vdGNhMi5wN2MwHwYDVR0jBBgwFoAUZJ/VWmSrtq3Fskk+tVaL9aD6ROAw\nXwYDVR0gBFgwVjBUBgRVHSAAMEwwSgYIKwYBBQUHAgEWPmh0dHBzOi8vc2VjdXJl\nLmlkZW50cnVzdC5jb20vY2VydGlmaWNhdGVzL3BvbGljeS90cy9pbmRleC5odG1s\nMFEGA1UdHwRKMEgwRqBEoEKGQGh0dHA6Ly92YWxpZGF0aW9uLmlkZW50cnVzdC5j\nb20vY3JsL2lkZW50cnVzdHNtaW1lZWNjcm9vdGNhMi5jcmwwHQYDVR0OBBYEFCZu\netoxt6EMLRyyG1rV+lHgQn2QMEEGA1UdJQQ6MDgGCCsGAQUFBwMCBggrBgEFBQcD\nBAYKKwYBBAGCNwoDDAYKKwYBBAGCNxQCAgYKKwYBBAGCNwoDBDAKBggqhkjOPQQD\nBAOBjAAwgYgCQgHJ5Noq8OhoYLriynjEGPJ929CSgweOFQ+Ntba03L+Lr10lypPv\nYz7tC+sBf1/Go1YVa+USZxz/NEenvOL22cD8ZAJCAd/fflW8/LEBES9sHxr3J1rL\nQoZRTMvIUh5rn8FNnaHY71su/vNiFHsruShR65sQUjZvoR6aNa0QBmEOqORFhF59\n-----END CERTIFICATE-----"
-    },
-    {
-      "name": "TrustID ECC Timestamp CA 1",
-      "sha256": "06F0ED21179D448A218897948542473DDAD57129A74151C3B241F857438D4E5C",
-      "parent_name": "IdenTrust Commercial Root Timestamp ECC CA 2",
-      "valid_from": "2024.12.23",
-      "valid_to": "2032.06.21",
-      "tls_capable": false,
-      "ev_capable": false,
-      "smime_capable": false,
-      "code_signing_capable": false,
-      "technically_constrained": true,
-      "pem": "-----BEGIN CERTIFICATE-----\nMIIDzTCCAy+gAwIBAgIQQAGT9YDThCbGp2yXTQ1n7TAKBggqhkjOPQQDBDBYMQsw\nCQYDVQQGEwJVUzESMBAGA1UEChMJSWRlblRydXN0MTUwMwYDVQQDEyxJZGVuVHJ1\nc3QgQ29tbWVyY2lhbCBSb290IFRpbWVzdGFtcCBFQ0MgQ0EgMjAeFw0yNDEyMjMy\nMTUxMjBaFw0zMjA2MjEyMDUxMTlaMEYxCzAJBgNVBAYTAlVTMRIwEAYDVQQKEwlJ\nZGVuVHJ1c3QxIzAhBgNVBAMTGlRydXN0SUQgRUNDIFRpbWVzdGFtcCBDQSAxMHYw\nEAYHKoZIzj0CAQYFK4EEACIDYgAEXqTgUUE3HFm/xagp7HH96a18ibLxjV/CtIsH\n+KwLuREpNB8PTtOgdx0kR81ZLod6NZe7it37ThRskLl9dwPDw4Ut09aNZTIcScui\nNDafSOUyj/GkyUqfrxEt/IvBUcFpo4IBzjCCAcowEgYDVR0TAQH/BAgwBgEB/wIB\nADAOBgNVHQ8BAf8EBAMCAYYwgZYGCCsGAQUFBwEBBIGJMIGGMDAGCCsGAQUFBzAB\nhiRodHRwOi8vY29tbWVyY2lhbC5vY3NwLmlkZW50cnVzdC5jb20wUgYIKwYBBQUH\nMAKGRmh0dHA6Ly92YWxpZGF0aW9uLmlkZW50cnVzdC5jb20vcm9vdHMvaWRlbnRy\ndXN0dGltZXN0YW1wZWNjcm9vdGNhMi5wN2MwHwYDVR0jBBgwFoAUUTrScCq31VUe\nH0EJ4fxbwCaTxw4wXwYDVR0gBFgwVjBUBgRVHSAAMEwwSgYIKwYBBQUHAgEWPmh0\ndHBzOi8vc2VjdXJlLmlkZW50cnVzdC5jb20vY2VydGlmaWNhdGVzL3BvbGljeS90\ncy9pbmRleC5odG1sMFUGA1UdHwROMEwwSqBIoEaGRGh0dHA6Ly92YWxpZGF0aW9u\nLmlkZW50cnVzdC5jb20vY3JsL2lkZW50cnVzdHRpbWVzdGFtcGVjY3Jvb3RjYTIu\nY3JsMB0GA1UdDgQWBBQDtjzEcBU0RIFefjN9PKbTv97SSjATBgNVHSUEDDAKBggr\nBgEFBQcDCDAKBggqhkjOPQQDBAOBiwAwgYcCQgCtiUB+dm4ObFaIX2JQpUUCgQxE\nMvhwyXyEShE3m/VonXi7WDkP3JZ0/9l9C8n5XkWLWcF6sQlLMUfk1R1r8/iZegJB\nTQ8OinRQDuiKFu/P4y7kyUDzvVyveFoO+wbsxuPIOxEhjKuGu5l4caLdfrgpl0Bd\nL/p0Y/C7pyUmxKFrDo3a/FQ=\n-----END CERTIFICATE-----"
     },
     {
       "name": "TrustID Enterprise TLS CA 3",
