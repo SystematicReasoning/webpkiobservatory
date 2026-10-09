@@ -1,7 +1,7 @@
 {
   "$schema": "https://webpki.systematicreasoning.com/schema.json",
   "version": "1.0.0",
-  "generatedAt": "2026-10-08T13:38:33.792712+00:00",
+  "generatedAt": "2026-10-09T13:27:10.877375+00:00",
   "snapshotUrl": "https://webpki.systematicreasoning.com/llm_snapshot.json",
   "note": "Sliced subset of llm_snapshot.json. Fetch the full snapshot for complete data.",
   "geography": [
@@ -956,25 +956,25 @@
     }
   ],
   "cryptoSummary": {
-    "totalRoots": 327,
+    "totalRoots": 322,
     "caCount": 89,
     "keyFamilies": {
-      "RSA": 233,
-      "ECC": 94
+      "RSA": 229,
+      "ECC": 93
     },
     "keySizes": {
-      "RSA-4096": 181,
+      "RSA-4096": 179,
       "P-384": 83,
-      "RSA-2048": 50,
-      "P-521": 6,
+      "RSA-2048": 48,
       "P-256": 5,
+      "P-521": 5,
       "RSA-3072": 2
     },
     "sigHashes": {
-      "SHA-384": 146,
-      "SHA-256": 113,
-      "SHA-1": 38,
-      "SHA-512": 30
+      "SHA-384": 147,
+      "SHA-256": 110,
+      "SHA-1": 36,
+      "SHA-512": 29
     }
   },
   "rootAlgorithms": [
@@ -1025,8 +1025,8 @@
       "validTo": "2038.07.31",
       "tls": false,
       "ev": false,
-      "smime": true,
-      "codeSigning": true,
+      "smime": false,
+      "codeSigning": false,
       "crtshUrl": "https://crt.sh/?q=063E4AFAC491DFD332F3089B8542E94617D893D7FE944E10A7937EE29D9693C0"
     },
     {
@@ -1676,23 +1676,6 @@
       "crtshUrl": "https://crt.sh/?q=AB936DFD7F171D3A3CBD08F9BEBDC3F3BAAABAA79DF6A908F8A7B0128627F187"
     },
     {
-      "name": "Carillon PKI Services G2 Root CA 1",
-      "caOwner": "Carillon Information Security Inc.",
-      "sha256": "EE0EC4A0B5E6ECB865F49689B50E3DE38D4FD924A4041C0C2A62636DB0B6B31D",
-      "keyFamily": "RSA",
-      "keyBits": 4096,
-      "sigHash": "SHA-256",
-      "curve": null,
-      "stores": "S",
-      "validFrom": "2020.01.20",
-      "validTo": "2040.01.20",
-      "tls": false,
-      "ev": false,
-      "smime": true,
-      "codeSigning": false,
-      "crtshUrl": "https://crt.sh/?q=EE0EC4A0B5E6ECB865F49689B50E3DE38D4FD924A4041C0C2A62636DB0B6B31D"
-    },
-    {
       "name": "Certainly Root E1",
       "caOwner": "Certainly LLC",
       "sha256": "B4585F22E4AC756A4E8612A1361C5D9D031A93FD84FEBB778FA3068B0FC42DC2",
@@ -1768,7 +1751,7 @@
       "keyBits": 2048,
       "sigHash": "SHA-1",
       "curve": null,
-      "stores": "SA",
+      "stores": "A",
       "validFrom": "2006.07.04",
       "validTo": "2031.07.04",
       "tls": true,
@@ -1856,9 +1839,9 @@
       "stores": "S",
       "validFrom": "2015.11.17",
       "validTo": "2037.12.31",
-      "tls": true,
+      "tls": false,
       "ev": false,
-      "smime": true,
+      "smime": false,
       "codeSigning": false,
       "crtshUrl": "https://crt.sh/?q=1E51942B84FD467BF77D1C89DA241C04254DC8F3EF4C22451FE7A89978BDCD4F"
     },
@@ -1875,7 +1858,7 @@
       "validTo": "2047.11.03",
       "tls": false,
       "ev": false,
-      "smime": true,
+      "smime": false,
       "codeSigning": false,
       "crtshUrl": "https://crt.sh/?q=19A2FA09332C6D8EAC1393D5F30371DD8B4DD687B0E1E50A6B48AE762CABA2B5"
     },
@@ -2133,23 +2116,6 @@
       "smime": false,
       "codeSigning": false,
       "crtshUrl": "https://crt.sh/?q=EFC65CADBB59ADB6EFE84DA22311B35624B71B3B1EA0DA8B6655174EC8978646"
-    },
-    {
-      "name": "Baltimore CyberTrust Root",
-      "caOwner": "DigiCert",
-      "sha256": "16AF57A9F676B0AB126095AA5EBADEF22AB31119D644AC95CD4B93DBF3F26AEB",
-      "keyFamily": "RSA",
-      "keyBits": 2048,
-      "sigHash": "SHA-1",
-      "curve": null,
-      "stores": "S",
-      "validFrom": "2000.05.12",
-      "validTo": "2025.05.12",
-      "tls": true,
-      "ev": true,
-      "smime": true,
-      "codeSigning": true,
-      "crtshUrl": "https://crt.sh/?q=16AF57A9F676B0AB126095AA5EBADEF22AB31119D644AC95CD4B93DBF3F26AEB"
     },
     {
       "name": "DigiCert Assured ID Root CA",
@@ -2473,23 +2439,6 @@
       "smime": false,
       "codeSigning": false,
       "crtshUrl": "https://crt.sh/?q=504386C9EE8932FECC95FADE427F69C3E2534B7310489E300FEE448E33C46B42"
-    },
-    {
-      "name": "Hotspot 2.0 Trust Root CA - 03",
-      "caOwner": "DigiCert",
-      "sha256": "A3CC68595DFE7E86D8AD1772A8B5284ADD54ACE3B8A798DF47BCCAFB1FDB84DF",
-      "keyFamily": "RSA",
-      "keyBits": 4096,
-      "sigHash": "SHA-256",
-      "curve": null,
-      "stores": "S",
-      "validFrom": "2013.12.08",
-      "validTo": "2043.12.08",
-      "tls": true,
-      "ev": false,
-      "smime": true,
-      "codeSigning": false,
-      "crtshUrl": "https://crt.sh/?q=A3CC68595DFE7E86D8AD1772A8B5284ADD54ACE3B8A798DF47BCCAFB1FDB84DF"
     },
     {
       "name": "QuoVadis Client ECC P384 Root G4",
@@ -4117,9 +4066,9 @@
       "stores": "S",
       "validFrom": "2015.09.29",
       "validTo": "2040.09.29",
-      "tls": true,
+      "tls": false,
       "ev": false,
-      "smime": true,
+      "smime": false,
       "codeSigning": false,
       "crtshUrl": "https://crt.sh/?q=8F9ADB6D895DAB5ADF5C3D3FAB83927BE0FB64EF82485C62280D584E8BD55D22"
     },
@@ -4411,23 +4360,6 @@
       "smime": true,
       "codeSigning": false,
       "crtshUrl": "https://crt.sh/?q=53850DBA0B62839FED4C0E3E1B95CB7E9C4CF2ED7C3E5AE2D3D3F535EB5A2653"
-    },
-    {
-      "name": "IdenTrust Commercial Root Timestamp ECC CA 2",
-      "caOwner": "IdenTrust Services, LLC",
-      "sha256": "7BA2E6514976AF28A6001CDA8EADE532F7A1AAAF25E4731DF8A04DB00E7801CA",
-      "keyFamily": "ECC",
-      "keyBits": 521,
-      "sigHash": "SHA-512",
-      "curve": "P-521",
-      "stores": "S",
-      "validFrom": "2024.04.11",
-      "validTo": "2044.04.10",
-      "tls": false,
-      "ev": false,
-      "smime": false,
-      "codeSigning": false,
-      "crtshUrl": "https://crt.sh/?q=7BA2E6514976AF28A6001CDA8EADE532F7A1AAAF25E4731DF8A04DB00E7801CA"
     },
     {
       "name": "IdenTrust Commercial Root Timestamp RSA CA 2",
@@ -4901,7 +4833,7 @@
       "validTo": "2034.12.17",
       "tls": false,
       "ev": false,
-      "smime": true,
+      "smime": false,
       "codeSigning": false,
       "crtshUrl": "https://crt.sh/?q=C7B8948FECCAACE5B509A343F38D0301D07901885604B3F267270E1EBBEF0FE7"
     },
@@ -4918,7 +4850,7 @@
       "validTo": "2036.05.17",
       "tls": false,
       "ev": false,
-      "smime": true,
+      "smime": false,
       "codeSigning": false,
       "crtshUrl": "https://crt.sh/?q=AAA15BDDB1C924AD7A7F22F89E5CD3E2C61407A064E011B7CF4CB618716449A4"
     },
@@ -6329,7 +6261,7 @@
       "validTo": "2036.03.27",
       "tls": true,
       "ev": false,
-      "smime": true,
+      "smime": false,
       "codeSigning": false,
       "crtshUrl": "https://crt.sh/?q=2A8DA2F8D23E0CD3B5871ECFB0F42276CA73230667F474EEDE71C5EE32CC3EC6"
     },
@@ -6470,23 +6402,6 @@
       "crtshUrl": "https://crt.sh/?q=92C4DB06C42A130D663574D7741B7F93C806FD6714DCE890E84B568FAE86E64C"
     },
     {
-      "name": "Visa Information Delivery Root CA",
-      "caOwner": "Visa",
-      "sha256": "C57A3ACBE8C06BA1988A83485BF326F2448775379849DE01CA43571AF357E74B",
-      "keyFamily": "RSA",
-      "keyBits": 2048,
-      "sigHash": "SHA-1",
-      "curve": null,
-      "stores": "S",
-      "validFrom": "2005.06.27",
-      "validTo": "2025.06.29",
-      "tls": true,
-      "ev": false,
-      "smime": true,
-      "codeSigning": false,
-      "crtshUrl": "https://crt.sh/?q=C57A3ACBE8C06BA1988A83485BF326F2448775379849DE01CA43571AF357E74B"
-    },
-    {
       "name": "Visa Public ECC Root CA",
       "caOwner": "Visa",
       "sha256": "E6BE68CE06FE0DA0C140F1AEB00B67B636C5EEA9422088929362375CE086DB39",
@@ -6504,21 +6419,21 @@
       "crtshUrl": "https://crt.sh/?q=E6BE68CE06FE0DA0C140F1AEB00B67B636C5EEA9422088929362375CE086DB39"
     },
     {
-      "name": "Visa Public RSA Root CA",
+      "name": "Visa TLS Root CA",
       "caOwner": "Visa",
-      "sha256": "07CD9AA9064A9B94C6AEF8FB784C1BBC1BEDA08ACBE86878D781A39167626CF8",
+      "sha256": "E6432FCE6B48F4E889B2FE183F8B480F72ECF80F57389B0E9C6E89CF04AD69D1",
       "keyFamily": "RSA",
       "keyBits": 4096,
-      "sigHash": "SHA-256",
+      "sigHash": "SHA-384",
       "curve": null,
       "stores": "S",
-      "validFrom": "2021.03.16",
-      "validTo": "2041.03.15",
+      "validFrom": "2024.03.07",
+      "validTo": "2034.03.06",
       "tls": true,
       "ev": false,
       "smime": false,
       "codeSigning": false,
-      "crtshUrl": "https://crt.sh/?q=07CD9AA9064A9B94C6AEF8FB784C1BBC1BEDA08ACBE86878D781A39167626CF8"
+      "crtshUrl": "https://crt.sh/?q=E6432FCE6B48F4E889B2FE183F8B480F72ECF80F57389B0E9C6E89CF04AD69D1"
     },
     {
       "name": "ZETES TSP ROOT CA 001",
