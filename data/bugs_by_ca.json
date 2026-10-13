@@ -1631,7 +1631,7 @@
       "filed": "2026-09-17",
       "summary": "DigiCert: Expired CRL",
       "self_reported": true,
-      "whiteboard": "[ca-compliance] [crl-failure] Next update 2026-10-12"
+      "whiteboard": "[ca-compliance] [crl-failure] Next update 2026-10-14"
     },
     {
       "id": 2073230,
@@ -1652,7 +1652,7 @@
       "filed": "2026-09-22",
       "summary": "DigiCert:  EV JOI match with organizationIdentifer",
       "self_reported": true,
-      "whiteboard": "[ca-compliance] [ev-misissuance]"
+      "whiteboard": "[close on 2026-10-19] [ca-compliance] [ev-misissuance]"
     },
     {
       "id": 2075949,
@@ -2123,7 +2123,7 @@
       "filed": "2026-04-23",
       "summary": "SwissSign: Delayed revocation related to Bugzilla 2033000",
       "self_reported": true,
-      "whiteboard": "[close on 2026-10-12] [ca-compliance] [leaf-revocation-delay]"
+      "whiteboard": "[ca-compliance] [leaf-revocation-delay]"
     },
     {
       "id": 2057448,
@@ -2145,6 +2145,13 @@
       "summary": "SwissSign: Delayed revocation in Bug 2057448",
       "self_reported": true,
       "whiteboard": "[ca-compliance] [leaf-revocation-delay]"
+    },
+    {
+      "id": 2074466,
+      "filed": "2026-09-22",
+      "summary": "SwissSign: Backdating of 48+h",
+      "self_reported": true,
+      "whiteboard": "[ca-compliance] [dv-misissuance]"
     },
     {
       "id": 2079638,
@@ -3163,7 +3170,7 @@
       "filed": "2026-09-18",
       "summary": "Sectigo: Submitted CPR not replied to within 24 hours",
       "self_reported": true,
-      "whiteboard": "[ca-compliance] [policy-failure]"
+      "whiteboard": "[close on 2026-10-19] [ca-compliance] [policy-failure]"
     },
     {
       "id": 2077508,
@@ -3191,7 +3198,7 @@
       "filed": "2026-10-12",
       "summary": "Sectigo: Legacy Subordinate CA Certificate without digitalSignature KU signing OCSP responses",
       "self_reported": true,
-      "whiteboard": ""
+      "whiteboard": "[ca-compliance] [ocsp-failure]"
     }
   ],
   "Internet Security Research Group": [
@@ -4205,7 +4212,7 @@
       "filed": "2026-09-14",
       "summary": "Firmaprofesional: OCSP signature verification errors for Secure Web 2024 certificates",
       "self_reported": true,
-      "whiteboard": "[ca-compliance] [ocsp-failure] Next update 2026-10-09"
+      "whiteboard": "[ca-compliance] [ocsp-failure] Next update 2026-10-16"
     },
     {
       "id": 2071832,
@@ -4219,7 +4226,7 @@
       "filed": "2026-09-16",
       "summary": "Firmaprofesional: Delayed revocation of SHA-1-signed AC Firmaprofesional - CA1",
       "self_reported": true,
-      "whiteboard": "[ca-compliance] [ca-revocation-delay] Next update 2026-10-07"
+      "whiteboard": "[ca-compliance] [ca-revocation-delay] Next update 2026-10-16"
     },
     {
       "id": 2075527,
@@ -4417,7 +4424,7 @@
       "filed": "2026-08-04",
       "summary": "Actalis: Issuance of Server TLS Certificates with id-kp-clientAuth against CPS",
       "self_reported": true,
-      "whiteboard": "[ca-compliance] [__-misissuance]"
+      "whiteboard": "[ca-compliance] [dv-misissuance] [ov-misissuance] [ev-misissuance]"
     },
     {
       "id": 2067210,
@@ -4445,7 +4452,7 @@
       "filed": "2026-10-12",
       "summary": "Actalis: Non-compliant OCSP responses and OCSP responder certificate",
       "self_reported": true,
-      "whiteboard": ""
+      "whiteboard": "[ca-compliance] [ocsp-failure]"
     }
   ],
   "certSIGN": [
@@ -4885,14 +4892,14 @@
       "filed": "2026-04-02",
       "summary": "D-Trust: Missing Pre-Signing Linting for TLS Issuance",
       "self_reported": false,
-      "whiteboard": "[ca-compliance] [policy-failure] Next update 2026-10-12"
+      "whiteboard": "[ca-compliance] [policy-failure] Next update 2026-10-20"
     },
     {
       "id": 2037000,
       "filed": "2026-05-05",
       "summary": "D-Trust: Missing Pre-Sign Linting for S/MIME Issuing CAs",
       "self_reported": true,
-      "whiteboard": "[ca-compliance] [smime-misissuance] Next update 2026-10-12"
+      "whiteboard": "[ca-compliance] [smime-misissuance] Next update 2026-10-20"
     },
     {
       "id": 2055250,
@@ -4913,7 +4920,7 @@
       "filed": "2026-09-28",
       "summary": "D-Trust: Incorrect CPS URLs in CCADB for six S/MIME CA certificate records",
       "self_reported": false,
-      "whiteboard": "[ca-compliance] [disclosure-failure]"
+      "whiteboard": "[close on 2026-10-19] [ca-compliance] [disclosure-failure]"
     }
   ],
   "Disig, a.s.": [
@@ -5239,7 +5246,7 @@
       "filed": "2026-10-12",
       "summary": "Certigna: Failure to announce completion of action item within prescribed time period",
       "self_reported": false,
-      "whiteboard": ""
+      "whiteboard": "[ca-compliance] [policy-failure]"
     }
   ],
   "Government of Turkey, Kamu Sertifikasyon Merkezi (Kamu SM)": [
@@ -5276,7 +5283,7 @@
       "filed": "2026-09-26",
       "summary": "Kamu SM: Missing CRL Disclosure for Cross-Signed CA in CCADB",
       "self_reported": true,
-      "whiteboard": "[close on 2026-10-12] [ca-compliance] [disclosure-failure]"
+      "whiteboard": "[ca-compliance] [disclosure-failure]"
     },
     {
       "id": 2080195,
@@ -6248,7 +6255,7 @@
       "filed": "2026-06-30",
       "summary": "NETLOCK: OCSP Service Returning Error for Issued Certificate",
       "self_reported": false,
-      "whiteboard": "[ca-compliance] [ocsp-failure] [external] Next update 2026-10-07"
+      "whiteboard": "[ca-compliance] [ocsp-failure] [external]"
     },
     {
       "id": 2052541,
@@ -6559,6 +6566,13 @@
       "summary": "SECOM: Five Subordinate CA Certificates Issued Without Apple Prior Approval for Cybertrust Japan (CTJ)",
       "self_reported": true,
       "whiteboard": "[ca-compliance] [policy-failure]"
+    },
+    {
+      "id": 2081155,
+      "filed": "2026-10-13",
+      "summary": "SECOM: Incorrect and missing EV TLS test websites in CCADB",
+      "self_reported": true,
+      "whiteboard": ""
     }
   ],
   "Taiwan-CA Inc. (TWCA)": [
@@ -6905,7 +6919,7 @@
       "filed": "2026-10-12",
       "summary": "Telekom Security: OCSP responder uses incorrect signature algorithm for P-384 signing key",
       "self_reported": true,
-      "whiteboard": ""
+      "whiteboard": "[ca-compliance] [ocsp-failure]"
     }
   ],
   "Visa": [
@@ -7874,7 +7888,7 @@
       "filed": "2026-09-18",
       "summary": "Asseco DS / Certum: Multi-purpose Subordinate CA with missing EKU",
       "self_reported": true,
-      "whiteboard": "[close as INVALID on 2026-10-02] [ca-compliance]"
+      "whiteboard": "[close as INVALID on 2026-10-19] [ca-compliance]"
     },
     {
       "id": 2075234,
@@ -7895,7 +7909,7 @@
       "filed": "2026-10-12",
       "summary": "Asseco DS / Certum: Incorrect AlgorithmIdentifier Encoding in OCSP responses",
       "self_reported": true,
-      "whiteboard": ""
+      "whiteboard": "[ca-compliance] [ocsp-failure]"
     }
   ],
   "Microsoft Corporation": [
@@ -8594,7 +8608,7 @@
       "filed": "2026-08-07",
       "summary": "ACCV: Issuance of Server TLS Certificates with CP/CPS Discrepancies",
       "self_reported": true,
-      "whiteboard": "[ca-compliance] [__-misissuance]"
+      "whiteboard": "[ca-compliance] [ov-misissuance]"
     },
     {
       "id": 2064673,
@@ -8608,7 +8622,7 @@
       "filed": "2026-10-12",
       "summary": "ACCV: OCSP responses include “archiveCutoff” in “responseExtensions”",
       "self_reported": true,
-      "whiteboard": ""
+      "whiteboard": "[ca-compliance] [ocsp-failure]"
     }
   ],
   "Cybertrust Japan Co., Ltd.": [
@@ -9516,7 +9530,7 @@
       "filed": "2026-07-29",
       "summary": "CFCA: Incorrect countryName values in OV subscriber certificates",
       "self_reported": true,
-      "whiteboard": "[ca-compliance] [ov-misissuance] Next update 2026-10-12"
+      "whiteboard": "[ca-compliance] [ov-misissuance]"
     },
     {
       "id": 2058920,
@@ -9537,7 +9551,7 @@
       "filed": "2026-10-12",
       "summary": "CFCA: Certificates Issued with lower case value in subject:countryName",
       "self_reported": true,
-      "whiteboard": ""
+      "whiteboard": "[ca-compliance] [ov-misissuance] [ev-misissuance]"
     }
   ],
   "HARICA": [
@@ -10817,7 +10831,7 @@
       "filed": "2026-09-18",
       "summary": "eMudhra emSign PKI Services: InCommon RSA IGTF Server CA 4 — certificates issued with key sizes not permitted by CPS",
       "self_reported": true,
-      "whiteboard": "[ca-compliance] [__-misissuance]"
+      "whiteboard": "[ca-compliance] [ov-misissuance]"
     },
     {
       "id": 2073583,
@@ -10830,6 +10844,13 @@
       "id": 2080742,
       "filed": "2026-10-12",
       "summary": "eMudhra emSign PKI Services: Delegated OCSP Responder certificates containing cRLDistributionPoints extension",
+      "self_reported": true,
+      "whiteboard": "[ca-compliance] [ocsp-failure]"
+    },
+    {
+      "id": 2081185,
+      "filed": "2026-10-13",
+      "summary": "eMudhra emSign PKI Services: Missing EKU Extension in Subordinate CA Certificates",
       "self_reported": true,
       "whiteboard": ""
     }
@@ -10917,7 +10938,7 @@
       "filed": "2026-10-12",
       "summary": "iTrusChina: OCSP Response ECDSA signatureAlgorithm with NULL parameters",
       "self_reported": true,
-      "whiteboard": ""
+      "whiteboard": "[ca-compliance] [ocsp-failure]"
     }
   ],
   "Certainly LLC": [
@@ -11222,14 +11243,14 @@
       "filed": "2026-09-18",
       "summary": "SHECA: CP/CPS lacks explicit adherence statement",
       "self_reported": true,
-      "whiteboard": "[ca-compliance] [policy-failure]"
+      "whiteboard": "[ca-compliance] [policy-failure] Next update 2026-10-31"
     },
     {
       "id": 2075819,
       "filed": "2026-09-26",
       "summary": "SHECA: ECC CRL/OCSP Signature Algorithm Issue",
       "self_reported": true,
-      "whiteboard": "[ca-compliance] [ocsp-failure] [crl-failure]"
+      "whiteboard": "[ca-compliance] [ocsp-failure] [crl-failure] Next update 2026-10-31"
     },
     {
       "id": 2077090,
@@ -11323,6 +11344,20 @@
       "summary": "NAVER Cloud Trust Services: OCSP responses with an empty responseExtensions",
       "self_reported": true,
       "whiteboard": "[ca-compliance] [ocsp-failure]"
+    },
+    {
+      "id": 2081113,
+      "filed": "2026-10-13",
+      "summary": "NAVER Cloud Trust Services: Cross-certificate with incorrect accessMethod (id-ad-ocsp instead of id-ad-caIssuers) in AIA",
+      "self_reported": true,
+      "whiteboard": ""
+    },
+    {
+      "id": 2081213,
+      "filed": "2026-10-13",
+      "summary": "NAVER Cloud Trust Services: Subordinate CA certificates with two Reserved Certificate Policy Identifiers",
+      "self_reported": true,
+      "whiteboard": ""
     }
   ],
   "Government of Hong Kong (SAR), Hongkong Post, Certizen": [
@@ -11578,6 +11613,15 @@
       "summary": "PostSignum: Length Subject organizationName",
       "self_reported": true,
       "whiteboard": "[ca-compliance] [ov-misissuance]"
+    }
+  ],
+  "OISTE": [
+    {
+      "id": 2080892,
+      "filed": "2026-10-12",
+      "summary": "OISTE: Specific test websites for EV not listed in CCADB",
+      "self_reported": true,
+      "whiteboard": "[ca-compliance] [disclosure-failure]"
     }
   ]
 }
