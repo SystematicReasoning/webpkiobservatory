@@ -356,6 +356,13 @@
       "summary": "GoDaddy: Certificate Issuance Using Previously Compromised Private Key",
       "self_reported": true,
       "whiteboard": "[ca-compliance] [__-misissuance]"
+    },
+    {
+      "id": 2082703,
+      "filed": "2026-10-15",
+      "summary": "GoDaddy: Subscriber Certificate Profiles Did Not Conform to CP/CPS",
+      "self_reported": true,
+      "whiteboard": ""
     }
   ],
   "DigiCert": [
@@ -1673,7 +1680,7 @@
       "filed": "2026-10-14",
       "summary": "DigiCert:  Publishing timeline for CRL",
       "self_reported": true,
-      "whiteboard": ""
+      "whiteboard": "[ca-compliance] [crl-failure]"
     }
   ],
   "SwissSign AG": [
@@ -3923,7 +3930,7 @@
       "filed": "2026-10-14",
       "summary": "GlobalSign: EV Test Certificates missing for 2 roots",
       "self_reported": true,
-      "whiteboard": ""
+      "whiteboard": "[ca-compliance] [policy-failure]"
     }
   ],
   "Autoridad de Certificacion Firmaprofesional": [
@@ -4630,6 +4637,13 @@
       "summary": "certSIGN: incorrect URL in CCADB",
       "self_reported": true,
       "whiteboard": "[ca-compliance] [disclosure-failure]"
+    },
+    {
+      "id": 2082361,
+      "filed": "2026-10-15",
+      "summary": "certSIGN: Missing the countryName attribute in the Subject DN of a test DV TLS certificate",
+      "self_reported": true,
+      "whiteboard": "[ca-compliance] [dv-misissuance]"
     }
   ],
   "Consorci AOC": [
@@ -4940,6 +4954,27 @@
       "id": 2081685,
       "filed": "2026-10-14",
       "summary": "D-Trust: Discrepancy in CRL URL Disclosures",
+      "self_reported": true,
+      "whiteboard": "[ca-compliance] [disclosure-failure]"
+    },
+    {
+      "id": 2082470,
+      "filed": "2026-10-15",
+      "summary": "D-TRUST: Reported CA key-size inconsistency in TSPS v3.1",
+      "self_reported": true,
+      "whiteboard": "[close on 2026-10-28] [ca-compliance]"
+    },
+    {
+      "id": 2082644,
+      "filed": "2026-10-15",
+      "summary": "D-Trust: Finding #1 of 2 in 2026 ETSI Audit – vulnerability management",
+      "self_reported": true,
+      "whiteboard": ""
+    },
+    {
+      "id": 2082645,
+      "filed": "2026-10-15",
+      "summary": "D-Trust: Finding #2 of 2 in 2026 ETSI Audit – Documentation of backup recovery testing",
       "self_reported": true,
       "whiteboard": ""
     }
@@ -5260,7 +5295,7 @@
       "filed": "2026-09-30",
       "summary": "Certigna: CRL HTTP Media Type",
       "self_reported": true,
-      "whiteboard": "[close on 2026-10-14] [ca-compliance] [crl-failure]"
+      "whiteboard": "[ca-compliance] [crl-failure]"
     },
     {
       "id": 2080698,
@@ -6941,6 +6976,13 @@
       "summary": "Telekom Security: OCSP responder uses incorrect signature algorithm for P-384 signing key",
       "self_reported": true,
       "whiteboard": "[ca-compliance] [ocsp-failure]"
+    },
+    {
+      "id": 2082799,
+      "filed": "2026-10-16",
+      "summary": "Telekom Security: Typographical error in CPS section 7.1.6",
+      "self_reported": true,
+      "whiteboard": ""
     }
   ],
   "Visa": [
@@ -7401,7 +7443,7 @@
       "filed": "2026-09-21",
       "summary": "PKIoverheid: TSP KPN Delayed publication of audit attestation letters in the CCADB",
       "self_reported": true,
-      "whiteboard": "[ca-compliance] [audit-delay] [disclosure-failure]"
+      "whiteboard": "[close on 2026-10-22] [ca-compliance] [audit-delay] [disclosure-failure]"
     }
   ],
   "Amazon Trust Services": [
@@ -7536,7 +7578,7 @@
       "filed": "2026-10-13",
       "summary": "Amazon Trust Services: EV Root Test Web Pages Serve Non-EV (DV) Certificates",
       "self_reported": true,
-      "whiteboard": ""
+      "whiteboard": "[close on 2025-10-22] "
     }
   ],
   "Asseco Data Systems S.A.": [
@@ -7909,7 +7951,7 @@
       "filed": "2026-09-11",
       "summary": "Asseco DS / Certum: EV TLS Certificate Issued with Branch Name as Subject Organization Name",
       "self_reported": false,
-      "whiteboard": "[close on 2026-10-14] [ca-compliance] [ev-misissuance]"
+      "whiteboard": "[ca-compliance] [ev-misissuance]"
     },
     {
       "id": 2073518,
@@ -7923,14 +7965,14 @@
       "filed": "2026-09-24",
       "summary": "Asseco DS / Certum: CRL URLs in issued certificates not disclosed in CCADB",
       "self_reported": true,
-      "whiteboard": "[ca-compliance] [disclosure-failure]"
+      "whiteboard": "[ca-compliance] [disclosure-failure] Next update 2026-11-30"
     },
     {
       "id": 2075242,
       "filed": "2026-09-24",
       "summary": "Asseco DS / Certum: Incorrect ECDSA-SHA384 AlgorithmIdentifier Encoding in CRLs",
       "self_reported": true,
-      "whiteboard": "[ca-compliance] [crl-failure]"
+      "whiteboard": "[ca-compliance] [crl-failure] Next update 2026-11-30"
     },
     {
       "id": 2080819,
@@ -7938,6 +7980,13 @@
       "summary": "Asseco DS / Certum: Incorrect AlgorithmIdentifier Encoding in OCSP responses",
       "self_reported": true,
       "whiteboard": "[ca-compliance] [ocsp-failure]"
+    },
+    {
+      "id": 2082373,
+      "filed": "2026-10-15",
+      "summary": "Asseco DS / Certum: Incomplete CRL Disclosure in CCADB for intermediate CAs sharing the same subjects and public keys as root CAs",
+      "self_reported": true,
+      "whiteboard": "[ca-compliance] [disclosure-failure]"
     }
   ],
   "Microsoft Corporation": [
@@ -8651,6 +8700,13 @@
       "summary": "ACCV: OCSP responses include “archiveCutoff” in “responseExtensions”",
       "self_reported": true,
       "whiteboard": "[ca-compliance] [ocsp-failure]"
+    },
+    {
+      "id": 2082818,
+      "filed": "2026-10-16",
+      "summary": "ACCV: EKU Inconsistency in ACCV RSA1 TLS CA Certificates Identified During Chrome Root Inclusion Review",
+      "self_reported": false,
+      "whiteboard": ""
     }
   ],
   "Cybertrust Japan Co., Ltd.": [
@@ -8888,6 +8944,13 @@
       "summary": "KIR: SZAFIR ROOT CA3 TLS CRL nextUpdate exceeds 12 months",
       "self_reported": true,
       "whiteboard": "[ca-compliance] [crl-failure]"
+    },
+    {
+      "id": 2082585,
+      "filed": "2026-10-15",
+      "summary": "KIR: TLS certificates issued from legacy SZAFIR Trusted CA6 contrary to Chrome commitments",
+      "self_reported": true,
+      "whiteboard": ""
     }
   ],
   "Government of Spain, Fábrica Nacional de Moneda y Timbre (FNMT)": [
@@ -9037,6 +9100,13 @@
       "summary": "FNMT: Delayed Revocation of SHA-1 Signed Subordinate CA Certificate",
       "self_reported": true,
       "whiteboard": "[ca-compliance] [ca-revocation-delay]"
+    },
+    {
+      "id": 2082564,
+      "filed": "2026-10-15",
+      "summary": "FNMT: Late CP/CPS Update in CCADB",
+      "self_reported": true,
+      "whiteboard": "[ca-compliance] [disclosure-failure]"
     }
   ],
   "Google Trust Services LLC": [
@@ -9586,7 +9656,7 @@
       "filed": "2026-10-15",
       "summary": "CFCA: Test websites for EV roots serve OV certificates",
       "self_reported": true,
-      "whiteboard": ""
+      "whiteboard": "[ca-compliance] [policy-failure]"
     }
   ],
   "HARICA": [
@@ -10229,7 +10299,7 @@
       "filed": "2026-10-14",
       "summary": "SSL.com: Test websites for EV enabled Roots with non-EV certificates",
       "self_reported": true,
-      "whiteboard": ""
+      "whiteboard": "[ca-compliance] [policy-failure]"
     }
   ],
   "Buypass": [
@@ -10895,6 +10965,20 @@
       "summary": "eMudhra emSign PKI Services: Missing EKU Extension in Subordinate CA Certificates",
       "self_reported": true,
       "whiteboard": "[ca-compliance] [ca-misissuance]"
+    },
+    {
+      "id": 2082408,
+      "filed": "2026-10-15",
+      "summary": "eMudhra emSign PKI Services: TLS certificates exceed CP/CPS maximum validity period by one second",
+      "self_reported": true,
+      "whiteboard": "[ca-compliance] [__-misissuance]"
+    },
+    {
+      "id": 2082782,
+      "filed": "2026-10-16",
+      "summary": "eMudhra emSign PKI Services: TLS certificates missing certificate-type policy OID required by CP/CPS",
+      "self_reported": true,
+      "whiteboard": ""
     }
   ],
   "iTrusChina": [
