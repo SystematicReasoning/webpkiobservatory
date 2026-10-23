@@ -1,7 +1,7 @@
 {
   "$schema": "https://webpki.systematicreasoning.com/schema.json",
   "version": "1.0.0",
-  "generatedAt": "2026-10-22T11:58:57.596468+00:00",
+  "generatedAt": "2026-10-23T12:00:21.031416+00:00",
   "snapshotUrl": "https://webpki.systematicreasoning.com/llm_snapshot.json",
   "note": "Sliced subset of llm_snapshot.json. Fetch the full snapshot for complete data.",
   "distrustEvents": [
@@ -922,7 +922,7 @@
     "responseDrivenPct": 73
   },
   "incidents": {
-    "total": 1683,
+    "total": 1689,
     "caCount": 55,
     "years": [
       {
@@ -975,7 +975,7 @@
       },
       {
         "year": 2026,
-        "count": 321
+        "count": 327
       }
     ],
     "perCA": [
@@ -992,11 +992,11 @@
       {
         "ca": "Sectigo",
         "id": "sectigo",
-        "count": 123,
-        "selfReported": 79,
+        "count": 125,
+        "selfReported": 81,
         "externallyReported": 44,
-        "selfReportPct": 64,
-        "ppm": 0.083,
+        "selfReportPct": 65,
+        "ppm": 0.084,
         "trusted": true
       },
       {
@@ -1070,6 +1070,16 @@
         "trusted": true
       },
       {
+        "ca": "Netlock",
+        "id": "netlock",
+        "count": 47,
+        "selfReported": 30,
+        "externallyReported": 17,
+        "selfReportPct": 64,
+        "ppm": 2337.611,
+        "trusted": true
+      },
+      {
         "ca": "Government of The Netherlands, PKIoverheid (Logius)",
         "id": "government-of-the-netherlands-pkioverheid-logius",
         "count": 47,
@@ -1077,16 +1087,6 @@
         "externallyReported": 14,
         "selfReportPct": 70,
         "ppm": 11750000.0,
-        "trusted": true
-      },
-      {
-        "ca": "Netlock",
-        "id": "netlock",
-        "count": 46,
-        "selfReported": 29,
-        "externallyReported": 17,
-        "selfReportPct": 63,
-        "ppm": 2287.874,
         "trusted": true
       },
       {
@@ -1190,6 +1190,16 @@
         "trusted": true
       },
       {
+        "ca": "Chunghwa Telecom",
+        "id": "chunghwa-telecom",
+        "count": 31,
+        "selfReported": 22,
+        "externallyReported": 9,
+        "selfReportPct": 71,
+        "ppm": 742.355,
+        "trusted": true
+      },
+      {
         "ca": "eMudhra Technologies Limited",
         "id": "emudhra-technologies-limited",
         "count": 31,
@@ -1210,23 +1220,13 @@
         "trusted": true
       },
       {
-        "ca": "Chunghwa Telecom",
-        "id": "chunghwa-telecom",
-        "count": 30,
-        "selfReported": 21,
-        "externallyReported": 9,
-        "selfReportPct": 70,
-        "ppm": 718.408,
-        "trusted": true
-      },
-      {
         "ca": "certSIGN",
         "id": "certsign",
-        "count": 26,
-        "selfReported": 20,
+        "count": 27,
+        "selfReported": 21,
         "externallyReported": 6,
-        "selfReportPct": 77,
-        "ppm": 1262.32,
+        "selfReportPct": 78,
+        "ppm": 1310.871,
         "trusted": true
       },
       {
@@ -1342,11 +1342,11 @@
       {
         "ca": "Disig, a.s.",
         "id": "disig-a-s",
-        "count": 14,
-        "selfReported": 8,
+        "count": 15,
+        "selfReported": 9,
         "externallyReported": 6,
-        "selfReportPct": 57,
-        "ppm": 6989.516,
+        "selfReportPct": 60,
+        "ppm": 7488.767,
         "trusted": true
       },
       {
@@ -1531,9 +1531,9 @@
       }
     ],
     "classification": {
-      "misissuance": 648,
-      "revocation": 360,
-      "governance": 545,
+      "misissuance": 650,
+      "revocation": 361,
+      "governance": 548,
       "validation": 130
     },
     "yearsByClass": [
@@ -1623,9 +1623,9 @@
       },
       {
         "year": 2026,
-        "misissuance": 90,
-        "revocation": 63,
-        "governance": 152,
+        "misissuance": 92,
+        "revocation": 64,
+        "governance": 155,
         "validation": 16
       }
     ],
@@ -1641,7 +1641,7 @@
         "ca": "Sectigo",
         "misissuance": 50,
         "revocation": 21,
-        "governance": 26,
+        "governance": 28,
         "validation": 26
       },
       {
@@ -1694,18 +1694,18 @@
         "validation": 0
       },
       {
+        "ca": "Netlock",
+        "misissuance": 11,
+        "revocation": 13,
+        "governance": 22,
+        "validation": 1
+      },
+      {
         "ca": "Government of The Netherlands, PKIoverheid (Logius)",
         "misissuance": 7,
         "revocation": 3,
         "governance": 37,
         "validation": 0
-      },
-      {
-        "ca": "Netlock",
-        "misissuance": 10,
-        "revocation": 13,
-        "governance": 22,
-        "validation": 1
       },
       {
         "ca": "Internet Security Research Group",
@@ -1778,6 +1778,13 @@
         "validation": 1
       },
       {
+        "ca": "Chunghwa Telecom",
+        "misissuance": 5,
+        "revocation": 4,
+        "governance": 18,
+        "validation": 4
+      },
+      {
         "ca": "eMudhra Technologies Limited",
         "misissuance": 10,
         "revocation": 8,
@@ -1792,16 +1799,9 @@
         "validation": 0
       },
       {
-        "ca": "Chunghwa Telecom",
-        "misissuance": 5,
-        "revocation": 4,
-        "governance": 17,
-        "validation": 4
-      },
-      {
         "ca": "certSIGN",
         "misissuance": 11,
-        "revocation": 3,
+        "revocation": 4,
         "governance": 12,
         "validation": 0
       },
@@ -1884,7 +1884,7 @@
       },
       {
         "ca": "Disig, a.s.",
-        "misissuance": 6,
+        "misissuance": 7,
         "revocation": 2,
         "governance": 6,
         "validation": 0
@@ -2019,15 +2019,15 @@
     "categories": [
       {
         "category": "Misissuance",
-        "count": 648
+        "count": 650
       },
       {
         "category": "Governance",
-        "count": 545
+        "count": 548
       },
       {
         "category": "Revocation",
-        "count": 360
+        "count": 361
       },
       {
         "category": "Validation",
@@ -2035,23 +2035,23 @@
       }
     ],
     "whiteboardTags": {
-      "ca-compliance": 1646,
+      "ca-compliance": 1651,
       "ov-misissuance": 340,
-      "policy-failure": 224,
-      "ev-misissuance": 189,
+      "policy-failure": 225,
+      "ev-misissuance": 190,
       "disclosure-failure": 157,
       "ocsp-failure": 149,
-      "dv-misissuance": 130,
+      "dv-misissuance": 131,
       "crl-failure": 114,
       "audit-finding": 110,
-      "leaf-revocation-delay": 103,
+      "leaf-revocation-delay": 104,
       "ca-misissuance": 66,
       "audit-failure": 50,
       "uncategorized": 45,
       "smime-misissuance": 42,
       "ca-revocation-delay": 35,
-      "external": 33,
-      "audit-delay": 18,
+      "external": 34,
+      "audit-delay": 19,
       "close on 2026-10-28": 11,
       "covid-19": 7,
       "disclosure failure": 7,
@@ -2062,6 +2062,7 @@
       "__-misissuance": 3,
       "ca-infosharing": 2,
       "ca compliance": 2,
+      "close on 2026-10-29": 2,
       "iv-misissuance": 1,
       "ca-informational": 1,
       "close on 2025-06-03": 1,
@@ -2071,9 +2072,7 @@
       "close on 2026-07-16": 1,
       "code-signing-misissuance": 1,
       "one-crl": 1,
-      "close as INVALID on 2026-09-30": 1,
-      "close on 2026-10-22": 1,
-      "close on 2025-10-22": 1
+      "close as INVALID on 2026-09-30": 1
     }
   }
 }
