@@ -1645,7 +1645,7 @@
       "filed": "2026-09-17",
       "summary": "DigiCert: Expired CRL",
       "self_reported": true,
-      "whiteboard": "[ca-compliance] [crl-failure]"
+      "whiteboard": "[ca-compliance] [crl-failure] Next update 2026-11-13"
     },
     {
       "id": 2073230,
@@ -2193,7 +2193,7 @@
       "filed": "2026-09-22",
       "summary": "SwissSign: Backdating of 48+h",
       "self_reported": true,
-      "whiteboard": "[close on 2026-10-28] [ca-compliance] [dv-misissuance]"
+      "whiteboard": "[close on 2026-11-06] [ca-compliance] [dv-misissuance]"
     },
     {
       "id": 2079638,
@@ -3240,7 +3240,7 @@
       "filed": "2026-09-16",
       "summary": "Sectigo: Violation of TLS BR 7.1.3.2.2 in OCSP responses",
       "self_reported": false,
-      "whiteboard": "[close on 2026-10-28] [ca-compliance] [ocsp-failure]"
+      "whiteboard": "[ca-compliance] [ocsp-failure]"
     },
     {
       "id": 2073548,
@@ -3254,7 +3254,7 @@
       "filed": "2026-10-02",
       "summary": "Sectigo: Failure to announce completion of action item within prescribed time period",
       "self_reported": true,
-      "whiteboard": "[close on 2026-10-28] [ca-compliance] [policy-failure] [disclosure-failure]"
+      "whiteboard": "[ca-compliance] [policy-failure] [disclosure-failure]"
     },
     {
       "id": 2077538,
@@ -3268,7 +3268,7 @@
       "filed": "2026-10-05",
       "summary": "Sectigo: Signing infrastructure migration disrupted issuance of 2 CRLs",
       "self_reported": true,
-      "whiteboard": "[close on 2026-10-29] [ca-compliance] [crl-failure]"
+      "whiteboard": "[ca-compliance] [crl-failure]"
     },
     {
       "id": 2080798,
@@ -3296,7 +3296,7 @@
       "filed": "2026-10-28",
       "summary": "Sectigo: Minor number of User Agents blocked on specific CRL domains",
       "self_reported": true,
-      "whiteboard": ""
+      "whiteboard": "[ca-compliance]"
     }
   ],
   "Internet Security Research Group": [
@@ -4014,7 +4014,7 @@
       "filed": "2026-10-14",
       "summary": "GlobalSign: EV Test Certificates missing for 2 roots",
       "self_reported": true,
-      "whiteboard": "[ca-compliance] [policy-failure]"
+      "whiteboard": "[ca-compliance] [policy-failure] Next update 2026-12-04"
     }
   ],
   "Autoridad de Certificacion Firmaprofesional": [
@@ -4317,14 +4317,14 @@
       "filed": "2026-09-14",
       "summary": "Firmaprofesional: OCSP signature verification errors for Secure Web 2024 certificates",
       "self_reported": true,
-      "whiteboard": "[close on 2026-10-28] [ca-compliance] [ocsp-failure]"
+      "whiteboard": "[ca-compliance] [ocsp-failure]"
     },
     {
       "id": 2071832,
       "filed": "2026-09-14",
       "summary": "Firmaprofesional: Delayed preliminary CPR response due to incomplete mailbox monitoring coverage",
       "self_reported": true,
-      "whiteboard": "[close on 2026-10-28] [ca-compliance] [policy-failure]"
+      "whiteboard": "[ca-compliance] [policy-failure]"
     },
     {
       "id": 2072600,
@@ -4345,7 +4345,7 @@
       "filed": "2026-10-02",
       "summary": "Firmaprofesional: AC Firmaprofesional - CA1 excluded from audit scope",
       "self_reported": true,
-      "whiteboard": "[ca-compliance] [audit-failure]"
+      "whiteboard": "[close on 2026-11-04] [ca-compliance] [audit-failure]"
     }
   ],
   "Actalis": [
@@ -4515,7 +4515,7 @@
       "filed": "2026-06-24",
       "summary": "Actalis: Undisclosed Subordinate CA Certificate",
       "self_reported": true,
-      "whiteboard": "[close on 2026-10-28] [ca-compliance] [disclosure-failure]"
+      "whiteboard": "[ca-compliance] [disclosure-failure]"
     },
     {
       "id": 2056934,
@@ -4529,7 +4529,7 @@
       "filed": "2026-08-04",
       "summary": "Actalis: Issuance of Server TLS Certificates with id-kp-clientAuth against CPS",
       "self_reported": true,
-      "whiteboard": "[close on 2026-10-28] [ca-compliance] [dv-misissuance] [ov-misissuance] [ev-misissuance]"
+      "whiteboard": "[ca-compliance] [dv-misissuance] [ov-misissuance] [ev-misissuance]"
     },
     {
       "id": 2067210,
@@ -4769,7 +4769,7 @@
       "filed": "2026-10-28",
       "summary": "certSIGN: Root CRL validity set to 12 month instead of less",
       "self_reported": true,
-      "whiteboard": ""
+      "whiteboard": "[ca-compliance] [policy-failure]"
     }
   ],
   "Consorci AOC": [
@@ -5088,7 +5088,7 @@
       "filed": "2026-10-15",
       "summary": "D-TRUST: Reported CA key-size inconsistency in TSPS v3.1",
       "self_reported": true,
-      "whiteboard": "[close on 2026-10-28] [ca-compliance]"
+      "whiteboard": "[ca-compliance]"
     },
     {
       "id": 2082644,
@@ -5230,7 +5230,7 @@
       "filed": "2026-09-26",
       "summary": "Disig: CRL contains not allowed attributes",
       "self_reported": false,
-      "whiteboard": "[close on 2026-10-28] [ca-compliance] [crl-failure]"
+      "whiteboard": "[ca-compliance] [crl-failure]"
     },
     {
       "id": 2085304,
@@ -6077,6 +6077,13 @@
       "summary": "IdenTrust: Issuance of Subordinate CAs non-compliant with CP/CPS",
       "self_reported": true,
       "whiteboard": ""
+    },
+    {
+      "id": 2086743,
+      "filed": "2026-10-28",
+      "summary": "IdenTrust: EV field missing in the Non-TLS CP/CPS",
+      "self_reported": true,
+      "whiteboard": "[ca-compliance] [policy-failure]"
     }
   ],
   "Microsec Ltd.": [
@@ -6945,7 +6952,14 @@
       "filed": "2026-10-09",
       "summary": "TWCA: Non-critical basicConstraints in Delegated OCSP Responder Certificates",
       "self_reported": true,
-      "whiteboard": "[ca-compliance] [ocsp-failure]"
+      "whiteboard": "[ca-compliance] [ocsp-failure] Next update 2026-11-13"
+    },
+    {
+      "id": 2086949,
+      "filed": "2026-10-29",
+      "summary": "TWCA: Unauthorized access to an RA server",
+      "self_reported": true,
+      "whiteboard": ""
     }
   ],
   "Deutsche Telekom Security GmbH": [
@@ -7171,7 +7185,7 @@
       "filed": "2026-10-12",
       "summary": "Telekom Security: OCSP responder uses incorrect signature algorithm for P-384 signing key",
       "self_reported": true,
-      "whiteboard": "[ca-compliance] [ocsp-failure]"
+      "whiteboard": "[ca-compliance] [ocsp-failure] Next update 2027-01-08"
     },
     {
       "id": 2082799,
@@ -8938,6 +8952,13 @@
       "summary": "ACCV: EKU Inconsistency in ACCV RSA1 TLS CA Certificates Identified During Chrome Root Inclusion Review",
       "self_reported": false,
       "whiteboard": "[ca-compliance] [ca-misissuance]"
+    },
+    {
+      "id": 2086575,
+      "filed": "2026-10-28",
+      "summary": "ACCV: Delayed Full Incident Report for Bug 2080796",
+      "self_reported": true,
+      "whiteboard": "[ca-compliance] [policy-failure]"
     }
   ],
   "Cybertrust Japan Co., Ltd.": [
@@ -9174,7 +9195,7 @@
       "filed": "2026-09-25",
       "summary": "KIR: SZAFIR ROOT CA3 TLS CRL nextUpdate exceeds 12 months",
       "self_reported": true,
-      "whiteboard": "[close on 2026-10-28] [ca-compliance] [crl-failure]"
+      "whiteboard": "[ca-compliance] [crl-failure]"
     },
     {
       "id": 2082585,
@@ -9626,7 +9647,7 @@
       "filed": "2026-07-27",
       "summary": "Google Trust Services: CPS Missing root program attestation",
       "self_reported": false,
-      "whiteboard": "[close on 2026-10-28] [ca-compliance] [policy-failure]"
+      "whiteboard": "[ca-compliance] [policy-failure]"
     }
   ],
   "China Financial Certification Authority (CFCA)": [
@@ -10255,7 +10276,7 @@
       "filed": "2026-09-01",
       "summary": "Chunghwa Telecom: Delay of 2025 WebTrust for CA Audit Reports seals for ePKI & HiPKI",
       "self_reported": true,
-      "whiteboard": "[close on 2026-10-29] [ca-compliance] [audit-delay]"
+      "whiteboard": "[close on 2026-11-09] [ca-compliance] [audit-delay]"
     },
     {
       "id": 2076204,
@@ -10523,7 +10544,7 @@
       "filed": "2026-09-23",
       "summary": "SSL.com: Failure to Post all Root and Intermediate CA certificates in Repository identified in CP/CPS",
       "self_reported": true,
-      "whiteboard": "[ca-compliance] [policy-failure] [disclosure-failure]"
+      "whiteboard": "[close on 2026-11-04] [ca-compliance] [policy-failure] [disclosure-failure]"
     },
     {
       "id": 2076197,
@@ -11032,7 +11053,7 @@
       "filed": "2026-09-19",
       "summary": "TunTrust: CP/CPS markdown version missing root program attestation",
       "self_reported": true,
-      "whiteboard": "[ca-compliance] [policy-failure]"
+      "whiteboard": "[close on 2026-11-04] [ca-compliance] [policy-failure]"
     }
   ],
   "eMudhra Technologies Limited": [
@@ -11763,7 +11784,7 @@
       "filed": "2026-10-09",
       "summary": "NAVER Cloud Trust Services: OCSP responses with an empty responseExtensions",
       "self_reported": true,
-      "whiteboard": "[ca-compliance] [ocsp-failure]"
+      "whiteboard": "[close on 2026-11-04] [ca-compliance] [ocsp-failure]"
     },
     {
       "id": 2081113,
