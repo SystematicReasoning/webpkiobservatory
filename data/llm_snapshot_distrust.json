@@ -1,7 +1,7 @@
 {
   "$schema": "https://webpki.systematicreasoning.com/schema.json",
   "version": "1.0.0",
-  "generatedAt": "2026-10-30T12:55:49.522605+00:00",
+  "generatedAt": "2026-10-31T12:28:35.110838+00:00",
   "snapshotUrl": "https://webpki.systematicreasoning.com/llm_snapshot.json",
   "note": "Sliced subset of llm_snapshot.json. Fetch the full snapshot for complete data.",
   "distrustEvents": [
@@ -922,7 +922,7 @@
     "responseDrivenPct": 73
   },
   "incidents": {
-    "total": 1713,
+    "total": 1715,
     "caCount": 55,
     "years": [
       {
@@ -975,7 +975,7 @@
       },
       {
         "year": 2026,
-        "count": 351
+        "count": 353
       }
     ],
     "perCA": [
@@ -1032,11 +1032,11 @@
       {
         "ca": "Asseco Data Systems S.A.",
         "id": "asseco-data-systems-s-a",
-        "count": 59,
-        "selfReported": 34,
+        "count": 60,
+        "selfReported": 35,
         "externallyReported": 25,
         "selfReportPct": 58,
-        "ppm": 9.328,
+        "ppm": 9.486,
         "trusted": true
       },
       {
@@ -1240,6 +1240,16 @@
         "trusted": true
       },
       {
+        "ca": "Krajowa Izba Rozliczeniowa S.A. (KIR)",
+        "id": "krajowa-izba-rozliczeniowa-s-a-kir",
+        "count": 23,
+        "selfReported": 3,
+        "externallyReported": 20,
+        "selfReportPct": 13,
+        "ppm": 7165.109,
+        "trusted": true
+      },
+      {
         "ca": "Government of Spain, Fábrica Nacional de Moneda y Timbre (FNMT)",
         "id": "government-of-spain-f-brica-nacional-de-moneda-y-timbre-fnmt",
         "count": 23,
@@ -1247,16 +1257,6 @@
         "externallyReported": 4,
         "selfReportPct": 83,
         "ppm": 1301.273,
-        "trusted": true
-      },
-      {
-        "ca": "Krajowa Izba Rozliczeniowa S.A. (KIR)",
-        "id": "krajowa-izba-rozliczeniowa-s-a-kir",
-        "count": 22,
-        "selfReported": 2,
-        "externallyReported": 20,
-        "selfReportPct": 9,
-        "ppm": 6853.583,
         "trusted": true
       },
       {
@@ -1531,8 +1531,8 @@
       }
     ],
     "classification": {
-      "misissuance": 657,
-      "revocation": 370,
+      "misissuance": 658,
+      "revocation": 371,
       "governance": 555,
       "validation": 131
     },
@@ -1623,8 +1623,8 @@
       },
       {
         "year": 2026,
-        "misissuance": 99,
-        "revocation": 73,
+        "misissuance": 100,
+        "revocation": 74,
         "governance": 162,
         "validation": 17
       }
@@ -1667,7 +1667,7 @@
       },
       {
         "ca": "Asseco Data Systems S.A.",
-        "misissuance": 28,
+        "misissuance": 29,
         "revocation": 10,
         "governance": 17,
         "validation": 4
@@ -1813,18 +1813,18 @@
         "validation": 1
       },
       {
+        "ca": "Krajowa Izba Rozliczeniowa S.A. (KIR)",
+        "misissuance": 11,
+        "revocation": 7,
+        "governance": 5,
+        "validation": 0
+      },
+      {
         "ca": "Government of Spain, Fábrica Nacional de Moneda y Timbre (FNMT)",
         "misissuance": 9,
         "revocation": 2,
         "governance": 11,
         "validation": 1
-      },
-      {
-        "ca": "Krajowa Izba Rozliczeniowa S.A. (KIR)",
-        "misissuance": 11,
-        "revocation": 6,
-        "governance": 5,
-        "validation": 0
       },
       {
         "ca": "HARICA",
@@ -2019,7 +2019,7 @@
     "categories": [
       {
         "category": "Misissuance",
-        "count": 657
+        "count": 658
       },
       {
         "category": "Governance",
@@ -2027,7 +2027,7 @@
       },
       {
         "category": "Revocation",
-        "count": 370
+        "count": 371
       },
       {
         "category": "Validation",
@@ -2035,14 +2035,14 @@
       }
     ],
     "whiteboardTags": {
-      "ca-compliance": 1658,
+      "ca-compliance": 1659,
       "ov-misissuance": 340,
       "policy-failure": 230,
       "ev-misissuance": 190,
       "disclosure-failure": 157,
       "ocsp-failure": 150,
       "dv-misissuance": 131,
-      "crl-failure": 114,
+      "crl-failure": 115,
       "audit-finding": 110,
       "leaf-revocation-delay": 104,
       "ca-misissuance": 66,
@@ -2063,6 +2063,7 @@
       "__-misissuance": 3,
       "ca-infosharing": 2,
       "ca compliance": 2,
+      "close on 2026-11-06": 2,
       "close on 2026-11-05": 2,
       "iv-misissuance": 1,
       "ca-informational": 1,
@@ -2075,8 +2076,7 @@
       "one-crl": 1,
       "close on 2026-11-03": 1,
       "close on 2026-11-09": 1,
-      "close as INVALID on 2026-09-30": 1,
-      "close on 2026-11-06": 1
+      "close as INVALID on 2026-09-30": 1
     }
   }
 }
