@@ -15954,9 +15954,9 @@
   "2085787": {
     "cat": "revocation",
     "self": true,
-    "severity": "high",
-    "summary": "IZENPE: ocsp requests filtered by user-agent",
-    "classified_at": "2026-10-27T11:47:11.537274+00:00",
+    "severity": "medium",
+    "summary": "IZENPE: OCSP requests filtered by user-agent",
+    "classified_at": "2026-11-04T13:48:40.892493+00:00",
     "prompt_version": "v2"
   },
   "2085962": {
@@ -16075,8 +16075,8 @@
     "cat": "misissuance",
     "self": false,
     "severity": "high",
-    "summary": "TWCA subscriber certificate serial numbers have 63 bits of CSPRNG output instead of 64 bits",
-    "classified_at": "2026-11-02T14:48:48.910971+00:00",
+    "summary": "TWCA: Subscriber certificate serial numbers have 63 bits of CSPRNG output instead of 64 bits",
+    "classified_at": "2026-11-04T13:48:40.892554+00:00",
     "prompt_version": "v2"
   },
   "2087990": {
@@ -16093,6 +16093,46 @@
     "severity": "medium",
     "summary": "Atos: Failure to respond to Certificate Problem Report within 24 hours",
     "classified_at": "2026-11-02T14:48:48.910983+00:00",
+    "prompt_version": "v2"
+  },
+  "2088080": {
+    "cat": "misissuance",
+    "self": false,
+    "severity": "medium",
+    "summary": "NETLOCK: Arany (Class Gold) root CRL entry for subordinate CA certificate without reasonCode",
+    "classified_at": "2026-11-04T13:48:40.892563+00:00",
+    "prompt_version": "v2"
+  },
+  "2088356": {
+    "cat": "misissuance",
+    "self": true,
+    "severity": "medium",
+    "summary": "Sectigo: Mismatch between organizationIdentifier and jurisdictionStateOrProvince",
+    "classified_at": "2026-11-04T13:48:40.892566+00:00",
+    "prompt_version": "v2"
+  },
+  "2088476": {
+    "cat": "misissuance",
+    "self": true,
+    "severity": "high",
+    "summary": "D-Trust: EV TLS certificates missing subject attributes required by CSM CPS section 3.1.4",
+    "classified_at": "2026-11-04T13:48:40.892570+00:00",
+    "prompt_version": "v2"
+  },
+  "2088692": {
+    "cat": "governance",
+    "self": true,
+    "severity": "medium",
+    "summary": "SSL.com: Timestamp Certificate private keys used more than 15 months after notBefore",
+    "classified_at": "2026-11-04T13:48:40.892574+00:00",
+    "prompt_version": "v2"
+  },
+  "2088901": {
+    "cat": "revocation",
+    "self": true,
+    "severity": "medium",
+    "summary": "Buypass: cRLNumber reused across Root CA CRLs",
+    "classified_at": "2026-11-04T13:48:40.892577+00:00",
     "prompt_version": "v2"
   }
 }
