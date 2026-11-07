@@ -1,7 +1,7 @@
 {
   "$schema": "https://webpki.systematicreasoning.com/schema.json",
   "version": "1.0.0",
-  "generatedAt": "2026-11-06T14:41:01.733490+00:00",
+  "generatedAt": "2026-11-07T13:26:14.105420+00:00",
   "snapshotUrl": "https://webpki.systematicreasoning.com/llm_snapshot.json",
   "note": "Sliced subset of llm_snapshot.json. Fetch the full snapshot for complete data.",
   "governance": {
@@ -11,11 +11,11 @@
         "firstPublicAction": 7,
         "neverActed": 0,
         "stillTrusts": 0,
-        "bugzillaCoverage": 738,
-        "bugzillaCoverageRecent": 299,
+        "bugzillaCoverage": 740,
+        "bugzillaCoverageRecent": 301,
         "substantiveOversight": 296,
         "substantiveOversightRecent": 115,
-        "oversightComments": 1957,
+        "oversightComments": 1959,
         "ballotsProposed": 16,
         "voteParticipation": "9/14",
         "substantiveBallots": 12,
@@ -80,9 +80,9 @@
       }
     },
     "meta": {
-      "bugsTotal": 2018,
-      "bugsWithComments": 2018,
-      "totalCommentsAnalyzed": 6217
+      "bugsTotal": 2019,
+      "bugsWithComments": 2019,
+      "totalCommentsAnalyzed": 6221
     },
     "bugCreationByYear": [
       {
@@ -187,7 +187,7 @@
         "mozilla": 1,
         "apple": 10,
         "microsoft": 13,
-        "other": 377
+        "other": 378
       }
     ],
     "bugCreationTotals": {
@@ -195,7 +195,7 @@
       "mozilla": 270,
       "apple": 28,
       "microsoft": 32,
-      "other": 1624
+      "other": 1625
     },
     "discoveryMethods": {
       "totals": {
@@ -203,7 +203,7 @@
         "unknown": 461,
         "community": 279,
         "self_detected": 559,
-        "audit": 135,
+        "audit": 136,
         "root_program": 77
       },
       "by_year": [
@@ -333,30 +333,30 @@
           "external_researcher": 32,
           "root_program": 20,
           "community": 19,
-          "audit": 27,
+          "audit": 28,
           "unknown": 38,
-          "total": 399
+          "total": 400
         }
       ],
-      "classified_bugs": 1830,
+      "classified_bugs": 1831,
       "excluded_distrusted": 188,
-      "corpus_note": "1830 bugs classified (excludes 188 distrusted-CA bugs). Corpus is larger than the 1,428-incident count in incidents.json because discovery classification runs on all non-distrusted bugs_raw entries, including ~75 sub-operator naming variants (e.g. 'DigiCert / ABB') that incidents.py normalizes into parent CA counts."
+      "corpus_note": "1831 bugs classified (excludes 188 distrusted-CA bugs). Corpus is larger than the 1,428-incident count in incidents.json because discovery classification runs on all non-distrusted bugs_raw entries, including ~75 sub-operator naming variants (e.g. 'DigiCert / ABB') that incidents.py normalizes into parent CA counts."
     },
     "programCommentSummary": {
       "chrome": {
-        "total_comments": 2145,
-        "substantive_comments": 2145,
+        "total_comments": 2147,
+        "substantive_comments": 2147,
         "workflow_events": 0,
         "admin_comments": 128,
-        "oversight_comments": 1957,
-        "recent_oversight_comments": 666,
+        "oversight_comments": 1959,
+        "recent_oversight_comments": 668,
         "technical_oversight_comments": 620,
         "recent_technical_oversight_comments": 216,
         "self_incident_comments": 60,
         "recent_self_incident_comments": 30,
-        "bugs_engaged": 754,
-        "bugs_oversight": 738,
-        "recent_bugs_oversight": 299,
+        "bugs_engaged": 756,
+        "bugs_oversight": 740,
+        "recent_bugs_oversight": 301,
         "bugs_technical_oversight": 296,
         "recent_bugs_technical_oversight": 115
       },
@@ -378,16 +378,16 @@
         "recent_bugs_technical_oversight": 48
       },
       "apple": {
-        "total_comments": 209,
-        "substantive_comments": 209,
+        "total_comments": 210,
+        "substantive_comments": 210,
         "workflow_events": 0,
         "admin_comments": 3,
         "oversight_comments": 65,
         "recent_oversight_comments": 65,
         "technical_oversight_comments": 11,
         "recent_technical_oversight_comments": 11,
-        "self_incident_comments": 141,
-        "recent_self_incident_comments": 84,
+        "self_incident_comments": 142,
+        "recent_self_incident_comments": 85,
         "bugs_engaged": 65,
         "bugs_oversight": 46,
         "recent_bugs_oversight": 46,
@@ -395,16 +395,16 @@
         "recent_bugs_technical_oversight": 6
       },
       "microsoft": {
-        "total_comments": 583,
-        "substantive_comments": 583,
+        "total_comments": 584,
+        "substantive_comments": 584,
         "workflow_events": 0,
         "admin_comments": 2,
         "oversight_comments": 0,
         "recent_oversight_comments": 0,
         "technical_oversight_comments": 0,
         "recent_technical_oversight_comments": 0,
-        "self_incident_comments": 581,
-        "recent_self_incident_comments": 528,
+        "self_incident_comments": 582,
+        "recent_self_incident_comments": 529,
         "bugs_engaged": 48,
         "bugs_oversight": 0,
         "recent_bugs_oversight": 0,
@@ -414,7 +414,7 @@
     },
     "oversightConcentration": {
       "chrome": {
-        "total_oversight_comments": 1957,
+        "total_oversight_comments": 1959,
         "unique_contributors": 6,
         "top_contributor_pct": 86,
         "top_3_contributors_pct": 97,
@@ -937,7 +937,7 @@
       },
       {
         "quarter": "2026-Q4",
-        "chrome_comments": 10,
+        "chrome_comments": 12,
         "chrome_people": 1,
         "mozilla_comments": 6,
         "mozilla_people": 2,
@@ -2495,7 +2495,7 @@
           "bug": 1348774,
           "ca": "Thailand National Root CAs - G2 and G3",
           "filed": "2017-03-20",
-          "days_waiting": 3518,
+          "days_waiting": 3519,
           "stage": "verifying",
           "request_type": "existing_ca"
         },
@@ -2503,7 +2503,7 @@
           "bug": 1449941,
           "ca": "Fina Root CA certificate",
           "filed": "2018-03-29",
-          "days_waiting": 3144,
+          "days_waiting": 3145,
           "stage": "unknown",
           "request_type": "new_org"
         },
@@ -2511,7 +2511,7 @@
           "bug": 1532206,
           "ca": "MSC Trustgate root certificate(s)",
           "filed": "2019-03-04",
-          "days_waiting": 2804,
+          "days_waiting": 2805,
           "stage": "verifying",
           "request_type": "new_org"
         },
@@ -2519,7 +2519,7 @@
           "bug": 1602415,
           "ca": "PostSignum Root QCA 4 and PostSignum Root QCA ECC R1",
           "filed": "2019-12-09",
-          "days_waiting": 2524,
+          "days_waiting": 2525,
           "stage": "verifying",
           "request_type": "existing_ca"
         },
@@ -2527,7 +2527,7 @@
           "bug": 1674669,
           "ca": "Autoridade Certificadora Raiz Brasileira root certificate",
           "filed": "2020-11-01",
-          "days_waiting": 2196,
+          "days_waiting": 2197,
           "stage": "unknown",
           "request_type": "existing_ca"
         },
@@ -2535,7 +2535,7 @@
           "bug": 1707136,
           "ca": "GSE SMIME Roots to Mozilla root store",
           "filed": "2021-04-23",
-          "days_waiting": 2023,
+          "days_waiting": 2024,
           "stage": "unknown",
           "request_type": "new_org"
         },
@@ -2543,7 +2543,7 @@
           "bug": 1845081,
           "ca": "MOIS SSL Root CA",
           "filed": "2023-07-24",
-          "days_waiting": 1201,
+          "days_waiting": 1202,
           "stage": "unknown",
           "request_type": "new_org"
         },
@@ -2551,7 +2551,7 @@
           "bug": 1870013,
           "ca": "Saudi National SSL root CA",
           "filed": "2023-12-14",
-          "days_waiting": 1058,
+          "days_waiting": 1059,
           "stage": "initial",
           "request_type": "existing_ca"
         },
@@ -2559,7 +2559,7 @@
           "bug": 1883983,
           "ca": "SOLUTI GLOBAL ROOT CA",
           "filed": "2024-03-06",
-          "days_waiting": 975,
+          "days_waiting": 976,
           "stage": "initial",
           "request_type": "new_org"
         },
@@ -2567,7 +2567,7 @@
           "bug": 1889859,
           "ca": "emSign Single-purpose Root CA Certificates",
           "filed": "2024-04-05",
-          "days_waiting": 945,
+          "days_waiting": 946,
           "stage": "unknown",
           "request_type": "new_org"
         },
@@ -2575,7 +2575,7 @@
           "bug": 1938884,
           "ca": "NAVER Cloud Trust Services Root Certificates",
           "filed": "2024-12-23",
-          "days_waiting": 683,
+          "days_waiting": 684,
           "stage": "verifying",
           "request_type": "existing_ca"
         },
@@ -2583,7 +2583,7 @@
           "bug": 1948085,
           "ca": "Amazon EU Roots: RSA 2048 EU M1, ECDSA 256 EU M1, and ECDSA ",
           "filed": "2025-02-13",
-          "days_waiting": 631,
+          "days_waiting": 632,
           "stage": "verifying",
           "request_type": "existing_ca"
         },
@@ -2591,7 +2591,7 @@
           "bug": 1960408,
           "ca": "IdenTrust single purpose roots",
           "filed": "2025-04-14",
-          "days_waiting": 571,
+          "days_waiting": 572,
           "stage": "unknown",
           "request_type": "existing_ca"
         },
@@ -2599,7 +2599,7 @@
           "bug": 1978904,
           "ca": "NETLOCK's S/MIME & TLS Root",
           "filed": "2025-07-23",
-          "days_waiting": 471,
+          "days_waiting": 472,
           "stage": "initial",
           "request_type": "new_org"
         },
@@ -2607,7 +2607,7 @@
           "bug": 1983217,
           "ca": "Aretiico Group PLC and Aretiico Inc root certificates to Moz",
           "filed": "2025-08-15",
-          "days_waiting": 448,
+          "days_waiting": 449,
           "stage": "initial",
           "request_type": "existing_ca"
         },
@@ -2615,7 +2615,7 @@
           "bug": 1988341,
           "ca": "ACCV ROOT RSA TLS 2024 and ACCV ROOT ECC TLS 2024 root certi",
           "filed": "2025-09-12",
-          "days_waiting": 420,
+          "days_waiting": 421,
           "stage": "verifying",
           "request_type": "new_org"
         },
@@ -2623,7 +2623,7 @@
           "bug": 1988361,
           "ca": "SHECA Single-purpose Root CA Certificates",
           "filed": "2025-09-12",
-          "days_waiting": 420,
+          "days_waiting": 421,
           "stage": "verifying",
           "request_type": "new_org"
         },
@@ -2631,7 +2631,7 @@
           "bug": 1990213,
           "ca": "certSIGN Root CA G4 root certificate",
           "filed": "2025-09-23",
-          "days_waiting": 409,
+          "days_waiting": 410,
           "stage": "verifying",
           "request_type": "existing_ca"
         },
@@ -2639,7 +2639,7 @@
           "bug": 1992971,
           "ca": "Actalis TLS Root CAs 2025 and Actalis SMIME Root CAs 2025",
           "filed": "2025-10-07",
-          "days_waiting": 395,
+          "days_waiting": 396,
           "stage": "verifying",
           "request_type": "existing_ca"
         },
@@ -2647,7 +2647,7 @@
           "bug": 2001274,
           "ca": "Cybertrust Japan Root CA Cybertrust iTrust TLS ECCP384 Root ",
           "filed": "2025-11-20",
-          "days_waiting": 351,
+          "days_waiting": 352,
           "stage": "verifying",
           "request_type": "existing_ca"
         },
@@ -2655,7 +2655,7 @@
           "bug": 2001275,
           "ca": "Cybertrust Japan Root CA Cybertrust iTrust TLS RSA4096 Root ",
           "filed": "2025-11-20",
-          "days_waiting": 351,
+          "days_waiting": 352,
           "stage": "verifying",
           "request_type": "existing_ca"
         },
@@ -2663,7 +2663,7 @@
           "bug": 2007765,
           "ca": "Chunghwa Telecom CHT TrustRoot CA",
           "filed": "2025-12-26",
-          "days_waiting": 315,
+          "days_waiting": 316,
           "stage": "verifying",
           "request_type": "existing_ca"
         },
@@ -2671,7 +2671,7 @@
           "bug": 2011714,
           "ca": "\"OATI webCARES Server Root CA\" to the Mozilla Root CA Progra",
           "filed": "2026-01-21",
-          "days_waiting": 289,
+          "days_waiting": 290,
           "stage": "initial",
           "request_type": "new_org"
         },
@@ -2679,7 +2679,7 @@
           "bug": 2031847,
           "ca": "FNMT TLS RSA Root Certificate SERVIDORES SEGUROS G2R",
           "filed": "2026-04-14",
-          "days_waiting": 206,
+          "days_waiting": 207,
           "stage": "initial",
           "request_type": "new_org"
         },
@@ -2687,7 +2687,7 @@
           "bug": 2033449,
           "ca": "A-Trust SMIME Root",
           "filed": "2026-04-20",
-          "days_waiting": 200,
+          "days_waiting": 201,
           "stage": "verifying",
           "request_type": "existing_ca"
         },
@@ -2695,7 +2695,7 @@
           "bug": 2033676,
           "ca": "National Certification Authority of Sri Lanka TLS Root CA - ",
           "filed": "2026-04-21",
-          "days_waiting": 199,
+          "days_waiting": 200,
           "stage": "initial",
           "request_type": "new_org"
         },
@@ -2703,7 +2703,7 @@
           "bug": 2033815,
           "ca": "Disig new S/MIME & TLS Roots",
           "filed": "2026-04-21",
-          "days_waiting": 199,
+          "days_waiting": 200,
           "stage": "verifying",
           "request_type": "new_org"
         },
@@ -2711,7 +2711,7 @@
           "bug": 2035858,
           "ca": "GoDaddy and Starfield TLS R1 Root Certificates",
           "filed": "2026-04-29",
-          "days_waiting": 191,
+          "days_waiting": 192,
           "stage": "unknown",
           "request_type": "existing_ca"
         },
@@ -2719,15 +2719,15 @@
           "bug": 2037054,
           "ca": "Certum TLS RSA Root CA and Certum TLS ECC Root CA",
           "filed": "2026-05-05",
-          "days_waiting": 185,
-          "stage": "verifying",
+          "days_waiting": 186,
+          "stage": "unknown",
           "request_type": "new_org"
         },
         {
           "bug": 2046825,
           "ca": "KIR single-purpose TLS and SMIME Root CA's",
           "filed": "2026-06-11",
-          "days_waiting": 148,
+          "days_waiting": 149,
           "stage": "initial",
           "request_type": "new_org"
         },
@@ -2735,7 +2735,7 @@
           "bug": 2059382,
           "ca": "Microsec \"e-Szigno RSA TLS Root CA 2025\" and \"e-Szigno SMIME",
           "filed": "2026-07-30",
-          "days_waiting": 99,
+          "days_waiting": 100,
           "stage": "initial",
           "request_type": "existing_ca"
         },
@@ -2743,7 +2743,7 @@
           "bug": 2074675,
           "ca": "ISRG Root Certificates",
           "filed": "2026-09-22",
-          "days_waiting": 45,
+          "days_waiting": 46,
           "stage": "initial",
           "request_type": "new_org"
         }
@@ -3020,14 +3020,14 @@
         "median_days": 624,
         "mean_days": 654,
         "max_days": 1626,
-        "longest_pending_days": 3518,
+        "longest_pending_days": 3519,
         "new_org": {
           "count": 6,
           "median_days": 700,
           "mean_days": 772,
           "max_days": 1053,
           "pending_count": 16,
-          "longest_pending_days": 3144
+          "longest_pending_days": 3145
         },
         "existing_ca": {
           "count": 27,
@@ -3035,7 +3035,7 @@
           "mean_days": 627,
           "max_days": 1626,
           "pending_count": 16,
-          "longest_pending_days": 3518
+          "longest_pending_days": 3519
         }
       },
       "note": "Mozilla only — only root program with a fully public inclusion pipeline (Bugzilla)."
@@ -3139,8 +3139,8 @@
       },
       {
         "y": 2026,
-        "total_bugs": 401,
-        "chrome": 7.2,
+        "total_bugs": 402,
+        "chrome": 7.7,
         "mozilla": 3.2,
         "apple": 3.5,
         "microsoft": 0.0
@@ -3149,7 +3149,7 @@
   },
   "ecosystemParticipation": {
     "meta": {
-      "generated_at": "2026-11-06T14:12:20.029418+00:00",
+      "generated_at": "2026-11-07T12:54:51.500983+00:00",
       "pipeline_version": "1.1",
       "total_orgs": 62,
       "total_cabf_ca_members": 56,
@@ -3189,7 +3189,7 @@
       {
         "name": "Let's Encrypt",
         "cabfMember": true,
-        "bugzillaEngaged": 64,
+        "bugzillaEngaged": 65,
         "ballotsProposed": 2,
         "ballotsEndorsed": 2,
         "bugsFiled": 1
@@ -3837,13 +3837,13 @@
     "medianUseDays": 62
   },
   "auditIntelligence": {
-    "generatedAt": "2026-11-06T14:05:58.584016Z",
+    "generatedAt": "2026-11-07T12:49:14.317404Z",
     "summary": {
       "totalCAOwners": 82,
       "parsedLetters": 79,
       "highTransparencyGap": 41,
       "qualifiedOpinions": 5,
-      "mattersWithoutBzAnchor": 9,
+      "mattersWithoutBzAnchor": 8,
       "auditorHHI": 553.2,
       "auditRecordStatus": {
         "named": 82,
@@ -3863,14 +3863,14 @@
       "ETSI": 34
     },
     "selfReportByFramework": {
-      "webTrust": 62.8,
+      "webTrust": 62.7,
       "etsi": 69.5
     },
     "inPeriodDetection": {
       "covered": 429,
-      "caught": 131,
+      "caught": 106,
       "multiCycleMisses": 43,
-      "detectionPct": 30.5,
+      "detectionPct": 24.7,
       "note": "Denominator = unique bugs with at least one covering audit period. Caught = mentioned in any covering letter."
     },
     "perAuditorDetection": [
@@ -3911,12 +3911,6 @@
         "detectionPct": 46.7
       },
       {
-        "auditor": "Ernst & Young",
-        "caught": 27,
-        "total": 66,
-        "detectionPct": 40.9
-      },
-      {
         "auditor": "DEKRA",
         "caught": 5,
         "total": 13,
@@ -3953,10 +3947,16 @@
         "detectionPct": 25.0
       },
       {
+        "auditor": "Ernst & Young",
+        "caught": 14,
+        "total": 66,
+        "detectionPct": 21.2
+      },
+      {
         "auditor": "BDO International",
-        "caught": 33,
+        "caught": 21,
         "total": 155,
-        "detectionPct": 21.3
+        "detectionPct": 13.5
       },
       {
         "auditor": "SunRise CPAs / DFK",
@@ -4010,11 +4010,11 @@
     "alvEquivalentFindings": {
       "parsedLetters": 79,
       "missingRootFingerprints": 0,
-      "certificateScopeGaps": 7,
+      "certificateScopeGaps": 6,
       "accurateFingerprintCoverage": 0,
       "untracedRoots": 1,
       "missingFingerprintsPct": 0,
-      "scopeGapsPct": 9
+      "scopeGapsPct": 8
     },
     "perAuditorAlvFindings": [
       {
@@ -4388,11 +4388,11 @@
     "mattersWithoutBzAnchor": [
       {
         "ca": "Google Trust Services LLC",
-        "summary": "GTS failed to write an audit log entry for a certificate lifecycle event during "
+        "summary": "GTS did not record lifecycle events for one certificate in the audit log due to "
       },
       {
         "ca": "Izenpe S.A.",
-        "summary": "Izenpe issued OCSP responder certificates with not-allowed Key Usage values."
+        "summary": "IZENPE used not allowed Key Usage in an OCSP responder certificate."
       },
       {
         "ca": "Swiss BIT, Swiss Federal Office of Information Technology, Systems and Telecommunication (FOITT)",
@@ -4435,10 +4435,6 @@
         "summary": "The process for destroying cryptographic keys and devices is only available as a"
       },
       {
-        "ca": "A-Trust",
-        "summary": "No assertion to a mass revocation plan in section 5.7.1 of the combined CP/CPS, "
-      },
-      {
         "ca": "iTrusChina Co., Ltd.",
         "summary": "iTrusChina disclosed commitment about mass revocation plan for TLS certificates "
       },
@@ -4452,7 +4448,7 @@
       },
       {
         "ca": "Government of Sweden (Försäkringskassan)",
-        "summary": "SSIA overlooked ballot SC47v2 when published in 2021 (effective 16 August 2021, "
+        "summary": "SSIA overlooked ballot SC47v2 which prohibited issuance of new certificates with"
       },
       {
         "ca": "Saudi Data and Artificial Intelligence Authority (SDAIA)",
@@ -4483,7 +4479,7 @@
         "caCount": 7,
         "country": "Global (US/UK)",
         "avgQualityScore": 50.7,
-        "avgGapScore": 93.6,
+        "avgGapScore": 93.7,
         "highGapCount": 7,
         "avgMattersPerCA": 3.3
       },
@@ -4557,7 +4553,7 @@
         "avgQualityScore": 100.0,
         "avgGapScore": null,
         "highGapCount": 0,
-        "avgMattersPerCA": 1.0
+        "avgMattersPerCA": 0.5
       },
       {
         "name": "CSQA Certificazioni",
@@ -4571,24 +4567,9 @@
     ]
   },
   "tabIntros": {
-    "generatedAt": "2026-11-06T14:40:09.971651+00:00",
-    "model": "claude-sonnet-4-5",
+    "generatedAt": "2026-11-07T13:25:17.683083+00:00",
+    "model": null,
     "note": "Analyst summaries generated by Claude from the prior day's snapshot. Each paragraph states the key finding for that tab with specific numbers and connects to related tabs.",
-    "intros": {
-      "market": "Five CAs control 88% of all publicly trusted certificate issuance, led by Internet Security Research Group at 32% and Google Trust Services at 21%. The CR3 concentration of 71% reflects a market where three organizations govern trust for most of the web. DigiCert, GoDaddy, and Sectigo round out the top five, while 74 smaller CAs share the remaining 12% of issuance across 88 total trusted authorities.",
-      "trust": "The four major root programs collectively trust 335 roots from 88 CA organizations, but only 90 roots appear in all four stores simultaneously. Microsoft's store contains 142 roots not trusted by Chrome, Mozilla, or Apple, creating a fragmentation problem where certificate chains valid in Edge may fail in other browsers. Only 38 CA owners have achieved universal inclusion across all four programs, meaning most CAs must navigate per-store differences that complicate chain building and deployment.",
-      "conc": "An HHI of 1980 places the WebPKI near the threshold economists consider highly concentrated, with the top three CAs commanding 71% of issuance. This concentration creates systemic dependency where operational failures at ISRG, Google, or DigiCert could disable certificate issuance for a majority of the web. The gap between the top five at 88% and the remaining 83 CAs at 12% demonstrates winner-take-all market dynamics driven by automation, pricing, and browser integration.",
-      "tail": "74 CAs collectively issue just 12% of certificates but retain full trust store inclusion, creating asymmetric risk where low-volume operators carry the same systemic trust as high-volume leaders. These tail CAs often lack the engineering resources and incident response sophistication of the top five, yet a compromise or misissuance event at any one of them affects all browsers equally. The 1726 total incidents across 55 CAs show that operational maturity does not scale uniformly with market share.",
-      "geo": "US-incorporated CAs issue 93% of all publicly trusted certificates despite representing only 15 of 88 total authorities, concentrating both issuance and legal jurisdiction in a single country. Europe hosts 44 CAs but accounts for just 7% of issuance, while Asia-Pacific's 17 CAs contribute less than 0.1%. This geographic imbalance intersects with jurisdiction risk, as the majority of certificates flow through entities subject to US legal process and surveillance frameworks.",
-      "gov": "30 government-operated or state-owned CAs hold trust store inclusion but collectively issue only 0.09% of certificates, creating a mismatch between sovereign trust objectives and actual usage. These CAs serve domestic policy goals such as national PKI programs and e-government services, yet their inclusion grants them the same browser trust as commercial operators despite minimal public web presence. The concentration of government CAs in high-risk jurisdictions amplifies concerns about compelled access and surveillance capabilities.",
-      "jurisdiction": "Five jurisdictions are classified as high legal risk due to compelled disclosure laws, surveillance frameworks, or state control over certificate authorities: China, Russia, the United Kingdom, Australia, and Hong Kong. India and Turkey present moderate risk under current legal regimes. These classifications interact with the geographic concentration data, as UK-based CAs operate under the Investigatory Powers Act while Australian CAs face the Assistance and Access Act, both enabling government-compelled certificate issuance or key access.",
-      "ops": "1726 incidents have been disclosed across 55 CAs since tracking began, with misissuance accounting for 664 cases and governance failures for 557. CAs self-detect only 31% of incidents, while external researchers and automated tools discover 32% combined, revealing a surveillance gap where most problems surface externally. The 237 policy failures and 159 disclosure violations demonstrate that operational risk extends beyond technical misissuance to include governance and transparency breakdowns.",
-      "crypto": "The cryptographic posture data will measure root certificate algorithm choices, key sizes, signature hash functions, and compliance with NIST and IETF standards across the 335 trusted roots. This tab tracks the migration from SHA-1 to SHA-256, RSA key size distributions, and emerging post-quantum readiness. Weak cryptographic choices in long-lived roots create legacy risk that persists across browser generations.",
-      "distrust": "16 distrust events have resulted in browser removal or restriction of CA certificates, with negligent noncompliance accounting for 7 cases and demonstrated incompetence for 3. 14 of 16 events stemmed from compliance or operational failures rather than technical cryptographic compromise, and 10 followed a pattern of repeated issues rather than isolated incidents. The median runway of 1185 days between distrust announcement and enforcement reflects browser caution, but three cases involved willful circumvention of baseline requirements.",
-      "policy": "Of 35 active TLS-issuing CAs measured for SC-081 readiness, only 9 currently issue certificates with validity periods of 47 days or less, while 5 remain at risk of violating the 100-day limit arriving in March 2027. Median validity usage of 62 days suggests most CAs have begun adjusting issuance behavior, but 3 CAs still issue certificates approaching the 200-day threshold already in effect. This readiness challenge exists within a regulatory surface that has grown 121x since 2000 to 6657 total obligations, 76% of which are mandatory, yet no new CA/B Forum ballots have passed since 2022 to help CAs navigate this complexity.",
-      "governance": "Chrome's coverage of publicly disclosed incidents dropped from 68% in 2019 to 18% in 2025, while Mozilla fell from 78% to 10% over the same period. Of 223 total incidents in 2025, Apple commented on just 5%, and Microsoft participated in none despite operating a root program. This declining oversight occurs as the total Bugzilla corpus reaches 2018 bugs, with Chrome contributing 738 oversight comments and Mozilla 820, but only 115 and 48 recent substantive interventions respectively.",
-      "community": "56 organizations hold CA/B Forum membership but only 21 contribute actively to ballot development, leaving 35 with zero ballot participation. Sectigo leads organizational involvement, while Stephen Davidson has proposed 36 ballots individually. This participation gap means a small minority of CAs shape baseline requirements that all 88 trusted CAs must follow, and the zero new ballots since 2022 reflects gridlock despite the growing regulatory surface documented in the BR Readiness tab.",
-      "audit": "Auditors identified only 31% of the 429 in-scope incidents that occurred during the periods their audit letters covered, meaning 69% of real compliance failures coexisted with clean audit opinions. 41 CAs show high transparency gaps between audit letter periods and current dates, 5 audits contain qualified opinions, and only 12 have migrated to the stricter ETSI EN 319 411-1 v3.5 standard. The top auditors by CA count are KPMG with 11 CAs and Deloitte with 7, producing an auditor HHI of 553 that indicates moderate concentration, while self-reported issues in WebTrust and ETSI letters run at 63% and 70% respectively, suggesting most problems surface through CA disclosure rather than auditor detection."
-    }
+    "intros": {}
   }
 }

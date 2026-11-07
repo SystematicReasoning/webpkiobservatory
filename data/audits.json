@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-11-06T14:05:58.584016Z",
+  "generated_at": "2026-11-07T12:49:14.317404Z",
   "chart_insights": {
-    "auditor_changes": "Auditor changes remained stable at 1\u20134 per year from 2015 to 2024, then jumped to 6 in 2025 and 14 in 2026, suggesting either a wave of planned transitions ahead of the ETSI v3.5 mandate in March 2026 or a data reporting lag.",
-    "self_report": "ETSI CAs self-report violations at a 6.7 percentage point higher rate than WebTrust CAs (69.5% vs 62.8%), which may reflect different audit or disclosure practices between the two frameworks rather than lower WebTrust compliance.",
-    "detection_rate": "Auditors caught 31% of violations in-period (131 of 429), but per-auditor detection rates vary from 0% to 100%, indicating substantial inconsistency in audit quality or rigor across the ecosystem's 18 active firms.",
-    "etsi_aal": "ETSI CAs are using AAL versions 2, 2.9, 3.0, 3.4, 3.5, and 3.6, with the oldest version still in use being v2 (now 5+ years past mandatory supersession in 2020); v3.5 adoption has begun with 12 CAs already on it ahead of the March 2026 mandate, but 4 CAs remain on versions superseded before 2022."
+    "auditor_changes": "Auditor changes remained stable at 1\u20134 per year from 2015 through 2024, then spiked sharply to 6 in 2025 and 14 in 2026, indicating either a wave of planned auditor rotations or a response to emerging trust or compliance concerns.",
+    "self_report": "ETSI CAs self-report violations at a higher rate (69.5%) than WebTrust CAs (62.7%), a 7-percentage-point gap that may reflect differences in audit rigor, disclosure practices, or the composition of each scheme's membership.",
+    "detection_rate": "Auditors detected only 25% of violations during their audit periods (106 of 429 cases), but performance varies dramatically by firm\u2014MATRIX and PwC exceeded 90% detection while KPMG and Ernst & Young fell below 25%\u2014revealing substantial inconsistency in audit effectiveness across the ecosystem.",
+    "etsi_aal": "ETSI CAs are using versions 2 through 3.6, with 4 still running version 2 (from 2011, 15 years outdated), 13 on the current v3.4, and 12 on the mandatory-from-March-2026 v3.5, indicating slow uptake of the latest standard well before its compliance deadline."
   },
   "summary": {
     "total_ca_owners": 82,
@@ -38,11 +38,11 @@
     "incident_disclosure_gaps": 24,
     "outdated_criteria": 33,
     "high_transparency_gap": 41,
-    "matters_without_bz_anchor": 9,
+    "matters_without_bz_anchor": 8,
     "cross_signed_gap_cas": 4,
     "cross_signed_gap_fps": 11,
-    "in_period_detection_rate": 31,
-    "in_period_caught": 131,
+    "in_period_detection_rate": 25,
+    "in_period_caught": 106,
     "in_period_covered": 429
   },
   "auditor_concentration": [
@@ -193,9 +193,9 @@
       "criteria_current_pct": 0.0,
       "aal_current_pct": 0.0,
       "avg_quality_score": 50.7,
-      "avg_gap_score": 93.6,
+      "avg_gap_score": 93.7,
       "high_gap_count": 7,
-      "total_incidents": 534,
+      "total_incidents": 535,
       "total_matters_with_bz": 23,
       "externally_found_count": 0,
       "avg_tenure_years": 1.7,
@@ -527,7 +527,7 @@
       "avg_fp_coverage": null,
       "avg_disclosure_rate": null,
       "total_undisclosed_bugs": 0,
-      "avg_matters_per_ca": 1.0,
+      "avg_matters_per_ca": 0.5,
       "criteria_current_pct": 100.0,
       "aal_current_pct": 100.0,
       "avg_quality_score": 100.0,
@@ -535,7 +535,7 @@
       "high_gap_count": 0,
       "total_incidents": 0,
       "total_matters_with_bz": 1,
-      "externally_found_count": 1,
+      "externally_found_count": 0,
       "avg_tenure_years": 0.0,
       "avg_historical_depth": 1.5,
       "quality_trends": {},
@@ -829,7 +829,7 @@
       "high_gap_count": 1,
       "total_incidents": 38,
       "total_matters_with_bz": 4,
-      "externally_found_count": 3,
+      "externally_found_count": 1,
       "avg_tenure_years": 1.0,
       "avg_historical_depth": 3.0,
       "quality_trends": {},
@@ -1001,7 +1001,7 @@
       "avg_matters_per_ca": 0.0,
       "criteria_current_pct": 0.0,
       "aal_current_pct": 0.0,
-      "avg_quality_score": 30.0,
+      "avg_quality_score": 60.0,
       "avg_gap_score": null,
       "high_gap_count": 0,
       "total_incidents": 0,
@@ -1011,7 +1011,7 @@
       "avg_historical_depth": 2.0,
       "quality_trends": {},
       "quality_by_year": {
-        "2024": 30.0
+        "2024": 60.0
       },
       "disclosure_by_year": {}
     },
@@ -1479,9 +1479,9 @@
       "criteria_current_pct": 0.0,
       "aal_current_pct": 0.0,
       "avg_quality_score": 50.7,
-      "avg_gap_score": 93.6,
+      "avg_gap_score": 93.7,
       "high_gap_count": 7,
-      "total_incidents": 534,
+      "total_incidents": 535,
       "total_matters_with_bz": 23,
       "externally_found_count": 0,
       "avg_tenure_years": 1.7,
@@ -1752,7 +1752,7 @@
       "avg_fp_coverage": null,
       "avg_disclosure_rate": null,
       "total_undisclosed_bugs": 0,
-      "avg_matters_per_ca": 1.0,
+      "avg_matters_per_ca": 0.5,
       "criteria_current_pct": 100.0,
       "aal_current_pct": 100.0,
       "avg_quality_score": 100.0,
@@ -1760,7 +1760,7 @@
       "high_gap_count": 0,
       "total_incidents": 0,
       "total_matters_with_bz": 1,
-      "externally_found_count": 1,
+      "externally_found_count": 0,
       "avg_tenure_years": 0.0,
       "avg_historical_depth": 1.5,
       "quality_trends": {},
@@ -2009,7 +2009,7 @@
       "high_gap_count": 1,
       "total_incidents": 38,
       "total_matters_with_bz": 4,
-      "externally_found_count": 3,
+      "externally_found_count": 1,
       "avg_tenure_years": 1.0,
       "avg_historical_depth": 3.0,
       "quality_trends": {},
@@ -2156,7 +2156,7 @@
       "avg_matters_per_ca": 0.0,
       "criteria_current_pct": 0.0,
       "aal_current_pct": 0.0,
-      "avg_quality_score": 30.0,
+      "avg_quality_score": 60.0,
       "avg_gap_score": null,
       "high_gap_count": 0,
       "total_incidents": 0,
@@ -2166,7 +2166,7 @@
       "avg_historical_depth": 2.0,
       "quality_trends": {},
       "quality_by_year": {
-        "2024": 30.0
+        "2024": 60.0
       },
       "disclosure_by_year": {}
     },
@@ -2492,8 +2492,8 @@
       "latest_stmt_date": "2020-03-09",
       "latest_period_end": "2019-12-13",
       "earliest_period_start": "2018-12-14",
-      "stmt_age_days": 2433,
-      "coverage_gap_days": 2520,
+      "stmt_age_days": 2434,
+      "coverage_gap_days": 2521,
       "staleness": "very_stale",
       "root_count": 1,
       "no_audit_roots": 0,
@@ -2754,8 +2754,8 @@
       "latest_stmt_date": "2024-06-05",
       "latest_period_end": "2024-03-10",
       "earliest_period_start": "2023-03-11",
-      "stmt_age_days": 884,
-      "coverage_gap_days": 971,
+      "stmt_age_days": 885,
+      "coverage_gap_days": 972,
       "staleness": "very_stale",
       "root_count": 1,
       "no_audit_roots": 0,
@@ -2855,8 +2855,8 @@
       "latest_stmt_date": "2024-03-20",
       "latest_period_end": "2024-03-20",
       "earliest_period_start": "2023-03-21",
-      "stmt_age_days": 961,
-      "coverage_gap_days": 961,
+      "stmt_age_days": 962,
+      "coverage_gap_days": 962,
       "staleness": "very_stale",
       "root_count": 2,
       "no_audit_roots": 0,
@@ -2878,7 +2878,7 @@
       "pdf_parsed": true,
       "opinion_type": "unqualified",
       "audit_framework": "WebTrust",
-      "audit_criteria": "WebTrust Principles and Criteria for Certification Authorities Version 2.2",
+      "audit_criteria": "Web Trust Principles and Criteria for Certification Authorities \u2013 SSL Baseline with Network Security \u2013 Version 2.2",
       "etsi_aal_version": null,
       "policy_oids_present": [],
       "in_scope_sha256": [],
@@ -2921,7 +2921,7 @@
         "note": null
       },
       "criteria_check": {
-        "criteria_raw": "WebTrust Principles and Criteria for Certification Authorities Version 2.2",
+        "criteria_raw": "Web Trust Principles and Criteria for Certification Authorities \u2013 SSL Baseline with Network Security \u2013 Version 2.2",
         "framework": "WebTrust",
         "criteria_version": "2.2",
         "criteria_current": false,
@@ -2933,22 +2933,25 @@
         "aal_applicable": false
       },
       "oid_check": {
-        "inferred_oids": [],
-        "cert_types": [],
-        "capabilities_match": false,
-        "gaps": [
+        "inferred_oids": [
+          "2.23.140.1.2.1",
+          "2.23.140.1.2.2"
+        ],
+        "cert_types": [
           "TLS DV",
           "TLS OV"
         ],
+        "capabilities_match": true,
+        "gaps": [],
         "covered_separately": [],
         "note": null
       },
       "letter_quality_score": {
-        "overall": 30.0,
+        "overall": 60.0,
         "dimensions": {
           "opinion_clarity": 100,
           "criteria_currency": 0,
-          "scope_coverage": 0.0
+          "scope_coverage": 100
         },
         "score_epoch": "aal_v3x",
         "note": null
@@ -2979,7 +2982,7 @@
           "audit_type": "WebTrust",
           "url": "https://www.cca.gov.in/cca/sites/default/files/files/2023rcaiaudit.pdf",
           "letter_parsed": true,
-          "opinion_type": "unqualified",
+          "opinion_type": "unknown",
           "disclosed_matters": [],
           "disclosed_matters_count": 0,
           "disclosure_rate": null,
@@ -3002,7 +3005,7 @@
           "disclosed_matters_count": 0,
           "disclosure_rate": null,
           "fp_coverage_pct": null,
-          "quality_score": 30.0,
+          "quality_score": 60.0,
           "criteria_version": "2.2",
           "criteria_current": false,
           "etsi_aal_version": null,
@@ -3021,7 +3024,7 @@
         "auditor_tenure_years": 1,
         "quality_trend": null,
         "quality_by_year": {
-          "2024": 30.0
+          "2024": 60.0
         },
         "disclosure_by_year": {}
       },
@@ -3045,8 +3048,8 @@
       "latest_stmt_date": "2024-07-29",
       "latest_period_end": "2024-03-28",
       "earliest_period_start": "2020-03-29",
-      "stmt_age_days": 830,
-      "coverage_gap_days": 953,
+      "stmt_age_days": 831,
+      "coverage_gap_days": 954,
       "staleness": "very_stale",
       "root_count": 1,
       "no_audit_roots": 0,
@@ -3148,8 +3151,8 @@
       "latest_stmt_date": "2024-05-27",
       "latest_period_end": "2024-03-31",
       "earliest_period_start": "2023-04-01",
-      "stmt_age_days": 893,
-      "coverage_gap_days": 950,
+      "stmt_age_days": 894,
+      "coverage_gap_days": 951,
       "staleness": "very_stale",
       "root_count": 1,
       "no_audit_roots": 0,
@@ -3189,7 +3192,10 @@
         "Madrid, Spain"
       ],
       "subservice_organizations": [],
-      "qualifications": [],
+      "qualifications": [
+        "CGAE makes use of external registration authorities for specific subscriber registration activities as disclosed in CGAE's business practices. Our procedures did not extend to the controls exercised by these external registration authorities.",
+        "CGAE does not escrow its CA keys. Accordingly, our procedures did not extend to controls that would address that criterion."
+      ],
       "disclosed_matters": [],
       "pdf_auditor_firm": "EY Transforma Servicios de Consultor\u00eda, S.L.",
       "pdf_period_start": "April 1st, 2023",
@@ -3346,8 +3352,8 @@
       "latest_stmt_date": "2025-01-28",
       "latest_period_end": "2024-12-15",
       "earliest_period_start": "2023-12-16",
-      "stmt_age_days": 647,
-      "coverage_gap_days": 691,
+      "stmt_age_days": 648,
+      "coverage_gap_days": 692,
       "staleness": "stale",
       "root_count": 1,
       "no_audit_roots": 0,
@@ -3547,8 +3553,8 @@
       "latest_stmt_date": "2025-06-27",
       "latest_period_end": "2025-02-28",
       "earliest_period_start": "2024-03-01",
-      "stmt_age_days": 497,
-      "coverage_gap_days": 616,
+      "stmt_age_days": 498,
+      "coverage_gap_days": 617,
       "staleness": "stale",
       "root_count": 4,
       "no_audit_roots": 0,
@@ -3590,7 +3596,7 @@
         {
           "item": 1,
           "topic": "Updates to CPS Versions Addressing EV SSL Certificate Issues and Client Authentication",
-          "summary": "CPS V3.17 was updated on March 21, 2024, to correct mis-issued EV SSL certificates reported in Bugzilla 1883843, but the update did not completely address Client Authentication details which were disclosed in Bugzilla 1887753, requiring a further update to CPS V3.1.8 on March 22, 2024.",
+          "summary": "CPS V3.17 was updated on March 21, 2024, to correct mis-issued EV SSL certificates as reported in Bugzilla 1883843, but did not completely address Client Authentication details which were disclosed in Bugzilla 1887753; CPS V3.1.8 was updated on March 22, 2024 to address this.",
           "bugzilla_ids": [
             "1883843",
             "1887753"
@@ -3601,7 +3607,7 @@
         {
           "item": 2,
           "topic": "Updates to CPS Version Addressing typographical (text placement) error",
-          "summary": "CPS V3.1.8 dated March 22, 2024, was updated to require the policyQualifier for the EV certificate profile as reported in Bugzilla 1890896, but it was inadvertently added to the OV certificate profile where it is not required, and this error was corrected in CPS V3.20 on March 26, 2024.",
+          "summary": "CPS V3.1.8 dated March 22, 2024, was updated to require policyQualifier for EV certificate profile as reported in Bugzilla 1890896, but inadvertently added text to the OV certificate profile where it is not required; this error was corrected in CPS V3.20 on March 26, 2024.",
           "bugzilla_ids": [
             "1890896"
           ],
@@ -3734,7 +3740,7 @@
             {
               "item": 1,
               "topic": "Certificate Records",
-              "summary": "Two records of certificates related to CA#28 - L1K were identified with different SHA fingerprints, disclosed as Cert # 28.1 and Cert # 28.5 in Attachment A, identified in crt.sh.",
+              "summary": "Two records of a certificate related to CA#28 - L1K were identified with different SHA fingerprints, disclosed as Cert # 28.1 and Cert # 28.5.",
               "bugzilla_ids": [],
               "certificate_count": null,
               "self_reported": false
@@ -3761,7 +3767,7 @@
             {
               "item": 1,
               "topic": "Updates to CPS Versions Addressing EV SSL Certificate Issues and Client Authentication",
-              "summary": "CPS V3.17 was updated on March 21, 2024, to correct mis-issued EV SSL certificates reported in Bugzilla 1883843, but the update did not completely address Client Authentication details which were disclosed in Bugzilla 1887753, requiring a further update to CPS V3.1.8 on March 22, 2024.",
+              "summary": "CPS V3.17 was updated on March 21, 2024, to correct mis-issued EV SSL certificates as reported in Bugzilla 1883843, but did not completely address Client Authentication details which were disclosed in Bugzilla 1887753; CPS V3.1.8 was updated on March 22, 2024 to address this.",
               "bugzilla_ids": [
                 "1883843",
                 "1887753"
@@ -3772,7 +3778,7 @@
             {
               "item": 2,
               "topic": "Updates to CPS Version Addressing typographical (text placement) error",
-              "summary": "CPS V3.1.8 dated March 22, 2024, was updated to require the policyQualifier for the EV certificate profile as reported in Bugzilla 1890896, but it was inadvertently added to the OV certificate profile where it is not required, and this error was corrected in CPS V3.20 on March 26, 2024.",
+              "summary": "CPS V3.1.8 dated March 22, 2024, was updated to require policyQualifier for EV certificate profile as reported in Bugzilla 1890896, but inadvertently added text to the OV certificate profile where it is not required; this error was corrected in CPS V3.20 on March 26, 2024.",
               "bugzilla_ids": [
                 "1890896"
               ],
@@ -3827,8 +3833,8 @@
       "latest_stmt_date": "2025-07-30",
       "latest_period_end": "2025-07-23",
       "earliest_period_start": "2022-09-01",
-      "stmt_age_days": 464,
-      "coverage_gap_days": 471,
+      "stmt_age_days": 465,
+      "coverage_gap_days": 472,
       "staleness": "stale",
       "root_count": 2,
       "no_audit_roots": 0,
@@ -3854,14 +3860,14 @@
       "pdf_parsed": true,
       "opinion_type": "unqualified",
       "audit_framework": "ETSI",
-      "audit_criteria": "ETSI EN 319 411-2 V2.5.1 (2023-10); ETSI EN 319 411-1 V1.4.1 (2023-10); ETSI EN 319 401 V3.1.1 (2024-06); CA/B Forum Baseline Requirements for the Issuance and Management of Publicly-Trusted Certificates version 2.1.5; CA/B Forum Network and Certificate System Security Requirements version 2.0.5",
+      "audit_criteria": "ETSI EN 319 411-2 V2.5.1 (2023-10); ETSI EN 319 411-1 V1.4.1 (2023-10); ETSI EN 319 401 V3.1.1 (2024-06)",
       "etsi_aal_version": "3.4",
       "policy_oids_present": [],
       "in_scope_sha256": [
         "1BF7F3DF0BA1510D2281992C7D7D95E8862E371AE2BC2C751B0A8D733DF1EF67"
       ],
       "locations_audited": [
-        "Budapest, Hungary",
+        "Budapest, Hung\u00e1ria k\u00f6r\u00fat 17-19, Hungary",
         "Budapest, Expo t\u00e9r 5-7, Hungary",
         "Budapest, Asztalos S\u00e1ndor \u00fat 13, Hungary"
       ],
@@ -3871,7 +3877,7 @@
         {
           "item": 1,
           "topic": null,
-          "summary": "Delayed revocation issue covered by Mozilla Bug 1947691",
+          "summary": "Bug 1947691 - Delayed revocation issue.",
           "bugzilla_ids": [
             "1947691"
           ],
@@ -3881,7 +3887,7 @@
         {
           "item": 2,
           "topic": null,
-          "summary": "CA/Browser Forum TLS BR Non-compliance identified in Mozilla Bug 1962426",
+          "summary": "Bug 1962426 - CA/Browser Forum TLS BR Non-compliance.",
           "bugzilla_ids": [
             "1962426"
           ],
@@ -3891,7 +3897,7 @@
         {
           "item": 3,
           "topic": null,
-          "summary": "CRL not published in DER Encoded Format as documented in Mozilla Bug 1938167",
+          "summary": "Bug 1938167 - CRL not published in DER Encoded Format.",
           "bugzilla_ids": [
             "1938167"
           ],
@@ -3901,7 +3907,7 @@
         {
           "item": 4,
           "topic": null,
-          "summary": "CPR was not responded to in 24 hours per Mozilla Bug 1905509",
+          "summary": "Bug 1905509 - CPR was not responded to in 24 hours.",
           "bugzilla_ids": [
             "1905509"
           ],
@@ -3911,7 +3917,7 @@
         {
           "item": 5,
           "topic": null,
-          "summary": "Failure to Provide Weekly Updates documented in Mozilla Bug 1957474",
+          "summary": "Bug 1957474 - Failure to Provide Weekly Updates.",
           "bugzilla_ids": [
             "1957474"
           ],
@@ -3921,7 +3927,7 @@
         {
           "item": 6,
           "topic": null,
-          "summary": "Intermediate CA Certificate not disclosed to CCADB per Mozilla Bug 1904041",
+          "summary": "Bug 1904041 - Intermediate CA Certificate not disclosed to CCADB.",
           "bugzilla_ids": [
             "1904041"
           ],
@@ -3931,7 +3937,7 @@
         {
           "item": 7,
           "topic": null,
-          "summary": "Findings in 2024 Audit documented in Mozilla Bug 1917046",
+          "summary": "Bug 1917046 - Findings in 2024 Audit.",
           "bugzilla_ids": [
             "1917046"
           ],
@@ -3994,7 +4000,7 @@
         "note": null
       },
       "criteria_check": {
-        "criteria_raw": "ETSI EN 319 411-2 V2.5.1 (2023-10); ETSI EN 319 411-1 V1.4.1 (2023-10); ETSI EN 319 401 V3.1.1 (2024-06); CA/B Forum Baseline Requirements for the Issuance and Management of Publicly-Trusted Certificates version 2.1.5; CA/B Forum Network and Certificate System Security Requirements version 2.0.5",
+        "criteria_raw": "ETSI EN 319 411-2 V2.5.1 (2023-10); ETSI EN 319 411-1 V1.4.1 (2023-10); ETSI EN 319 401 V3.1.1 (2024-06)",
         "framework": "ETSI",
         "criteria_version": "EN 319 411-2 V2.5.1",
         "criteria_current": true,
@@ -4103,7 +4109,7 @@
             {
               "item": 1,
               "topic": "Policy Qualifiers",
-              "summary": "Policy Qualifiers other than id-qt-cps included in TLS certificates",
+              "summary": "Policy Qualifiers other than id-qt-cps is included in TLS certificates",
               "bugzilla_ids": [
                 "1889570"
               ],
@@ -4113,7 +4119,7 @@
             {
               "item": 2,
               "topic": "Policy Qualifiers",
-              "summary": "Policy Qualifiers other than id-qt-cps included in TLS certificates with delayed revocation",
+              "summary": "Policy Qualifiers other than id-qt-cps is included in TLS certificates - delayed revocation",
               "bugzilla_ids": [
                 "1891331"
               ],
@@ -4122,7 +4128,7 @@
             },
             {
               "item": 3,
-              "topic": "Disclosure",
+              "topic": "Certificate Disclosure",
               "summary": "Intermediate CA Certificate not disclosed to CCADB",
               "bugzilla_ids": [
                 "1904041"
@@ -4142,7 +4148,7 @@
             },
             {
               "item": 5,
-              "topic": "CPR Response",
+              "topic": "CPR Response Time",
               "summary": "Delayed reply from CPR sent to contact listed in section 1.5.2 of CP/S",
               "bugzilla_ids": [
                 "1906115"
@@ -4153,7 +4159,7 @@
             {
               "item": 6,
               "topic": "Contact Information",
-              "summary": "CPS 1.5.2 problem and contact information update",
+              "summary": "CPS 1.5.2. problem and contact information update",
               "bugzilla_ids": [
                 "1907568"
               ],
@@ -4192,7 +4198,7 @@
             {
               "item": 1,
               "topic": null,
-              "summary": "Delayed revocation issue covered by Mozilla Bug 1947691",
+              "summary": "Bug 1947691 - Delayed revocation issue.",
               "bugzilla_ids": [
                 "1947691"
               ],
@@ -4202,7 +4208,7 @@
             {
               "item": 2,
               "topic": null,
-              "summary": "CA/Browser Forum TLS BR Non-compliance identified in Mozilla Bug 1962426",
+              "summary": "Bug 1962426 - CA/Browser Forum TLS BR Non-compliance.",
               "bugzilla_ids": [
                 "1962426"
               ],
@@ -4212,7 +4218,7 @@
             {
               "item": 3,
               "topic": null,
-              "summary": "CRL not published in DER Encoded Format as documented in Mozilla Bug 1938167",
+              "summary": "Bug 1938167 - CRL not published in DER Encoded Format.",
               "bugzilla_ids": [
                 "1938167"
               ],
@@ -4222,7 +4228,7 @@
             {
               "item": 4,
               "topic": null,
-              "summary": "CPR was not responded to in 24 hours per Mozilla Bug 1905509",
+              "summary": "Bug 1905509 - CPR was not responded to in 24 hours.",
               "bugzilla_ids": [
                 "1905509"
               ],
@@ -4232,7 +4238,7 @@
             {
               "item": 5,
               "topic": null,
-              "summary": "Failure to Provide Weekly Updates documented in Mozilla Bug 1957474",
+              "summary": "Bug 1957474 - Failure to Provide Weekly Updates.",
               "bugzilla_ids": [
                 "1957474"
               ],
@@ -4242,7 +4248,7 @@
             {
               "item": 6,
               "topic": null,
-              "summary": "Intermediate CA Certificate not disclosed to CCADB per Mozilla Bug 1904041",
+              "summary": "Bug 1904041 - Intermediate CA Certificate not disclosed to CCADB.",
               "bugzilla_ids": [
                 "1904041"
               ],
@@ -4252,7 +4258,7 @@
             {
               "item": 7,
               "topic": null,
-              "summary": "Findings in 2024 Audit documented in Mozilla Bug 1917046",
+              "summary": "Bug 1917046 - Findings in 2024 Audit.",
               "bugzilla_ids": [
                 "1917046"
               ],
@@ -4624,8 +4630,8 @@
       "latest_stmt_date": "2025-10-21",
       "latest_period_end": "2025-07-31",
       "earliest_period_start": "2024-08-01",
-      "stmt_age_days": 381,
-      "coverage_gap_days": 463,
+      "stmt_age_days": 382,
+      "coverage_gap_days": 464,
       "staleness": "stale",
       "root_count": 2,
       "no_audit_roots": 0,
@@ -4664,8 +4670,8 @@
       "disclosed_matters": [
         {
           "item": 1,
-          "topic": "Email Response Delay",
-          "summary": "CFCA failed to respond to a Google Root Program email about certificate issuance error in time and was requested to file incident reporting thread Bug 1888881.",
+          "topic": "Certificate Issuance Error - Email Response",
+          "summary": "On 4 March 2024, Google Root Program sent an email about certificate issuance error; CFCA failed to respond timely and was required to file Bug 1888881 for remediation, closed 2 April 2025.",
           "bugzilla_ids": [
             "1888881"
           ],
@@ -4674,18 +4680,18 @@
         },
         {
           "item": 2,
-          "topic": "CPR Reception Failure",
-          "summary": "Bug 1959733 was filed on 10 April 2025 for failure in receiving two CPR sent to CCADB registered contact email address within the time requirement of Section 4.9.5 of the TLS BRs.",
+          "topic": "CPR Receipt Failure",
+          "summary": "Bug 1959733 filed 10 April 2025 for failure to receive two CPR within Section 4.9.5 time requirement of TLS BRs; primary contact email updated to Gmail address; closed 16 July 2025.",
           "bugzilla_ids": [
             "1959733"
           ],
           "certificate_count": null,
-          "self_reported": false
+          "self_reported": true
         },
         {
           "item": 3,
-          "topic": "7-Day Response Requirement Violation",
-          "summary": "CFCA failed to respond within 7 days as required by Report Lifecycle Management of Incident Reporting Guidelines during handling of multiple incident threads.",
+          "topic": "Delayed Incident Response",
+          "summary": "CFCA failed to respond within 7 days as required by Report Lifecycle Management during handling of Bugs 1888881, 1888882, 1949131, and 1886135; automation workflow solution implemented 3 April 2025; Bug 1955799 created 22 March 2025 and closed 11 April 2025.",
           "bugzilla_ids": [
             "1888881",
             "1888882",
@@ -4694,12 +4700,12 @@
             "1955799"
           ],
           "certificate_count": null,
-          "self_reported": false
+          "self_reported": true
         },
         {
           "item": 4,
-          "topic": "BasicConstraints Extension Error",
-          "summary": "Three SSL certificates were found to have basicConstraints extension errors; more mis-issued certificates were discovered after internal investigation.",
+          "topic": "basicConstraints Extension Error",
+          "summary": "Bug 1886135 created 19 March 2024 for basicConstraints extension error found in three SSL certificates issued by CFCA; additional mis-issued certificates found after internal investigation; remediation accomplished with ZLint and PKIlint updates; closed 26 September 2024.",
           "bugzilla_ids": [
             "1886135"
           ],
@@ -4795,7 +4801,7 @@
         "incident_count": 38,
         "matters_count": 4,
         "matters_with_bugzilla": 4,
-        "externally_found": 3,
+        "externally_found": 1,
         "gap_score": 89.5,
         "gap_level": "high"
       },
@@ -4888,8 +4894,8 @@
           "disclosed_matters": [
             {
               "item": 1,
-              "topic": "Email Response Delay",
-              "summary": "CFCA failed to respond to a Google Root Program email about certificate issuance error in time and was requested to file incident reporting thread Bug 1888881.",
+              "topic": "Certificate Issuance Error - Email Response",
+              "summary": "On 4 March 2024, Google Root Program sent an email about certificate issuance error; CFCA failed to respond timely and was required to file Bug 1888881 for remediation, closed 2 April 2025.",
               "bugzilla_ids": [
                 "1888881"
               ],
@@ -4898,18 +4904,18 @@
             },
             {
               "item": 2,
-              "topic": "CPR Reception Failure",
-              "summary": "Bug 1959733 was filed on 10 April 2025 for failure in receiving two CPR sent to CCADB registered contact email address within the time requirement of Section 4.9.5 of the TLS BRs.",
+              "topic": "CPR Receipt Failure",
+              "summary": "Bug 1959733 filed 10 April 2025 for failure to receive two CPR within Section 4.9.5 time requirement of TLS BRs; primary contact email updated to Gmail address; closed 16 July 2025.",
               "bugzilla_ids": [
                 "1959733"
               ],
               "certificate_count": null,
-              "self_reported": false
+              "self_reported": true
             },
             {
               "item": 3,
-              "topic": "7-Day Response Requirement Violation",
-              "summary": "CFCA failed to respond within 7 days as required by Report Lifecycle Management of Incident Reporting Guidelines during handling of multiple incident threads.",
+              "topic": "Delayed Incident Response",
+              "summary": "CFCA failed to respond within 7 days as required by Report Lifecycle Management during handling of Bugs 1888881, 1888882, 1949131, and 1886135; automation workflow solution implemented 3 April 2025; Bug 1955799 created 22 March 2025 and closed 11 April 2025.",
               "bugzilla_ids": [
                 "1888881",
                 "1888882",
@@ -4918,12 +4924,12 @@
                 "1955799"
               ],
               "certificate_count": null,
-              "self_reported": false
+              "self_reported": true
             },
             {
               "item": 4,
-              "topic": "BasicConstraints Extension Error",
-              "summary": "Three SSL certificates were found to have basicConstraints extension errors; more mis-issued certificates were discovered after internal investigation.",
+              "topic": "basicConstraints Extension Error",
+              "summary": "Bug 1886135 created 19 March 2024 for basicConstraints extension error found in three SSL certificates issued by CFCA; additional mis-issued certificates found after internal investigation; remediation accomplished with ZLint and PKIlint updates; closed 26 September 2024.",
               "bugzilla_ids": [
                 "1886135"
               ],
@@ -5113,8 +5119,8 @@
       "latest_stmt_date": "2025-10-11",
       "latest_period_end": "2025-07-31",
       "earliest_period_start": "2024-08-01",
-      "stmt_age_days": 391,
-      "coverage_gap_days": 463,
+      "stmt_age_days": 392,
+      "coverage_gap_days": 464,
       "staleness": "stale",
       "root_count": 6,
       "no_audit_roots": 0,
@@ -5145,14 +5151,14 @@
       "policy_oids_present": [],
       "in_scope_sha256": [],
       "locations_audited": [
-        "Shanghai (Central), China",
-        "Shanghai (West), China",
-        "Shanghai (East), China"
+        "Shanghai (\u4e2d), China",
+        "Shanghai (\u897f), China",
+        "Shanghai (\u4e1c), China"
       ],
       "subservice_organizations": [],
       "qualifications": [],
       "disclosed_matters": [],
-      "pdf_auditor_firm": "SUN RISE CPAS' FIRM (\u65e5\u76db\u806f\u5408\u6703\u8a08\u5e2b\u4e8b\u52d9\u6240)",
+      "pdf_auditor_firm": "Sun Rise CPAs' Firm",
       "pdf_period_start": "1 August 2024",
       "pdf_period_end": "31 July 2025",
       "pdf_pages": 25,
@@ -5318,8 +5324,8 @@
       "latest_stmt_date": "2025-10-30",
       "latest_period_end": "2025-08-23",
       "earliest_period_start": "2023-08-24",
-      "stmt_age_days": 372,
-      "coverage_gap_days": 440,
+      "stmt_age_days": 373,
+      "coverage_gap_days": 441,
       "staleness": "stale",
       "root_count": 4,
       "no_audit_roots": 0,
@@ -5521,8 +5527,8 @@
       "latest_stmt_date": "2025-11-21",
       "latest_period_end": "2025-08-31",
       "earliest_period_start": "2023-09-01",
-      "stmt_age_days": 350,
-      "coverage_gap_days": 432,
+      "stmt_age_days": 351,
+      "coverage_gap_days": 433,
       "staleness": "stale",
       "root_count": 38,
       "no_audit_roots": 0,
@@ -5590,7 +5596,7 @@
         {
           "item": 1,
           "topic": "Logging",
-          "summary": "DigiCert disclosed in Mozilla Bug #1974539 that evidence logging of Domain Control Validation for 2,702 TLS certificates using Authorization Domain Name aliases was incomplete when certain aliases were administratively cleared.",
+          "summary": "DigiCert disclosed that evidence logging of Domain Control Validation for 2,702 TLS certificates using Authorization Domain Name aliases was incomplete when certain aliases were administratively cleared.",
           "bugzilla_ids": [
             "1974539"
           ],
@@ -5600,17 +5606,17 @@
         {
           "item": 2,
           "topic": "Certificate Status",
-          "summary": "DigiCert disclosed in Mozilla Bug #1930759 that a domain hosting CRL and OCSP responses for seven (7) intermediate CAs had expired, causing a short outage of those services.",
+          "summary": "DigiCert disclosed that a domain hosting CRL and OCSP responses for seven intermediate CAs had expired, causing a short outage of those services.",
           "bugzilla_ids": [
             "1930759"
           ],
-          "certificate_count": null,
+          "certificate_count": 7,
           "self_reported": true
         },
         {
           "item": 3,
           "topic": "Domain Control Validation",
-          "summary": "DigiCert disclosed in Mozilla Bug #1978163 that 1,834 TLS certificates were issued using a deprecated domain validation method.",
+          "summary": "DigiCert disclosed that 1,834 TLS certificates were issued using a deprecated domain validation method.",
           "bugzilla_ids": [
             "1978163"
           ],
@@ -5948,8 +5954,8 @@
           "disclosed_matters": [
             {
               "item": 1,
-              "topic": "Incorrect EV jurisdiction of incorporation information",
-              "summary": "Incorrect EV jurisdiction of incorporation information in one EV certificate.",
+              "topic": null,
+              "summary": "Incorrect information in one EV certificate regarding EV jurisdiction of incorporation.",
               "bugzilla_ids": [
                 "1589047"
               ],
@@ -5958,9 +5964,10 @@
             },
             {
               "item": 2,
-              "topic": "Unconstrained CAs revocation",
-              "summary": "Bug relating to the fact that unconstrained ICA certificates were not revoked in 7 days.",
+              "topic": null,
+              "summary": "Unconstrained ICA certificates were not revoked within 7 days as required.",
               "bugzilla_ids": [
+                "1581597",
                 "1599916"
               ],
               "certificate_count": null,
@@ -5968,8 +5975,8 @@
             },
             {
               "item": 3,
-              "topic": "Failure to revoke certificates with compromised private keys",
-              "summary": "Discussion of procedures for revocation of certificates with compromised private keys.",
+              "topic": null,
+              "summary": "Failure to revoke certificates with compromised private keys.",
               "bugzilla_ids": [
                 "1624504"
               ],
@@ -5978,18 +5985,18 @@
             },
             {
               "item": 4,
-              "topic": "EV serialNumber with \"none\"",
-              "summary": "A single EV certificate was identified with an inappropriate JOI serialNumber.",
+              "topic": null,
+              "summary": "A single EV certificate was identified with an inappropriate JOI serialNumber value of 'none'.",
               "bugzilla_ids": [
                 "1645708"
               ],
-              "certificate_count": null,
+              "certificate_count": 1,
               "self_reported": true
             },
             {
               "item": 5,
-              "topic": "Failure to provide a preliminary report within 24 hours",
-              "summary": "A third party report complained that QuoVadis had not responded to a complaint; dialogue was established at the time.",
+              "topic": null,
+              "summary": "Failure to provide a preliminary report within 24 hours to a third party complaint reporter.",
               "bugzilla_ids": [
                 "1649880"
               ],
@@ -5998,8 +6005,8 @@
             },
             {
               "item": 6,
-              "topic": "Incorrect OCSP Delegated Responder Certificate",
-              "summary": "Incorrect OCSP Delegated Responder Certificate; part of a remediation affecting hundreds of issuing CAs across the industry.",
+              "topic": null,
+              "summary": "Incorrect OCSP Delegated Responder Certificate affecting hundreds of issuing CAs across the industry.",
               "bugzilla_ids": [
                 "1649938"
               ],
@@ -6008,8 +6015,8 @@
             },
             {
               "item": 7,
-              "topic": "Failure to revoke within 7 days: OCSP EKU issue",
-              "summary": "Failure to revoke the ICAs identified in bug 1649938 (OCSP EKU issue) within 7 days.",
+              "topic": null,
+              "summary": "Failure to revoke ICAs identified in OCSP EKU bug 1649938 within 7 days.",
               "bugzilla_ids": [
                 "1651553"
               ],
@@ -6018,12 +6025,12 @@
             },
             {
               "item": 8,
-              "topic": "Incorrect keyUsage for ECC certificate",
-              "summary": "A single TLS certificate was identified with an inappropriate keyUsage for ECC; the use did not involve a security risk but was counter to standards.",
+              "topic": null,
+              "summary": "A single TLS certificate was identified with incorrect keyUsage for an ECC certificate.",
               "bugzilla_ids": [
                 "1667518"
               ],
-              "certificate_count": null,
+              "certificate_count": 1,
               "self_reported": true
             }
           ],
@@ -6075,7 +6082,7 @@
             {
               "item": 1,
               "topic": "Certificate Content",
-              "summary": "DigiCert disclosed multiple instances of certificates with invalid or truncated content fields, including invalid stateOrProvinceName (3 certs), invalid localityName (2 certs), truncated registration number (2 certs), organizational type mismatches (39 certs), and an intermediate CA issued using SHA-1 hash algorithm (1 cert).",
+              "summary": "DigiCert disclosed multiple certificate content issues including invalid stateOrProvinceName, invalid localityName, truncated registration numbers, mismatched organizational type, and an intermediate CA issued with SHA-1 hash algorithm across 86 certificates.",
               "bugzilla_ids": [
                 "1710444",
                 "1710856",
@@ -6083,13 +6090,13 @@
                 "1714439",
                 "1684442"
               ],
-              "certificate_count": 47,
+              "certificate_count": 86,
               "self_reported": true
             },
             {
               "item": 2,
               "topic": "Certificate Revocation",
-              "summary": "DigiCert disclosed that it missed the 24 hour revocation requirement for 8 certificates that were reported to them as having compromised keys.",
+              "summary": "DigiCert disclosed that it missed the 24 hour revocation requirement for eight certificates that were reported as having compromised keys.",
               "bugzilla_ids": [
                 "1693343"
               ],
@@ -6130,56 +6137,15 @@
           "auditor": "BDO International",
           "audit_type": "WebTrust",
           "url": "https://www.cpacanada.ca/api/getPDFWebTrust?attachmentId=ffc2cba4-ab1a-4f7b-af96-9607dd7cae98",
-          "letter_parsed": true,
-          "opinion_type": "unqualified",
-          "disclosed_matters": [
-            {
-              "item": 1,
-              "topic": "Certificate Content",
-              "summary": "DigiCert disclosed multiple instances of misissued certificates with various content defects including missing policy OIDs, incorrect SAN values, incorrect AIA CAIssuers, missing state identifiers, unvalidated information, incorrect businessCategory capitalizations, incorrect organizationIdentifier values, and incorrect Subject Organization Names.",
-              "bugzilla_ids": [
-                "1853463",
-                "1860697",
-                "1875205",
-                "1881364",
-                "1891531",
-                "1894560",
-                "1898986",
-                "1910258",
-                "1927506"
-              ],
-              "certificate_count": 71528,
-              "self_reported": true
-            },
-            {
-              "item": 2,
-              "topic": "Certificate Revocation",
-              "summary": "DigiCert disclosed that it did not revoke TLS and S/MIME certificates within the Baseline Requirements timeframe.",
-              "bugzilla_ids": [
-                "1896053",
-                "1910805"
-              ],
-              "certificate_count": 88363,
-              "self_reported": true
-            },
-            {
-              "item": 3,
-              "topic": "Subscriber Registration",
-              "summary": "DigiCert disclosed that it issued TLS and S/MIME certificates where the random value used in DNS-based validation was not properly using an underscore prefix and issued TLS certificates with an Issuer Domain Name that had not been disclosed in the CPS.",
-              "bugzilla_ids": [
-                "1910322",
-                "1914911"
-              ],
-              "certificate_count": 84760,
-              "self_reported": true
-            }
-          ],
-          "disclosed_matters_count": 3,
+          "letter_parsed": false,
+          "opinion_type": null,
+          "disclosed_matters": [],
+          "disclosed_matters_count": null,
           "disclosure_rate": null,
           "fp_coverage_pct": null,
           "quality_score": null,
-          "criteria_version": "2.2.2",
-          "criteria_current": true,
+          "criteria_version": null,
+          "criteria_current": null,
           "etsi_aal_version": null
         },
         {
@@ -6195,7 +6161,7 @@
             {
               "item": 1,
               "topic": "Logging",
-              "summary": "DigiCert disclosed in Mozilla Bug #1974539 that evidence logging of Domain Control Validation for 2,702 TLS certificates using Authorization Domain Name aliases was incomplete when certain aliases were administratively cleared.",
+              "summary": "DigiCert disclosed that evidence logging of Domain Control Validation for 2,702 TLS certificates using Authorization Domain Name aliases was incomplete when certain aliases were administratively cleared.",
               "bugzilla_ids": [
                 "1974539"
               ],
@@ -6205,17 +6171,17 @@
             {
               "item": 2,
               "topic": "Certificate Status",
-              "summary": "DigiCert disclosed in Mozilla Bug #1930759 that a domain hosting CRL and OCSP responses for seven (7) intermediate CAs had expired, causing a short outage of those services.",
+              "summary": "DigiCert disclosed that a domain hosting CRL and OCSP responses for seven intermediate CAs had expired, causing a short outage of those services.",
               "bugzilla_ids": [
                 "1930759"
               ],
-              "certificate_count": null,
+              "certificate_count": 7,
               "self_reported": true
             },
             {
               "item": 3,
               "topic": "Domain Control Validation",
-              "summary": "DigiCert disclosed in Mozilla Bug #1978163 that 1,834 TLS certificates were issued using a deprecated domain validation method.",
+              "summary": "DigiCert disclosed that 1,834 TLS certificates were issued using a deprecated domain validation method.",
               "bugzilla_ids": [
                 "1978163"
               ],
@@ -8260,11 +8226,83 @@
           ]
         },
         {
+          "id": 1853463,
+          "filed": "2023-09-15",
+          "summary": "DigiCert: SMIME certificates issued inconsistent with BR\u2019s",
+          "self_reported": false,
+          "whiteboard": "[ca-compliance] [smime-misissuance] Next update 2-Oct-2023",
+          "covering_letters": 1,
+          "mentioned_in": 0,
+          "missed_by": 1,
+          "audit_coverage": [
+            {
+              "stmt_date": "2024-11-27",
+              "period_start": "2023-09-01",
+              "period_end": "2024-08-31",
+              "mentioned": false
+            }
+          ]
+        },
+        {
+          "id": 1860697,
+          "filed": "2023-10-24",
+          "summary": "DigiCert: Certificates issued inconsistent with S/MIME BR v1.0.1",
+          "self_reported": false,
+          "whiteboard": "[ca-compliance] [smime-misissuance] Next update 2023-12-21",
+          "covering_letters": 1,
+          "mentioned_in": 0,
+          "missed_by": 1,
+          "audit_coverage": [
+            {
+              "stmt_date": "2024-11-27",
+              "period_start": "2023-09-01",
+              "period_end": "2024-08-31",
+              "mentioned": false
+            }
+          ]
+        },
+        {
           "id": 1865235,
           "filed": "2023-11-17",
           "summary": "DigiCert: Late background refreshment check",
           "self_reported": false,
           "whiteboard": "[ca-compliance] [policy-failure]",
+          "covering_letters": 1,
+          "mentioned_in": 0,
+          "missed_by": 1,
+          "audit_coverage": [
+            {
+              "stmt_date": "2024-11-27",
+              "period_start": "2023-09-01",
+              "period_end": "2024-08-31",
+              "mentioned": false
+            }
+          ]
+        },
+        {
+          "id": 1875205,
+          "filed": "2024-01-18",
+          "summary": "Digicert: SMIME certs missing State in Org ID",
+          "self_reported": false,
+          "whiteboard": "[ca-compliance] [smime-misissuance]",
+          "covering_letters": 1,
+          "mentioned_in": 0,
+          "missed_by": 1,
+          "audit_coverage": [
+            {
+              "stmt_date": "2024-11-27",
+              "period_start": "2023-09-01",
+              "period_end": "2024-08-31",
+              "mentioned": false
+            }
+          ]
+        },
+        {
+          "id": 1881364,
+          "filed": "2024-02-21",
+          "summary": "Digicert: SMIME certificate with unvalidated information",
+          "self_reported": false,
+          "whiteboard": "[ca-compliance]  [smime-misissuance] ",
           "covering_letters": 1,
           "mentioned_in": 0,
           "missed_by": 1,
@@ -8296,11 +8334,155 @@
           ]
         },
         {
+          "id": 1891531,
+          "filed": "2024-04-15",
+          "summary": "Digicert: Government Entity listed instead of registration number",
+          "self_reported": true,
+          "whiteboard": "[ca-compliance] [ev-misissuance]",
+          "covering_letters": 1,
+          "mentioned_in": 0,
+          "missed_by": 1,
+          "audit_coverage": [
+            {
+              "stmt_date": "2024-11-27",
+              "period_start": "2023-09-01",
+              "period_end": "2024-08-31",
+              "mentioned": false
+            }
+          ]
+        },
+        {
+          "id": 1894560,
+          "filed": "2024-05-01",
+          "summary": "DigiCert: Incorrect case in Business Category",
+          "self_reported": false,
+          "whiteboard": "[ca-compliance] [ev-misissuance]",
+          "covering_letters": 1,
+          "mentioned_in": 0,
+          "missed_by": 1,
+          "audit_coverage": [
+            {
+              "stmt_date": "2024-11-27",
+              "period_start": "2023-09-01",
+              "period_end": "2024-08-31",
+              "mentioned": false
+            }
+          ]
+        },
+        {
+          "id": 1896053,
+          "filed": "2024-05-10",
+          "summary": "Digicert: Delayed Revocation for bug 1894560",
+          "self_reported": true,
+          "whiteboard": "[ca-compliance] [leaf-revocation-delay]",
+          "covering_letters": 1,
+          "mentioned_in": 0,
+          "missed_by": 1,
+          "audit_coverage": [
+            {
+              "stmt_date": "2024-11-27",
+              "period_start": "2023-09-01",
+              "period_end": "2024-08-31",
+              "mentioned": false
+            }
+          ]
+        },
+        {
           "id": 1896462,
           "filed": "2024-05-13",
           "summary": "Digicert: Preview certificate uploaded to CCADB instead of the actual certificate",
           "self_reported": true,
           "whiteboard": "[ca-compliance] [policy-failure]",
+          "covering_letters": 1,
+          "mentioned_in": 0,
+          "missed_by": 1,
+          "audit_coverage": [
+            {
+              "stmt_date": "2024-11-27",
+              "period_start": "2023-09-01",
+              "period_end": "2024-08-31",
+              "mentioned": false
+            }
+          ]
+        },
+        {
+          "id": 1898986,
+          "filed": "2024-05-25",
+          "summary": "DigiCert: Incorrect Org ID Scheme in S/MIME",
+          "self_reported": false,
+          "whiteboard": "[ca-compliance] [smime-misissuance]",
+          "covering_letters": 1,
+          "mentioned_in": 0,
+          "missed_by": 1,
+          "audit_coverage": [
+            {
+              "stmt_date": "2024-11-27",
+              "period_start": "2023-09-01",
+              "period_end": "2024-08-31",
+              "mentioned": false
+            }
+          ]
+        },
+        {
+          "id": 1910258,
+          "filed": "2024-07-27",
+          "summary": "DigiCert: Typo in TLS Org Name",
+          "self_reported": true,
+          "whiteboard": "[ca-compliance] [ov-misissuance]",
+          "covering_letters": 1,
+          "mentioned_in": 0,
+          "missed_by": 1,
+          "audit_coverage": [
+            {
+              "stmt_date": "2024-11-27",
+              "period_start": "2023-09-01",
+              "period_end": "2024-08-31",
+              "mentioned": false
+            }
+          ]
+        },
+        {
+          "id": 1910322,
+          "filed": "2024-07-29",
+          "summary": "DigiCert: Random value in CNAME without underscore prefix",
+          "self_reported": true,
+          "whiteboard": "[ca-compliance] [dv-misissuance] [ov-misissuance] [ev-misissuance]",
+          "covering_letters": 1,
+          "mentioned_in": 0,
+          "missed_by": 1,
+          "audit_coverage": [
+            {
+              "stmt_date": "2024-11-27",
+              "period_start": "2023-09-01",
+              "period_end": "2024-08-31",
+              "mentioned": false
+            }
+          ]
+        },
+        {
+          "id": 1910805,
+          "filed": "2024-07-31",
+          "summary": "DigiCert: Delayed revocation of 1910322",
+          "self_reported": true,
+          "whiteboard": "[ca-compliance] [leaf-revocation-delay]",
+          "covering_letters": 1,
+          "mentioned_in": 0,
+          "missed_by": 1,
+          "audit_coverage": [
+            {
+              "stmt_date": "2024-11-27",
+              "period_start": "2023-09-01",
+              "period_end": "2024-08-31",
+              "mentioned": false
+            }
+          ]
+        },
+        {
+          "id": 1914911,
+          "filed": "2024-08-26",
+          "summary": "DigiCert: Unclear Disclosure of CAA Issuer Domain Names",
+          "self_reported": false,
+          "whiteboard": "[ca-compliance] [policy-failure] [external]",
           "covering_letters": 1,
           "mentioned_in": 0,
           "missed_by": 1,
@@ -8584,222 +8766,6 @@
           ]
         },
         {
-          "id": 1853463,
-          "filed": "2023-09-15",
-          "summary": "DigiCert: SMIME certificates issued inconsistent with BR\u2019s",
-          "self_reported": false,
-          "whiteboard": "[ca-compliance] [smime-misissuance] Next update 2-Oct-2023",
-          "covering_letters": 1,
-          "mentioned_in": 1,
-          "missed_by": 0,
-          "audit_coverage": [
-            {
-              "stmt_date": "2024-11-27",
-              "period_start": "2023-09-01",
-              "period_end": "2024-08-31",
-              "mentioned": true
-            }
-          ]
-        },
-        {
-          "id": 1860697,
-          "filed": "2023-10-24",
-          "summary": "DigiCert: Certificates issued inconsistent with S/MIME BR v1.0.1",
-          "self_reported": false,
-          "whiteboard": "[ca-compliance] [smime-misissuance] Next update 2023-12-21",
-          "covering_letters": 1,
-          "mentioned_in": 1,
-          "missed_by": 0,
-          "audit_coverage": [
-            {
-              "stmt_date": "2024-11-27",
-              "period_start": "2023-09-01",
-              "period_end": "2024-08-31",
-              "mentioned": true
-            }
-          ]
-        },
-        {
-          "id": 1875205,
-          "filed": "2024-01-18",
-          "summary": "Digicert: SMIME certs missing State in Org ID",
-          "self_reported": false,
-          "whiteboard": "[ca-compliance] [smime-misissuance]",
-          "covering_letters": 1,
-          "mentioned_in": 1,
-          "missed_by": 0,
-          "audit_coverage": [
-            {
-              "stmt_date": "2024-11-27",
-              "period_start": "2023-09-01",
-              "period_end": "2024-08-31",
-              "mentioned": true
-            }
-          ]
-        },
-        {
-          "id": 1881364,
-          "filed": "2024-02-21",
-          "summary": "Digicert: SMIME certificate with unvalidated information",
-          "self_reported": false,
-          "whiteboard": "[ca-compliance]  [smime-misissuance] ",
-          "covering_letters": 1,
-          "mentioned_in": 1,
-          "missed_by": 0,
-          "audit_coverage": [
-            {
-              "stmt_date": "2024-11-27",
-              "period_start": "2023-09-01",
-              "period_end": "2024-08-31",
-              "mentioned": true
-            }
-          ]
-        },
-        {
-          "id": 1891531,
-          "filed": "2024-04-15",
-          "summary": "Digicert: Government Entity listed instead of registration number",
-          "self_reported": true,
-          "whiteboard": "[ca-compliance] [ev-misissuance]",
-          "covering_letters": 1,
-          "mentioned_in": 1,
-          "missed_by": 0,
-          "audit_coverage": [
-            {
-              "stmt_date": "2024-11-27",
-              "period_start": "2023-09-01",
-              "period_end": "2024-08-31",
-              "mentioned": true
-            }
-          ]
-        },
-        {
-          "id": 1894560,
-          "filed": "2024-05-01",
-          "summary": "DigiCert: Incorrect case in Business Category",
-          "self_reported": false,
-          "whiteboard": "[ca-compliance] [ev-misissuance]",
-          "covering_letters": 1,
-          "mentioned_in": 1,
-          "missed_by": 0,
-          "audit_coverage": [
-            {
-              "stmt_date": "2024-11-27",
-              "period_start": "2023-09-01",
-              "period_end": "2024-08-31",
-              "mentioned": true
-            }
-          ]
-        },
-        {
-          "id": 1896053,
-          "filed": "2024-05-10",
-          "summary": "Digicert: Delayed Revocation for bug 1894560",
-          "self_reported": true,
-          "whiteboard": "[ca-compliance] [leaf-revocation-delay]",
-          "covering_letters": 1,
-          "mentioned_in": 1,
-          "missed_by": 0,
-          "audit_coverage": [
-            {
-              "stmt_date": "2024-11-27",
-              "period_start": "2023-09-01",
-              "period_end": "2024-08-31",
-              "mentioned": true
-            }
-          ]
-        },
-        {
-          "id": 1898986,
-          "filed": "2024-05-25",
-          "summary": "DigiCert: Incorrect Org ID Scheme in S/MIME",
-          "self_reported": false,
-          "whiteboard": "[ca-compliance] [smime-misissuance]",
-          "covering_letters": 1,
-          "mentioned_in": 1,
-          "missed_by": 0,
-          "audit_coverage": [
-            {
-              "stmt_date": "2024-11-27",
-              "period_start": "2023-09-01",
-              "period_end": "2024-08-31",
-              "mentioned": true
-            }
-          ]
-        },
-        {
-          "id": 1910258,
-          "filed": "2024-07-27",
-          "summary": "DigiCert: Typo in TLS Org Name",
-          "self_reported": true,
-          "whiteboard": "[ca-compliance] [ov-misissuance]",
-          "covering_letters": 1,
-          "mentioned_in": 1,
-          "missed_by": 0,
-          "audit_coverage": [
-            {
-              "stmt_date": "2024-11-27",
-              "period_start": "2023-09-01",
-              "period_end": "2024-08-31",
-              "mentioned": true
-            }
-          ]
-        },
-        {
-          "id": 1910322,
-          "filed": "2024-07-29",
-          "summary": "DigiCert: Random value in CNAME without underscore prefix",
-          "self_reported": true,
-          "whiteboard": "[ca-compliance] [dv-misissuance] [ov-misissuance] [ev-misissuance]",
-          "covering_letters": 1,
-          "mentioned_in": 1,
-          "missed_by": 0,
-          "audit_coverage": [
-            {
-              "stmt_date": "2024-11-27",
-              "period_start": "2023-09-01",
-              "period_end": "2024-08-31",
-              "mentioned": true
-            }
-          ]
-        },
-        {
-          "id": 1910805,
-          "filed": "2024-07-31",
-          "summary": "DigiCert: Delayed revocation of 1910322",
-          "self_reported": true,
-          "whiteboard": "[ca-compliance] [leaf-revocation-delay]",
-          "covering_letters": 1,
-          "mentioned_in": 1,
-          "missed_by": 0,
-          "audit_coverage": [
-            {
-              "stmt_date": "2024-11-27",
-              "period_start": "2023-09-01",
-              "period_end": "2024-08-31",
-              "mentioned": true
-            }
-          ]
-        },
-        {
-          "id": 1914911,
-          "filed": "2024-08-26",
-          "summary": "DigiCert: Unclear Disclosure of CAA Issuer Domain Names",
-          "self_reported": false,
-          "whiteboard": "[ca-compliance] [policy-failure] [external]",
-          "covering_letters": 1,
-          "mentioned_in": 1,
-          "missed_by": 0,
-          "audit_coverage": [
-            {
-              "stmt_date": "2024-11-27",
-              "period_start": "2023-09-01",
-              "period_end": "2024-08-31",
-              "mentioned": true
-            }
-          ]
-        },
-        {
           "id": 1930759,
           "filed": "2024-11-12",
           "summary": "DigiCert: Domain used for CRLs and OCSP has expired",
@@ -8876,8 +8842,8 @@
       "latest_stmt_date": "2025-11-06",
       "latest_period_end": "2025-08-31",
       "earliest_period_start": "2024-09-01",
-      "stmt_age_days": 365,
-      "coverage_gap_days": 432,
+      "stmt_age_days": 366,
+      "coverage_gap_days": 433,
       "staleness": "stale",
       "root_count": 2,
       "no_audit_roots": 0,
@@ -8915,8 +8881,8 @@
         "24D45AA9B8D6053D281F3842C8CC0C6C1AF7CCDFD42DD5C12F6A74FA9323F7A2"
       ],
       "locations_audited": [
-        "Utah, USA",
-        "Colorado, USA"
+        "Utah, United States of America",
+        "Colorado, United States of America"
       ],
       "subservice_organizations": [
         "IdenTrust Services, LLC"
@@ -8926,7 +8892,7 @@
         {
           "item": 1,
           "topic": "Systems Development, Maintenance, and Change Management",
-          "summary": "Let's Encrypt disclosed in Mozilla Bug #1972745 that it deployed code it had developed for its CA software without it going through its review process.",
+          "summary": "Let's Encrypt disclosed that it deployed code it had developed for its CA software without it going through its review process.",
           "bugzilla_ids": [
             "1972745"
           ],
@@ -8935,8 +8901,8 @@
         },
         {
           "item": 2,
-          "topic": "Certificate Status Validation",
-          "summary": "Let's Encrypt disclosed in Mozilla Bug #1954861 that two revocation entries on CRLs were removed before the certificates had expired.",
+          "topic": "Certificate Status Validation (2)",
+          "summary": "Let's Encrypt disclosed that two revocation entries on CRLs were removed before the certificates had expired.",
           "bugzilla_ids": [
             "1954861"
           ],
@@ -9086,7 +9052,7 @@
             {
               "item": 1,
               "topic": "Systems Development, Maintenance, and Change Management",
-              "summary": "Let's Encrypt disclosed in Mozilla Bug #1972745 that it deployed code it had developed for its CA software without it going through its review process.",
+              "summary": "Let's Encrypt disclosed that it deployed code it had developed for its CA software without it going through its review process.",
               "bugzilla_ids": [
                 "1972745"
               ],
@@ -9095,8 +9061,8 @@
             },
             {
               "item": 2,
-              "topic": "Certificate Status Validation",
-              "summary": "Let's Encrypt disclosed in Mozilla Bug #1954861 that two revocation entries on CRLs were removed before the certificates had expired.",
+              "topic": "Certificate Status Validation (2)",
+              "summary": "Let's Encrypt disclosed that two revocation entries on CRLs were removed before the certificates had expired.",
               "bugzilla_ids": [
                 "1954861"
               ],
@@ -9243,8 +9209,8 @@
       "latest_stmt_date": "2026-04-07",
       "latest_period_end": "2025-08-31",
       "earliest_period_start": "2024-09-01",
-      "stmt_age_days": 213,
-      "coverage_gap_days": 432,
+      "stmt_age_days": 214,
+      "coverage_gap_days": 433,
       "staleness": "stale",
       "root_count": 2,
       "no_audit_roots": 0,
@@ -9415,8 +9381,8 @@
       "latest_stmt_date": "2025-12-04",
       "latest_period_end": "2025-09-08",
       "earliest_period_start": "2021-09-09",
-      "stmt_age_days": 337,
-      "coverage_gap_days": 424,
+      "stmt_age_days": 338,
+      "coverage_gap_days": 425,
       "staleness": "stale",
       "root_count": 2,
       "no_audit_roots": 0,
@@ -9443,7 +9409,9 @@
       "audit_criteria": "WebTrust Principles and Criteria for Certification Authorities \u2013 SSL Baseline with Network Security Version 2.6",
       "etsi_aal_version": null,
       "policy_oids_present": [],
-      "in_scope_sha256": [],
+      "in_scope_sha256": [
+        "74F37EFFFC9F537AF17DE2C4888CC54AF848CEBAB3EA4A6DA18BA4BF81934563"
+      ],
       "locations_audited": [
         "Bras\u00edlia, Brazil",
         "Florian\u00f3polis, Brazil"
@@ -9457,14 +9425,18 @@
       "pdf_pages": 5,
       "fingerprint_check": {
         "engagement_roots_expected": 0,
-        "engagement_fps_in_letter": 0,
+        "engagement_fps_in_letter": 1,
         "engagement_fps_matched": 0,
         "engagement_fps_missing": [],
-        "engagement_fps_extra": [],
+        "engagement_fps_extra": [
+          "74F37EFFFC9F537AF17DE2C4888CC54AF848CEBAB3EA4A6DA18BA4BF81934563"
+        ],
         "engagement_fps_extra_disclosed": [],
         "engagement_fps_extra_intermediates": [],
         "engagement_fps_extra_old_roots": [],
-        "engagement_fps_extra_undisclosed": [],
+        "engagement_fps_extra_undisclosed": [
+          "74F37EFFFC9F537AF17DE2C4888CC54AF848CEBAB3EA4A6DA18BA4BF81934563"
+        ],
         "engagement_accurate": null,
         "ca_total_roots": 2,
         "ca_roots_with_url": 2,
@@ -9652,8 +9624,8 @@
       "latest_stmt_date": "2025-12-05",
       "latest_period_end": "2025-09-09",
       "earliest_period_start": "2024-09-10",
-      "stmt_age_days": 336,
-      "coverage_gap_days": 423,
+      "stmt_age_days": 337,
+      "coverage_gap_days": 424,
       "staleness": "stale",
       "root_count": 6,
       "no_audit_roots": 0,
@@ -9679,7 +9651,7 @@
       "pdf_parsed": true,
       "opinion_type": "unqualified",
       "audit_framework": "ETSI",
-      "audit_criteria": "ETSI EN 319 411-2 V2.6.1 (2025-06); ETSI EN 319 411-1 V1.5.1 (2025-04); ETSI EN 319 401 V3.1.1 (2024-06); Baseline Requirements for the Issuance and Management of Publicly-Trusted tls server Certificates, v.2.1.7",
+      "audit_criteria": "ETSI EN 319 411-2 V2.6.1 (2025-06); ETSI EN 319 411-1 V1.5.1 (2025-04); ETSI EN 319 401 V3.1.1 (2024-06); CA Browser Forum Baseline Requirements for the Issuance and Management of Publicly-Trusted tls server Certificates v.2.1.7; ETSI EN 319 403-1 V2.3.1 (2020-06)",
       "etsi_aal_version": "3.4",
       "policy_oids_present": [],
       "in_scope_sha256": [
@@ -9692,7 +9664,9 @@
         "0CBFDCD9B92466FBDA8BD464E6805B0D2647989C4E26AF5BBBFBD8FF583C6BEE"
       ],
       "locations_audited": [
-        "Budapest, Hungary"
+        "Budapest, Hungary (\u00c1ngel Sanz Briz \u00fat 13, 1033 Budapest)",
+        "Budapest, Hungary (Z\u00e1hony utca 7, 1031 Budapest)",
+        "Budapest, Hungary (T-Systems Cloud & Data Center, Asztalos S\u00e1ndor \u00fat 13, 1087 Budapest)"
       ],
       "subservice_organizations": [
         "T-Systems Cloud & Data Center"
@@ -9756,7 +9730,7 @@
         "note": null
       },
       "criteria_check": {
-        "criteria_raw": "ETSI EN 319 411-2 V2.6.1 (2025-06); ETSI EN 319 411-1 V1.5.1 (2025-04); ETSI EN 319 401 V3.1.1 (2024-06); Baseline Requirements for the Issuance and Management of Publicly-Trusted tls server Certificates, v.2.1.7",
+        "criteria_raw": "ETSI EN 319 411-2 V2.6.1 (2025-06); ETSI EN 319 411-1 V1.5.1 (2025-04); ETSI EN 319 401 V3.1.1 (2024-06); CA Browser Forum Baseline Requirements for the Issuance and Management of Publicly-Trusted tls server Certificates v.2.1.7; ETSI EN 319 403-1 V2.3.1 (2020-06)",
         "framework": "ETSI",
         "criteria_version": "EN 319 411-2 V2.6.1",
         "criteria_current": true,
@@ -9932,8 +9906,8 @@
       "latest_stmt_date": "2025-12-11",
       "latest_period_end": "2025-09-19",
       "earliest_period_start": "2024-09-20",
-      "stmt_age_days": 330,
-      "coverage_gap_days": 413,
+      "stmt_age_days": 331,
+      "coverage_gap_days": 414,
       "staleness": "stale",
       "root_count": 1,
       "no_audit_roots": 0,
@@ -9955,7 +9929,7 @@
       "pdf_parsed": true,
       "opinion_type": "unqualified",
       "audit_framework": "ETSI",
-      "audit_criteria": "ETSI EN 319 411-1 V1.4.1 (2023-10); ETSI EN 319 401 V3.1.1 (2024-06); ETSI EN 319 403-1 V2.3.1 (2020-06); ETSI TS 119 403-2 V1.3.1 (2023-03); Baseline Requirements for TLS Server Certificates version 2.1.9; Network and Certificate System Security Requirements version 2.0.5; Mozilla Root Store Policy version 3.0; Chrome Root Program Policy version 1.7; Apple Root Certificate Program 2023-08; Microsoft Trusted Root Program 2024-08; 360 Browser CA Policy version 1.2",
+      "audit_criteria": "ETSI EN 319 411-1 V1.4.1 (2023-10); ETSI EN 319 401 V3.1.1 (2024-06); ETSI EN 319 403-1 V2.3.1 (2020-06); ETSI TS 119 403-2 V1.3.1 (2023-03)",
       "etsi_aal_version": "3.4",
       "policy_oids_present": [],
       "in_scope_sha256": [
@@ -10018,7 +9992,7 @@
         "note": null
       },
       "criteria_check": {
-        "criteria_raw": "ETSI EN 319 411-1 V1.4.1 (2023-10); ETSI EN 319 401 V3.1.1 (2024-06); ETSI EN 319 403-1 V2.3.1 (2020-06); ETSI TS 119 403-2 V1.3.1 (2023-03); Baseline Requirements for TLS Server Certificates version 2.1.9; Network and Certificate System Security Requirements version 2.0.5; Mozilla Root Store Policy version 3.0; Chrome Root Program Policy version 1.7; Apple Root Certificate Program 2023-08; Microsoft Trusted Root Program 2024-08; 360 Browser CA Policy version 1.2",
+        "criteria_raw": "ETSI EN 319 411-1 V1.4.1 (2023-10); ETSI EN 319 401 V3.1.1 (2024-06); ETSI EN 319 403-1 V2.3.1 (2020-06); ETSI TS 119 403-2 V1.3.1 (2023-03)",
         "framework": "ETSI",
         "criteria_version": "EN 319 411-1 V1.4.1",
         "criteria_current": true,
@@ -10173,8 +10147,8 @@
       "latest_stmt_date": "2025-12-16",
       "latest_period_end": "2025-09-30",
       "earliest_period_start": "2024-10-01",
-      "stmt_age_days": 325,
-      "coverage_gap_days": 402,
+      "stmt_age_days": 326,
+      "coverage_gap_days": 403,
       "staleness": "stale",
       "root_count": 1,
       "no_audit_roots": 0,
@@ -10218,8 +10192,8 @@
         },
         {
           "item": 2,
-          "topic": "Certificate Validation",
-          "summary": "A valid OV SSL test certificate's associated website temporarily presented an expired certificate due to an outdated DR DNS record pointing to an old host; the issue was resolved on September 11th, 2025.",
+          "topic": "DNS Configuration",
+          "summary": "A valid OV SSL test certificate's associated website temporarily served an expired certificate due to outdated DR DNS records; the issue was resolved by correcting DNS records the same day.",
           "bugzilla_ids": [
             "1988405"
           ],
@@ -10362,8 +10336,8 @@
             },
             {
               "item": 2,
-              "topic": "Certificate Validation",
-              "summary": "A valid OV SSL test certificate's associated website temporarily presented an expired certificate due to an outdated DR DNS record pointing to an old host; the issue was resolved on September 11th, 2025.",
+              "topic": "DNS Configuration",
+              "summary": "A valid OV SSL test certificate's associated website temporarily served an expired certificate due to outdated DR DNS records; the issue was resolved by correcting DNS records the same day.",
               "bugzilla_ids": [
                 "1988405"
               ],
@@ -10465,8 +10439,8 @@
       "latest_stmt_date": "2025-10-30",
       "latest_period_end": "2025-09-30",
       "earliest_period_start": "2024-10-01",
-      "stmt_age_days": 372,
-      "coverage_gap_days": 402,
+      "stmt_age_days": 373,
+      "coverage_gap_days": 403,
       "staleness": "stale",
       "root_count": 10,
       "no_audit_roots": 0,
@@ -10506,16 +10480,16 @@
       "disclosed_matters": [
         {
           "item": 1,
-          "topic": "Certificate Lifecycle Event Missing Audit Log Entry",
-          "summary": "GTS failed to write an audit log entry for a certificate lifecycle event during onboarding examination, but remediated by reducing and simplifying the onboarding approval process.",
+          "topic": "Certificate Lifecycle Event Audit Log",
+          "summary": "GTS did not record lifecycle events for one certificate in the audit log due to a race condition in authorization processing.",
           "bugzilla_ids": [],
-          "certificate_count": null,
+          "certificate_count": 1,
           "self_reported": true
         },
         {
           "item": 2,
-          "topic": "Multi-Perspective Services Verification Bug",
-          "summary": "GTS' self-auditing tool incorrectly verified MPIC perspectives used in domain control validation due to audit log format updates not being reflected in the audit tool logic.",
+          "topic": "Multi-Perspective Services Self-Issuance Corroboration Verification",
+          "summary": "GTS' self-auditing tool incorrectly verified MPIC perspectives for domain control validation due to audit log format changes not being reflected in tool logic.",
           "bugzilla_ids": [
             "1948368"
           ],
@@ -10524,8 +10498,8 @@
         },
         {
           "item": 3,
-          "topic": "Inconsistent CAA Perspective Logging",
-          "summary": "528,586 certificates lacked the desired number of remote perspective details for CAA checks due to issuance flow continuing before all remote perspective CAA checks completed and insufficient review of validation results.",
+          "topic": "CAA Remote Perspective Checks",
+          "summary": "528,586 certificates lacked the desired number of remote perspective details for CAA checks due to incomplete perspective checks and insufficient review of validation results.",
           "bugzilla_ids": [
             "1959867"
           ],
@@ -10534,8 +10508,8 @@
         },
         {
           "item": 4,
-          "topic": "Missing Authorization Audit Log Entry",
-          "summary": "One certificate was issued without its certificate lifecycle event being recorded in the audit log due to a race condition between authorization database record creation and audit log entry writing.",
+          "topic": "Missing Audit Log Entry for Certificate Issuance",
+          "summary": "One certificate was issued without a corresponding audit log entry being written due to a race condition between authorization database record creation and audit log entry writing.",
           "bugzilla_ids": [
             "1979457"
           ],
@@ -10656,17 +10630,9 @@
           "opinion_type": "unqualified",
           "disclosed_matters": [
             {
-              "item": 1,
-              "topic": "SXG CAA Validation",
-              "summary": "GTS issued a certificate with incorrect CAA validation for Signed Exchanges (SXG), which was identified and the certificate was revoked; the issue was caused by an incorrect condition in CAA validation code.",
-              "bugzilla_ids": [],
-              "certificate_count": null,
-              "self_reported": true
-            },
-            {
               "item": 4,
-              "topic": "Failure to Respond to Certificate Problem Report within 24 Hours",
-              "summary": "GTS failed to respond to a Certificate Problem Report requesting revocation within 24 hours; the issue affected four CPR form submissions from June 4-9, 2023, with only one valid submission that did not result in a mis-issuance.",
+              "topic": "Failure to respond to revocation requests within 24 hours",
+              "summary": "GTS failed to respond to a Certificate Problem Report requesting revocation within 24 hours due to the CPR form submission process no longer passing new requests into the review pipeline.",
               "bugzilla_ids": [
                 "1837519"
               ],
@@ -10674,7 +10640,7 @@
               "self_reported": true
             }
           ],
-          "disclosed_matters_count": 2,
+          "disclosed_matters_count": 1,
           "disclosure_rate": null,
           "fp_coverage_pct": null,
           "quality_score": null,
@@ -10694,16 +10660,16 @@
           "disclosed_matters": [
             {
               "item": 1,
-              "topic": "Certificate Lifecycle Event Missing Audit Log Entry",
-              "summary": "GTS failed to write an audit log entry for a certificate lifecycle event during onboarding examination, but remediated by reducing and simplifying the onboarding approval process.",
+              "topic": "Certificate Lifecycle Event Audit Log",
+              "summary": "GTS did not record lifecycle events for one certificate in the audit log due to a race condition in authorization processing.",
               "bugzilla_ids": [],
-              "certificate_count": null,
+              "certificate_count": 1,
               "self_reported": true
             },
             {
               "item": 2,
-              "topic": "Multi-Perspective Services Verification Bug",
-              "summary": "GTS' self-auditing tool incorrectly verified MPIC perspectives used in domain control validation due to audit log format updates not being reflected in the audit tool logic.",
+              "topic": "Multi-Perspective Services Self-Issuance Corroboration Verification",
+              "summary": "GTS' self-auditing tool incorrectly verified MPIC perspectives for domain control validation due to audit log format changes not being reflected in tool logic.",
               "bugzilla_ids": [
                 "1948368"
               ],
@@ -10712,8 +10678,8 @@
             },
             {
               "item": 3,
-              "topic": "Inconsistent CAA Perspective Logging",
-              "summary": "528,586 certificates lacked the desired number of remote perspective details for CAA checks due to issuance flow continuing before all remote perspective CAA checks completed and insufficient review of validation results.",
+              "topic": "CAA Remote Perspective Checks",
+              "summary": "528,586 certificates lacked the desired number of remote perspective details for CAA checks due to incomplete perspective checks and insufficient review of validation results.",
               "bugzilla_ids": [
                 "1959867"
               ],
@@ -10722,8 +10688,8 @@
             },
             {
               "item": 4,
-              "topic": "Missing Authorization Audit Log Entry",
-              "summary": "One certificate was issued without its certificate lifecycle event being recorded in the audit log due to a race condition between authorization database record creation and audit log entry writing.",
+              "topic": "Missing Audit Log Entry for Certificate Issuance",
+              "summary": "One certificate was issued without a corresponding audit log entry being written due to a race condition between authorization database record creation and audit log entry writing.",
               "bugzilla_ids": [
                 "1979457"
               ],
@@ -10927,8 +10893,8 @@
       "latest_stmt_date": "2025-11-21",
       "latest_period_end": "2025-09-30",
       "earliest_period_start": "2024-10-01",
-      "stmt_age_days": 350,
-      "coverage_gap_days": 402,
+      "stmt_age_days": 351,
+      "coverage_gap_days": 403,
       "staleness": "stale",
       "root_count": 3,
       "no_audit_roots": 0,
@@ -10957,9 +10923,9 @@
         "BDF26CFB8952E3D0F62AC18F7913D80F8AC3250FDF874AD29B834689C087FB11"
       ],
       "locations_audited": [
-        "Chuncheon-si, Gangwon-do",
-        "Anyang-si, Gyeonggi-do",
-        "Seongnam-si, Gyeonggi-do"
+        "Chuncheon-si, Gangwon-do, Republic of Korea",
+        "Anyang-si, Gyeonggi-do, Republic of Korea",
+        "Seongnam-si, Gyeonggi-do, Republic of Korea"
       ],
       "subservice_organizations": [],
       "qualifications": [],
@@ -11117,8 +11083,8 @@
       "latest_stmt_date": "2026-01-15",
       "latest_period_end": "2025-10-07",
       "earliest_period_start": "2024-10-08",
-      "stmt_age_days": 295,
-      "coverage_gap_days": 395,
+      "stmt_age_days": 296,
+      "coverage_gap_days": 396,
       "staleness": "stale",
       "root_count": 9,
       "no_audit_roots": 0,
@@ -11153,7 +11119,7 @@
         "B0935DC04B4E60C0C42DEF7EC57A1B1D8F958D17988E71CC80A8CF5E635BA5B4"
       ],
       "locations_audited": [
-        "Berlin, Germany"
+        "10969 Berlin"
       ],
       "subservice_organizations": [],
       "qualifications": [],
@@ -11316,7 +11282,7 @@
             {
               "item": 1,
               "topic": "Defective certificate incident reporting form",
-              "summary": "Bug 1976837: D-Trust had a defective certificate incident reporting form; remediation measures were checked by auditors and properly addressed the incident.",
+              "summary": "Bug 1976837: D-Trust had a defective certificate incident reporting form that was remediated and verified by auditors.",
               "bugzilla_ids": [
                 "1976837"
               ],
@@ -11364,8 +11330,8 @@
       "latest_stmt_date": "2025-12-04",
       "latest_period_end": "2025-10-07",
       "earliest_period_start": "2024-10-08",
-      "stmt_age_days": 337,
-      "coverage_gap_days": 395,
+      "stmt_age_days": 338,
+      "coverage_gap_days": 396,
       "staleness": "stale",
       "root_count": 1,
       "no_audit_roots": 0,
@@ -11394,12 +11360,12 @@
         "92C4DB06C42A13F90CC7521EAB0D663574D7741B337F93C806FD6714E8E890E8"
       ],
       "locations_audited": [
-        "Teraco JB1 Isando (Johannesburg, South Africa)",
-        "Teraco JB2 Bredell (Johannesburg, South Africa)"
+        "Teraco JB1 Isando, Johannesburg, South Africa",
+        "Teraco JB2 Bredell, Johannesburg, South Africa"
       ],
       "subservice_organizations": [],
       "qualifications": [
-        "TrustFactory-CA does not escrow its CA keys and does not provide certificate suspension services. Accordingly, our procedures did not extend to controls that would address those criteria."
+        "TrustFactory does not escrow its CA keys and does not provide certificate suspension services. Accordingly, our procedures did not extend to controls that would address those criteria."
       ],
       "disclosed_matters": [],
       "pdf_auditor_firm": "KPMG Inc",
@@ -11561,8 +11527,8 @@
       "latest_stmt_date": "2025-11-28",
       "latest_period_end": "2025-10-22",
       "earliest_period_start": "2024-10-23",
-      "stmt_age_days": 343,
-      "coverage_gap_days": 380,
+      "stmt_age_days": 344,
+      "coverage_gap_days": 381,
       "staleness": "stale",
       "root_count": 1,
       "no_audit_roots": 0,
@@ -11586,7 +11552,7 @@
       "pdf_parsed": true,
       "opinion_type": "unqualified",
       "audit_framework": "ETSI",
-      "audit_criteria": "ETSI EN 319 411-2 V2.5.1 (2023-10); ETSI EN 319 411-1 V1.4.1 (2023-10); ETSI EN 319 401 V3.1.1 (2024-06); CA/B Forum Baseline Requirements for the Issuance and Management of Publicly-Trusted Certificates version 2.1.8; CA/B Forum Baseline Requirements for the Issuance and Management of Publicly-Trusted S/MIME Certificates version 1.0.12; CA/B Forum Network and Certificate System Security Requirements version 2.0.5",
+      "audit_criteria": "ETSI EN 319 411-2 V2.5.1 (2023-10); ETSI EN 319 411-1 V1.4.1 (2023-10); ETSI EN 319 401 V3.1.1 (2024-06)",
       "etsi_aal_version": "3.4",
       "policy_oids_present": [],
       "in_scope_sha256": [
@@ -11597,8 +11563,8 @@
         "BD0636ABC7F7501899C3FBD00AE071BB070B3E82ECAFF9A27F6E1FB1E7E2A2EA"
       ],
       "locations_audited": [
-        "CAB office, Praha 8, Czech Republic",
-        "TSP office, Ol\u0161ansk\u00e1 38/9, 130 00 Praha 3, Czech Republic"
+        "Praha 8, Czech Republic",
+        "Praha 3, Czech Republic"
       ],
       "subservice_organizations": [],
       "qualifications": [],
@@ -11656,7 +11622,7 @@
         "note": null
       },
       "criteria_check": {
-        "criteria_raw": "ETSI EN 319 411-2 V2.5.1 (2023-10); ETSI EN 319 411-1 V1.4.1 (2023-10); ETSI EN 319 401 V3.1.1 (2024-06); CA/B Forum Baseline Requirements for the Issuance and Management of Publicly-Trusted Certificates version 2.1.8; CA/B Forum Baseline Requirements for the Issuance and Management of Publicly-Trusted S/MIME Certificates version 1.0.12; CA/B Forum Network and Certificate System Security Requirements version 2.0.5",
+        "criteria_raw": "ETSI EN 319 411-2 V2.5.1 (2023-10); ETSI EN 319 411-1 V1.4.1 (2023-10); ETSI EN 319 401 V3.1.1 (2024-06)",
         "framework": "ETSI",
         "criteria_version": "EN 319 411-2 V2.5.1",
         "criteria_current": true,
@@ -11783,8 +11749,8 @@
       "latest_stmt_date": "2025-12-18",
       "latest_period_end": "2025-10-30",
       "earliest_period_start": "2024-10-31",
-      "stmt_age_days": 323,
-      "coverage_gap_days": 372,
+      "stmt_age_days": 324,
+      "coverage_gap_days": 373,
       "staleness": "stale",
       "root_count": 1,
       "no_audit_roots": 0,
@@ -11825,7 +11791,7 @@
         {
           "item": 1,
           "topic": "Failure to Submit Annual CCADB Self-Assessment",
-          "summary": "Izenpe failed to submit annual CCADB self-assessment as required.",
+          "summary": "IZENPE failed to submit annual CCADB self-assessment as required.",
           "bugzilla_ids": [
             "1883493"
           ],
@@ -11835,7 +11801,7 @@
         {
           "item": 2,
           "topic": "Duplicate attribute in Subject",
-          "summary": "Izenpe issued certificates with duplicate attributes in the Subject field.",
+          "summary": "IZENPE issued certificates with duplicate attributes in the Subject field.",
           "bugzilla_ids": [
             "1921254"
           ],
@@ -11845,7 +11811,7 @@
         {
           "item": 3,
           "topic": "Not allowed Qualifier ID OID on Certificate Policies extension of Precertificates",
-          "summary": "Izenpe included not-allowed Qualifier ID OID on Certificate Policies extension of precertificates.",
+          "summary": "IZENPE used a not allowed Qualifier ID OID on Certificate Policies extension of Precertificates.",
           "bugzilla_ids": [
             "1922844"
           ],
@@ -11855,7 +11821,7 @@
         {
           "item": 4,
           "topic": "Incorrect Unicode characters in Subject",
-          "summary": "Izenpe issued certificates with incorrect Unicode characters in the Subject field.",
+          "summary": "IZENPE issued certificates with incorrect Unicode characters in the Subject field.",
           "bugzilla_ids": [
             "1945867"
           ],
@@ -11865,7 +11831,7 @@
         {
           "item": 5,
           "topic": "Outdated CPS for Izenpe Root",
-          "summary": "Izenpe maintained outdated CPS documentation for the Izenpe Root CA.",
+          "summary": "IZENPE maintained an outdated Certificate Practice Statement for the Izenpe Root CA.",
           "bugzilla_ids": [
             "1948600"
           ],
@@ -11875,7 +11841,7 @@
         {
           "item": 6,
           "topic": "IssuingDistributionPoint extension in CRLs not marked as Critical",
-          "summary": "Izenpe's CRLs contained IssuingDistributionPoint extension not marked as critical.",
+          "summary": "IZENPE issued CRLs with IssuingDistributionPoint extension not marked as critical.",
           "bugzilla_ids": [
             "1976256"
           ],
@@ -11885,7 +11851,7 @@
         {
           "item": 7,
           "topic": "Failed to respond a Certificate Problem Report within 24 hours and create a preliminary report in 72 hours",
-          "summary": "Izenpe failed to respond to a Certificate Problem Report within 24 hours and create a preliminary report within 72 hours.",
+          "summary": "IZENPE failed to respond to a Certificate Problem Report within 24 hours and create a preliminary report within 72 hours.",
           "bugzilla_ids": [
             "1985466"
           ],
@@ -11894,8 +11860,8 @@
         },
         {
           "item": 8,
-          "topic": "not allowed Key Usage in ocsp responder certificate",
-          "summary": "Izenpe issued OCSP responder certificates with not-allowed Key Usage values.",
+          "topic": "Not allowed Key Usage in OCSP responder certificate",
+          "summary": "IZENPE used not allowed Key Usage in an OCSP responder certificate.",
           "bugzilla_ids": [],
           "certificate_count": null,
           "self_reported": true
@@ -12081,7 +12047,7 @@
             {
               "item": 2,
               "topic": "Duplicate attribute in Subject",
-              "summary": "Izenpe issued certificates with duplicate attributes in the Subject field.",
+              "summary": "Duplicate attribute identified in certificate subject field.",
               "bugzilla_ids": [
                 "1921254"
               ],
@@ -12091,7 +12057,7 @@
             {
               "item": 3,
               "topic": "Not allowed Qualifier ID OID on Certificate Policies extension of Precertificates",
-              "summary": "Izenpe used not allowed Qualifier ID OID on Certificate Policies extension of precertificates.",
+              "summary": "Precertificates contained not allowed Qualifier ID OID in Certificate Policies extension.",
               "bugzilla_ids": [
                 "1922844"
               ],
@@ -12101,7 +12067,7 @@
             {
               "item": 4,
               "topic": "Incorrect Unicode characters in Subject",
-              "summary": "Izenpe issued certificates with incorrect Unicode characters in the Subject field.",
+              "summary": "Incorrect Unicode characters were found in certificate subject.",
               "bugzilla_ids": [
                 "1945867"
               ],
@@ -12111,7 +12077,7 @@
             {
               "item": 5,
               "topic": "Outdated CPS for Izenpe Root",
-              "summary": "Izenpe maintained an outdated Certificate Practice Statement for its root CA.",
+              "summary": "Certificate Practice Statement for Izenpe Root was outdated.",
               "bugzilla_ids": [
                 "1948600"
               ],
@@ -12121,7 +12087,7 @@
             {
               "item": 6,
               "topic": "IssuingDistributionPoint extension in CRLs not marked as Critical",
-              "summary": "Izenpe issued CRLs with IssuingDistributionPoint extension not marked as critical.",
+              "summary": "IssuingDistributionPoint extension in CRLs was not marked as critical.",
               "bugzilla_ids": [
                 "1976256"
               ],
@@ -12292,8 +12258,8 @@
       "latest_stmt_date": "2026-01-29",
       "latest_period_end": "2025-10-31",
       "earliest_period_start": "2024-11-01",
-      "stmt_age_days": 281,
-      "coverage_gap_days": 371,
+      "stmt_age_days": 282,
+      "coverage_gap_days": 372,
       "staleness": "stale",
       "root_count": 3,
       "no_audit_roots": 0,
@@ -12317,7 +12283,7 @@
       "pdf_parsed": true,
       "opinion_type": "unqualified",
       "audit_framework": "ETSI",
-      "audit_criteria": "ETSI EN 319 411-1 V1.5.1 (2025-04); ETSI EN 319 401 V3.1.1 (2024-06); Baseline Requirements for the Issuance and Management of Publicly-Trusted TLS Server Certificates, version 2.1.7; Network and Certificate System Security Requirements, version 2.0.5; ETSI EN 319 403-1 V2.3.1 (2020-06); ETSI TS 119 403-2 V1.3.1 (2023-03)",
+      "audit_criteria": "ETSI EN 319 411-1 V1.5.1 (2025-04); ETSI EN 319 401 V3.1.1 (2024-06); Baseline Requirements for the Issuance and Management of Publicly-Trusted TLS Server Certificates, version 2.1.7; Network and Certificate System Security Requirements, version 2.0.5; Mozilla Root Store Policy; Microsoft Trusted Root Program, Program Requirements; Google Chrome Root Program Policy; Apple Root Certificate Program; ETSI EN 319 403-1 V2.3.1 (2020-06); ETSI TS 119 403-2 V1.3.1 (2023-03); ETSI TS 119 495 v1.7.1 (2024-07)",
       "etsi_aal_version": "3.4",
       "policy_oids_present": [],
       "in_scope_sha256": [
@@ -12378,7 +12344,7 @@
         "note": null
       },
       "criteria_check": {
-        "criteria_raw": "ETSI EN 319 411-1 V1.5.1 (2025-04); ETSI EN 319 401 V3.1.1 (2024-06); Baseline Requirements for the Issuance and Management of Publicly-Trusted TLS Server Certificates, version 2.1.7; Network and Certificate System Security Requirements, version 2.0.5; ETSI EN 319 403-1 V2.3.1 (2020-06); ETSI TS 119 403-2 V1.3.1 (2023-03)",
+        "criteria_raw": "ETSI EN 319 411-1 V1.5.1 (2025-04); ETSI EN 319 401 V3.1.1 (2024-06); Baseline Requirements for the Issuance and Management of Publicly-Trusted TLS Server Certificates, version 2.1.7; Network and Certificate System Security Requirements, version 2.0.5; Mozilla Root Store Policy; Microsoft Trusted Root Program, Program Requirements; Google Chrome Root Program Policy; Apple Root Certificate Program; ETSI EN 319 403-1 V2.3.1 (2020-06); ETSI TS 119 403-2 V1.3.1 (2023-03); ETSI TS 119 495 v1.7.1 (2024-07)",
         "framework": "ETSI",
         "criteria_version": "EN 319 411-1 V1.5.1",
         "criteria_current": true,
@@ -12516,8 +12482,8 @@
       "latest_stmt_date": "2026-01-27",
       "latest_period_end": "2025-10-31",
       "earliest_period_start": "2024-11-01",
-      "stmt_age_days": 283,
-      "coverage_gap_days": 371,
+      "stmt_age_days": 284,
+      "coverage_gap_days": 372,
       "staleness": "stale",
       "root_count": 1,
       "no_audit_roots": 0,
@@ -12763,49 +12729,8 @@
           "url": "https://bug1947704.bmoattachments.org/attachment.cgi?id=9465662",
           "letter_parsed": true,
           "opinion_type": "qualified",
-          "disclosed_matters": [
-            {
-              "item": 1,
-              "topic": "Terms and Conditions",
-              "summary": "Not all necessary information is described in the terms of use.",
-              "bugzilla_ids": [],
-              "certificate_count": null,
-              "self_reported": false
-            },
-            {
-              "item": 2,
-              "topic": "Facility, management, and operational controls",
-              "summary": "The validity period of an identification in which certificates may be issued is not documented.",
-              "bugzilla_ids": [],
-              "certificate_count": null,
-              "self_reported": false
-            },
-            {
-              "item": 3,
-              "topic": "Asset management",
-              "summary": "The asset management documentation has not been finalized and formally approved at the time of the audit, and an information asset register does not yet exist.",
-              "bugzilla_ids": [],
-              "certificate_count": null,
-              "self_reported": false
-            },
-            {
-              "item": 4,
-              "topic": "Physical and environmental security",
-              "summary": "The racks are in a server room of the FOITT and shared with other departments. The racks are physically locked, but not monitored.",
-              "bugzilla_ids": [],
-              "certificate_count": null,
-              "self_reported": false
-            },
-            {
-              "item": 5,
-              "topic": "QC-Statements",
-              "summary": "The Policy and Layout document does not formally list id-etsi-qcs-QcCompliance and id-etsi-qcs-QcCClegislation within the profiles for class A certificates.",
-              "bugzilla_ids": [],
-              "certificate_count": null,
-              "self_reported": false
-            }
-          ],
-          "disclosed_matters_count": 5,
+          "disclosed_matters": [],
+          "disclosed_matters_count": 0,
           "disclosure_rate": null,
           "fp_coverage_pct": null,
           "quality_score": null,
@@ -12953,8 +12878,8 @@
       "latest_stmt_date": "2025-12-17",
       "latest_period_end": "2025-10-31",
       "earliest_period_start": "2024-11-01",
-      "stmt_age_days": 324,
-      "coverage_gap_days": 371,
+      "stmt_age_days": 325,
+      "coverage_gap_days": 372,
       "staleness": "stale",
       "root_count": 10,
       "no_audit_roots": 0,
@@ -13196,7 +13121,7 @@
             {
               "item": 1,
               "topic": null,
-              "summary": "Bug 1936741: Findings in 2024 Audit - remediation measures taken by Telia Company AB have been checked and properly addressed.",
+              "summary": "Bug 1936741 regarding Telia findings in 2024 audit; remediation measures were checked and properly addressed.",
               "bugzilla_ids": [
                 "1936741"
               ],
@@ -13382,8 +13307,8 @@
       "latest_stmt_date": "2026-02-10",
       "latest_period_end": "2025-11-28",
       "earliest_period_start": "2024-11-30",
-      "stmt_age_days": 269,
-      "coverage_gap_days": 343,
+      "stmt_age_days": 270,
+      "coverage_gap_days": 344,
       "staleness": "aging",
       "root_count": 2,
       "no_audit_roots": 0,
@@ -13577,8 +13502,8 @@
       "latest_stmt_date": "2026-03-11",
       "latest_period_end": "2025-12-14",
       "earliest_period_start": "2024-12-15",
-      "stmt_age_days": 240,
-      "coverage_gap_days": 327,
+      "stmt_age_days": 241,
+      "coverage_gap_days": 328,
       "staleness": "aging",
       "root_count": 2,
       "no_audit_roots": 0,
@@ -13610,23 +13535,15 @@
         "0B93CFA8918A56C98422FAEA6850C7ABCF1B683AAD6908BC9FD8352A4A7A1B75"
       ],
       "locations_audited": [
-        "Wien, Austria"
+        "A-Trust GmbH, Landstra\u00dfer Hauptstra\u00dfe 1b, E02, 1030 Wien, Austria"
       ],
       "subservice_organizations": [],
       "qualifications": [],
       "disclosed_matters": [
         {
           "item": 1,
-          "topic": "Mass Revocation Plans",
-          "summary": "No assertion to a mass revocation plan in section 5.7.1 of the combined CP/CPS, fixed in version 2.6.1.",
-          "bugzilla_ids": [],
-          "certificate_count": null,
-          "self_reported": false
-        },
-        {
-          "item": 2,
           "topic": "TLS non-compliance",
-          "summary": "TLS non-compliance detected during linter implementation; remediation measures were checked and properly addressed.",
+          "summary": "TLS non-compliance detected during linter implementation (Bug 1972887); remediation measures taken by A-Trust GmbH were checked by auditors and properly addressed.",
           "bugzilla_ids": [
             "1972887"
           ],
@@ -13715,9 +13632,9 @@
       },
       "transparency_gap": {
         "incident_count": 0,
-        "matters_count": 2,
+        "matters_count": 1,
         "matters_with_bugzilla": 1,
-        "externally_found": 1,
+        "externally_found": 0,
         "gap_score": null,
         "gap_level": "unknown"
       },
@@ -13761,16 +13678,8 @@
           "disclosed_matters": [
             {
               "item": 1,
-              "topic": "Mass Revocation Plans",
-              "summary": "No assertion to a mass revocation plan in section 5.7.1 of the combined CP/CPS, fixed in version 2.6.1.",
-              "bugzilla_ids": [],
-              "certificate_count": null,
-              "self_reported": false
-            },
-            {
-              "item": 2,
               "topic": "TLS non-compliance",
-              "summary": "TLS non-compliance detected during linter implementation; remediation measures were checked and properly addressed.",
+              "summary": "TLS non-compliance detected during linter implementation (Bug 1972887); remediation measures taken by A-Trust GmbH were checked by auditors and properly addressed.",
               "bugzilla_ids": [
                 "1972887"
               ],
@@ -13778,7 +13687,7 @@
               "self_reported": true
             }
           ],
-          "disclosed_matters_count": 2,
+          "disclosed_matters_count": 1,
           "disclosure_rate": null,
           "fp_coverage_pct": null,
           "quality_score": 100.0,
@@ -13833,8 +13742,8 @@
       "latest_stmt_date": "2026-02-24",
       "latest_period_end": "2025-12-31",
       "earliest_period_start": "2024-12-01",
-      "stmt_age_days": 255,
-      "coverage_gap_days": 310,
+      "stmt_age_days": 256,
+      "coverage_gap_days": 311,
       "staleness": "aging",
       "root_count": 2,
       "no_audit_roots": 0,
@@ -14079,8 +13988,8 @@
       "latest_stmt_date": "2026-03-25",
       "latest_period_end": "2025-12-31",
       "earliest_period_start": "2025-01-01",
-      "stmt_age_days": 226,
-      "coverage_gap_days": 310,
+      "stmt_age_days": 227,
+      "coverage_gap_days": 311,
       "staleness": "aging",
       "root_count": 1,
       "no_audit_roots": 0,
@@ -14209,7 +14118,7 @@
               "summary": "Delayed S/MIME audit report for MoD PKIoverheid G3 CA was publicly disclosed.",
               "bugzilla_ids": [],
               "certificate_count": null,
-              "self_reported": true
+              "self_reported": null
             }
           ],
           "disclosed_matters_count": 1,
@@ -14873,8 +14782,8 @@
       "latest_stmt_date": "2026-03-20",
       "latest_period_end": "2025-12-31",
       "earliest_period_start": "2025-01-01",
-      "stmt_age_days": 231,
-      "coverage_gap_days": 310,
+      "stmt_age_days": 232,
+      "coverage_gap_days": 311,
       "staleness": "aging",
       "root_count": 2,
       "no_audit_roots": 0,
@@ -15071,8 +14980,8 @@
       "latest_stmt_date": "2026-01-20",
       "latest_period_end": "2025-12-31",
       "earliest_period_start": "2025-01-01",
-      "stmt_age_days": 290,
-      "coverage_gap_days": 310,
+      "stmt_age_days": 291,
+      "coverage_gap_days": 311,
       "staleness": "aging",
       "root_count": 2,
       "no_audit_roots": 0,
@@ -15206,10 +15115,10 @@
             {
               "item": 1,
               "topic": "Re-using Previously Completed Validations",
-              "summary": "OATI's CPS v5.1 and v6.0 specified a validation re-use timeframe of 39 months (~1,186 days) instead of the compliant 825 days required by WebTrust Baseline Requirements 4.6; however, OATI was compliant with the 825-day timeframe as noted in their BRAF Work Instructions v5.3.",
+              "summary": "OATI's CPS v5.1 and v6.0 Section 4.6 specified a re-use timeframe of 39 months (~1,186 days), which exceeds the compliant WebTrust requirement of 825 days; however, OATI was compliant with the 825-day timeframe as noted in their BRAF Work Instructions v5.3.",
               "bugzilla_ids": [],
               "certificate_count": null,
-              "self_reported": true
+              "self_reported": false
             }
           ],
           "disclosed_matters_count": 1,
@@ -15279,8 +15188,8 @@
       "latest_stmt_date": "2026-02-26",
       "latest_period_end": "2025-12-31",
       "earliest_period_start": "2024-01-01",
-      "stmt_age_days": 253,
-      "coverage_gap_days": 310,
+      "stmt_age_days": 254,
+      "coverage_gap_days": 311,
       "staleness": "aging",
       "root_count": 4,
       "no_audit_roots": 0,
@@ -15626,8 +15535,8 @@
       "latest_stmt_date": "2026-03-11",
       "latest_period_end": "2026-01-08",
       "earliest_period_start": "2025-01-09",
-      "stmt_age_days": 240,
-      "coverage_gap_days": 302,
+      "stmt_age_days": 241,
+      "coverage_gap_days": 303,
       "staleness": "aging",
       "root_count": 2,
       "no_audit_roots": 0,
@@ -15853,8 +15762,8 @@
       "latest_stmt_date": "2026-04-01",
       "latest_period_end": "2026-01-12",
       "earliest_period_start": "2025-01-13",
-      "stmt_age_days": 219,
-      "coverage_gap_days": 298,
+      "stmt_age_days": 220,
+      "coverage_gap_days": 299,
       "staleness": "aging",
       "root_count": 4,
       "no_audit_roots": 0,
@@ -16159,8 +16068,8 @@
       "latest_stmt_date": "2026-04-07",
       "latest_period_end": "2026-01-15",
       "earliest_period_start": "2025-01-16",
-      "stmt_age_days": 213,
-      "coverage_gap_days": 295,
+      "stmt_age_days": 214,
+      "coverage_gap_days": 296,
       "staleness": "aging",
       "root_count": 5,
       "no_audit_roots": 0,
@@ -16456,8 +16365,8 @@
       "latest_stmt_date": "2026-03-10",
       "latest_period_end": "2026-01-31",
       "earliest_period_start": "2025-02-01",
-      "stmt_age_days": 241,
-      "coverage_gap_days": 279,
+      "stmt_age_days": 242,
+      "coverage_gap_days": 280,
       "staleness": "aging",
       "root_count": 1,
       "no_audit_roots": 0,
@@ -16592,7 +16501,7 @@
             {
               "item": 1,
               "topic": "Certificate Content",
-              "summary": "All certificates issued by eSignTrust contain an 'Organisation' attribute of 'Macao Post and Telecommunications Bureau' in the Subject field, even when the Subject individual or entity is not affiliated with the bureau, due to software platform design.",
+              "summary": "All certificates issued by eSignTrust contain an \"Organisation\" attribute of \"Macao Post and Telecommunications Bureau\" in the Subject field even when the subject is not affiliated with that entity, due to the software platform design.",
               "bugzilla_ids": [],
               "certificate_count": null,
               "self_reported": true
@@ -16671,8 +16580,8 @@
       "latest_stmt_date": "2026-02-18",
       "latest_period_end": "2026-02-06",
       "earliest_period_start": "2025-06-03",
-      "stmt_age_days": 261,
-      "coverage_gap_days": 273,
+      "stmt_age_days": 262,
+      "coverage_gap_days": 274,
       "staleness": "aging",
       "root_count": 1,
       "no_audit_roots": 0,
@@ -16694,7 +16603,7 @@
       "pdf_parsed": true,
       "opinion_type": "unqualified",
       "audit_framework": "ETSI",
-      "audit_criteria": "ETSI EN 319 411-2 V2.5.1 (2023-10); ETSI EN 319 411-1 V1.4.1 (2023-10); ETSI EN 319 401 V3.1.1 (2024-06); ETSI EN 319 421 V1.3.1 (2025-07); Baseline Requirements for the Issuance and Management of Publicly-Trusted Certificates, version 2.1.8",
+      "audit_criteria": "ETSI EN 319 411-2 V2.5.1 (2023-10); ETSI EN 319 411-1 V1.4.1 (2023-10); ETSI EN 319 401 V3.1.1 (2024-06); ETSI EN 319 421 V1.3.1 (2025-07); CA Browser Forum Baseline Requirements for the Issuance and Management of Publicly-Trusted Certificates, version 2.1.8",
       "etsi_aal_version": "3.4",
       "policy_oids_present": [],
       "in_scope_sha256": [
@@ -16758,7 +16667,7 @@
         "note": null
       },
       "criteria_check": {
-        "criteria_raw": "ETSI EN 319 411-2 V2.5.1 (2023-10); ETSI EN 319 411-1 V1.4.1 (2023-10); ETSI EN 319 401 V3.1.1 (2024-06); ETSI EN 319 421 V1.3.1 (2025-07); Baseline Requirements for the Issuance and Management of Publicly-Trusted Certificates, version 2.1.8",
+        "criteria_raw": "ETSI EN 319 411-2 V2.5.1 (2023-10); ETSI EN 319 411-1 V1.4.1 (2023-10); ETSI EN 319 401 V3.1.1 (2024-06); ETSI EN 319 421 V1.3.1 (2025-07); CA Browser Forum Baseline Requirements for the Issuance and Management of Publicly-Trusted Certificates, version 2.1.8",
         "framework": "ETSI",
         "criteria_version": "EN 319 411-2 V2.5.1",
         "criteria_current": true,
@@ -16874,8 +16783,8 @@
       "latest_stmt_date": "2026-05-08",
       "latest_period_end": "2026-02-07",
       "earliest_period_start": "2025-02-08",
-      "stmt_age_days": 182,
-      "coverage_gap_days": 272,
+      "stmt_age_days": 183,
+      "coverage_gap_days": 273,
       "staleness": "aging",
       "root_count": 2,
       "no_audit_roots": 0,
@@ -17333,8 +17242,8 @@
       "latest_stmt_date": "2026-04-27",
       "latest_period_end": "2026-02-10",
       "earliest_period_start": "2025-02-11",
-      "stmt_age_days": 193,
-      "coverage_gap_days": 269,
+      "stmt_age_days": 194,
+      "coverage_gap_days": 270,
       "staleness": "aging",
       "root_count": 7,
       "no_audit_roots": 0,
@@ -17697,8 +17606,8 @@
       "latest_stmt_date": "2026-04-20",
       "latest_period_end": "2026-02-19",
       "earliest_period_start": "2023-02-20",
-      "stmt_age_days": 200,
-      "coverage_gap_days": 260,
+      "stmt_age_days": 201,
+      "coverage_gap_days": 261,
       "staleness": "aging",
       "root_count": 1,
       "no_audit_roots": 0,
@@ -17897,8 +17806,8 @@
       "latest_stmt_date": "2026-05-11",
       "latest_period_end": "2026-02-27",
       "earliest_period_start": "2025-03-28",
-      "stmt_age_days": 179,
-      "coverage_gap_days": 252,
+      "stmt_age_days": 180,
+      "coverage_gap_days": 253,
       "staleness": "aging",
       "root_count": 2,
       "no_audit_roots": 0,
@@ -18396,8 +18305,8 @@
       "latest_stmt_date": "2026-04-30",
       "latest_period_end": "2026-02-28",
       "earliest_period_start": "2023-03-01",
-      "stmt_age_days": 190,
-      "coverage_gap_days": 251,
+      "stmt_age_days": 191,
+      "coverage_gap_days": 252,
       "staleness": "aging",
       "root_count": 1,
       "no_audit_roots": 0,
@@ -18600,8 +18509,8 @@
       "latest_stmt_date": "2026-05-20",
       "latest_period_end": "2026-02-28",
       "earliest_period_start": "2025-03-01",
-      "stmt_age_days": 170,
-      "coverage_gap_days": 251,
+      "stmt_age_days": 171,
+      "coverage_gap_days": 252,
       "staleness": "aging",
       "root_count": 1,
       "no_audit_roots": 0,
@@ -18787,8 +18696,8 @@
       "latest_stmt_date": "2026-05-29",
       "latest_period_end": "2026-03-01",
       "earliest_period_start": "2023-03-02",
-      "stmt_age_days": 161,
-      "coverage_gap_days": 250,
+      "stmt_age_days": 162,
+      "coverage_gap_days": 251,
       "staleness": "aging",
       "root_count": 4,
       "no_audit_roots": 0,
@@ -18812,7 +18721,7 @@
       "pdf_parsed": true,
       "opinion_type": "unqualified",
       "audit_framework": "ETSI",
-      "audit_criteria": "ETSI EN 319 411-1 V1.4.1 (2021-05); ETSI EN 319 411-2 V2.5.1 (2021-11); ETSI EN 319 401 V2.3.1 (2021-05); ETSI EN 319 412-2 V2.3.1 (2020-06); ETSI EN 319 412-5 V2.4.1 (2023-03); CA/Browser Forum Baseline Requirements version 1.8.7",
+      "audit_criteria": "ETSI EN 319 411-1 V1.4.1 (2021-05); ETSI EN 319 411-2 V2.5.1 (2021-11); ETSI EN 319 401 V2.3.1 (2021-05); ETSI EN 319 412-2 V2.3.1 (2020-06); ETSI EN 319 412-5 V2.4.1 (2023-03); CA/B Forum Baseline Requirements version 1.8.7",
       "etsi_aal_version": "2.9",
       "policy_oids_present": [],
       "in_scope_sha256": [
@@ -18823,10 +18732,12 @@
         "5B4BFC749A8158DFD4EBF3DF20782B0C284928BC40E89728CFAEBFCA7F85033D"
       ],
       "locations_audited": [
-        "Madrid, Spain",
-        "\u00c1vila, Spain",
-        "Padova, Italy",
-        "Modena, Italy"
+        "Ribera del Loira, 12, 28042 Madrid",
+        "Calle Jorge Ruiz de Santayana n\u00ba20 Local planta 2\u00aa izda. Edificio Mapfre, \u00c1vila",
+        "Fujitsu - Calle Y\u00e8cora, 4 - 28022 MADRID",
+        "Fujitsu - Calle Albasanz, 71 - 28037 MADRID",
+        "Infocert - Corso Stati Uniti, 14, 35127 Padova",
+        "Infocert - Via Malavolti, 5, 411222 Modena"
       ],
       "subservice_organizations": [
         "Fujitsu",
@@ -18888,7 +18799,7 @@
         "note": null
       },
       "criteria_check": {
-        "criteria_raw": "ETSI EN 319 411-1 V1.4.1 (2021-05); ETSI EN 319 411-2 V2.5.1 (2021-11); ETSI EN 319 401 V2.3.1 (2021-05); ETSI EN 319 412-2 V2.3.1 (2020-06); ETSI EN 319 412-5 V2.4.1 (2023-03); CA/Browser Forum Baseline Requirements version 1.8.7",
+        "criteria_raw": "ETSI EN 319 411-1 V1.4.1 (2021-05); ETSI EN 319 411-2 V2.5.1 (2021-11); ETSI EN 319 401 V2.3.1 (2021-05); ETSI EN 319 412-2 V2.3.1 (2020-06); ETSI EN 319 412-5 V2.4.1 (2023-03); CA/B Forum Baseline Requirements version 1.8.7",
         "framework": "ETSI",
         "criteria_version": "EN 319 411-1 V1.4.1",
         "criteria_current": true,
@@ -19018,8 +18929,8 @@
       "latest_stmt_date": "2026-05-28",
       "latest_period_end": "2026-03-09",
       "earliest_period_start": "2023-03-10",
-      "stmt_age_days": 162,
-      "coverage_gap_days": 242,
+      "stmt_age_days": 163,
+      "coverage_gap_days": 243,
       "staleness": "aging",
       "root_count": 2,
       "no_audit_roots": 0,
@@ -19196,8 +19107,8 @@
       "latest_stmt_date": "2026-06-08",
       "latest_period_end": "2026-03-20",
       "earliest_period_start": "2025-03-21",
-      "stmt_age_days": 151,
-      "coverage_gap_days": 231,
+      "stmt_age_days": 152,
+      "coverage_gap_days": 232,
       "staleness": "aging",
       "root_count": 1,
       "no_audit_roots": 0,
@@ -19638,8 +19549,8 @@
       "latest_stmt_date": "2026-07-15",
       "latest_period_end": "2026-03-27",
       "earliest_period_start": "2025-03-28",
-      "stmt_age_days": 114,
-      "coverage_gap_days": 224,
+      "stmt_age_days": 115,
+      "coverage_gap_days": 225,
       "staleness": "aging",
       "root_count": 2,
       "no_audit_roots": 0,
@@ -20115,8 +20026,8 @@
       "latest_stmt_date": "2026-04-28",
       "latest_period_end": "2026-03-27",
       "earliest_period_start": "2022-04-08",
-      "stmt_age_days": 192,
-      "coverage_gap_days": 224,
+      "stmt_age_days": 193,
+      "coverage_gap_days": 225,
       "staleness": "aging",
       "root_count": 6,
       "no_audit_roots": 0,
@@ -20321,8 +20232,8 @@
           "disclosed_matters": [
             {
               "item": 1,
-              "topic": null,
-              "summary": "Non-BR-Compliant Certificate Issuance identified and remediated by T-Systems.",
+              "topic": "Non-BR-Compliant Certificate Issuance",
+              "summary": "T-Systems issued non-BR-compliant certificates documented in Mozilla Bug 1391074.",
               "bugzilla_ids": [
                 "1391074"
               ],
@@ -20331,8 +20242,8 @@
             },
             {
               "item": 2,
-              "topic": null,
-              "summary": "Invalid SAN Entries identified and remediated by T-Systems.",
+              "topic": "Invalid SAN Entries",
+              "summary": "T-Systems issued certificates with invalid SAN entries documented in Mozilla Bug 1530718.",
               "bugzilla_ids": [
                 "1530718"
               ],
@@ -20341,8 +20252,8 @@
             },
             {
               "item": 3,
-              "topic": null,
-              "summary": "Insufficient serial number entropy identified and remediated by T-Systems.",
+              "topic": "Insufficient Serial Number Entropy",
+              "summary": "T-Systems issued certificates with insufficient serial number entropy documented in Mozilla Bug 1536082.",
               "bugzilla_ids": [
                 "1536082"
               ],
@@ -20356,7 +20267,7 @@
           "quality_score": null,
           "criteria_version": "EN 319 411-2 V2.2.2",
           "criteria_current": true,
-          "etsi_aal_version": "2"
+          "etsi_aal_version": null
         },
         {
           "stmt_date": "2023-06-21",
@@ -20371,7 +20282,7 @@
             {
               "item": 1,
               "topic": "Initial Identity Validation",
-              "summary": "Documentation and implementation of initial identity validation required improvement per ETSI EN 319 411-1 requirement 6.2.2-15(a), remediated before attestation issuance.",
+              "summary": "Documentation and implementation of initial identity validation shall be improved per ETSI EN 319 411-1 section 6.2.2.",
               "bugzilla_ids": [
                 "1825780"
               ],
@@ -20630,8 +20541,8 @@
       "latest_stmt_date": "2026-06-22",
       "latest_period_end": "2026-03-29",
       "earliest_period_start": "2025-03-30",
-      "stmt_age_days": 137,
-      "coverage_gap_days": 222,
+      "stmt_age_days": 138,
+      "coverage_gap_days": 223,
       "staleness": "aging",
       "root_count": 8,
       "no_audit_roots": 0,
@@ -20924,8 +20835,8 @@
       "latest_stmt_date": "2026-04-04",
       "latest_period_end": "2026-03-31",
       "earliest_period_start": "2025-06-07",
-      "stmt_age_days": 216,
-      "coverage_gap_days": 220,
+      "stmt_age_days": 217,
+      "coverage_gap_days": 221,
       "staleness": "aging",
       "root_count": 9,
       "no_audit_roots": 0,
@@ -21282,8 +21193,8 @@
       "latest_stmt_date": "2026-06-26",
       "latest_period_end": "2026-03-31",
       "earliest_period_start": "2023-04-01",
-      "stmt_age_days": 133,
-      "coverage_gap_days": 220,
+      "stmt_age_days": 134,
+      "coverage_gap_days": 221,
       "staleness": "aging",
       "root_count": 3,
       "no_audit_roots": 0,
@@ -21492,8 +21403,8 @@
       "latest_stmt_date": "2026-06-29",
       "latest_period_end": "2026-03-31",
       "earliest_period_start": "2025-04-01",
-      "stmt_age_days": 130,
-      "coverage_gap_days": 220,
+      "stmt_age_days": 131,
+      "coverage_gap_days": 221,
       "staleness": "aging",
       "root_count": 16,
       "no_audit_roots": 0,
@@ -21793,8 +21704,8 @@
       "latest_stmt_date": "2026-06-29",
       "latest_period_end": "2026-03-31",
       "earliest_period_start": "2023-04-01",
-      "stmt_age_days": 130,
-      "coverage_gap_days": 220,
+      "stmt_age_days": 131,
+      "coverage_gap_days": 221,
       "staleness": "aging",
       "root_count": 1,
       "no_audit_roots": 0,
@@ -21831,7 +21742,7 @@
         {
           "item": 1,
           "topic": "SC47v2 Sunset subject:organizationalUnitName",
-          "summary": "SSIA overlooked ballot SC47v2 when published in 2021 (effective 16 August 2021, prohibition effective 1 September 2022) and continued issuing certificates with organizationalUnitName attribute until removing it on 19 March 2024.",
+          "summary": "SSIA overlooked ballot SC47v2 which prohibited issuance of new certificates with the organizationalUnitName attribute on or after 1 September 2022, and identified this violation in December 2022; the attribute was removed on 19 March 2024.",
           "bugzilla_ids": [],
           "certificate_count": null,
           "self_reported": true
@@ -21956,7 +21867,7 @@
             {
               "item": 1,
               "topic": "SC47v2 Sunset subject:organizationalUnitName",
-              "summary": "SSIA overlooked ballot SC47v2 when published in 2021 (effective 16 August 2021, prohibition effective 1 September 2022) and continued issuing certificates with organizationalUnitName attribute until removing it on 19 March 2024.",
+              "summary": "SSIA overlooked ballot SC47v2 which prohibited issuance of new certificates with the organizationalUnitName attribute on or after 1 September 2022, and identified this violation in December 2022; the attribute was removed on 19 March 2024.",
               "bugzilla_ids": [],
               "certificate_count": null,
               "self_reported": true
@@ -22008,8 +21919,8 @@
       "latest_stmt_date": "2026-07-17",
       "latest_period_end": "2026-03-31",
       "earliest_period_start": "2022-04-07",
-      "stmt_age_days": 112,
-      "coverage_gap_days": 220,
+      "stmt_age_days": 113,
+      "coverage_gap_days": 221,
       "staleness": "aging",
       "root_count": 1,
       "no_audit_roots": 0,
@@ -22031,7 +21942,7 @@
       "pdf_parsed": true,
       "opinion_type": "unqualified",
       "audit_framework": "ETSI",
-      "audit_criteria": "ETSI EN 319 401 V2.3.1 (2021-05); ETSI EN 319 411-1 V1.3.1 (2021-05); ETSI TS 119 412-1 v1.4.1 (2020-07); CA Browser Forum Baseline Requirements for the Issuance and Management of Publicly Trusted Certificates version 1.8.6",
+      "audit_criteria": "ETSI EN 319 401 V2.3.1 (2021-05); ETSI EN 319 411-1 V1.3.1 (2021-05); ETSI TS 119 412-1 v1.4.1 (2020-07); CA Browser Forum Baseline Requirements v1.8.6",
       "etsi_aal_version": "3.0",
       "policy_oids_present": [
         "1.3.6.1.5.5.7.3.1",
@@ -22110,7 +22021,7 @@
         "note": null
       },
       "criteria_check": {
-        "criteria_raw": "ETSI EN 319 401 V2.3.1 (2021-05); ETSI EN 319 411-1 V1.3.1 (2021-05); ETSI TS 119 412-1 v1.4.1 (2020-07); CA Browser Forum Baseline Requirements for the Issuance and Management of Publicly Trusted Certificates version 1.8.6",
+        "criteria_raw": "ETSI EN 319 401 V2.3.1 (2021-05); ETSI EN 319 411-1 V1.3.1 (2021-05); ETSI TS 119 412-1 v1.4.1 (2020-07); CA Browser Forum Baseline Requirements v1.8.6",
         "framework": "ETSI",
         "criteria_version": "EN 319 411-1 V1.3.1",
         "criteria_current": true,
@@ -22223,8 +22134,8 @@
       "latest_stmt_date": "2026-06-22",
       "latest_period_end": "2026-03-31",
       "earliest_period_start": "2022-03-01",
-      "stmt_age_days": 137,
-      "coverage_gap_days": 220,
+      "stmt_age_days": 138,
+      "coverage_gap_days": 221,
       "staleness": "aging",
       "root_count": 26,
       "no_audit_roots": 0,
@@ -22603,8 +22514,8 @@
           "disclosed_matters": [
             {
               "item": 1,
-              "topic": "Mis-issuance using CNAME CSR Hash 2 method of domain control validation",
-              "summary": "Sectigo issued a certificate using an underscore before the domain name via CNAME CSR Hash 2 method, which was not necessary; no revocation was required.",
+              "topic": "Mis-issuance using CNAME CSR Hash 2",
+              "summary": "Sectigo issued a certificate using an underscore before the domain name via CNAME CSR Hash 2 method of domain control validation; no revocation was necessary.",
               "bugzilla_ids": [
                 "1461391"
               ],
@@ -22624,7 +22535,7 @@
             {
               "item": 3,
               "topic": "Invalid DNS name",
-              "summary": "Sectigo issued one certificate with an invalid DNS name; however, the certificate was revoked the same day.",
+              "summary": "Sectigo issued one certificate with an invalid DNS name, which was revoked the same day.",
               "bugzilla_ids": [
                 "1524730"
               ],
@@ -22647,156 +22558,15 @@
           "auditor": "Ernst & Young",
           "audit_type": "WebTrust",
           "url": "https://www.cpacanada.ca/api/getPDFWebTrust?attachmentId=571e6ccc-f522-4f1d-9a5e-928f669b571c",
-          "letter_parsed": true,
-          "opinion_type": "unqualified",
-          "disclosed_matters": [
-            {
-              "item": 1,
-              "topic": null,
-              "summary": "Sectigo failure to provide timely incident reports.",
-              "bugzilla_ids": [
-                "1563579"
-              ],
-              "certificate_count": null,
-              "self_reported": true
-            },
-            {
-              "item": 2,
-              "topic": null,
-              "summary": "Sectigo issued EV SSL Certificates with incorrect subject details.",
-              "bugzilla_ids": [
-                "1575022"
-              ],
-              "certificate_count": null,
-              "self_reported": true
-            },
-            {
-              "item": 3,
-              "topic": null,
-              "summary": "Sectigo issued EV SSL Certificates with incorrect businessCategory.",
-              "bugzilla_ids": [
-                "1590810"
-              ],
-              "certificate_count": null,
-              "self_reported": true
-            },
-            {
-              "item": 4,
-              "topic": null,
-              "summary": "Sectigo issued DV certificates with invalid subject:organizationalUnitName.",
-              "bugzilla_ids": [
-                "1593776"
-              ],
-              "certificate_count": null,
-              "self_reported": true
-            },
-            {
-              "item": 5,
-              "topic": null,
-              "summary": "Sectigo CCADB failed ALV for Network Solutions Certificate Authority.",
-              "bugzilla_ids": [
-                "1597947"
-              ],
-              "certificate_count": null,
-              "self_reported": true
-            },
-            {
-              "item": 6,
-              "topic": null,
-              "summary": "Sectigo CCADB failed ALV for D-TRUST CA 2-1 2015.",
-              "bugzilla_ids": [
-                "1597948"
-              ],
-              "certificate_count": null,
-              "self_reported": true
-            },
-            {
-              "item": 7,
-              "topic": null,
-              "summary": "Sectigo CCADB failed ALV for Ensured Root CA.",
-              "bugzilla_ids": [
-                "1597950"
-              ],
-              "certificate_count": null,
-              "self_reported": true
-            },
-            {
-              "item": 8,
-              "topic": null,
-              "summary": "Sectigo failure to provide a preliminary report within 24 hours.",
-              "bugzilla_ids": [
-                "1619359"
-              ],
-              "certificate_count": null,
-              "self_reported": true
-            },
-            {
-              "item": 9,
-              "topic": null,
-              "summary": "Sectigo non-revocation of DV certificates with subject:organizationalUnitName.",
-              "bugzilla_ids": [
-                "1620561"
-              ],
-              "certificate_count": null,
-              "self_reported": true
-            },
-            {
-              "item": 10,
-              "topic": null,
-              "summary": "Sectigo missing Changelog in CPS.",
-              "bugzilla_ids": [
-                "1545208"
-              ],
-              "certificate_count": null,
-              "self_reported": true
-            },
-            {
-              "item": 11,
-              "topic": null,
-              "summary": "Sectigo issued certificates with Default City in Subject:localityName.",
-              "bugzilla_ids": [
-                "1548713"
-              ],
-              "certificate_count": null,
-              "self_reported": true
-            },
-            {
-              "item": 12,
-              "topic": null,
-              "summary": "Sectigo issued certificates with Some-State in stateOrProvinceName.",
-              "bugzilla_ids": [
-                "1551362"
-              ],
-              "certificate_count": null,
-              "self_reported": true
-            },
-            {
-              "item": 13,
-              "topic": null,
-              "summary": "Sectigo and Web.com inconsistent disclosure of externally-operated intermediate.",
-              "bugzilla_ids": [
-                "1567060"
-              ],
-              "certificate_count": null,
-              "self_reported": true
-            },
-            {
-              "item": 14,
-              "topic": null,
-              "summary": "Sectigo failure to revoke certificate with previously-compromised key within 24 hours.",
-              "bugzilla_ids": [
-                "1625715"
-              ],
-              "certificate_count": null,
-              "self_reported": true
-            }
-          ],
-          "disclosed_matters_count": 14,
+          "letter_parsed": false,
+          "opinion_type": null,
+          "disclosed_matters": [],
+          "disclosed_matters_count": null,
           "disclosure_rate": null,
           "fp_coverage_pct": null,
           "quality_score": null,
-          "criteria_version": "2.2",
-          "criteria_current": false,
+          "criteria_version": null,
+          "criteria_current": null,
           "etsi_aal_version": null
         },
         {
@@ -23132,6 +22902,240 @@
           ]
         },
         {
+          "id": 1545208,
+          "filed": "2019-04-17",
+          "summary": "Sectigo: Missing Changelog in CPS",
+          "self_reported": false,
+          "whiteboard": "[ca-compliance] [policy-failure]",
+          "covering_letters": 1,
+          "mentioned_in": 0,
+          "missed_by": 1,
+          "audit_coverage": [
+            {
+              "stmt_date": "2020-10-02",
+              "period_start": "2019-04-01",
+              "period_end": "2020-03-31",
+              "mentioned": false
+            }
+          ]
+        },
+        {
+          "id": 1548713,
+          "filed": "2019-05-02",
+          "summary": "Sectigo: \"Default City\" in Subject:localityName",
+          "self_reported": false,
+          "whiteboard": "[ca-compliance] [ev-misissuance] [ov-misissuance]",
+          "covering_letters": 1,
+          "mentioned_in": 0,
+          "missed_by": 1,
+          "audit_coverage": [
+            {
+              "stmt_date": "2020-10-02",
+              "period_start": "2019-04-01",
+              "period_end": "2020-03-31",
+              "mentioned": false
+            }
+          ]
+        },
+        {
+          "id": 1551362,
+          "filed": "2019-05-14",
+          "summary": "Sectigo: \"Some-State\" in stateOrProvinceName",
+          "self_reported": false,
+          "whiteboard": "[ca-compliance] [ev-misissuance] [ov-misissuance]",
+          "covering_letters": 1,
+          "mentioned_in": 0,
+          "missed_by": 1,
+          "audit_coverage": [
+            {
+              "stmt_date": "2020-10-02",
+              "period_start": "2019-04-01",
+              "period_end": "2020-03-31",
+              "mentioned": false
+            }
+          ]
+        },
+        {
+          "id": 1563579,
+          "filed": "2019-07-04",
+          "summary": "Sectigo: Failure to provide timely incident reports",
+          "self_reported": false,
+          "whiteboard": "[ca-compliance] [disclosure-failure]",
+          "covering_letters": 1,
+          "mentioned_in": 0,
+          "missed_by": 1,
+          "audit_coverage": [
+            {
+              "stmt_date": "2020-10-02",
+              "period_start": "2019-04-01",
+              "period_end": "2020-03-31",
+              "mentioned": false
+            }
+          ]
+        },
+        {
+          "id": 1575022,
+          "filed": "2019-08-19",
+          "summary": "Sectigo: EV SSL Certificates with incorrect subject details.",
+          "self_reported": true,
+          "whiteboard": "[ca-compliance] [ev-misissuance]",
+          "covering_letters": 1,
+          "mentioned_in": 0,
+          "missed_by": 1,
+          "audit_coverage": [
+            {
+              "stmt_date": "2020-10-02",
+              "period_start": "2019-04-01",
+              "period_end": "2020-03-31",
+              "mentioned": false
+            }
+          ]
+        },
+        {
+          "id": 1590810,
+          "filed": "2019-10-23",
+          "summary": "Sectigo: EV SSL Certificates with incorrect businessCategory",
+          "self_reported": true,
+          "whiteboard": "[ca-compliance] [ev-misissuance]",
+          "covering_letters": 1,
+          "mentioned_in": 0,
+          "missed_by": 1,
+          "audit_coverage": [
+            {
+              "stmt_date": "2020-10-02",
+              "period_start": "2019-04-01",
+              "period_end": "2020-03-31",
+              "mentioned": false
+            }
+          ]
+        },
+        {
+          "id": 1593776,
+          "filed": "2019-11-04",
+          "summary": "Sectigo: invalid subject:organizationalUnitName on DV certificates",
+          "self_reported": false,
+          "whiteboard": "[ca-compliance] [dv-misissuance]",
+          "covering_letters": 1,
+          "mentioned_in": 0,
+          "missed_by": 1,
+          "audit_coverage": [
+            {
+              "stmt_date": "2020-10-02",
+              "period_start": "2019-04-01",
+              "period_end": "2020-03-31",
+              "mentioned": false
+            }
+          ]
+        },
+        {
+          "id": 1597947,
+          "filed": "2019-11-20",
+          "summary": "Sectigo: CCADB failed ALV - Network Solutions Certificate Authority",
+          "self_reported": true,
+          "whiteboard": "[ca-compliance] [audit-failure]",
+          "covering_letters": 1,
+          "mentioned_in": 0,
+          "missed_by": 1,
+          "audit_coverage": [
+            {
+              "stmt_date": "2020-10-02",
+              "period_start": "2019-04-01",
+              "period_end": "2020-03-31",
+              "mentioned": false
+            }
+          ]
+        },
+        {
+          "id": 1597948,
+          "filed": "2019-11-20",
+          "summary": "Sectigo:  Missing Intermediate CA Certificate in Audit - D-TRUST CA 2-1 2015",
+          "self_reported": true,
+          "whiteboard": "[ca-compliance] [audit-failure]",
+          "covering_letters": 1,
+          "mentioned_in": 0,
+          "missed_by": 1,
+          "audit_coverage": [
+            {
+              "stmt_date": "2020-10-02",
+              "period_start": "2019-04-01",
+              "period_end": "2020-03-31",
+              "mentioned": false
+            }
+          ]
+        },
+        {
+          "id": 1597950,
+          "filed": "2019-11-20",
+          "summary": "Sectigo: CCADB failed ALV - Ensured Root CA",
+          "self_reported": true,
+          "whiteboard": "[ca-compliance] [audit-failure]",
+          "covering_letters": 1,
+          "mentioned_in": 0,
+          "missed_by": 1,
+          "audit_coverage": [
+            {
+              "stmt_date": "2020-10-02",
+              "period_start": "2019-04-01",
+              "period_end": "2020-03-31",
+              "mentioned": false
+            }
+          ]
+        },
+        {
+          "id": 1619359,
+          "filed": "2020-03-02",
+          "summary": "Sectigo: Failure to provide a preliminary report within 24 hours",
+          "self_reported": false,
+          "whiteboard": "[ca-compliance] [disclosure-failure]",
+          "covering_letters": 1,
+          "mentioned_in": 0,
+          "missed_by": 1,
+          "audit_coverage": [
+            {
+              "stmt_date": "2020-10-02",
+              "period_start": "2019-04-01",
+              "period_end": "2020-03-31",
+              "mentioned": false
+            }
+          ]
+        },
+        {
+          "id": 1620561,
+          "filed": "2020-03-06",
+          "summary": "Sectigo: Non-revocation of certificates with subject:organizationalUnitName in DV certificates",
+          "self_reported": true,
+          "whiteboard": "[ca-compliance] [leaf-revocation-delay]",
+          "covering_letters": 1,
+          "mentioned_in": 0,
+          "missed_by": 1,
+          "audit_coverage": [
+            {
+              "stmt_date": "2020-10-02",
+              "period_start": "2019-04-01",
+              "period_end": "2020-03-31",
+              "mentioned": false
+            }
+          ]
+        },
+        {
+          "id": 1625715,
+          "filed": "2020-03-29",
+          "summary": "Sectigo: Failure to revoke certificate with previously-compromised key within 24 hours",
+          "self_reported": false,
+          "whiteboard": "[ca-compliance] [leaf-revocation-delay]",
+          "covering_letters": 1,
+          "mentioned_in": 0,
+          "missed_by": 1,
+          "audit_coverage": [
+            {
+              "stmt_date": "2020-10-02",
+              "period_start": "2019-04-01",
+              "period_end": "2020-03-31",
+              "mentioned": false
+            }
+          ]
+        },
+        {
           "id": 1763203,
           "filed": "2022-04-05",
           "summary": "Sectigo: Incorrect OCSP responses",
@@ -23438,240 +23442,6 @@
           ]
         },
         {
-          "id": 1545208,
-          "filed": "2019-04-17",
-          "summary": "Sectigo: Missing Changelog in CPS",
-          "self_reported": false,
-          "whiteboard": "[ca-compliance] [policy-failure]",
-          "covering_letters": 1,
-          "mentioned_in": 1,
-          "missed_by": 0,
-          "audit_coverage": [
-            {
-              "stmt_date": "2020-10-02",
-              "period_start": "2019-04-01",
-              "period_end": "2020-03-31",
-              "mentioned": true
-            }
-          ]
-        },
-        {
-          "id": 1548713,
-          "filed": "2019-05-02",
-          "summary": "Sectigo: \"Default City\" in Subject:localityName",
-          "self_reported": false,
-          "whiteboard": "[ca-compliance] [ev-misissuance] [ov-misissuance]",
-          "covering_letters": 1,
-          "mentioned_in": 1,
-          "missed_by": 0,
-          "audit_coverage": [
-            {
-              "stmt_date": "2020-10-02",
-              "period_start": "2019-04-01",
-              "period_end": "2020-03-31",
-              "mentioned": true
-            }
-          ]
-        },
-        {
-          "id": 1551362,
-          "filed": "2019-05-14",
-          "summary": "Sectigo: \"Some-State\" in stateOrProvinceName",
-          "self_reported": false,
-          "whiteboard": "[ca-compliance] [ev-misissuance] [ov-misissuance]",
-          "covering_letters": 1,
-          "mentioned_in": 1,
-          "missed_by": 0,
-          "audit_coverage": [
-            {
-              "stmt_date": "2020-10-02",
-              "period_start": "2019-04-01",
-              "period_end": "2020-03-31",
-              "mentioned": true
-            }
-          ]
-        },
-        {
-          "id": 1563579,
-          "filed": "2019-07-04",
-          "summary": "Sectigo: Failure to provide timely incident reports",
-          "self_reported": false,
-          "whiteboard": "[ca-compliance] [disclosure-failure]",
-          "covering_letters": 1,
-          "mentioned_in": 1,
-          "missed_by": 0,
-          "audit_coverage": [
-            {
-              "stmt_date": "2020-10-02",
-              "period_start": "2019-04-01",
-              "period_end": "2020-03-31",
-              "mentioned": true
-            }
-          ]
-        },
-        {
-          "id": 1575022,
-          "filed": "2019-08-19",
-          "summary": "Sectigo: EV SSL Certificates with incorrect subject details.",
-          "self_reported": true,
-          "whiteboard": "[ca-compliance] [ev-misissuance]",
-          "covering_letters": 1,
-          "mentioned_in": 1,
-          "missed_by": 0,
-          "audit_coverage": [
-            {
-              "stmt_date": "2020-10-02",
-              "period_start": "2019-04-01",
-              "period_end": "2020-03-31",
-              "mentioned": true
-            }
-          ]
-        },
-        {
-          "id": 1590810,
-          "filed": "2019-10-23",
-          "summary": "Sectigo: EV SSL Certificates with incorrect businessCategory",
-          "self_reported": true,
-          "whiteboard": "[ca-compliance] [ev-misissuance]",
-          "covering_letters": 1,
-          "mentioned_in": 1,
-          "missed_by": 0,
-          "audit_coverage": [
-            {
-              "stmt_date": "2020-10-02",
-              "period_start": "2019-04-01",
-              "period_end": "2020-03-31",
-              "mentioned": true
-            }
-          ]
-        },
-        {
-          "id": 1593776,
-          "filed": "2019-11-04",
-          "summary": "Sectigo: invalid subject:organizationalUnitName on DV certificates",
-          "self_reported": false,
-          "whiteboard": "[ca-compliance] [dv-misissuance]",
-          "covering_letters": 1,
-          "mentioned_in": 1,
-          "missed_by": 0,
-          "audit_coverage": [
-            {
-              "stmt_date": "2020-10-02",
-              "period_start": "2019-04-01",
-              "period_end": "2020-03-31",
-              "mentioned": true
-            }
-          ]
-        },
-        {
-          "id": 1597947,
-          "filed": "2019-11-20",
-          "summary": "Sectigo: CCADB failed ALV - Network Solutions Certificate Authority",
-          "self_reported": true,
-          "whiteboard": "[ca-compliance] [audit-failure]",
-          "covering_letters": 1,
-          "mentioned_in": 1,
-          "missed_by": 0,
-          "audit_coverage": [
-            {
-              "stmt_date": "2020-10-02",
-              "period_start": "2019-04-01",
-              "period_end": "2020-03-31",
-              "mentioned": true
-            }
-          ]
-        },
-        {
-          "id": 1597948,
-          "filed": "2019-11-20",
-          "summary": "Sectigo:  Missing Intermediate CA Certificate in Audit - D-TRUST CA 2-1 2015",
-          "self_reported": true,
-          "whiteboard": "[ca-compliance] [audit-failure]",
-          "covering_letters": 1,
-          "mentioned_in": 1,
-          "missed_by": 0,
-          "audit_coverage": [
-            {
-              "stmt_date": "2020-10-02",
-              "period_start": "2019-04-01",
-              "period_end": "2020-03-31",
-              "mentioned": true
-            }
-          ]
-        },
-        {
-          "id": 1597950,
-          "filed": "2019-11-20",
-          "summary": "Sectigo: CCADB failed ALV - Ensured Root CA",
-          "self_reported": true,
-          "whiteboard": "[ca-compliance] [audit-failure]",
-          "covering_letters": 1,
-          "mentioned_in": 1,
-          "missed_by": 0,
-          "audit_coverage": [
-            {
-              "stmt_date": "2020-10-02",
-              "period_start": "2019-04-01",
-              "period_end": "2020-03-31",
-              "mentioned": true
-            }
-          ]
-        },
-        {
-          "id": 1619359,
-          "filed": "2020-03-02",
-          "summary": "Sectigo: Failure to provide a preliminary report within 24 hours",
-          "self_reported": false,
-          "whiteboard": "[ca-compliance] [disclosure-failure]",
-          "covering_letters": 1,
-          "mentioned_in": 1,
-          "missed_by": 0,
-          "audit_coverage": [
-            {
-              "stmt_date": "2020-10-02",
-              "period_start": "2019-04-01",
-              "period_end": "2020-03-31",
-              "mentioned": true
-            }
-          ]
-        },
-        {
-          "id": 1620561,
-          "filed": "2020-03-06",
-          "summary": "Sectigo: Non-revocation of certificates with subject:organizationalUnitName in DV certificates",
-          "self_reported": true,
-          "whiteboard": "[ca-compliance] [leaf-revocation-delay]",
-          "covering_letters": 1,
-          "mentioned_in": 1,
-          "missed_by": 0,
-          "audit_coverage": [
-            {
-              "stmt_date": "2020-10-02",
-              "period_start": "2019-04-01",
-              "period_end": "2020-03-31",
-              "mentioned": true
-            }
-          ]
-        },
-        {
-          "id": 1625715,
-          "filed": "2020-03-29",
-          "summary": "Sectigo: Failure to revoke certificate with previously-compromised key within 24 hours",
-          "self_reported": false,
-          "whiteboard": "[ca-compliance] [leaf-revocation-delay]",
-          "covering_letters": 1,
-          "mentioned_in": 1,
-          "missed_by": 0,
-          "audit_coverage": [
-            {
-              "stmt_date": "2020-10-02",
-              "period_start": "2019-04-01",
-              "period_end": "2020-03-31",
-              "mentioned": true
-            }
-          ]
-        },
-        {
           "id": 1977253,
           "filed": "2025-07-14",
           "summary": "Sectigo: OV reuse data applied for wrong organization",
@@ -23765,8 +23535,8 @@
       "latest_stmt_date": "2026-06-10",
       "latest_period_end": "2026-03-31",
       "earliest_period_start": "2025-04-01",
-      "stmt_age_days": 149,
-      "coverage_gap_days": 220,
+      "stmt_age_days": 150,
+      "coverage_gap_days": 221,
       "staleness": "aging",
       "root_count": 2,
       "no_audit_roots": 0,
@@ -24438,8 +24208,8 @@
       "latest_stmt_date": "2026-06-24",
       "latest_period_end": "2026-03-31",
       "earliest_period_start": "2025-04-01",
-      "stmt_age_days": 135,
-      "coverage_gap_days": 220,
+      "stmt_age_days": 136,
+      "coverage_gap_days": 221,
       "staleness": "aging",
       "root_count": 2,
       "no_audit_roots": 0,
@@ -24654,8 +24424,8 @@
       "latest_stmt_date": "2026-05-29",
       "latest_period_end": "2026-04-08",
       "earliest_period_start": "2025-04-09",
-      "stmt_age_days": 161,
-      "coverage_gap_days": 212,
+      "stmt_age_days": 162,
+      "coverage_gap_days": 213,
       "staleness": "aging",
       "root_count": 1,
       "no_audit_roots": 0,
@@ -24919,8 +24689,8 @@
       "latest_stmt_date": "2026-06-15",
       "latest_period_end": "2026-04-18",
       "earliest_period_start": "2025-04-19",
-      "stmt_age_days": 144,
-      "coverage_gap_days": 202,
+      "stmt_age_days": 145,
+      "coverage_gap_days": 203,
       "staleness": "aging",
       "root_count": 3,
       "no_audit_roots": 0,
@@ -25290,8 +25060,8 @@
       "latest_stmt_date": "2026-07-20",
       "latest_period_end": "2026-04-21",
       "earliest_period_start": "2025-04-22",
-      "stmt_age_days": 109,
-      "coverage_gap_days": 199,
+      "stmt_age_days": 110,
+      "coverage_gap_days": 200,
       "staleness": "aging",
       "root_count": 1,
       "no_audit_roots": 0,
@@ -25438,15 +25208,15 @@
             {
               "item": 1,
               "topic": "Subordinate CA Certificate Extensions",
-              "summary": "Subordinate CA certificates CA131100001 and CA131100002 were issued without required extensions (CRL Distribution Point, Authority Information Access, Extended Key Usage) and with incorrect Authority Key Identifier fields.",
+              "summary": "Subordinate CA certificates CA131100001 and CA131100002 were issued without required Baseline Requirements conformance including missing CRL Distribution Point HTTP URL, Authority Information Access, and Extended Key Usage extensions.",
               "bugzilla_ids": [],
               "certificate_count": 2,
               "self_reported": false
             },
             {
               "item": 2,
-              "topic": "Subscriber Certificate Subject Information",
-              "summary": "Seventeen subscriber certificates lacked verified Subject Distinguished Name fields; twenty subscriber certificates incorrectly included organizationalUnitName.",
+              "topic": "Subject Information Verification",
+              "summary": "Seventeen subscriber certificates were issued without verified Subject Distinguished Name fields and twenty subscriber certificates were issued with improper organizationalUnitName presentation.",
               "bugzilla_ids": [],
               "certificate_count": 37,
               "self_reported": false
@@ -25454,7 +25224,7 @@
             {
               "item": 3,
               "topic": "OV Certificate Domain Verification",
-              "summary": "Thirteen OV certificates were issued without verified organization ownership, control, or right to use domain names in Subject Alternative Name.",
+              "summary": "Thirteen OV certificates were issued without verified organization's ownership, control, or right to use the domain names in Subject Alternative Name.",
               "bugzilla_ids": [],
               "certificate_count": 13,
               "self_reported": false
@@ -25524,8 +25294,8 @@
       "latest_stmt_date": "2026-05-13",
       "latest_period_end": "2026-04-24",
       "earliest_period_start": "2023-04-25",
-      "stmt_age_days": 177,
-      "coverage_gap_days": 196,
+      "stmt_age_days": 178,
+      "coverage_gap_days": 197,
       "staleness": "aging",
       "root_count": 1,
       "no_audit_roots": 0,
@@ -25744,8 +25514,8 @@
       "latest_stmt_date": "2026-05-07",
       "latest_period_end": "2026-04-26",
       "earliest_period_start": "2022-04-27",
-      "stmt_age_days": 183,
-      "coverage_gap_days": 194,
+      "stmt_age_days": 184,
+      "coverage_gap_days": 195,
       "staleness": "aging",
       "root_count": 5,
       "no_audit_roots": 0,
@@ -25988,8 +25758,8 @@
       "latest_stmt_date": "2026-04-27",
       "latest_period_end": "2026-04-26",
       "earliest_period_start": "2025-04-27",
-      "stmt_age_days": 193,
-      "coverage_gap_days": 194,
+      "stmt_age_days": 194,
+      "coverage_gap_days": 195,
       "staleness": "aging",
       "root_count": 1,
       "no_audit_roots": 0,
@@ -26210,8 +25980,8 @@
       "latest_stmt_date": "2026-07-27",
       "latest_period_end": "2026-04-30",
       "earliest_period_start": "2025-05-01",
-      "stmt_age_days": 102,
-      "coverage_gap_days": 190,
+      "stmt_age_days": 103,
+      "coverage_gap_days": 191,
       "staleness": "aging",
       "root_count": 1,
       "no_audit_roots": 0,
@@ -26430,8 +26200,8 @@
       "latest_stmt_date": "2026-06-18",
       "latest_period_end": "2026-04-30",
       "earliest_period_start": "2025-05-01",
-      "stmt_age_days": 141,
-      "coverage_gap_days": 190,
+      "stmt_age_days": 142,
+      "coverage_gap_days": 191,
       "staleness": "aging",
       "root_count": 3,
       "no_audit_roots": 0,
@@ -26718,7 +26488,7 @@
             {
               "item": 1,
               "topic": "Certificate Content",
-              "summary": "Microsoft PKI Services disclosed that it issued eight organization validated SSL certificates to the same subscriber that did not include subject:localityName or subject:stateOrProvinceName, though the information was properly validated.",
+              "summary": "Microsoft PKI Services disclosed that it issued eight organization validated SSL certificates to the same subscriber that did not include the subject:localityName or subject:stateOrProvinceName, although the information was properly validated during the validation process.",
               "bugzilla_ids": [
                 "1644936"
               ],
@@ -27215,8 +26985,8 @@
       "latest_stmt_date": "2026-07-28",
       "latest_period_end": "2026-05-08",
       "earliest_period_start": "2025-05-09",
-      "stmt_age_days": 101,
-      "coverage_gap_days": 182,
+      "stmt_age_days": 102,
+      "coverage_gap_days": 183,
       "staleness": "aging",
       "root_count": 7,
       "no_audit_roots": 0,
@@ -27407,8 +27177,8 @@
       "latest_stmt_date": "2026-07-23",
       "latest_period_end": "2026-05-09",
       "earliest_period_start": "2023-05-10",
-      "stmt_age_days": 106,
-      "coverage_gap_days": 181,
+      "stmt_age_days": 107,
+      "coverage_gap_days": 182,
       "staleness": "aging",
       "root_count": 5,
       "no_audit_roots": 0,
@@ -27657,8 +27427,8 @@
       "latest_stmt_date": "2026-08-10",
       "latest_period_end": "2026-05-31",
       "earliest_period_start": "2022-06-01",
-      "stmt_age_days": 88,
-      "coverage_gap_days": 159,
+      "stmt_age_days": 89,
+      "coverage_gap_days": 160,
       "staleness": "current",
       "root_count": 4,
       "no_audit_roots": 0,
@@ -28178,8 +27948,8 @@
       "latest_stmt_date": "2026-08-06",
       "latest_period_end": "2026-05-31",
       "earliest_period_start": "2025-06-01",
-      "stmt_age_days": 92,
-      "coverage_gap_days": 159,
+      "stmt_age_days": 93,
+      "coverage_gap_days": 160,
       "staleness": "current",
       "root_count": 16,
       "no_audit_roots": 0,
@@ -28199,9 +27969,9 @@
         "smime": true,
         "cs": true
       },
-      "incident_count": 32,
-      "self_report_pct": 81,
-      "ext_report_count": 6,
+      "incident_count": 33,
+      "self_report_pct": 79,
+      "ext_report_count": 7,
       "pdf_parsed": true,
       "opinion_type": "unqualified",
       "audit_framework": "WebTrust",
@@ -28374,11 +28144,11 @@
         "note": null
       },
       "transparency_gap": {
-        "incident_count": 32,
+        "incident_count": 33,
         "matters_count": 5,
         "matters_with_bugzilla": 5,
         "externally_found": 0,
-        "gap_score": 84.4,
+        "gap_score": 84.8,
         "gap_level": "high"
       },
       "score_epoch": "post_v35",
@@ -28609,8 +28379,8 @@
       "latest_stmt_date": "2026-07-22",
       "latest_period_end": "2026-05-31",
       "earliest_period_start": "2025-06-01",
-      "stmt_age_days": 107,
-      "coverage_gap_days": 159,
+      "stmt_age_days": 108,
+      "coverage_gap_days": 160,
       "staleness": "current",
       "root_count": 1,
       "no_audit_roots": 0,
@@ -28846,8 +28616,8 @@
       "latest_stmt_date": "2026-06-12",
       "latest_period_end": "2026-05-31",
       "earliest_period_start": "2025-06-01",
-      "stmt_age_days": 147,
-      "coverage_gap_days": 159,
+      "stmt_age_days": 148,
+      "coverage_gap_days": 160,
       "staleness": "current",
       "root_count": 1,
       "no_audit_roots": 0,
@@ -29094,8 +28864,8 @@
       "latest_stmt_date": "2026-08-27",
       "latest_period_end": "2026-06-06",
       "earliest_period_start": "2022-06-07",
-      "stmt_age_days": 71,
-      "coverage_gap_days": 153,
+      "stmt_age_days": 72,
+      "coverage_gap_days": 154,
       "staleness": "current",
       "root_count": 8,
       "no_audit_roots": 0,
@@ -29303,7 +29073,7 @@
             {
               "item": 2,
               "topic": null,
-              "summary": "SECOM issued certificates with difference in upper and lower case between CN field and SAN.",
+              "summary": "Difference in upper and lower case between CN field and SAN in certificates issued by SECOM.",
               "bugzilla_ids": [
                 "1897346"
               ],
@@ -29401,8 +29171,8 @@
       "latest_stmt_date": "2026-09-02",
       "latest_period_end": "2026-06-12",
       "earliest_period_start": "2023-06-17",
-      "stmt_age_days": 65,
-      "coverage_gap_days": 147,
+      "stmt_age_days": 66,
+      "coverage_gap_days": 148,
       "staleness": "current",
       "root_count": 4,
       "no_audit_roots": 0,
@@ -29707,8 +29477,8 @@
           "disclosed_matters": [
             {
               "item": 1,
-              "topic": "Missed deadline of publication of CPs and CP/CPS",
-              "summary": "SwissSign AG missed the deadline for publication of 6 CPs and 1 CP/CPS, documented under Bug 174881.",
+              "topic": null,
+              "summary": "SwissSign AG missed deadline of publication of 6 CPs and 1 CP/CPS as documented in Mozilla Bug 174881.",
               "bugzilla_ids": [
                 "174881"
               ],
@@ -29736,8 +29506,8 @@
           "disclosed_matters": [
             {
               "item": 1,
-              "topic": "Missed revocation",
-              "summary": "SwissSign AG missed revocation and opened Bugzilla bug 1849364.",
+              "topic": "Missed revocation and opening Bugzilla",
+              "summary": "SwissSign AG failed to timely revoke a certificate, reported as Bug 1849364.",
               "bugzilla_ids": [
                 "1849364"
               ],
@@ -29746,8 +29516,8 @@
             },
             {
               "item": 2,
-              "topic": "Modified fields not saved",
-              "summary": "Modified fields were not saved into certificates and resulted in miss-issuance per bug 1876771.",
+              "topic": "Modified fields not saved into certificates",
+              "summary": "Modified fields were not saved into certificates and resulted in mis-issuance, reported as Bug 1876771.",
               "bugzilla_ids": [
                 "1876771"
               ],
@@ -29756,8 +29526,8 @@
             },
             {
               "item": 3,
-              "topic": "Case sensitivity in certificate fields",
-              "summary": "Difference in upper and lower case between CN field and SAN per bug 1874196.",
+              "topic": "CN field and SAN case difference",
+              "summary": "Difference in upper and lower case between CN field and SAN, reported as Bug 1874196.",
               "bugzilla_ids": [
                 "1874196"
               ],
@@ -30470,8 +30240,8 @@
       "latest_stmt_date": "2026-08-18",
       "latest_period_end": "2026-06-26",
       "earliest_period_start": "2025-06-27",
-      "stmt_age_days": 80,
-      "coverage_gap_days": 133,
+      "stmt_age_days": 81,
+      "coverage_gap_days": 134,
       "staleness": "current",
       "root_count": 2,
       "no_audit_roots": 0,
@@ -30685,8 +30455,8 @@
       "latest_stmt_date": "2026-08-10",
       "latest_period_end": "2026-06-30",
       "earliest_period_start": "2025-07-01",
-      "stmt_age_days": 88,
-      "coverage_gap_days": 129,
+      "stmt_age_days": 89,
+      "coverage_gap_days": 130,
       "staleness": "current",
       "root_count": 2,
       "no_audit_roots": 0,
@@ -30942,8 +30712,8 @@
       "latest_stmt_date": "2026-07-27",
       "latest_period_end": "2026-06-30",
       "earliest_period_start": "2022-07-01",
-      "stmt_age_days": 102,
-      "coverage_gap_days": 129,
+      "stmt_age_days": 103,
+      "coverage_gap_days": 130,
       "staleness": "current",
       "root_count": 6,
       "no_audit_roots": 0,
@@ -31347,8 +31117,8 @@
       "latest_stmt_date": "2026-09-21",
       "latest_period_end": "2026-06-30",
       "earliest_period_start": "2025-07-01",
-      "stmt_age_days": 46,
-      "coverage_gap_days": 129,
+      "stmt_age_days": 47,
+      "coverage_gap_days": 130,
       "staleness": "current",
       "root_count": 10,
       "no_audit_roots": 0,
@@ -31670,8 +31440,8 @@
           "disclosed_matters": [
             {
               "item": 1,
-              "topic": "OCSP Signing Certificate Extension",
-              "summary": "Missing 'id-pkix-ocsp-nocheck' extension in a delegated OCSP signing certificate discovered on July 14, 2020, was non-compliant with CA/B Forum B.R. section 4.9.9.(2); root cause was misconfiguration and certificate was replaced same day.",
+              "topic": "OCSP Signing Certificate",
+              "summary": "Missing 'id-pkix-ocsp-nocheck' extension in a delegated OCSP signing certificate discovered on July 14, 2020, representing non-compliance with CA/B Forum Baseline Requirements section 4.9.9.(2); certificate was replaced the same day and processes updated.",
               "bugzilla_ids": [],
               "certificate_count": null,
               "self_reported": true
@@ -31679,7 +31449,7 @@
             {
               "item": 2,
               "topic": "Certificate Validity Period",
-              "summary": "Two SSL/TLS end-entity certificates with validity period one second greater than 397 days were non-compliant with CA/B Forum B.R. section 6.3.2; both were revoked and replaced by September 4, 2020.",
+              "summary": "Two SSL/TLS end-entity certificates with validity period one second greater than 397 days discovered on September 2, 2020, violating CA/B Forum Baseline Requirements section 6.3.2; both certificates were revoked by September 4, 2020 and system configurations updated to enforce maximum 397-day validity.",
               "bugzilla_ids": [],
               "certificate_count": 2,
               "self_reported": true
@@ -31687,15 +31457,15 @@
             {
               "item": 3,
               "topic": "Subordinate CA EKU Extension",
-              "summary": "Two subordinate CAs issued from DST Root CA X3 were missing required EKU extensions per CA/B Forum B.R. section 7.1.2.2g; root cause was incomplete certificate profile update and incorrect certificate classification, resolved by October 7, 2020.",
+              "summary": "Two subordinate CAs issued from DST Root CA X3 missing EKU extensions as required by CA/B Forum Baseline Requirements section 7.1.2.2g discovered on October 6, 2020; both were revoked on October 7, 2020 and reissued with correct extensions, with procedural updates to prevent recurrence.",
               "bugzilla_ids": [],
               "certificate_count": 2,
               "self_reported": true
             },
             {
               "item": 4,
-              "topic": "Certificate Name Field",
-              "summary": "Forty OV TLS/SSL end-entity certificates contained invalid values for 'stateOrProvinceName' non-compliant with CA/B Forum B.R. section 7.1.6.4; root cause was incorrect logic handling in production code and all affected certificates were revoked by June 30, 2021.",
+              "topic": "Certificate stateOrProvinceName",
+              "summary": "40 OV TLS/SSL end-entity certificates with invalid stateOrProvinceName values discovered on June 28, 2021, violating CA/B Forum Baseline Requirements section 7.1.6.4; all affected certificates were revoked by June 30, 2021 and an emergency code fix was deployed on June 29, 2021.",
               "bugzilla_ids": [],
               "certificate_count": 40,
               "self_reported": true
@@ -32216,8 +31986,8 @@
       "latest_stmt_date": "2026-09-13",
       "latest_period_end": "2026-06-30",
       "earliest_period_start": "2025-07-01",
-      "stmt_age_days": 54,
-      "coverage_gap_days": 129,
+      "stmt_age_days": 55,
+      "coverage_gap_days": 130,
       "staleness": "current",
       "root_count": 1,
       "no_audit_roots": 0,
@@ -32447,8 +32217,8 @@
       "latest_stmt_date": "2026-09-21",
       "latest_period_end": "2026-06-30",
       "earliest_period_start": "2022-07-01",
-      "stmt_age_days": 46,
-      "coverage_gap_days": 129,
+      "stmt_age_days": 47,
+      "coverage_gap_days": 130,
       "staleness": "current",
       "root_count": 18,
       "no_audit_roots": 0,
@@ -32700,7 +32470,7 @@
             {
               "item": 1,
               "topic": "Certificate Revocation",
-              "summary": "SSL.com was unable to provide evidence that a preliminary report on findings was distributed to both the subscriber and the entity who filed the Certificate Problem Report within twenty-four hours of the report being filed for one of six certificate problem reports tested.",
+              "summary": "SSL.com was not able to provide evidence that a preliminary report on findings was distributed to both the subscriber and the entity who filed the Certificate Problem Report within twenty-four hours of the report being filed for one of six certificate problem reports selected for testing.",
               "bugzilla_ids": [],
               "certificate_count": null,
               "self_reported": false
@@ -32886,8 +32656,8 @@
       "latest_stmt_date": "2026-10-07",
       "latest_period_end": "2026-07-10",
       "earliest_period_start": "2025-07-11",
-      "stmt_age_days": 30,
-      "coverage_gap_days": 119,
+      "stmt_age_days": 31,
+      "coverage_gap_days": 120,
       "staleness": "current",
       "root_count": 3,
       "no_audit_roots": 0,
