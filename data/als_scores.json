@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-11T14:18:42.315636+00:00",
+  "generated_at": "2026-11-12T15:27:58.806324+00:00",
   "methodology": "paper/loop-failure/loop-failure-v1.tex",
   "parameters": {
     "min_bugs": 2,
@@ -81,8 +81,8 @@
     "chronic_1plus_pct": 79.6,
     "chronic_3plus": 26,
     "chronic_3plus_pct": 48.1,
-    "chronic_5plus": 16,
-    "chronic_5plus_pct": 29.6
+    "chronic_5plus": 17,
+    "chronic_5plus_pct": 31.5
   },
   "scores": [
     {
@@ -1326,8 +1326,8 @@
         "severity_amp": 1.103,
         "recency_amp": 1.344,
         "gap_level": "high",
-        "staleness": "stale",
-        "audit_quality": 52.5,
+        "staleness": "current",
+        "audit_quality": 50.0,
         "has_audit_profile": true
       }
     },
@@ -4293,8 +4293,8 @@
       "population": "active",
       "distrust_event": null,
       "signals": {
-        "n": 40,
-        "n_orig": 40,
+        "n": 41,
+        "n_orig": 41,
         "batches_collapsed": 0,
         "low_confidence": false,
         "years": [
@@ -4302,9 +4302,9 @@
           2026
         ],
         "years_active": 8,
-        "self_pct": 20.0,
-        "n_chronic": 4,
-        "n_solo_chronic": 4,
+        "self_pct": 19.5,
+        "n_chronic": 5,
+        "n_solo_chronic": 5,
         "chronic_classes": {
           "ocsp-failure": [
             2019,
@@ -4331,6 +4331,11 @@
             2023,
             2024,
             2025,
+            2026
+          ],
+          "dv-misissuance": [
+            2023,
+            2024,
             2026
           ]
         },
@@ -4361,6 +4366,11 @@
             2024,
             2025,
             2026
+          ],
+          "dv-misissuance": [
+            2023,
+            2024,
+            2026
           ]
         },
         "chronic_knowledge": {
@@ -4383,9 +4393,14 @@
             "prior_cas": 10,
             "eco_age": 4,
             "weight": 1.25
+          },
+          "dv-misissuance": {
+            "prior_cas": 23,
+            "eco_age": 7,
+            "weight": 1.5
           }
         },
-        "avg_knowledge_weight": 1.225,
+        "avg_knowledge_weight": 1.28,
         "n_broken_promise": 2,
         "broken_promise_classes": [
           "disclosure-failure",
@@ -4395,33 +4410,33 @@
         "closed_loop_classes": [
           "crl-failure"
         ],
-        "gov_frac": 0.325,
-        "accel": 0.667,
-        "year_density": 5.0,
-        "chronic_span_avg": 4.75,
-        "severity_score": 0.1891,
-        "recency_score": 0.2031,
+        "gov_frac": 0.317,
+        "accel": 0.708,
+        "year_density": 5.12,
+        "chronic_span_avg": 4.4,
+        "severity_score": 0.186,
+        "recency_score": 0.175,
         "recent_ap_rate": 0.0,
-        "n_recent": 4,
+        "n_recent": 5,
         "n_sev5": 3
       },
       "scores": {
-        "total": 64.8,
+        "total": 76.8,
         "mode_A": 28.9,
-        "mode_B": 64.8,
+        "mode_B": 76.8,
         "accel_boost": 0.0,
         "dominant_mode": "B",
         "threshold": 48,
         "flagged": true,
-        "n_solo_chronic": 4,
+        "n_solo_chronic": 5,
         "solo_ratio": 1.0,
         "ecosystem_factor": 1.0,
-        "avg_knowledge_weight": 1.225,
+        "avg_knowledge_weight": 1.28,
         "n_broken_promise": 2,
         "n_closed_loop": 1,
         "broken_boost": 1.0,
-        "severity_amp": 1.189,
-        "recency_amp": 1.203,
+        "severity_amp": 1.186,
+        "recency_amp": 1.175,
         "gap_level": "high",
         "staleness": "stale",
         "audit_quality": 65.6,
