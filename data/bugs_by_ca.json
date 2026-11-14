@@ -341,21 +341,21 @@
       "filed": "2026-09-16",
       "summary": "GoDaddy: Delayed Revocation of SHA-1 Signed Subordinate CA Certificates",
       "self_reported": true,
-      "whiteboard": "[close on 2026-11-13] [ca-compliance] [ca-revocation-delay]"
+      "whiteboard": "[ca-compliance] [ca-revocation-delay]"
     },
     {
       "id": 2077611,
       "filed": "2026-10-02",
       "summary": "GoDaddy: Delayed CRL Updates",
       "self_reported": true,
-      "whiteboard": "[ca-compliance] [crl-failure] Next update 2026-11-13"
+      "whiteboard": "[ca-compliance] [crl-failure] Next update 2026-12-01"
     },
     {
       "id": 2079943,
       "filed": "2026-10-08",
       "summary": "GoDaddy: Certificate Issuance Using Previously Compromised Private Key",
       "self_reported": true,
-      "whiteboard": "[ca-compliance] [__-misissuance] Next update 2026-11-13"
+      "whiteboard": "[ca-compliance] [__-misissuance] Next update 2026-12-04"
     },
     {
       "id": 2082703,
@@ -376,7 +376,7 @@
       "filed": "2026-11-10",
       "summary": "GoDaddy: Previously Revoked Entries Temporarily Missing from CRLs",
       "self_reported": true,
-      "whiteboard": ""
+      "whiteboard": "[ca-compliance] [crl-failure]"
     }
   ],
   "DigiCert": [
@@ -1645,7 +1645,7 @@
       "filed": "2026-09-10",
       "summary": "DigiCert: OCSP returns unauthorized for an issued TLS Certificate",
       "self_reported": true,
-      "whiteboard": "[ca-compliance] [ocsp-failure] Next update 2026-11-13"
+      "whiteboard": "[ca-compliance] [ocsp-failure] Next update 2026-12-15"
     },
     {
       "id": 2072906,
@@ -1680,7 +1680,7 @@
       "filed": "2026-09-27",
       "summary": "DigiCert: Revocation of Undisclosed Issuing CAs",
       "self_reported": true,
-      "whiteboard": "[ca-compliance] [audit-failure] Next update 2026-11-13"
+      "whiteboard": "[ca-compliance] [audit-failure] Next update 2026-12-15"
     },
     {
       "id": 2078824,
@@ -1729,7 +1729,7 @@
       "filed": "2026-11-12",
       "summary": "DigiCert: Certificate issued using a key previously demonstrated as compromised",
       "self_reported": true,
-      "whiteboard": ""
+      "whiteboard": "[ca-compliance] [__-misissuance]"
     }
   ],
   "SwissSign AG": [
@@ -2412,7 +2412,7 @@
       "filed": "2026-09-28",
       "summary": "IZENPE: revocation reason code not included in CRL issued by Root",
       "self_reported": false,
-      "whiteboard": "[ca-compliance] [crl-failure]"
+      "whiteboard": "[close on 2026-11-20] [ca-compliance] [crl-failure]"
     },
     {
       "id": 2085354,
@@ -3317,7 +3317,7 @@
       "filed": "2026-10-23",
       "summary": "Sectigo: Late account removal for deprecated Network Boundary Control",
       "self_reported": true,
-      "whiteboard": "[close on 2026-11-12] [ca-compliance] [policy-failure]"
+      "whiteboard": "[ca-compliance] [policy-failure]"
     },
     {
       "id": 2086490,
@@ -3627,7 +3627,7 @@
       "filed": "2026-09-23",
       "summary": "Let's Encrypt: Root CRLs Missing Reason Code",
       "self_reported": true,
-      "whiteboard": "[ca-compliance] [crl-failure] Next update 2026-11-13"
+      "whiteboard": "[close on 2026-11-20] [ca-compliance] [crl-failure]"
     }
   ],
   "GlobalSign nv-sa": [
@@ -4783,7 +4783,7 @@
       "filed": "2026-10-19",
       "summary": "certSIGN: OCSP responder certificate encoded subject attributes out of order",
       "self_reported": true,
-      "whiteboard": "[close on 2026-11-12] [ca-compliance] [policy-failure]"
+      "whiteboard": "[ca-compliance] [policy-failure]"
     },
     {
       "id": 2084973,
@@ -5563,7 +5563,7 @@
       "filed": "2026-10-09",
       "summary": "Kamu SM: Non-BR-Compliant OCSP Response Validity Interval",
       "self_reported": true,
-      "whiteboard": "[close on 2026-11-13] [ca-compliance] [ocsp-failure]"
+      "whiteboard": "[ca-compliance] [ocsp-failure]"
     }
   ],
   "IdenTrust Services, LLC": [
@@ -6133,6 +6133,20 @@
       "summary": "IdenTrust: EV field missing in the Non-TLS CP/CPS",
       "self_reported": true,
       "whiteboard": "[ca-compliance] [policy-failure]"
+    },
+    {
+      "id": 2092770,
+      "filed": "2026-11-14",
+      "summary": "IdenTrust: Issuance of Code Signing Certificate with CP/CPS discrepancies",
+      "self_reported": true,
+      "whiteboard": ""
+    },
+    {
+      "id": 2092771,
+      "filed": "2026-11-14",
+      "summary": "IdenTrust: Issuance of Timestamping Certificate with CP/CPS discrepancies",
+      "self_reported": true,
+      "whiteboard": ""
     }
   ],
   "Microsec Ltd.": [
@@ -6493,7 +6507,7 @@
       "filed": "2025-12-08",
       "summary": "Netlock:  CA in AIA in PEM format",
       "self_reported": true,
-      "whiteboard": "[ca-compliance] [policy-failure]"
+      "whiteboard": "[ca-compliance] [policy-failure] Next update 2026-11-30"
     },
     {
       "id": 2007948,
@@ -6599,6 +6613,34 @@
       "summary": "NETLOCK: Arany (Class Gold) root CRL entry for subordinate CA certificate without reasonCode",
       "self_reported": false,
       "whiteboard": "[ca-compliance] [crl-failure]"
+    },
+    {
+      "id": 2092715,
+      "filed": "2026-11-13",
+      "summary": "NETLOCK: 2026 audit statements for NetLock Arany (Class Gold) Főtanúsítvány not filed in CCADB on time",
+      "self_reported": true,
+      "whiteboard": "[ca-compliance] [audit-delay]"
+    },
+    {
+      "id": 2092773,
+      "filed": "2026-11-14",
+      "summary": "NETLOCK: Two Gold subordinate CAs not disclosed in CCADB, and Gold CA CRLs outside our monitoring",
+      "self_reported": true,
+      "whiteboard": ""
+    },
+    {
+      "id": 2092774,
+      "filed": "2026-11-14",
+      "summary": "NETLOCK: emailProtection certificates under the Gold hierarchy not issued under S/MIME BR profiles",
+      "self_reported": true,
+      "whiteboard": ""
+    },
+    {
+      "id": 2092776,
+      "filed": "2026-11-14",
+      "summary": "NETLOCK: Delayed revocation of emailProtection certificates under the Gold hierarchy",
+      "self_reported": true,
+      "whiteboard": ""
     }
   ],
   "SECOM Trust Systems CO., LTD.": [
@@ -6880,7 +6922,7 @@
       "filed": "2026-10-13",
       "summary": "SECOM: Incorrect and missing EV TLS test websites in CCADB",
       "self_reported": true,
-      "whiteboard": "[close on 2026-11-12] [ca-compliance] [policy-failure]"
+      "whiteboard": "[ca-compliance] [policy-failure]"
     },
     {
       "id": 2084449,
@@ -7255,7 +7297,7 @@
       "filed": "2026-09-28",
       "summary": "Telekom Security: Failure to respond to a certificate problem report within 24 hours",
       "self_reported": false,
-      "whiteboard": "[close on 2026-11-12] [ca-compliance] [policy-failure]"
+      "whiteboard": "[ca-compliance] [policy-failure]"
     },
     {
       "id": 2077068,
@@ -8301,7 +8343,7 @@
       "filed": "2026-10-19",
       "summary": "Asseco DS / Certum: Delayed preliminary CPR response due to email address typo",
       "self_reported": true,
-      "whiteboard": "[close on 2026-11-12] [ca-compliance] [policy-failure]"
+      "whiteboard": "[ca-compliance] [policy-failure]"
     },
     {
       "id": 2087472,
@@ -8963,7 +9005,7 @@
       "filed": "2026-10-23",
       "summary": "Telia: OCSP Responder Certificate does not have subject:countryName attribute",
       "self_reported": true,
-      "whiteboard": "[ca-compliance] [ocsp-failure]"
+      "whiteboard": "[ca-compliance] [ocsp-failure] Next update 2026-11-26"
     }
   ],
   "Government of Spain, Autoritat de Certificació de la Comunitat Valenciana (ACCV)": [
@@ -9035,21 +9077,21 @@
       "filed": "2026-10-12",
       "summary": "ACCV: OCSP responses include “archiveCutoff” in “responseExtensions”",
       "self_reported": true,
-      "whiteboard": "[ca-compliance] [ocsp-failure]"
+      "whiteboard": "[close on 2026-11-20] [ca-compliance] [ocsp-failure]"
     },
     {
       "id": 2082818,
       "filed": "2026-10-16",
       "summary": "ACCV: EKU Inconsistency in ACCV RSA1 TLS CA Certificates Identified During Chrome Root Inclusion Review",
       "self_reported": false,
-      "whiteboard": "[ca-compliance] [ca-misissuance]"
+      "whiteboard": "[close on 2026-11-20] [ca-compliance] [ca-misissuance]"
     },
     {
       "id": 2086575,
       "filed": "2026-10-28",
       "summary": "ACCV: Delayed Full Incident Report for Bug 2080796",
       "self_reported": true,
-      "whiteboard": "[ca-compliance] [policy-failure]"
+      "whiteboard": "[close on 2026-11-20] [ca-compliance] [policy-failure]"
     }
   ],
   "Cybertrust Japan Co., Ltd.": [
@@ -10042,6 +10084,20 @@
       "summary": "CFCA: Deployment Process Certificate Misissuance",
       "self_reported": true,
       "whiteboard": "[ca-compliance] [policy-failure]"
+    },
+    {
+      "id": 2092786,
+      "filed": "2026-11-14",
+      "summary": "CFCA: Inappropriate OID Organisation Name for 2.16.156.112554(`China Financial Certification Authority Extended Validation (EV)`)",
+      "self_reported": false,
+      "whiteboard": ""
+    },
+    {
+      "id": 2092894,
+      "filed": "2026-11-14",
+      "summary": "CFCA: Delayed revocation of certificates affected by bug #2091246 and bug #2090925",
+      "self_reported": true,
+      "whiteboard": ""
     }
   ],
   "HARICA": [
@@ -10197,7 +10253,7 @@
       "filed": "2026-10-31",
       "summary": "HARICA: 2 truncated CRLs published",
       "self_reported": true,
-      "whiteboard": "[ca-compliance] [crl-failure]"
+      "whiteboard": "[ca-compliance] [crl-failure] Next update 2026-11-20"
     }
   ],
   "Chunghwa Telecom": [
@@ -10663,7 +10719,7 @@
       "filed": "2026-08-27",
       "summary": "SSL.com: Delayed disclosure of Timestamping CA in CCADB",
       "self_reported": true,
-      "whiteboard": "[close on 2026-11-13] [ca-compliance] [disclosure-failure]"
+      "whiteboard": "[ca-compliance] [disclosure-failure]"
     },
     {
       "id": 2071491,
