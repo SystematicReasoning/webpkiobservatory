@@ -1652,7 +1652,7 @@
       "filed": "2026-09-17",
       "summary": "DigiCert: Expired CRL",
       "self_reported": true,
-      "whiteboard": "[ca-compliance] [crl-failure] Next update 2026-11-13"
+      "whiteboard": "[close on 2026-11-23] [ca-compliance] [crl-failure]"
     },
     {
       "id": 2073230,
@@ -1715,7 +1715,7 @@
       "filed": "2026-10-24",
       "summary": "DigiCert: Manual data entry error in CCADB",
       "self_reported": true,
-      "whiteboard": "[ca-compliance] [disclosure-failure] Next update 2026-11-14"
+      "whiteboard": "[close on 2026-11-23] [ca-compliance] [disclosure-failure]"
     },
     {
       "id": 2090687,
@@ -1730,6 +1730,20 @@
       "summary": "DigiCert: Certificate issued using a key previously demonstrated as compromised",
       "self_reported": true,
       "whiteboard": "[ca-compliance] [__-misissuance]"
+    },
+    {
+      "id": 2093196,
+      "filed": "2026-11-16",
+      "summary": "DigiCert: ECC subCA certificates signed by a P-384 root using ecdsa-with-SHA256",
+      "self_reported": true,
+      "whiteboard": ""
+    },
+    {
+      "id": 2093202,
+      "filed": "2026-11-16",
+      "summary": "DigiCert: Transition planning and communication concerning DigiCert Trusted Root G4",
+      "self_reported": false,
+      "whiteboard": "[ca-compliance] [policy-failure]"
     }
   ],
   "SwissSign AG": [
@@ -2243,6 +2257,13 @@
       "summary": "SwissSign: Delayed Response to CPR - Bugzilla 2083791",
       "self_reported": false,
       "whiteboard": "[ca-compliance] [policy-failure] Next update 2026-12-04"
+    },
+    {
+      "id": 2093350,
+      "filed": "2026-11-16",
+      "summary": "SwissSign: Last CA CRL with nextUpdate  >12 months for retired Root CA",
+      "self_reported": true,
+      "whiteboard": ""
     }
   ],
   "Izenpe S.A.": [
@@ -2441,6 +2462,13 @@
       "summary": "IZENPE: network communication outage",
       "self_reported": true,
       "whiteboard": "[ca-compliance] [crl-failure] [ocsp-failure]"
+    },
+    {
+      "id": 2093116,
+      "filed": "2026-11-15",
+      "summary": "IZENPE: CP/CPS inaccuracy",
+      "self_reported": true,
+      "whiteboard": ""
     }
   ],
   "Sectigo": [
@@ -4819,6 +4847,13 @@
       "summary": "certSIGN: Root CRL validity set to 12 month instead of less",
       "self_reported": true,
       "whiteboard": "[ca-compliance] [policy-failure]"
+    },
+    {
+      "id": 2093324,
+      "filed": "2026-11-16",
+      "summary": "certSIGN: lastCRL in a Root CA CRL",
+      "self_reported": true,
+      "whiteboard": ""
     }
   ],
   "Consorci AOC": [
@@ -5294,6 +5329,20 @@
       "summary": "Disig: keyUsage in OCSP responder certificate not marked critical",
       "self_reported": true,
       "whiteboard": "[ca-compliance] [ocsp-failure] Next update 2026-11-30"
+    },
+    {
+      "id": 2093075,
+      "filed": "2026-11-15",
+      "summary": "Disig: Reuse period discrepancy for DNS change method.",
+      "self_reported": true,
+      "whiteboard": ""
+    },
+    {
+      "id": 2093076,
+      "filed": "2026-11-15",
+      "summary": "Disig: The CP/CPS effective date was not updated within 14 days.",
+      "self_reported": true,
+      "whiteboard": ""
     }
   ],
   "Certigna": [
@@ -6944,6 +6993,13 @@
       "summary": "SECOM: Insufficient randomness in serial numbers of two Cybertrust Japan subordinate CA certificates",
       "self_reported": true,
       "whiteboard": "[ca-compliance] [ca-misissuance]"
+    },
+    {
+      "id": 2093291,
+      "filed": "2026-11-16",
+      "summary": "SECOM: Non-Compliant BasicOCSPResponse Signature Algorithms for P-384 Responder Keys",
+      "self_reported": true,
+      "whiteboard": ""
     }
   ],
   "Taiwan-CA Inc. (TWCA)": [
@@ -7326,6 +7382,20 @@
       "summary": "Telekom Security: Typographical error in CPS section 7.1.6",
       "self_reported": true,
       "whiteboard": "[ca-compliance] [policy-failure] Next update 2027-01-08"
+    },
+    {
+      "id": 2093343,
+      "filed": "2026-11-16",
+      "summary": "Telekom Security:  Erroneous number of network perspectives for MPIC in the CPS",
+      "self_reported": true,
+      "whiteboard": ""
+    },
+    {
+      "id": 2093352,
+      "filed": "2026-11-16",
+      "summary": "Telekom Security: Typographical error in the OID for secp384r1 keys in the CPS",
+      "self_reported": true,
+      "whiteboard": ""
     }
   ],
   "Visa": [
@@ -8322,14 +8392,14 @@
       "filed": "2026-09-24",
       "summary": "Asseco DS / Certum: CRL URLs in issued certificates not disclosed in CCADB",
       "self_reported": true,
-      "whiteboard": "[ca-compliance] [disclosure-failure] Next update 2026-11-30"
+      "whiteboard": "[close on 2026-11-23] [ca-compliance] [disclosure-failure]"
     },
     {
       "id": 2075242,
       "filed": "2026-09-24",
       "summary": "Asseco DS / Certum: Incorrect ECDSA-SHA384 AlgorithmIdentifier Encoding in CRLs",
       "self_reported": true,
-      "whiteboard": "[ca-compliance] [crl-failure] Next update 2026-11-30"
+      "whiteboard": "[close on 2026-11-23] [ca-compliance] [crl-failure]"
     },
     {
       "id": 2080819,
@@ -8358,6 +8428,13 @@
       "summary": "Asseco DS / Certum: Incorrect State or Province in certificate",
       "self_reported": true,
       "whiteboard": "[ca-compliance] [__-misissuance]"
+    },
+    {
+      "id": 2093078,
+      "filed": "2026-11-15",
+      "summary": "Asseco DS / Certum: OCSP Responses with Validity Intervals Shorter Than Eight Hours",
+      "self_reported": true,
+      "whiteboard": ""
     }
   ],
   "Microsoft Corporation": [
@@ -10705,7 +10782,7 @@
       "filed": "2026-07-26",
       "summary": "SSL.com: Invalid Subject stateOrProvince Values",
       "self_reported": true,
-      "whiteboard": "[close on 2026-11-13] [ca-compliance] [ov-misissuance]"
+      "whiteboard": "[ca-compliance] [ov-misissuance] Next update 2026-11-20"
     },
     {
       "id": 2057919,
@@ -10719,7 +10796,7 @@
       "filed": "2026-08-21",
       "summary": "SSL.com: Invalid combinations of countryName, stateOrProvinceName, and localityName attributes",
       "self_reported": true,
-      "whiteboard": "[close on 2026-11-13] [ca-compliance] [ov-misissuance]"
+      "whiteboard": "[ca-compliance] [ov-misissuance] Next update 2026-11-20"
     },
     {
       "id": 2067269,
@@ -11447,14 +11524,14 @@
       "filed": "2026-09-18",
       "summary": "eMudhra emSign PKI Services: InCommon IGTF SSL CPS missing conformance statement for Baseline Requirements",
       "self_reported": true,
-      "whiteboard": "[close on 2026-11-15] [ca-compliance] [policy-failure]"
+      "whiteboard": "[ca-compliance] [policy-failure]"
     },
     {
       "id": 2080742,
       "filed": "2026-10-12",
       "summary": "eMudhra emSign PKI Services: Delegated OCSP Responder certificates containing cRLDistributionPoints extension",
       "self_reported": true,
-      "whiteboard": "[close on 2026-11-15] [ca-compliance] [ocsp-failure]"
+      "whiteboard": "[ca-compliance] [ocsp-failure]"
     },
     {
       "id": 2081185,
@@ -11590,6 +11667,13 @@
       "summary": "iTrusChina: OCSP Response ECDSA signatureAlgorithm with NULL parameters",
       "self_reported": true,
       "whiteboard": "[ca-compliance] [ocsp-failure]"
+    },
+    {
+      "id": 2093234,
+      "filed": "2026-11-16",
+      "summary": "iTrusChina: OCSP Response InternalError for SHA-1 CertID Requests",
+      "self_reported": true,
+      "whiteboard": ""
     }
   ],
   "Certainly LLC": [
@@ -12095,6 +12179,13 @@
       "summary": "Hongkong Post: CRL HTTP endpoints returned legacy media type application/x-pkcs7-crl",
       "self_reported": true,
       "whiteboard": "[ca-compliance] [crl-failure]"
+    },
+    {
+      "id": 2093087,
+      "filed": "2026-11-15",
+      "summary": "Hongkong Post: CP/CPS missing CCADB policy attestation",
+      "self_reported": true,
+      "whiteboard": ""
     }
   ],
   "Autoridad de Certificación (ANF AC)": [
