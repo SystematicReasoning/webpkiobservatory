@@ -1666,7 +1666,7 @@
       "filed": "2026-09-18",
       "summary": "DigiCert: Revocation of SHA1 Issuing CAs",
       "self_reported": true,
-      "whiteboard": "[ca-compliance] [ca-revocation-delay] Next update 2026-11-30"
+      "whiteboard": "[close on 2026-11-24] [ca-compliance] [ca-revocation-delay]"
     },
     {
       "id": 2074611,
@@ -1736,7 +1736,7 @@
       "filed": "2026-11-16",
       "summary": "DigiCert: ECC subCA certificates signed by a P-384 root using ecdsa-with-SHA256",
       "self_reported": true,
-      "whiteboard": ""
+      "whiteboard": "[ca-compliance] [ca-misissuance]"
     },
     {
       "id": 2093202,
@@ -2263,7 +2263,7 @@
       "filed": "2026-11-16",
       "summary": "SwissSign: Last CA CRL with nextUpdate  >12 months for retired Root CA",
       "self_reported": true,
-      "whiteboard": ""
+      "whiteboard": "[ca-compliance] [crl-failure]"
     }
   ],
   "Izenpe S.A.": [
@@ -2468,7 +2468,7 @@
       "filed": "2026-11-15",
       "summary": "IZENPE: CP/CPS inaccuracy",
       "self_reported": true,
-      "whiteboard": ""
+      "whiteboard": "[ca-compliance] [policy-failure]"
     }
   ],
   "Sectigo": [
@@ -3366,7 +3366,7 @@
       "filed": "2026-11-15",
       "summary": "Sectigo: Late disclosure of TLS CP/CPS in CCADB",
       "self_reported": true,
-      "whiteboard": ""
+      "whiteboard": "[ca-compliance] [disclosure-failure]"
     }
   ],
   "Internet Security Research Group": [
@@ -3641,7 +3641,7 @@
       "filed": "2026-05-08",
       "summary": "Let's Encrypt: Gen Y Cross-Certified Subordinate CAs missing serverAuth EKU",
       "self_reported": true,
-      "whiteboard": "[ca-compliance] [ca-misissuance] Next update 2026-11-20"
+      "whiteboard": "[close on 2026-11-24] [ca-compliance] [ca-misissuance]"
     },
     {
       "id": 2044788,
@@ -3655,7 +3655,7 @@
       "filed": "2026-08-10",
       "summary": "Let's Encrypt: CPS missing root program attestation",
       "self_reported": true,
-      "whiteboard": "Next update 2026-11-20 [ca-compliance] [policy-failure] "
+      "whiteboard": "[close on 2026-11-24] [ca-compliance] [policy-failure] "
     },
     {
       "id": 2074944,
@@ -4635,6 +4635,13 @@
       "summary": "Actalis: Non-compliant OCSP responses and OCSP responder certificate",
       "self_reported": true,
       "whiteboard": "[ca-compliance] [ocsp-failure]"
+    },
+    {
+      "id": 2094212,
+      "filed": "2026-11-17",
+      "summary": "Actalis: TLS Server CP/CPS documentation inconsistencies",
+      "self_reported": true,
+      "whiteboard": "[ca-compliance] [policy-failure]"
     }
   ],
   "certSIGN": [
@@ -4853,28 +4860,28 @@
       "filed": "2026-11-16",
       "summary": "certSIGN: lastCRL in a Root CA CRL",
       "self_reported": true,
-      "whiteboard": ""
+      "whiteboard": "[ca-compliance] [crl-failure]"
     },
     {
       "id": 2094045,
       "filed": "2026-11-17",
       "summary": "certSIGN: Different URLs in Root CPS vs CA certificates",
       "self_reported": true,
-      "whiteboard": ""
+      "whiteboard": "[ca-compliance] [policy-failure]"
     },
     {
       "id": 2094046,
       "filed": "2026-11-17",
       "summary": "certSIGN: DV CPS inconsistency in text",
       "self_reported": true,
-      "whiteboard": ""
+      "whiteboard": "[ca-compliance] [policy-failure]"
     },
     {
       "id": 2094047,
       "filed": "2026-11-17",
       "summary": "certSIGN: Delay in updating in CCADB the version of a CPS",
       "self_reported": true,
-      "whiteboard": ""
+      "whiteboard": "[ca-compliance] [disclosure-failure]"
     }
   ],
   "Consorci AOC": [
@@ -5249,7 +5256,14 @@
       "filed": "2026-11-17",
       "summary": "D-Trust: Preliminary findings on Certificate Problem Report not provided within 24 hours",
       "self_reported": true,
-      "whiteboard": ""
+      "whiteboard": "[ca-compliance] [policy-failure]"
+    },
+    {
+      "id": 2094379,
+      "filed": "2026-11-17",
+      "summary": "D-Trust: Unfilled placeholder for CRL URLs in CSM CPS version 5.6",
+      "self_reported": true,
+      "whiteboard": "[ca-compliance] [policy-failure]"
     }
   ],
   "Disig, a.s.": [
@@ -5363,14 +5377,14 @@
       "filed": "2026-11-15",
       "summary": "Disig: Reuse period discrepancy for DNS change method.",
       "self_reported": true,
-      "whiteboard": ""
+      "whiteboard": "[ca-compliance] [policy-failure]"
     },
     {
       "id": 2093076,
       "filed": "2026-11-15",
       "summary": "Disig: The CP/CPS effective date was not updated within 14 days.",
       "self_reported": true,
-      "whiteboard": ""
+      "whiteboard": "[ca-compliance] [disclosure-failure]"
     }
   ],
   "Certigna": [
@@ -6216,7 +6230,7 @@
       "filed": "2026-10-28",
       "summary": "IdenTrust: EV field missing in the Non-TLS CP/CPS",
       "self_reported": true,
-      "whiteboard": "[ca-compliance] [policy-failure]"
+      "whiteboard": "[ca-compliance] [policy-failure] Next update 2026-11-30"
     },
     {
       "id": 2092770,
@@ -6237,7 +6251,14 @@
       "filed": "2026-11-17",
       "summary": "IdenTrust:  Issuance of TLS Certificates with CP/CPS discrepancies",
       "self_reported": true,
-      "whiteboard": ""
+      "whiteboard": "[ca-compliance] [ov-misissuance]"
+    },
+    {
+      "id": 2094389,
+      "filed": "2026-11-17",
+      "summary": "IdenTrust: Issuance of Cross-signed Certificates with CP/CPS discrepancies",
+      "self_reported": true,
+      "whiteboard": "[ca-compliance] [policy-failure]"
     }
   ],
   "Microsec Ltd.": [
@@ -7034,7 +7055,7 @@
       "filed": "2026-11-16",
       "summary": "SECOM: Non-Compliant BasicOCSPResponse Signature Algorithms for P-384 Responder Keys",
       "self_reported": true,
-      "whiteboard": ""
+      "whiteboard": "[ca-compliance] [ocsp-failure]"
     }
   ],
   "Taiwan-CA Inc. (TWCA)": [
@@ -7190,21 +7211,21 @@
       "filed": "2026-11-17",
       "summary": "TWCA: CP/CPS coverage of CA certificates",
       "self_reported": true,
-      "whiteboard": ""
+      "whiteboard": "[ca-compliance] [policy-failure]"
     },
     {
       "id": 2093970,
       "filed": "2026-11-17",
       "summary": "TWCA: OCSP responses for newly revoked subscriber certificates omitted nextUpdate",
       "self_reported": true,
-      "whiteboard": ""
+      "whiteboard": "[ca-compliance] [ocsp-failure]"
     },
     {
       "id": 2093971,
       "filed": "2026-11-17",
       "summary": "TWCA: OCSP responses with revocationReason unspecified (0)",
       "self_reported": true,
-      "whiteboard": ""
+      "whiteboard": "[ca-compliance] [ocsp-failure]"
     }
   ],
   "Deutsche Telekom Security GmbH": [
@@ -7444,14 +7465,14 @@
       "filed": "2026-11-16",
       "summary": "Telekom Security:  Erroneous number of network perspectives for MPIC in the CPS",
       "self_reported": true,
-      "whiteboard": ""
+      "whiteboard": "[ca-compliance] [policy-failure]"
     },
     {
       "id": 2093352,
       "filed": "2026-11-16",
       "summary": "Telekom Security: Typographical error in the OID for secp384r1 keys in the CPS",
       "self_reported": true,
-      "whiteboard": ""
+      "whiteboard": "[ca-compliance] [policy-failure]"
     }
   ],
   "Visa": [
@@ -8490,7 +8511,7 @@
       "filed": "2026-11-15",
       "summary": "Asseco DS / Certum: OCSP Responses with Validity Intervals Shorter Than Eight Hours",
       "self_reported": true,
-      "whiteboard": ""
+      "whiteboard": "[ca-compliance] [ocsp-failure]"
     }
   ],
   "Microsoft Corporation": [
@@ -9146,6 +9167,34 @@
       "summary": "Telia: OCSP Responder Certificate does not have subject:countryName attribute",
       "self_reported": true,
       "whiteboard": "[ca-compliance] [ocsp-failure] Next update 2026-11-26"
+    },
+    {
+      "id": 2094282,
+      "filed": "2026-11-17",
+      "summary": "Telia: S/MIME CP/CPS does not commit to certificate linting",
+      "self_reported": true,
+      "whiteboard": "[ca-compliance] [policy-failure]"
+    },
+    {
+      "id": 2094283,
+      "filed": "2026-11-17",
+      "summary": "Telia: 2025 Audit Standard Audit Attestation has one certificate SHA256 with one lower-case character",
+      "self_reported": true,
+      "whiteboard": "[ca-compliance]"
+    },
+    {
+      "id": 2094285,
+      "filed": "2026-11-17",
+      "summary": "Telia: Incorrect OID and allowed encoding for subject:jurisdictionCountryName in TLS CP/CPS",
+      "self_reported": true,
+      "whiteboard": "[ca-compliance] [policy-failure]"
+    },
+    {
+      "id": 2094286,
+      "filed": "2026-11-17",
+      "summary": "Telia: Late TLS CP/CPS update and disclosure of newly issued CA Certificate",
+      "self_reported": true,
+      "whiteboard": "[ca-compliance] [disclosure-failure]"
     }
   ],
   "Government of Spain, Autoritat de Certificació de la Comunitat Valenciana (ACCV)": [
@@ -9238,7 +9287,7 @@
       "filed": "2026-11-17",
       "summary": "ACCV: Clarification of SHA-1 wording in CP/CPS §7.1.3",
       "self_reported": true,
-      "whiteboard": ""
+      "whiteboard": "[ca-compliance] [policy-failure]"
     }
   ],
   "Cybertrust Japan Co., Ltd.": [
@@ -9333,21 +9382,21 @@
       "filed": "2026-11-17",
       "summary": "GDCA: Inconsistency Between Subordinate CA Certificate Key Usage and CP/CPS Requirements",
       "self_reported": true,
-      "whiteboard": ""
+      "whiteboard": "[ca-compliance] [policy-failure]"
     },
     {
       "id": 2093901,
       "filed": "2026-11-17",
       "summary": "GDCA: ECC Subscriber Certificate Key Usage Requirements Inconsistent with CA/Browser Forum Baseline Requirements",
       "self_reported": true,
-      "whiteboard": ""
+      "whiteboard": "[ca-compliance] [policy-failure]"
     },
     {
       "id": 2093904,
       "filed": "2026-11-17",
       "summary": "GDCA: Failure to Respond to a Certificate Problem Report Within 24 Hours",
       "self_reported": true,
-      "whiteboard": ""
+      "whiteboard": "[ca-compliance] [policy-failure]"
     }
   ],
   "Krajowa Izba Rozliczeniowa S.A. (KIR)": [
@@ -9680,7 +9729,7 @@
       "filed": "2026-11-16",
       "summary": "FNMT: AIA CA Issuer field pointing to PEM encoded cert",
       "self_reported": true,
-      "whiteboard": ""
+      "whiteboard": "[ca-compliance] [policy-failure]"
     }
   ],
   "Google Trust Services LLC": [
@@ -10272,28 +10321,28 @@
       "filed": "2026-11-14",
       "summary": "CFCA: Delayed revocation of certificates affected by bug #2091246 and bug #2090925",
       "self_reported": true,
-      "whiteboard": ""
+      "whiteboard": "[ca-compliance] [leaf-revocation-delay]"
     },
     {
       "id": 2093973,
       "filed": "2026-11-17",
       "summary": "CFCA: Missing CCADB Policy Adherence Statement in IdentityCA CPS",
       "self_reported": true,
-      "whiteboard": ""
+      "whiteboard": "[ca-compliance] [policy-failure]"
     },
     {
       "id": 2093975,
       "filed": "2026-11-17",
       "summary": "CFCA: Inaccurate Cross-signed Certificate Profiles in Global-Trust CP/CPS",
       "self_reported": true,
-      "whiteboard": ""
+      "whiteboard": "[ca-compliance] [policy-failure]"
     },
     {
       "id": 2093998,
       "filed": "2026-11-17",
       "summary": "CFCA: EV TLS certificate misissued with incorrect businessCategory",
       "self_reported": true,
-      "whiteboard": ""
+      "whiteboard": "[ca-compliance] [ev-misissuance]"
     }
   ],
   "HARICA": [
@@ -11150,21 +11199,21 @@
       "filed": "2026-11-16",
       "summary": "Atos: OCSP response signatureAlgorithm without NULL parameters",
       "self_reported": true,
-      "whiteboard": ""
+      "whiteboard": "[ca-compliance] [ocsp-failure]"
     },
     {
       "id": 2093498,
       "filed": "2026-11-16",
       "summary": "Atos: cRLIssuer equal to the certificate's issuer",
       "self_reported": true,
-      "whiteboard": ""
+      "whiteboard": "[ca-compliance] [ca-misissuance]"
     },
     {
       "id": 2093502,
       "filed": "2026-11-16",
       "summary": "Atos: Subject attributes in reverse order",
       "self_reported": true,
-      "whiteboard": ""
+      "whiteboard": "[ca-compliance] [ca-misissuance]"
     }
   ],
   "Viking Cloud, Inc.": [
@@ -11806,7 +11855,7 @@
       "filed": "2026-11-16",
       "summary": "iTrusChina: OCSP Response InternalError for SHA-1 CertID Requests",
       "self_reported": true,
-      "whiteboard": ""
+      "whiteboard": "[ca-compliance] [ocsp-failure]"
     }
   ],
   "Certainly LLC": [
@@ -12153,14 +12202,14 @@
       "filed": "2026-11-16",
       "summary": "SHECA: Missing CPS Policy Qualifier in EV Certificate Served on Expired Test Website",
       "self_reported": true,
-      "whiteboard": ""
+      "whiteboard": "[ca-compliance] [ev-misissuance]"
     },
     {
       "id": 2094144,
       "filed": "2026-11-17",
       "summary": "SHECA: Incorrect CA Certificate Fingerprint in SHECA WebTrust Audit Statements",
       "self_reported": true,
-      "whiteboard": ""
+      "whiteboard": "[ca-compliance] [audit-failure]"
     }
   ],
   "NAVER Cloud Trust Services": [
@@ -12267,7 +12316,7 @@
       "filed": "2026-11-17",
       "summary": "NAVER Cloud Trust Services: OCSP responses signed with ecdsa-with-SHA256 using P-384 responder keys",
       "self_reported": true,
-      "whiteboard": ""
+      "whiteboard": "[ca-compliance] [ocsp-failure]"
     }
   ],
   "Government of Hong Kong (SAR), Hongkong Post, Certizen": [
@@ -12339,7 +12388,7 @@
       "filed": "2026-11-15",
       "summary": "Hongkong Post: CP/CPS missing CCADB policy attestation",
       "self_reported": true,
-      "whiteboard": ""
+      "whiteboard": "[ca-compliance] [policy-failure]"
     }
   ],
   "Autoridad de Certificación (ANF AC)": [
@@ -12551,6 +12600,13 @@
       "summary": "PostSignum: Length Subject organizationName",
       "self_reported": true,
       "whiteboard": "[ca-compliance] [ov-misissuance]"
+    },
+    {
+      "id": 2094628,
+      "filed": "2026-11-18",
+      "summary": "PostSignum: Investigation of TLS Certificate and CRL Issues",
+      "self_reported": true,
+      "whiteboard": ""
     }
   ],
   "OISTE": [
