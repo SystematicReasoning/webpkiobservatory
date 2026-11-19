@@ -16154,9 +16154,9 @@
   "2090687": {
     "cat": "validation",
     "self": false,
-    "severity": "medium",
-    "summary": "DigiCert: A misleading official support article causes a lot of misconfigured _validation-contactemail DNS TXT records and fake TLS certificate(s)",
-    "classified_at": "2026-11-08T12:49:02.148599+00:00",
+    "severity": "high",
+    "summary": "DigiCert: Issuance from misconfigured _validation-contactemail DNS TXT records",
+    "classified_at": "2026-11-19T15:16:56.515961+00:00",
     "prompt_version": "v2"
   },
   "2090881": {
@@ -16781,6 +16781,94 @@
     "severity": "medium",
     "summary": "PostSignum: Investigation of TLS Certificate and CRL Issues",
     "classified_at": "2026-11-18T15:08:55.872176+00:00",
+    "prompt_version": "v2"
+  },
+  "2094748": {
+    "cat": "revocation",
+    "self": false,
+    "severity": "medium",
+    "summary": "Halcom d.d.: Root CA CRL nextUpdate Exceeds the 12-Month Limit",
+    "classified_at": "2026-11-19T15:16:56.515983+00:00",
+    "prompt_version": "v2"
+  },
+  "2094848": {
+    "cat": "governance",
+    "self": true,
+    "severity": "medium",
+    "summary": "IdenTrust: Issuance S/MIME Certificates with CP/CPS discrepancies",
+    "classified_at": "2026-11-19T15:16:56.515987+00:00",
+    "prompt_version": "v2"
+  },
+  "2094850": {
+    "cat": "misissuance",
+    "self": true,
+    "severity": "high",
+    "summary": "IdenTrust: Issuance S/MIME Certificates with BR discrepancies",
+    "classified_at": "2026-11-19T15:16:56.515990+00:00",
+    "prompt_version": "v2"
+  },
+  "2094859": {
+    "cat": "revocation",
+    "self": true,
+    "severity": "medium",
+    "summary": "SSL.com: OCSP responses served more than four days after thisUpdate",
+    "classified_at": "2026-11-19T15:16:56.515992+00:00",
+    "prompt_version": "v2"
+  },
+  "2095052": {
+    "cat": "governance",
+    "self": true,
+    "severity": "low",
+    "summary": "EDICOM: Missing CCADB Policy adherence statement in CA policy documents",
+    "classified_at": "2026-11-19T15:16:56.515995+00:00",
+    "prompt_version": "v2"
+  },
+  "2095094": {
+    "cat": "revocation",
+    "self": true,
+    "severity": "high",
+    "summary": "DVV: Delayed revocation related to Bugzilla 2094080",
+    "classified_at": "2026-11-19T15:16:56.515997+00:00",
+    "prompt_version": "v2"
+  },
+  "2095095": {
+    "cat": "revocation",
+    "self": true,
+    "severity": "high",
+    "summary": "DVV: Delayed revocation related to Bugzilla 2094081",
+    "classified_at": "2026-11-19T15:16:56.516000+00:00",
+    "prompt_version": "v2"
+  },
+  "2095101": {
+    "cat": "misissuance",
+    "self": true,
+    "severity": "medium",
+    "summary": "Disig: CA CRL entry with reasonCode unspecified (0)",
+    "classified_at": "2026-11-19T15:16:56.516002+00:00",
+    "prompt_version": "v2"
+  },
+  "2095111": {
+    "cat": "misissuance",
+    "self": true,
+    "severity": "medium",
+    "summary": "IdenTrust: Strict generation S/MIME Certificate placed on certificateHold",
+    "classified_at": "2026-11-19T15:16:56.516004+00:00",
+    "prompt_version": "v2"
+  },
+  "2095113": {
+    "cat": "revocation",
+    "self": true,
+    "severity": "medium",
+    "summary": "IdenTrust: S/MIME Certificates remain on certificateHold for more than CP/CPS allows",
+    "classified_at": "2026-11-19T15:16:56.516007+00:00",
+    "prompt_version": "v2"
+  },
+  "2095117": {
+    "cat": "misissuance",
+    "self": false,
+    "severity": "medium",
+    "summary": "OATI: OCSP Responder Certificate with Invalid Profile",
+    "classified_at": "2026-11-19T15:16:56.516009+00:00",
     "prompt_version": "v2"
   }
 }

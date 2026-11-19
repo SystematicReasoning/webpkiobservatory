@@ -1,7 +1,7 @@
 {
   "$schema": "https://webpki.systematicreasoning.com/schema.json",
   "version": "1.0.0",
-  "generatedAt": "2026-11-18T15:50:00.902810+00:00",
+  "generatedAt": "2026-11-19T15:53:48.070285+00:00",
   "snapshotUrl": "https://webpki.systematicreasoning.com/llm_snapshot.json",
   "note": "Sliced subset of llm_snapshot.json. Fetch the full snapshot for complete data.",
   "distrustEvents": [
@@ -922,7 +922,7 @@
     "responseDrivenPct": 73
   },
   "incidents": {
-    "total": 1787,
+    "total": 1793,
     "caCount": 55,
     "years": [
       {
@@ -975,7 +975,7 @@
       },
       {
         "year": 2026,
-        "count": 425
+        "count": 431
       }
     ],
     "perCA": [
@@ -1002,11 +1002,11 @@
       {
         "ca": "IdenTrust Services, LLC",
         "id": "identrust-services-llc",
-        "count": 85,
-        "selfReported": 71,
+        "count": 89,
+        "selfReported": 75,
         "externallyReported": 14,
         "selfReportPct": 84,
-        "ppm": 1.771,
+        "ppm": 1.854,
         "trusted": true
       },
       {
@@ -1130,6 +1130,16 @@
         "trusted": true
       },
       {
+        "ca": "SSL.com",
+        "id": "ssl-com",
+        "count": 43,
+        "selfReported": 27,
+        "externallyReported": 16,
+        "selfReportPct": 63,
+        "ppm": 0.308,
+        "trusted": true
+      },
+      {
         "ca": "Internet Security Research Group",
         "id": "internet-security-research-group",
         "count": 42,
@@ -1137,16 +1147,6 @@
         "externallyReported": 20,
         "selfReportPct": 52,
         "ppm": 0.004,
-        "trusted": true
-      },
-      {
-        "ca": "SSL.com",
-        "id": "ssl-com",
-        "count": 42,
-        "selfReported": 26,
-        "externallyReported": 16,
-        "selfReportPct": 62,
-        "ppm": 0.301,
         "trusted": true
       },
       {
@@ -1300,6 +1300,16 @@
         "trusted": true
       },
       {
+        "ca": "Disig, a.s.",
+        "id": "disig-a-s",
+        "count": 18,
+        "selfReported": 12,
+        "externallyReported": 6,
+        "selfReportPct": 67,
+        "ppm": 8982.036,
+        "trusted": true
+      },
+      {
         "ca": "Microsec Ltd.",
         "id": "microsec-ltd",
         "count": 18,
@@ -1307,16 +1317,6 @@
         "externallyReported": 6,
         "selfReportPct": 67,
         "ppm": 1381.427,
-        "trusted": true
-      },
-      {
-        "ca": "Disig, a.s.",
-        "id": "disig-a-s",
-        "count": 17,
-        "selfReported": 11,
-        "externallyReported": 6,
-        "selfReportPct": 65,
-        "ppm": 8483.034,
         "trusted": true
       },
       {
@@ -1531,9 +1531,9 @@
       }
     ],
     "classification": {
-      "misissuance": 680,
-      "revocation": 383,
-      "governance": 590,
+      "misissuance": 683,
+      "revocation": 385,
+      "governance": 591,
       "validation": 134
     },
     "yearsByClass": [
@@ -1623,9 +1623,9 @@
       },
       {
         "year": 2026,
-        "misissuance": 122,
-        "revocation": 86,
-        "governance": 197,
+        "misissuance": 125,
+        "revocation": 88,
+        "governance": 198,
         "validation": 20
       }
     ],
@@ -1646,9 +1646,9 @@
       },
       {
         "ca": "IdenTrust Services, LLC",
-        "misissuance": 30,
-        "revocation": 25,
-        "governance": 28,
+        "misissuance": 32,
+        "revocation": 26,
+        "governance": 29,
         "validation": 2
       },
       {
@@ -1736,18 +1736,18 @@
         "validation": 2
       },
       {
+        "ca": "SSL.com",
+        "misissuance": 9,
+        "revocation": 11,
+        "governance": 8,
+        "validation": 15
+      },
+      {
         "ca": "Internet Security Research Group",
         "misissuance": 11,
         "revocation": 18,
         "governance": 5,
         "validation": 8
-      },
-      {
-        "ca": "SSL.com",
-        "misissuance": 9,
-        "revocation": 10,
-        "governance": 8,
-        "validation": 15
       },
       {
         "ca": "Google Trust Services LLC",
@@ -1855,17 +1855,17 @@
         "validation": 5
       },
       {
+        "ca": "Disig, a.s.",
+        "misissuance": 8,
+        "revocation": 2,
+        "governance": 8,
+        "validation": 0
+      },
+      {
         "ca": "Microsec Ltd.",
         "misissuance": 10,
         "revocation": 3,
         "governance": 5,
-        "validation": 0
-      },
-      {
-        "ca": "Disig, a.s.",
-        "misissuance": 7,
-        "revocation": 2,
-        "governance": 8,
         "validation": 0
       },
       {
@@ -2019,15 +2019,15 @@
     "categories": [
       {
         "category": "Misissuance",
-        "count": 680
+        "count": 683
       },
       {
         "category": "Governance",
-        "count": 590
+        "count": 591
       },
       {
         "category": "Revocation",
-        "count": 383
+        "count": 385
       },
       {
         "category": "Validation",
@@ -2035,12 +2035,12 @@
       }
     ],
     "whiteboardTags": {
-      "ca-compliance": 1750,
+      "ca-compliance": 1754,
       "ov-misissuance": 342,
-      "policy-failure": 262,
+      "policy-failure": 263,
       "ev-misissuance": 197,
+      "ocsp-failure": 165,
       "disclosure-failure": 164,
-      "ocsp-failure": 164,
       "dv-misissuance": 132,
       "crl-failure": 125,
       "audit-finding": 110,
@@ -2048,7 +2048,7 @@
       "ca-misissuance": 74,
       "audit-failure": 52,
       "uncategorized": 48,
-      "smime-misissuance": 43,
+      "smime-misissuance": 45,
       "external": 39,
       "ca-revocation-delay": 35,
       "audit-delay": 20,
@@ -2056,6 +2056,7 @@
       "disclosure failure": 7,
       "close on 2026-11-20": 7,
       "close on 2026-11-23": 6,
+      "close on 2026-11-25": 5,
       "ca-onecrl": 4,
       "close on 2026-11-24": 4,
       "__-misissuance": 4,
