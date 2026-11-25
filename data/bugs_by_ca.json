@@ -362,14 +362,14 @@
       "filed": "2026-10-15",
       "summary": "GoDaddy: Subscriber Certificate Profiles Did Not Conform to CP/CPS",
       "self_reported": true,
-      "whiteboard": "[ca-compliance] [dv-misissuance] [ov-misissuance] [ev-misissuance] [policy-failure] Next update 2026-11-27"
+      "whiteboard": "[ca-compliance] [dv-misissuance] [ov-misissuance] [ev-misissuance] [policy-failure] Next update 2026-12-04"
     },
     {
       "id": 2083191,
       "filed": "2026-10-16",
       "summary": "GoDaddy: Delayed Certificate Revocation",
       "self_reported": true,
-      "whiteboard": "[ca-compliance] [leaf-revocation-delay] Next update 2026-11-27"
+      "whiteboard": "[close on 2026-12-01] [ca-compliance] [leaf-revocation-delay]"
     },
     {
       "id": 2091571,
@@ -1687,7 +1687,7 @@
       "filed": "2026-10-06",
       "summary": "DigiCert: Certificates issued for sanctioned entities",
       "self_reported": true,
-      "whiteboard": "[ca-compliance] [policy-failure]"
+      "whiteboard": "[close on 2026-12-01] [ca-compliance] [policy-failure]"
     },
     {
       "id": 2081712,
@@ -2475,7 +2475,7 @@
       "filed": "2026-11-24",
       "summary": "IZENPE: ocsp responder certificates include a forbidden key usage",
       "self_reported": false,
-      "whiteboard": ""
+      "whiteboard": "[ca-compliance] [ocsp-failure]"
     }
   ],
   "Sectigo": [
@@ -4655,14 +4655,14 @@
       "filed": "2026-11-24",
       "summary": "Actalis: Failure to disclose revoked AgID Subordinate CA certificates in CCADB",
       "self_reported": false,
-      "whiteboard": ""
+      "whiteboard": "[ca-compliance] [disclosure-failure]"
     },
     {
       "id": 2097244,
       "filed": "2026-11-24",
       "summary": "Actalis: S/MIME Individual-Validated certificates issued based on Enterprise RA records",
       "self_reported": false,
-      "whiteboard": ""
+      "whiteboard": "[ca-compliance] [smime-misissuance]"
     }
   ],
   "certSIGN": [
@@ -5256,7 +5256,7 @@
       "filed": "2026-10-21",
       "summary": "D-Trust: Certificate name encodings inconsistent with TSPS section 7.1.4",
       "self_reported": false,
-      "whiteboard": "[ca-compliance] [ev-misissuance] [external]"
+      "whiteboard": "[close as INVALID] [ca-compliance] [ev-misissuance] [external]"
     },
     {
       "id": 2085547,
@@ -5292,6 +5292,13 @@
       "summary": "D-Trust: Delayed and incomplete incident disclosure for Bug 2094037",
       "self_reported": true,
       "whiteboard": "[ca-compliance] [disclosure-failure]"
+    },
+    {
+      "id": 2097595,
+      "filed": "2026-11-25",
+      "summary": "D-Trust: Short serial numbers in CA certificates issued in 2016",
+      "self_reported": false,
+      "whiteboard": ""
     }
   ],
   "Disig, a.s.": [
@@ -7167,7 +7174,7 @@
       "filed": "2026-11-23",
       "summary": "SECOM: Predictable subscriber certificate serial numbers due to time-dependent seeding of SHA1PRNG",
       "self_reported": false,
-      "whiteboard": ""
+      "whiteboard": "[ca-compliance]"
     }
   ],
   "Taiwan-CA Inc. (TWCA)": [
@@ -8066,49 +8073,49 @@
       "filed": "2026-11-24",
       "summary": "PKIoverheid: TSP CIBG Findings in 2026 ETSI Audit - Incident Report #1: Monitoring compliance",
       "self_reported": false,
-      "whiteboard": ""
+      "whiteboard": "[ca-compliance] [audit-finding]"
     },
     {
       "id": 2097031,
       "filed": "2026-11-24",
       "summary": "PKIoverheid: TSP CIBG Findings in 2026 ETSI Audit - Incident Report #2: Supply Chain Policy",
       "self_reported": false,
-      "whiteboard": ""
+      "whiteboard": "[ca-compliance] [audit-finding]"
     },
     {
       "id": 2097148,
       "filed": "2026-11-24",
       "summary": "PKIoverheid: TSP CIBG Findings in 2026 ETSI Audit - Incident Report #3: Compliance Management",
       "self_reported": false,
-      "whiteboard": ""
+      "whiteboard": "[ca-compliance] [audit-finding]"
     },
     {
       "id": 2097153,
       "filed": "2026-11-24",
       "summary": "PKIoverheid: TSP CIBG Findings in 2026 ETSI Audit - Incident Report #4: Data cleaning",
       "self_reported": false,
-      "whiteboard": ""
+      "whiteboard": "[ca-compliance] [audit-finding]"
     },
     {
       "id": 2097160,
       "filed": "2026-11-24",
       "summary": "PKIoverheid: TSP CIBG Findings in 2026 ETSI Audit - Incident Report #5: Logical access control policy",
       "self_reported": false,
-      "whiteboard": ""
+      "whiteboard": "[ca-compliance] [audit-finding]"
     },
     {
       "id": 2097161,
       "filed": "2026-11-24",
       "summary": "PKIoverheid: TSP CIBG Findings in 2026 ETSI Audit - Incident Report #6: Handling of reported alerts",
       "self_reported": false,
-      "whiteboard": ""
+      "whiteboard": "[ca-compliance] [audit-finding]"
     },
     {
       "id": 2097162,
       "filed": "2026-11-24",
       "summary": "PKIoverheid: TSP CIBG Findings in 2026 ETSI Audit - Incident Report #7: Termination plan",
       "self_reported": false,
-      "whiteboard": ""
+      "whiteboard": "[ca-compliance] [audit-finding]"
     }
   ],
   "Amazon Trust Services": [
@@ -9052,7 +9059,7 @@
       "filed": "2026-10-27",
       "summary": "Microsoft PKI Services: Access to CRLs on www.microsoft.com blocked for Wget User-Agent",
       "self_reported": true,
-      "whiteboard": "[ca-compliance] [crl-failure]"
+      "whiteboard": "[close on 2026-11-27] [ca-compliance] [crl-failure]"
     }
   ],
   "Telia Company": [
@@ -10179,7 +10186,7 @@
       "filed": "2026-11-11",
       "summary": "Google Trust Services: Challenges validated past expiry",
       "self_reported": false,
-      "whiteboard": "[ca-compliance] [dv-misissuance] Next update 2026-11-24"
+      "whiteboard": "[ca-compliance] [dv-misissuance] Next update 2027-01-14"
     }
   ],
   "China Financial Certification Authority (CFCA)": [
@@ -10475,7 +10482,7 @@
       "filed": "2026-11-14",
       "summary": "CFCA: Inappropriate OID Organisation Name for 2.16.156.112554(`China Financial Certification Authority Extended Validation (EV)`)",
       "self_reported": false,
-      "whiteboard": "[ca-infosharing]"
+      "whiteboard": "[close on 2026-12-01] [ca-infosharing]"
     },
     {
       "id": 2092894,
@@ -11195,7 +11202,7 @@
       "filed": "2026-11-23",
       "summary": "SSL.com: Certificate serial numbers generated from time-seeded PRNG with insufficient entropy",
       "self_reported": true,
-      "whiteboard": ""
+      "whiteboard": "[ca-compliance]"
     }
   ],
   "Buypass": [
@@ -11316,7 +11323,7 @@
       "filed": "2026-11-04",
       "summary": "Buypass: cRLNumber reused across Root CA CRLs",
       "self_reported": true,
-      "whiteboard": "[ca-compliance] [crl-failure]"
+      "whiteboard": "[ca-compliance] [crl-failure] Next update 2026-12-08"
     }
   ],
   "Eviden": [
