@@ -1722,7 +1722,7 @@
       "filed": "2026-11-08",
       "summary": "DigiCert: Issuance from misconfigured _validation-contactemail DNS TXT records",
       "self_reported": false,
-      "whiteboard": "[ca-compliance] [uncategorized] [external]"
+      "whiteboard": "[ca-compliance] [uncategorized] [external] Next update 2026-12-17"
     },
     {
       "id": 2092247,
@@ -2264,6 +2264,13 @@
       "summary": "SwissSign: Last CA CRL with nextUpdate  >12 months for retired Root CA",
       "self_reported": true,
       "whiteboard": "[ca-compliance] [crl-failure]"
+    },
+    {
+      "id": 2098133,
+      "filed": "2026-11-26",
+      "summary": "SwissSign: OCSP responder does not reject nonces with more than 32 octets",
+      "self_reported": true,
+      "whiteboard": ""
     }
   ],
   "Izenpe S.A.": [
@@ -4853,28 +4860,28 @@
       "filed": "2026-10-22",
       "summary": "certSIGN: Delayed revocation on a set of test certificates",
       "self_reported": true,
-      "whiteboard": "[close on 2026-11-25] [ca-compliance] [leaf-revocation-delay]"
+      "whiteboard": "[ca-compliance] [leaf-revocation-delay]"
     },
     {
       "id": 2085384,
       "filed": "2026-10-23",
       "summary": "certSIGN: OCSP with bad KeyUsage",
       "self_reported": true,
-      "whiteboard": "[close on 2026-11-25] [ca-compliance] [ocsp-failure]"
+      "whiteboard": "[ca-compliance] [ocsp-failure]"
     },
     {
       "id": 2085385,
       "filed": "2026-10-23",
       "summary": "certSIGN: CRL entry with reasonCode unspecified",
       "self_reported": true,
-      "whiteboard": "[close on 2026-11-25] [ca-compliance] [crl-failure]"
+      "whiteboard": "[ca-compliance] [crl-failure]"
     },
     {
       "id": 2086471,
       "filed": "2026-10-28",
       "summary": "certSIGN: Root CRL validity set to 12 month instead of less",
       "self_reported": true,
-      "whiteboard": "[close on 2026-11-25] [ca-compliance] [policy-failure]"
+      "whiteboard": "[ca-compliance] [policy-failure]"
     },
     {
       "id": 2093324,
@@ -5228,7 +5235,7 @@
       "filed": "2026-10-15",
       "summary": "D-Trust: Finding #1 of 2 in 2026 ETSI Audit – vulnerability management",
       "self_reported": true,
-      "whiteboard": "[close on 2026-11-25] [ca-compliance] [policy-failure] [audit-finding]"
+      "whiteboard": "[ca-compliance] [policy-failure] [audit-finding]"
     },
     {
       "id": 2082645,
@@ -5256,7 +5263,7 @@
       "filed": "2026-10-21",
       "summary": "D-Trust: Certificate name encodings inconsistent with TSPS section 7.1.4",
       "self_reported": false,
-      "whiteboard": "[close as INVALID] [ca-compliance] [ev-misissuance] [external]"
+      "whiteboard": "[ca-compliance] [ev-misissuance] [external]"
     },
     {
       "id": 2085547,
@@ -5297,6 +5304,13 @@
       "id": 2097595,
       "filed": "2026-11-25",
       "summary": "D-Trust: Short serial numbers in CA certificates issued in 2016",
+      "self_reported": false,
+      "whiteboard": "[ca-compliance] [policy-failure]"
+    },
+    {
+      "id": 2098157,
+      "filed": "2026-11-26",
+      "summary": "D-Trust: Final CRLs of six retired subordinate CAs exceed the TLS BR nextUpdate limit",
       "self_reported": false,
       "whiteboard": ""
     }
@@ -7174,7 +7188,7 @@
       "filed": "2026-11-23",
       "summary": "SECOM: Predictable subscriber certificate serial numbers due to time-dependent seeding of SHA1PRNG",
       "self_reported": false,
-      "whiteboard": "[ca-compliance]"
+      "whiteboard": "[ca-compliance] [policy-failure]"
     }
   ],
   "Taiwan-CA Inc. (TWCA)": [
@@ -10461,7 +10475,7 @@
       "filed": "2026-11-09",
       "summary": "CFCA: Serial numbers do not contain at least 64 bits of CSPRNG output",
       "self_reported": true,
-      "whiteboard": "[ca-compliance]"
+      "whiteboard": "[ca-compliance] [policy-failure]"
     },
     {
       "id": 2091246,
@@ -12384,7 +12398,7 @@
       "filed": "2026-11-09",
       "summary": "SHECA: CA Certificate Serial Numbers Generated Using a Non-Cryptographically Secure PRNG",
       "self_reported": true,
-      "whiteboard": "[ca-compliance]"
+      "whiteboard": "[ca-compliance] [policy-failure]"
     },
     {
       "id": 2093531,
